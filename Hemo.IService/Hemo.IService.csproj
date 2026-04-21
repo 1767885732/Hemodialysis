@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{DE0E7B18-47C0-49F0-A366-B5125D2C3BA4}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Hemo.IService</RootNamespace>
+    <AssemblyName>Hemo.IService</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DataReport\IDataReport.cs" />
+    <Compile Include="Dept\IDept.cs" />
+    <Compile Include="Dict\IStaffDict.cs" />
+    <Compile Include="Drug\IDrug.cs" />
+    <Compile Include="Hemodialysis\IVascuarAccess.cs" />
+    <Compile Include="Config\IConfig.cs" />
+    <Compile Include="Hemodialysis\IHemodialysis.cs" />
+    <Compile Include="Erythropoietin\IErythropoietin.cs" />
+    <Compile Include="IExceptionLogService.cs" />
+    <Compile Include="Lab\ILab.cs" />
+    <Compile Include="Material\IMaterial.cs" />
+    <Compile Include="Machine\IMachine.cs" />
+    <Compile Include="Order\IOrder.cs" />
+    <Compile Include="PatientSchedule\IPatientSchedule.cs" />
+    <Compile Include="Patient\IPatient.cs" />
+    <Compile Include="IServiceFactory.cs" />
+    <Compile Include="Permission\IUser.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="ExamLab\" />
+    <Folder Include="User\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Hemo.Model\Hemo.Model.csproj">
+      <Project>{578F5C8B-8529-4F7E-8F5E-F4979C5596B8}</Project>
+      <Name>Hemo.Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,298 @@
+﻿<UserControl x:Class="Hemo.Client.Doc.血液透析病历首页"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="1100" d:DesignWidth="816">
+    <Grid  >
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="33" />
+            <ColumnDefinition Width="750" />
+            <ColumnDefinition Width="33" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="80" />
+            <RowDefinition Height="50" />
+            <RowDefinition Height="30" />
+            <RowDefinition Height="30" />
+            <RowDefinition Height="30" />
+            <RowDefinition Height="30" />
+            <RowDefinition Height="30" />
+            <RowDefinition Height="30" />
+            <RowDefinition Height="30" />
+            <RowDefinition Height="30" />
+            <RowDefinition Height="30" />
+            <RowDefinition Height="30" />
+            <RowDefinition Height="30" />
+            <RowDefinition Height="30" />
+            <RowDefinition Height="30" />
+            <RowDefinition Height="30" />
+            <RowDefinition Height="30" />
+            <RowDefinition Height="30" />
+            <RowDefinition Height="30" />
+            <RowDefinition Height="30" />
+            <RowDefinition Height="30" />
+            <RowDefinition Height="30" />
+            <RowDefinition Height="30" />
+            <RowDefinition Height="30" />
+            <RowDefinition Height="30" />
+            <RowDefinition Height="30" />
+            <RowDefinition Height="30" />
+            <RowDefinition Height="30" />
+            <RowDefinition Height="30" />
+            <RowDefinition Height="30" />
+            <RowDefinition Height="30" />
+            <RowDefinition Height="30" />
+            <RowDefinition Height="30" />
+          
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <Label Content="" Grid.Column="1" FontFamily="宋体" FontSize="26" FontStyle="Normal"  Height="50" HorizontalAlignment="Center" HorizontalContentAlignment="Center" Name="lblHospital" VerticalAlignment="Center" VerticalContentAlignment="Center" Width="590" />
+        <Label Grid.Row="1" Grid.Column="1" Content="血液透析病历" FontFamily="宋体" FontSize="22"  Height="44" HorizontalAlignment="Center" HorizontalContentAlignment="Center" Name="label2" VerticalAlignment="Center" VerticalContentAlignment="Center" Width="292" />
+
+        <StackPanel Grid.Column="1" Grid.Row="2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"  Orientation="Horizontal" >
+            <Label Content="首次治疗日期:20" HorizontalAlignment="Center" VerticalAlignment="Bottom" FontSize="12"/>
+            <TextBox BorderThickness="0,0,0,1" Width="60" Grid.Column="1" Name="txtCureYear"  HorizontalAlignment="Stretch" VerticalAlignment="Stretch" VerticalContentAlignment="Bottom" Height="23"  FontSize="12"/>
+            <Label Content="年" Height="28"  HorizontalAlignment="Left"  Name="label45" VerticalAlignment="Bottom" VerticalContentAlignment="Bottom" Grid.Column="2"  FontSize="12"/>
+            <TextBox BorderThickness="0,0,0,1" Width="40" Height="23" Name="txtCureMouth"  VerticalContentAlignment="Bottom" VerticalAlignment="Stretch" HorizontalAlignment="Stretch"  Grid.Column="3" FontSize="12"/>
+            <Label Content="月" Height="28" HorizontalAlignment="Left" HorizontalContentAlignment="Left" Name="label46" VerticalAlignment="Bottom" VerticalContentAlignment="Bottom"  Grid.Column="4" FontSize="12"/>
+            <TextBox BorderThickness="0,0,0,1" Width="40" Height="23" Name="txtCureDay"  VerticalAlignment="Stretch" HorizontalAlignment="Stretch"  VerticalContentAlignment="Bottom"   Grid.Column="5"  FontSize="12" />
+            <Label Content="日        医保卡号：" Height="28" HorizontalAlignment="Left" HorizontalContentAlignment="Left" Name="label47" VerticalAlignment="Bottom" VerticalContentAlignment="Bottom"  Grid.Column="6"  FontSize="12"/>
+            <TextBox BorderThickness="0,0,0,1" Width="120" Height="23" Name="txtybkh"  VerticalAlignment="Stretch" HorizontalAlignment="Stretch"  VerticalContentAlignment="Bottom"   Grid.Column="5"  FontSize="12" />
+            <Label Content="          住院号：" Height="28" HorizontalAlignment="Left" HorizontalContentAlignment="Left" VerticalAlignment="Bottom" VerticalContentAlignment="Bottom"  Grid.Column="6"  FontSize="12"/>
+            <TextBox BorderThickness="0,0,0,1" Width="120" Height="23" Name="txtPatientID"  VerticalAlignment="Stretch" HorizontalAlignment="Stretch"  VerticalContentAlignment="Bottom"   Grid.Column="5"  FontSize="12" />
+        </StackPanel>
+
+        <StackPanel Grid.Column="1" Grid.Row="3" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"  Orientation="Horizontal">
+            <Label Content="透析号" HorizontalAlignment="Center" VerticalAlignment="Bottom"/>
+            <TextBox BorderThickness="0,0,0,1" Width="120" Height="23" Name="txxhemoId"  VerticalAlignment="Stretch" HorizontalAlignment="Stretch"  VerticalContentAlignment="Bottom"   Grid.Column="5"  FontSize="12" />
+            <Label Content="          诊断：" Height="28" HorizontalAlignment="Left" HorizontalContentAlignment="Left" VerticalAlignment="Bottom" VerticalContentAlignment="Bottom"  Grid.Column="6"  FontSize="12"/>
+            <TextBox BorderThickness="0,0,0,1" Name="txtDIAGNOSE" Width="490" Height="23"   VerticalAlignment="Stretch" HorizontalAlignment="Stretch"  VerticalContentAlignment="Bottom"   Grid.Column="5"  FontSize="12" />
+        </StackPanel>
+
+        <StackPanel Grid.Column="1" Grid.Row="4" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"  Orientation="Horizontal">
+            <Label Content="合并症或并发症：" HorizontalAlignment="Center" VerticalAlignment="Bottom"/>
+            <TextBox BorderThickness="0,0,0,1" Width="640" Height="23" Name="txtbfz"  VerticalAlignment="Stretch" HorizontalAlignment="Stretch"  VerticalContentAlignment="Bottom"   Grid.Column="5"  FontSize="12" />
+        </StackPanel>
+
+        <StackPanel Grid.Column="1" Grid.Row="5" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"  Orientation="Horizontal">
+            <Label Content="姓名：" HorizontalAlignment="Center" VerticalAlignment="Bottom"/>
+            <TextBox BorderThickness="0,0,0,1" Width="60" Height="23" Name="txtName"  VerticalAlignment="Stretch" HorizontalAlignment="Stretch"  VerticalContentAlignment="Bottom"   Grid.Column="5"  FontSize="12" />
+            <Label Content="性别：" HorizontalAlignment="Center" VerticalAlignment="Bottom"/>
+            <CheckBox Name="chk0" Content="男     " HorizontalAlignment="Left" VerticalAlignment="Center" />
+            <CheckBox Name="chk1" Content="女   身份证号：" HorizontalAlignment="Left" VerticalAlignment="Center" />
+            <TextBox BorderThickness="0,0,0,1" Width="440" Height="23" Name="txtcardId"  VerticalAlignment="Stretch" HorizontalAlignment="Stretch"  VerticalContentAlignment="Bottom"   Grid.Column="5"  FontSize="12" />
+        </StackPanel>
+
+        <StackPanel Grid.Column="1" Grid.Row="6" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"  Orientation="Horizontal">
+            <Label Content="现 住 址（详填）" HorizontalAlignment="Center" VerticalAlignment="Bottom"/>
+            <TextBox BorderThickness="0,0,0,1" Width="40" Height="23" Name="txtaddress"  VerticalAlignment="Stretch" HorizontalAlignment="Stretch"  VerticalContentAlignment="Bottom"   Grid.Column="5"  FontSize="12" />
+            <Label Content="省" HorizontalAlignment="Center" VerticalAlignment="Bottom"/>       
+            <TextBox BorderThickness="0,0,0,1" Width="40" Height="23" Name="txtcity"  VerticalAlignment="Stretch" HorizontalAlignment="Stretch"  VerticalContentAlignment="Bottom"   Grid.Column="5"  FontSize="12" />
+            <Label Content="市" HorizontalAlignment="Center" VerticalAlignment="Bottom"/>
+            <TextBox BorderThickness="0,0,0,1" Width="40" Height="23"  VerticalAlignment="Stretch" HorizontalAlignment="Stretch"  VerticalContentAlignment="Bottom"   Grid.Column="5"  FontSize="12" />
+            <Label Content="县（区）" HorizontalAlignment="Center" VerticalAlignment="Bottom"/>
+            <TextBox BorderThickness="0,0,0,1" Width="40" Height="23"  VerticalAlignment="Stretch" HorizontalAlignment="Stretch"  VerticalContentAlignment="Bottom"   Grid.Column="5"  FontSize="12" />
+            <Label Content="乡（镇、街道）" HorizontalAlignment="Center" VerticalAlignment="Bottom"/>
+            <TextBox BorderThickness="0,0,0,1" Width="40" Height="23"  VerticalAlignment="Stretch" HorizontalAlignment="Stretch"  VerticalContentAlignment="Bottom"   Grid.Column="5"  FontSize="12" />
+            <Label Content="村" HorizontalAlignment="Center" VerticalAlignment="Bottom"/>
+            <TextBox BorderThickness="0,0,0,1" Width="40" Height="23"  VerticalAlignment="Stretch" HorizontalAlignment="Stretch"  VerticalContentAlignment="Bottom"   Grid.Column="5"  FontSize="12" />
+            <Label Content="（门牌号）  邮编：" HorizontalAlignment="Center" VerticalAlignment="Bottom"/>
+            <TextBox BorderThickness="0,0,0,1" Width="60" Height="23"  VerticalAlignment="Stretch" HorizontalAlignment="Stretch"  VerticalContentAlignment="Bottom"   Grid.Column="5"  FontSize="12" />
+        </StackPanel>
+        <StackPanel Grid.Column="1" Grid.Row="7" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"  Orientation="Horizontal">
+            <Label Content="户口住址（详填）" HorizontalAlignment="Center" VerticalAlignment="Bottom"/>
+            <TextBox BorderThickness="0,0,0,1" Width="40" Height="23" Name="txthkaddress"  VerticalAlignment="Stretch" HorizontalAlignment="Stretch"  VerticalContentAlignment="Bottom"   Grid.Column="5"  FontSize="12" />
+            <Label Content="省" HorizontalAlignment="Center" VerticalAlignment="Bottom"/>
+            <TextBox BorderThickness="0,0,0,1" Width="40" Height="23" Name="txtcity1"  VerticalAlignment="Stretch" HorizontalAlignment="Stretch"  VerticalContentAlignment="Bottom"   Grid.Column="5"  FontSize="12" />
+            <Label Content="市" HorizontalAlignment="Center" VerticalAlignment="Bottom"/>
+            <TextBox BorderThickness="0,0,0,1" Width="40" Height="23"  VerticalAlignment="Stretch" HorizontalAlignment="Stretch"  VerticalContentAlignment="Bottom"   Grid.Column="5"  FontSize="12" />
+            <Label Content="县（区）" HorizontalAlignment="Center" VerticalAlignment="Bottom"/>
+            <TextBox BorderThickness="0,0,0,1" Width="40" Height="23"  VerticalAlignment="Stretch" HorizontalAlignment="Stretch"  VerticalContentAlignment="Bottom"   Grid.Column="5"  FontSize="12" />
+            <Label Content="乡（镇、街道）" HorizontalAlignment="Center" VerticalAlignment="Bottom"/>
+            <TextBox BorderThickness="0,0,0,1" Width="40" Height="23"  VerticalAlignment="Stretch" HorizontalAlignment="Stretch"  VerticalContentAlignment="Bottom"   Grid.Column="5"  FontSize="12" />
+            <Label Content="村" HorizontalAlignment="Center" VerticalAlignment="Bottom"/>
+            <TextBox BorderThickness="0,0,0,1" Width="40" Height="23"  VerticalAlignment="Stretch" HorizontalAlignment="Stretch"  VerticalContentAlignment="Bottom"   Grid.Column="5"  FontSize="12" />
+            <Label Content="（门牌号）  邮编：" HorizontalAlignment="Center" VerticalAlignment="Bottom"/>
+            <TextBox BorderThickness="0,0,0,1" Width="60" Height="23"  VerticalAlignment="Stretch" HorizontalAlignment="Stretch"  VerticalContentAlignment="Bottom"   Grid.Column="5"  FontSize="12" />
+        </StackPanel>
+
+        <StackPanel Grid.Column="1" Grid.Row="8" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"  Orientation="Horizontal">
+            <Label Content="电话手机：" HorizontalAlignment="Center" VerticalAlignment="Bottom"/>
+            <TextBox BorderThickness="0,0,0,1" Width="140" Height="23" VerticalAlignment="Stretch" HorizontalAlignment="Stretch"  VerticalContentAlignment="Bottom"   Grid.Column="5"  FontSize="12" />
+            <Label Content="E-mail：" HorizontalAlignment="Center" VerticalAlignment="Bottom"/>
+            <TextBox BorderThickness="0,0,0,1" Width="60" Height="23" VerticalAlignment="Stretch" HorizontalAlignment="Stretch"  VerticalContentAlignment="Bottom"   Grid.Column="5"  FontSize="12" />
+            <Label Content="@" HorizontalAlignment="Center" VerticalAlignment="Bottom"/>
+            <TextBox BorderThickness="0,0,0,1" Width="60" Height="23"  VerticalAlignment="Stretch" HorizontalAlignment="Stretch"  VerticalContentAlignment="Bottom"   Grid.Column="5"  FontSize="12" />
+            <Label Content="工作单位：_____________________地址：___________省___________县___________路___________号" HorizontalAlignment="Center" VerticalAlignment="Bottom"/>           
+        </StackPanel>
+        
+        
+        <Grid Grid.Row="9" Grid.Column="1" Grid.RowSpan="16">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="30" />
+                <RowDefinition Height="30" />
+                <RowDefinition Height="30" />
+                <RowDefinition Height="30" />
+                <RowDefinition Height="30" />
+                <RowDefinition Height="30" />
+                <RowDefinition Height="30" />
+                <RowDefinition Height="30" />
+                <RowDefinition Height="30" />
+                <RowDefinition Height="30" />
+                <RowDefinition Height="30" />
+                <RowDefinition Height="30" />
+                <RowDefinition Height="30" />
+                <RowDefinition Height="30" />
+                <RowDefinition Height="30" />
+                <RowDefinition Height="30" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="83.3" />
+                <ColumnDefinition Width="83.3" />
+                <ColumnDefinition Width="83.3" />
+                <ColumnDefinition Width="83.3" />
+                <ColumnDefinition Width="83.3" />
+                <ColumnDefinition Width="83.3" />
+                <ColumnDefinition Width="83.3" />
+                <ColumnDefinition Width="83.3" />
+                <ColumnDefinition Width="83.3*" />                
+            </Grid.ColumnDefinitions>
+            <TextBlock  Grid.ColumnSpan="9" Height="1" Background="Black" VerticalAlignment="Top"/>
+            <TextBlock  Grid.ColumnSpan="9" Height="1" Background="Black" VerticalAlignment="Bottom"/>
+            <TextBlock Grid.Row="1"  Grid.ColumnSpan="9" Height="1" Background="Black" VerticalAlignment="Bottom"/>
+            <TextBlock Grid.Row="2"  Grid.ColumnSpan="9" Height="1" Background="Black" VerticalAlignment="Bottom"/>
+            <TextBlock Grid.Row="3"  Grid.ColumnSpan="9" Height="1" Background="Black" VerticalAlignment="Bottom"/>
+            <TextBlock Grid.Row="4"  Grid.ColumnSpan="9" Height="1" Background="Black" VerticalAlignment="Bottom"/>
+            <TextBlock Grid.Row="5"  Grid.ColumnSpan="9" Height="1" Background="Black" VerticalAlignment="Bottom"/>
+            <TextBlock Grid.Row="6"  Grid.ColumnSpan="9" Height="1" Background="Black" VerticalAlignment="Bottom"/>
+            <TextBlock Grid.Row="7"  Grid.ColumnSpan="9" Height="1" Background="Black" VerticalAlignment="Bottom"/>
+            <TextBlock Grid.Row="8"  Grid.Column="1" Grid.ColumnSpan="2"  Height="1" Background="Black" VerticalAlignment="Bottom"/>
+            <TextBlock Grid.Row="9"  Grid.Column="1" Grid.ColumnSpan="2"  Height="1" Background="Black" VerticalAlignment="Bottom"/>
+            <TextBlock Grid.Row="10"  Grid.Column="1" Grid.ColumnSpan="2"  Height="1" Background="Black" VerticalAlignment="Bottom"/>
+            <TextBlock Grid.Row="11"  Grid.Column="1" Grid.ColumnSpan="2"  Height="1" Background="Black" VerticalAlignment="Bottom"/>
+            <TextBlock Grid.Row="12"  Grid.Column="1" Grid.ColumnSpan="2"  Height="1" Background="Black" VerticalAlignment="Bottom"/>
+            <TextBlock Grid.Row="13" Grid.Column="1" Grid.ColumnSpan="2" Height="1" Background="Black" VerticalAlignment="Bottom"/>
+            <TextBlock Grid.Row="14" Grid.Column="1" Grid.ColumnSpan="2" Height="1" Background="Black" VerticalAlignment="Bottom"/>
+            <TextBlock Grid.Row="15"  Grid.ColumnSpan="9" Height="1" Background="Black" VerticalAlignment="Bottom"/>
+
+            <TextBlock Grid.Row="8"  Grid.Column="4" Grid.ColumnSpan="2"  Height="1" Background="Black" VerticalAlignment="Bottom"/>
+            <TextBlock Grid.Row="9"  Grid.Column="4" Grid.ColumnSpan="2"  Height="1" Background="Black" VerticalAlignment="Bottom"/>
+            <TextBlock Grid.Row="10"  Grid.Column="4" Grid.ColumnSpan="2"  Height="1" Background="Black" VerticalAlignment="Bottom"/>
+            <TextBlock Grid.Row="11"  Grid.Column="4" Grid.ColumnSpan="2"  Height="1" Background="Black" VerticalAlignment="Bottom"/>
+            <TextBlock Grid.Row="12"  Grid.Column="4" Grid.ColumnSpan="2"  Height="1" Background="Black" VerticalAlignment="Bottom"/>
+            <TextBlock Grid.Row="13" Grid.Column="4" Grid.ColumnSpan="2" Height="1" Background="Black" VerticalAlignment="Bottom"/>
+            <TextBlock Grid.Row="14" Grid.Column="4" Grid.ColumnSpan="2" Height="1" Background="Black" VerticalAlignment="Bottom"/>
+
+
+            <TextBlock Grid.Row="8"  Grid.Column="7" Grid.ColumnSpan="2"  Height="1" Background="Black" VerticalAlignment="Bottom"/>
+            <TextBlock Grid.Row="9"  Grid.Column="7" Grid.ColumnSpan="2"  Height="1" Background="Black" VerticalAlignment="Bottom"/>
+            <TextBlock Grid.Row="10"  Grid.Column="7" Grid.ColumnSpan="2"  Height="1" Background="Black" VerticalAlignment="Bottom"/>
+            <TextBlock Grid.Row="11"  Grid.Column="7" Grid.ColumnSpan="2"  Height="1" Background="Black" VerticalAlignment="Bottom"/>
+            <TextBlock Grid.Row="12"  Grid.Column="7" Grid.ColumnSpan="2"  Height="1" Background="Black" VerticalAlignment="Bottom"/>
+            <TextBlock Grid.Row="13" Grid.Column="7" Grid.ColumnSpan="2" Height="1" Background="Black" VerticalAlignment="Bottom"/>
+            <TextBlock Grid.Row="14" Grid.Column="7" Grid.ColumnSpan="2" Height="1" Background="Black" VerticalAlignment="Bottom"/>
+
+
+            <TextBlock Grid.Row="0" Grid.Column="0" Grid.RowSpan="16" Width="1" Background="Black" HorizontalAlignment="Left"/>
+            <TextBlock Grid.Row="1" Grid.Column="1" Grid.RowSpan="15" Width="1" Background="Black" HorizontalAlignment="Left"/>
+            <TextBlock Grid.Row="0" Grid.Column="3" Grid.RowSpan="16" Width="1" Background="Black" HorizontalAlignment="Left"/>
+            <TextBlock Grid.Row="1" Grid.Column="4" Grid.RowSpan="15" Width="1" Background="Black" HorizontalAlignment="Left"/>
+            <TextBlock Grid.Row="0" Grid.Column="6" Grid.RowSpan="16" Width="1" Background="Black" HorizontalAlignment="Left"/>
+            <TextBlock Grid.Row="1" Grid.Column="7" Grid.RowSpan="15" Width="1" Background="Black" HorizontalAlignment="Left"/>
+            <TextBlock Grid.Row="0" Grid.Column="9" Grid.RowSpan="16" Width="1" Background="Black" HorizontalAlignment="Right"/>
+
+            <TextBlock Grid.Row="8" Grid.Column="2" Grid.RowSpan="8" Width="1" Background="Black" HorizontalAlignment="Left"/>
+            <TextBlock Grid.Row="8" Grid.Column="5" Grid.RowSpan="8" Width="1" Background="Black" HorizontalAlignment="Left"/>
+            <TextBlock Grid.Row="8" Grid.Column="8" Grid.RowSpan="8" Width="1" Background="Black" HorizontalAlignment="Left"/>
+
+            <Label Content="干体重" Grid.ColumnSpan="3" HorizontalAlignment="Center" VerticalAlignment="Bottom" FontSize="12"/>
+            <Label Content="血管通路" Grid.Column="3" Grid.ColumnSpan="3" HorizontalAlignment="Center" VerticalAlignment="Bottom"/>
+            <Label Content="抗凝剂" Grid.Column="6" Grid.ColumnSpan="3" HorizontalAlignment="Center" VerticalAlignment="Bottom"/>
+            <Label Content="日期" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Bottom"/>
+            <Label Content="体重 （Kg）" Grid.Column="1"  Grid.Row="1" Grid.ColumnSpan="2" HorizontalAlignment="Center" VerticalAlignment="Bottom"/>            
+            <Label Content="日期" Grid.Row="1" Grid.Column="3" HorizontalAlignment="Center" VerticalAlignment="Bottom"/>
+            <Label Content="名称" Grid.Column="4"  Grid.Row="1"  Grid.ColumnSpan="2"  HorizontalAlignment="Center" VerticalAlignment="Bottom"/>
+            <Label Content="日期" Grid.Row="1" Grid.Column="6" HorizontalAlignment="Center" VerticalAlignment="Bottom"/>
+            <Label Content="种类" Grid.Column="7"  Grid.Row="1"  Grid.ColumnSpan="2"  HorizontalAlignment="Center" VerticalAlignment="Bottom"/>
+
+            <Label Content="日期" Grid.Row="8" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Bottom"/>
+            <Label Content="名称" Grid.Column="2"  Grid.Row="8"   HorizontalAlignment="Center" VerticalAlignment="Bottom"/>
+            <Label Content="日期" Grid.Row="8" Grid.Column="4" HorizontalAlignment="Center" VerticalAlignment="Bottom"/>
+            <Label Content="名称" Grid.Column="5"  Grid.Row="8"   HorizontalAlignment="Center" VerticalAlignment="Bottom"/>
+            <Label Content="日期" Grid.Row="8" Grid.Column="7" HorizontalAlignment="Center" VerticalAlignment="Bottom"/>
+            <Label Content="名称" Grid.Column="8"  Grid.Row="8"   HorizontalAlignment="Center" VerticalAlignment="Bottom"/>
+
+            <Label Content="传&#x0a;染&#x0a;病&#x0a;登&#x0a;记" Grid.Row="8" Grid.RowSpan="8"  HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            <Label Content="肿&#x0a;瘤&#x0a;登&#x0a;记" Grid.Column="3" Grid.Row="8" Grid.RowSpan="8"  HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            <Label Content="过&#x0a;敏&#x0a;反&#x0a;应" Grid.Column="6" Grid.Row="8" Grid.RowSpan="8"  HorizontalAlignment="Center" VerticalAlignment="Center"/>
+
+
+
+
+
+
+
+        </Grid>
+
+        <Label Content="血液透析治疗方案调整"  HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="25" Grid.Column="1" FontWeight="ExtraBold" />
+        
+        <Grid Grid.Row="26" Grid.Column="1" Grid.RowSpan="5">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="30" />
+                <RowDefinition Height="30" />
+                <RowDefinition Height="30" />
+                <RowDefinition Height="30" />
+                <RowDefinition Height="30" />                
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="125" />
+                <ColumnDefinition Width="125" />
+                <ColumnDefinition Width="125" />
+                <ColumnDefinition Width="125" />
+                <ColumnDefinition Width="125" />
+                <ColumnDefinition Width="125" />
+            </Grid.ColumnDefinitions>
+            <Label Content="治疗频率" HorizontalAlignment="Center" VerticalAlignment="Bottom"  />
+            <Label Content="调整日期" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Bottom"  />
+            <Label Content="治疗方式" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Bottom"  />
+            <Label Content="调整日期" Grid.Column="3" HorizontalAlignment="Center" VerticalAlignment="Bottom"  />
+            <Label Content="透析液钙浓度" Grid.Column="4" HorizontalAlignment="Center" VerticalAlignment="Bottom"  />
+            <Label Content="调整日期" Grid.Column="5" HorizontalAlignment="Center" VerticalAlignment="Bottom"  />
+            <Label Content="每周1次" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Bottom"  />
+            <Label Content="每周2次" Grid.Row="2" HorizontalAlignment="Center" VerticalAlignment="Bottom"  />
+            <Label Content="每周3次" Grid.Row="3" HorizontalAlignment="Center" VerticalAlignment="Bottom"  />
+            <Label Content="其他（    ）" Grid.Row="4" HorizontalAlignment="Center" VerticalAlignment="Bottom"  />
+            <Label Content="单纯HD" Grid.Row="1" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Bottom"  />
+            <Label Content="HD+HDF" Grid.Row="2" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Bottom"  />
+            <Label Content="HD+HP" Grid.Row="3" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Bottom"  />
+
+            <TextBlock  Grid.ColumnSpan="9" Height="1" Background="Black" VerticalAlignment="Top"/>
+            <TextBlock  Grid.ColumnSpan="9" Height="1" Background="Black" VerticalAlignment="Bottom"/>
+            <TextBlock Grid.Row="1"  Grid.ColumnSpan="9" Height="1" Background="Black" VerticalAlignment="Bottom"/>
+            <TextBlock Grid.Row="2" Grid.ColumnSpan="9" Height="1" Background="Black" VerticalAlignment="Bottom"/>
+            <TextBlock Grid.Row="3" Grid.ColumnSpan="9" Height="1" Background="Black" VerticalAlignment="Bottom"/>
+            <TextBlock Grid.Row="4" Grid.ColumnSpan="9" Height="1" Background="Black" VerticalAlignment="Bottom"/>
+
+            <TextBlock Grid.Row="0" Grid.Column="0" Grid.RowSpan="5" Width="1" Background="Black" HorizontalAlignment="Left"/>
+            <TextBlock Grid.Row="0" Grid.Column="1" Grid.RowSpan="5" Width="1" Background="Black" HorizontalAlignment="Left"/>
+            <TextBlock Grid.Row="0" Grid.Column="2" Grid.RowSpan="5" Width="1" Background="Black" HorizontalAlignment="Left"/>
+            <TextBlock Grid.Row="0" Grid.Column="3" Grid.RowSpan="5" Width="1" Background="Black" HorizontalAlignment="Left"/>
+            <TextBlock Grid.Row="0" Grid.Column="4" Grid.RowSpan="5" Width="1" Background="Black" HorizontalAlignment="Left"/>
+            <TextBlock Grid.Row="0" Grid.Column="5" Grid.RowSpan="5" Width="1" Background="Black" HorizontalAlignment="Left"/>
+            <TextBlock Grid.Row="0" Grid.Column="6" Grid.RowSpan="5" Width="1" Background="Black" HorizontalAlignment="Right"/>
+
+
+
+
+
+
+
+
+        </Grid>
+
+
+    </Grid>
+</UserControl>

@@ -1,0 +1,55 @@
+﻿<UserControl x:Class="Hemo.Client.Doc.授权委托书"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="1100" d:DesignWidth="760">
+    <Grid>
+        <Label Content="" FontFamily="宋体" FontSize="26"  Height="50" HorizontalAlignment="Left" HorizontalContentAlignment="Center" Margin="141,76,0,0" Name="lblHospital" VerticalAlignment="Top" VerticalContentAlignment="Center" Width="522" FontStyle="Normal" />
+        <Label Content="授权委托书" FontSize="22" Height="44" HorizontalAlignment="Left" HorizontalContentAlignment="Center" Margin="202,132,0,0" Name="label2" VerticalAlignment="Top" VerticalContentAlignment="Center" Width="405" FontFamily="宋体"  />
+        <Label Content="科室：" Height="27" HorizontalAlignment="Left"  Name="label3" VerticalAlignment="Top" FontSize="17" FontFamily="宋体"  Width="51" Margin="85,196,0,0" />
+        <TextBox Height="23"  BorderThickness="0,0,0,1" BorderBrush="Black" Name="txtDeptCode" IsReadOnly="False" Margin="139,200,0,877" HorizontalAlignment="Left" Width="92" FontFamily="宋体" FontSize="17"  />
+        <Label Content="床号：" Height="27" HorizontalAlignment="Left"  Name="label33" VerticalAlignment="Top" FontSize="17" FontFamily="宋体"  Width="51" Margin="237,196,0,0" />
+        <TextBox Height="23"  BorderThickness="0,0,0,1" BorderBrush="Black" Name="txtBedNum" IsReadOnly="False" Margin="294,200,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="98" FontFamily="宋体" FontSize="17"  />
+        <Label  Content="姓名：" Height="27" HorizontalAlignment="Left"  Name="label34" VerticalAlignment="Top" FontSize="17" FontFamily="宋体"  Width="53" Margin="398,196,0,0" />
+        <TextBox Height="23"  BorderThickness="0,0,0,1" BorderBrush="Black" Name="txtName" IsReadOnly="False" Margin="451,200,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="99" FontFamily="宋体" FontSize="17"  />
+        <Label Content="性别：" Height="28" Name="label6" VerticalAlignment="Top" FontSize="17" FontFamily="宋体"  Margin="556,196,0,0" HorizontalAlignment="Left" Width="69" />
+        <TextBox Height="23"  BorderThickness="0,0,0,1" BorderBrush="Black" Name="txtSex" IsReadOnly="False" Margin="612,200,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="99" FontFamily="宋体" FontSize="17"  />
+        <Label Content="年龄：" Height="29" HorizontalAlignment="Left"  Name="label31" VerticalAlignment="Top" FontSize="17" FontFamily="宋体"  Width="50" Margin="191,238,0,0" />
+        <TextBox Height="23"  BorderThickness="0,0,0,1" BorderBrush="Black" Name="txtAge" IsReadOnly="False" Margin="245,244,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="92" DataContext="{Binding}" FontSize="17"  FontFamily="宋体" />
+        <TextBlock LineHeight="35" TextWrapping="Wrap" Margin="85,297,0,0" Name="textBlock1" Text="    本人因病于      年      月      日住院，因病情需要拟进行血液净化治疗。在进行血液净化治疗过程中，有关病情告知及治疗过程中需要签署的一切知情同意文件，本人郑重委托由           作为我的代理人，代为行使住院期间的知情同意权利，全权代表本人签字，并履行相应的签字手续，被委托人的签字视同本人的签字。" VerticalAlignment="Top" FontSize="17" FontFamily="宋体"  HorizontalAlignment="Left" Width="605" />
+        <Label Content="受托人签署同意书所产生的后果，由患者本人承担。" FontSize="17" Height="34" HorizontalAlignment="Left" Margin="85,491,0,0" Name="label14" VerticalAlignment="Top" FontFamily="宋体"  />
+        <Label Content="委托人（患者本人）：" FontSize="17" Height="34" HorizontalAlignment="Left" Margin="85,545,0,0" Name="label15" VerticalAlignment="Top" FontFamily="宋体"  />
+        <TextBox Height="23"  BorderThickness="0,0,0,1" BorderBrush="Black" Name="textBox80" IsReadOnly="False" Margin="268,545,0,532" HorizontalAlignment="Left" Width="100" />
+        <Label Content="性别：" FontSize="17" Height="34" HorizontalAlignment="Left" Margin="423,545,0,0" Name="label16" VerticalAlignment="Top" FontFamily="宋体"  />
+        <TextBox Height="23"  BorderThickness="0,0,0,1" BorderBrush="Black" Name="textBox81" IsReadOnly="False" Margin="487,545,0,0" HorizontalAlignment="Left" Width="50" VerticalAlignment="Top" />
+        <Label Content="年龄：" FontSize="17" Height="34" HorizontalAlignment="Left" Margin="569,545,0,0" Name="label17" VerticalAlignment="Top" FontFamily="宋体"  />
+        <TextBox Height="23"  BorderThickness="0,0,0,1" BorderBrush="Black" Name="textBox82" IsReadOnly="False" Margin="632,545,0,532" HorizontalAlignment="Left" Width="50" />
+        <Label Content="住院号：" FontSize="17" Height="34" HorizontalAlignment="Left" Margin="85,593,0,0" Name="label18" VerticalAlignment="Top" FontFamily="宋体"  />
+        <TextBox Height="23"  BorderThickness="0,0,0,1" BorderBrush="Black" Name="textBox83" IsReadOnly="False" Margin="165,593,0,484" HorizontalAlignment="Left" Width="130" />
+        <Label Content="有效证件号码：" FontSize="17" Height="34" HorizontalAlignment="Left" Margin="342,593,0,0" Name="label19" VerticalAlignment="Top" FontFamily="宋体"  />
+        <TextBox Height="23"  BorderThickness="0,0,0,1" BorderBrush="Black" Name="textBox84" IsReadOnly="False" Margin="476,593,0,484" HorizontalAlignment="Left" Width="210" />
+        <Label Content="受托人签字（手印）：" FontSize="17" Height="34" HorizontalAlignment="Left" Margin="410,765,0,0" Name="label24" VerticalAlignment="Top" Width="175" FontFamily="宋体"  />
+        <Label Content="" FontSize="17" Height="34" HorizontalAlignment="Left" Margin="591,765,0,0" Name="label25" VerticalAlignment="Top" Width="137" FontFamily="宋体"  />
+        <Label Content="        年       月        日" FontSize="17" Height="34" HorizontalAlignment="Left" Margin="85,824,0,0" Name="lblDate" VerticalAlignment="Top" FontFamily="宋体"  />
+        <Label Content="患者签名（手印）：" FontFamily="宋体" FontSize="17"  Height="34" HorizontalAlignment="Left" Margin="85,765,0,0" Name="label4" VerticalAlignment="Top" />
+        <Image Name="imgPatientSign" HorizontalAlignment="Left" Margin="253,763,0,0" VerticalAlignment="Top" Width="150" Height="40"/>
+        <Label Content="委托人：" FontFamily="宋体" FontSize="17"  Height="34" HorizontalAlignment="Left" Margin="85,638,0,0" Name="label7" VerticalAlignment="Top" />
+        <TextBox BorderBrush="Black" BorderThickness="0,0,0,1" Height="23" HorizontalAlignment="Left" IsReadOnly="False" Margin="165,638,0,439" Name="textBox1" Width="100" />
+        <Label Content="性别：" FontFamily="宋体" FontSize="17"  Height="34" HorizontalAlignment="Left" Margin="271,632,0,0" Name="label8" VerticalAlignment="Top" />
+        <TextBox BorderBrush="Black" BorderThickness="0,0,0,1" Height="23" HorizontalAlignment="Left" IsReadOnly="False" Margin="334,638,0,439" Name="textBox2" Width="50" />
+        <Label Content="年龄：" FontFamily="宋体" FontSize="17"  Height="34" HorizontalAlignment="Left" Margin="393,632,0,0" Name="label9" VerticalAlignment="Top" />
+        <TextBox BorderBrush="Black" BorderThickness="0,0,0,1" Height="23" HorizontalAlignment="Left" IsReadOnly="False" Margin="456,638,0,439" Name="textBox3" Width="50" />
+        <Label Content="联系电话：" FontFamily="宋体" FontSize="17"  Height="34" HorizontalAlignment="Left" Margin="513,632,0,0" Name="label90" VerticalAlignment="Top" Width="87" />
+        <TextBox BorderBrush="Black" BorderThickness="0,0,0,1" Height="23" HorizontalAlignment="Left" IsReadOnly="False" Margin="604,638,0,439" Name="textBox30" Width="85" />
+
+        <Label Content="有效证件号码：" FontFamily="宋体" FontSize="17"  Height="34" HorizontalAlignment="Left" Margin="85,686,0,0" Name="label10" VerticalAlignment="Top" />
+        <TextBox BorderBrush="Black" BorderThickness="0,0,0,1" Height="23" HorizontalAlignment="Left" IsReadOnly="False" Margin="217,686,0,391" Name="textBox4" Width="210" />
+        <Label Content="与患者关系：" FontFamily="宋体" FontSize="17"  Height="34" HorizontalAlignment="Left" Margin="435,686,0,0" Name="label11" VerticalAlignment="Top" Width="104" />
+        <TextBox BorderBrush="Black" BorderThickness="0,0,0,1" Height="23" HorizontalAlignment="Left" IsReadOnly="False" Margin="541,686,0,391" Name="textBox5" Width="150" />
+        <Label Content="        年       月        日" FontFamily="宋体" FontSize="17"  Height="34" HorizontalAlignment="Left" Margin="410,824,0,0" Name="label12" VerticalAlignment="Top" />
+        <Label Content="住院号：" FontFamily="宋体" FontSize="17"  Height="27" HorizontalAlignment="Left" Margin="341,238,0,0" Name="label13" VerticalAlignment="Top" Width="74" />
+        <TextBox BorderBrush="Black" BorderThickness="0,0,0,1" FontFamily="宋体" FontSize="17"  Height="23" HorizontalAlignment="Left" IsReadOnly="False" Margin="414,244,0,0" Name="txtAdmissionNumber" VerticalAlignment="Top" Width="174" />
+    </Grid>
+</UserControl>

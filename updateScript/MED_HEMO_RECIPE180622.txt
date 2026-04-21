@@ -1,0 +1,39 @@
+-- Add/modify columns 
+alter table MED_HEMO_RECIPE add focus_level VARCHAR2(50);
+alter table MED_HEMO_RECIPE add senses VARCHAR2(50);
+alter table MED_HEMO_RECIPE add allergic VARCHAR2(50);
+-- Add comments to the columns 
+comment on column MED_HEMO_RECIPE.focus_level
+  is '--病情';
+comment on column MED_HEMO_RECIPE.senses
+  is '神志';
+comment on column MED_HEMO_RECIPE.allergic
+  is '过敏史';
+
+
+-- ADD/MODIFY COLUMNS 
+ALTER TABLE MED_HEMO_RECIPE ADD BEFORE_TEMPERATURE VARCHAR2(50);
+ALTER TABLE MED_HEMO_RECIPE ADD BR VARCHAR2(50);
+-- ADD COMMENTS TO THE COLUMNS 
+COMMENT ON COLUMN MED_HEMO_RECIPE.BEFORE_TEMPERATURE
+  IS '体温';
+COMMENT ON COLUMN MED_HEMO_RECIPE.BR
+  IS '呼吸';
+
+
+
+-- Drop columns 
+alter table MED_CURE_MAIN drop column bt;
+alter table MED_CURE_MAIN drop column bp;
+alter table MED_CURE_MAIN drop column afterbt;
+alter table MED_CURE_MAIN drop column afterbp;
+
+
+-- ADD/MODIFY COLUMNS 
+ALTER TABLE MED_CURE_DRUG ADD DISPENSINGNURSE VARCHAR2(30);
+ALTER TABLE MED_CURE_DRUG ADD CHECKNURSE VARCHAR2(30);
+-- ADD COMMENTS TO THE COLUMNS 
+COMMENT ON COLUMN MED_CURE_DRUG.DISPENSINGNURSE
+  IS '摆药护士';
+COMMENT ON COLUMN MED_CURE_DRUG.CHECKNURSE
+  IS '核对护士';

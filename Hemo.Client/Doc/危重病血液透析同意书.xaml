@@ -1,0 +1,34 @@
+﻿<UserControl x:Class="Hemo.Client.Doc.危重病血液透析同意书"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="1000" d:DesignWidth="816">
+    <Grid>
+        <Label Content="  危重病人行血液净化治疗同意书" FontFamily="宋体" FontSize="22"  Height="40" HorizontalAlignment="Left" HorizontalContentAlignment="Center" Margin="142,0,0,900" Name="label1" VerticalAlignment="Bottom" VerticalContentAlignment="Center" Width="522" FontStyle="Normal" />
+        <TextBlock FontFamily="宋体" FontSize="17"  Height="221" HorizontalAlignment="Left" LineHeight="35" Margin="63,164,0,0" Name="textBlock1" Text="根据病史及目前临床症状、体征或/和肾功能指标可诊断为：
+1、糖尿病肾病 慢性肾功能不全（尿毒症期）；
+2、肾性高血压；
+3、高钾血症。                  
+现患者病情重，透析治疗过程中可能会出现生命危险，会有死亡可能。其严重后果已经向病人家属及保姆交代，家属及保姆表示理解，请签字为证：
+
+
+" TextWrapping="Wrap" VerticalAlignment="Top" Width="694" />
+        <Label Content="" FontFamily="宋体" FontSize="22" FontStyle="Normal"  Height="42" HorizontalAlignment="Left" HorizontalContentAlignment="Center" Margin="238,16,0,0" Name="lblHospital" VerticalAlignment="Top" VerticalContentAlignment="Center" Width="358" />
+        <Label Content="姓名：" FontFamily="宋体" FontSize="17"  Height="27" HorizontalAlignment="Left" Margin="64,110,0,0" Name="label34" VerticalAlignment="Top" Width="53" />
+        <TextBox BorderBrush="Black" BorderThickness="0,0,0,1" FontFamily="宋体" FontSize="17"  Height="23" HorizontalAlignment="Left" IsReadOnly="False" Margin="117,114,0,0" Name="txtName" VerticalAlignment="Top" Width="99" />
+        <Label Content="性别：" FontFamily="宋体" FontSize="17"  Height="28" HorizontalAlignment="Left" Margin="222,110,0,0" Name="label6" VerticalAlignment="Top" Width="69" />
+        <TextBox BorderBrush="Black" BorderThickness="0,0,0,1" FontFamily="宋体" FontSize="17"  Height="23" HorizontalAlignment="Right" IsReadOnly="False" Margin="0,114,422,0" Name="txtSex" VerticalAlignment="Top" Width="99" />
+        <Label Content="年龄：" FontFamily="宋体" FontSize="17"  Height="29" HorizontalAlignment="Left" Margin="432,109,0,0" Name="label31" VerticalAlignment="Top" Width="50" />
+        <TextBox BorderBrush="Black" BorderThickness="0,0,0,1" DataContext="{Binding}" FontFamily="宋体" FontSize="17"  Height="23" HorizontalAlignment="Right" IsReadOnly="False" Margin="0,115,238,0" Name="txtAge" VerticalAlignment="Top" Width="92" />
+        <Label Content="医生：" FontFamily="宋体" FontSize="17"  Height="34" HorizontalAlignment="Left" Margin="542,536,0,0" Name="label7" VerticalAlignment="Top" />
+        <TextBox BorderBrush="Black" BorderThickness="0,0,0,1" Height="23" HorizontalAlignment="Left" IsReadOnly="False" Margin="604,536,0,441" Name="textBox4" Width="179" />
+        <Label Content="与患者关系：" FontFamily="宋体" FontSize="17"  Height="34" HorizontalAlignment="Left" Margin="492,476,0,0" Name="label11" VerticalAlignment="Top" Width="104" />
+        <TextBox BorderBrush="Black" BorderThickness="0,0,0,1" Height="23" HorizontalAlignment="Left" IsReadOnly="False" Margin="604,476,0,501" Name="textBox5" Width="179" />
+        <Label Content="患者本人或家属" FontFamily="宋体" FontSize="17"  Height="34" HorizontalAlignment="Left" Margin="222,476,0,0" Name="label3" VerticalAlignment="Top" />
+        <TextBox BorderBrush="Black" BorderThickness="0,0,0,1" Height="23" HorizontalAlignment="Left" IsReadOnly="False" Margin="357,479,0,498" Name="textBox1" Width="128" />
+        <Label Content="" FontFamily="宋体" FontSize="17"  Height="34" HorizontalAlignment="Left" Margin="542,588,0,0" Name="lblHosptial1" VerticalAlignment="Top" />
+        <Label Content="        年       月        日" FontFamily="宋体" FontSize="17"  Height="34" HorizontalAlignment="Left" Margin="470,631,0,0" Name="label12" VerticalAlignment="Top" />
+    </Grid>
+</UserControl>

@@ -1,0 +1,268 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="MaterialModel" targetNamespace="http://tempuri.org/MaterialModel.xsd" xmlns:mstns="http://tempuri.org/MaterialModel.xsd" xmlns="http://tempuri.org/MaterialModel.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="1" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="ConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="ConnectionString (Settings)" PropertyReference="ApplicationSettings.Hemo.Model.Properties.Settings.GlobalReference.Default.ConnectionString" Provider="System.Data.OracleClient" />
+          <Connection ConnectionStringObject="Data Source=hemo;Persist Security Info=True;User ID=hemo;Password=hemo;Unicode=True" IsAppSettingsProperty="false" Modifier="Assembly" Name="HEMO_SERVER.HEMO" Provider="System.Data.OracleClient" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="MaterialModel" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="MaterialModel" msprop:Generator_UserDSName="MaterialModel">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="MED_MATERIAL_MASTER" msprop:Generator_TableClassName="MED_MATERIAL_MASTERDataTable" msprop:Generator_TableVarName="tableMED_MATERIAL_MASTER" msprop:Generator_RowChangedName="MED_MATERIAL_MASTERRowChanged" msprop:Generator_TablePropName="MED_MATERIAL_MASTER" msprop:Generator_RowDeletingName="MED_MATERIAL_MASTERRowDeleting" msprop:Generator_RowChangingName="MED_MATERIAL_MASTERRowChanging" msprop:Generator_RowEvHandlerName="MED_MATERIAL_MASTERRowChangeEventHandler" msprop:Generator_RowDeletedName="MED_MATERIAL_MASTERRowDeleted" msprop:Generator_RowClassName="MED_MATERIAL_MASTERRow" msprop:Generator_UserTableName="MED_MATERIAL_MASTER" msprop:Generator_RowEvArgName="MED_MATERIAL_MASTERRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="MATERIAL_ID" msprop:Generator_ColumnVarNameInTable="columnMATERIAL_ID" msprop:Generator_ColumnPropNameInRow="MATERIAL_ID" msprop:Generator_ColumnPropNameInTable="MATERIAL_IDColumn" msprop:Generator_UserColumnName="MATERIAL_ID" type="xs:string" />
+              <xs:element name="MATERIAL_NAME" msprop:Generator_ColumnVarNameInTable="columnMATERIAL_NAME" msprop:Generator_ColumnPropNameInRow="MATERIAL_NAME" msprop:Generator_ColumnPropNameInTable="MATERIAL_NAMEColumn" msprop:Generator_UserColumnName="MATERIAL_NAME" type="xs:string" minOccurs="0" />
+              <xs:element name="MATERIAL_SPEC" msprop:Generator_ColumnVarNameInTable="columnMATERIAL_SPEC" msprop:Generator_ColumnPropNameInRow="MATERIAL_SPEC" msprop:Generator_ColumnPropNameInTable="MATERIAL_SPECColumn" msprop:Generator_UserColumnName="MATERIAL_SPEC" type="xs:string" minOccurs="0" />
+              <xs:element name="FRIM_NAME" msprop:Generator_ColumnVarNameInTable="columnFRIM_NAME" msprop:Generator_ColumnPropNameInRow="FRIM_NAME" msprop:Generator_ColumnPropNameInTable="FRIM_NAMEColumn" msprop:Generator_UserColumnName="FRIM_NAME" type="xs:string" minOccurs="0" />
+              <xs:element name="SUPPLIER" msprop:Generator_ColumnVarNameInTable="columnSUPPLIER" msprop:Generator_ColumnPropNameInRow="SUPPLIER" msprop:Generator_ColumnPropNameInTable="SUPPLIERColumn" msprop:Generator_UserColumnName="SUPPLIER" type="xs:string" minOccurs="0" />
+              <xs:element name="BATCH_NUMBER" msprop:Generator_ColumnVarNameInTable="columnBATCH_NUMBER" msprop:Generator_ColumnPropNameInRow="BATCH_NUMBER" msprop:Generator_ColumnPropNameInTable="BATCH_NUMBERColumn" msprop:Generator_UserColumnName="BATCH_NUMBER" type="xs:string" minOccurs="0" />
+              <xs:element name="VALID_DATE" msprop:Generator_ColumnVarNameInTable="columnVALID_DATE" msprop:Generator_ColumnPropNameInRow="VALID_DATE" msprop:Generator_ColumnPropNameInTable="VALID_DATEColumn" msprop:Generator_UserColumnName="VALID_DATE" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="MATERIAL_NUMBER" msprop:Generator_ColumnVarNameInTable="columnMATERIAL_NUMBER" msprop:Generator_ColumnPropNameInRow="MATERIAL_NUMBER" msprop:Generator_ColumnPropNameInTable="MATERIAL_NUMBERColumn" msprop:Generator_UserColumnName="MATERIAL_NUMBER" type="xs:decimal" minOccurs="0" />
+              <xs:element name="UNIT" msprop:Generator_ColumnVarNameInTable="columnUNIT" msprop:Generator_ColumnPropNameInRow="UNIT" msprop:Generator_ColumnPropNameInTable="UNITColumn" msprop:Generator_UserColumnName="UNIT" type="xs:string" minOccurs="0" />
+              <xs:element name="SYSTEM_BARCODE" msprop:Generator_ColumnVarNameInTable="columnSYSTEM_BARCODE" msprop:Generator_ColumnPropNameInRow="SYSTEM_BARCODE" msprop:Generator_ColumnPropNameInTable="SYSTEM_BARCODEColumn" msprop:Generator_UserColumnName="SYSTEM_BARCODE" type="xs:string" minOccurs="0" />
+              <xs:element name="PRICE" msprop:Generator_ColumnVarNameInTable="columnPRICE" msprop:Generator_ColumnPropNameInRow="PRICE" msprop:Generator_ColumnPropNameInTable="PRICEColumn" msprop:Generator_UserColumnName="PRICE" type="xs:decimal" minOccurs="0" />
+              <xs:element name="PACK_BARCODE" msprop:Generator_ColumnVarNameInTable="columnPACK_BARCODE" msprop:Generator_ColumnPropNameInRow="PACK_BARCODE" msprop:Generator_ColumnPropNameInTable="PACK_BARCODEColumn" msprop:Generator_UserColumnName="PACK_BARCODE" type="xs:string" minOccurs="0" />
+              <xs:element name="MEMO" msprop:Generator_ColumnVarNameInTable="columnMEMO" msprop:Generator_ColumnPropNameInRow="MEMO" msprop:Generator_ColumnPropNameInTable="MEMOColumn" msprop:Generator_UserColumnName="MEMO" type="xs:string" minOccurs="0" />
+              <xs:element name="CREATE_DATE" msprop:Generator_ColumnVarNameInTable="columnCREATE_DATE" msprop:Generator_ColumnPropNameInRow="CREATE_DATE" msprop:Generator_ColumnPropNameInTable="CREATE_DATEColumn" msprop:Generator_UserColumnName="CREATE_DATE" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="MATERIAL_PINYIN" msprop:Generator_ColumnVarNameInTable="columnMATERIAL_PINYIN" msprop:Generator_ColumnPropNameInRow="MATERIAL_PINYIN" msprop:Generator_ColumnPropNameInTable="MATERIAL_PINYINColumn" msprop:Generator_UserColumnName="MATERIAL_PINYIN" type="xs:string" minOccurs="0" />
+              <xs:element name="FIRM_NAME" msprop:Generator_ColumnVarNameInTable="columnFIRM_NAME" msprop:Generator_ColumnPropNameInRow="FIRM_NAME" msprop:Generator_ColumnPropNameInTable="FIRM_NAMEColumn" msprop:Generator_UserColumnName="FIRM_NAME" type="xs:string" minOccurs="0" />
+              <xs:element name="MATERIAL_TYPE" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="MATERIAL_TYPE" msprop:Generator_ColumnVarNameInTable="columnMATERIAL_TYPE" msprop:Generator_ColumnPropNameInTable="MATERIAL_TYPEColumn" msprop:Generator_UserColumnName="MATERIAL_TYPE" type="xs:string" default="" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="MED_HEMO_MATERIAL" msprop:Generator_TableClassName="MED_HEMO_MATERIALDataTable" msprop:Generator_TableVarName="tableMED_HEMO_MATERIAL" msprop:Generator_RowChangedName="MED_HEMO_MATERIALRowChanged" msprop:Generator_TablePropName="MED_HEMO_MATERIAL" msprop:Generator_RowDeletingName="MED_HEMO_MATERIALRowDeleting" msprop:Generator_RowChangingName="MED_HEMO_MATERIALRowChanging" msprop:Generator_RowEvHandlerName="MED_HEMO_MATERIALRowChangeEventHandler" msprop:Generator_RowDeletedName="MED_HEMO_MATERIALRowDeleted" msprop:Generator_RowClassName="MED_HEMO_MATERIALRow" msprop:Generator_UserTableName="MED_HEMO_MATERIAL" msprop:Generator_RowEvArgName="MED_HEMO_MATERIALRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="USE_MATERIAL_ID" msprop:Generator_ColumnVarNameInTable="columnUSE_MATERIAL_ID" msprop:Generator_ColumnPropNameInRow="USE_MATERIAL_ID" msprop:Generator_ColumnPropNameInTable="USE_MATERIAL_IDColumn" msprop:Generator_UserColumnName="USE_MATERIAL_ID">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="HEMODIALYSIS_ID" msprop:Generator_ColumnVarNameInTable="columnHEMODIALYSIS_ID" msprop:Generator_ColumnPropNameInRow="HEMODIALYSIS_ID" msprop:Generator_ColumnPropNameInTable="HEMODIALYSIS_IDColumn" msprop:Generator_UserColumnName="HEMODIALYSIS_ID" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RECIPE_ID" msprop:Generator_ColumnVarNameInTable="columnRECIPE_ID" msprop:Generator_ColumnPropNameInRow="RECIPE_ID" msprop:Generator_ColumnPropNameInTable="RECIPE_IDColumn" msprop:Generator_UserColumnName="RECIPE_ID" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MACHINE_TYPE" msprop:Generator_ColumnVarNameInTable="columnMACHINE_TYPE" msprop:Generator_ColumnPropNameInRow="MACHINE_TYPE" msprop:Generator_ColumnPropNameInTable="MACHINE_TYPEColumn" msprop:Generator_UserColumnName="MACHINE_TYPE" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BLOOD_FILTER" msprop:Generator_ColumnVarNameInTable="columnBLOOD_FILTER" msprop:Generator_ColumnPropNameInRow="BLOOD_FILTER" msprop:Generator_ColumnPropNameInTable="BLOOD_FILTERColumn" msprop:Generator_UserColumnName="BLOOD_FILTER" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BLOOD_FILTER_COUNT" msprop:Generator_ColumnVarNameInTable="columnBLOOD_FILTER_COUNT" msprop:Generator_ColumnPropNameInRow="BLOOD_FILTER_COUNT" msprop:Generator_ColumnPropNameInTable="BLOOD_FILTER_COUNTColumn" msprop:Generator_UserColumnName="BLOOD_FILTER_COUNT" type="xs:decimal" minOccurs="0" />
+              <xs:element name="PUNCTURE_NEEDLE" msprop:Generator_ColumnVarNameInTable="columnPUNCTURE_NEEDLE" msprop:Generator_ColumnPropNameInRow="PUNCTURE_NEEDLE" msprop:Generator_ColumnPropNameInTable="PUNCTURE_NEEDLEColumn" msprop:Generator_UserColumnName="PUNCTURE_NEEDLE" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PUNCTURE_NEEDLE_COUNT" msprop:Generator_ColumnVarNameInTable="columnPUNCTURE_NEEDLE_COUNT" msprop:Generator_ColumnPropNameInRow="PUNCTURE_NEEDLE_COUNT" msprop:Generator_ColumnPropNameInTable="PUNCTURE_NEEDLE_COUNTColumn" msprop:Generator_UserColumnName="PUNCTURE_NEEDLE_COUNT" type="xs:decimal" minOccurs="0" />
+              <xs:element name="A_POWDER" msprop:Generator_ColumnVarNameInTable="columnA_POWDER" msprop:Generator_ColumnPropNameInRow="A_POWDER" msprop:Generator_ColumnPropNameInTable="A_POWDERColumn" msprop:Generator_UserColumnName="A_POWDER" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="A_POWDER_COUNT" msprop:Generator_ColumnVarNameInTable="columnA_POWDER_COUNT" msprop:Generator_ColumnPropNameInRow="A_POWDER_COUNT" msprop:Generator_ColumnPropNameInTable="A_POWDER_COUNTColumn" msprop:Generator_UserColumnName="A_POWDER_COUNT" type="xs:decimal" minOccurs="0" />
+              <xs:element name="B_POWDER" msprop:Generator_ColumnVarNameInTable="columnB_POWDER" msprop:Generator_ColumnPropNameInRow="B_POWDER" msprop:Generator_ColumnPropNameInTable="B_POWDERColumn" msprop:Generator_UserColumnName="B_POWDER" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="B_POWDER_COUNT" msprop:Generator_ColumnVarNameInTable="columnB_POWDER_COUNT" msprop:Generator_ColumnPropNameInRow="B_POWDER_COUNT" msprop:Generator_ColumnPropNameInTable="B_POWDER_COUNTColumn" msprop:Generator_UserColumnName="B_POWDER_COUNT" type="xs:decimal" minOccurs="0" />
+              <xs:element name="INJECTOR_2ML" msprop:Generator_ColumnVarNameInTable="columnINJECTOR_2ML" msprop:Generator_ColumnPropNameInRow="INJECTOR_2ML" msprop:Generator_ColumnPropNameInTable="INJECTOR_2MLColumn" msprop:Generator_UserColumnName="INJECTOR_2ML" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="INJECTOR_2ML_COUNT" msprop:Generator_ColumnVarNameInTable="columnINJECTOR_2ML_COUNT" msprop:Generator_ColumnPropNameInRow="INJECTOR_2ML_COUNT" msprop:Generator_ColumnPropNameInTable="INJECTOR_2ML_COUNTColumn" msprop:Generator_UserColumnName="INJECTOR_2ML_COUNT" type="xs:decimal" minOccurs="0" />
+              <xs:element name="INJECTOR_20ML" msprop:Generator_ColumnVarNameInTable="columnINJECTOR_20ML" msprop:Generator_ColumnPropNameInRow="INJECTOR_20ML" msprop:Generator_ColumnPropNameInTable="INJECTOR_20MLColumn" msprop:Generator_UserColumnName="INJECTOR_20ML" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="INJECTOR_20ML_COUNT" msprop:Generator_ColumnVarNameInTable="columnINJECTOR_20ML_COUNT" msprop:Generator_ColumnPropNameInRow="INJECTOR_20ML_COUNT" msprop:Generator_ColumnPropNameInTable="INJECTOR_20ML_COUNTColumn" msprop:Generator_UserColumnName="INJECTOR_20ML_COUNT" type="xs:decimal" minOccurs="0" />
+              <xs:element name="CLOROX" msprop:Generator_ColumnVarNameInTable="columnCLOROX" msprop:Generator_ColumnPropNameInRow="CLOROX" msprop:Generator_ColumnPropNameInTable="CLOROXColumn" msprop:Generator_UserColumnName="CLOROX" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CLOROX_COUNT" msprop:Generator_ColumnVarNameInTable="columnCLOROX_COUNT" msprop:Generator_ColumnPropNameInRow="CLOROX_COUNT" msprop:Generator_ColumnPropNameInTable="CLOROX_COUNTColumn" msprop:Generator_UserColumnName="CLOROX_COUNT" type="xs:decimal" minOccurs="0" />
+              <xs:element name="CITRIC_ACID" msprop:Generator_ColumnVarNameInTable="columnCITRIC_ACID" msprop:Generator_ColumnPropNameInRow="CITRIC_ACID" msprop:Generator_ColumnPropNameInTable="CITRIC_ACIDColumn" msprop:Generator_UserColumnName="CITRIC_ACID" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CITRIC_ACID_COUNT" msprop:Generator_ColumnVarNameInTable="columnCITRIC_ACID_COUNT" msprop:Generator_ColumnPropNameInRow="CITRIC_ACID_COUNT" msprop:Generator_ColumnPropNameInTable="CITRIC_ACID_COUNTColumn" msprop:Generator_UserColumnName="CITRIC_ACID_COUNT" type="xs:decimal" minOccurs="0" />
+              <xs:element name="HEPARIN_SODIUM" msprop:Generator_ColumnVarNameInTable="columnHEPARIN_SODIUM" msprop:Generator_ColumnPropNameInRow="HEPARIN_SODIUM" msprop:Generator_ColumnPropNameInTable="HEPARIN_SODIUMColumn" msprop:Generator_UserColumnName="HEPARIN_SODIUM" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="HEPARIN_SODIUM_COUNT" msprop:Generator_ColumnVarNameInTable="columnHEPARIN_SODIUM_COUNT" msprop:Generator_ColumnPropNameInRow="HEPARIN_SODIUM_COUNT" msprop:Generator_ColumnPropNameInTable="HEPARIN_SODIUM_COUNTColumn" msprop:Generator_UserColumnName="HEPARIN_SODIUM_COUNT" type="xs:decimal" minOccurs="0" />
+              <xs:element name="SODIUM_CHLORIDE" msprop:Generator_ColumnVarNameInTable="columnSODIUM_CHLORIDE" msprop:Generator_ColumnPropNameInRow="SODIUM_CHLORIDE" msprop:Generator_ColumnPropNameInTable="SODIUM_CHLORIDEColumn" msprop:Generator_UserColumnName="SODIUM_CHLORIDE" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SODIUM_CHLORIDE_COUNT" msprop:Generator_ColumnVarNameInTable="columnSODIUM_CHLORIDE_COUNT" msprop:Generator_ColumnPropNameInRow="SODIUM_CHLORIDE_COUNT" msprop:Generator_ColumnPropNameInTable="SODIUM_CHLORIDE_COUNTColumn" msprop:Generator_UserColumnName="SODIUM_CHLORIDE_COUNT" type="xs:decimal" minOccurs="0" />
+              <xs:element name="RUBBER" msprop:Generator_ColumnVarNameInTable="columnRUBBER" msprop:Generator_ColumnPropNameInRow="RUBBER" msprop:Generator_ColumnPropNameInTable="RUBBERColumn" msprop:Generator_UserColumnName="RUBBER" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RUBBER_COUNT" msprop:Generator_ColumnVarNameInTable="columnRUBBER_COUNT" msprop:Generator_ColumnPropNameInRow="RUBBER_COUNT" msprop:Generator_ColumnPropNameInTable="RUBBER_COUNTColumn" msprop:Generator_UserColumnName="RUBBER_COUNT" type="xs:decimal" minOccurs="0" />
+              <xs:element name="GAUZE" msprop:Generator_ColumnVarNameInTable="columnGAUZE" msprop:Generator_ColumnPropNameInRow="GAUZE" msprop:Generator_ColumnPropNameInTable="GAUZEColumn" msprop:Generator_UserColumnName="GAUZE" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="GAUZE_COUNT" msprop:Generator_ColumnVarNameInTable="columnGAUZE_COUNT" msprop:Generator_ColumnPropNameInRow="GAUZE_COUNT" msprop:Generator_ColumnPropNameInTable="GAUZE_COUNTColumn" msprop:Generator_UserColumnName="GAUZE_COUNT" type="xs:decimal" minOccurs="0" />
+              <xs:element name="TAMPON" msprop:Generator_ColumnVarNameInTable="columnTAMPON" msprop:Generator_ColumnPropNameInRow="TAMPON" msprop:Generator_ColumnPropNameInTable="TAMPONColumn" msprop:Generator_UserColumnName="TAMPON" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TAMPON_COUNT" msprop:Generator_ColumnVarNameInTable="columnTAMPON_COUNT" msprop:Generator_ColumnPropNameInRow="TAMPON_COUNT" msprop:Generator_ColumnPropNameInTable="TAMPON_COUNTColumn" msprop:Generator_UserColumnName="TAMPON_COUNT" type="xs:decimal" minOccurs="0" />
+              <xs:element name="DRAW_SHEET" msprop:Generator_ColumnVarNameInTable="columnDRAW_SHEET" msprop:Generator_ColumnPropNameInRow="DRAW_SHEET" msprop:Generator_ColumnPropNameInTable="DRAW_SHEETColumn" msprop:Generator_UserColumnName="DRAW_SHEET" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DRAW_SHEET_COUNT" msprop:Generator_ColumnVarNameInTable="columnDRAW_SHEET_COUNT" msprop:Generator_ColumnPropNameInRow="DRAW_SHEET_COUNT" msprop:Generator_ColumnPropNameInTable="DRAW_SHEET_COUNTColumn" msprop:Generator_UserColumnName="DRAW_SHEET_COUNT" type="xs:decimal" minOccurs="0" />
+              <xs:element name="PROTECTIVE_PLASTER" msprop:Generator_ColumnVarNameInTable="columnPROTECTIVE_PLASTER" msprop:Generator_ColumnPropNameInRow="PROTECTIVE_PLASTER" msprop:Generator_ColumnPropNameInTable="PROTECTIVE_PLASTERColumn" msprop:Generator_UserColumnName="PROTECTIVE_PLASTER" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PROTECTIVE_COUNT" msprop:Generator_ColumnVarNameInTable="columnPROTECTIVE_COUNT" msprop:Generator_ColumnPropNameInRow="PROTECTIVE_COUNT" msprop:Generator_ColumnPropNameInTable="PROTECTIVE_COUNTColumn" msprop:Generator_UserColumnName="PROTECTIVE_COUNT" type="xs:decimal" minOccurs="0" />
+              <xs:element name="CREATE_DATE" msprop:Generator_ColumnVarNameInTable="columnCREATE_DATE" msprop:Generator_ColumnPropNameInRow="CREATE_DATE" msprop:Generator_ColumnPropNameInTable="CREATE_DATEColumn" msprop:Generator_UserColumnName="CREATE_DATE" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="USER_ID" msprop:Generator_ColumnVarNameInTable="columnUSER_ID" msprop:Generator_ColumnPropNameInRow="USER_ID" msprop:Generator_ColumnPropNameInTable="USER_IDColumn" msprop:Generator_UserColumnName="USER_ID" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="COTTON_BUD" msprop:Generator_ColumnVarNameInTable="columnCOTTON_BUD" msprop:Generator_ColumnPropNameInRow="COTTON_BUD" msprop:Generator_ColumnPropNameInTable="COTTON_BUDColumn" msprop:Generator_UserColumnName="COTTON_BUD" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="COTTON_BUD_COUNT" msprop:Generator_ColumnVarNameInTable="columnCOTTON_BUD_COUNT" msprop:Generator_ColumnPropNameInRow="COTTON_BUD_COUNT" msprop:Generator_ColumnPropNameInTable="COTTON_BUD_COUNTColumn" msprop:Generator_UserColumnName="COTTON_BUD_COUNT" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="MED_HEMO_MATERIAL_REPORT" msprop:Generator_TableClassName="MED_HEMO_MATERIAL_REPORTDataTable" msprop:Generator_TableVarName="tableMED_HEMO_MATERIAL_REPORT" msprop:Generator_RowChangedName="MED_HEMO_MATERIAL_REPORTRowChanged" msprop:Generator_TablePropName="MED_HEMO_MATERIAL_REPORT" msprop:Generator_RowDeletingName="MED_HEMO_MATERIAL_REPORTRowDeleting" msprop:Generator_RowChangingName="MED_HEMO_MATERIAL_REPORTRowChanging" msprop:Generator_RowEvHandlerName="MED_HEMO_MATERIAL_REPORTRowChangeEventHandler" msprop:Generator_RowDeletedName="MED_HEMO_MATERIAL_REPORTRowDeleted" msprop:Generator_RowClassName="MED_HEMO_MATERIAL_REPORTRow" msprop:Generator_UserTableName="MED_HEMO_MATERIAL_REPORT" msprop:Generator_RowEvArgName="MED_HEMO_MATERIAL_REPORTRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CAPTION" msprop:Generator_ColumnVarNameInTable="columnCAPTION" msprop:Generator_ColumnPropNameInRow="CAPTION" msprop:Generator_ColumnPropNameInTable="CAPTIONColumn" msprop:Generator_UserColumnName="CAPTION" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TYPE_NAME" msprop:Generator_ColumnVarNameInTable="columnTYPE_NAME" msprop:Generator_ColumnPropNameInRow="TYPE_NAME" msprop:Generator_ColumnPropNameInTable="TYPE_NAMEColumn" msprop:Generator_UserColumnName="TYPE_NAME" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ALL_COUNT" msprop:Generator_ColumnVarNameInTable="columnALL_COUNT" msprop:Generator_ColumnPropNameInRow="ALL_COUNT" msprop:Generator_ColumnPropNameInTable="ALL_COUNTColumn" msprop:Generator_UserColumnName="ALL_COUNT" type="xs:decimal" minOccurs="0" />
+              <xs:element name="USE_MATERIAL_ID" msprop:Generator_ColumnVarNameInTable="columnUSE_MATERIAL_ID" msprop:Generator_ColumnPropNameInRow="USE_MATERIAL_ID" msprop:Generator_ColumnPropNameInTable="USE_MATERIAL_IDColumn" msprop:Generator_UserColumnName="USE_MATERIAL_ID" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="HEMODIALYSIS_ID" msprop:Generator_ColumnVarNameInTable="columnHEMODIALYSIS_ID" msprop:Generator_ColumnPropNameInRow="HEMODIALYSIS_ID" msprop:Generator_ColumnPropNameInTable="HEMODIALYSIS_IDColumn" msprop:Generator_UserColumnName="HEMODIALYSIS_ID" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RECIPE_ID" msprop:Generator_ColumnVarNameInTable="columnRECIPE_ID" msprop:Generator_ColumnPropNameInRow="RECIPE_ID" msprop:Generator_ColumnPropNameInTable="RECIPE_IDColumn" msprop:Generator_UserColumnName="RECIPE_ID" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:MED_MATERIAL_MASTER" />
+      <xs:field xpath="mstns:MATERIAL_ID" />
+    </xs:unique>
+    <xs:unique name="MED_HEMO_MATERIAL_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:MED_HEMO_MATERIAL" />
+      <xs:field xpath="mstns:USE_MATERIAL_ID" />
+    </xs:unique>
+    <xs:unique name="MED_HEMO_MATERIAL_REPORT_Constraint1" msdata:ConstraintName="Constraint1">
+      <xs:selector xpath=".//mstns:MED_HEMO_MATERIAL_REPORT" />
+      <xs:field xpath="mstns:USE_MATERIAL_ID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

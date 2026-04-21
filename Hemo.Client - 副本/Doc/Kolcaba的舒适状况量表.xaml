@@ -1,0 +1,207 @@
+﻿<UserControl x:Class="Hemo.Client.Doc.Kolcaba的舒适状况量表"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="1100" d:DesignWidth="816">
+    <Grid>
+        <Label Content="Kolcaba的舒适状况量表" FontFamily="宋体" FontSize="22" FontStyle="Normal" Height="32" HorizontalAlignment="Left" HorizontalContentAlignment="Center" Margin="146,12,0,0" Name="label1" VerticalAlignment="Top" VerticalContentAlignment="Center" Width="446" />
+        <TextBox BorderBrush="Black" BorderThickness="0,0,0,1" FontSize="13" Height="8" HorizontalAlignment="Right" IsReadOnly="False" Margin="0,83,56,0" Name="textBox3" VerticalAlignment="Top" Width="740" />
+        <CheckBox Content="" Height="19" HorizontalAlignment="Left" Margin="398,135,0,0" Name="checkBox1" VerticalAlignment="Top" />
+        <Label Content="项            目" FontSize="15" Height="29" HorizontalAlignment="Left" Margin="126,95,0,0" Name="label8" VerticalAlignment="Top" Width="100" />
+        <Label Content="非常不同意" FontSize="15" Height="29" HorizontalAlignment="Left" Margin="361,95,0,0" Name="label2" VerticalAlignment="Top" Width="100" />
+        <Label Content="不同意" FontSize="15" Height="29" HorizontalAlignment="Left" Margin="477,95,0,0" Name="label3" VerticalAlignment="Top" Width="100" />
+        <Label Content="同意" FontSize="15" Height="29" HorizontalAlignment="Right" Margin="0,95,133,0" Name="label4" VerticalAlignment="Top" Width="100" />
+        <Label Content="非常同意" FontSize="15" Height="29" HorizontalAlignment="Left" Margin="659,95,0,0" Name="label5" VerticalAlignment="Top" Width="100" />
+        <TextBox BorderBrush="Black" BorderThickness="0,0,0,1" FontSize="13" Height="8" HorizontalAlignment="Right" IsReadOnly="False" Margin="0,120,56,0" Name="textBox1" VerticalAlignment="Top" Width="740" />
+        <Label Content="1.当我需要帮助时，我可以找到可靠的人" FontSize="15" Height="29" HorizontalAlignment="Left" Margin="54,125,0,0" Name="label6" VerticalAlignment="Top" Width="284" />
+        <CheckBox Content="" Height="19" HorizontalAlignment="Left" Margin="502,135,0,0" Name="checkBox2" VerticalAlignment="Top" />
+        <CheckBox Content="" Height="19" HorizontalAlignment="Left" Margin="593,135,0,0" Name="checkBox3" VerticalAlignment="Top" />
+        <CheckBox Content="" Height="19" HorizontalAlignment="Left" Margin="698,135,0,0" Name="checkBox4" VerticalAlignment="Top" />
+        <TextBox BorderBrush="Black" BorderThickness="0,0,0,1" FontSize="13" Height="1" HorizontalAlignment="Right" IsReadOnly="False" Margin="0,157,56,0" Name="textBox2" VerticalAlignment="Top" Width="740" />
+        <CheckBox Content="" Height="19" HorizontalAlignment="Left" Margin="398,165,0,0" Name="checkBox5" VerticalAlignment="Top" />
+        <Label Content="*2.我不想活动" FontSize="15" Height="29" HorizontalAlignment="Left" Margin="54,155,0,0" Name="label7" VerticalAlignment="Top" Width="284" />
+        <CheckBox Content="" Height="19" HorizontalAlignment="Left" Margin="502,165,0,0" Name="checkBox6" VerticalAlignment="Top" />
+        <CheckBox Content="" Height="19" HorizontalAlignment="Left" Margin="593,165,0,0" Name="checkBox7" VerticalAlignment="Top" />
+        <CheckBox Content="" Height="19" HorizontalAlignment="Left" Margin="698,165,0,0" Name="checkBox8" VerticalAlignment="Top" />
+        <TextBox BorderBrush="Black" BorderThickness="0,0,0,1" FontSize="13" Height="1" HorizontalAlignment="Right" IsReadOnly="False" Margin="0,187,56,0" Name="textBox4" VerticalAlignment="Top" Width="740" />
+        <CheckBox Content="" Height="19" HorizontalAlignment="Left" Margin="398,195,0,0" Name="checkBox9" VerticalAlignment="Top" />
+        <Label Content="*3.我的状况使我很沮丧" FontSize="15" Height="29" HorizontalAlignment="Left" Margin="54,185,0,0" Name="label9" VerticalAlignment="Top" Width="284" />
+        <CheckBox Content="" Height="19" HorizontalAlignment="Left" Margin="502,195,0,0" Name="checkBox10" VerticalAlignment="Top" />
+        <CheckBox Content="" Height="19" HorizontalAlignment="Left" Margin="593,195,0,0" Name="checkBox11" VerticalAlignment="Top" />
+        <CheckBox Content="" Height="19" HorizontalAlignment="Left" Margin="698,195,0,0" Name="checkBox12" VerticalAlignment="Top" />
+        <TextBox BorderBrush="Black" BorderThickness="0,0,0,1" FontSize="13" Height="1" HorizontalAlignment="Right" IsReadOnly="False" Margin="0,217,56,0" Name="textBox5" VerticalAlignment="Top" Width="740" />
+        <CheckBox Content="" Height="19" HorizontalAlignment="Left" Margin="398,225,0,0" Name="checkBox13" VerticalAlignment="Top" />
+        <Label Content="4.我感觉有信心" FontSize="15" Height="29" HorizontalAlignment="Left" Margin="54,215,0,0" Name="label10" VerticalAlignment="Top" Width="284" />
+        <CheckBox Content="" Height="19" HorizontalAlignment="Left" Margin="502,225,0,0" Name="checkBox14" VerticalAlignment="Top" />
+        <CheckBox Content="" Height="19" HorizontalAlignment="Left" Margin="593,225,0,0" Name="checkBox15" VerticalAlignment="Top" />
+        <CheckBox Content="" Height="19" HorizontalAlignment="Left" Margin="698,225,0,0" Name="checkBox16" VerticalAlignment="Top" />
+        <TextBox BorderBrush="Black" BorderThickness="0,0,0,1" FontSize="13" Height="1" HorizontalAlignment="Right" IsReadOnly="False" Margin="0,247,56,0" Name="textBox6" VerticalAlignment="Top" Width="740" />
+        <CheckBox Content="" Height="19" HorizontalAlignment="Left" Margin="398,255,0,0" Name="checkBox17" VerticalAlignment="Top" />
+        <Label Content="5.我现在觉得生命很有价值" FontSize="15" Height="29" HorizontalAlignment="Left" Margin="54,245,0,0" Name="label11" VerticalAlignment="Top" Width="284" />
+        <CheckBox Content="" Height="19" HorizontalAlignment="Left" Margin="502,255,0,0" Name="checkBox18" VerticalAlignment="Top" />
+        <CheckBox Content="" Height="19" HorizontalAlignment="Left" Margin="593,255,0,0" Name="checkBox19" VerticalAlignment="Top" />
+        <CheckBox Content="" Height="19" HorizontalAlignment="Left" Margin="698,255,0,0" Name="checkBox20" VerticalAlignment="Top" />
+        <TextBox BorderBrush="Black" BorderThickness="0,0,0,1" FontSize="13" Height="1" HorizontalAlignment="Right" IsReadOnly="False" Margin="0,277,56,0" Name="textBox7" VerticalAlignment="Top" Width="740" />
+        <CheckBox Content="" Height="19" HorizontalAlignment="Left" Margin="398,285,0,0" Name="checkBox21" VerticalAlignment="Top" />
+        <Label Content="6.知道别人在关心我，我很受鼓舞" FontSize="15" Height="29" HorizontalAlignment="Left" Margin="54,275,0,0" Name="label12" VerticalAlignment="Top" Width="284" />
+        <CheckBox Content="" Height="19" HorizontalAlignment="Left" Margin="502,285,0,0" Name="checkBox22" VerticalAlignment="Top" />
+        <CheckBox Content="" Height="19" HorizontalAlignment="Left" Margin="593,285,0,0" Name="checkBox23" VerticalAlignment="Top" />
+        <CheckBox Content="" Height="19" HorizontalAlignment="Left" Margin="698,285,0,0" Name="checkBox24" VerticalAlignment="Top" />
+        <TextBox BorderBrush="Black" BorderThickness="0,0,0,1" FontSize="13" Height="1" HorizontalAlignment="Right" IsReadOnly="False" Margin="0,307,56,0" Name="textBox8" VerticalAlignment="Top" Width="740" />
+        <CheckBox Content="" Height="19" HorizontalAlignment="Left" Margin="398,315,0,0" Name="checkBox25" VerticalAlignment="Top" />
+        <Label Content="*7.太吵，我不能休息" FontSize="15" Height="29" HorizontalAlignment="Left" Margin="54,305,0,0" Name="label13" VerticalAlignment="Top" Width="284" />
+        <CheckBox Content="" Height="19" HorizontalAlignment="Left" Margin="502,315,0,0" Name="checkBox26" VerticalAlignment="Top" />
+        <CheckBox Content="" Height="19" HorizontalAlignment="Left" Margin="593,315,0,0" Name="checkBox27" VerticalAlignment="Top" />
+        <CheckBox Content="" Height="19" HorizontalAlignment="Left" Margin="698,315,0,0" Name="checkBox28" VerticalAlignment="Top" />
+        <TextBox BorderBrush="Black" BorderThickness="0,0,0,1" FontSize="13" Height="1" HorizontalAlignment="Right" IsReadOnly="False" Margin="0,337,56,0" Name="textBox9" VerticalAlignment="Top" Width="740" />
+        <CheckBox Content="" Height="19" HorizontalAlignment="Left" Margin="398,345,0,0" Name="checkBox29" VerticalAlignment="Top" />
+        <Label Content="*8.没有人能体会我现在的感受" FontSize="15" Height="29" HorizontalAlignment="Left" Margin="54,335,0,0" Name="label14" VerticalAlignment="Top" Width="284" />
+        <CheckBox Content="" Height="19" HorizontalAlignment="Left" Margin="502,345,0,0" Name="checkBox30" VerticalAlignment="Top" />
+        <CheckBox Content="" Height="19" HorizontalAlignment="Left" Margin="593,345,0,0" Name="checkBox31" VerticalAlignment="Top" />
+        <CheckBox Content="" Height="19" HorizontalAlignment="Left" Margin="698,345,0,0" Name="checkBox32" VerticalAlignment="Top" />
+        <TextBox BorderBrush="Black" BorderThickness="0,0,0,1" FontSize="13" Height="1" HorizontalAlignment="Right" IsReadOnly="False" Margin="0,367,56,0" Name="textBox10" VerticalAlignment="Top" Width="740" />
+        <CheckBox Content="" Height="19" HorizontalAlignment="Left" Margin="398,374,0,0" Name="checkBox33" VerticalAlignment="Top" />
+        <Label Content="*9.我疼痛得不能忍受" FontSize="15" Height="29" HorizontalAlignment="Left" Margin="54,364,0,0" Name="label15" VerticalAlignment="Top" Width="284" />
+        <CheckBox Content="" Height="19" HorizontalAlignment="Left" Margin="502,374,0,0" Name="checkBox34" VerticalAlignment="Top" />
+        <CheckBox Content="" Height="19" HorizontalAlignment="Left" Margin="593,374,0,0" Name="checkBox35" VerticalAlignment="Top" />
+        <CheckBox Content="" Height="19" HorizontalAlignment="Left" Margin="698,374,0,0" Name="checkBox36" VerticalAlignment="Top" />
+        <TextBox BorderBrush="Black" BorderThickness="0,0,0,1" FontSize="13" Height="1" HorizontalAlignment="Right" IsReadOnly="False" Margin="0,396,56,0" Name="textBox11" VerticalAlignment="Top" Width="740" />
+        <CheckBox Content="" Height="19" HorizontalAlignment="Left" Margin="398,404,0,0" Name="checkBox37" VerticalAlignment="Top" />
+        <Label Content="*10.没人陪伴时我很不开心" FontSize="15" Height="29" HorizontalAlignment="Left" Margin="54,394,0,0" Name="label16" VerticalAlignment="Top" Width="284" />
+        <CheckBox Content="" Height="19" HorizontalAlignment="Left" Margin="502,404,0,0" Name="checkBox38" VerticalAlignment="Top" />
+        <CheckBox Content="" Height="19" HorizontalAlignment="Left" Margin="593,404,0,0" Name="checkBox39" VerticalAlignment="Top" />
+        <CheckBox Content="" Height="19" HorizontalAlignment="Left" Margin="698,404,0,0" Name="checkBox40" VerticalAlignment="Top" />
+        <TextBox BorderBrush="Black" BorderThickness="0,0,0,1" FontSize="13" Height="1" HorizontalAlignment="Right" IsReadOnly="False" Margin="0,426,56,0" Name="textBox12" VerticalAlignment="Top" Width="740" />
+        <CheckBox Content="" Height="19" HorizontalAlignment="Left" Margin="398,434,0,0" Name="checkBox41" VerticalAlignment="Top" />
+        <Label Content="*11.我不喜欢这里" FontSize="15" Height="29" HorizontalAlignment="Left" Margin="54,424,0,0" Name="label17" VerticalAlignment="Top" Width="284" />
+        <CheckBox Content="" Height="19" HorizontalAlignment="Left" Margin="502,434,0,0" Name="checkBox42" VerticalAlignment="Top" />
+        <CheckBox Content="" Height="19" HorizontalAlignment="Left" Margin="593,434,0,0" Name="checkBox43" VerticalAlignment="Top" />
+        <CheckBox Content="" Height="19" HorizontalAlignment="Left" Margin="698,434,0,0" Name="checkBox44" VerticalAlignment="Top" />
+        <TextBox BorderBrush="Black" BorderThickness="0,0,0,1" FontSize="13" Height="1" HorizontalAlignment="Right" IsReadOnly="False" Margin="0,456,56,0" Name="textBox13" VerticalAlignment="Top" Width="740" />
+        <CheckBox Content="" Height="19" HorizontalAlignment="Left" Margin="398,464,0,0" Name="checkBox45" VerticalAlignment="Top" />
+        <Label Content="*12.我现在有便秘症状" FontSize="15" Height="29" HorizontalAlignment="Left" Margin="54,454,0,0" Name="label18" VerticalAlignment="Top" Width="284" />
+        <CheckBox Content="" Height="19" HorizontalAlignment="Left" Margin="502,464,0,0" Name="checkBox46" VerticalAlignment="Top" />
+        <CheckBox Content="" Height="19" HorizontalAlignment="Left" Margin="593,464,0,0" Name="checkBox47" VerticalAlignment="Top" />
+        <CheckBox Content="" Height="19" HorizontalAlignment="Left" Margin="698,464,0,0" Name="checkBox48" VerticalAlignment="Top" />
+        <TextBox BorderBrush="Black" BorderThickness="0,0,0,1" FontSize="13" Height="1" HorizontalAlignment="Right" IsReadOnly="False" Margin="0,486,56,0" Name="textBox14" VerticalAlignment="Top" Width="740" />
+        <CheckBox Content="" Height="19" HorizontalAlignment="Left" Margin="398,494,0,0" Name="checkBox49" VerticalAlignment="Top" />
+        <Label Content="*13.现在感觉身体不舒服" FontSize="15" Height="29" HorizontalAlignment="Left" Margin="54,484,0,0" Name="label19" VerticalAlignment="Top" Width="284" />
+        <CheckBox Content="" Height="19" HorizontalAlignment="Left" Margin="502,494,0,0" Name="checkBox50" VerticalAlignment="Top" />
+        <CheckBox Content="" Height="19" HorizontalAlignment="Left" Margin="593,494,0,0" Name="checkBox51" VerticalAlignment="Top" />
+        <CheckBox Content="" Height="19" HorizontalAlignment="Left" Margin="698,494,0,0" Name="checkBox52" VerticalAlignment="Top" />
+        <TextBox BorderBrush="Black" BorderThickness="0,0,0,1" FontSize="13" Height="1" HorizontalAlignment="Right" IsReadOnly="False" Margin="0,516,56,0" Name="textBox15" VerticalAlignment="Top" Width="740" />
+        <CheckBox Content="" Height="19" HorizontalAlignment="Left" Margin="398,524,0,0" Name="checkBox53" VerticalAlignment="Top" />
+        <Label Content="*14.这个房间感觉不舒服" FontSize="15" Height="29" HorizontalAlignment="Left" Margin="54,514,0,0" Name="label20" VerticalAlignment="Top" Width="284" />
+        <CheckBox Content="" Height="19" HorizontalAlignment="Left" Margin="502,524,0,0" Name="checkBox54" VerticalAlignment="Top" />
+        <CheckBox Content="" Height="19" HorizontalAlignment="Left" Margin="593,524,0,0" Name="checkBox55" VerticalAlignment="Top" />
+        <CheckBox Content="" Height="19" HorizontalAlignment="Left" Margin="698,524,0,0" Name="checkBox56" VerticalAlignment="Top" />
+        <TextBox BorderBrush="Black" BorderThickness="0,0,0,1" FontSize="13" Height="1" HorizontalAlignment="Right" IsReadOnly="False" Margin="0,546,56,0" Name="textBox16" VerticalAlignment="Top" Width="740" />
+        <CheckBox Content="" Height="19" HorizontalAlignment="Left" Margin="398,554,0,0" Name="checkBox57" VerticalAlignment="Top" />
+        <Label Content="*15.我害怕将会发生的事情" FontSize="15" Height="29" HorizontalAlignment="Left" Margin="54,544,0,0" Name="label21" VerticalAlignment="Top" Width="284" />
+        <CheckBox Content="" Height="19" HorizontalAlignment="Left" Margin="502,554,0,0" Name="checkBox58" VerticalAlignment="Top" />
+        <CheckBox Content="" Height="19" HorizontalAlignment="Left" Margin="593,554,0,0" Name="checkBox59" VerticalAlignment="Top" />
+        <CheckBox Content="" Height="19" HorizontalAlignment="Left" Margin="698,554,0,0" Name="checkBox60" VerticalAlignment="Top" />
+        <TextBox BorderBrush="Black" BorderThickness="0,0,0,1" FontSize="13" Height="1" HorizontalAlignment="Right" IsReadOnly="False" Margin="0,576,56,0" Name="textBox17" VerticalAlignment="Top" Width="740" />
+        <CheckBox Content="" Height="19" HorizontalAlignment="Left" Margin="398,584,0,0" Name="checkBox61" VerticalAlignment="Top" />
+        <Label Content="*16.我感觉现在很累" FontSize="15" Height="29" HorizontalAlignment="Left" Margin="54,574,0,0" Name="label22" VerticalAlignment="Top" Width="284" />
+        <CheckBox Content="" Height="19" HorizontalAlignment="Left" Margin="502,584,0,0" Name="checkBox62" VerticalAlignment="Top" />
+        <CheckBox Content="" Height="19" HorizontalAlignment="Left" Margin="593,584,0,0" Name="checkBox63" VerticalAlignment="Top" />
+        <CheckBox Content="" Height="19" HorizontalAlignment="Left" Margin="698,584,0,0" Name="checkBox64" VerticalAlignment="Top" />
+        <TextBox BorderBrush="Black" BorderThickness="0,0,0,1" FontSize="13" Height="1" HorizontalAlignment="Right" IsReadOnly="False" Margin="0,606,56,0" Name="textBox18" VerticalAlignment="Top" Width="740" />
+        <CheckBox Content="" Height="19" HorizontalAlignment="Left" Margin="398,614,0,0" Name="checkBox65" VerticalAlignment="Top" />
+        <Label Content="17.我感到现在很满足" FontSize="15" Height="29" HorizontalAlignment="Left" Margin="54,604,0,0" Name="label23" VerticalAlignment="Top" Width="284" />
+        <CheckBox Content="" Height="19" HorizontalAlignment="Left" Margin="502,614,0,0" Name="checkBox66" VerticalAlignment="Top" />
+        <CheckBox Content="" Height="19" HorizontalAlignment="Left" Margin="593,614,0,0" Name="checkBox67" VerticalAlignment="Top" />
+        <CheckBox Content="" Height="19" HorizontalAlignment="Left" Margin="698,614,0,0" Name="checkBox68" VerticalAlignment="Top" />
+        <TextBox BorderBrush="Black" BorderThickness="0,0,0,1" FontSize="13" Height="1" HorizontalAlignment="Right" IsReadOnly="False" Margin="0,636,56,0" Name="textBox19" VerticalAlignment="Top" Width="740" />
+        <CheckBox Content="" Height="19" HorizontalAlignment="Left" Margin="398,644,0,0" Name="checkBox69" VerticalAlignment="Top" />
+        <Label Content="*18.这床位让我不舒服" FontSize="15" Height="29" HorizontalAlignment="Left" Margin="54,634,0,0" Name="label24" VerticalAlignment="Top" Width="284" />
+        <CheckBox Content="" Height="19" HorizontalAlignment="Left" Margin="502,644,0,0" Name="checkBox70" VerticalAlignment="Top" />
+        <CheckBox Content="" Height="19" HorizontalAlignment="Left" Margin="593,644,0,0" Name="checkBox71" VerticalAlignment="Top" />
+        <CheckBox Content="" Height="19" HorizontalAlignment="Left" Margin="698,644,0,0" Name="checkBox72" VerticalAlignment="Top" />
+        <TextBox BorderBrush="Black" BorderThickness="0,0,0,1" FontSize="13" Height="1" HorizontalAlignment="Right" IsReadOnly="False" Margin="0,666,56,0" Name="textBox20" VerticalAlignment="Top" Width="740" />
+        <CheckBox Content="" Height="19" HorizontalAlignment="Left" Margin="398,674,0,0" Name="checkBox73" VerticalAlignment="Top" />
+        <Label Content="19.这里的气氛很好" FontSize="15" Height="29" HorizontalAlignment="Left" Margin="54,664,0,0" Name="label25" VerticalAlignment="Top" Width="284" />
+        <CheckBox Content="" Height="19" HorizontalAlignment="Left" Margin="502,674,0,0" Name="checkBox74" VerticalAlignment="Top" />
+        <CheckBox Content="" Height="19" HorizontalAlignment="Left" Margin="593,674,0,0" Name="checkBox75" VerticalAlignment="Top" />
+        <CheckBox Content="" Height="19" HorizontalAlignment="Left" Margin="698,674,0,0" Name="checkBox76" VerticalAlignment="Top" />
+        <TextBox BorderBrush="Black" BorderThickness="0,0,0,1" FontSize="13" Height="1" HorizontalAlignment="Right" IsReadOnly="False" Margin="0,696,56,0" Name="textBox21" VerticalAlignment="Top" Width="740" />
+        <CheckBox Content="" Height="19" HorizontalAlignment="Left" Margin="398,704,0,0" Name="checkBox77" VerticalAlignment="Top" />
+        <Label Content="*20.这里没有我喜欢的东西" FontSize="15" Height="29" HorizontalAlignment="Left" Margin="54,694,0,0" Name="label26" VerticalAlignment="Top" Width="284" />
+        <CheckBox Content="" Height="19" HorizontalAlignment="Left" Margin="502,704,0,0" Name="checkBox78" VerticalAlignment="Top" />
+        <CheckBox Content="" Height="19" HorizontalAlignment="Left" Margin="593,704,0,0" Name="checkBox79" VerticalAlignment="Top" />
+        <CheckBox Content="" Height="19" HorizontalAlignment="Left" Margin="698,704,0,0" Name="checkBox80" VerticalAlignment="Top" />
+        <TextBox BorderBrush="Black" BorderThickness="0,0,0,1" FontSize="13" Height="1" HorizontalAlignment="Right" IsReadOnly="False" Margin="0,726,56,0" Name="textBox22" VerticalAlignment="Top" Width="740" />
+        <CheckBox Content="" Height="19" HorizontalAlignment="Left" Margin="398,734,0,0" Name="checkBox81" VerticalAlignment="Top" />
+        <Label Content="*21.在这里我没有归属感" FontSize="15" Height="29" HorizontalAlignment="Left" Margin="54,724,0,0" Name="label27" VerticalAlignment="Top" Width="284" />
+        <CheckBox Content="" Height="19" HorizontalAlignment="Left" Margin="502,734,0,0" Name="checkBox82" VerticalAlignment="Top" />
+        <CheckBox Content="" Height="19" HorizontalAlignment="Left" Margin="593,734,0,0" Name="checkBox83" VerticalAlignment="Top" />
+        <CheckBox Content="" Height="19" HorizontalAlignment="Left" Margin="698,734,0,0" Name="checkBox84" VerticalAlignment="Top" />
+        <TextBox BorderBrush="Black" BorderThickness="0,0,0,1" FontSize="13" Height="1" HorizontalAlignment="Right" IsReadOnly="False" Margin="0,756,56,0" Name="textBox23" VerticalAlignment="Top" Width="740" />
+        <CheckBox Content="" Height="19" HorizontalAlignment="Left" Margin="398,764,0,0" Name="checkBox85" VerticalAlignment="Top" />
+        <Label Content="22.我亲戚、朋友经常打电话来关心我" FontSize="15" Height="29" HorizontalAlignment="Left" Margin="54,754,0,0" Name="label28" VerticalAlignment="Top" Width="284" />
+        <CheckBox Content="" Height="19" HorizontalAlignment="Left" Margin="502,764,0,0" Name="checkBox86" VerticalAlignment="Top" />
+        <CheckBox Content="" Height="19" HorizontalAlignment="Left" Margin="593,764,0,0" Name="checkBox87" VerticalAlignment="Top" />
+        <CheckBox Content="" Height="19" HorizontalAlignment="Left" Margin="698,764,0,0" Name="checkBox88" VerticalAlignment="Top" />
+        <TextBox BorderBrush="Black" BorderThickness="0,0,0,1" FontSize="13" Height="1" HorizontalAlignment="Right" IsReadOnly="False" Margin="0,786,56,0" Name="textBox24" VerticalAlignment="Top" Width="740" />
+        <CheckBox Content="" Height="19" HorizontalAlignment="Left" Margin="398,794,0,0" Name="checkBox89" VerticalAlignment="Top" />
+        <Label Content="23.我需要了解更多自己的病情" FontSize="15" Height="29" HorizontalAlignment="Left" Margin="54,784,0,0" Name="label29" VerticalAlignment="Top" Width="284" />
+        <CheckBox Content="" Height="19" HorizontalAlignment="Left" Margin="502,794,0,0" Name="checkBox90" VerticalAlignment="Top" />
+        <CheckBox Content="" Height="19" HorizontalAlignment="Left" Margin="593,794,0,0" Name="checkBox91" VerticalAlignment="Top" />
+        <CheckBox Content="" Height="19" HorizontalAlignment="Left" Margin="698,794,0,0" Name="checkBox92" VerticalAlignment="Top" />
+        <TextBox BorderBrush="Black" BorderThickness="0,0,0,1" FontSize="13" Height="1" HorizontalAlignment="Right" IsReadOnly="False" Margin="0,816,56,0" Name="textBox25" VerticalAlignment="Top" Width="740" />
+        <CheckBox Content="" Height="19" HorizontalAlignment="Left" Margin="398,824,0,0" Name="checkBox93" VerticalAlignment="Top" />
+        <Label Content="*24.我没有太多的选择" FontSize="15" Height="29" HorizontalAlignment="Left" Margin="54,814,0,0" Name="label30" VerticalAlignment="Top" Width="284" />
+        <CheckBox Content="" Height="19" HorizontalAlignment="Left" Margin="502,824,0,0" Name="checkBox94" VerticalAlignment="Top" />
+        <CheckBox Content="" Height="19" HorizontalAlignment="Left" Margin="593,824,0,0" Name="checkBox95" VerticalAlignment="Top" />
+        <CheckBox Content="" Height="19" HorizontalAlignment="Left" Margin="698,824,0,0" Name="checkBox96" VerticalAlignment="Top" />
+        <TextBox BorderBrush="Black" BorderThickness="0,0,0,1" FontSize="13" Height="1" HorizontalAlignment="Right" IsReadOnly="False" Margin="0,846,56,0" Name="textBox26" VerticalAlignment="Top" Width="740" />
+        <CheckBox Content="" Height="19" HorizontalAlignment="Left" Margin="398,854,0,0" Name="checkBox97" VerticalAlignment="Top" />
+        <Label Content="*25.这房间空气不好" FontSize="15" Height="29" HorizontalAlignment="Left" Margin="54,844,0,0" Name="label31" VerticalAlignment="Top" Width="284" />
+        <CheckBox Content="" Height="19" HorizontalAlignment="Left" Margin="502,854,0,0" Name="checkBox98" VerticalAlignment="Top" />
+        <CheckBox Content="" Height="19" HorizontalAlignment="Left" Margin="593,854,0,0" Name="checkBox99" VerticalAlignment="Top" />
+        <CheckBox Content="" Height="19" HorizontalAlignment="Left" Margin="698,854,0,0" Name="checkBox100" VerticalAlignment="Top" />
+        <TextBox BorderBrush="Black" BorderThickness="0,0,0,1" FontSize="13" Height="1" HorizontalAlignment="Right" IsReadOnly="False" Margin="0,876,56,0" Name="textBox27" VerticalAlignment="Top" Width="740" />
+        <CheckBox Content="" Height="19" HorizontalAlignment="Left" Margin="398,884,0,0" Name="checkBox101" VerticalAlignment="Top" />
+        <Label Content="26.我心情很平静" FontSize="15" Height="29" HorizontalAlignment="Left" Margin="54,874,0,0" Name="label32" VerticalAlignment="Top" Width="284" />
+        <CheckBox Content="" Height="19" HorizontalAlignment="Left" Margin="502,884,0,0" Name="checkBox102" VerticalAlignment="Top" />
+        <CheckBox Content="" Height="19" HorizontalAlignment="Left" Margin="593,884,0,0" Name="checkBox103" VerticalAlignment="Top" />
+        <CheckBox Content="" Height="19" HorizontalAlignment="Left" Margin="698,884,0,0" Name="checkBox104" VerticalAlignment="Top" />
+        <TextBox BorderBrush="Black" BorderThickness="0,0,0,1" FontSize="13" Height="1" HorizontalAlignment="Right" IsReadOnly="False" Margin="0,906,56,0" Name="textBox28" VerticalAlignment="Top" Width="740" />
+        <CheckBox Content="" Height="19" HorizontalAlignment="Left" Margin="398,914,0,0" Name="checkBox105" VerticalAlignment="Top" />
+        <Label Content="*27.我现在情绪低落" FontSize="15" Height="29" HorizontalAlignment="Left" Margin="54,904,0,0" Name="label33" VerticalAlignment="Top" Width="284" />
+        <CheckBox Content="" Height="19" HorizontalAlignment="Left" Margin="502,914,0,0" Name="checkBox106" VerticalAlignment="Top" />
+        <CheckBox Content="" Height="19" HorizontalAlignment="Left" Margin="593,914,0,0" Name="checkBox107" VerticalAlignment="Top" />
+        <CheckBox Content="" Height="19" HorizontalAlignment="Left" Margin="698,914,0,0" Name="checkBox108" VerticalAlignment="Top" />
+        <TextBox BorderBrush="Black" BorderThickness="0,0,0,1" FontSize="13" Height="1" HorizontalAlignment="Right" IsReadOnly="False" Margin="0,936,56,0" Name="textBox29" VerticalAlignment="Top" Width="740" />
+        <CheckBox Content="" Height="19" HorizontalAlignment="Left" Margin="398,944,0,0" Name="checkBox109" VerticalAlignment="Top" />
+        <Label Content="28.我发现生活很有意义" FontSize="15" Height="29" HorizontalAlignment="Left" Margin="54,934,0,0" Name="label34" VerticalAlignment="Top" Width="284" />
+        <CheckBox Content="" Height="19" HorizontalAlignment="Left" Margin="502,944,0,0" Name="checkBox110" VerticalAlignment="Top" />
+        <CheckBox Content="" Height="19" HorizontalAlignment="Left" Margin="593,0,0,137" Name="checkBox111" VerticalAlignment="Bottom" />
+        <CheckBox Content="" Height="19" HorizontalAlignment="Left" Margin="698,944,0,0" Name="checkBox112" VerticalAlignment="Top" />
+        <TextBox BorderBrush="Black" BorderThickness="0,0,0,1" FontSize="13" Height="1" HorizontalAlignment="Right" IsReadOnly="False" Margin="0,966,56,0" Name="textBox30" VerticalAlignment="Top" Width="740" />
+        <Label Content="       注：“*”为反向评分项" FontSize="15" Height="27" HorizontalAlignment="Left" Margin="11,964,0,0" Name="label35" VerticalAlignment="Top" Width="201" />
+            <Label Content="         Kolcaba的舒适状况量表（General Comfort Questionnaire,GCQ），包括生理、心理、精神、社会文
+" FontSize="15" Height="27" HorizontalAlignment="Left" Margin="-1,982,0,0" Name="label37" VerticalAlignment="Top" Width="782" />
+            <Label Content="化和环境4个维度，共28项。改量表采用1~4Likert Scale评分法，1表示非常不同意，4表示非常同意。" FontSize="15" Height="27" HorizontalAlignment="Left" Margin="10,1002,0,0" Name="label38" VerticalAlignment="Top" Width="782" />
+            <Label Content="反项题1表示非常同意，4表示非常不同意。分数越高说明越舒适。" FontSize="15" Height="27" HorizontalAlignment="Left" Margin="11,1022,0,0" Name="label39" VerticalAlignment="Top" Width="782" />
+            <Label Content="填表说明：以下是描述您舒适状况的量表。量表中每一个问题均由4个数字来作为答案，请选择最" FontSize="15" Height="27" HorizontalAlignment="Left" Margin="41,1042,0,0" Name="label40" VerticalAlignment="Top" Width="782" />
+            <Label Content="接近您现在感觉的数字，这就是你此刻舒适的感觉。" FontSize="15" Height="27" HorizontalAlignment="Left" Margin="10,1061,0,0" Name="label41" VerticalAlignment="Top" Width="782" />
+            <Label Content="姓名" FontFamily="宋体" FontSize="17" Height="27" HorizontalAlignment="Left" Margin="54,57,0,0" Name="lblName" VerticalAlignment="Top" Width="51" />
+            <TextBox BorderBrush="Black" BorderThickness="0,0,0,0" FontFamily="宋体" FontSize="17" Height="23" HorizontalAlignment="Right" IsReadOnly="False" Margin="0,61,577,1016" Name="txtName" Width="93" TextAlignment="Center" />
+            <Label Content="日期" FontFamily="宋体" FontSize="17" Height="27" HorizontalAlignment="Left" Margin="541,58,0,0" Name="label36" VerticalAlignment="Top" Width="51" />
+            <TextBox BorderBrush="Black" BorderThickness="0,0,0,0" FontFamily="宋体" FontSize="17" Height="23" HorizontalAlignment="Right" IsReadOnly="False" Margin="0,61,74,1016" Name="txtDate" Width="105" />
+            <Label Content="Kolcaba值" FontFamily="宋体" FontSize="17" Height="27" HorizontalAlignment="Left" Margin="276,56,0,0" Name="label42" VerticalAlignment="Top" Width="87" />
+            <TextBox BorderBrush="Black" BorderThickness="0,0,0,0" FontFamily="宋体" FontSize="17" Height="23" HorizontalAlignment="Left" IsReadOnly="False" Margin="425,58,0,1019" Name="txtKolcaba" Width="53" />
+            <TextBox BorderBrush="Black" BorderThickness="1,0,0,0" FontSize="13" Height="911" HorizontalAlignment="Right" IsReadOnly="False" Margin="0,52,794,0" Name="textBox31" VerticalAlignment="Top" Width="1" />
+            <TextBox BorderBrush="Black" BorderThickness="0,0,0,1" FontSize="13" Height="1" HorizontalAlignment="Right" IsReadOnly="False" Margin="0,54,55,0" Name="textBox32" VerticalAlignment="Top" Width="740" />
+            <TextBox BorderBrush="Black" BorderThickness="1,0,0,0" FontSize="13" Height="911" HorizontalAlignment="Right" IsReadOnly="False" Margin="0,54,57,0" Name="textBox33" VerticalAlignment="Top" Width="1" />
+            <TextBox BorderBrush="Black" BorderThickness="1,0,0,0" FontSize="13" Height="37" HorizontalAlignment="Right" IsReadOnly="False" Margin="0,53,680,0" Name="textBox34" VerticalAlignment="Top" Width="1" />
+            <TextBox BorderBrush="Black" BorderThickness="1,0,0,0" FontSize="13" Height="37" HorizontalAlignment="Left" IsReadOnly="False" Margin="258,53,0,0" Name="textBox35" VerticalAlignment="Top" Width="1" />
+            <TextBox BorderBrush="Black" BorderThickness="1,0,0,0" FontSize="13" Height="37" HorizontalAlignment="Right" IsReadOnly="False" Margin="0,53,431,0" Name="textBox36" VerticalAlignment="Top" Width="1" />
+            <TextBox BorderBrush="Black" BorderThickness="1,0,0,0" FontSize="13" Height="37" HorizontalAlignment="Right" IsReadOnly="False" Margin="0,53,315,0" Name="textBox37" VerticalAlignment="Top" Width="1" />
+            <TextBox BorderBrush="Black" BorderThickness="1,0,0,0" FontSize="13" Height="37" HorizontalAlignment="Right" IsReadOnly="False" Margin="0,53,193,0" Name="textBox38" VerticalAlignment="Top" Width="1" />
+    </Grid>
+</UserControl>

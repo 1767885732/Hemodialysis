@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DeptModel" targetNamespace="http://tempuri.org/DeptModel.xsd" xmlns:mstns="http://tempuri.org/DeptModel.xsd" xmlns="http://tempuri.org/DeptModel.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="ConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="ConnectionString (Settings)" PropertyReference="ApplicationSettings.Hemo.Model.Properties.Settings.GlobalReference.Default.ConnectionString" Provider="System.Data.OracleClient" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DeptModel" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DeptModel" msprop:Generator_UserDSName="DeptModel">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="MED_DEPARTMENT" msprop:Generator_TableClassName="MED_DEPARTMENTDataTable" msprop:Generator_TableVarName="tableMED_DEPARTMENT" msprop:Generator_TablePropName="MED_DEPARTMENT" msprop:Generator_RowDeletingName="MED_DEPARTMENTRowDeleting" msprop:Generator_UserTableName="MED_DEPARTMENT" msprop:Generator_RowChangingName="MED_DEPARTMENTRowChanging" msprop:Generator_RowEvHandlerName="MED_DEPARTMENTRowChangeEventHandler" msprop:Generator_RowDeletedName="MED_DEPARTMENTRowDeleted" msprop:Generator_RowEvArgName="MED_DEPARTMENTRowChangeEvent" msprop:Generator_RowChangedName="MED_DEPARTMENTRowChanged" msprop:Generator_RowClassName="MED_DEPARTMENTRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="DEPT_ID" msprop:Generator_ColumnVarNameInTable="columnDEPT_ID" msprop:Generator_ColumnPropNameInRow="DEPT_ID" msprop:Generator_ColumnPropNameInTable="DEPT_IDColumn" msprop:Generator_UserColumnName="DEPT_ID">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DEPT_NAME" msprop:Generator_ColumnVarNameInTable="columnDEPT_NAME" msprop:Generator_ColumnPropNameInRow="DEPT_NAME" msprop:Generator_ColumnPropNameInTable="DEPT_NAMEColumn" msprop:Generator_UserColumnName="DEPT_NAME" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PINYIN_CODE" msprop:Generator_ColumnVarNameInTable="columnPINYIN_CODE" msprop:Generator_ColumnPropNameInRow="PINYIN_CODE" msprop:Generator_ColumnPropNameInTable="PINYIN_CODEColumn" msprop:Generator_UserColumnName="PINYIN_CODE" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="USAGE_TYPE" msprop:Generator_ColumnVarNameInTable="columnUSAGE_TYPE" msprop:Generator_ColumnPropNameInRow="USAGE_TYPE" msprop:Generator_ColumnPropNameInTable="USAGE_TYPEColumn" msprop:Generator_UserColumnName="USAGE_TYPE" type="xs:decimal" minOccurs="0" />
+              <xs:element name="STATUS" msprop:Generator_ColumnVarNameInTable="columnSTATUS" msprop:Generator_ColumnPropNameInRow="STATUS" msprop:Generator_ColumnPropNameInTable="STATUSColumn" msprop:Generator_UserColumnName="STATUS" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:MED_DEPARTMENT" />
+      <xs:field xpath="mstns:DEPT_ID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

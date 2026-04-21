@@ -1,0 +1,5 @@
+-- Add/modify columns 
+alter table MED_HIS_ROWTOCOL_END add COL_42 VARCHAR2(50);
+alter table MED_HIS_ROWTOCOL_END add COL_43 VARCHAR2(50);
+alter table MED_HIS_ROWTOCOL_END add COL_44 VARCHAR2(50);
+alter table MED_HIS_ROWTOCOL_END add COL_45 VARCHAR2(50);

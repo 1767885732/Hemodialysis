@@ -1,0 +1,48 @@
+﻿<UserControl x:Class="Hemo.Client.Doc.血透同意书"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="1300" d:DesignWidth="760">
+    <Grid>
+        <Label Content="" FontFamily="宋体" FontSize="26"  Height="50" HorizontalAlignment="Left" HorizontalContentAlignment="Center" Margin="141,76,0,0" Name="lblHospital" VerticalAlignment="Top" VerticalContentAlignment="Center" Width="522" FontStyle="Normal" />
+        <Label Content="血液透析（滤过）医疗风险知情同意书" FontSize="22" Height="44" HorizontalAlignment="Left" HorizontalContentAlignment="Center" Margin="202,132,0,0" Name="label2" VerticalAlignment="Top" VerticalContentAlignment="Center" Width="405" FontFamily="宋体"  />
+        <Label Content="姓名：" Height="27" HorizontalAlignment="Left"  Name="label3" VerticalAlignment="Top" FontSize="17" FontFamily="宋体"  Width="51" Margin="85,196,0,0" />
+        <TextBox Height="23"  BorderThickness="0,0,0,0" BorderBrush="Black" Name="txtName" IsReadOnly="False" Margin="140,200,0,1177" HorizontalAlignment="Left" Width="92" FontSize="17" FontFamily="宋体"  />
+        <Label Content="性别：" Height="27" HorizontalAlignment="Left"  Name="label33" VerticalAlignment="Top" FontSize="17" FontFamily="宋体"  Width="51" Margin="237,196,0,0" />
+        <TextBox Height="23"  BorderThickness="0,0,0,0" BorderBrush="Black" Name="txtSex" IsReadOnly="False" Margin="293,200,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="50" FontSize="17" FontFamily="宋体"  />
+        <Label  Content="年龄：" Height="27" HorizontalAlignment="Left"  Name="label34" VerticalAlignment="Top" FontSize="17" FontFamily="宋体"  Width="53" Margin="355,196,0,0" />
+        <TextBox Height="23"  BorderThickness="0,0,0,0" BorderBrush="Black" Name="txtAge" IsReadOnly="False" Margin="414,200,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="50" FontSize="17" FontFamily="宋体"  />
+        <Label Content="门诊/住院号：" Height="28" Name="label6" VerticalAlignment="Top" FontSize="17" FontFamily="宋体"  Margin="485,196,0,0" HorizontalAlignment="Left" Width="115" />
+        <TextBox Height="23"  BorderThickness="0,0,0,0" BorderBrush="Black" Name="txtAdmissionNumber" IsReadOnly="False" Margin="605,200,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="82" FontSize="17" FontFamily="宋体"  />
+        <Label Content="诊断：" Height="29" HorizontalAlignment="Left"  Name="label31" VerticalAlignment="Top" FontSize="17" FontFamily="宋体"  Width="50" Margin="85,234,0,0" />
+        <Label Content="血管通路：" Height="29" HorizontalAlignment="Left"  Name="label32" VerticalAlignment="Top" FontSize="17" FontFamily="宋体"  Width="90" Margin="444,236,0,0" />
+        <TextBox Height="23"  BorderThickness="0,0,0,0" BorderBrush="Black" Name="txtVascularAccess" IsReadOnly="False" Margin="539,240,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="178"  FontSize="17" FontFamily="宋体" />
+        <TextBlock FontFamily="宋体" FontSize="17"  Height="80" HorizontalAlignment="Left" LineHeight="30" Margin="85,271,0,0" Name="textBlock5" Text="一、尿毒症（包括急性和慢性肾功能衰竭），病情危重，累及全身各器官。目前，血液透析是治疗尿毒症的方法之一，对慢性肾衰患者仅能延长病人生命，不治疗原发病。" TextWrapping="Wrap" VerticalAlignment="Top" Width="605" />
+        <Label Content="患者/家属签名：" FontFamily="宋体" FontSize="15"  Height="25" HorizontalAlignment="Left" Margin="152,1034,0,0" Name="label4" VerticalAlignment="Top" Width="121" />
+        <Image Name="imgPatientSign" HorizontalAlignment="Left" Margin="279,1034,0,0" VerticalAlignment="Top" Width="150" Height="40"/>
+        <Label Content="家属与患者关系：" FontFamily="宋体" FontSize="15"  Height="25" HorizontalAlignment="Left" Margin="435,1034,0,0" Name="label8" VerticalAlignment="Top" Width="132" />
+        <Label Content="" FontFamily="宋体" FontSize="17"  Height="25" HorizontalAlignment="Left" Margin="568,1034,0,0" Name="label9" VerticalAlignment="Top" Width="120" />
+        <Label Content="告知医师签字：" FontFamily="宋体" FontSize="15"  Height="25" HorizontalAlignment="Left" Margin="152,1073,0,0" Name="label10" VerticalAlignment="Top" Width="121" />
+        <Label Content="" FontFamily="宋体" FontSize="17"  Height="25" HorizontalAlignment="Left" Margin="279,1073,0,0" Name="label11" VerticalAlignment="Top" Width="120" />
+        <Label Content="      年    月    日" FontFamily="宋体" FontSize="17"  Height="34" HorizontalAlignment="Left" Margin="500,1069,0,0" Name="lblDate" VerticalAlignment="Top" Width="178" />
+        <TextBox BorderBrush="Black" BorderThickness="0,0,0,0" FontFamily="宋体" FontSize="17"  Height="23" HorizontalAlignment="Left" IsReadOnly="False" Margin="140,240,0,1137" Name="txtDiagnose" Width="126" />
+        <Label Content="原发病：" FontFamily="宋体" FontSize="17"  Height="29" HorizontalAlignment="Left" Margin="273,236,0,0" Name="label12" VerticalAlignment="Top" Width="70" />
+        <TextBlock FontFamily="宋体" FontSize="17"  Height="60" HorizontalAlignment="Left" LineHeight="30" Margin="85,358,0,0" Name="textBlock1" Text="二、血液透析（滤过）治疗时，首先需要将患者血液引到体外，然后通过透析或滤过等方法清除水分和毒素，经处理后的血液再回到患者体内。" TextWrapping="Wrap" VerticalAlignment="Top" Width="605" />
+        <TextBlock FontFamily="宋体" FontSize="17"  Height="55" HorizontalAlignment="Left" LineHeight="35" Margin="85,416,0,0" Name="textBlock3" Text="三、为了有效引出血液，治疗前需要建立血管通路（动静脉内瘘或深静脉插管）。" TextWrapping="Wrap" VerticalAlignment="Top" Width="605" />
+        <TextBlock FontFamily="宋体" FontSize="17"  Height="117" HorizontalAlignment="Left" LineHeight="30" Margin="85,480,0,0" Name="textBlock2" Text="四、为防止血液在体外管路和透析器发生凝固，一般需要在透析前和透析过程中注射肝素等抗凝药物。部分病人因为出血倾向、活动性出血或手术后需要减少肝素使用剂量、或使用低分子肝素抗凝或其他特殊的抗凝方法，可能会造成体外凝血，体外循环的血液不能回输体内，造成部分血液丢失。" TextWrapping="Wrap" VerticalAlignment="Top" Width="605" AllowDrop="True" />
+        <TextBox BorderBrush="Black" BorderThickness="0,0,0,0" FontFamily="宋体" FontSize="17"  Height="23" HorizontalAlignment="Left" IsReadOnly="False" Margin="346,240,0,0" Name="txtProtopathy" VerticalAlignment="Top" Width="90" />
+        <TextBlock AllowDrop="True" FontFamily="宋体" FontSize="17" HorizontalAlignment="Left" LineHeight="30" Margin="85,600,0,642" Name="textBlock4" Text="五、由于医学科技水平的局限，血透过程中和治疗期间可能存在下列医疗风险，可能造成严重后果，甚至危及生命：" TextWrapping="Wrap" Width="605" />
+        <TextBlock FontFamily="宋体" FontSize="17"  Height="60" HorizontalAlignment="Left" LineHeight="30" Margin="85,657,0,0" Name="textBlock6" Text="1）治疗过程中因抗凝导致出血或加剧原有出血倾向，发生脑出血、消化道出血、穿刺或手术部位出血及心脏压塞等；" TextWrapping="Wrap" VerticalAlignment="Top" Width="605" />
+        <TextBlock FontFamily="宋体" FontSize="17"  Height="56" HorizontalAlignment="Left" LineHeight="30" Margin="85,715,0,0" Name="textBlock7" Text="2）血液透析（滤过）治疗可能影响心血管系统稳定性，导致血压下降或血压升高，心肌缺血，心律失常，心力衰竭甚至心跳骤停；" TextWrapping="Wrap" VerticalAlignment="Top" Width="605" />
+        <TextBlock FontFamily="宋体" FontSize="17"  Height="28" HorizontalAlignment="Left" LineHeight="30" Margin="85,772,0,0" Name="textBlock8" Text="3）可能并发感染或使原有感染加重；" TextWrapping="Wrap" VerticalAlignment="Top" Width="605" />
+        <TextBlock FontFamily="宋体" FontSize="17"  Height="28" HorizontalAlignment="Left" LineHeight="30" Margin="85,801,0,0" Name="textBlock9" Text="4）各种类型的血管通路均有可能发生与其相关的感染、血栓形成；" TextWrapping="Wrap" VerticalAlignment="Top" Width="605" />
+        <TextBlock FontFamily="宋体" FontSize="17"  Height="28" HorizontalAlignment="Left" LineHeight="30" Margin="85,831,0,0" Name="textBlock10" Text="5）可能会出现对透析器的过敏反应；" TextWrapping="Wrap" VerticalAlignment="Top" Width="605" />
+        <TextBlock FontFamily="宋体" FontSize="17"  Height="28" HorizontalAlignment="Left" LineHeight="30" Margin="85,861,0,0" Name="textBlock11" Text="6）个别患者透析中或透析后可能出现肌肉痉挛，头痛，严重者癫痫发作；" TextWrapping="Wrap" VerticalAlignment="Top" Width="605" />
+        <TextBlock FontFamily="宋体" FontSize="17"  Height="28" HorizontalAlignment="Left" LineHeight="30" Margin="85,892,0,0" Name="textBlock12" Text="7）治疗过程中可能出现管路及滤器凝血，造成失血；" TextWrapping="Wrap" VerticalAlignment="Top" Width="605" />
+        <TextBlock FontFamily="宋体" FontSize="17"  Height="28" HorizontalAlignment="Left" LineHeight="30" Margin="85,923,0,0" Name="textBlock13" Text="8）可能导致肿瘤播散；" TextWrapping="Wrap" VerticalAlignment="Top" Width="605" />
+        <TextBlock FontFamily="宋体" FontSize="17"  Height="28" HorizontalAlignment="Left" LineHeight="30" Margin="85,952,0,0" Name="textBlock14" Text="9）发生血源传播性疾病（例如乙肝、丙肝等）的机会明显高于普通人群；" TextWrapping="Wrap" VerticalAlignment="Top" Width="605" />
+        <TextBlock FontFamily="宋体" FontSize="17"  Height="52" HorizontalAlignment="Left" LineHeight="30" Margin="85,979,0,0" Name="textBlock15" Text="10)治疗过程中可能因患者无法耐受而必须中断治疗。病人和/或家属已理解以上医疗风险，要求接受血液透析（滤过）治疗并签字同意。" TextWrapping="Wrap" VerticalAlignment="Top" Width="605" />
+    </Grid>
+</UserControl>

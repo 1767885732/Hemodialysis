@@ -1,0 +1,15 @@
+﻿<myTypes:WPF_DocumentBase x:Class="Hemo.Client.Controls.wpfLabResult"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="1100" d:DesignWidth="780"
+                xmlns:myTypes="clr-namespace:Hemo.Utilities;assembly=Hemo.Utilities"    
+                          >
+
+    <Grid Height="1100" Name="grid1">
+        
+    </Grid>
+   
+</myTypes:WPF_DocumentBase>

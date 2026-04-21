@@ -1,0 +1,37 @@
+CREATE OR REPLACE VIEW MED_VIEW_XUECHANGGUI_EXT AS
+SELECT  T2.NAME as "姓名",
+t2.hemodialysis_id as "透析号" ,
+t.patient_id as "病人号",T2.TIME_TYPE as "病人来源",
+t2.age as "年龄",
+t.check_date as "检验日期",
+t.COL_10 AS "有核红细胞绝对值(10^9/L)",
+t.COL_11 AS  "平均血小板体积(fL)",
+t.COL_12 AS  "红细胞分布宽度(SD)(%)",
+t.COL_13 AS  "中性粒细胞数(10^9/L)",
+t.COL_14 AS  "红细胞分布宽度(CV)(fL)",
+t.COL_15 AS  "单核细胞比率(%)",
+t.COL_16 AS  "中性粒细胞比率(%)",
+t.COL_17 AS  "平均血红蛋白浓度(g/L)",
+t.COL_18 AS  "*红细胞平均体积(fL)",
+t.COL_19 AS  "*红细胞(10^12/L)",
+t.COL_20 AS  "嗜碱性粒细胞比率(%)",
+t.COL_21 AS  "单核细胞(10^9/L)",
+t.COL_22 AS  "*白细胞(10^9/L)",
+t.COL_23 AS  "嗜酸性粒细胞比率(%)",
+t.COL_24 AS  "*血小板(10^9/L)",
+t.COL_25 AS  "*血红蛋白量(g/L)",
+t.COL_26 AS  "嗜碱性粒细胞(10^9/L)",
+t.COL_27 AS  "血小板分布宽度(fL)",
+t.COL_28 AS  "平均血红蛋白含量(pg)",
+t.COL_29 AS  "嗜酸性粒细胞(10^9/L)",
+t.COL_30 AS  "血小板压积",
+t.COL_31 AS  "有核红细胞百分比(%)",
+t.COL_32 AS  "*红细胞压积",
+t.COL_33 AS  "淋巴细胞比率(%)",
+t.COL_34 AS  "大型血小板比率(%)",
+t.COL_35 AS  "淋巴细胞绝对值(10^9/L)",
+t2.input_code
+FROM  MED_HIS_ROWTOCOL_END T  INNER JOIN MED_PATIENTS T2
+ON T.PATIENT_ID = T2.PATIENT_ID
+AND T2.IS_DELETE !=1
+WHERE t.item_name ='血常规(含有核红细胞五分类)';

@@ -1,0 +1,552 @@
+﻿<UserControl xmlns:dxg="clr-namespace:DevExpress.Xpf.Grid;assembly=DevExpress.Xpf.Grid.v15.1" x:Class="Hemo.Client.Doc.血液透析记录单"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="1430" d:DesignWidth="816" Loaded="UserControl_Loaded">
+    <UserControl.Resources>
+        <!--<Style TargetType="{x:Type Label}" x:Key="LabelStyle1">
+            <Setter Property="FontSize" Value="20"/>
+            <Setter Property="HorizontalAlignment" Value="Center"/>
+            <Setter Property="VerticalAlignment" Value="Center"/>
+        </Style>
+        <Style TargetType="{x:Type Label}" x:Key="LabelStyle2">
+            <Setter Property="FontSize" Value="15"/>
+            <Setter Property="HorizontalAlignment" Value="Center"/>
+            <Setter Property="VerticalAlignment" Value="Center"/>
+        </Style>
+        <Style TargetType="{x:Type Label}" x:Key="LabelStyle3">
+            <Setter Property="FontSize" Value="15"/>
+            <Setter Property="Margin" Value="-5,0,0,0"/>
+        </Style>-->
+    </UserControl.Resources>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="816" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="150px" />
+            <RowDefinition Height="4*" />
+            <RowDefinition Height="3*" />
+            <RowDefinition Height="3*" />
+            <RowDefinition Height="4*" />
+        </Grid.RowDefinitions>
+
+        <Grid Grid.Row="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="30px" />
+                <RowDefinition Height="40px" />
+                <RowDefinition Height="30px" />
+                <RowDefinition Height="30px" />
+            </Grid.RowDefinitions>
+
+            <Label Name="lblHospital" Grid.Row="1" Content="沧州市中心医院-1" FontSize="20" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Center" />
+            <Label Name="lblRecordForm" Grid.Row="2" Content="血液透析记录单" FontSize="15" HorizontalAlignment="Center" VerticalAlignment="Center" />
+
+            <StackPanel Name="panel1" Grid.Row="3" Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
+                <Label Name="label1" Content="第" />
+                <Label Name="lblCount" Content="2" Margin="-5,0,0,0" />
+                <Label Name="label2" Content="次透析" Margin="-5,0,0,0" />
+                <Label Name="label3" Content="透析编号" Margin="-5,0,0,0" />
+                <Label Name="lblHemoID" Content="201500001" Margin="-5,0,0,0" />
+                <Label Name="label4" Content="透析机型号" Margin="-5,0,0,0" />
+                <Label Name="lblMachineModel" Content="AK-96" Margin="-5,0,0,0" />
+                <Label Name="label5" Content="透析器名称" Margin="-5,0,0,0" />
+                <Label Name="lblMachineName" Content="AK-96-1" Margin="-5,0,0,0" />
+            </StackPanel>
+
+        </Grid>
+
+        <Grid Grid.Row="1" ShowGridLines="False">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="1*" />
+                <RowDefinition Height="1*" />
+                <RowDefinition Height="1*" />
+                <RowDefinition Height="1*" />
+                <RowDefinition Height="1*" />
+                <RowDefinition Height="1*" />
+                <RowDefinition Height="1*" />
+                <RowDefinition Height="1*" />
+                <RowDefinition Height="1*" />
+                <RowDefinition Height="1*" />
+                <RowDefinition Height="1*" />
+                <RowDefinition Height="1*" />
+            </Grid.RowDefinitions>
+
+            <Label Name="label6" Grid.Row="0" Content="姓名：" VerticalAlignment="Center" Margin="50,0,0,0" />
+            <TextBox Name="txtName" Grid.Row="0" Text="张无忌" Width="50" BorderThickness="0,0,0,1" BorderBrush="Black" VerticalAlignment="Center" Margin="-590,0,0,0" />
+            <Label Name="label7" Grid.Row="0" Content="性别：" VerticalAlignment="Center" Margin="150,0,0,0" />
+            <TextBox Name="txtSex" Grid.Row="0" Text="男" Width="25" BorderThickness="0,0,0,1" BorderBrush="Black" VerticalAlignment="Center" Margin="-415,0,0,0" />
+            <Label Name="label8" Grid.Row="0" Content="年龄：" VerticalAlignment="Center" Margin="225,0,0,0" />
+            <TextBox Name="txtAge" Grid.Row="0" Text="30" Width="40" BorderThickness="0,0,0,1" BorderBrush="Black" VerticalAlignment="Center" Margin="-250,0,0,0" />
+            <Label Name="label9" Grid.Row="0" Content="门诊：" VerticalAlignment="Center" Margin="315,0,0,0" />
+            <TextBox Name="txtClinic" Grid.Row="0" Text="门诊一" Width="80" BorderThickness="0,0,0,1" BorderBrush="Black" VerticalAlignment="Center" Margin="-30,0,0,0" />
+            <Label Name="label12" Grid.Row="0" Content="科室：" VerticalAlignment="Center" Margin="445,0,0,0" />
+            <TextBox Name="txtRoom" Grid.Row="0" Text="血液净化科" Width="80" BorderThickness="0,0,0,1" BorderBrush="Black" VerticalAlignment="Center" Margin="230,0,0,0" />
+            <Label Name="label13" Grid.Row="0" Content="住院号：" VerticalAlignment="Center" Margin="575,0,0,0" />
+            <TextBox Name="txtHisNo" Grid.Row="0" Text="201500001" Width="80" BorderThickness="0,0,0,1" BorderBrush="Black" VerticalAlignment="Center" Margin="515,0,0,0" />
+
+            <Label Name="label15" Grid.Row="1" Content="体温：" VerticalAlignment="Center" Margin="50,0,0,0" />
+            <TextBox Name="txtTemperature" Grid.Row="1" Text="36.5℃" Width="70" BorderThickness="0,0,0,1" BorderBrush="Black" VerticalAlignment="Center" Margin="-570,0,0,0" />
+            <Label Name="label16" Grid.Row="1" Content="血管通路类型：" VerticalAlignment="Center" Margin="170,0,0,0" />
+            <CheckBox Name="chkInternalFistula" Grid.Row="1" Content="自体内瘘" VerticalAlignment="Center" Margin="265,0,0,0" />
+            <CheckBox Name="chkBloodVessel" Grid.Row="1" Content="人工血管" VerticalAlignment="Center" Margin="345,0,0,0" />
+            <CheckBox Name="chkTempSpile" Grid.Row="1" Content="临时插管" VerticalAlignment="Center" Margin="425,0,0,0" />
+            <CheckBox Name="chkLongSpile" Grid.Row="1" Content="长期插管" VerticalAlignment="Center" Margin="505,0,0,0" />
+            <CheckBox Name="chkDirectPuncture" Grid.Row="1" Content="直接穿刺" VerticalAlignment="Center" Margin="585,0,0,0" />
+
+            <Label Name="label17" Grid.Row="2" Content="首次血压：" VerticalAlignment="Center" Margin="50,0,0,0" />
+            <TextBox Name="txtBloodPressure" Grid.Row="2" Text="120/75" Width="70" BorderThickness="0,0,0,1" BorderBrush="Black" VerticalAlignment="Center" Margin="-520,0,0,0" />
+            <Label Name="label18" Grid.Row="2" Content="首次脉搏：" VerticalAlignment="Center" Margin="195,0,0,0" />
+            <TextBox Name="txtPulse" Grid.Row="2" Text="75" Width="40" BorderThickness="0,0,0,1" BorderBrush="Black" VerticalAlignment="Center" Margin="-260,0,0,0" />
+            <Label Name="label19" Grid.Row="2" Content="透析方式：" VerticalAlignment="Center" Margin="310,0,0,0" />
+            <CheckBox Name="chkHD" Grid.Row="2" Content="HD" VerticalAlignment="Center" Margin="380,0,0,0" />
+            <CheckBox Name="chkHF" Grid.Row="2" Content="HF" VerticalAlignment="Center" Margin="430,0,0,0" />
+            <CheckBox Name="chkHDF" Grid.Row="2" Content="HDF" VerticalAlignment="Center" Margin="475,0,0,0" />
+            <CheckBox Name="chkHP" Grid.Row="2" Content="HP" VerticalAlignment="Center" Margin="530,0,0,0" />
+            <CheckBox Name="chkIUF" Grid.Row="2" Content="IUF" VerticalAlignment="Center" Margin="575,0,0,0" />
+            <Label Name="label20" Grid.Row="2" Content="透析时间：" VerticalAlignment="Center" Margin="620,0,0,0" />
+            <TextBox Name="txtDialysisTime" Grid.Row="2" Text="2015-01-10" Width="80" BorderThickness="0,0,0,1" BorderBrush="Black" VerticalAlignment="Center" Margin="630,0,0,0" />
+
+            <CheckBox Name="chkNonHeparin" Grid.Row="3" Content="无肝素" VerticalAlignment="Center" Margin="55,0,0,0" />
+            <Label Name="label21" Grid.Row="3" Content="肝素首剂：" VerticalAlignment="Center" Margin="120,0,0,0" />
+            <TextBox Name="txtHeparinLot" Grid.Row="3" Text="4" Width="40" BorderThickness="0,0,0,1" BorderBrush="Black" VerticalAlignment="Center" Margin="-410,0,0,0" />
+            <Label Name="label83" Grid.Row="3" Content="mg" VerticalAlignment="Center" Margin="220,0,0,0" />
+            <Label Name="label22" Grid.Row="3" Content="追加：" VerticalAlignment="Center" Margin="255,0,0,0" />
+            <TextBox Name="txtAddHeparinLot" Grid.Row="3" Text="2" Width="40" BorderThickness="0,0,0,1" BorderBrush="Black" VerticalAlignment="Center" Margin="-190,0,0,0" />
+            <Label Name="label82" Grid.Row="3" Content="mg" VerticalAlignment="Center" Margin="330,0,0,0" />
+            <Label Name="label23" Grid.Row="3" Content="hr：" VerticalAlignment="Center" Margin="365,0,0,0" />
+            <TextBox Name="txtHR" Grid.Row="3" Text="xxxx" Width="70" BorderThickness="0,0,0,1" BorderBrush="Black" VerticalAlignment="Center" Margin="35,0,0,0" />
+
+            <Label Name="label24" Grid.Row="4" Content="低分子肝素名称：" VerticalAlignment="Center" Margin="50,0,0,0" />
+            <TextBox Name="txtLMWHName" Grid.Row="4" Text="达肝素钠" Width="80" BorderThickness="0,0,0,1" BorderBrush="Black" VerticalAlignment="Center" Margin="-440,0,0,0" />
+            <Label Name="label25" Grid.Row="4" Content="剂量用法：" VerticalAlignment="Center" Margin="240,0,0,0" />
+            <TextBox Name="txtUsage" Grid.Row="4" Text="10～15" Width="60" BorderThickness="0,0,0,1" BorderBrush="Black" VerticalAlignment="Center" Margin="-150,0,0,0" />
+            <Label Name="label81" Grid.Row="4" Content="U/kg" VerticalAlignment="Center" Margin="360,0,0,0" />
+            <Label Name="label26" Grid.Row="4" Content="鱼精蛋白：" VerticalAlignment="Center" Margin="405,0,0,0" />
+            <TextBox Name="txtUsage2" Grid.Row="4" Text="5～8" Width="60" BorderThickness="0,0,0,1" BorderBrush="Black" VerticalAlignment="Center" Margin="180,0,0,0" />
+            <Label Name="label80" Grid.Row="4" Content="mg/kg" VerticalAlignment="Center" Margin="525,0,0,0" />
+
+            <Label Name="label27" Grid.Row="5" Content="透前体重：" VerticalAlignment="Center" Margin="50,0,0,0" />
+            <TextBox Name="txtBeforeWeight" Grid.Row="5" Text="65" Width="40" BorderThickness="0,0,0,1" BorderBrush="Black" VerticalAlignment="Center" Margin="-550,0,0,0" />
+            <Label Name="label88" Grid.Row="5" Content="kg" VerticalAlignment="Center" Margin="150,0,0,0" />
+            <Label Name="label28" Grid.Row="5" Content="干体重：" VerticalAlignment="Center" Margin="180,0,0,0" />
+            <TextBox Name="txtDryWeight" Grid.Row="5" Text="63" Width="40" BorderThickness="0,0,0,1" BorderBrush="Black" VerticalAlignment="Center" Margin="-315,0,0,0" />
+            <Label Name="label87" Grid.Row="5" Content="kg" VerticalAlignment="Center" Margin="265,0,0,0" />
+            <Label Name="label29" Grid.Row="5" Content="拟脱水：" VerticalAlignment="Center" Margin="295,0,0,0" />
+            <TextBox Name="txtPlanDehydrate" Grid.Row="5" Text="1.5" Width="40" BorderThickness="0,0,0,1" BorderBrush="Black" VerticalAlignment="Center" Margin="-85,0,0,0" />
+            <Label Name="label86" Grid.Row="5" Content="kg" VerticalAlignment="Center" Margin="380,0,0,0" />
+            <Label Name="label30" Grid.Row="5" Content="实际脱水：" VerticalAlignment="Center" Margin="410,0,0,0" />
+            <TextBox Name="txtActualDehydrate" Grid.Row="5" Text="2" Width="40" BorderThickness="0,0,0,1" BorderBrush="Black" VerticalAlignment="Center" Margin="170,0,0,0" />
+            <Label Name="label85" Grid.Row="5" Content="kg" VerticalAlignment="Center" Margin="510,0,0,0" />
+            <Label Name="label31" Grid.Row="5" Content="透后体重：" VerticalAlignment="Center" Margin="540,0,0,0" />
+            <TextBox Name="txtAfterWeight" Grid.Row="5" Text="63" Width="40" BorderThickness="0,0,0,1" BorderBrush="Black" VerticalAlignment="Center" Margin="430,0,0,0" />
+            <Label Name="label84" Grid.Row="5" Content="kg" VerticalAlignment="Center" Margin="640,0,0,0" />
+
+            <Label Name="label32" Grid.Row="6" Content="HF或HDF设置：" VerticalAlignment="Center" Margin="50,0,0,0" />
+            <CheckBox Name="chkPreChange" Grid.Row="6" Content="前置换" VerticalAlignment="Center" Margin="150,0,0,0" />
+            <CheckBox Name="chkPostChange" Grid.Row="6" Content="后置换" VerticalAlignment="Center" Margin="215,0,0,0" />
+            <Label Name="label33" Grid.Row="6" Content="置换液流速：" VerticalAlignment="Center" Margin="280,0,0,0" />
+            <TextBox Name="txtDisplacementRate" Grid.Row="6" Text="2" Width="40" BorderThickness="0,0,0,1" BorderBrush="Black" VerticalAlignment="Center" Margin="-65,0,0,0" />
+            <Label Name="label90" Grid.Row="6" Content="ml/min" VerticalAlignment="Center" Margin="395,0,0,0" />
+            <Label Name="label34" Grid.Row="6" Content="置换液总量：" VerticalAlignment="Center" Margin="455,0,0,0" />
+            <TextBox Name="txtDisplacementLot" Grid.Row="6" Text="2.5" Width="40" BorderThickness="0,0,0,1" BorderBrush="Black" VerticalAlignment="Center" Margin="285,0,0,0" />
+            <Label Name="label89" Grid.Row="6" Content="L" VerticalAlignment="Center" Margin="570,0,0,0" />
+
+            <Label Name="label35" Grid.Row="7" Grid.Column="0" Content="透析液" VerticalAlignment="Center" Margin="50,0,0,0" />
+            <Label Name="label36" Grid.Row="7" Content="流速：" VerticalAlignment="Center" Margin="105,0,0,0" />
+            <TextBox Name="txtFlowRate" Grid.Row="7" Text="1.5" Width="40" BorderThickness="0,0,0,1" BorderBrush="Black" VerticalAlignment="Center" Margin="-490,0,0,0" />
+            <Label Name="label96" Grid.Row="7" Content="ml/min" VerticalAlignment="Center" Margin="180,0,0,0" />
+            <Label Name="label37" Grid.Row="7" Content="K+：" VerticalAlignment="Center" Margin="240,0,0,0" />
+            <TextBox Name="txtK" Grid.Row="7" Text="2" Width="40" BorderThickness="0,0,0,1" BorderBrush="Black" VerticalAlignment="Center" Margin="-235,0,0,0" />
+            <Label Name="label95" Grid.Row="7" Content="mmol/L" VerticalAlignment="Center" Margin="305,0,0,0" />
+            <Label Name="label38" Grid.Row="7" Content="Ca2+：" VerticalAlignment="Center" Margin="370,0,0,0" />
+            <TextBox Name="txtCa" Grid.Row="7" Text="2" Width="40" BorderThickness="0,0,0,1" BorderBrush="Black" VerticalAlignment="Center" Margin="55,0,0,0" />
+            <Label Name="label94" Grid.Row="7" Content="mmol/L" VerticalAlignment="Center" Margin="450,0,0,0" />
+
+            <Label Name="label39" Grid.Row="8" Content="HCO3：" VerticalAlignment="Center" Margin="50,0,0,0" />
+            <TextBox Name="txtHCO3" Grid.Row="8" Text="2" Width="40" BorderThickness="0,0,0,1" BorderBrush="Black" VerticalAlignment="Center" Margin="-580,0,0,0" />
+            <Label Name="label93" Grid.Row="8" Content="mmol/L" VerticalAlignment="Center" Margin="135,0,0,0" />
+            <Label Name="label40" Grid.Row="8" Content="Na+：" VerticalAlignment="Center" Margin="195,0,0,0" />
+            <TextBox Name="txtNa" Grid.Row="8" Text="2" Width="40" BorderThickness="0,0,0,1" BorderBrush="Black" VerticalAlignment="Center" Margin="-305,0,0,0" />
+            <Label Name="label92" Grid.Row="8" Content="mmol/L" VerticalAlignment="Center" Margin="270,0,0,0" />
+            <Label Name="label41" Grid.Row="8" Content="Glu：" VerticalAlignment="Center" Margin="330,0,0,0" />
+            <TextBox Name="txtGlu" Grid.Row="8" Text="2" Width="40" BorderThickness="0,0,0,1" BorderBrush="Black" VerticalAlignment="Center" Margin="-50,0,0,0" />
+            <Label Name="label91" Grid.Row="8" Content="mmol/L" VerticalAlignment="Center" Margin="400,0,0,0" />
+
+            <Label Name="label42" Grid.Row="9" Content="血流速：" VerticalAlignment="Center" Margin="50,0,0,0" />
+            <TextBox Name="txtBloodRate" Grid.Row="9" Text="2" Width="40" BorderThickness="0,0,0,1" BorderBrush="Black" VerticalAlignment="Center" Margin="-575,0,0,0" />
+            <Label Name="label97" Grid.Row="9" Content="ml/min" VerticalAlignment="Center" Margin="135,0,0,0" />
+            <CheckBox Name="chkAdjustableUF" Grid.Row="9" Content="可调超滤" VerticalAlignment="Center" Margin="200,0,0,0" />
+            <Label Name="label43" Grid.Row="9" Content="医生签字：" VerticalAlignment="Center" Margin="445,0,0,0" />
+            <TextBox Name="txtSignName" Grid.Row="9" Text="熊迎春" Width="50" BorderThickness="0,0,0,1" BorderBrush="Black" VerticalAlignment="Center" Margin="250,0,0,0" />
+            <TextBox Name="txtYear" Grid.Row="9" Text="2015" Width="40" BorderThickness="0,0,0,1" BorderBrush="Black" VerticalAlignment="Center" Margin="400,0,0,0" />
+            <Label Name="label44" Grid.Row="9" Content="年" VerticalAlignment="Center" Margin="630,0,0,0" />
+            <TextBox Name="txtMonth" Grid.Row="9" Text="01" Width="40" BorderThickness="0,0,0,1" BorderBrush="Black" VerticalAlignment="Center" Margin="530,0,0,0" />
+            <Label Name="label45" Grid.Row="9" Content="月" VerticalAlignment="Center" Margin="690,0,0,0" />
+            <TextBox Name="txtDay" Grid.Row="9" Text="25" Width="40" BorderThickness="0,0,0,1" BorderBrush="Black" VerticalAlignment="Center" Margin="650,0,0,0" />
+            <Label Name="label46" Grid.Row="9" Content="日" VerticalAlignment="Center" Margin="750,0,0,0" />
+
+            <Label Name="label47" Grid.Row="10" Content="导管评估" VerticalAlignment="Center" Margin="50,0,0,0" />
+            <Label Name="label48" Grid.Row="10" Content="固定牢固：" VerticalAlignment="Center" Margin="115,0,0,0" />
+            <CheckBox Name="chkFixYes" Grid.Row="10" Content="是" VerticalAlignment="Center" Margin="185,0,0,0" />
+            <CheckBox Name="chkFixNo" Grid.Row="10" Content="否" VerticalAlignment="Center" Margin="225,0,0,0" />
+            <Label Name="label49" Grid.Row="10" Content="滑脱：" VerticalAlignment="Center" Margin="265,0,0,0" />
+            <CheckBox Name="chkSlipYes" Grid.Row="10" Content="有" VerticalAlignment="Center" Margin="310,0,0,0" />
+            <CheckBox Name="chkSlipNo" Grid.Row="10" Content="无" VerticalAlignment="Center" Margin="350,0,0,0" />
+            <Label Name="label50" Grid.Row="10" Content="渗血渗液：" VerticalAlignment="Center" Margin="390,0,0,0" />
+            <CheckBox Name="chkSeepageYes" Grid.Row="10" Content="有" VerticalAlignment="Center" Margin="460,0,0,0" />
+            <CheckBox Name="chkSeepageNo" Grid.Row="10" Content="无" VerticalAlignment="Center" Margin="500,0,0,0" />
+            <Label Name="label51" Grid.Row="10" Content="护士签字：" VerticalAlignment="Center" Margin="645,0,0,0" />
+            <TextBox Name="txtNurse" Grid.Row="10" Text="赵文婧" Width="50" BorderThickness="0,0,0,1" BorderBrush="Black" VerticalAlignment="Center" Margin="650,0,0,0" />
+
+            <Label Name="label52" Grid.Row="11" Content="内瘘评估：" VerticalAlignment="Center" Margin="50,0,0,0" />
+            <CheckBox Name="chkSymptomYes" Grid.Row="11" Content="有" VerticalAlignment="Center" Margin="120,0,0,0" />
+            <CheckBox Name="chkSymptomNo" Grid.Row="11" Content="无" VerticalAlignment="Center" Margin="160,0,0,0" />
+            <Label Name="label53" Grid.Row="11" Content="以下表现：" VerticalAlignment="Center" Margin="185,0,0,0" />
+            <CheckBox Name="chkShakeFade" Grid.Row="11" Content="震颤减弱" VerticalAlignment="Center" Margin="255,0,0,0" />
+            <CheckBox Name="chkBleed" Grid.Row="11" Content="出血" VerticalAlignment="Center" Margin="330,0,0,0" />
+            <CheckBox Name="chkRedness" Grid.Row="11" Content="发红" VerticalAlignment="Center" Margin="385,0,0,0" />
+            <CheckBox Name="chkInfect" Grid.Row="11" Content="感染" VerticalAlignment="Center" Margin="440,0,0,0" />
+        </Grid>
+
+        <DataGrid Name="dgMedicalOrder" Grid.Row="2" Background="Transparent" GridLinesVisibility="All" VerticalGridLinesBrush="Black" HorizontalGridLinesBrush="Black" BorderThickness="1,1,0,0" BorderBrush="Black" AutoGenerateColumns="False" HorizontalAlignment="Left" CanUserResizeColumns="False" CanUserResizeRows="False" CanUserAddRows="False" AllowDrop="False" Margin="50,0,50,5">
+            <DataGrid.ColumnHeaderStyle>
+                <Style TargetType="DataGridColumnHeader">
+                    <Setter Property="HorizontalContentAlignment" Value="Center" />
+                    <Setter Property="Background" Value="Transparent" />
+                </Style>
+            </DataGrid.ColumnHeaderStyle>
+            <DataGrid.Columns>
+                <DataGridTemplateColumn>
+                    <DataGridTemplateColumn.HeaderTemplate>
+                        <DataTemplate>
+                            <Border Width="120" Height="23" BorderBrush="Black" BorderThickness="0,0,1,1">
+                                <TextBlock Text="时间" HorizontalAlignment="Center" VerticalAlignment="Center" TextAlignment="Center" />
+                            </Border>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.HeaderTemplate>
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <TextBlock Text="{Binding Path=Date}" TextAlignment="Center" />
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+                <DataGridTemplateColumn>
+                    <DataGridTemplateColumn.HeaderTemplate>
+                        <DataTemplate>
+                            <Border Width="85" Height="23" BorderBrush="Black" BorderThickness="0,0,1,1">
+                                <TextBlock Text="医生" HorizontalAlignment="Center" VerticalAlignment="Center" TextAlignment="Center" />
+                            </Border>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.HeaderTemplate>
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <TextBlock Text="{Binding Path=Doctor}" TextAlignment="Center" />
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+                <DataGridTemplateColumn>
+                    <DataGridTemplateColumn.HeaderTemplate>
+                        <DataTemplate>
+                            <Border Width="290" Height="23" BorderBrush="Black" BorderThickness="0,0,1,1">
+                                <TextBlock Text="其他医嘱" HorizontalAlignment="Center" VerticalAlignment="Center" TextAlignment="Center" />
+                            </Border>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.HeaderTemplate>
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <TextBlock Text="{Binding Path=OtherOrder}" TextAlignment="Center" />
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+                <DataGridTemplateColumn>
+                    <DataGridTemplateColumn.HeaderTemplate>
+                        <DataTemplate>
+                            <Border Width="120" Height="23" BorderBrush="Black" BorderThickness="0,0,1,1">
+                                <TextBlock Text="执行时间" HorizontalAlignment="Center" VerticalAlignment="Center" TextAlignment="Center" />
+                            </Border>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.HeaderTemplate>
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <TextBlock Text="{Binding Path=ExecDate}" TextAlignment="Center" />
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+                <DataGridTemplateColumn>
+                    <DataGridTemplateColumn.HeaderTemplate>
+                        <DataTemplate>
+                            <Border Width="85" Height="23" BorderBrush="Black" BorderThickness="0,0,1,1">
+                                <TextBlock Text="护士签名" HorizontalAlignment="Center" VerticalAlignment="Center" TextAlignment="Center" />
+                            </Border>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.HeaderTemplate>
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <TextBlock Text="{Binding Path=NurseName}" TextAlignment="Center" />
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+
+        <DataGrid Name="dgResult" Grid.Row="3" Background="Transparent" GridLinesVisibility="All" VerticalGridLinesBrush="Black" HorizontalGridLinesBrush="Black" BorderThickness="1,1,0,0" BorderBrush="Black" AutoGenerateColumns="False" HorizontalAlignment="Left" CanUserResizeColumns="False" CanUserResizeRows="False" CanUserAddRows="False" AllowDrop="False" Margin="50,5,50,0">
+            <DataGrid.ColumnHeaderStyle>
+                <Style TargetType="DataGridColumnHeader">
+                    <Setter Property="HorizontalContentAlignment" Value="Center" />
+                    <Setter Property="Background" Value="Transparent" />
+                </Style>
+            </DataGrid.ColumnHeaderStyle>
+            <DataGrid.Columns>
+                <DataGridTemplateColumn>
+                    <DataGridTemplateColumn.HeaderTemplate>
+                        <DataTemplate>
+                            <Border Width="80" Height="33" BorderBrush="Black" BorderThickness="0,0,1,1">
+                                <TextBlock Text="时间" HorizontalAlignment="Center" VerticalAlignment="Center" TextAlignment="Center" />
+                            </Border>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.HeaderTemplate>
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <TextBlock Text="{Binding Path=Date}" TextAlignment="Center" />
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+                <DataGridTemplateColumn>
+                    <DataGridTemplateColumn.HeaderTemplate>
+                        <DataTemplate>
+                            <Border Width="60" Height="33" BorderBrush="Black" BorderThickness="0,0,1,1">
+                                <TextBlock Text="血压mmHg" HorizontalAlignment="Center" VerticalAlignment="Center" TextAlignment="Center" />
+                            </Border>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.HeaderTemplate>
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <TextBlock Text="{Binding Path=BloodPressure}" TextAlignment="Center" />
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+                <DataGridTemplateColumn>
+                    <DataGridTemplateColumn.HeaderTemplate>
+                        <DataTemplate>
+                            <Border Width="60" Height="33" BorderBrush="Black" BorderThickness="0,0,1,1">
+                                <TextBlock Text="心率min" HorizontalAlignment="Center" VerticalAlignment="Center" TextAlignment="Center" />
+                            </Border>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.HeaderTemplate>
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <TextBlock Text="{Binding Path=HeartRate}" TextAlignment="Center" />
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+                <DataGridTemplateColumn>
+                    <DataGridTemplateColumn.HeaderTemplate>
+                        <DataTemplate>
+                            <Border Width="60" Height="33" BorderBrush="Black" BorderThickness="0,0,1,1">
+                                <TextBlock Text="血流速ml/min" HorizontalAlignment="Center" VerticalAlignment="Center" TextAlignment="Center" />
+                            </Border>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.HeaderTemplate>
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <TextBlock Text="{Binding Path=BloodRate}" TextAlignment="Center" />
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+                <DataGridTemplateColumn>
+                    <DataGridTemplateColumn.HeaderTemplate>
+                        <DataTemplate>
+                            <Border Width="75" Height="33" BorderBrush="Black" BorderThickness="0,0,1,1">
+                                <TextBlock Text="静脉压mmHg(kpa)" HorizontalAlignment="Center" VerticalAlignment="Center" TextAlignment="Center" />
+                            </Border>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.HeaderTemplate>
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <TextBlock Text="{Binding Path=VenousPressure}" TextAlignment="Center" />
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+                <DataGridTemplateColumn>
+                    <DataGridTemplateColumn.HeaderTemplate>
+                        <DataTemplate>
+                            <Border Width="75" Height="33" BorderBrush="Black" BorderThickness="0,0,1,1">
+                                <TextBlock Text="跨膜压mmHg(kpa)" HorizontalAlignment="Center" VerticalAlignment="Center" TextAlignment="Center" />
+                            </Border>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.HeaderTemplate>
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <TextBlock Text="{Binding Path=TransPressure}" TextAlignment="Center" />
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+                <DataGridTemplateColumn>
+                    <DataGridTemplateColumn.HeaderTemplate>
+                        <DataTemplate>
+                            <Border Width="50" Height="33" BorderBrush="Black" BorderThickness="0,0,1,1">
+                                <TextBlock Text="温度" HorizontalAlignment="Center" VerticalAlignment="Center" TextAlignment="Center" />
+                            </Border>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.HeaderTemplate>
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <TextBlock Text="{Binding Path=Temperature}" TextAlignment="Center" />
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+                <DataGridTemplateColumn>
+                    <DataGridTemplateColumn.HeaderTemplate>
+                        <DataTemplate>
+                            <Border Width="60" Height="33" BorderBrush="Black" BorderThickness="0,0,1,1">
+                                <TextBlock Text="已脱水" HorizontalAlignment="Center" VerticalAlignment="Center" TextAlignment="Center" />
+                            </Border>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.HeaderTemplate>
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <TextBlock Text="{Binding Path=Dehydrate}" TextAlignment="Center" />
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+                <DataGridTemplateColumn>
+                    <DataGridTemplateColumn.HeaderTemplate>
+                        <DataTemplate>
+                            <Border Width="60" Height="33" BorderBrush="Black" BorderThickness="0,0,1,1">
+                                <TextBlock Text="透析器级" HorizontalAlignment="Center" VerticalAlignment="Center" TextAlignment="Center" />
+                            </Border>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.HeaderTemplate>
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <TextBlock Text="{Binding Path=DialyzerLevel}" TextAlignment="Center" />
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+                <DataGridTemplateColumn>
+                    <DataGridTemplateColumn.HeaderTemplate>
+                        <DataTemplate>
+                            <Border Width="60" Height="33" BorderBrush="Black" BorderThickness="0,0,1,1">
+                                <TextBlock Text="责任护士" HorizontalAlignment="Center" VerticalAlignment="Center" TextAlignment="Center" />
+                            </Border>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.HeaderTemplate>
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <TextBlock Text="{Binding Path=PrimaryNurse}" TextAlignment="Center" />
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+                <DataGridTemplateColumn>
+                    <DataGridTemplateColumn.HeaderTemplate>
+                        <DataTemplate>
+                            <Border Width="60" Height="33" BorderBrush="Black" BorderThickness="0,0,1,1">
+                                <TextBlock Text="审核护士" HorizontalAlignment="Center" VerticalAlignment="Center" TextAlignment="Center" />
+                            </Border>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.HeaderTemplate>
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <TextBlock Text="{Binding Path=AuditNurse}" TextAlignment="Center" />
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+
+        <Grid Grid.Row="4" ShowGridLines="False">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+            </Grid.RowDefinitions>
+            <Label Name="label54" Grid.Row="0" Content="透析小结：" VerticalAlignment="Center" Margin="50,0,0,0" />
+            <Label Name="label55" Grid.Row="1" Content="1、有关血管通路：通路出血" VerticalAlignment="Center" Margin="50,0,0,0" />
+            <CheckBox Name="chkGood" Grid.Row="1" Content="良好" VerticalAlignment="Center" Margin="210,0,0,0" />
+            <CheckBox Name="chkNotGood" Grid.Row="1" Content="欠佳" VerticalAlignment="Center" Margin="260,0,0,0" />
+            <CheckBox Name="chkNotFree" Grid.Row="1" Content="不畅" VerticalAlignment="Center" Margin="310,0,0,0" />
+            <Label Name="label56" Grid.Row="1" Content="。插管是" VerticalAlignment="Center" Margin="350,0,0,0" />
+            <CheckBox Name="chkForward" Grid.Row="1" Content="正向" VerticalAlignment="Center" Margin="405,0,0,0" />
+            <CheckBox Name="chkBackward" Grid.Row="1" Content="反身" VerticalAlignment="Center" Margin="455,0,0,0" />
+            <Label Name="label57" Grid.Row="1" Content="使用。其出口" VerticalAlignment="Center" Margin="490,0,0,0" />
+            <CheckBox Name="chkGood2" Grid.Row="1" Content="良好" VerticalAlignment="Center" Margin="570,0,0,0" />
+            <CheckBox Name="chkRedness2" Grid.Row="1" Content="发红" VerticalAlignment="Center" Margin="620,0,0,0" />
+            <CheckBox Name="chkFester" Grid.Row="1" Content="化脓" VerticalAlignment="Center" Margin="670,0,0,0" />
+            <CheckBox Name="chkOffLine" Grid.Row="1" Content="脱线" VerticalAlignment="Center" Margin="720,0,0,0" />
+            <Label Name="label58" Grid.Row="1" Content="，" VerticalAlignment="Center" Margin="755,0,0,0" />
+
+            <CheckBox Name="chkNotNeedHandle" Grid.Row="2" Content="不需要处理" VerticalAlignment="Center" Margin="55,0,0,0" />
+            <CheckBox Name="chkHasChangePipe" Grid.Row="2" Content="已经换管" VerticalAlignment="Center" Margin="140,0,0,0" />
+            <CheckBox Name="chkHasFix" Grid.Row="2" Content="已经固定" VerticalAlignment="Center" Margin="215,0,0,0" />
+            <Label Name="label59" Grid.Row="2" Content="。内瘘穿刺点距离瘘口" VerticalAlignment="Center" Margin="280,0,0,0" />
+            <TextBox Name="txtRange" Grid.Row="2" Text="10" Width="40" BorderThickness="0,0,0,1" BorderBrush="Black" VerticalAlignment="Center" Margin="35,0,0,0" />
+            <Label Name="label60" Grid.Row="2" Content="cm，" VerticalAlignment="Center" Margin="445,0,0,0" />
+            <CheckBox Name="chkAlong" Grid.Row="2" Content="顺" VerticalAlignment="Center" Margin="480,0,0,0" />
+            <Label Name="label61" Grid.Row="2" Content="/" VerticalAlignment="Center" Margin="510,0,0,0" />
+            <CheckBox Name="chkInverse" Grid.Row="2" Content="逆" VerticalAlignment="Center" Margin="525,0,0,0" />
+            <Label Name="label62" Grid.Row="2" Content="，穿刺针数" VerticalAlignment="Center" Margin="550,0,0,0" />
+            <TextBox Name="txtPinCount" Grid.Row="2" Text="5" Width="40" BorderThickness="0,0,0,1" BorderBrush="Black" VerticalAlignment="Center" Margin="460,0,0,0" />
+            <Label Name="label63" Grid.Row="2" Content="针，止血时间延长" VerticalAlignment="Center" Margin="655,0,0,0" />
+
+            <CheckBox Name="chkDelayYes" Grid.Row="3" Content="有" VerticalAlignment="Center" Margin="55,0,0,0" />
+            <CheckBox Name="chkDelayNo" Grid.Row="3" Content="无" VerticalAlignment="Center" Margin="95,0,0,0" />
+            <Label Name="label64" Grid.Row="3" Content="。" VerticalAlignment="Center" Margin="125,0,0,0" />
+
+            <Label Name="label65" Grid.Row="4" Content="2、透析器凝血为" VerticalAlignment="Center" Margin="50,0,0,0" />
+            <CheckBox Name="chkZero" Grid.Row="4" Content="0" VerticalAlignment="Center" Margin="155,0,0,0" />
+            <Label Name="label66" Grid.Row="4" Content="/" VerticalAlignment="Center" Margin="180,0,0,0" />
+            <CheckBox Name="chkOne" Grid.Row="4" Content="1" VerticalAlignment="Center" Margin="195,0,0,0" />
+            <Label Name="label67" Grid.Row="4" Content="/" VerticalAlignment="Center" Margin="220,0,0,0" />
+            <CheckBox Name="chkTwo" Grid.Row="4" Content="2" VerticalAlignment="Center" Margin="235,0,0,0" />
+            <Label Name="label68" Grid.Row="4" Content="/" VerticalAlignment="Center" Margin="260,0,0,0" />
+            <CheckBox Name="chkThree" Grid.Row="4" Content="3" VerticalAlignment="Center" Margin="275,0,0,0" />
+            <Label Name="label69" Grid.Row="4" Content="级。" VerticalAlignment="Center" Margin="300,0,0,0" />
+            <Label Name="label70" Grid.Row="4" Content="护士签名：" VerticalAlignment="Center" Margin="400,0,0,0" />
+            <TextBox Name="txtNurse2" Grid.Row="4" Text="高新庐" Width="70" BorderThickness="0,0,0,1" BorderBrush="Black" VerticalAlignment="Center" Margin="180,0,0,0" />
+
+            <Label Name="label71" Grid.Row="5" Content="3、其它：" VerticalAlignment="Center" Margin="50,0,0,0" />
+            <Label Name="lblOtherSummary" Grid.Row="5" Content="暂无其它小结信息。" VerticalAlignment="Center" Margin="110,0,0,0" />
+
+            <Line Name="line1" Grid.Row="6" X1="50" Y1="0" X2="816" Y2="0" Stroke="Black" StrokeThickness="1" />
+            <Label Name="label72" Grid.Row="6" Content="4、护士总结：" VerticalAlignment="Center" Margin="50,0,0,0" />
+            <Label Name="lblNurseSummary" Grid.Row="6" Content="病人有待继续调理观察。" VerticalAlignment="Center" Margin="135,0,0,0" />
+
+            <Label Name="label73" Grid.Row="7" Content="护士签名：" VerticalAlignment="Center" Margin="585,0,0,0" />
+            <TextBox Name="txtNurseName" Grid.Row="7" Text="高新庐" Width="70" BorderThickness="0,0,0,1" BorderBrush="Black" VerticalAlignment="Center" Margin="550,0,0,0" />
+
+            <Label Name="label74" Grid.Row="8" Content="5、医生总结：" VerticalAlignment="Center" Margin="50,0,0,0" />
+            <Label Name="lblDoctorSummary" Grid.Row="8" Content="病人有待继续调理观察。" VerticalAlignment="Center" Margin="135,0,0,0" />
+
+            <Label Name="label75" Grid.Row="9" Content="医生签名：" VerticalAlignment="Center" Margin="585,0,0,0" />
+            <TextBox Name="txtDoctorName" Grid.Row="9" Text="熊迎春" Width="70" BorderThickness="0,0,0,1" BorderBrush="Black" VerticalAlignment="Center" Margin="550,0,0,0" />
+
+            <Label Name="label76" Grid.Row="10" Content="日期：" VerticalAlignment="Center" Margin="585,0,0,0" />
+            <TextBox Name="txtYear2" Grid.Row="10" Text="2015" Width="50" BorderThickness="0,0,0,1" BorderBrush="Black" VerticalAlignment="Center" Margin="485,0,0,0" />
+            <Label Name="label77" Grid.Row="10" Content="年" VerticalAlignment="Center" Margin="675,0,0,0" />
+            <TextBox Name="txtMonth2" Grid.Row="10" Text="01" Width="30" BorderThickness="0,0,0,1" BorderBrush="Black" VerticalAlignment="Center" Margin="605,0,0,0" />
+            <Label Name="label78" Grid.Row="10" Content="月" VerticalAlignment="Center" Margin="725,0,0,0" />
+            <TextBox Name="txtDay2" Grid.Row="10" Text="25" Width="30" BorderThickness="0,0,0,1" BorderBrush="Black" VerticalAlignment="Center" Margin="705,0,0,0" />
+            <Label Name="label79" Grid.Row="10" Content="日" VerticalAlignment="Center" Margin="775,0,0,0" />
+        </Grid>
+    </Grid>
+</UserControl>

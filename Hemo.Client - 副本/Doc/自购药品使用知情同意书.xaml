@@ -1,0 +1,27 @@
+﻿<UserControl x:Class="Hemo.Client.Doc.自购药品使用知情同意书"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="1100" d:DesignWidth="760">
+    <Grid>
+        <Label Content="自购药品使用知情同意书" FontSize="22" Height="44" HorizontalAlignment="Left" HorizontalContentAlignment="Center" Margin="202,77,0,0" Name="label2" VerticalAlignment="Top" VerticalContentAlignment="Center" Width="405" FontFamily="宋体"  />
+        <Label Content="    为了确保病员用药安全，我院原则上不使用自购药品，如果您在住院期间，" Height="38" HorizontalAlignment="Left"  Name="label3" VerticalAlignment="Top" FontSize="17" FontFamily="宋体"  Width="605" Margin="85,185,0,0" />
+        <Label Content="患者姓名:" FontFamily="宋体" FontSize="17"  Height="27" HorizontalAlignment="Left" Margin="85,617,0,0" Name="label19" VerticalAlignment="Top" Width="90" />
+        <Image Name="imgPatientSign" HorizontalAlignment="Left" Margin="179,614,0,0" VerticalAlignment="Top" Width="150" Height="40"/>
+        <Label ClipToBounds="False" Content="ID:" FontFamily="宋体" FontSize="17"  Height="27" HorizontalAlignment="Left" Margin="346,617,0,0" Name="label21" VerticalAlignment="Top" Width="35" />
+        <Label Content="" FontFamily="宋体" FontSize="17"  Height="30" HorizontalAlignment="Left" Margin="385,619,0,0" Name="txtPATIENTID" VerticalAlignment="Top" Width="120" />
+        <TextBlock FontFamily="宋体" FontSize="17"  Height="273" HorizontalAlignment="Left" LineHeight="35" Margin="85,261,0,0" Name="textBlock1" Text="1、按照医疗护理规章制度，我们必须根据医嘱才能给您用药。              2、自购药品必须从正规药店购买，并要出具正规发票（发票需注明药品批号，药品名： _________________，批号：_______________）。                  3、药物保存方法必须要正确，如生物制剂需要在冰箱内冷藏等。            4、由于自购药品在购药渠道、保存、运输过程中可能存在问题，超出了医院的监控范围，如发生不良反应，后果自负。                                   5、医疗忠告：病员自购药品，院方不能确保其质量及安全性，使用后有感染传染病可能（如艾滋病、丙肝、乙肝等），如出现此种情况，后果自负。
+
+" TextWrapping="Wrap" VerticalAlignment="Top" Width="605" />
+        <TextBlock FontFamily="宋体" FontSize="17"  Height="25" HorizontalAlignment="Left" LineHeight="35" Margin="85,543,0,0" Name="textBlock3" Text="审阅完后，请签字确认：" TextWrapping="Wrap" VerticalAlignment="Top" Width="605" />
+        <Label Content="病员朋友：您好！" FontFamily="宋体" FontSize="17"  Height="27" HorizontalAlignment="Left" Margin="85,148,0,0" Name="label1" VerticalAlignment="Top" Width="157" />
+        <Label Content="由于病情需要使用自购药品，您必须知晓以下事项：" FontFamily="宋体" FontSize="17"  Height="38" HorizontalAlignment="Left" Margin="85,219,0,0" Name="label5" VerticalAlignment="Top" Width="605" />
+        <Label ClipToBounds="False" Content="经治医生：" FontFamily="宋体" FontSize="17"  Height="27" HorizontalAlignment="Left" Margin="519,619,0,0" Name="label4" VerticalAlignment="Top" Width="102" />
+        <Label ClipToBounds="False" Content="护 士 长：" FontFamily="宋体" FontSize="17"  Height="27" HorizontalAlignment="Left" Margin="519,655,0,0" Name="label6" VerticalAlignment="Top" Width="102" />
+        <Label ClipToBounds="False" Content="科 主 任：" FontFamily="宋体" FontSize="17"  Height="27" HorizontalAlignment="Left" Margin="519,695,0,0" Name="label7" VerticalAlignment="Top" Width="102" />
+        <Label ClipToBounds="False" Content="科室：" FontFamily="宋体" FontSize="17"  Height="27" HorizontalAlignment="Left" Margin="519,728,0,0" Name="label8" VerticalAlignment="Top" Width="102" />
+        <Label ClipToBounds="False" Content="年        月          日" FontFamily="宋体" FontSize="17"  Height="27" HorizontalAlignment="Left" Margin="474,758,0,315" Name="label9" Width="229" />
+    </Grid>
+</UserControl>

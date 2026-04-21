@@ -1,0 +1,27 @@
+﻿<UserControl x:Class="Hemo.Client.Doc.急诊施行血液灌流同意书"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="1100" d:DesignWidth="760">
+    <Grid>
+        <Label FontFamily="宋体" FontSize="26"  Height="50" HorizontalAlignment="Left" HorizontalContentAlignment="Center" Margin="141,76,0,0" Name="lblHospital" VerticalAlignment="Top" VerticalContentAlignment="Center" Width="522" FontStyle="Normal" />
+        <Label Content="危重病人急诊行血液灌流同意书" FontSize="22" Height="44" HorizontalAlignment="Left" HorizontalContentAlignment="Center" Margin="202,132,0,0" Name="label2" VerticalAlignment="Top" VerticalContentAlignment="Center" Width="405" FontFamily="宋体"  />
+        <Label Content="姓名：" Height="27" HorizontalAlignment="Left"  Name="label3" VerticalAlignment="Top" FontSize="17" FontFamily="FangSong"  Width="51" Margin="85,196,0,0" />
+        <TextBox Height="23"  BorderThickness="0,0,0,0" BorderBrush="Black" Name="txtName" IsReadOnly="False" Margin="141,200,0,877" HorizontalAlignment="Left" Width="92" FontSize="17" FontFamily="FangSong"  />
+        <Label Content="性别：" Height="27" HorizontalAlignment="Left"  Name="label33" VerticalAlignment="Top" FontSize="17" FontFamily="FangSong"  Width="51" Margin="237,196,0,0" />
+        <TextBox Height="23"  BorderThickness="0,0,0,0" BorderBrush="Black" Name="txtSex" IsReadOnly="False" Margin="294,200,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="98" FontSize="17" FontFamily="FangSong"  />
+        <Label  Content="年龄：" Height="27" HorizontalAlignment="Left"  Name="label34" VerticalAlignment="Top" FontSize="17" FontFamily="FangSong"  Width="53" Margin="398,196,0,0" />
+        <TextBox Height="23"  BorderThickness="0,0,0,0" BorderBrush="Black" Name="txtAge" IsReadOnly="False" Margin="457,200,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="99" FontSize="17" FontFamily="FangSong"  />
+        <TextBlock FontFamily="FangSong" FontSize="17"  Height="132" HorizontalAlignment="Left" LineHeight="35" Margin="85,230,0,0" Name="textBlock5" Text="根据病史及目前临床症状、体征可诊断为药物中毒。为挽救患者生命，减轻患者痛苦，拟行血液灌流治疗。然而在治疗过程中可能会出现：①出血、血肿或血栓；②低血压休克或过敏性休克；③心律失常，呼吸、心跳骤停等严重并发症，其后果自负。谨向病人及家属交代病情，如同意急诊行血液灌流治疗，请签字为证：" TextWrapping="Wrap" VerticalAlignment="Top" Width="612" />
+        <Label Content="病人或家属：" FontFamily="FangSong" FontSize="15"  Height="25" HorizontalAlignment="Left" Margin="159,381,0,0" Name="label4" VerticalAlignment="Top" Width="96" />
+        <Image Name="imgPatientSign" HorizontalAlignment="Left" Margin="257,378,0,0" VerticalAlignment="Top" Width="150" Height="40"/>
+        <Label Content="与患者关系：" FontFamily="FangSong" FontSize="15"  Height="25" HorizontalAlignment="Right" Margin="0,381,203,0" Name="label8" VerticalAlignment="Top" Width="97" />
+        <Label Content="" FontFamily="FangSong" FontSize="17"  Height="25" HorizontalAlignment="Left" Margin="560,381,0,0" Name="label9" VerticalAlignment="Top" Width="135" />
+        <Label Content="医师：" FontFamily="FangSong" FontSize="15"  Height="25" HorizontalAlignment="Left" Margin="506,412,0,0" Name="label10" VerticalAlignment="Top" Width="50" />
+        <Label Content="" FontFamily="FangSong" FontSize="17"  Height="25" HorizontalAlignment="Left" Margin="560,412,0,0" Name="label11" VerticalAlignment="Top" Width="135" />
+        <Label Content="      年    月    日" FontFamily="FangSong" FontSize="17"  Height="34" HorizontalAlignment="Left" Margin="526,474,0,0" Name="lblDate" VerticalAlignment="Top" Width="185" />
+        <Label Content="血液净化科" FontFamily="FangSong" FontSize="15"  Height="25" HorizontalAlignment="Right" Margin="0,443,13,0" Name="label5" VerticalAlignment="Top" Width="170" />
+    </Grid>
+</UserControl>

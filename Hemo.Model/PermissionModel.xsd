@@ -1,0 +1,467 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="PermissionModel" targetNamespace="http://tempuri.org/PermissionModel.xsd" xmlns:mstns="http://tempuri.org/PermissionModel.xsd" xmlns="http://tempuri.org/PermissionModel.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="2" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="ConnectionString" IsAppSettingsProperty="true" Modifier="Assembly" Name="ConnectionString (Settings)" PropertyReference="ApplicationSettings.Hemo.Model.Properties.Settings.GlobalReference.Default.ConnectionString" Provider="System.Data.OracleClient" />
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="ConnectionString2" IsAppSettingsProperty="true" Modifier="Assembly" Name="ConnectionString2 (Settings)" PropertyReference="ApplicationSettings.Hemo.Model.Properties.Settings.GlobalReference.Default.ConnectionString2" Provider="System.Data.OracleClient" />
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="FZZYConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="FZZYConnectionString (Settings)" PropertyReference="ApplicationSettings.Hemo.Model.Properties.Settings.GlobalReference.Default.FZZYConnectionString" Provider="System.Data.OleDb" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="PermissionModel" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="PermissionModel" msprop:Generator_UserDSName="PermissionModel">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="MED_USERS" msprop:Generator_TableClassName="MED_USERSDataTable" msprop:Generator_TableVarName="tableMED_USERS" msprop:Generator_TablePropName="MED_USERS" msprop:Generator_RowDeletingName="MED_USERSRowDeleting" msprop:Generator_RowChangingName="MED_USERSRowChanging" msprop:Generator_RowEvHandlerName="MED_USERSRowChangeEventHandler" msprop:Generator_RowDeletedName="MED_USERSRowDeleted" msprop:Generator_UserTableName="MED_USERS" msprop:Generator_RowChangedName="MED_USERSRowChanged" msprop:Generator_RowEvArgName="MED_USERSRowChangeEvent" msprop:Generator_RowClassName="MED_USERSRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="USER_ID" msprop:Generator_ColumnVarNameInTable="columnUSER_ID" msprop:Generator_ColumnPropNameInRow="USER_ID" msprop:Generator_ColumnPropNameInTable="USER_IDColumn" msprop:Generator_UserColumnName="USER_ID">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="36" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="LOGIN_NAME" msprop:Generator_ColumnVarNameInTable="columnLOGIN_NAME" msprop:Generator_ColumnPropNameInRow="LOGIN_NAME" msprop:Generator_ColumnPropNameInTable="LOGIN_NAMEColumn" msprop:Generator_UserColumnName="LOGIN_NAME" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="36" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="LOGIN_PWD" msprop:Generator_ColumnVarNameInTable="columnLOGIN_PWD" msprop:Generator_ColumnPropNameInRow="LOGIN_PWD" msprop:Generator_ColumnPropNameInTable="LOGIN_PWDColumn" msprop:Generator_UserColumnName="LOGIN_PWD" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="60" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="USER_NAME" msprop:Generator_ColumnVarNameInTable="columnUSER_NAME" msprop:Generator_ColumnPropNameInRow="USER_NAME" msprop:Generator_ColumnPropNameInTable="USER_NAMEColumn" msprop:Generator_UserColumnName="USER_NAME" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="160" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="IS_VALID" msprop:Generator_ColumnVarNameInTable="columnIS_VALID" msprop:Generator_ColumnPropNameInRow="IS_VALID" msprop:Generator_ColumnPropNameInTable="IS_VALIDColumn" msprop:Generator_UserColumnName="IS_VALID" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MEMO" msprop:Generator_ColumnVarNameInTable="columnMEMO" msprop:Generator_ColumnPropNameInRow="MEMO" msprop:Generator_ColumnPropNameInTable="MEMOColumn" msprop:Generator_UserColumnName="MEMO" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CREATED_DATE" msprop:Generator_ColumnVarNameInTable="columnCREATED_DATE" msprop:Generator_ColumnPropNameInRow="CREATED_DATE" msprop:Generator_ColumnPropNameInTable="CREATED_DATEColumn" msprop:Generator_UserColumnName="CREATED_DATE" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="DEPT_ID" msprop:Generator_ColumnVarNameInTable="columnDEPT_ID" msprop:Generator_ColumnPropNameInRow="DEPT_ID" msprop:Generator_ColumnPropNameInTable="DEPT_IDColumn" msprop:Generator_UserColumnName="DEPT_ID" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="EMP_NO" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="EMP_NO" msprop:Generator_ColumnVarNameInTable="columnEMP_NO" msprop:Generator_ColumnPropNameInTable="EMP_NOColumn" msprop:Generator_UserColumnName="EMP_NO" type="xs:string" minOccurs="0" />
+              <xs:element name="CREATE_DATE" msprop:Generator_ColumnVarNameInTable="columnCREATE_DATE" msprop:Generator_ColumnPropNameInRow="CREATE_DATE" msprop:Generator_ColumnPropNameInTable="CREATE_DATEColumn" msprop:Generator_UserColumnName="CREATE_DATE" type="xs:dateTime" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="MED_USERAREA_MAPPING" msprop:Generator_TableClassName="MED_USERAREA_MAPPINGDataTable" msprop:Generator_TableVarName="tableMED_USERAREA_MAPPING" msprop:Generator_TablePropName="MED_USERAREA_MAPPING" msprop:Generator_RowDeletingName="MED_USERAREA_MAPPINGRowDeleting" msprop:Generator_RowChangingName="MED_USERAREA_MAPPINGRowChanging" msprop:Generator_RowEvHandlerName="MED_USERAREA_MAPPINGRowChangeEventHandler" msprop:Generator_RowDeletedName="MED_USERAREA_MAPPINGRowDeleted" msprop:Generator_UserTableName="MED_USERAREA_MAPPING" msprop:Generator_RowChangedName="MED_USERAREA_MAPPINGRowChanged" msprop:Generator_RowEvArgName="MED_USERAREA_MAPPINGRowChangeEvent" msprop:Generator_RowClassName="MED_USERAREA_MAPPINGRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="USER_ID" msprop:Generator_ColumnVarNameInTable="columnUSER_ID" msprop:Generator_ColumnPropNameInRow="USER_ID" msprop:Generator_ColumnPropNameInTable="USER_IDColumn" msprop:Generator_UserColumnName="USER_ID">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="36" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="AREA_ID" msprop:Generator_ColumnVarNameInTable="columnAREA_ID" msprop:Generator_ColumnPropNameInRow="AREA_ID" msprop:Generator_ColumnPropNameInTable="AREA_IDColumn" msprop:Generator_UserColumnName="AREA_ID">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="36" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="MED_HEMO_SCHEDULEMASTER" msprop:Generator_TableClassName="MED_HEMO_SCHEDULEMASTERDataTable" msprop:Generator_TableVarName="tableMED_HEMO_SCHEDULEMASTER" msprop:Generator_TablePropName="MED_HEMO_SCHEDULEMASTER" msprop:Generator_RowDeletingName="MED_HEMO_SCHEDULEMASTERRowDeleting" msprop:Generator_RowChangingName="MED_HEMO_SCHEDULEMASTERRowChanging" msprop:Generator_RowEvHandlerName="MED_HEMO_SCHEDULEMASTERRowChangeEventHandler" msprop:Generator_RowDeletedName="MED_HEMO_SCHEDULEMASTERRowDeleted" msprop:Generator_UserTableName="MED_HEMO_SCHEDULEMASTER" msprop:Generator_RowChangedName="MED_HEMO_SCHEDULEMASTERRowChanged" msprop:Generator_RowEvArgName="MED_HEMO_SCHEDULEMASTERRowChangeEvent" msprop:Generator_RowClassName="MED_HEMO_SCHEDULEMASTERRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="MACHINE_ID" msprop:Generator_ColumnVarNameInTable="columnMACHINE_ID" msprop:Generator_ColumnPropNameInRow="MACHINE_ID" msprop:Generator_ColumnPropNameInTable="MACHINE_IDColumn" msprop:Generator_UserColumnName="MACHINE_ID" type="xs:string" minOccurs="0" />
+              <xs:element name="MACHINE_NAME" msprop:Generator_ColumnVarNameInTable="columnMACHINE_NAME" msprop:Generator_ColumnPropNameInRow="MACHINE_NAME" msprop:Generator_ColumnPropNameInTable="MACHINE_NAMEColumn" msprop:Generator_UserColumnName="MACHINE_NAME" type="xs:string" minOccurs="0" />
+              <xs:element name="TYPE" msprop:Generator_ColumnVarNameInTable="columnTYPE" msprop:Generator_ColumnPropNameInRow="TYPE" msprop:Generator_ColumnPropNameInTable="TYPEColumn" msprop:Generator_UserColumnName="TYPE" type="xs:string" minOccurs="0" />
+              <xs:element name="MACHINE_MODEL" msprop:Generator_ColumnVarNameInTable="columnMACHINE_MODEL" msprop:Generator_ColumnPropNameInRow="MACHINE_MODEL" msprop:Generator_ColumnPropNameInTable="MACHINE_MODELColumn" msprop:Generator_UserColumnName="MACHINE_MODEL" type="xs:string" minOccurs="0" />
+              <xs:element name="THERAPEUTIC_PROPERTIES" msprop:Generator_ColumnVarNameInTable="columnTHERAPEUTIC_PROPERTIES" msprop:Generator_ColumnPropNameInRow="THERAPEUTIC_PROPERTIES" msprop:Generator_ColumnPropNameInTable="THERAPEUTIC_PROPERTIESColumn" msprop:Generator_UserColumnName="THERAPEUTIC_PROPERTIES" type="xs:string" minOccurs="0" />
+              <xs:element name="SUPPLIER" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="SUPPLIER" msprop:Generator_ColumnVarNameInTable="columnSUPPLIER" msprop:Generator_ColumnPropNameInTable="SUPPLIERColumn" msprop:Generator_UserColumnName="SUPPLIER" type="xs:string" minOccurs="0" />
+              <xs:element name="OTHER_THERAPEUTIC" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="OTHER_THERAPEUTIC" msprop:Generator_ColumnVarNameInTable="columnOTHER_THERAPEUTIC" msprop:Generator_ColumnPropNameInTable="OTHER_THERAPEUTICColumn" msprop:Generator_UserColumnName="OTHER_THERAPEUTIC" type="xs:string" minOccurs="0" />
+              <xs:element name="AREA_ID" msprop:Generator_ColumnVarNameInTable="columnAREA_ID" msprop:Generator_ColumnPropNameInRow="AREA_ID" msprop:Generator_ColumnPropNameInTable="AREA_IDColumn" msprop:Generator_UserColumnName="AREA_ID" type="xs:string" />
+              <xs:element name="BED_ID" msprop:Generator_ColumnVarNameInTable="columnBED_ID" msprop:Generator_ColumnPropNameInRow="BED_ID" msprop:Generator_ColumnPropNameInTable="BED_IDColumn" msprop:Generator_UserColumnName="BED_ID" type="xs:string" />
+              <xs:element name="FLNAME" msprop:Generator_ColumnVarNameInTable="columnFLNAME" msprop:Generator_ColumnPropNameInRow="FLNAME" msprop:Generator_ColumnPropNameInTable="FLNAMEColumn" msprop:Generator_UserColumnName="FLNAME" type="xs:string" minOccurs="0" />
+              <xs:element name="QYNAME" msprop:Generator_ColumnVarNameInTable="columnQYNAME" msprop:Generator_ColumnPropNameInRow="QYNAME" msprop:Generator_ColumnPropNameInTable="QYNAMEColumn" msprop:Generator_UserColumnName="QYNAME" type="xs:string" minOccurs="0" />
+              <xs:element name="CWNAME" msprop:Generator_ColumnVarNameInTable="columnCWNAME" msprop:Generator_ColumnPropNameInRow="CWNAME" msprop:Generator_ColumnPropNameInTable="CWNAMEColumn" msprop:Generator_UserColumnName="CWNAME" type="xs:string" minOccurs="0" />
+              <xs:element name="CWVALUE" msprop:Generator_ColumnVarNameInTable="columnCWVALUE" msprop:Generator_ColumnPropNameInRow="CWVALUE" msprop:Generator_ColumnPropNameInTable="CWVALUEColumn" msprop:Generator_UserColumnName="CWVALUE" type="xs:string" minOccurs="0" />
+              <xs:element name="TIMETABLEID" msprop:Generator_ColumnVarNameInTable="columnTIMETABLEID" msprop:Generator_ColumnPropNameInRow="TIMETABLEID" msprop:Generator_ColumnPropNameInTable="TIMETABLEIDColumn" msprop:Generator_UserColumnName="TIMETABLEID" type="xs:string" />
+              <xs:element name="TIMETABLEVALUE" msprop:Generator_ColumnVarNameInTable="columnTIMETABLEVALUE" msprop:Generator_ColumnPropNameInRow="TIMETABLEVALUE" msprop:Generator_ColumnPropNameInTable="TIMETABLEVALUEColumn" msprop:Generator_UserColumnName="TIMETABLEVALUE" type="xs:string" minOccurs="0" />
+              <xs:element name="TIMETABLENAME" msprop:Generator_ColumnVarNameInTable="columnTIMETABLENAME" msprop:Generator_ColumnPropNameInRow="TIMETABLENAME" msprop:Generator_ColumnPropNameInTable="TIMETABLENAMEColumn" msprop:Generator_UserColumnName="TIMETABLENAME" type="xs:string" minOccurs="0" />
+              <xs:element name="QYVALUE" msprop:Generator_ColumnVarNameInTable="columnQYVALUE" msprop:Generator_ColumnPropNameInRow="QYVALUE" msprop:Generator_ColumnPropNameInTable="QYVALUEColumn" msprop:Generator_UserColumnName="QYVALUE" type="xs:string" minOccurs="0" />
+              <xs:element name="MONDAY" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="MONDAY" msprop:Generator_ColumnVarNameInTable="columnMONDAY" msprop:Generator_ColumnPropNameInTable="MONDAYColumn" msprop:Generator_UserColumnName="MONDAY" type="xs:string" default="" minOccurs="0" />
+              <xs:element name="MONDAYPATIENT" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="MONDAYPATIENT" msprop:Generator_ColumnVarNameInTable="columnMONDAYPATIENT" msprop:Generator_ColumnPropNameInTable="MONDAYPATIENTColumn" msprop:Generator_UserColumnName="MONDAYPATIENT" type="xs:string" default="" minOccurs="0" />
+              <xs:element name="MONDAYREMARK" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="MONDAYREMARK" msprop:Generator_ColumnVarNameInTable="columnMONDAYREMARK" msprop:Generator_ColumnPropNameInTable="MONDAYREMARKColumn" msprop:Generator_UserColumnName="MONDAYREMARK" type="xs:string" default="" minOccurs="0" />
+              <xs:element name="MONDAYHEMOID" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="MONDAYHEMOID" msprop:Generator_ColumnVarNameInTable="columnMONDAYHEMOID" msprop:Generator_ColumnPropNameInTable="MONDAYHEMOIDColumn" msprop:Generator_UserColumnName="MONDAYHEMOID" type="xs:string" default="" minOccurs="0" />
+              <xs:element name="MONDAY_SCHEDULE_ID" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="MONDAY_SCHEDULE_ID" msprop:Generator_ColumnVarNameInTable="columnMONDAY_SCHEDULE_ID" msprop:Generator_ColumnPropNameInTable="MONDAY_SCHEDULE_IDColumn" msprop:Generator_UserColumnName="MONDAY_SCHEDULE_ID" type="xs:string" default="" minOccurs="0" />
+              <xs:element name="MONDAY_START_TIME" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="MONDAY_START_TIME" msprop:Generator_ColumnVarNameInTable="columnMONDAY_START_TIME" msprop:Generator_ColumnPropNameInTable="MONDAY_START_TIMEColumn" msprop:Generator_UserColumnName="MONDAY_START_TIME" type="xs:string" default="" minOccurs="0" />
+              <xs:element name="MONDAY_END_TIME" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="MONDAY_END_TIME" msprop:Generator_ColumnVarNameInTable="columnMONDAY_END_TIME" msprop:Generator_ColumnPropNameInTable="MONDAY_END_TIMEColumn" msprop:Generator_UserColumnName="MONDAY_END_TIME" type="xs:string" default="" minOccurs="0" />
+              <xs:element name="MONDAY_RECIPE_ID" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="MONDAY_RECIPE_ID" msprop:Generator_ColumnVarNameInTable="columnMONDAY_RECIPE_ID" msprop:Generator_ColumnPropNameInTable="MONDAY_RECIPE_IDColumn" msprop:Generator_UserColumnName="MONDAY_RECIPE_ID" type="xs:string" default="" minOccurs="0" />
+              <xs:element name="MONDAY_PURIFIER_MODEL_ID" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="MONDAY_PURIFIER_MODEL_ID" msprop:Generator_ColumnVarNameInTable="columnMONDAY_PURIFIER_MODEL_ID" msprop:Generator_ColumnPropNameInTable="MONDAY_PURIFIER_MODEL_IDColumn" msprop:Generator_UserColumnName="MONDAY_PURIFIER_MODEL_ID" type="xs:string" default="" minOccurs="0" />
+              <xs:element name="MONDAY_INFECTIOUS_CHECK_RESULT" msprop:Generator_ColumnVarNameInTable="columnMONDAY_INFECTIOUS_CHECK_RESULT" msprop:Generator_ColumnPropNameInRow="MONDAY_INFECTIOUS_CHECK_RESULT" msprop:Generator_ColumnPropNameInTable="MONDAY_INFECTIOUS_CHECK_RESULTColumn" msprop:Generator_UserColumnName="MONDAY_INFECTIOUS_CHECK_RESULT" type="xs:string" minOccurs="0" />
+              <xs:element name="MONDAY_PURIFIER_ID" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="MONDAY_PURIFIER_ID" msprop:Generator_ColumnVarNameInTable="columnMONDAY_PURIFIER_ID" msprop:Generator_ColumnPropNameInTable="MONDAY_PURIFIER_IDColumn" msprop:Generator_UserColumnName="MONDAY_PURIFIER_ID" type="xs:string" default="" minOccurs="0" />
+              <xs:element name="TUESDAY" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="TUESDAY" msprop:Generator_ColumnVarNameInTable="columnTUESDAY" msprop:Generator_ColumnPropNameInTable="TUESDAYColumn" msprop:Generator_UserColumnName="TUESDAY" type="xs:string" default="" minOccurs="0" />
+              <xs:element name="TUESDAYPATIENT" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="TUESDAYPATIENT" msprop:Generator_ColumnVarNameInTable="columnTUESDAYPATIENT" msprop:Generator_ColumnPropNameInTable="TUESDAYPATIENTColumn" msprop:Generator_UserColumnName="TUESDAYPATIENT" type="xs:string" default="" minOccurs="0" />
+              <xs:element name="TUESDAYREMARK" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="TUESDAYREMARK" msprop:Generator_ColumnVarNameInTable="columnTUESDAYREMARK" msprop:Generator_ColumnPropNameInTable="TUESDAYREMARKColumn" msprop:Generator_UserColumnName="TUESDAYREMARK" type="xs:string" default="" minOccurs="0" />
+              <xs:element name="TUESDAYHEMOID" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="TUESDAYHEMOID" msprop:Generator_ColumnVarNameInTable="columnTUESDAYHEMOID" msprop:Generator_ColumnPropNameInTable="TUESDAYHEMOIDColumn" msprop:Generator_UserColumnName="TUESDAYHEMOID" type="xs:string" default="" minOccurs="0" />
+              <xs:element name="TUESDAY_SCHEDULE_ID" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="TUESDAY_SCHEDULE_ID" msprop:Generator_ColumnVarNameInTable="columnTUESDAY_SCHEDULE_ID" msprop:Generator_ColumnPropNameInTable="TUESDAY_SCHEDULE_IDColumn" msprop:Generator_UserColumnName="TUESDAY_SCHEDULE_ID" type="xs:string" default="" minOccurs="0" />
+              <xs:element name="TUESDAY_START_TIME" msdata:Caption="MONDAY_START_TIME" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="TUESDAY_START_TIME" msprop:Generator_ColumnVarNameInTable="columnTUESDAY_START_TIME" msprop:Generator_ColumnPropNameInTable="TUESDAY_START_TIMEColumn" msprop:Generator_UserColumnName="TUESDAY_START_TIME" type="xs:string" default="" minOccurs="0" />
+              <xs:element name="TUESDAY_END_TIME" msdata:Caption="MONDAY_END_TIME" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="TUESDAY_END_TIME" msprop:Generator_ColumnVarNameInTable="columnTUESDAY_END_TIME" msprop:Generator_ColumnPropNameInTable="TUESDAY_END_TIMEColumn" msprop:Generator_UserColumnName="TUESDAY_END_TIME" type="xs:string" default="" minOccurs="0" />
+              <xs:element name="TUESDAY_RECIPE_ID" msdata:Caption="MONDAY_RECIPE_ID" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="TUESDAY_RECIPE_ID" msprop:Generator_ColumnVarNameInTable="columnTUESDAY_RECIPE_ID" msprop:Generator_ColumnPropNameInTable="TUESDAY_RECIPE_IDColumn" msprop:Generator_UserColumnName="TUESDAY_RECIPE_ID" type="xs:string" default="" minOccurs="0" />
+              <xs:element name="TUESDAY_PURIFIER_MODEL_ID" msdata:Caption="MONDAY_PURIFIER_MODEL_ID" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="TUESDAY_PURIFIER_MODEL_ID" msprop:Generator_ColumnVarNameInTable="columnTUESDAY_PURIFIER_MODEL_ID" msprop:Generator_ColumnPropNameInTable="TUESDAY_PURIFIER_MODEL_IDColumn" msprop:Generator_UserColumnName="TUESDAY_PURIFIER_MODEL_ID" type="xs:string" default="" minOccurs="0" />
+              <xs:element name="TUESDAY_INFECTIOUS_CHECK_RESULT" msprop:Generator_ColumnVarNameInTable="columnTUESDAY_INFECTIOUS_CHECK_RESULT" msprop:Generator_ColumnPropNameInRow="TUESDAY_INFECTIOUS_CHECK_RESULT" msprop:Generator_ColumnPropNameInTable="TUESDAY_INFECTIOUS_CHECK_RESULTColumn" msprop:Generator_UserColumnName="TUESDAY_INFECTIOUS_CHECK_RESULT" type="xs:string" minOccurs="0" />
+              <xs:element name="TUESDAY_PURIFIER_ID" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="TUESDAY_PURIFIER_ID" msprop:Generator_ColumnVarNameInTable="columnTUESDAY_PURIFIER_ID" msprop:Generator_ColumnPropNameInTable="TUESDAY_PURIFIER_IDColumn" msprop:Generator_UserColumnName="TUESDAY_PURIFIER_ID" type="xs:string" default="" minOccurs="0" />
+              <xs:element name="WEDNESDAY" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="WEDNESDAY" msprop:Generator_ColumnVarNameInTable="columnWEDNESDAY" msprop:Generator_ColumnPropNameInTable="WEDNESDAYColumn" msprop:Generator_UserColumnName="WEDNESDAY" type="xs:string" default="" minOccurs="0" />
+              <xs:element name="WEDNESDAYPATIENT" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="WEDNESDAYPATIENT" msprop:Generator_ColumnVarNameInTable="columnWEDNESDAYPATIENT" msprop:Generator_ColumnPropNameInTable="WEDNESDAYPATIENTColumn" msprop:Generator_UserColumnName="WEDNESDAYPATIENT" type="xs:string" default="" minOccurs="0" />
+              <xs:element name="WEDNESDAYREMARK" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="WEDNESDAYREMARK" msprop:Generator_ColumnVarNameInTable="columnWEDNESDAYREMARK" msprop:Generator_ColumnPropNameInTable="WEDNESDAYREMARKColumn" msprop:Generator_UserColumnName="WEDNESDAYREMARK" type="xs:string" default="" minOccurs="0" />
+              <xs:element name="WEDNESDAYHEMOID" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="WEDNESDAYHEMOID" msprop:Generator_ColumnVarNameInTable="columnWEDNESDAYHEMOID" msprop:Generator_ColumnPropNameInTable="WEDNESDAYHEMOIDColumn" msprop:Generator_UserColumnName="WEDNESDAYHEMOID" type="xs:string" default="" minOccurs="0" />
+              <xs:element name="WEDNESDAY_SCHEDULE_ID" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="WEDNESDAY_SCHEDULE_ID" msprop:Generator_ColumnVarNameInTable="columnWEDNESDAY_SCHEDULE_ID" msprop:Generator_ColumnPropNameInTable="WEDNESDAY_SCHEDULE_IDColumn" msprop:Generator_UserColumnName="WEDNESDAY_SCHEDULE_ID" type="xs:string" default="" minOccurs="0" />
+              <xs:element name="WEDNESDAY_START_TIME" msdata:Caption="MONDAY_START_TIME" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="WEDNESDAY_START_TIME" msprop:Generator_ColumnVarNameInTable="columnWEDNESDAY_START_TIME" msprop:Generator_ColumnPropNameInTable="WEDNESDAY_START_TIMEColumn" msprop:Generator_UserColumnName="WEDNESDAY_START_TIME" type="xs:string" default="" minOccurs="0" />
+              <xs:element name="WEDNESDAY_END_TIME" msdata:Caption="MONDAY_END_TIME" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="WEDNESDAY_END_TIME" msprop:Generator_ColumnVarNameInTable="columnWEDNESDAY_END_TIME" msprop:Generator_ColumnPropNameInTable="WEDNESDAY_END_TIMEColumn" msprop:Generator_UserColumnName="WEDNESDAY_END_TIME" type="xs:string" default="" minOccurs="0" />
+              <xs:element name="WEDNESDAY_RECIPE_ID" msdata:Caption="MONDAY_RECIPE_ID" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="WEDNESDAY_RECIPE_ID" msprop:Generator_ColumnVarNameInTable="columnWEDNESDAY_RECIPE_ID" msprop:Generator_ColumnPropNameInTable="WEDNESDAY_RECIPE_IDColumn" msprop:Generator_UserColumnName="WEDNESDAY_RECIPE_ID" type="xs:string" default="" minOccurs="0" />
+              <xs:element name="WEDNESDAY_PURIFIER_MODEL_ID" msdata:Caption="MONDAY_PURIFIER_MODEL_ID" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="WEDNESDAY_PURIFIER_MODEL_ID" msprop:Generator_ColumnVarNameInTable="columnWEDNESDAY_PURIFIER_MODEL_ID" msprop:Generator_ColumnPropNameInTable="WEDNESDAY_PURIFIER_MODEL_IDColumn" msprop:Generator_UserColumnName="WEDNESDAY_PURIFIER_MODEL_ID" type="xs:string" default="" minOccurs="0" />
+              <xs:element name="WEDNESDAY_INFECTIOUS_CHECK_RESULT" msprop:Generator_ColumnVarNameInTable="columnWEDNESDAY_INFECTIOUS_CHECK_RESULT" msprop:Generator_ColumnPropNameInRow="WEDNESDAY_INFECTIOUS_CHECK_RESULT" msprop:Generator_ColumnPropNameInTable="WEDNESDAY_INFECTIOUS_CHECK_RESULTColumn" msprop:Generator_UserColumnName="WEDNESDAY_INFECTIOUS_CHECK_RESULT" type="xs:string" minOccurs="0" />
+              <xs:element name="WEDNESDAY_PURIFIER_ID" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="WEDNESDAY_PURIFIER_ID" msprop:Generator_ColumnVarNameInTable="columnWEDNESDAY_PURIFIER_ID" msprop:Generator_ColumnPropNameInTable="WEDNESDAY_PURIFIER_IDColumn" msprop:Generator_UserColumnName="WEDNESDAY_PURIFIER_ID" type="xs:string" default="" minOccurs="0" />
+              <xs:element name="THURSDAY" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="THURSDAY" msprop:Generator_ColumnVarNameInTable="columnTHURSDAY" msprop:Generator_ColumnPropNameInTable="THURSDAYColumn" msprop:Generator_UserColumnName="THURSDAY" type="xs:string" default="" minOccurs="0" />
+              <xs:element name="THURSDAYPATIENT" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="THURSDAYPATIENT" msprop:Generator_ColumnVarNameInTable="columnTHURSDAYPATIENT" msprop:Generator_ColumnPropNameInTable="THURSDAYPATIENTColumn" msprop:Generator_UserColumnName="THURSDAYPATIENT" type="xs:string" default="" minOccurs="0" />
+              <xs:element name="THURSDAYREMARK" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="THURSDAYREMARK" msprop:Generator_ColumnVarNameInTable="columnTHURSDAYREMARK" msprop:Generator_ColumnPropNameInTable="THURSDAYREMARKColumn" msprop:Generator_UserColumnName="THURSDAYREMARK" type="xs:string" default="" minOccurs="0" />
+              <xs:element name="THURSDAYHEMOID" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="THURSDAYHEMOID" msprop:Generator_ColumnVarNameInTable="columnTHURSDAYHEMOID" msprop:Generator_ColumnPropNameInTable="THURSDAYHEMOIDColumn" msprop:Generator_UserColumnName="THURSDAYHEMOID" type="xs:string" default="" minOccurs="0" />
+              <xs:element name="THURSDAY_SCHEDULE_ID" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="THURSDAY_SCHEDULE_ID" msprop:Generator_ColumnVarNameInTable="columnTHURSDAY_SCHEDULE_ID" msprop:Generator_ColumnPropNameInTable="THURSDAY_SCHEDULE_IDColumn" msprop:Generator_UserColumnName="THURSDAY_SCHEDULE_ID" type="xs:string" default="" minOccurs="0" />
+              <xs:element name="THURSDAY_START_TIME" msdata:Caption="MONDAY_START_TIME" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="THURSDAY_START_TIME" msprop:Generator_ColumnVarNameInTable="columnTHURSDAY_START_TIME" msprop:Generator_ColumnPropNameInTable="THURSDAY_START_TIMEColumn" msprop:Generator_UserColumnName="THURSDAY_START_TIME" type="xs:string" default="" minOccurs="0" />
+              <xs:element name="THURSDAY_END_TIME" msdata:Caption="MONDAY_END_TIME" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="THURSDAY_END_TIME" msprop:Generator_ColumnVarNameInTable="columnTHURSDAY_END_TIME" msprop:Generator_ColumnPropNameInTable="THURSDAY_END_TIMEColumn" msprop:Generator_UserColumnName="THURSDAY_END_TIME" type="xs:string" default="" minOccurs="0" />
+              <xs:element name="THURSDAY_RECIPE_ID" msdata:Caption="MONDAY_RECIPE_ID" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="THURSDAY_RECIPE_ID" msprop:Generator_ColumnVarNameInTable="columnTHURSDAY_RECIPE_ID" msprop:Generator_ColumnPropNameInTable="THURSDAY_RECIPE_IDColumn" msprop:Generator_UserColumnName="THURSDAY_RECIPE_ID" type="xs:string" default="" minOccurs="0" />
+              <xs:element name="THURSDAY_PURIFIER_MODEL_ID" msdata:Caption="MONDAY_PURIFIER_MODEL_ID" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="THURSDAY_PURIFIER_MODEL_ID" msprop:Generator_ColumnVarNameInTable="columnTHURSDAY_PURIFIER_MODEL_ID" msprop:Generator_ColumnPropNameInTable="THURSDAY_PURIFIER_MODEL_IDColumn" msprop:Generator_UserColumnName="THURSDAY_PURIFIER_MODEL_ID" type="xs:string" default="" minOccurs="0" />
+              <xs:element name="THURSDAY_INFECTIOUS_CHECK_RESULT" msprop:Generator_ColumnVarNameInTable="columnTHURSDAY_INFECTIOUS_CHECK_RESULT" msprop:Generator_ColumnPropNameInRow="THURSDAY_INFECTIOUS_CHECK_RESULT" msprop:Generator_ColumnPropNameInTable="THURSDAY_INFECTIOUS_CHECK_RESULTColumn" msprop:Generator_UserColumnName="THURSDAY_INFECTIOUS_CHECK_RESULT" type="xs:string" minOccurs="0" />
+              <xs:element name="THURSDAY_PURIFIER_ID" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="THURSDAY_PURIFIER_ID" msprop:Generator_ColumnVarNameInTable="columnTHURSDAY_PURIFIER_ID" msprop:Generator_ColumnPropNameInTable="THURSDAY_PURIFIER_IDColumn" msprop:Generator_UserColumnName="THURSDAY_PURIFIER_ID" type="xs:string" default="" minOccurs="0" />
+              <xs:element name="FRIDAY" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="FRIDAY" msprop:Generator_ColumnVarNameInTable="columnFRIDAY" msprop:Generator_ColumnPropNameInTable="FRIDAYColumn" msprop:Generator_UserColumnName="FRIDAY" type="xs:string" default="" minOccurs="0" />
+              <xs:element name="FRIDAYPATIENT" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="FRIDAYPATIENT" msprop:Generator_ColumnVarNameInTable="columnFRIDAYPATIENT" msprop:Generator_ColumnPropNameInTable="FRIDAYPATIENTColumn" msprop:Generator_UserColumnName="FRIDAYPATIENT" type="xs:string" default="" minOccurs="0" />
+              <xs:element name="FRIDAYREMARK" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="FRIDAYREMARK" msprop:Generator_ColumnVarNameInTable="columnFRIDAYREMARK" msprop:Generator_ColumnPropNameInTable="FRIDAYREMARKColumn" msprop:Generator_UserColumnName="FRIDAYREMARK" type="xs:string" default="" minOccurs="0" />
+              <xs:element name="FRIDAYHEMOID" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="FRIDAYHEMOID" msprop:Generator_ColumnVarNameInTable="columnFRIDAYHEMOID" msprop:Generator_ColumnPropNameInTable="FRIDAYHEMOIDColumn" msprop:Generator_UserColumnName="FRIDAYHEMOID" type="xs:string" default="" minOccurs="0" />
+              <xs:element name="FRIDAY_SCHEDULE_ID" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="FRIDAY_SCHEDULE_ID" msprop:Generator_ColumnVarNameInTable="columnFRIDAY_SCHEDULE_ID" msprop:Generator_ColumnPropNameInTable="FRIDAY_SCHEDULE_IDColumn" msprop:Generator_UserColumnName="FRIDAY_SCHEDULE_ID" type="xs:string" default="" minOccurs="0" />
+              <xs:element name="FRIDAY_START_TIME" msdata:Caption="MONDAY_START_TIME" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="FRIDAY_START_TIME" msprop:Generator_ColumnVarNameInTable="columnFRIDAY_START_TIME" msprop:Generator_ColumnPropNameInTable="FRIDAY_START_TIMEColumn" msprop:Generator_UserColumnName="FRIDAY_START_TIME" type="xs:string" default="" minOccurs="0" />
+              <xs:element name="FRIDAY_END_TIME" msdata:Caption="MONDAY_END_TIME" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="FRIDAY_END_TIME" msprop:Generator_ColumnVarNameInTable="columnFRIDAY_END_TIME" msprop:Generator_ColumnPropNameInTable="FRIDAY_END_TIMEColumn" msprop:Generator_UserColumnName="FRIDAY_END_TIME" type="xs:string" default="" minOccurs="0" />
+              <xs:element name="FRIDAY_RECIPE_ID" msdata:Caption="MONDAY_RECIPE_ID" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="FRIDAY_RECIPE_ID" msprop:Generator_ColumnVarNameInTable="columnFRIDAY_RECIPE_ID" msprop:Generator_ColumnPropNameInTable="FRIDAY_RECIPE_IDColumn" msprop:Generator_UserColumnName="FRIDAY_RECIPE_ID" type="xs:string" default="" minOccurs="0" />
+              <xs:element name="FRIDAY_PURIFIER_MODEL_ID" msdata:Caption="MONDAY_PURIFIER_MODEL_ID" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="FRIDAY_PURIFIER_MODEL_ID" msprop:Generator_ColumnVarNameInTable="columnFRIDAY_PURIFIER_MODEL_ID" msprop:Generator_ColumnPropNameInTable="FRIDAY_PURIFIER_MODEL_IDColumn" msprop:Generator_UserColumnName="FRIDAY_PURIFIER_MODEL_ID" type="xs:string" default="" minOccurs="0" />
+              <xs:element name="FRIDAY_INFECTIOUS_CHECK_RESULT" msprop:Generator_ColumnVarNameInTable="columnFRIDAY_INFECTIOUS_CHECK_RESULT" msprop:Generator_ColumnPropNameInRow="FRIDAY_INFECTIOUS_CHECK_RESULT" msprop:Generator_ColumnPropNameInTable="FRIDAY_INFECTIOUS_CHECK_RESULTColumn" msprop:Generator_UserColumnName="FRIDAY_INFECTIOUS_CHECK_RESULT" type="xs:string" minOccurs="0" />
+              <xs:element name="FRIDAY_PURIFIER_ID" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="FRIDAY_PURIFIER_ID" msprop:Generator_ColumnVarNameInTable="columnFRIDAY_PURIFIER_ID" msprop:Generator_ColumnPropNameInTable="FRIDAY_PURIFIER_IDColumn" msprop:Generator_UserColumnName="FRIDAY_PURIFIER_ID" type="xs:string" default="" minOccurs="0" />
+              <xs:element name="STATURDAY" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="STATURDAY" msprop:Generator_ColumnVarNameInTable="columnSTATURDAY" msprop:Generator_ColumnPropNameInTable="STATURDAYColumn" msprop:Generator_UserColumnName="STATURDAY" type="xs:string" default="" minOccurs="0" />
+              <xs:element name="STATURDAYPATIENT" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="STATURDAYPATIENT" msprop:Generator_ColumnVarNameInTable="columnSTATURDAYPATIENT" msprop:Generator_ColumnPropNameInTable="STATURDAYPATIENTColumn" msprop:Generator_UserColumnName="STATURDAYPATIENT" type="xs:string" default="" minOccurs="0" />
+              <xs:element name="STATURDAYREMARK" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="STATURDAYREMARK" msprop:Generator_ColumnVarNameInTable="columnSTATURDAYREMARK" msprop:Generator_ColumnPropNameInTable="STATURDAYREMARKColumn" msprop:Generator_UserColumnName="STATURDAYREMARK" type="xs:string" default="" minOccurs="0" />
+              <xs:element name="STATURDAYHEMOID" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="STATURDAYHEMOID" msprop:Generator_ColumnVarNameInTable="columnSTATURDAYHEMOID" msprop:Generator_ColumnPropNameInTable="STATURDAYHEMOIDColumn" msprop:Generator_UserColumnName="STATURDAYHEMOID" type="xs:string" default="" minOccurs="0" />
+              <xs:element name="STATURDAY_SCHEDULE_ID" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="STATURDAY_SCHEDULE_ID" msprop:Generator_ColumnVarNameInTable="columnSTATURDAY_SCHEDULE_ID" msprop:Generator_ColumnPropNameInTable="STATURDAY_SCHEDULE_IDColumn" msprop:Generator_UserColumnName="STATURDAY_SCHEDULE_ID" type="xs:string" default="" minOccurs="0" />
+              <xs:element name="STATURDAY_START_TIME" msdata:Caption="MONDAY_START_TIME" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="STATURDAY_START_TIME" msprop:Generator_ColumnVarNameInTable="columnSTATURDAY_START_TIME" msprop:Generator_ColumnPropNameInTable="STATURDAY_START_TIMEColumn" msprop:Generator_UserColumnName="STATURDAY_START_TIME" type="xs:string" default="" minOccurs="0" />
+              <xs:element name="STATURDAY_END_TIME" msdata:Caption="MONDAY_END_TIME" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="STATURDAY_END_TIME" msprop:Generator_ColumnVarNameInTable="columnSTATURDAY_END_TIME" msprop:Generator_ColumnPropNameInTable="STATURDAY_END_TIMEColumn" msprop:Generator_UserColumnName="STATURDAY_END_TIME" type="xs:string" default="" minOccurs="0" />
+              <xs:element name="STATURDAY_RECIPE_ID" msdata:Caption="MONDAY_RECIPE_ID" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="STATURDAY_RECIPE_ID" msprop:Generator_ColumnVarNameInTable="columnSTATURDAY_RECIPE_ID" msprop:Generator_ColumnPropNameInTable="STATURDAY_RECIPE_IDColumn" msprop:Generator_UserColumnName="STATURDAY_RECIPE_ID" type="xs:string" default="" minOccurs="0" />
+              <xs:element name="STATURDAY_PURIFIER_MODEL_ID" msdata:Caption="MONDAY_PURIFIER_MODEL_ID" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="STATURDAY_PURIFIER_MODEL_ID" msprop:Generator_ColumnVarNameInTable="columnSTATURDAY_PURIFIER_MODEL_ID" msprop:Generator_ColumnPropNameInTable="STATURDAY_PURIFIER_MODEL_IDColumn" msprop:Generator_UserColumnName="STATURDAY_PURIFIER_MODEL_ID" type="xs:string" default="" minOccurs="0" />
+              <xs:element name="STATURDAY_INFECTIOUS_CHECK_RESULT" msprop:Generator_ColumnVarNameInTable="columnSTATURDAY_INFECTIOUS_CHECK_RESULT" msprop:Generator_ColumnPropNameInRow="STATURDAY_INFECTIOUS_CHECK_RESULT" msprop:Generator_ColumnPropNameInTable="STATURDAY_INFECTIOUS_CHECK_RESULTColumn" msprop:Generator_UserColumnName="STATURDAY_INFECTIOUS_CHECK_RESULT" type="xs:string" minOccurs="0" />
+              <xs:element name="STATURDAY_PURIFIER_ID" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="STATURDAY_PURIFIER_ID" msprop:Generator_ColumnVarNameInTable="columnSTATURDAY_PURIFIER_ID" msprop:Generator_ColumnPropNameInTable="STATURDAY_PURIFIER_IDColumn" msprop:Generator_UserColumnName="STATURDAY_PURIFIER_ID" type="xs:string" default="" minOccurs="0" />
+              <xs:element name="SUNDAY" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="SUNDAY" msprop:Generator_ColumnVarNameInTable="columnSUNDAY" msprop:Generator_ColumnPropNameInTable="SUNDAYColumn" msprop:Generator_UserColumnName="SUNDAY" type="xs:string" default="" minOccurs="0" />
+              <xs:element name="SUNDAYPATIENT" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="SUNDAYPATIENT" msprop:Generator_ColumnVarNameInTable="columnSUNDAYPATIENT" msprop:Generator_ColumnPropNameInTable="SUNDAYPATIENTColumn" msprop:Generator_UserColumnName="SUNDAYPATIENT" type="xs:string" default="" minOccurs="0" />
+              <xs:element name="SUNDAYREMARK" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="SUNDAYREMARK" msprop:Generator_ColumnVarNameInTable="columnSUNDAYREMARK" msprop:Generator_ColumnPropNameInTable="SUNDAYREMARKColumn" msprop:Generator_UserColumnName="SUNDAYREMARK" type="xs:string" default="" minOccurs="0" />
+              <xs:element name="SUNDAYHEMOID" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="SUNDAYHEMOID" msprop:Generator_ColumnVarNameInTable="columnSUNDAYHEMOID" msprop:Generator_ColumnPropNameInTable="SUNDAYHEMOIDColumn" msprop:Generator_UserColumnName="SUNDAYHEMOID" type="xs:string" default="" minOccurs="0" />
+              <xs:element name="SUNDAY_SCHEDULE_ID" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="SUNDAY_SCHEDULE_ID" msprop:Generator_ColumnVarNameInTable="columnSUNDAY_SCHEDULE_ID" msprop:Generator_ColumnPropNameInTable="SUNDAY_SCHEDULE_IDColumn" msprop:Generator_UserColumnName="SUNDAY_SCHEDULE_ID" type="xs:string" default="" minOccurs="0" />
+              <xs:element name="SUNDAY_START_TIME" msdata:Caption="MONDAY_START_TIME" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="SUNDAY_START_TIME" msprop:Generator_ColumnVarNameInTable="columnSUNDAY_START_TIME" msprop:Generator_ColumnPropNameInTable="SUNDAY_START_TIMEColumn" msprop:Generator_UserColumnName="SUNDAY_START_TIME" type="xs:string" default="" minOccurs="0" />
+              <xs:element name="SUNDAY_END_TIME" msdata:Caption="MONDAY_END_TIME" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="SUNDAY_END_TIME" msprop:Generator_ColumnVarNameInTable="columnSUNDAY_END_TIME" msprop:Generator_ColumnPropNameInTable="SUNDAY_END_TIMEColumn" msprop:Generator_UserColumnName="SUNDAY_END_TIME" type="xs:string" default="" minOccurs="0" />
+              <xs:element name="SUNDAY_RECIPE_ID" msdata:Caption="MONDAY_RECIPE_ID" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="SUNDAY_RECIPE_ID" msprop:Generator_ColumnVarNameInTable="columnSUNDAY_RECIPE_ID" msprop:Generator_ColumnPropNameInTable="SUNDAY_RECIPE_IDColumn" msprop:Generator_UserColumnName="SUNDAY_RECIPE_ID" type="xs:string" default="" minOccurs="0" />
+              <xs:element name="SUNDAY_PURIFIER_MODEL_ID" msdata:Caption="MONDAY_PURIFIER_MODEL_ID" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="SUNDAY_PURIFIER_MODEL_ID" msprop:Generator_ColumnVarNameInTable="columnSUNDAY_PURIFIER_MODEL_ID" msprop:Generator_ColumnPropNameInTable="SUNDAY_PURIFIER_MODEL_IDColumn" msprop:Generator_UserColumnName="SUNDAY_PURIFIER_MODEL_ID" type="xs:string" default="" minOccurs="0" />
+              <xs:element name="SUNDAY_PURIFIER_ID" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="SUNDAY_PURIFIER_ID" msprop:Generator_ColumnVarNameInTable="columnSUNDAY_PURIFIER_ID" msprop:Generator_ColumnPropNameInTable="SUNDAY_PURIFIER_IDColumn" msprop:Generator_UserColumnName="SUNDAY_PURIFIER_ID" type="xs:string" default="" minOccurs="0" />
+              <xs:element name="SUNDAY_INFECTIOUS_CHECK_RESULT" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="SUNDAY_INFECTIOUS_CHECK_RESULT" msprop:Generator_ColumnVarNameInTable="columnSUNDAY_INFECTIOUS_CHECK_RESULT" msprop:Generator_ColumnPropNameInTable="SUNDAY_INFECTIOUS_CHECK_RESULTColumn" msprop:Generator_UserColumnName="SUNDAY_INFECTIOUS_CHECK_RESULT" type="xs:string" default="" minOccurs="0" />
+              <xs:element name="MONDAY_IS_CRRT" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="MONDAY_IS_CRRT" msprop:Generator_ColumnVarNameInTable="columnMONDAY_IS_CRRT" msprop:Generator_ColumnPropNameInTable="MONDAY_IS_CRRTColumn" msprop:Generator_UserColumnName="MONDAY_IS_CRRT" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TUESDAY_IS_CRRT" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="TUESDAY_IS_CRRT" msprop:Generator_ColumnVarNameInTable="columnTUESDAY_IS_CRRT" msprop:Generator_ColumnPropNameInTable="TUESDAY_IS_CRRTColumn" msprop:Generator_UserColumnName="TUESDAY_IS_CRRT" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="WEDNESDAY_IS_CRRT" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="WEDNESDAY_IS_CRRT" msprop:Generator_ColumnVarNameInTable="columnWEDNESDAY_IS_CRRT" msprop:Generator_ColumnPropNameInTable="WEDNESDAY_IS_CRRTColumn" msprop:Generator_UserColumnName="WEDNESDAY_IS_CRRT" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="THURSDAY_IS_CRRT" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="THURSDAY_IS_CRRT" msprop:Generator_ColumnVarNameInTable="columnTHURSDAY_IS_CRRT" msprop:Generator_ColumnPropNameInTable="THURSDAY_IS_CRRTColumn" msprop:Generator_UserColumnName="THURSDAY_IS_CRRT" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FRIDAY_IS_CRRT" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="FRIDAY_IS_CRRT" msprop:Generator_ColumnVarNameInTable="columnFRIDAY_IS_CRRT" msprop:Generator_ColumnPropNameInTable="FRIDAY_IS_CRRTColumn" msprop:Generator_UserColumnName="FRIDAY_IS_CRRT" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="STATURDAY_IS_CRRT" msprop:Generator_ColumnVarNameInTable="columnSTATURDAY_IS_CRRT" msprop:Generator_ColumnPropNameInRow="STATURDAY_IS_CRRT" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInTable="STATURDAY_IS_CRRTColumn" msprop:Generator_UserColumnName="STATURDAY_IS_CRRT" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SUNDAY_IS_CRRT" msprop:Generator_ColumnVarNameInTable="columnSUNDAY_IS_CRRT" msprop:Generator_ColumnPropNameInRow="SUNDAY_IS_CRRT" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInTable="SUNDAY_IS_CRRTColumn" msprop:Generator_UserColumnName="SUNDAY_IS_CRRT" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="MED_DIALYSIS_MACHINEEXTEND" msprop:Generator_TableClassName="MED_DIALYSIS_MACHINEEXTENDDataTable" msprop:Generator_TableVarName="tableMED_DIALYSIS_MACHINEEXTEND" msprop:Generator_TablePropName="MED_DIALYSIS_MACHINEEXTEND" msprop:Generator_RowDeletingName="MED_DIALYSIS_MACHINEEXTENDRowDeleting" msprop:Generator_RowChangingName="MED_DIALYSIS_MACHINEEXTENDRowChanging" msprop:Generator_RowEvHandlerName="MED_DIALYSIS_MACHINEEXTENDRowChangeEventHandler" msprop:Generator_RowDeletedName="MED_DIALYSIS_MACHINEEXTENDRowDeleted" msprop:Generator_UserTableName="MED_DIALYSIS_MACHINEEXTEND" msprop:Generator_RowChangedName="MED_DIALYSIS_MACHINEEXTENDRowChanged" msprop:Generator_RowEvArgName="MED_DIALYSIS_MACHINEEXTENDRowChangeEvent" msprop:Generator_RowClassName="MED_DIALYSIS_MACHINEEXTENDRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="MACHINE_ID" msprop:Generator_ColumnVarNameInTable="columnMACHINE_ID" msprop:Generator_ColumnPropNameInRow="MACHINE_ID" msprop:Generator_ColumnPropNameInTable="MACHINE_IDColumn" msprop:Generator_UserColumnName="MACHINE_ID">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MACHINE_NAME" msprop:Generator_ColumnVarNameInTable="columnMACHINE_NAME" msprop:Generator_ColumnPropNameInRow="MACHINE_NAME" msprop:Generator_ColumnPropNameInTable="MACHINE_NAMEColumn" msprop:Generator_UserColumnName="MACHINE_NAME" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TYPE" msprop:Generator_ColumnVarNameInTable="columnTYPE" msprop:Generator_ColumnPropNameInRow="TYPE" msprop:Generator_ColumnPropNameInTable="TYPEColumn" msprop:Generator_UserColumnName="TYPE" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MACHINE_MODEL" msprop:Generator_ColumnVarNameInTable="columnMACHINE_MODEL" msprop:Generator_ColumnPropNameInRow="MACHINE_MODEL" msprop:Generator_ColumnPropNameInTable="MACHINE_MODELColumn" msprop:Generator_UserColumnName="MACHINE_MODEL" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="THERAPEUTIC_PROPERTIES" msprop:Generator_ColumnVarNameInTable="columnTHERAPEUTIC_PROPERTIES" msprop:Generator_ColumnPropNameInRow="THERAPEUTIC_PROPERTIES" msprop:Generator_ColumnPropNameInTable="THERAPEUTIC_PROPERTIESColumn" msprop:Generator_UserColumnName="THERAPEUTIC_PROPERTIES" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SUPPLIER" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="SUPPLIER" msprop:Generator_ColumnVarNameInTable="columnSUPPLIER" msprop:Generator_ColumnPropNameInTable="SUPPLIERColumn" msprop:Generator_UserColumnName="SUPPLIER" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="OTHER_THERAPEUTIC" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="OTHER_THERAPEUTIC" msprop:Generator_ColumnVarNameInTable="columnOTHER_THERAPEUTIC" msprop:Generator_ColumnPropNameInTable="OTHER_THERAPEUTICColumn" msprop:Generator_UserColumnName="OTHER_THERAPEUTIC" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="AREA_ID" msprop:Generator_ColumnVarNameInTable="columnAREA_ID" msprop:Generator_ColumnPropNameInRow="AREA_ID" msprop:Generator_ColumnPropNameInTable="AREA_IDColumn" msprop:Generator_UserColumnName="AREA_ID" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BED_ID" msprop:Generator_ColumnVarNameInTable="columnBED_ID" msprop:Generator_ColumnPropNameInRow="BED_ID" msprop:Generator_ColumnPropNameInTable="BED_IDColumn" msprop:Generator_UserColumnName="BED_ID" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FLNAME" msdata:Caption="MACHINE_SEAT_NO" msprop:Generator_ColumnVarNameInTable="columnFLNAME" msprop:Generator_ColumnPropNameInRow="FLNAME" msprop:Generator_ColumnPropNameInTable="FLNAMEColumn" msprop:Generator_UserColumnName="FLNAME" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="QYNAME" msdata:Caption="MACHINE_SERIAL_NO" msprop:Generator_ColumnVarNameInTable="columnQYNAME" msprop:Generator_ColumnPropNameInRow="QYNAME" msprop:Generator_ColumnPropNameInTable="QYNAMEColumn" msprop:Generator_UserColumnName="QYNAME" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CWNAME" msdata:Caption="SOFTWARE_VERSION" msprop:Generator_ColumnVarNameInTable="columnCWNAME" msprop:Generator_ColumnPropNameInRow="CWNAME" msprop:Generator_ColumnPropNameInTable="CWNAMEColumn" msprop:Generator_UserColumnName="CWNAME" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CWVALUE" msprop:Generator_ColumnVarNameInTable="columnCWVALUE" msprop:Generator_ColumnPropNameInRow="CWVALUE" msprop:Generator_ColumnPropNameInTable="CWVALUEColumn" msprop:Generator_UserColumnName="CWVALUE" type="xs:string" minOccurs="0" />
+              <xs:element name="QYVALUE" msprop:Generator_ColumnVarNameInTable="columnQYVALUE" msprop:Generator_ColumnPropNameInRow="QYVALUE" msprop:Generator_ColumnPropNameInTable="QYVALUEColumn" msprop:Generator_UserColumnName="QYVALUE" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="MED_SCHEDULEREMARK" msprop:Generator_TableClassName="MED_SCHEDULEREMARKDataTable" msprop:Generator_TableVarName="tableMED_SCHEDULEREMARK" msprop:Generator_TablePropName="MED_SCHEDULEREMARK" msprop:Generator_RowDeletingName="MED_SCHEDULEREMARKRowDeleting" msprop:Generator_RowChangingName="MED_SCHEDULEREMARKRowChanging" msprop:Generator_RowEvHandlerName="MED_SCHEDULEREMARKRowChangeEventHandler" msprop:Generator_RowDeletedName="MED_SCHEDULEREMARKRowDeleted" msprop:Generator_UserTableName="MED_SCHEDULEREMARK" msprop:Generator_RowChangedName="MED_SCHEDULEREMARKRowChanged" msprop:Generator_RowEvArgName="MED_SCHEDULEREMARKRowChangeEvent" msprop:Generator_RowClassName="MED_SCHEDULEREMARKRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ID" msprop:Generator_ColumnVarNameInTable="columnID" msprop:Generator_ColumnPropNameInRow="ID" msprop:Generator_ColumnPropNameInTable="IDColumn" msprop:Generator_UserColumnName="ID" type="xs:string" />
+              <xs:element name="BEGINTIME" msprop:Generator_ColumnVarNameInTable="columnBEGINTIME" msprop:Generator_ColumnPropNameInRow="BEGINTIME" msprop:Generator_ColumnPropNameInTable="BEGINTIMEColumn" msprop:Generator_UserColumnName="BEGINTIME" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="ENDTIME" msprop:Generator_ColumnVarNameInTable="columnENDTIME" msprop:Generator_ColumnPropNameInRow="ENDTIME" msprop:Generator_ColumnPropNameInTable="ENDTIMEColumn" msprop:Generator_UserColumnName="ENDTIME" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="CONTENT" msprop:Generator_ColumnVarNameInTable="columnCONTENT" msprop:Generator_ColumnPropNameInRow="CONTENT" msprop:Generator_ColumnPropNameInTable="CONTENTColumn" msprop:Generator_UserColumnName="CONTENT" type="xs:string" minOccurs="0" />
+              <xs:element name="CREATEBY" msprop:Generator_ColumnVarNameInTable="columnCREATEBY" msprop:Generator_ColumnPropNameInRow="CREATEBY" msprop:Generator_ColumnPropNameInTable="CREATEBYColumn" msprop:Generator_UserColumnName="CREATEBY" type="xs:string" minOccurs="0" />
+              <xs:element name="CREATETIME" msprop:Generator_ColumnVarNameInTable="columnCREATETIME" msprop:Generator_ColumnPropNameInRow="CREATETIME" msprop:Generator_ColumnPropNameInTable="CREATETIMEColumn" msprop:Generator_UserColumnName="CREATETIME" type="xs:dateTime" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="MED_USERS_WEEKDUTY" msprop:Generator_TableClassName="MED_USERS_WEEKDUTYDataTable" msprop:Generator_TableVarName="tableMED_USERS_WEEKDUTY" msprop:Generator_RowChangedName="MED_USERS_WEEKDUTYRowChanged" msprop:Generator_TablePropName="MED_USERS_WEEKDUTY" msprop:Generator_RowDeletingName="MED_USERS_WEEKDUTYRowDeleting" msprop:Generator_RowChangingName="MED_USERS_WEEKDUTYRowChanging" msprop:Generator_RowEvHandlerName="MED_USERS_WEEKDUTYRowChangeEventHandler" msprop:Generator_RowDeletedName="MED_USERS_WEEKDUTYRowDeleted" msprop:Generator_RowClassName="MED_USERS_WEEKDUTYRow" msprop:Generator_UserTableName="MED_USERS_WEEKDUTY" msprop:Generator_RowEvArgName="MED_USERS_WEEKDUTYRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ID" msprop:Generator_ColumnVarNameInTable="columnID" msprop:Generator_ColumnPropNameInRow="ID" msprop:Generator_ColumnPropNameInTable="IDColumn" msprop:Generator_UserColumnName="ID" type="xs:string" />
+              <xs:element name="USER_ID" msprop:Generator_ColumnVarNameInTable="columnUSER_ID" msprop:Generator_ColumnPropNameInRow="USER_ID" msprop:Generator_ColumnPropNameInTable="USER_IDColumn" msprop:Generator_UserColumnName="USER_ID" type="xs:string" minOccurs="0" />
+              <xs:element name="WEEKDAY" msprop:Generator_ColumnVarNameInTable="columnWEEKDAY" msprop:Generator_ColumnPropNameInRow="WEEKDAY" msprop:Generator_ColumnPropNameInTable="WEEKDAYColumn" msprop:Generator_UserColumnName="WEEKDAY" type="xs:string" minOccurs="0" />
+              <xs:element name="DUTYDAY" msprop:Generator_ColumnVarNameInTable="columnDUTYDAY" msprop:Generator_ColumnPropNameInRow="DUTYDAY" msprop:Generator_ColumnPropNameInTable="DUTYDAYColumn" msprop:Generator_UserColumnName="DUTYDAY" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="CREATEDATE" msprop:Generator_ColumnVarNameInTable="columnCREATEDATE" msprop:Generator_ColumnPropNameInRow="CREATEDATE" msprop:Generator_ColumnPropNameInTable="CREATEDATEColumn" msprop:Generator_UserColumnName="CREATEDATE" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="CREATEBY" msprop:Generator_ColumnVarNameInTable="columnCREATEBY" msprop:Generator_ColumnPropNameInRow="CREATEBY" msprop:Generator_ColumnPropNameInTable="CREATEBYColumn" msprop:Generator_UserColumnName="CREATEBY" type="xs:string" minOccurs="0" />
+              <xs:element name="TYPE" msprop:Generator_ColumnVarNameInTable="columnTYPE" msprop:Generator_ColumnPropNameInRow="TYPE" msprop:Generator_ColumnPropNameInTable="TYPEColumn" msprop:Generator_UserColumnName="TYPE" type="xs:string" minOccurs="0" />
+              <xs:element name="OFFICEID" msprop:Generator_ColumnVarNameInTable="columnOFFICEID" msprop:Generator_ColumnPropNameInRow="OFFICEID" msprop:Generator_ColumnPropNameInTable="OFFICEIDColumn" msprop:Generator_UserColumnName="OFFICEID" type="xs:string" minOccurs="0" />
+              <xs:element name="OFFICENAME" msprop:Generator_ColumnVarNameInTable="columnOFFICENAME" msprop:Generator_ColumnPropNameInRow="OFFICENAME" msprop:Generator_ColumnPropNameInTable="OFFICENAMEColumn" msprop:Generator_UserColumnName="OFFICENAME" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="MED_USERS_WEEKDUTYMASTER" msprop:Generator_TableClassName="MED_USERS_WEEKDUTYMASTERDataTable" msprop:Generator_TableVarName="tableMED_USERS_WEEKDUTYMASTER" msprop:Generator_RowChangedName="MED_USERS_WEEKDUTYMASTERRowChanged" msprop:Generator_TablePropName="MED_USERS_WEEKDUTYMASTER" msprop:Generator_RowDeletingName="MED_USERS_WEEKDUTYMASTERRowDeleting" msprop:Generator_RowChangingName="MED_USERS_WEEKDUTYMASTERRowChanging" msprop:Generator_RowEvHandlerName="MED_USERS_WEEKDUTYMASTERRowChangeEventHandler" msprop:Generator_RowDeletedName="MED_USERS_WEEKDUTYMASTERRowDeleted" msprop:Generator_RowClassName="MED_USERS_WEEKDUTYMASTERRow" msprop:Generator_UserTableName="MED_USERS_WEEKDUTYMASTER" msprop:Generator_RowEvArgName="MED_USERS_WEEKDUTYMASTERRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="USER_ID" msprop:Generator_ColumnVarNameInTable="columnUSER_ID" msprop:Generator_ColumnPropNameInRow="USER_ID" msprop:Generator_ColumnPropNameInTable="USER_IDColumn" msprop:Generator_UserColumnName="USER_ID" type="xs:string" minOccurs="0" />
+              <xs:element name="USER_NAME" msprop:Generator_ColumnVarNameInTable="columnUSER_NAME" msprop:Generator_ColumnPropNameInRow="USER_NAME" msprop:Generator_ColumnPropNameInTable="USER_NAMEColumn" msprop:Generator_UserColumnName="USER_NAME" type="xs:string" minOccurs="0" />
+              <xs:element name="MONDAY" msprop:Generator_ColumnVarNameInTable="columnMONDAY" msprop:Generator_ColumnPropNameInRow="MONDAY" msprop:Generator_ColumnPropNameInTable="MONDAYColumn" msprop:Generator_UserColumnName="MONDAY" type="xs:string" minOccurs="0" />
+              <xs:element name="MONDAYDUTY" msprop:Generator_ColumnVarNameInTable="columnMONDAYDUTY" msprop:Generator_ColumnPropNameInRow="MONDAYDUTY" msprop:Generator_ColumnPropNameInTable="MONDAYDUTYColumn" msprop:Generator_UserColumnName="MONDAYDUTY" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="MONDAYOFFICEID" msprop:Generator_ColumnVarNameInTable="columnMONDAYOFFICEID" msprop:Generator_ColumnPropNameInRow="MONDAYOFFICEID" msprop:Generator_ColumnPropNameInTable="MONDAYOFFICEIDColumn" msprop:Generator_UserColumnName="MONDAYOFFICEID" type="xs:string" minOccurs="0" />
+              <xs:element name="MONDAYOFFICENAME" msprop:Generator_ColumnVarNameInTable="columnMONDAYOFFICENAME" msprop:Generator_ColumnPropNameInRow="MONDAYOFFICENAME" msprop:Generator_ColumnPropNameInTable="MONDAYOFFICENAMEColumn" msprop:Generator_UserColumnName="MONDAYOFFICENAME" type="xs:string" minOccurs="0" />
+              <xs:element name="TUESDAY" msprop:Generator_ColumnVarNameInTable="columnTUESDAY" msprop:Generator_ColumnPropNameInRow="TUESDAY" msprop:Generator_ColumnPropNameInTable="TUESDAYColumn" msprop:Generator_UserColumnName="TUESDAY" type="xs:string" minOccurs="0" />
+              <xs:element name="TUESDAYDUTY" msprop:Generator_ColumnVarNameInTable="columnTUESDAYDUTY" msprop:Generator_ColumnPropNameInRow="TUESDAYDUTY" msprop:Generator_ColumnPropNameInTable="TUESDAYDUTYColumn" msprop:Generator_UserColumnName="TUESDAYDUTY" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="TUESDAYOFFICEID" msprop:Generator_ColumnVarNameInTable="columnTUESDAYOFFICEID" msprop:Generator_ColumnPropNameInRow="TUESDAYOFFICEID" msprop:Generator_ColumnPropNameInTable="TUESDAYOFFICEIDColumn" msprop:Generator_UserColumnName="TUESDAYOFFICEID" type="xs:string" minOccurs="0" />
+              <xs:element name="TUESDAYOFFICENAME" msprop:Generator_ColumnVarNameInTable="columnTUESDAYOFFICENAME" msprop:Generator_ColumnPropNameInRow="TUESDAYOFFICENAME" msprop:Generator_ColumnPropNameInTable="TUESDAYOFFICENAMEColumn" msprop:Generator_UserColumnName="TUESDAYOFFICENAME" type="xs:string" minOccurs="0" />
+              <xs:element name="WEDNESDAY" msprop:Generator_ColumnVarNameInTable="columnWEDNESDAY" msprop:Generator_ColumnPropNameInRow="WEDNESDAY" msprop:Generator_ColumnPropNameInTable="WEDNESDAYColumn" msprop:Generator_UserColumnName="WEDNESDAY" type="xs:string" minOccurs="0" />
+              <xs:element name="WEDNESDAYDUTY" msprop:Generator_ColumnVarNameInTable="columnWEDNESDAYDUTY" msprop:Generator_ColumnPropNameInRow="WEDNESDAYDUTY" msprop:Generator_ColumnPropNameInTable="WEDNESDAYDUTYColumn" msprop:Generator_UserColumnName="WEDNESDAYDUTY" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="WEDNESDAYOFFICEID" msprop:Generator_ColumnVarNameInTable="columnWEDNESDAYOFFICEID" msprop:Generator_ColumnPropNameInRow="WEDNESDAYOFFICEID" msprop:Generator_ColumnPropNameInTable="WEDNESDAYOFFICEIDColumn" msprop:Generator_UserColumnName="WEDNESDAYOFFICEID" type="xs:string" minOccurs="0" />
+              <xs:element name="WEDNESDAYOFFICENAME" msprop:Generator_ColumnVarNameInTable="columnWEDNESDAYOFFICENAME" msprop:Generator_ColumnPropNameInRow="WEDNESDAYOFFICENAME" msprop:Generator_ColumnPropNameInTable="WEDNESDAYOFFICENAMEColumn" msprop:Generator_UserColumnName="WEDNESDAYOFFICENAME" type="xs:string" minOccurs="0" />
+              <xs:element name="THURSDAY" msprop:Generator_ColumnVarNameInTable="columnTHURSDAY" msprop:Generator_ColumnPropNameInRow="THURSDAY" msprop:Generator_ColumnPropNameInTable="THURSDAYColumn" msprop:Generator_UserColumnName="THURSDAY" type="xs:string" minOccurs="0" />
+              <xs:element name="THURSDAYDUTY" msprop:Generator_ColumnVarNameInTable="columnTHURSDAYDUTY" msprop:Generator_ColumnPropNameInRow="THURSDAYDUTY" msprop:Generator_ColumnPropNameInTable="THURSDAYDUTYColumn" msprop:Generator_UserColumnName="THURSDAYDUTY" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="THURSDAYOFFICEID" msprop:Generator_ColumnVarNameInTable="columnTHURSDAYOFFICEID" msprop:Generator_ColumnPropNameInRow="THURSDAYOFFICEID" msprop:Generator_ColumnPropNameInTable="THURSDAYOFFICEIDColumn" msprop:Generator_UserColumnName="THURSDAYOFFICEID" type="xs:string" minOccurs="0" />
+              <xs:element name="THURSDAYOFFICENAME" msprop:Generator_ColumnVarNameInTable="columnTHURSDAYOFFICENAME" msprop:Generator_ColumnPropNameInRow="THURSDAYOFFICENAME" msprop:Generator_ColumnPropNameInTable="THURSDAYOFFICENAMEColumn" msprop:Generator_UserColumnName="THURSDAYOFFICENAME" type="xs:string" minOccurs="0" />
+              <xs:element name="FRIDAY" msprop:Generator_ColumnVarNameInTable="columnFRIDAY" msprop:Generator_ColumnPropNameInRow="FRIDAY" msprop:Generator_ColumnPropNameInTable="FRIDAYColumn" msprop:Generator_UserColumnName="FRIDAY" type="xs:string" minOccurs="0" />
+              <xs:element name="FRIDAYDUTY" msprop:Generator_ColumnVarNameInTable="columnFRIDAYDUTY" msprop:Generator_ColumnPropNameInRow="FRIDAYDUTY" msprop:Generator_ColumnPropNameInTable="FRIDAYDUTYColumn" msprop:Generator_UserColumnName="FRIDAYDUTY" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="FRIDAYOFFICEID" msprop:Generator_ColumnVarNameInTable="columnFRIDAYOFFICEID" msprop:Generator_ColumnPropNameInRow="FRIDAYOFFICEID" msprop:Generator_ColumnPropNameInTable="FRIDAYOFFICEIDColumn" msprop:Generator_UserColumnName="FRIDAYOFFICEID" type="xs:string" minOccurs="0" />
+              <xs:element name="FRIDAYOFFICENAME" msprop:Generator_ColumnVarNameInTable="columnFRIDAYOFFICENAME" msprop:Generator_ColumnPropNameInRow="FRIDAYOFFICENAME" msprop:Generator_ColumnPropNameInTable="FRIDAYOFFICENAMEColumn" msprop:Generator_UserColumnName="FRIDAYOFFICENAME" type="xs:string" minOccurs="0" />
+              <xs:element name="SATURDAY" msprop:Generator_ColumnVarNameInTable="columnSATURDAY" msprop:Generator_ColumnPropNameInRow="SATURDAY" msprop:Generator_ColumnPropNameInTable="SATURDAYColumn" msprop:Generator_UserColumnName="SATURDAY" type="xs:string" minOccurs="0" />
+              <xs:element name="SATURDAYDUTY" msprop:Generator_ColumnVarNameInTable="columnSATURDAYDUTY" msprop:Generator_ColumnPropNameInRow="SATURDAYDUTY" msprop:Generator_ColumnPropNameInTable="SATURDAYDUTYColumn" msprop:Generator_UserColumnName="SATURDAYDUTY" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="SATURDAYOFFICEID" msprop:Generator_ColumnVarNameInTable="columnSATURDAYOFFICEID" msprop:Generator_ColumnPropNameInRow="SATURDAYOFFICEID" msprop:Generator_ColumnPropNameInTable="SATURDAYOFFICEIDColumn" msprop:Generator_UserColumnName="SATURDAYOFFICEID" type="xs:string" minOccurs="0" />
+              <xs:element name="SATURDAYOFFICENAME" msprop:Generator_ColumnVarNameInTable="columnSATURDAYOFFICENAME" msprop:Generator_ColumnPropNameInRow="SATURDAYOFFICENAME" msprop:Generator_ColumnPropNameInTable="SATURDAYOFFICENAMEColumn" msprop:Generator_UserColumnName="SATURDAYOFFICENAME" type="xs:string" minOccurs="0" />
+              <xs:element name="SUNDAY" msprop:Generator_ColumnVarNameInTable="columnSUNDAY" msprop:Generator_ColumnPropNameInRow="SUNDAY" msprop:Generator_ColumnPropNameInTable="SUNDAYColumn" msprop:Generator_UserColumnName="SUNDAY" type="xs:string" minOccurs="0" />
+              <xs:element name="SUNDAYDUTY" msprop:Generator_ColumnVarNameInTable="columnSUNDAYDUTY" msprop:Generator_ColumnPropNameInRow="SUNDAYDUTY" msprop:Generator_ColumnPropNameInTable="SUNDAYDUTYColumn" msprop:Generator_UserColumnName="SUNDAYDUTY" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="SUNDAYOFFICEID" msprop:Generator_ColumnVarNameInTable="columnSUNDAYOFFICEID" msprop:Generator_ColumnPropNameInRow="SUNDAYOFFICEID" msprop:Generator_ColumnPropNameInTable="SUNDAYOFFICEIDColumn" msprop:Generator_UserColumnName="SUNDAYOFFICEID" type="xs:string" minOccurs="0" />
+              <xs:element name="SUNDAYOFFICENAME" msprop:Generator_ColumnVarNameInTable="columnSUNDAYOFFICENAME" msprop:Generator_ColumnPropNameInRow="SUNDAYOFFICENAME" msprop:Generator_ColumnPropNameInTable="SUNDAYOFFICENAMEColumn" msprop:Generator_UserColumnName="SUNDAYOFFICENAME" type="xs:string" minOccurs="0" />
+              <xs:element name="TYPE" msprop:Generator_ColumnVarNameInTable="columnTYPE" msprop:Generator_ColumnPropNameInRow="TYPE" msprop:Generator_ColumnPropNameInTable="TYPEColumn" msprop:Generator_UserColumnName="TYPE" type="xs:string" minOccurs="0" />
+              <xs:element name="CREATEBY" msprop:Generator_ColumnVarNameInTable="columnCREATEBY" msprop:Generator_ColumnPropNameInRow="CREATEBY" msprop:Generator_ColumnPropNameInTable="CREATEBYColumn" msprop:Generator_UserColumnName="CREATEBY" type="xs:string" minOccurs="0" />
+              <xs:element name="CREATEDATE" msprop:Generator_ColumnVarNameInTable="columnCREATEDATE" msprop:Generator_ColumnPropNameInRow="CREATEDATE" msprop:Generator_ColumnPropNameInTable="CREATEDATEColumn" msprop:Generator_UserColumnName="CREATEDATE" type="xs:dateTime" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="MED_NURSE_GROUP" msprop:Generator_TableClassName="MED_NURSE_GROUPDataTable" msprop:Generator_TableVarName="tableMED_NURSE_GROUP" msprop:Generator_RowChangedName="MED_NURSE_GROUPRowChanged" msprop:Generator_TablePropName="MED_NURSE_GROUP" msprop:Generator_RowDeletingName="MED_NURSE_GROUPRowDeleting" msprop:Generator_RowChangingName="MED_NURSE_GROUPRowChanging" msprop:Generator_RowEvHandlerName="MED_NURSE_GROUPRowChangeEventHandler" msprop:Generator_RowDeletedName="MED_NURSE_GROUPRowDeleted" msprop:Generator_RowClassName="MED_NURSE_GROUPRow" msprop:Generator_UserTableName="MED_NURSE_GROUP" msprop:Generator_RowEvArgName="MED_NURSE_GROUPRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ID" msprop:Generator_ColumnVarNameInTable="columnID" msprop:Generator_ColumnPropNameInRow="ID" msprop:Generator_ColumnPropNameInTable="IDColumn" msprop:Generator_UserColumnName="ID">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="NURSE_LEADER" msprop:Generator_ColumnVarNameInTable="columnNURSE_LEADER" msprop:Generator_ColumnPropNameInRow="NURSE_LEADER" msprop:Generator_ColumnPropNameInTable="NURSE_LEADERColumn" msprop:Generator_UserColumnName="NURSE_LEADER" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CHECK_NURSE" msprop:Generator_ColumnVarNameInTable="columnCHECK_NURSE" msprop:Generator_ColumnPropNameInRow="CHECK_NURSE" msprop:Generator_ColumnPropNameInTable="CHECK_NURSEColumn" msprop:Generator_UserColumnName="CHECK_NURSE" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CREATE_DATE" msprop:Generator_ColumnVarNameInTable="columnCREATE_DATE" msprop:Generator_ColumnPropNameInRow="CREATE_DATE" msprop:Generator_ColumnPropNameInTable="CREATE_DATEColumn" msprop:Generator_UserColumnName="CREATE_DATE" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="CREATE_USER" msprop:Generator_ColumnVarNameInTable="columnCREATE_USER" msprop:Generator_ColumnPropNameInRow="CREATE_USER" msprop:Generator_ColumnPropNameInTable="CREATE_USERColumn" msprop:Generator_UserColumnName="CREATE_USER" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:MED_USERS" />
+      <xs:field xpath="mstns:USER_ID" />
+    </xs:unique>
+    <xs:unique name="MED_USERAREA_MAPPING_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:MED_USERAREA_MAPPING" />
+      <xs:field xpath="mstns:USER_ID" />
+      <xs:field xpath="mstns:AREA_ID" />
+    </xs:unique>
+    <xs:unique name="MED_DIALYSIS_MACHINEEXTEND_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:MED_DIALYSIS_MACHINEEXTEND" />
+      <xs:field xpath="mstns:MACHINE_ID" />
+    </xs:unique>
+    <xs:unique name="MED_SCHEDULEREMARK_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:MED_SCHEDULEREMARK" />
+      <xs:field xpath="mstns:ID" />
+    </xs:unique>
+    <xs:unique name="MED_USERS_WEEKDUTY_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:MED_USERS_WEEKDUTY" />
+      <xs:field xpath="mstns:ID" />
+    </xs:unique>
+    <xs:unique name="MED_NURSE_GROUP_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:MED_NURSE_GROUP" />
+      <xs:field xpath="mstns:ID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

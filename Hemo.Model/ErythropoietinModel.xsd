@@ -1,0 +1,161 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="ErythropoietinModel" targetNamespace="http://tempuri.org/ErythropoietinModel.xsd" xmlns:mstns="http://tempuri.org/ErythropoietinModel.xsd" xmlns="http://tempuri.org/ErythropoietinModel.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="ConnectionString2" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="ConnectionString2 (Settings)" PropertyReference="ApplicationSettings.Hemo.Model.Properties.Settings.GlobalReference.Default.ConnectionString2" Provider="System.Data.OracleClient" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="ErythropoietinModel" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="ErythropoietinModel" msprop:Generator_UserDSName="ErythropoietinModel">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="MED_ERYTHROPOIETIN" msprop:Generator_TableClassName="MED_ERYTHROPOIETINDataTable" msprop:Generator_TableVarName="tableMED_ERYTHROPOIETIN" msprop:Generator_TablePropName="MED_ERYTHROPOIETIN" msprop:Generator_RowDeletingName="MED_ERYTHROPOIETINRowDeleting" msprop:Generator_UserTableName="MED_ERYTHROPOIETIN" msprop:Generator_RowChangingName="MED_ERYTHROPOIETINRowChanging" msprop:Generator_RowEvHandlerName="MED_ERYTHROPOIETINRowChangeEventHandler" msprop:Generator_RowDeletedName="MED_ERYTHROPOIETINRowDeleted" msprop:Generator_RowEvArgName="MED_ERYTHROPOIETINRowChangeEvent" msprop:Generator_RowChangedName="MED_ERYTHROPOIETINRowChanged" msprop:Generator_RowClassName="MED_ERYTHROPOIETINRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ERYTHROPOIETIN_ID" msprop:Generator_ColumnVarNameInTable="columnERYTHROPOIETIN_ID" msprop:Generator_ColumnPropNameInRow="ERYTHROPOIETIN_ID" msprop:Generator_ColumnPropNameInTable="ERYTHROPOIETIN_IDColumn" msprop:Generator_UserColumnName="ERYTHROPOIETIN_ID">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="36" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DRUG_CODE" msprop:Generator_ColumnVarNameInTable="columnDRUG_CODE" msprop:Generator_ColumnPropNameInRow="DRUG_CODE" msprop:Generator_ColumnPropNameInTable="DRUG_CODEColumn" msprop:Generator_UserColumnName="DRUG_CODE" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="QW" msprop:Generator_ColumnVarNameInTable="columnQW" msprop:Generator_ColumnPropNameInRow="QW" msprop:Generator_ColumnPropNameInTable="QWColumn" msprop:Generator_UserColumnName="QW" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TIME_TYPE" msprop:Generator_ColumnVarNameInTable="columnTIME_TYPE" msprop:Generator_ColumnPropNameInRow="TIME_TYPE" msprop:Generator_ColumnPropNameInTable="TIME_TYPEColumn" msprop:Generator_UserColumnName="TIME_TYPE" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FREQUENCY" msprop:Generator_ColumnVarNameInTable="columnFREQUENCY" msprop:Generator_ColumnPropNameInRow="FREQUENCY" msprop:Generator_ColumnPropNameInTable="FREQUENCYColumn" msprop:Generator_UserColumnName="FREQUENCY" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ERYTHROPOIETIN_TYPE" msprop:Generator_ColumnVarNameInTable="columnERYTHROPOIETIN_TYPE" msprop:Generator_ColumnPropNameInRow="ERYTHROPOIETIN_TYPE" msprop:Generator_ColumnPropNameInTable="ERYTHROPOIETIN_TYPEColumn" msprop:Generator_UserColumnName="ERYTHROPOIETIN_TYPE" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DRUG_MODE" msprop:Generator_ColumnVarNameInTable="columnDRUG_MODE" msprop:Generator_ColumnPropNameInRow="DRUG_MODE" msprop:Generator_ColumnPropNameInTable="DRUG_MODEColumn" msprop:Generator_UserColumnName="DRUG_MODE" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DOSAGE" msprop:Generator_ColumnVarNameInTable="columnDOSAGE" msprop:Generator_ColumnPropNameInRow="DOSAGE" msprop:Generator_ColumnPropNameInTable="DOSAGEColumn" msprop:Generator_UserColumnName="DOSAGE" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="UNIT" msprop:Generator_ColumnVarNameInTable="columnUNIT" msprop:Generator_ColumnPropNameInRow="UNIT" msprop:Generator_ColumnPropNameInTable="UNITColumn" msprop:Generator_UserColumnName="UNIT" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="REMARK" msprop:Generator_ColumnVarNameInTable="columnREMARK" msprop:Generator_ColumnPropNameInRow="REMARK" msprop:Generator_ColumnPropNameInTable="REMARKColumn" msprop:Generator_UserColumnName="REMARK" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="500" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CREATE_USERID" msprop:Generator_ColumnVarNameInTable="columnCREATE_USERID" msprop:Generator_ColumnPropNameInRow="CREATE_USERID" msprop:Generator_ColumnPropNameInTable="CREATE_USERIDColumn" msprop:Generator_UserColumnName="CREATE_USERID">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="36" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CREATE_TIME" msprop:Generator_ColumnVarNameInTable="columnCREATE_TIME" msprop:Generator_ColumnPropNameInRow="CREATE_TIME" msprop:Generator_ColumnPropNameInTable="CREATE_TIMEColumn" msprop:Generator_UserColumnName="CREATE_TIME" type="xs:dateTime" />
+              <xs:element name="HEMODIALYSIS_ID" msprop:Generator_ColumnVarNameInTable="columnHEMODIALYSIS_ID" msprop:Generator_ColumnPropNameInRow="HEMODIALYSIS_ID" msprop:Generator_ColumnPropNameInTable="HEMODIALYSIS_IDColumn" msprop:Generator_UserColumnName="HEMODIALYSIS_ID">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="MED_ERYTHROPOIETIN_EXEC" msprop:Generator_TableClassName="MED_ERYTHROPOIETIN_EXECDataTable" msprop:Generator_TableVarName="tableMED_ERYTHROPOIETIN_EXEC" msprop:Generator_TablePropName="MED_ERYTHROPOIETIN_EXEC" msprop:Generator_RowDeletingName="MED_ERYTHROPOIETIN_EXECRowDeleting" msprop:Generator_UserTableName="MED_ERYTHROPOIETIN_EXEC" msprop:Generator_RowChangingName="MED_ERYTHROPOIETIN_EXECRowChanging" msprop:Generator_RowEvHandlerName="MED_ERYTHROPOIETIN_EXECRowChangeEventHandler" msprop:Generator_RowDeletedName="MED_ERYTHROPOIETIN_EXECRowDeleted" msprop:Generator_RowEvArgName="MED_ERYTHROPOIETIN_EXECRowChangeEvent" msprop:Generator_RowChangedName="MED_ERYTHROPOIETIN_EXECRowChanged" msprop:Generator_RowClassName="MED_ERYTHROPOIETIN_EXECRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="EXEC_ID" msprop:Generator_ColumnVarNameInTable="columnEXEC_ID" msprop:Generator_ColumnPropNameInRow="EXEC_ID" msprop:Generator_ColumnPropNameInTable="EXEC_IDColumn" msprop:Generator_UserColumnName="EXEC_ID">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="36" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ERYTHROPOIETIN_ID" msprop:Generator_ColumnVarNameInTable="columnERYTHROPOIETIN_ID" msprop:Generator_ColumnPropNameInRow="ERYTHROPOIETIN_ID" msprop:Generator_ColumnPropNameInTable="ERYTHROPOIETIN_IDColumn" msprop:Generator_UserColumnName="ERYTHROPOIETIN_ID">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="36" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="REMARK" msprop:Generator_ColumnVarNameInTable="columnREMARK" msprop:Generator_ColumnPropNameInRow="REMARK" msprop:Generator_ColumnPropNameInTable="REMARKColumn" msprop:Generator_UserColumnName="REMARK" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="500" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="NURSE" msprop:Generator_ColumnVarNameInTable="columnNURSE" msprop:Generator_ColumnPropNameInRow="NURSE" msprop:Generator_ColumnPropNameInTable="NURSEColumn" msprop:Generator_UserColumnName="NURSE">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="EXCUTE_DATE" msprop:Generator_ColumnVarNameInTable="columnEXCUTE_DATE" msprop:Generator_ColumnPropNameInRow="EXCUTE_DATE" msprop:Generator_ColumnPropNameInTable="EXCUTE_DATEColumn" msprop:Generator_UserColumnName="EXCUTE_DATE" type="xs:dateTime" />
+              <xs:element name="DRUG_ORDER_ID" msprop:Generator_ColumnVarNameInTable="columnDRUG_ORDER_ID" msprop:Generator_ColumnPropNameInRow="DRUG_ORDER_ID" msprop:Generator_ColumnPropNameInTable="DRUG_ORDER_IDColumn" msprop:Generator_UserColumnName="DRUG_ORDER_ID">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:MED_ERYTHROPOIETIN" />
+      <xs:field xpath="mstns:ERYTHROPOIETIN_ID" />
+    </xs:unique>
+    <xs:unique name="MED_ERYTHROPOIETIN_EXEC_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:MED_ERYTHROPOIETIN_EXEC" />
+      <xs:field xpath="mstns:EXEC_ID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

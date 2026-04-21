@@ -1,0 +1,228 @@
+﻿<UserControl x:Class="Hemo.Client.Doc.术前病情_手术风险评估用表"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+              d:DesignHeight="1100" d:DesignWidth="816" xmlns:lc="http://schemas.devexpress.com/winfx/2008/xaml/layoutcontrol">
+    <Grid ShowGridLines="False" Height="671" Width="700">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"></RowDefinition>
+            <RowDefinition Height="50"></RowDefinition>
+            <RowDefinition Height="75"></RowDefinition>
+            <RowDefinition Height="50"></RowDefinition>
+            <RowDefinition Height="30"></RowDefinition>
+            <RowDefinition Height="30"></RowDefinition>
+            <RowDefinition Height="30"></RowDefinition>
+            <RowDefinition Height="30"></RowDefinition>
+            <RowDefinition Height="30"></RowDefinition>
+            <RowDefinition Height="30"></RowDefinition>
+            <RowDefinition Height="30"></RowDefinition>
+            <RowDefinition Height="30"></RowDefinition>
+            <RowDefinition Height="30"></RowDefinition>
+            <RowDefinition Height="30"></RowDefinition>
+            <RowDefinition Height="30"></RowDefinition>
+            <RowDefinition Height="30"></RowDefinition>
+            <RowDefinition Height="30"></RowDefinition>
+            <RowDefinition Height="30"></RowDefinition>
+            <RowDefinition Height="406*" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="146*" />
+            <ColumnDefinition Width="137*" />
+            <ColumnDefinition Width="370"/>
+            <ColumnDefinition Width="41*" />
+        </Grid.ColumnDefinitions>
+        <!--第一部分-->
+        <Border BorderBrush="Black" BorderThickness="1" Grid.RowSpan="4">
+            <TextBlock TextAlignment="Center" Height="21"  Name="textBlock1"  Text="手术切口清洁程度" />
+        </Border>
+        <Border BorderBrush="Black" BorderThickness="0,1,1,1" Grid.Column="1" Grid.Row="0">
+            <TextBlock Height="40" Name="textBlock2" Text="         I类手术切口
+         （清洁切口）" Width="132" />
+        </Border>
+        <Border BorderBrush="Black" BorderThickness="0,0,1,1" Grid.Column="1" Grid.Row="1" >
+            <TextBlock Height="39" Name="textBlock4" Text="     Ⅱ类手术切口
+    (清洁-污染切口)" Width="104" />
+        </Border>
+        <Border BorderBrush="Black" BorderThickness="0,0,1,1" Grid.Column="1" Grid.Row="2">
+            <TextBlock Height="40" Name="textBlock6" Text="         Ⅲ类手术切口        
+        （污染切口）" Width="132" />
+        </Border>
+        <Border BorderBrush="Black" BorderThickness="0,0,1,1" Grid.Column="1" Grid.Row="3">
+            <TextBlock Height="40" Name="textBlock8" Text="         Ⅳ类手术切口        
+         （感染切口）" Width="132" />
+        </Border>
+
+        <Border BorderBrush="Black" BorderThickness="0,0,1,1" Grid.Column="2" Grid.Row="1" >
+            <TextBlock Height="34" Name="textBlock5" Text="      Ⅱ类手术切口（清洁一污染切口）：手术进入呼吸道、        
+        消化道、泌尿生殖道及口咽部位，但不伴有明显污染" />
+        </Border>
+        <Border BorderBrush="Black" BorderThickness="0,0,1,1" Grid.Column="2" Grid.Row="2">
+            <TextBlock Height="70" Name="textBlock7" Text="      Ⅲ类手术切口（污染切口）。手术进入急性炎症但未
+        化脓区域；开放性创伤手术；胃肠道、尿路、胆道内
+        容物及体液有大量溢出污染；术中有明显污染（如开
+        胸心脏按压）" />
+        </Border>
+        <Border BorderBrush="Black" BorderThickness="0,0,1,1" Grid.Column="2" Grid.Row="3">
+            <TextBlock Height="34" Name="textBlock9" Text="      Ⅳ类手术切口（感染切口）：有失活组织的陈旧创伤            
+      手术；已有临床感染或脏器穿孔的手术" />
+        </Border>
+        <Border BorderBrush="Black" BorderThickness="0,1,1,1" Grid.Column="2" Grid.Row="0">
+            <TextBlock Height="39" Name="textBlock3" Text="        I类手术切口（清洁切口）：手术未进入感染炎症区，
+         未进入呼吸道、消化道、泌尿生殖道及口咽部位" />
+        </Border>
+        <Border BorderBrush="Black" BorderThickness="0,0,1,1" Grid.Column="3" Grid.Row="1" >
+            <CheckBox Content="0" FlowDirection="RightToLeft" Height="22" Name="checkBox1" Width="28" />
+        </Border>
+        <Border BorderBrush="Black" BorderThickness="0,0,1,1" Grid.Column="3" Grid.Row="2">
+            <CheckBox Content="1" FlowDirection="RightToLeft" Height="22" Name="checkBox2" Width="27" />
+        </Border>
+        <Border BorderBrush="Black" BorderThickness="0,0,1,1" Grid.Column="3" Grid.Row="3">
+            <CheckBox Content="1" FlowDirection="RightToLeft" Height="22" Name="checkBox3" Width="32" />
+        </Border>
+        <Border BorderBrush="Black" BorderThickness="0,1,1,1" Grid.Column="3" Grid.Row="0">
+            <CheckBox Content="0"  Height="22" Name="checkBox6" Width="27" FlowDirection="RightToLeft" />
+        </Border>
+        <!--第二部分-->
+        <Border BorderBrush="Black" BorderThickness="1,0,1,1" Grid.RowSpan="6" Grid.Row="4">
+            <TextBlock Height="41" Name="textBlock10" Text=" 麻醉分级
+  (ASA分级)" TextAlignment="Center" />
+        </Border>
+        <Border BorderBrush="Black" BorderThickness="0,0,1,0" Grid.Column="1" Grid.Row="4" >
+            <TextBlock Height="19" Name="textBlock11" Text="P1" Width="25" />
+        </Border>
+        <Border BorderBrush="Black" BorderThickness="0,1,1,1" Grid.Column="1" Grid.Row="5">
+            <TextBlock Height="19" Name="textBlock12" Text="P2" Width="25" />
+        </Border>
+        <Border BorderBrush="Black" BorderThickness="0,0,1,1" Grid.Column="1" Grid.Row="6">
+            <TextBlock Height="19" Name="textBlock13" Text="P3" Width="25" />
+        </Border>
+        <Border BorderBrush="Black" BorderThickness="0,0,1,0" Grid.Column="1" Grid.Row="7">
+            <TextBlock Height="19" Name="textBlock14" Text="P4" Width="25" />
+        </Border>
+        <Border BorderBrush="Black" BorderThickness="0,1,1,0" Grid.Column="1" Grid.Row="8">
+            <TextBlock Height="19" Name="textBlock15" Text="P5" Width="25" />
+        </Border>
+        <Border BorderBrush="Black" BorderThickness="0,1,1,1" Grid.Column="1" Grid.Row="9">
+            <TextBlock Height="19" Name="textBlock16" Text="P6" Width="25" />
+        </Border>
+        <Border BorderBrush="Black" BorderThickness="0,0,1,0" Grid.Column="2" Grid.Row="4" >
+            <TextBlock Height="18" Name="textBlock17" Text="       正常的患者；除局部病变外，无系统性疾病" />
+        </Border>
+        <Border BorderBrush="Black" BorderThickness="0,1,1,1" Grid.Column="2" Grid.Row="5">
+            <TextBlock Height="18" Name="textBlock18" Text="       患者有轻微的临床症状；有轻度或中度系统性疾病" />
+        </Border>
+        <Border BorderBrush="Black" BorderThickness="0,0,1,1" Grid.Column="2" Grid.Row="6">
+            <TextBlock Height="18" Name="textBlock19" Text="       有严重系统性疾病，日常活动受限，未丧失工作能力" />
+        </Border>
+        <Border BorderBrush="Black" BorderThickness="0,0,1,0" Grid.Column="2" Grid.Row="7">
+            <TextBlock Height="18" Name="textBlock20" Text="       有严重系统性疾病，已丧失工作能力，威胁生命安全" />
+        </Border>
+        <Border BorderBrush="Black" BorderThickness="0,1,1,0" Grid.Column="2" Grid.Row="8">
+            <TextBlock Height="18" Name="textBlock21" Text="       病情危重，生命难以维持的濒死病人" />
+        </Border>
+        <Border BorderBrush="Black" BorderThickness="0,1,1,1" Grid.Column="2" Grid.Row="9">
+            <TextBlock Height="18" Name="textBlock22" Text="      脑死亡的患者" />
+        </Border>
+        <Border BorderBrush="Black" BorderThickness="0,0,1,0" Grid.Column="3" Grid.Row="4" >
+            <CheckBox Content="0" FlowDirection="RightToLeft" Height="22" Name="checkBox4" Width="32" />
+        </Border>
+        <Border BorderBrush="Black" BorderThickness="0,1,1,1" Grid.Column="3" Grid.Row="5">
+            <CheckBox Content="0" FlowDirection="RightToLeft" Height="22" Name="checkBox5" Width="34" />
+        </Border>
+        <Border BorderBrush="Black" BorderThickness="0,0,1,1" Grid.Column="3" Grid.Row="6">
+            <CheckBox Content="1" FlowDirection="RightToLeft" Height="22" Name="checkBox7" Width="32" />
+        </Border>
+        <Border BorderBrush="Black" BorderThickness="0,0,1,0" Grid.Column="3" Grid.Row="7">
+            <CheckBox Content="1" FlowDirection="RightToLeft" Height="22" Name="checkBox8" Width="31" />
+        </Border>
+        <Border BorderBrush="Black" BorderThickness="0,1,1,0" Grid.Column="3" Grid.Row="8">
+            <CheckBox Content="1" FlowDirection="RightToLeft" Height="22" Name="checkBox9" Width="30" />
+        </Border>
+        <Border BorderBrush="Black" BorderThickness="0,1,1,1" Grid.Column="3" Grid.Row="9">
+            <CheckBox Content="1" FlowDirection="RightToLeft" Height="22" Name="checkBox10" Width="29" />
+        </Border>
+        <Border BorderBrush="Black" BorderThickness="1,0,1,1" Grid.Column="0" Grid.Row="10">
+            <TextBlock Height="34" Name="textBlock91" Text="手术持续时间" Width="81" />
+        </Border>
+        <Border BorderBrush="Black" BorderThickness="0,0,1,1" Grid.Column="1" Grid.Row="10" Grid.ColumnSpan="3">
+            <TextBlock Height="21" Name="textBlock92"  Text="手术在3小时内完成 " Width="336" />
+        </Border>
+        <CheckBox Content="1" FlowDirection="RightToLeft" Height="22" Margin="135,5,196,3" Name="checkBox11" Width="39" Grid.Column="2" Grid.Row="10" />
+        <TextBlock Margin="186,4,0,3" Name="textBlock23" Text="手术超过3小时完成" Width="124" Grid.Column="2" Grid.Row="10" HorizontalAlignment="Left" />
+        <CheckBox Content="1" FlowDirection="RightToLeft" Height="22" Margin="294,3,27,5" Name="checkBox12" Grid.Column="2" Grid.Row="10" />
+        <Border BorderBrush="Black" BorderThickness="1,0,1,1" Grid.Column="0"  Grid.ColumnSpan="3" Grid.Row="11">
+            <TextBlock Height="19" Name="textBlock93" Text="合计分值（以上均为单选）" Width="167" />
+        </Border>
+        <Border BorderBrush="Black" BorderThickness="0,0,1,1" Grid.Column="3" Grid.Row="11">
+            <TextBlock Height="21" Name="textBlock94"  Text="     分 " Width="37" />
+        </Border>
+        <Border BorderBrush="Black" BorderThickness="1,0,1,1" Grid.Column="0" Grid.Row="12" Grid.RowSpan="2">
+            <TextBlock Height="20" Name="textBlock95" Text="手术类别" Width="81" />
+        </Border>
+        <Border BorderBrush="Black" BorderThickness="0,0,1,1" Grid.Column="1" Grid.Row="12" Grid.ColumnSpan="3">
+            <TextBlock Height="20" Name="textBlock96" Text="浅层组织手术" Width="144" HorizontalAlignment="Left" TextAlignment="Center" />
+        </Border>
+        <Border BorderBrush="Black" BorderThickness="0,0,1,1" Grid.Column="1" Grid.Row="13" Grid.ColumnSpan="3"></Border>
+        <CheckBox Content="是" FlowDirection="RightToLeft" Height="22" Margin="0,4,331,4" Name="checkBox13" Width="39" Grid.Column="2" Grid.Row="12" />
+        <CheckBox Content="否 " FlowDirection="RightToLeft" Height="22" Margin="46,4,285,4" Name="checkBox14" Width="39" Grid.Column="2" Grid.Row="12" />
+        <TextBlock Height="20" HorizontalAlignment="Left" Margin="186,4,0,6" Name="textBlock24" Text="器官手术" TextAlignment="Center" Width="67" Grid.Row="12" Grid.Column="2" />
+        <CheckBox Content="是 " FlowDirection="RightToLeft" Grid.Column="2" Height="22" Margin="290,4,41,4" Name="checkBox15" Width="39" Grid.Row="12" />
+        <CheckBox Content="否" FlowDirection="RightToLeft" Grid.Column="2" Height="22" Margin="336,4,136,4" Name="checkBox16" Width="39" Grid.Row="12" Grid.ColumnSpan="2" />
+        <TextBlock Grid.ColumnSpan="2" Height="20" HorizontalAlignment="Left" Margin="0,10,0,0" Name="textBlock25" Text="深部组织手术  " TextAlignment="Center" Width="144" Grid.Row="13" Grid.Column="1" />
+        <CheckBox Content="是" FlowDirection="RightToLeft" Grid.Column="2" Height="22" Margin="1,8,330,0" Name="checkBox17" Width="39" Grid.Row="13" />
+        <CheckBox Content="否 " FlowDirection="RightToLeft" Grid.Column="2" Height="22" Margin="47,8,284,0" Name="checkBox18" Width="39" Grid.Row="13" />
+        <TextBlock Grid.Column="2" Height="20" HorizontalAlignment="Left" Margin="187,10,0,0" Name="textBlock26" Text="腔隙内手术" TextAlignment="Center" Width="67" Grid.Row="13" />
+        <CheckBox Content="是 " FlowDirection="RightToLeft" Height="22" Margin="290,8,41,0" Name="checkBox19" Width="39" Grid.Column="2" Grid.Row="13" />
+        <CheckBox Content="否" FlowDirection="RightToLeft" Height="22" Margin="336,8,136,0" Name="checkBox20" Width="39" Grid.Column="2" Grid.Row="13" Grid.ColumnSpan="2" />
+        <Border BorderBrush="Black" BorderThickness="1,0,1,0" Grid.Column="0" Grid.Row="14" Grid.ColumnSpan="4">
+            <Label Content="手术风险评估：手术切口清洁程度（  分）+麻醉ASA分级（  分）+手术持续时间（  分）=   分，NNIS" Height="28" Name="label111" />
+        </Border>
+        <Border BorderBrush="Black" BorderThickness="1,0,1,0" Grid.Column="0" Grid.Row="15" Grid.ColumnSpan="4"></Border>
+        <Border BorderBrush="Black" BorderThickness="1,0,1,0" Grid.Column="0" Grid.Row="16" Grid.ColumnSpan="4">
+            <Label Content="手术医生签名：" Height="28" Name="label3" Width="91" HorizontalAlignment="Left" />
+        </Border>
+        <Border BorderBrush="Black" BorderThickness="1,0,1,1" Grid.Row="18" Grid.ColumnSpan="4" Margin="-64,405,64,-119">
+            <Label Content="手术风险评估：手术切口清洁程度（  分）+麻醉ASA分级（  分）+手术持续时间（  分）=   分，NNIS" Height="28" Name="label4" />
+        </Border>
+        <TextBlock Height="20" HorizontalAlignment="Left" Margin="-1,7,0,3" Name="textBlock27" Text="分级:" TextAlignment="Center" Width="41" Grid.Row="15" />
+        <CheckBox Content="-0" FlowDirection="RightToLeft" Height="22" Margin="68,7,42,1" Name="checkBox21" Width="39" Grid.Row="15" />
+        <CheckBox Content="-1 " FlowDirection="RightToLeft" Height="22" Margin="116,7,133,1" Name="checkBox22" Width="39" Grid.Row="15" Grid.ColumnSpan="2" />
+        <CheckBox Content="-2 " FlowDirection="RightToLeft" Grid.Column="1" Height="22" Margin="17,7,83,1" Name="checkBox23" Width="39" Grid.Row="15" />
+        <CheckBox Content="-3" FlowDirection="RightToLeft" Grid.Column="1" Height="22" Margin="63,7,37,1" Name="checkBox24" Width="39" Grid.Row="15" />
+        <Label Content="术前病情/手术风险评估用表"  FontSize="26" FontStyle="Normal"  Grid.ColumnSpan="3" Height="50" HorizontalAlignment="Left" HorizontalContentAlignment="Center" Margin="127,-180,0,0" Name="label1" VerticalAlignment="Top" VerticalContentAlignment="Center" Width="446" />
+        <Label Content="患者姓名：" FontFamily="宋体" FontSize="13"  Height="27" HorizontalAlignment="Left" Margin="12,-106,0,0" Name="label2" VerticalAlignment="Top" Width="79" Grid.Column="1" />
+        <TextBox BorderBrush="Black" BorderThickness="0,0,0,1"  FontSize="13"  Grid.Column="1" Grid.ColumnSpan="2" Height="23" HorizontalAlignment="Left" IsReadOnly="False" Margin="78,-102,0,129" Name="txtName" Width="94" />
+        <Label Content="年龄："  FontSize="13"  Grid.Column="2" Height="27" HorizontalAlignment="Left" Margin="35,-106,0,0" Name="label33" VerticalAlignment="Top" Width="51" />
+        <TextBox BorderBrush="Black" BorderThickness="0,0,0,1"  FontSize="13"  Grid.Column="2" Height="23" HorizontalAlignment="Left" IsReadOnly="False" Margin="92,-102,0,0" Name="txtAge" VerticalAlignment="Top" Width="58" />
+        <Label Content="性别："  FontSize="13"  Grid.Column="2" Height="27" HorizontalAlignment="Left" Margin="156,-106,0,0" Name="label34" VerticalAlignment="Top" Width="53" />
+        <TextBox BorderBrush="Black" BorderThickness="0,0,0,1"  FontSize="13"  Grid.Column="2" Height="23" HorizontalAlignment="Left" IsReadOnly="False" Margin="209,-102,0,0" Name="txtSex" VerticalAlignment="Top" Width="58" />
+        <Label Content="ID号："  FontSize="13"  Grid.Column="2" Height="28" HorizontalAlignment="Left" Margin="259,-106,0,0" Name="label6" VerticalAlignment="Top" Width="59" />
+        <TextBox BorderBrush="Black" BorderThickness="0,0,0,1"  FontSize="13"  Grid.Column="2" Grid.ColumnSpan="2" Height="23" HorizontalAlignment="Left" IsReadOnly="False" Margin="302,-103,0,0" Name="txtTelephone" VerticalAlignment="Top" Width="99" />
+        <Label Content="麻醉方式："  FontSize="13"  Height="29" HorizontalAlignment="Left" Margin="24,-73,0,0" Name="label32" VerticalAlignment="Top" Width="87" />
+        <TextBox BorderBrush="Black" BorderThickness="0,0,0,1"  FontSize="13"  Grid.ColumnSpan="2" Height="23" HorizontalAlignment="Left" IsReadOnly="False" Margin="113,-67,0,0" Name="txtAddress" VerticalAlignment="Top" Width="105" />
+        <Label Content="科室："  FontSize="13"  Height="30" Margin="28,-105,121,0" Name="label30" VerticalAlignment="Top" Width="52" />
+        <TextBox BorderBrush="Black" BorderThickness="0,0,0,1"  FontSize="15"  Height="23" HorizontalAlignment="Right" IsReadOnly="False" Margin="0,-106,3,133" Name="txtDeptCode" Width="74" />
+        <Label Content="手术方式："  FontSize="13"  Grid.Column="1" Grid.ColumnSpan="2" Height="29" HorizontalAlignment="Left" Margin="78,-73,0,0" Name="label5" VerticalAlignment="Top" Width="87" />
+        <TextBox BorderBrush="Black" BorderThickness="0,0,0,1"  FontSize="13"  Grid.Column="2" Grid.ColumnSpan="2" Height="23" HorizontalAlignment="Left" IsReadOnly="False" Margin="30,-67,0,0" Name="textBox1" VerticalAlignment="Top" Width="371" />
+        <Label Content="术    者："  FontSize="13"  Height="29" HorizontalAlignment="Left" Margin="24,-37,0,0" Name="label7" VerticalAlignment="Top" Width="87" />
+        <TextBox BorderBrush="Black" BorderThickness="0,0,0,1"  FontSize="13"  Grid.ColumnSpan="2" Height="23" HorizontalAlignment="Left" IsReadOnly="False" Margin="113,-31,0,0" Name="textBox2" VerticalAlignment="Top" Width="105" />
+        <Label Content="手术日期："  FontSize="13"  Grid.Column="1" Grid.ColumnSpan="2" Height="29" HorizontalAlignment="Left" Margin="78,-37,0,0" Name="label8" VerticalAlignment="Top" Width="87" />
+        <TextBox BorderBrush="Black" BorderThickness="0,0,0,1"  FontSize="13"  Grid.Column="2" Height="23" HorizontalAlignment="Right" IsReadOnly="False" Margin="0,-31,110,0" Name="textBox3" VerticalAlignment="Top" Width="254" />
+        <Label Content="科别：" FontSize="13"  Height="29" HorizontalAlignment="Left" Margin="24,-107,0,0" Name="label9" VerticalAlignment="Top" Width="50" />
+        <TextBox BorderBrush="Black" BorderThickness="0,0,0,0"  Height="23" HorizontalAlignment="Left" IsReadOnly="False" Margin="91,3,0,4" Name="textBox4" Width="92" Grid.Row="16" Grid.ColumnSpan="2" />
+        <Label Content="麻醉医生签名：" Height="28" HorizontalAlignment="Left" Margin="36,0,0,2" Name="label10" Width="91" Grid.Row="16" Grid.Column="1" />
+        <TextBox BorderBrush="Black" BorderThickness="0,0,0,0" Height="23" HorizontalAlignment="left" IsReadOnly="False" Margin="132,4,0,4" Name="textBox5" Width="92" Grid.Row="16" Grid.Column="1" Grid.ColumnSpan="2" />
+        <Label Content="手术护士签名：" Height="28" HorizontalAlignment="Left" Margin="83,1,0,1" Name="label11" Width="91" Grid.Row="16" Grid.Column="2" />
+        <TextBox BorderBrush="Black" BorderThickness="0,0,0,0" Height="23" HorizontalAlignment="left" IsReadOnly="False" Margin="179,5,0,2" Name="textBox6" Width="92" Grid.Row="16" Grid.Column="2" />
+        <Border BorderBrush="Black" BorderThickness="1,0,1,1" Grid.Column="0" Grid.Row="17" Grid.ColumnSpan="4">
+            <Label Content="日期：" Height="28" Name="lblDate" Width="54" HorizontalAlignment="Left" />
+        </Border>
+        <TextBox BorderBrush="Black" BorderThickness="0,0,0,0" Height="23" HorizontalAlignment="Left" IsReadOnly="False" Margin="46,5,0,3" Name="textBox7" Width="92" Grid.Row="17" />
+        <Label Content="月" Height="28" HorizontalAlignment="Left" Margin="140,2,0,0" Name="label12" Width="34" Grid.Row="17" Grid.ColumnSpan="2" />
+        <TextBox BorderBrush="Black" BorderThickness="0,0,0,0" Grid.Column="1" Height="23" HorizontalAlignment="left" IsReadOnly="False" Margin="16,5,0,2" Name="textBox8" Width="92" Grid.Row="17" />
+        <Label Content="日" Grid.Column="1" Height="28" HorizontalAlignment="Left" Margin="104,3,0,25" Name="label13" Width="27" Grid.Row="17" Grid.RowSpan="2" />
+    </Grid>
+
+</UserControl>

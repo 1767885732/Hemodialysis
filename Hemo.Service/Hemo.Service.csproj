@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{2E26B197-C8CB-45F9-A10F-E1CDBD86A2BD}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Hemo.Service</RootNamespace>
+    <AssemblyName>Hemo.Service</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AbstractServiceFactory.cs" />
+    <Compile Include="DataReport\DataReportService.cs" />
+    <Compile Include="Dept\DeptService.cs" />
+    <Compile Include="Dict\StaffDictService.cs" />
+    <Compile Include="Drug\DrugService.cs" />
+    <Compile Include="Hemodialysis\VascuarAccessService.cs" />
+    <Compile Include="Config\ConfigService.cs" />
+    <Compile Include="Hemodialysis\HemodialysisService.cs" />
+    <Compile Include="Erythropoietin\ErythropoietinService.cs" />
+    <Compile Include="Lab\LabService.cs" />
+    <Compile Include="Material\MaterialService.cs" />
+    <Compile Include="Machine\MachineService.cs" />
+    <Compile Include="Order\OrderService.cs" />
+    <Compile Include="PatientSchedule\PatientScheduleService.cs" />
+    <Compile Include="Patient\PatientService.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Permission\UserService.cs" />
+    <Compile Include="ServiceFactory.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ServiceManager.cs" />
+    <Compile Include="Service\ExceptionLogService.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="ExamLab\" />
+    <Folder Include="User\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Hemo.Business\Hemo.Business.csproj">
+      <Project>{76EC07B0-4F72-4837-B86B-2AE0600A2E79}</Project>
+      <Name>Hemo.Business</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Hemo.DataAccess\Hemo.DataAccess.csproj">
+      <Project>{F9D35B24-E538-4FC7-9896-DEA232C6707A}</Project>
+      <Name>Hemo.DataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Hemo.IService\Hemo.IService.csproj">
+      <Project>{de0e7b18-47c0-49f0-a366-b5125d2c3ba4}</Project>
+      <Name>Hemo.IService</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Hemo.Model\Hemo.Model.csproj">
+      <Project>{578F5C8B-8529-4F7E-8F5E-F4979C5596B8}</Project>
+      <Name>Hemo.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Hemo.Utilities\Hemo.Utilities.csproj">
+      <Project>{210DA914-9B18-4468-8369-E8022EBA2332}</Project>
+      <Name>Hemo.Utilities</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
