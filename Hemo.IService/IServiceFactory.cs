@@ -23,6 +23,7 @@ using Hemo.IService.Order;
 using Hemo.IService.PatientSchedule;
 using Hemo.IService.Permission;
 using Hemo.IService.DataReport;
+using Hemo.IService.AuditLog;
 
 namespace Hemo.IService
 {
@@ -129,5 +130,11 @@ namespace Hemo.IService
         /// </summary>
         /// <returns></returns>
         IDataReport CreateDataReportService();
+
+        /// <summary>
+        /// 创建操作审计日志服务
+        /// </summary>
+        /// <returns></returns>
+        IOperationLog CreateOperationLogService();
     }
 }

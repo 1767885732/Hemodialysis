@@ -50,6 +50,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AuditLog\IOperationLog.cs" />
     <Compile Include="DataReport\IDataReport.cs" />
     <Compile Include="Dept\IDept.cs" />
     <Compile Include="Dict\IStaffDict.cs" />

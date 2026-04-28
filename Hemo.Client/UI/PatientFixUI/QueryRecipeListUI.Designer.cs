@@ -274,13 +274,13 @@
             this.UserInfo.FormContainer = null;
             this.UserInfo.HEMODIALYSIS_ID = "";
             this.UserInfo.Location = new System.Drawing.Point(0, 0);
-            this.UserInfo.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.UserInfo.Margin = new System.Windows.Forms.Padding(5, 8, 5, 8);
             this.UserInfo.Name = "UserInfo";
             this.UserInfo.PanBorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Default;
-            this.UserInfo.PanelWidth = 1048;
+            this.UserInfo.PanelWidth = 1703;
             this.UserInfo.PatientType = "";
             this.UserInfo.PatientTypeEnabled = true;
-            this.UserInfo.Size = new System.Drawing.Size(1048, 49);
+            this.UserInfo.Size = new System.Drawing.Size(1703, 79);
             this.UserInfo.TabIndex = 4;
             this.UserInfo.Visible = false;
             // 
@@ -301,27 +301,27 @@
             this.panelControl2.Controls.Add(this.cmbStatus);
             this.panelControl2.Controls.Add(this.btnQuery);
             this.panelControl2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelControl2.Location = new System.Drawing.Point(0, 49);
-            this.panelControl2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.panelControl2.Location = new System.Drawing.Point(0, 79);
+            this.panelControl2.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.panelControl2.Name = "panelControl2";
-            this.panelControl2.Size = new System.Drawing.Size(1048, 53);
+            this.panelControl2.Size = new System.Drawing.Size(1703, 85);
             this.panelControl2.TabIndex = 5;
             // 
             // labelControl5
             // 
             this.labelControl5.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F);
-            this.labelControl5.Location = new System.Drawing.Point(458, 12);
-            this.labelControl5.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.labelControl5.Location = new System.Drawing.Point(744, 19);
+            this.labelControl5.Margin = new System.Windows.Forms.Padding(5, 8, 5, 8);
             this.labelControl5.Name = "labelControl5";
-            this.labelControl5.Size = new System.Drawing.Size(11, 20);
+            this.labelControl5.Size = new System.Drawing.Size(18, 31);
             this.labelControl5.TabIndex = 312;
             this.labelControl5.Text = "~";
             // 
             // txtEndDate
             // 
             this.txtEndDate.EditValue = null;
-            this.txtEndDate.Location = new System.Drawing.Point(469, 12);
-            this.txtEndDate.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtEndDate.Location = new System.Drawing.Point(762, 19);
+            this.txtEndDate.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.txtEndDate.Name = "txtEndDate";
             this.txtEndDate.Properties.Appearance.Font = new System.Drawing.Font("微软雅黑", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.txtEndDate.Properties.Appearance.Options.UseFont = true;
@@ -329,24 +329,24 @@
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.txtEndDate.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton()});
-            this.txtEndDate.Size = new System.Drawing.Size(114, 28);
+            this.txtEndDate.Size = new System.Drawing.Size(185, 42);
             this.txtEndDate.TabIndex = 311;
             // 
             // labelControl4
             // 
             this.labelControl4.Appearance.Font = new System.Drawing.Font("微软雅黑", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.labelControl4.Location = new System.Drawing.Point(278, 13);
-            this.labelControl4.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.labelControl4.Location = new System.Drawing.Point(452, 21);
+            this.labelControl4.Margin = new System.Windows.Forms.Padding(5, 8, 5, 8);
             this.labelControl4.Name = "labelControl4";
-            this.labelControl4.Size = new System.Drawing.Size(68, 23);
+            this.labelControl4.Size = new System.Drawing.Size(104, 35);
             this.labelControl4.TabIndex = 310;
             this.labelControl4.Text = "透析日期";
             // 
             // txtBeginDate
             // 
             this.txtBeginDate.EditValue = null;
-            this.txtBeginDate.Location = new System.Drawing.Point(343, 12);
-            this.txtBeginDate.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtBeginDate.Location = new System.Drawing.Point(557, 19);
+            this.txtBeginDate.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.txtBeginDate.Name = "txtBeginDate";
             this.txtBeginDate.Properties.Appearance.Font = new System.Drawing.Font("微软雅黑", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.txtBeginDate.Properties.Appearance.Options.UseFont = true;
@@ -354,7 +354,7 @@
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.txtBeginDate.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton()});
-            this.txtBeginDate.Size = new System.Drawing.Size(114, 28);
+            this.txtBeginDate.Size = new System.Drawing.Size(185, 42);
             this.txtBeginDate.TabIndex = 309;
             // 
             // btnClean
@@ -362,10 +362,10 @@
             this.btnClean.Appearance.Font = new System.Drawing.Font("微软雅黑", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.btnClean.Appearance.Options.UseFont = true;
             this.btnClean.ImageIndex = 3;
-            this.btnClean.Location = new System.Drawing.Point(742, 12);
-            this.btnClean.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnClean.Location = new System.Drawing.Point(1206, 19);
+            this.btnClean.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.btnClean.Name = "btnClean";
-            this.btnClean.Size = new System.Drawing.Size(86, 32);
+            this.btnClean.Size = new System.Drawing.Size(140, 52);
             this.btnClean.TabIndex = 308;
             this.btnClean.Text = "取消(F)";
             this.btnClean.Click += new System.EventHandler(this.btnClean_Click);
@@ -373,10 +373,10 @@
             // labelControl3
             // 
             this.labelControl3.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F);
-            this.labelControl3.Location = new System.Drawing.Point(843, 15);
-            this.labelControl3.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.labelControl3.Location = new System.Drawing.Point(1370, 24);
+            this.labelControl3.Margin = new System.Windows.Forms.Padding(5, 8, 5, 8);
             this.labelControl3.Name = "labelControl3";
-            this.labelControl3.Size = new System.Drawing.Size(60, 20);
+            this.labelControl3.Size = new System.Drawing.Size(96, 31);
             this.labelControl3.TabIndex = 307;
             this.labelControl3.Text = "治疗方法";
             this.labelControl3.Visible = false;
@@ -386,8 +386,8 @@
             this.cmbTHERAPEUTIC_METHOD.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.cmbTHERAPEUTIC_METHOD.EnterMoveNextControl = true;
-            this.cmbTHERAPEUTIC_METHOD.Location = new System.Drawing.Point(881, 14);
-            this.cmbTHERAPEUTIC_METHOD.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.cmbTHERAPEUTIC_METHOD.Location = new System.Drawing.Point(1432, 23);
+            this.cmbTHERAPEUTIC_METHOD.Margin = new System.Windows.Forms.Padding(5, 8, 5, 8);
             this.cmbTHERAPEUTIC_METHOD.Name = "cmbTHERAPEUTIC_METHOD";
             this.cmbTHERAPEUTIC_METHOD.Properties.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F);
             this.cmbTHERAPEUTIC_METHOD.Properties.Appearance.ForeColor = System.Drawing.Color.Blue;
@@ -396,25 +396,25 @@
             this.cmbTHERAPEUTIC_METHOD.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.cmbTHERAPEUTIC_METHOD.Properties.LookAndFeel.SkinName = "ExtendBlue";
-            this.cmbTHERAPEUTIC_METHOD.Size = new System.Drawing.Size(142, 26);
+            this.cmbTHERAPEUTIC_METHOD.Size = new System.Drawing.Size(231, 38);
             this.cmbTHERAPEUTIC_METHOD.TabIndex = 306;
             this.cmbTHERAPEUTIC_METHOD.Visible = false;
             // 
             // labelControl2
             // 
             this.labelControl2.Appearance.Font = new System.Drawing.Font("微软雅黑", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.labelControl2.Location = new System.Drawing.Point(14, 13);
-            this.labelControl2.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.labelControl2.Location = new System.Drawing.Point(23, 21);
+            this.labelControl2.Margin = new System.Windows.Forms.Padding(5, 8, 5, 8);
             this.labelControl2.Name = "labelControl2";
-            this.labelControl2.Size = new System.Drawing.Size(68, 23);
+            this.labelControl2.Size = new System.Drawing.Size(104, 35);
             this.labelControl2.TabIndex = 305;
             this.labelControl2.Text = "净化方式";
             // 
             // cmbPURIFICATION_MODE
             // 
             this.cmbPURIFICATION_MODE.EnterMoveNextControl = true;
-            this.cmbPURIFICATION_MODE.Location = new System.Drawing.Point(78, 9);
-            this.cmbPURIFICATION_MODE.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.cmbPURIFICATION_MODE.Location = new System.Drawing.Point(127, 15);
+            this.cmbPURIFICATION_MODE.Margin = new System.Windows.Forms.Padding(5, 8, 5, 8);
             this.cmbPURIFICATION_MODE.Name = "cmbPURIFICATION_MODE";
             this.cmbPURIFICATION_MODE.Properties.Appearance.Font = new System.Drawing.Font("微软雅黑", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.cmbPURIFICATION_MODE.Properties.Appearance.ForeColor = System.Drawing.Color.Blue;
@@ -424,16 +424,16 @@
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.cmbPURIFICATION_MODE.Properties.LookAndFeel.SkinName = "ExtendBlue";
             this.cmbPURIFICATION_MODE.Properties.NullText = "";
-            this.cmbPURIFICATION_MODE.Size = new System.Drawing.Size(136, 28);
+            this.cmbPURIFICATION_MODE.Size = new System.Drawing.Size(221, 42);
             this.cmbPURIFICATION_MODE.TabIndex = 304;
             // 
             // labelControl1
             // 
             this.labelControl1.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F);
-            this.labelControl1.Location = new System.Drawing.Point(896, 13);
-            this.labelControl1.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.labelControl1.Location = new System.Drawing.Point(1456, 21);
+            this.labelControl1.Margin = new System.Windows.Forms.Padding(5, 8, 5, 8);
             this.labelControl1.Name = "labelControl1";
-            this.labelControl1.Size = new System.Drawing.Size(60, 20);
+            this.labelControl1.Size = new System.Drawing.Size(96, 31);
             this.labelControl1.TabIndex = 303;
             this.labelControl1.Text = "处方类型";
             this.labelControl1.Visible = false;
@@ -443,8 +443,8 @@
             this.lupRECIPE_TYPE.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lupRECIPE_TYPE.EnterMoveNextControl = true;
-            this.lupRECIPE_TYPE.Location = new System.Drawing.Point(851, 12);
-            this.lupRECIPE_TYPE.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.lupRECIPE_TYPE.Location = new System.Drawing.Point(1383, 19);
+            this.lupRECIPE_TYPE.Margin = new System.Windows.Forms.Padding(5, 8, 5, 8);
             this.lupRECIPE_TYPE.Name = "lupRECIPE_TYPE";
             this.lupRECIPE_TYPE.Properties.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F);
             this.lupRECIPE_TYPE.Properties.Appearance.ForeColor = System.Drawing.Color.Blue;
@@ -453,17 +453,17 @@
             this.lupRECIPE_TYPE.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.lupRECIPE_TYPE.Properties.LookAndFeel.SkinName = "ExtendBlue";
-            this.lupRECIPE_TYPE.Size = new System.Drawing.Size(142, 26);
+            this.lupRECIPE_TYPE.Size = new System.Drawing.Size(231, 38);
             this.lupRECIPE_TYPE.TabIndex = 302;
             this.lupRECIPE_TYPE.Visible = false;
             // 
             // labelControl33
             // 
             this.labelControl33.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F);
-            this.labelControl33.Location = new System.Drawing.Point(841, 17);
-            this.labelControl33.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.labelControl33.Location = new System.Drawing.Point(1367, 27);
+            this.labelControl33.Margin = new System.Windows.Forms.Padding(5, 8, 5, 8);
             this.labelControl33.Name = "labelControl33";
-            this.labelControl33.Size = new System.Drawing.Size(30, 20);
+            this.labelControl33.Size = new System.Drawing.Size(48, 31);
             this.labelControl33.TabIndex = 301;
             this.labelControl33.Text = "状态";
             this.labelControl33.Visible = false;
@@ -473,8 +473,8 @@
             this.cmbStatus.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.cmbStatus.EnterMoveNextControl = true;
-            this.cmbStatus.Location = new System.Drawing.Point(881, 13);
-            this.cmbStatus.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.cmbStatus.Location = new System.Drawing.Point(1432, 21);
+            this.cmbStatus.Margin = new System.Windows.Forms.Padding(5, 8, 5, 8);
             this.cmbStatus.Name = "cmbStatus";
             this.cmbStatus.Properties.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F);
             this.cmbStatus.Properties.Appearance.ForeColor = System.Drawing.Color.Blue;
@@ -483,7 +483,7 @@
             this.cmbStatus.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.cmbStatus.Properties.LookAndFeel.SkinName = "ExtendBlue";
-            this.cmbStatus.Size = new System.Drawing.Size(131, 26);
+            this.cmbStatus.Size = new System.Drawing.Size(213, 38);
             this.cmbStatus.TabIndex = 300;
             this.cmbStatus.Visible = false;
             // 
@@ -492,10 +492,10 @@
             this.btnQuery.Appearance.Font = new System.Drawing.Font("微软雅黑", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.btnQuery.Appearance.Options.UseFont = true;
             this.btnQuery.ImageIndex = 8;
-            this.btnQuery.Location = new System.Drawing.Point(649, 12);
-            this.btnQuery.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnQuery.Location = new System.Drawing.Point(1055, 19);
+            this.btnQuery.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.btnQuery.Name = "btnQuery";
-            this.btnQuery.Size = new System.Drawing.Size(86, 32);
+            this.btnQuery.Size = new System.Drawing.Size(140, 52);
             this.btnQuery.TabIndex = 299;
             this.btnQuery.Text = "查询(&Q)";
             this.btnQuery.Click += new System.EventHandler(this.btnQuery_Click);
@@ -510,12 +510,12 @@
             this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStop});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(109, 28);
+            this.contextMenuStrip1.Size = new System.Drawing.Size(137, 42);
             // 
             // toolStop
             // 
             this.toolStop.Name = "toolStop";
-            this.toolStop.Size = new System.Drawing.Size(108, 24);
+            this.toolStop.Size = new System.Drawing.Size(136, 38);
             this.toolStop.Text = "停止";
             this.toolStop.Click += new System.EventHandler(this.toolStop_Click);
             // 
@@ -526,11 +526,11 @@
             // xtraTabControl2
             // 
             this.xtraTabControl2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.xtraTabControl2.Location = new System.Drawing.Point(0, 102);
-            this.xtraTabControl2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.xtraTabControl2.Location = new System.Drawing.Point(0, 164);
+            this.xtraTabControl2.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.xtraTabControl2.Name = "xtraTabControl2";
             this.xtraTabControl2.SelectedTabPage = this.xtraTabPage3;
-            this.xtraTabControl2.Size = new System.Drawing.Size(1048, 682);
+            this.xtraTabControl2.Size = new System.Drawing.Size(1703, 1099);
             this.xtraTabControl2.TabIndex = 11;
             this.xtraTabControl2.TabPages.AddRange(new DevExpress.XtraTab.XtraTabPage[] {
             this.xtraTabPage3,
@@ -548,19 +548,19 @@
             this.xtraTabPage3.Controls.Add(this.grdCureList);
             this.xtraTabPage3.Controls.Add(this.simpleButton2);
             this.xtraTabPage3.Controls.Add(this.panelControl3);
-            this.xtraTabPage3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.xtraTabPage3.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.xtraTabPage3.Name = "xtraTabPage3";
-            this.xtraTabPage3.Size = new System.Drawing.Size(1041, 640);
+            this.xtraTabPage3.Size = new System.Drawing.Size(1691, 1032);
             this.xtraTabPage3.Text = "透析方案";
             // 
             // xtraTabControl1
             // 
             this.xtraTabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.xtraTabControl1.Location = new System.Drawing.Point(0, 71);
-            this.xtraTabControl1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.xtraTabControl1.Location = new System.Drawing.Point(0, 752);
+            this.xtraTabControl1.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.xtraTabControl1.Name = "xtraTabControl1";
             this.xtraTabControl1.SelectedTabPage = this.xtraTabPage1;
-            this.xtraTabControl1.Size = new System.Drawing.Size(651, 296);
+            this.xtraTabControl1.Size = new System.Drawing.Size(2706, 763);
             this.xtraTabControl1.TabIndex = 344;
             this.xtraTabControl1.TabPages.AddRange(new DevExpress.XtraTab.XtraTabPage[] {
             this.xtraTabPage1,
@@ -572,20 +572,20 @@
             this.xtraTabPage1.Appearance.Header.Options.UseFont = true;
             this.xtraTabPage1.Controls.Add(this.gridRecipe);
             this.xtraTabPage1.Controls.Add(this.simpleButton1);
-            this.xtraTabPage1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.xtraTabPage1.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.xtraTabPage1.Name = "xtraTabPage1";
-            this.xtraTabPage1.Size = new System.Drawing.Size(644, 254);
+            this.xtraTabPage1.Size = new System.Drawing.Size(2694, 696);
             this.xtraTabPage1.Text = "长期透析方案";
             // 
             // gridRecipe
             // 
             this.gridRecipe.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gridRecipe.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.gridRecipe.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.gridRecipe.Location = new System.Drawing.Point(0, 0);
             this.gridRecipe.MainView = this.gridVRecipe;
-            this.gridRecipe.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.gridRecipe.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.gridRecipe.Name = "gridRecipe";
-            this.gridRecipe.Size = new System.Drawing.Size(403, 159);
+            this.gridRecipe.Size = new System.Drawing.Size(4310, 1114);
             this.gridRecipe.TabIndex = 3;
             this.gridRecipe.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridVRecipe});
@@ -706,10 +706,10 @@
             // simpleButton1
             // 
             this.simpleButton1.ImageIndex = 8;
-            this.simpleButton1.Location = new System.Drawing.Point(872, 480);
-            this.simpleButton1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.simpleButton1.Location = new System.Drawing.Point(886, 484);
+            this.simpleButton1.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.simpleButton1.Name = "simpleButton1";
-            this.simpleButton1.Size = new System.Drawing.Size(138, 48);
+            this.simpleButton1.Size = new System.Drawing.Size(140, 48);
             this.simpleButton1.TabIndex = 2;
             this.simpleButton1.Text = "simpleButton1";
             // 
@@ -718,21 +718,21 @@
             this.xtraTabPage2.Appearance.Header.Font = new System.Drawing.Font("微软雅黑", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.xtraTabPage2.Appearance.Header.Options.UseFont = true;
             this.xtraTabPage2.Controls.Add(this.gridRecipeTemp);
-            this.xtraTabPage2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.xtraTabPage2.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.xtraTabPage2.Name = "xtraTabPage2";
             this.xtraTabPage2.PageVisible = false;
-            this.xtraTabPage2.Size = new System.Drawing.Size(1034, 253);
+            this.xtraTabPage2.Size = new System.Drawing.Size(1680, 695);
             this.xtraTabPage2.Text = " 临时医嘱 ";
             // 
             // gridRecipeTemp
             // 
             this.gridRecipeTemp.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gridRecipeTemp.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.gridRecipeTemp.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.gridRecipeTemp.Location = new System.Drawing.Point(0, 0);
             this.gridRecipeTemp.MainView = this.gridView3;
-            this.gridRecipeTemp.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.gridRecipeTemp.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.gridRecipeTemp.Name = "gridRecipeTemp";
-            this.gridRecipeTemp.Size = new System.Drawing.Size(646, 158);
+            this.gridRecipeTemp.Size = new System.Drawing.Size(2688, 1112);
             this.gridRecipeTemp.TabIndex = 4;
             this.gridRecipeTemp.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView3});
@@ -847,22 +847,22 @@
             // 
             // busyIndicator1
             // 
-            this.busyIndicator1.Location = new System.Drawing.Point(707, 312);
-            this.busyIndicator1.Margin = new System.Windows.Forms.Padding(6);
+            this.busyIndicator1.Location = new System.Drawing.Point(718, 314);
+            this.busyIndicator1.Margin = new System.Windows.Forms.Padding(10, 10, 10, 10);
             this.busyIndicator1.Name = "busyIndicator1";
-            this.busyIndicator1.Size = new System.Drawing.Size(214, 96);
+            this.busyIndicator1.Size = new System.Drawing.Size(218, 97);
             this.busyIndicator1.TabIndex = 343;
             // 
             // grdCureList
             // 
             this.grdCureList.Dock = System.Windows.Forms.DockStyle.Top;
-            this.grdCureList.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.grdCureList.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.grdCureList.Font = new System.Drawing.Font("微软雅黑", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grdCureList.Location = new System.Drawing.Point(0, 0);
             this.grdCureList.MainView = this.gridView2;
-            this.grdCureList.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.grdCureList.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.grdCureList.Name = "grdCureList";
-            this.grdCureList.Size = new System.Drawing.Size(651, 114);
+            this.grdCureList.Size = new System.Drawing.Size(2706, 470);
             this.grdCureList.TabIndex = 3;
             this.grdCureList.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView2});
@@ -1030,10 +1030,10 @@
             // simpleButton2
             // 
             this.simpleButton2.ImageIndex = 8;
-            this.simpleButton2.Location = new System.Drawing.Point(872, 480);
-            this.simpleButton2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.simpleButton2.Location = new System.Drawing.Point(885, 483);
+            this.simpleButton2.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.simpleButton2.Name = "simpleButton2";
-            this.simpleButton2.Size = new System.Drawing.Size(138, 48);
+            this.simpleButton2.Size = new System.Drawing.Size(140, 48);
             this.simpleButton2.TabIndex = 2;
             this.simpleButton2.Text = "simpleButton2";
             // 
@@ -1046,20 +1046,20 @@
             this.panelControl3.Controls.Add(this.btnClose);
             this.panelControl3.Controls.Add(this.btnCopy);
             this.panelControl3.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panelControl3.Location = new System.Drawing.Point(0, 347);
-            this.panelControl3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.panelControl3.Location = new System.Drawing.Point(0, 1566);
+            this.panelControl3.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.panelControl3.Name = "panelControl3";
-            this.panelControl3.Size = new System.Drawing.Size(651, 53);
+            this.panelControl3.Size = new System.Drawing.Size(2706, 85);
             this.panelControl3.TabIndex = 345;
             // 
             // btnRefresh
             // 
             this.btnRefresh.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnRefresh.ImageIndex = 5;
-            this.btnRefresh.Location = new System.Drawing.Point(442, 12);
-            this.btnRefresh.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnRefresh.Location = new System.Drawing.Point(2366, 19);
+            this.btnRefresh.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.btnRefresh.Name = "btnRefresh";
-            this.btnRefresh.Size = new System.Drawing.Size(86, 32);
+            this.btnRefresh.Size = new System.Drawing.Size(140, 52);
             this.btnRefresh.TabIndex = 303;
             this.btnRefresh.Text = "刷新(&R)";
             this.btnRefresh.Click += new System.EventHandler(this.btnRefresh_Click);
@@ -1068,10 +1068,10 @@
             // 
             this.btnStop.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnStop.ImageIndex = 1;
-            this.btnStop.Location = new System.Drawing.Point(352, 12);
-            this.btnStop.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnStop.Location = new System.Drawing.Point(2220, 19);
+            this.btnStop.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.btnStop.Name = "btnStop";
-            this.btnStop.Size = new System.Drawing.Size(86, 32);
+            this.btnStop.Size = new System.Drawing.Size(140, 52);
             this.btnStop.TabIndex = 302;
             this.btnStop.Text = "停止(&S)";
             this.btnStop.Click += new System.EventHandler(this.btnStop_Click);
@@ -1080,10 +1080,10 @@
             // 
             this.btnEdit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnEdit.ImageIndex = 2;
-            this.btnEdit.Location = new System.Drawing.Point(168, 12);
-            this.btnEdit.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnEdit.Location = new System.Drawing.Point(1921, 19);
+            this.btnEdit.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.btnEdit.Name = "btnEdit";
-            this.btnEdit.Size = new System.Drawing.Size(86, 32);
+            this.btnEdit.Size = new System.Drawing.Size(140, 52);
             this.btnEdit.TabIndex = 301;
             this.btnEdit.Text = "显示(&K)";
             this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
@@ -1092,10 +1092,10 @@
             // 
             this.btnAdd.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnAdd.ImageIndex = 0;
-            this.btnAdd.Location = new System.Drawing.Point(261, 12);
-            this.btnAdd.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnAdd.Location = new System.Drawing.Point(2072, 19);
+            this.btnAdd.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(86, 32);
+            this.btnAdd.Size = new System.Drawing.Size(140, 52);
             this.btnAdd.TabIndex = 300;
             this.btnAdd.Text = "新增(&A)";
             this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
@@ -1104,10 +1104,10 @@
             // 
             this.btnClose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnClose.ImageIndex = 3;
-            this.btnClose.Location = new System.Drawing.Point(532, 12);
-            this.btnClose.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnClose.Location = new System.Drawing.Point(2512, 19);
+            this.btnClose.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(86, 32);
+            this.btnClose.Size = new System.Drawing.Size(140, 52);
             this.btnClose.TabIndex = 299;
             this.btnClose.Text = "关闭(&D)";
             this.btnClose.Visible = false;
@@ -1117,10 +1117,10 @@
             // 
             this.btnCopy.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnCopy.ImageIndex = 4;
-            this.btnCopy.Location = new System.Drawing.Point(75, 12);
-            this.btnCopy.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnCopy.Location = new System.Drawing.Point(1770, 19);
+            this.btnCopy.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.btnCopy.Name = "btnCopy";
-            this.btnCopy.Size = new System.Drawing.Size(86, 32);
+            this.btnCopy.Size = new System.Drawing.Size(140, 52);
             this.btnCopy.TabIndex = 298;
             this.btnCopy.Text = "复制(&C)";
             this.btnCopy.Click += new System.EventHandler(this.btnCopy_Click);
@@ -1132,19 +1132,19 @@
             this.xtraTabPage4.Controls.Add(this.xtraTabControl3);
             this.xtraTabPage4.Controls.Add(this.panDrug);
             this.xtraTabPage4.Controls.Add(this.panelControl1);
-            this.xtraTabPage4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.xtraTabPage4.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.xtraTabPage4.Name = "xtraTabPage4";
-            this.xtraTabPage4.Size = new System.Drawing.Size(1041, 640);
+            this.xtraTabPage4.Size = new System.Drawing.Size(1691, 1032);
             this.xtraTabPage4.Text = "医嘱列表";
             // 
             // xtraTabControl3
             // 
             this.xtraTabControl3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.xtraTabControl3.Location = new System.Drawing.Point(0, 0);
-            this.xtraTabControl3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.xtraTabControl3.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.xtraTabControl3.Name = "xtraTabControl3";
             this.xtraTabControl3.SelectedTabPage = this.xtraTabPage5;
-            this.xtraTabControl3.Size = new System.Drawing.Size(651, 260);
+            this.xtraTabControl3.Size = new System.Drawing.Size(2706, 803);
             this.xtraTabControl3.TabIndex = 345;
             this.xtraTabControl3.TabPages.AddRange(new DevExpress.XtraTab.XtraTabPage[] {
             this.xtraTabPage5,
@@ -1154,22 +1154,22 @@
             // xtraTabPage5
             // 
             this.xtraTabPage5.Controls.Add(this.gridDrugList);
-            this.xtraTabPage5.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.xtraTabPage5.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.xtraTabPage5.Name = "xtraTabPage5";
-            this.xtraTabPage5.Size = new System.Drawing.Size(644, 225);
+            this.xtraTabPage5.Size = new System.Drawing.Size(1679, 614);
             this.xtraTabPage5.Text = "临时医嘱";
             // 
             // gridDrugList
             // 
             this.gridDrugList.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gridDrugList.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.gridDrugList.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.gridDrugList.Location = new System.Drawing.Point(0, 0);
             this.gridDrugList.MainView = this.gridView5;
-            this.gridDrugList.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.gridDrugList.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.gridDrugList.Name = "gridDrugList";
             this.gridDrugList.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
             this.repositoryItemTextEdit1});
-            this.gridDrugList.Size = new System.Drawing.Size(403, 141);
+            this.gridDrugList.Size = new System.Drawing.Size(2686, 982);
             this.gridDrugList.TabIndex = 7;
             this.gridDrugList.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView5});
@@ -1382,20 +1382,20 @@
             // xtraTabPage6
             // 
             this.xtraTabPage6.Controls.Add(this.gridDrugListLong);
-            this.xtraTabPage6.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.xtraTabPage6.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.xtraTabPage6.Name = "xtraTabPage6";
-            this.xtraTabPage6.Size = new System.Drawing.Size(1034, 277);
+            this.xtraTabPage6.Size = new System.Drawing.Size(2694, 746);
             this.xtraTabPage6.Text = "长期医嘱";
             // 
             // gridDrugListLong
             // 
             this.gridDrugListLong.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gridDrugListLong.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.gridDrugListLong.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.gridDrugListLong.Location = new System.Drawing.Point(0, 0);
             this.gridDrugListLong.MainView = this.gridView7;
-            this.gridDrugListLong.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.gridDrugListLong.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.gridDrugListLong.Name = "gridDrugListLong";
-            this.gridDrugListLong.Size = new System.Drawing.Size(646, 173);
+            this.gridDrugListLong.Size = new System.Drawing.Size(4310, 1194);
             this.gridDrugListLong.TabIndex = 8;
             this.gridDrugListLong.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView7});
@@ -1620,17 +1620,17 @@
             this.panDrug.Controls.Add(this.lupDRUG_TIMETYPE);
             this.panDrug.Controls.Add(this.cbmDRUG_DAYS);
             this.panDrug.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panDrug.Location = new System.Drawing.Point(0, 195);
-            this.panDrug.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.panDrug.Location = new System.Drawing.Point(0, 1072);
+            this.panDrug.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.panDrug.Name = "panDrug";
-            this.panDrug.Size = new System.Drawing.Size(651, 174);
+            this.panDrug.Size = new System.Drawing.Size(2706, 448);
             this.panDrug.TabIndex = 8;
             // 
             // cmbDRUG_TIMES
             // 
             this.cmbDRUG_TIMES.EnterMoveNextControl = true;
-            this.cmbDRUG_TIMES.Location = new System.Drawing.Point(217, 64);
-            this.cmbDRUG_TIMES.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.cmbDRUG_TIMES.Location = new System.Drawing.Point(353, 103);
+            this.cmbDRUG_TIMES.Margin = new System.Windows.Forms.Padding(5, 8, 5, 8);
             this.cmbDRUG_TIMES.Name = "cmbDRUG_TIMES";
             this.cmbDRUG_TIMES.Properties.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F);
             this.cmbDRUG_TIMES.Properties.Appearance.ForeColor = System.Drawing.Color.Blue;
@@ -1640,45 +1640,45 @@
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.cmbDRUG_TIMES.Properties.LookAndFeel.SkinName = "ExtendBlue";
             this.cmbDRUG_TIMES.Properties.NullText = "";
-            this.cmbDRUG_TIMES.Size = new System.Drawing.Size(133, 26);
+            this.cmbDRUG_TIMES.Size = new System.Drawing.Size(216, 38);
             this.cmbDRUG_TIMES.TabIndex = 407;
             this.cmbDRUG_TIMES.EditValueChanged += new System.EventHandler(this.cmbDRUG_TIMES_EditValueChanged);
             // 
             // txtCURE_DRUG_ID
             // 
             this.txtCURE_DRUG_ID.Enabled = false;
-            this.txtCURE_DRUG_ID.Location = new System.Drawing.Point(25, 198);
-            this.txtCURE_DRUG_ID.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.txtCURE_DRUG_ID.Location = new System.Drawing.Point(41, 319);
+            this.txtCURE_DRUG_ID.Margin = new System.Windows.Forms.Padding(5, 8, 5, 8);
             this.txtCURE_DRUG_ID.Name = "txtCURE_DRUG_ID";
             this.txtCURE_DRUG_ID.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCURE_DRUG_ID.Properties.Appearance.ForeColor = System.Drawing.Color.Blue;
             this.txtCURE_DRUG_ID.Properties.Appearance.Options.UseFont = true;
             this.txtCURE_DRUG_ID.Properties.Appearance.Options.UseForeColor = true;
             this.txtCURE_DRUG_ID.Properties.LookAndFeel.SkinName = "ExtendBlue";
-            this.txtCURE_DRUG_ID.Size = new System.Drawing.Size(39, 24);
+            this.txtCURE_DRUG_ID.Size = new System.Drawing.Size(63, 36);
             this.txtCURE_DRUG_ID.TabIndex = 403;
             this.txtCURE_DRUG_ID.Visible = false;
             // 
             // txtRECIPE_ID
             // 
             this.txtRECIPE_ID.Enabled = false;
-            this.txtRECIPE_ID.Location = new System.Drawing.Point(25, 161);
-            this.txtRECIPE_ID.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.txtRECIPE_ID.Location = new System.Drawing.Point(41, 259);
+            this.txtRECIPE_ID.Margin = new System.Windows.Forms.Padding(5, 8, 5, 8);
             this.txtRECIPE_ID.Name = "txtRECIPE_ID";
             this.txtRECIPE_ID.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtRECIPE_ID.Properties.Appearance.ForeColor = System.Drawing.Color.Blue;
             this.txtRECIPE_ID.Properties.Appearance.Options.UseFont = true;
             this.txtRECIPE_ID.Properties.Appearance.Options.UseForeColor = true;
             this.txtRECIPE_ID.Properties.LookAndFeel.SkinName = "ExtendBlue";
-            this.txtRECIPE_ID.Size = new System.Drawing.Size(40, 24);
+            this.txtRECIPE_ID.Size = new System.Drawing.Size(65, 36);
             this.txtRECIPE_ID.TabIndex = 402;
             this.txtRECIPE_ID.Visible = false;
             // 
             // txtDRUG_NAME
             // 
             this.txtDRUG_NAME.EnterMoveNextControl = true;
-            this.txtDRUG_NAME.Location = new System.Drawing.Point(459, 18);
-            this.txtDRUG_NAME.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtDRUG_NAME.Location = new System.Drawing.Point(746, 29);
+            this.txtDRUG_NAME.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.txtDRUG_NAME.Name = "txtDRUG_NAME";
             this.txtDRUG_NAME.Properties.Appearance.ForeColor = System.Drawing.Color.Blue;
             this.txtDRUG_NAME.Properties.Appearance.Options.UseForeColor = true;
@@ -1690,7 +1690,7 @@
             this.txtDRUG_NAME.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.Standard;
             this.txtDRUG_NAME.Properties.ValueMember = "DRUG_CODE";
             this.txtDRUG_NAME.Properties.View = this.customGridLookUpEdit2View;
-            this.txtDRUG_NAME.Size = new System.Drawing.Size(206, 26);
+            this.txtDRUG_NAME.Size = new System.Drawing.Size(335, 26);
             this.txtDRUG_NAME.TabIndex = 43;
             this.txtDRUG_NAME.EditValueChanged += new System.EventHandler(this.txtDRUG_NAME_EditValueChanged);
             this.txtDRUG_NAME.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtDRUG_NAME_KeyDown);
@@ -1738,38 +1738,38 @@
             this.cmbCreate_Time.EditValue = new System.DateTime(2013, 4, 8, 0, 0, 0, 0);
             this.cmbCreate_Time.Enabled = false;
             this.cmbCreate_Time.EnterMoveNextControl = true;
-            this.cmbCreate_Time.Location = new System.Drawing.Point(193, 18);
-            this.cmbCreate_Time.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.cmbCreate_Time.Location = new System.Drawing.Point(314, 29);
+            this.cmbCreate_Time.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.cmbCreate_Time.Name = "cmbCreate_Time";
             this.cmbCreate_Time.Properties.Appearance.ForeColor = System.Drawing.Color.Blue;
             this.cmbCreate_Time.Properties.Appearance.Options.UseForeColor = true;
             this.cmbCreate_Time.Properties.AutoHeight = false;
             this.cmbCreate_Time.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton()});
-            this.cmbCreate_Time.Size = new System.Drawing.Size(97, 26);
+            this.cmbCreate_Time.Size = new System.Drawing.Size(158, 26);
             this.cmbCreate_Time.TabIndex = 42;
             // 
             // txtCure_ID
             // 
             this.txtCure_ID.Enabled = false;
-            this.txtCure_ID.Location = new System.Drawing.Point(662, 64);
-            this.txtCure_ID.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.txtCure_ID.Location = new System.Drawing.Point(1076, 103);
+            this.txtCure_ID.Margin = new System.Windows.Forms.Padding(5, 8, 5, 8);
             this.txtCure_ID.Name = "txtCure_ID";
             this.txtCure_ID.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCure_ID.Properties.Appearance.ForeColor = System.Drawing.Color.Blue;
             this.txtCure_ID.Properties.Appearance.Options.UseFont = true;
             this.txtCure_ID.Properties.Appearance.Options.UseForeColor = true;
             this.txtCure_ID.Properties.LookAndFeel.SkinName = "ExtendBlue";
-            this.txtCure_ID.Size = new System.Drawing.Size(153, 24);
+            this.txtCure_ID.Size = new System.Drawing.Size(249, 36);
             this.txtCure_ID.TabIndex = 401;
             this.txtCure_ID.Visible = false;
             // 
             // labelControl7
             // 
-            this.labelControl7.Location = new System.Drawing.Point(586, 67);
-            this.labelControl7.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.labelControl7.Location = new System.Drawing.Point(952, 108);
+            this.labelControl7.Margin = new System.Windows.Forms.Padding(5, 8, 5, 8);
             this.labelControl7.Name = "labelControl7";
-            this.labelControl7.Size = new System.Drawing.Size(75, 18);
+            this.labelControl7.Size = new System.Drawing.Size(120, 29);
             this.labelControl7.TabIndex = 400;
             this.labelControl7.Text = "治疗单编号";
             this.labelControl7.Visible = false;
@@ -1777,8 +1777,8 @@
             // lopDOCTOR_ID
             // 
             this.lopDOCTOR_ID.EnterMoveNextControl = true;
-            this.lopDOCTOR_ID.Location = new System.Drawing.Point(887, 64);
-            this.lopDOCTOR_ID.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.lopDOCTOR_ID.Location = new System.Drawing.Point(1441, 103);
+            this.lopDOCTOR_ID.Margin = new System.Windows.Forms.Padding(5, 8, 5, 8);
             this.lopDOCTOR_ID.Name = "lopDOCTOR_ID";
             this.lopDOCTOR_ID.Properties.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F);
             this.lopDOCTOR_ID.Properties.Appearance.ForeColor = System.Drawing.Color.Blue;
@@ -1787,16 +1787,16 @@
             this.lopDOCTOR_ID.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.lopDOCTOR_ID.Properties.LookAndFeel.SkinName = "ExtendBlue";
-            this.lopDOCTOR_ID.Size = new System.Drawing.Size(133, 26);
+            this.lopDOCTOR_ID.Size = new System.Drawing.Size(216, 38);
             this.lopDOCTOR_ID.TabIndex = 50;
             // 
             // labelControl73
             // 
             this.labelControl73.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl73.Location = new System.Drawing.Point(822, 67);
-            this.labelControl73.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.labelControl73.Location = new System.Drawing.Point(1336, 108);
+            this.labelControl73.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.labelControl73.Name = "labelControl73";
-            this.labelControl73.Size = new System.Drawing.Size(60, 20);
+            this.labelControl73.Size = new System.Drawing.Size(96, 31);
             this.labelControl73.TabIndex = 396;
             this.labelControl73.Text = "开药医生";
             // 
@@ -1804,8 +1804,8 @@
             // 
             this.txtCREATE_DATE.EditValue = null;
             this.txtCREATE_DATE.EnterMoveNextControl = true;
-            this.txtCREATE_DATE.Location = new System.Drawing.Point(90, 18);
-            this.txtCREATE_DATE.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.txtCREATE_DATE.Location = new System.Drawing.Point(146, 29);
+            this.txtCREATE_DATE.Margin = new System.Windows.Forms.Padding(5, 8, 5, 8);
             this.txtCREATE_DATE.Name = "txtCREATE_DATE";
             this.txtCREATE_DATE.Properties.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.txtCREATE_DATE.Properties.Appearance.ForeColor = System.Drawing.Color.Blue;
@@ -1816,7 +1816,7 @@
             this.txtCREATE_DATE.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton()});
             this.txtCREATE_DATE.Properties.LookAndFeel.SkinName = "ExtendBlue";
-            this.txtCREATE_DATE.Size = new System.Drawing.Size(101, 26);
+            this.txtCREATE_DATE.Size = new System.Drawing.Size(164, 38);
             this.txtCREATE_DATE.TabIndex = 41;
             this.txtCREATE_DATE.EditValueChanged += new System.EventHandler(this.txtCREATE_DATE_EditValueChanged);
             this.txtCREATE_DATE.Leave += new System.EventHandler(this.txtCREATE_DATE_EditValueChanged);
@@ -1824,39 +1824,39 @@
             // labelControl57
             // 
             this.labelControl57.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl57.Location = new System.Drawing.Point(25, 67);
-            this.labelControl57.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.labelControl57.Location = new System.Drawing.Point(41, 108);
+            this.labelControl57.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.labelControl57.Name = "labelControl57";
-            this.labelControl57.Size = new System.Drawing.Size(60, 20);
+            this.labelControl57.Size = new System.Drawing.Size(96, 31);
             this.labelControl57.TabIndex = 392;
             this.labelControl57.Text = "给药阶段";
             // 
             // txtREMARK
             // 
             this.txtREMARK.EnterMoveNextControl = true;
-            this.txtREMARK.Location = new System.Drawing.Point(90, 112);
-            this.txtREMARK.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtREMARK.Location = new System.Drawing.Point(146, 180);
+            this.txtREMARK.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.txtREMARK.Name = "txtREMARK";
             this.txtREMARK.Properties.Appearance.ForeColor = System.Drawing.Color.Blue;
             this.txtREMARK.Properties.Appearance.Options.UseForeColor = true;
-            this.txtREMARK.Size = new System.Drawing.Size(905, 158);
+            this.txtREMARK.Size = new System.Drawing.Size(1471, 255);
             this.txtREMARK.TabIndex = 51;
             // 
             // labelControl56
             // 
             this.labelControl56.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl56.Location = new System.Drawing.Point(25, 113);
-            this.labelControl56.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.labelControl56.Location = new System.Drawing.Point(41, 182);
+            this.labelControl56.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.labelControl56.Name = "labelControl56";
-            this.labelControl56.Size = new System.Drawing.Size(30, 20);
+            this.labelControl56.Size = new System.Drawing.Size(48, 31);
             this.labelControl56.TabIndex = 390;
             this.labelControl56.Text = "备注";
             // 
             // cmbDRUG_MODE
             // 
             this.cmbDRUG_MODE.EnterMoveNextControl = true;
-            this.cmbDRUG_MODE.Location = new System.Drawing.Point(887, 18);
-            this.cmbDRUG_MODE.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.cmbDRUG_MODE.Location = new System.Drawing.Point(1441, 29);
+            this.cmbDRUG_MODE.Margin = new System.Windows.Forms.Padding(5, 8, 5, 8);
             this.cmbDRUG_MODE.Name = "cmbDRUG_MODE";
             this.cmbDRUG_MODE.Properties.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F);
             this.cmbDRUG_MODE.Properties.Appearance.ForeColor = System.Drawing.Color.Blue;
@@ -1865,14 +1865,14 @@
             this.cmbDRUG_MODE.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.cmbDRUG_MODE.Properties.LookAndFeel.SkinName = "ExtendBlue";
-            this.cmbDRUG_MODE.Size = new System.Drawing.Size(133, 26);
+            this.cmbDRUG_MODE.Size = new System.Drawing.Size(216, 38);
             this.cmbDRUG_MODE.TabIndex = 46;
             // 
             // cmbDOSAGE_UNITS
             // 
             this.cmbDOSAGE_UNITS.EnterMoveNextControl = true;
-            this.cmbDOSAGE_UNITS.Location = new System.Drawing.Point(771, 18);
-            this.cmbDOSAGE_UNITS.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.cmbDOSAGE_UNITS.Location = new System.Drawing.Point(1253, 29);
+            this.cmbDOSAGE_UNITS.Margin = new System.Windows.Forms.Padding(5, 8, 5, 8);
             this.cmbDOSAGE_UNITS.Name = "cmbDOSAGE_UNITS";
             this.cmbDOSAGE_UNITS.Properties.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F);
             this.cmbDOSAGE_UNITS.Properties.Appearance.ForeColor = System.Drawing.Color.Blue;
@@ -1881,40 +1881,40 @@
             this.cmbDOSAGE_UNITS.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.cmbDOSAGE_UNITS.Properties.LookAndFeel.SkinName = "ExtendBlue";
-            this.cmbDOSAGE_UNITS.Size = new System.Drawing.Size(113, 26);
+            this.cmbDOSAGE_UNITS.Size = new System.Drawing.Size(184, 38);
             this.cmbDOSAGE_UNITS.TabIndex = 45;
             // 
             // txtDOSAGE
             // 
             this.txtDOSAGE.EnterMoveNextControl = true;
-            this.txtDOSAGE.Location = new System.Drawing.Point(669, 18);
-            this.txtDOSAGE.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.txtDOSAGE.Location = new System.Drawing.Point(1087, 29);
+            this.txtDOSAGE.Margin = new System.Windows.Forms.Padding(5, 8, 5, 8);
             this.txtDOSAGE.Name = "txtDOSAGE";
             this.txtDOSAGE.Properties.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F);
             this.txtDOSAGE.Properties.Appearance.ForeColor = System.Drawing.Color.Blue;
             this.txtDOSAGE.Properties.Appearance.Options.UseFont = true;
             this.txtDOSAGE.Properties.Appearance.Options.UseForeColor = true;
             this.txtDOSAGE.Properties.LookAndFeel.SkinName = "ExtendBlue";
-            this.txtDOSAGE.Size = new System.Drawing.Size(99, 26);
+            this.txtDOSAGE.Size = new System.Drawing.Size(161, 38);
             this.txtDOSAGE.TabIndex = 44;
             // 
             // labelControl54
             // 
             this.labelControl54.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F);
-            this.labelControl54.Location = new System.Drawing.Point(391, 21);
-            this.labelControl54.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.labelControl54.Location = new System.Drawing.Point(635, 34);
+            this.labelControl54.Margin = new System.Windows.Forms.Padding(5, 8, 5, 8);
             this.labelControl54.Name = "labelControl54";
-            this.labelControl54.Size = new System.Drawing.Size(60, 20);
+            this.labelControl54.Size = new System.Drawing.Size(96, 31);
             this.labelControl54.TabIndex = 384;
             this.labelControl54.Text = "项目名称";
             // 
             // labelControl53
             // 
             this.labelControl53.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl53.Location = new System.Drawing.Point(25, 21);
-            this.labelControl53.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.labelControl53.Location = new System.Drawing.Point(41, 34);
+            this.labelControl53.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.labelControl53.Name = "labelControl53";
-            this.labelControl53.Size = new System.Drawing.Size(60, 20);
+            this.labelControl53.Size = new System.Drawing.Size(96, 31);
             this.labelControl53.TabIndex = 380;
             this.labelControl53.Text = "录入时间";
             // 
@@ -1922,8 +1922,8 @@
             // 
             this.lupDRUG_TIMETYPE.EditValue = "透析前";
             this.lupDRUG_TIMETYPE.EnterMoveNextControl = true;
-            this.lupDRUG_TIMETYPE.Location = new System.Drawing.Point(90, 64);
-            this.lupDRUG_TIMETYPE.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.lupDRUG_TIMETYPE.Location = new System.Drawing.Point(146, 103);
+            this.lupDRUG_TIMETYPE.Margin = new System.Windows.Forms.Padding(5, 8, 5, 8);
             this.lupDRUG_TIMETYPE.Name = "lupDRUG_TIMETYPE";
             this.lupDRUG_TIMETYPE.Properties.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F);
             this.lupDRUG_TIMETYPE.Properties.Appearance.ForeColor = System.Drawing.Color.Blue;
@@ -1940,15 +1940,15 @@
             this.lupDRUG_TIMETYPE.Properties.NullText = "[EditValue is null]";
             this.lupDRUG_TIMETYPE.Properties.PopupSizeable = true;
             this.lupDRUG_TIMETYPE.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
-            this.lupDRUG_TIMETYPE.Size = new System.Drawing.Size(125, 26);
+            this.lupDRUG_TIMETYPE.Size = new System.Drawing.Size(203, 38);
             this.lupDRUG_TIMETYPE.TabIndex = 47;
             // 
             // cbmDRUG_DAYS
             // 
             this.cbmDRUG_DAYS.EditValue = "";
             this.cbmDRUG_DAYS.EnterMoveNextControl = true;
-            this.cbmDRUG_DAYS.Location = new System.Drawing.Point(352, 64);
-            this.cbmDRUG_DAYS.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.cbmDRUG_DAYS.Location = new System.Drawing.Point(572, 103);
+            this.cbmDRUG_DAYS.Margin = new System.Windows.Forms.Padding(5, 8, 5, 8);
             this.cbmDRUG_DAYS.Name = "cbmDRUG_DAYS";
             this.cbmDRUG_DAYS.Properties.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F);
             this.cbmDRUG_DAYS.Properties.Appearance.ForeColor = System.Drawing.Color.Blue;
@@ -1966,7 +1966,7 @@
             new DevExpress.XtraEditors.Controls.CheckedListBoxItem("周日", "周日")});
             this.cbmDRUG_DAYS.Properties.LookAndFeel.SkinName = "ExtendBlue";
             this.cbmDRUG_DAYS.Properties.NullText = "[EditValue is null]";
-            this.cbmDRUG_DAYS.Size = new System.Drawing.Size(133, 26);
+            this.cbmDRUG_DAYS.Size = new System.Drawing.Size(216, 38);
             this.cbmDRUG_DAYS.TabIndex = 49;
             this.cbmDRUG_DAYS.Visible = false;
             // 
@@ -1978,20 +1978,20 @@
             this.panelControl1.Controls.Add(this.btnCloseDrug);
             this.panelControl1.Controls.Add(this.btnSaveDrug);
             this.panelControl1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panelControl1.Location = new System.Drawing.Point(0, 350);
-            this.panelControl1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.panelControl1.Location = new System.Drawing.Point(0, 1570);
+            this.panelControl1.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.panelControl1.Name = "panelControl1";
-            this.panelControl1.Size = new System.Drawing.Size(651, 50);
+            this.panelControl1.Size = new System.Drawing.Size(2706, 82);
             this.panelControl1.TabIndex = 264;
             this.panelControl1.Paint += new System.Windows.Forms.PaintEventHandler(this.panelControl1_Paint);
             // 
             // btnSaveTemp
             // 
             this.btnSaveTemp.ImageIndex = 14;
-            this.btnSaveTemp.Location = new System.Drawing.Point(477, 10);
-            this.btnSaveTemp.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnSaveTemp.Location = new System.Drawing.Point(775, 16);
+            this.btnSaveTemp.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.btnSaveTemp.Name = "btnSaveTemp";
-            this.btnSaveTemp.Size = new System.Drawing.Size(113, 30);
+            this.btnSaveTemp.Size = new System.Drawing.Size(184, 48);
             this.btnSaveTemp.TabIndex = 297;
             this.btnSaveTemp.Text = "存为模板(&T)";
             this.btnSaveTemp.Click += new System.EventHandler(this.btnSaveTemp_Click);
@@ -1999,10 +1999,10 @@
             // btn_UseTemplate
             // 
             this.btn_UseTemplate.ImageIndex = 7;
-            this.btn_UseTemplate.Location = new System.Drawing.Point(597, 10);
-            this.btn_UseTemplate.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btn_UseTemplate.Location = new System.Drawing.Point(970, 16);
+            this.btn_UseTemplate.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.btn_UseTemplate.Name = "btn_UseTemplate";
-            this.btn_UseTemplate.Size = new System.Drawing.Size(113, 30);
+            this.btn_UseTemplate.Size = new System.Drawing.Size(184, 48);
             this.btn_UseTemplate.TabIndex = 296;
             this.btn_UseTemplate.Text = "调用模版(&T)";
             this.btn_UseTemplate.Click += new System.EventHandler(this.btn_UseTemplate_Click);
@@ -2010,10 +2010,10 @@
             // btnAddDrug
             // 
             this.btnAddDrug.ImageIndex = 0;
-            this.btnAddDrug.Location = new System.Drawing.Point(717, 10);
-            this.btnAddDrug.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnAddDrug.Location = new System.Drawing.Point(1165, 16);
+            this.btnAddDrug.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.btnAddDrug.Name = "btnAddDrug";
-            this.btnAddDrug.Size = new System.Drawing.Size(86, 30);
+            this.btnAddDrug.Size = new System.Drawing.Size(140, 48);
             this.btnAddDrug.TabIndex = 296;
             this.btnAddDrug.Text = "新增(&A)";
             this.btnAddDrug.Click += new System.EventHandler(this.btnAddDrug_Click);
@@ -2021,10 +2021,10 @@
             // btnCloseDrug
             // 
             this.btnCloseDrug.ImageIndex = 3;
-            this.btnCloseDrug.Location = new System.Drawing.Point(902, 10);
-            this.btnCloseDrug.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnCloseDrug.Location = new System.Drawing.Point(1466, 16);
+            this.btnCloseDrug.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.btnCloseDrug.Name = "btnCloseDrug";
-            this.btnCloseDrug.Size = new System.Drawing.Size(86, 30);
+            this.btnCloseDrug.Size = new System.Drawing.Size(140, 48);
             this.btnCloseDrug.TabIndex = 295;
             this.btnCloseDrug.Text = "关闭(&D)";
             this.btnCloseDrug.Visible = false;
@@ -2033,10 +2033,10 @@
             // btnSaveDrug
             // 
             this.btnSaveDrug.ImageIndex = 7;
-            this.btnSaveDrug.Location = new System.Drawing.Point(809, 10);
-            this.btnSaveDrug.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnSaveDrug.Location = new System.Drawing.Point(1315, 16);
+            this.btnSaveDrug.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.btnSaveDrug.Name = "btnSaveDrug";
-            this.btnSaveDrug.Size = new System.Drawing.Size(86, 30);
+            this.btnSaveDrug.Size = new System.Drawing.Size(140, 48);
             this.btnSaveDrug.TabIndex = 53;
             this.btnSaveDrug.Text = "保存(&S)";
             this.btnSaveDrug.Click += new System.EventHandler(this.btnSaveDrug_Click);
@@ -2046,10 +2046,10 @@
             this.xtraTabPage8.Appearance.Header.Font = new System.Drawing.Font("微软雅黑", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.xtraTabPage8.Appearance.Header.Options.UseFont = true;
             this.xtraTabPage8.Controls.Add(this.xtraTabControl4);
-            this.xtraTabPage8.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.xtraTabPage8.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.xtraTabPage8.Name = "xtraTabPage8";
-            this.xtraTabPage8.Padding = new System.Windows.Forms.Padding(0, 6, 0, 0);
-            this.xtraTabPage8.Size = new System.Drawing.Size(1041, 640);
+            this.xtraTabPage8.Padding = new System.Windows.Forms.Padding(0, 10, 0, 0);
+            this.xtraTabPage8.Size = new System.Drawing.Size(1691, 1032);
             this.xtraTabPage8.Text = "透析变化";
             // 
             // xtraTabControl4
@@ -2057,12 +2057,12 @@
             this.xtraTabControl4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.xtraTabControl4.HeaderLocation = DevExpress.XtraTab.TabHeaderLocation.Left;
             this.xtraTabControl4.HeaderOrientation = DevExpress.XtraTab.TabOrientation.Vertical;
-            this.xtraTabControl4.Location = new System.Drawing.Point(0, 4);
-            this.xtraTabControl4.Margin = new System.Windows.Forms.Padding(3, 6, 3, 6);
+            this.xtraTabControl4.Location = new System.Drawing.Point(0, 16);
+            this.xtraTabControl4.Margin = new System.Windows.Forms.Padding(5, 10, 5, 10);
             this.xtraTabControl4.Name = "xtraTabControl4";
             this.xtraTabControl4.SelectedTabPage = this.xtraTabPage9;
             this.xtraTabControl4.ShowTabHeader = DevExpress.Utils.DefaultBoolean.True;
-            this.xtraTabControl4.Size = new System.Drawing.Size(651, 396);
+            this.xtraTabControl4.Size = new System.Drawing.Size(2706, 1635);
             this.xtraTabControl4.TabIndex = 0;
             this.xtraTabControl4.TabPages.AddRange(new DevExpress.XtraTab.XtraTabPage[] {
             this.xtraTabPage9,
@@ -2073,9 +2073,9 @@
             // xtraTabPage9
             // 
             this.xtraTabPage9.Controls.Add(this.patientRecipeFrm2);
-            this.xtraTabPage9.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.xtraTabPage9.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.xtraTabPage9.Name = "xtraTabPage9";
-            this.xtraTabPage9.Size = new System.Drawing.Size(615, 389);
+            this.xtraTabPage9.Size = new System.Drawing.Size(2649, 1623);
             this.xtraTabPage9.Text = "干体重与抗凝";
             // 
             // patientRecipeFrm2
@@ -2085,19 +2085,19 @@
             this.patientRecipeFrm2.hemoId = null;
             this.patientRecipeFrm2.HemoId = "";
             this.patientRecipeFrm2.Location = new System.Drawing.Point(0, 0);
-            this.patientRecipeFrm2.Margin = new System.Windows.Forms.Padding(3, 6, 3, 6);
+            this.patientRecipeFrm2.Margin = new System.Windows.Forms.Padding(5, 10, 5, 10);
             this.patientRecipeFrm2.Name = "patientRecipeFrm2";
             this.patientRecipeFrm2.OnGetPatientRecipeChart = null;
-            this.patientRecipeFrm2.Size = new System.Drawing.Size(384, 243);
+            this.patientRecipeFrm2.Size = new System.Drawing.Size(4238, 2597);
             this.patientRecipeFrm2.TabIndex = 3;
             this.patientRecipeFrm2.Title = null;
             // 
             // xtraTabPage10
             // 
             this.xtraTabPage10.Controls.Add(this.patientRecipeFrm3);
-            this.xtraTabPage10.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.xtraTabPage10.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.xtraTabPage10.Name = "xtraTabPage10";
-            this.xtraTabPage10.Size = new System.Drawing.Size(1005, 628);
+            this.xtraTabPage10.Size = new System.Drawing.Size(1635, 1009);
             this.xtraTabPage10.Text = "spkt/V";
             // 
             // patientRecipeFrm3
@@ -2107,19 +2107,19 @@
             this.patientRecipeFrm3.hemoId = null;
             this.patientRecipeFrm3.HemoId = "";
             this.patientRecipeFrm3.Location = new System.Drawing.Point(0, 0);
-            this.patientRecipeFrm3.Margin = new System.Windows.Forms.Padding(3, 6, 3, 6);
+            this.patientRecipeFrm3.Margin = new System.Windows.Forms.Padding(5, 10, 5, 10);
             this.patientRecipeFrm3.Name = "patientRecipeFrm3";
             this.patientRecipeFrm3.OnGetPatientRecipeChart = null;
-            this.patientRecipeFrm3.Size = new System.Drawing.Size(628, 393);
+            this.patientRecipeFrm3.Size = new System.Drawing.Size(2616, 1614);
             this.patientRecipeFrm3.TabIndex = 3;
             this.patientRecipeFrm3.Title = null;
             // 
             // xtraTabPage11
             // 
             this.xtraTabPage11.Controls.Add(this.patientRecipeFrm4);
-            this.xtraTabPage11.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.xtraTabPage11.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.xtraTabPage11.Name = "xtraTabPage11";
-            this.xtraTabPage11.Size = new System.Drawing.Size(1005, 628);
+            this.xtraTabPage11.Size = new System.Drawing.Size(1635, 1009);
             this.xtraTabPage11.Text = "URR";
             // 
             // patientRecipeFrm4
@@ -2129,10 +2129,10 @@
             this.patientRecipeFrm4.hemoId = null;
             this.patientRecipeFrm4.HemoId = "";
             this.patientRecipeFrm4.Location = new System.Drawing.Point(0, 0);
-            this.patientRecipeFrm4.Margin = new System.Windows.Forms.Padding(3, 6, 3, 6);
+            this.patientRecipeFrm4.Margin = new System.Windows.Forms.Padding(5, 10, 5, 10);
             this.patientRecipeFrm4.Name = "patientRecipeFrm4";
             this.patientRecipeFrm4.OnGetPatientRecipeChart = null;
-            this.patientRecipeFrm4.Size = new System.Drawing.Size(628, 393);
+            this.patientRecipeFrm4.Size = new System.Drawing.Size(2616, 1614);
             this.patientRecipeFrm4.TabIndex = 3;
             this.patientRecipeFrm4.Title = null;
             // 
@@ -2171,12 +2171,12 @@
             this.ToolStripMenuItemForComCancle,
             this.ToolStripMenuItemForSaveTemplate});
             this.contextMenuStrip2.Name = "contextMenuStrip1";
-            this.contextMenuStrip2.Size = new System.Drawing.Size(154, 148);
+            this.contextMenuStrip2.Size = new System.Drawing.Size(209, 232);
             // 
             // toolStripMenuItemForLong
             // 
             this.toolStripMenuItemForLong.Name = "toolStripMenuItemForLong";
-            this.toolStripMenuItemForLong.Size = new System.Drawing.Size(153, 24);
+            this.toolStripMenuItemForLong.Size = new System.Drawing.Size(208, 38);
             this.toolStripMenuItemForLong.Text = "停止";
             this.toolStripMenuItemForLong.Visible = false;
             this.toolStripMenuItemForLong.Click += new System.EventHandler(this.toolStripMenuItemForLong_Click);
@@ -2184,21 +2184,21 @@
             // toolStripMenuItemDrug
             // 
             this.toolStripMenuItemDrug.Name = "toolStripMenuItemDrug";
-            this.toolStripMenuItemDrug.Size = new System.Drawing.Size(153, 24);
+            this.toolStripMenuItemDrug.Size = new System.Drawing.Size(208, 38);
             this.toolStripMenuItemDrug.Text = "作废";
             this.toolStripMenuItemDrug.Click += new System.EventHandler(this.toolStripMenuItemDrug_Click);
             // 
             // ToolStripMenuItemDelete
             // 
             this.ToolStripMenuItemDelete.Name = "ToolStripMenuItemDelete";
-            this.ToolStripMenuItemDelete.Size = new System.Drawing.Size(153, 24);
+            this.ToolStripMenuItemDelete.Size = new System.Drawing.Size(208, 38);
             this.ToolStripMenuItemDelete.Text = "删除";
             this.ToolStripMenuItemDelete.Click += new System.EventHandler(this.ToolStripMenuItemDelete_Click);
             // 
             // ToolStripMenuItemForCom
             // 
             this.ToolStripMenuItemForCom.Name = "ToolStripMenuItemForCom";
-            this.ToolStripMenuItemForCom.Size = new System.Drawing.Size(153, 24);
+            this.ToolStripMenuItemForCom.Size = new System.Drawing.Size(208, 38);
             this.ToolStripMenuItemForCom.Text = "组合";
             this.ToolStripMenuItemForCom.Visible = false;
             this.ToolStripMenuItemForCom.Click += new System.EventHandler(this.ToolStripMenuItemForCom_Click);
@@ -2206,7 +2206,7 @@
             // ToolStripMenuItemForComCancle
             // 
             this.ToolStripMenuItemForComCancle.Name = "ToolStripMenuItemForComCancle";
-            this.ToolStripMenuItemForComCancle.Size = new System.Drawing.Size(153, 24);
+            this.ToolStripMenuItemForComCancle.Size = new System.Drawing.Size(208, 38);
             this.ToolStripMenuItemForComCancle.Text = "取消组合";
             this.ToolStripMenuItemForComCancle.Visible = false;
             this.ToolStripMenuItemForComCancle.Click += new System.EventHandler(this.ToolStripMenuItemForComCancle_Click);
@@ -2214,7 +2214,7 @@
             // ToolStripMenuItemForSaveTemplate
             // 
             this.ToolStripMenuItemForSaveTemplate.Name = "ToolStripMenuItemForSaveTemplate";
-            this.ToolStripMenuItemForSaveTemplate.Size = new System.Drawing.Size(153, 24);
+            this.ToolStripMenuItemForSaveTemplate.Size = new System.Drawing.Size(208, 38);
             this.ToolStripMenuItemForSaveTemplate.Text = "保存为模版";
             this.ToolStripMenuItemForSaveTemplate.Click += new System.EventHandler(this.ToolStripMenuItemForSaveTemplate_Click);
             // 
@@ -2228,12 +2228,12 @@
             this.contextMenuStrip3.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripMenuItem1});
             this.contextMenuStrip3.Name = "contextMenuStrip1";
-            this.contextMenuStrip3.Size = new System.Drawing.Size(109, 28);
+            this.contextMenuStrip3.Size = new System.Drawing.Size(137, 42);
             // 
             // toolStripMenuItem1
             // 
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(108, 24);
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(136, 38);
             this.toolStripMenuItem1.Text = "作废";
             this.toolStripMenuItem1.Click += new System.EventHandler(this.toolStripMenuItem1_Click);
             // 
@@ -2249,14 +2249,14 @@
             // 
             // QueryRecipeListUI
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 18F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 29F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.xtraTabControl2);
             this.Controls.Add(this.panelControl2);
             this.Controls.Add(this.UserInfo);
-            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.Name = "QueryRecipeListUI";
-            this.Size = new System.Drawing.Size(1048, 784);
+            this.Size = new System.Drawing.Size(1703, 1263);
             this.Load += new System.EventHandler(this.QueryRecipeListUI_Load);
             ((System.ComponentModel.ISupportInitialize)(this.panelControl2)).EndInit();
             this.panelControl2.ResumeLayout(false);

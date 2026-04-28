@@ -691,18 +691,47 @@ namespace Hemo.Client.UI.PatientFixUI
 
                 if (!dr.IsDRUG_DAYSNull() && !string.IsNullOrEmpty(dr.DRUG_DAYS))
                 {
-
-                    string dbValue = dr.DRUG_DAYS;
-                    System.Diagnostics.Debug.WriteLine($"数据库值: [{dbValue}]");
-                    System.Diagnostics.Debug.WriteLine($"值的长度: {dbValue.Length}");
-                    System.Diagnostics.Debug.WriteLine($"值的字符: {string.Join(" ", dbValue.ToCharArray().Select(c => ((int)c).ToString()))}");
-                    cbmDRUG_DAYS.EditValue = dr.DRUG_DAYS;
+                    string dbValue = dr.DRUG_DAYS.Trim();
+                    // 先取消所有选中
+                    for (int i = 0; i < cbmDRUG_DAYS.Properties.Items.Count; i++)
+                    {
+                        cbmDRUG_DAYS.Properties.Items[i].CheckState = CheckState.Unchecked;
+                    }
+                    // 按逗号分隔，逐项匹配勾选
+                    string[] days = dbValue.Split(new char[] { ',', '，' }, StringSplitOptions.RemoveEmptyEntries);
+                    foreach (string day in days)
+                    {
+                        string trimmedDay = day.Trim();
+                        for (int i = 0; i < cbmDRUG_DAYS.Properties.Items.Count; i++)
+                        {
+                            if (cbmDRUG_DAYS.Properties.Items[i].Value.ToString() == trimmedDay)
+                            {
+                                cbmDRUG_DAYS.Properties.Items[i].CheckState = CheckState.Checked;
+                                break;
+                            }
+                        }
+                    }
+                    cbmDRUG_DAYS.Refresh();
                 }
                 else
                 {
                     cbmDRUG_DAYS.EditValue = null;
                     cbmDRUG_DAYS.Properties.NullText = "";
                 }
+                //if (!dr.IsDRUG_DAYSNull() && !string.IsNullOrEmpty(dr.DRUG_DAYS))
+                //{
+
+                //    string dbValue = dr.DRUG_DAYS;
+                //    System.Diagnostics.Debug.WriteLine($"数据库值: [{dbValue}]");
+                //    System.Diagnostics.Debug.WriteLine($"值的长度: {dbValue.Length}");
+                //    System.Diagnostics.Debug.WriteLine($"值的字符: {string.Join(" ", dbValue.ToCharArray().Select(c => ((int)c).ToString()))}");
+                //    cbmDRUG_DAYS.EditValue = dr.DRUG_DAYS;
+                //}
+                //else
+                //{
+                //    cbmDRUG_DAYS.EditValue = null;
+                //    cbmDRUG_DAYS.Properties.NullText = "";
+                //}
 
                 tmpCrue = null;
                 if (Utility.CDate(dr.CREATE_DATE.ToString()).ToString("yyyy-MM-dd") == Utility.CDate(patientScheduleService.GetServerDate()).ToString("yyyy-MM-dd"))
@@ -1277,6 +1306,15 @@ namespace Hemo.Client.UI.PatientFixUI
         private void btnAddDrug_Click(object sender, EventArgs e)
         {
             Utilities.BaseControlInfo.ClearControlText(panDrug);
+            // 清空每周所有勾选项，防止残留上次新增时的选择
+            for (int i = 0; i < cbmDRUG_DAYS.Properties.Items.Count; i++)
+            {
+                cbmDRUG_DAYS.Properties.Items[i].CheckState = CheckState.Unchecked;
+            }
+            cbmDRUG_DAYS.EditValue = null;
+            cbmDRUG_DAYS.Properties.NullText = "";
+            cbmDRUG_DAYS.Refresh();
+
             loadGiveDrugTime();
             txtDRUG_NAME.Focus();
             txtCURE_DRUG_ID.Text = System.Guid.NewGuid().ToString();
@@ -1459,8 +1497,10 @@ namespace Hemo.Client.UI.PatientFixUI
                     else
                         stated = false;
                     //2026-04-20 龙宇涵 将每周下拉框的数字改成中文
+                    //2026-04-22 龙宇涵，注射方式为口服时不生成临时医嘱
                     string currentWeekChinese = ConvertWeekToChinese(System.DateTime.Now.DayOfWeek.ToString());
-                    if (dt.Rows[0]["drug_days"].ToString().Contains(currentWeekChinese) && stated)
+                    bool isOral = cmbDRUG_MODE.Text == "口服";
+                    if (!isOral && dt.Rows[0]["drug_days"].ToString().Contains(currentWeekChinese) && stated)
                     {
                         drugDt.Clear();
                         dtshort = BaseControlInfo.GetDataTableByPanel(drugDt, panDrug, true);
@@ -2026,8 +2066,6 @@ namespace Hemo.Client.UI.PatientFixUI
         // 为每天和其他添加输入框 龙宇涵 2026-4-16
         private void cmbDRUG_TIMES_EditValueChanged(object sender, EventArgs e)
         {
-            if (!isAddDrug)
-                return;
             if (cmbDRUG_TIMES.EditValue == null) return;
 
             string val = cmbDRUG_TIMES.EditValue.ToString();

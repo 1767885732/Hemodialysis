@@ -35,6 +35,7 @@ using System.Diagnostics;
 using Hemo.IService.PatientSchedule;
 using Hemo.Client.UI.Machine;
 using Hemo.Client.Controls;
+using Hemo.IService.AuditLog;
 
 namespace Hemo.Client.UI.Hemodialysis
 {
@@ -62,6 +63,7 @@ namespace Hemo.Client.UI.Hemodialysis
         private IMachine objMachine = ServiceManager.Instance.MachineService;
         private IPatient objPatient = ServiceManager.Instance.PatientService;
         private IPatientSchedule objPatientSchedule = ServiceManager.Instance.PatientSchedule;
+        private IOperationLog _operationLogService = ServiceManager.Instance.OperationLogService;
 
         /// <summary>
         /// 并发症表
@@ -72,6 +74,10 @@ namespace Hemo.Client.UI.Hemodialysis
         private bool isAdd = false;//是否为新增治疗单
         private bool isAddDrugParmars = false;
         private bool isAddHemoParmars = false;
+        /// <summary>
+        /// 页面加载完成后从UI控件拍的数据快照（用于审计日志差异对比的基准值）
+        /// </summary>
+        private Dictionary<string, string> _initialDataSnapshot = null;
         private bool isReplenishTreat = false;
         private string addHemoId = string.Empty;
         private string addPcureId = string.Empty;
@@ -90,6 +96,245 @@ namespace Hemo.Client.UI.Hemodialysis
             get { return _isOverOrder; }
             set { _isOverOrder = value; }
         }
+        #endregion
+
+        #region 审计日志辅助方法
+
+        /// <summary>
+        /// 获取当前登录用户ID
+        /// </summary>
+        private string GetCurrentUserId()
+        {
+            try
+            {
+                if (LoginUser.User != null)
+                    return LoginUser.User.USER_ID;
+            }
+            catch { }
+            return string.Empty;
+        }
+
+        /// <summary>
+        /// 获取当前登录用户姓名
+        /// </summary>
+        private string GetCurrentUserName()
+        {
+            try
+            {
+                if (LoginUser.User != null)
+                    return LoginUser.User.USER_NAME;
+            }
+            catch { }
+            return string.Empty;
+        }
+
+        /// <summary>
+        /// 获取当前登录用户登录名
+        /// </summary>
+        private string GetCurrentLoginName()
+        {
+            try
+            {
+                if (LoginUser.User != null)
+                    return LoginUser.User.LOGIN_NAME;
+            }
+            catch { }
+            return string.Empty;
+        }
+
+        /// <summary>
+        /// 获取当前治疗单ID
+        /// </summary>
+        private string GetCurrentCureId()
+        {
+            return txtCURE_ID != null ? txtCURE_ID.Text.Trim() : string.Empty;
+        }
+
+        /// <summary>
+        /// 获取当前血透编号
+        /// </summary>
+        private string GetCurrentHemodialysisId()
+        {
+            return ctlUserLongInfo1 != null ? ctlUserLongInfo1.HEMODIALYSIS_ID : string.Empty;
+        }
+
+        /// <summary>
+        /// 记录操作审计日志（变化详情统一记录到 CHANGE_DETAIL 字段）
+        /// </summary>
+        /// <param name="operationType">操作类型（SAVE/DELETE/UPDATE等）</param>
+        /// <param name="elementName">元素名称（如：透析参数、给药信息、血管通路等）</param>
+        /// <param name="elementId">元素ID</param>
+        /// <param name="changeDetail">变更详情（如：透前体重: 65 → 68; 实际脱水: 2 → 3）</param>
+        /// <param name="remark">备注</param>
+        private void WriteOperationLog(string operationType, string elementName, string elementId,
+            string changeDetail, string remark)
+        {
+            try
+            {
+                _operationLogService.WriteLog(
+                    GetCurrentUserId(),
+                    GetCurrentUserName(),
+                    GetCurrentLoginName(),
+                    operationType,
+                    "EditTreatment",
+                    elementName,
+                    elementId,
+                    changeDetail,
+                    GetCurrentCureId(),
+                    GetCurrentHemodialysisId(),
+                    remark
+                );
+            }
+            catch (Exception ex)
+            {
+                // 审计日志写入失败不应影响主业务流程
+                Hemo.Utilities.Logger.WriteErrorLog(ex);
+            }
+        }
+
+        /// <summary>
+        /// 将 DataTable 的行数据序列化为字符串（用于记录变更前后的值）
+        /// </summary>
+        private string SerializeDataRowToString(DataRow row)
+        {
+            if (row == null) return string.Empty;
+            StringBuilder sb = new StringBuilder();
+            foreach (DataColumn col in row.Table.Columns)
+            {
+                if (sb.Length > 0) sb.Append("; ");
+                sb.AppendFormat("{0}={1}", col.ColumnName, row[col] == DBNull.Value ? "" : row[col].ToString());
+            }
+            return sb.ToString();
+        }
+
+        /// <summary>
+        /// 数据库字段名 → 中文标签映射字典
+        /// </summary>
+        private static readonly Dictionary<string, string> FieldLabelMap = new Dictionary<string, string>
+        {
+            // 透前数据
+            { "BEFORE_DRY_WEIGHT", "透前体重" },
+            { "BEFORE_SYSTOLIC_PRESSURE", "透前收缩压" },
+            { "BEFORE_DIASTOLIC_PRESSURE", "透前舒张压" },
+            { "BEFORE_BP", "透前平均动脉压" },
+            { "BEFORE_TEMPERATURE", "透前体温" },
+            { "BR", "透前脉搏" },
+            // 透后数据
+            { "AFTER_DRY_WEIGHT", "透后体重" },
+            { "AFTER_SYSTOLIC_PRESSURE", "透后收缩压" },
+            { "AFTER_DIASTOLIC_PRESSURE", "透后舒张压" },
+            { "AFTER_BP", "透后平均动脉压" },
+            { "AFTER_TEMPERATURE", "透后体温" },
+            { "AFTERBR", "透后脉搏" },
+            // 基本治疗参数
+            { "DRY_WEIGHT", "干体重" },
+            { "DIALYSATE_FLOW", "透析液流量" },
+            { "FREQUENCY_HOURS", "治疗时间(时)" },
+            { "FREQUENCY_MINUTE", "治疗时间(分)" },
+            { "CLEAN_UP_TIMES", "透析次数" },
+            { "UFR", "预计脱水" },
+            { "DRY_WATER_VALUE", "实际脱水" },
+            // 滤过/置换相关
+            { "FILTRATION_DISPLACEMENT_LIQUID", "透析中置换液总量" },
+            { "FILTRATION_PERCOLATE", "滤过液总量" },
+            { "DISPLACEMENT_LIQUID", "透析中血浆总量" },
+            { "PERCOLATE", "滤过血浆总量" },
+            // 抗凝相关
+            { "FIRST_HEPARIN", "首量" },
+            { "DOSAGE_SUSTENTATIVA", "追加" },
+            { "HEPARIN_SPECIES", "抗凝方式" },
+            { "FIRST_DRUG_UNIT", "首量单位" },
+            // 净化/通路/设备
+            { "PURIFICATION_MODE", "净化方式" },
+            { "VASCULAR_ACCESS_ID", "血管通路" },
+            { "MACHINE_TYPE", "透析器" },
+            { "PURIFIER_NAME", "透析膜" },
+            { "PURIFIER_M2", "膜面积" },
+            { "MACHINE_ID", "透析机" },
+            // 其他参数
+            { "LastWeight", "上次透后体重" },
+            { "DRY_WEIGHT_TAG", "衣物轮椅重" },
+            { "IN_BED", "卧床" },
+            // 人员
+            { "PRIMARY_DOCTOR", "责任医生" },
+            { "PRIMARY_NURSE", "责任护士" },
+            { "PUNCTURE_NURSE", "穿刺护士" },
+            { "CHECK_NURSE", "核对护士" },
+            // 文本记录
+            { "DOCTOR_ADVICE", "医生记录及医嘱" },
+            { "SPECIAL_MATTER", "特殊事项" },
+            { "SUMMARY", "透析小结" },
+            { "SUMMARY2", "透析小结2" },
+            { "SUMMARY3", "透析小结3" },
+            // 评估
+            { "SUBJECTIVE_COMFORT", "主观舒适度" },
+            { "VEIN", "血管通路类型" },
+            // 超滤相关
+            { "UF", "超滤量" },
+            { "UFR2", "超滤率" },
+            { "SUM_UF", "总超滤量" },
+            { "DISPLACEMENT_FLOW", "置换液流速" },
+            // 导管评估
+            { "VASCULAR_ACCESS_FIRM", "定牢固定" },
+            { "VASCULAR_ACCESS_GLIDE", "滑脱" },
+            { "VASCULAR_ACCESS_SWELLING", "穿刺点局部红肿" },
+            { "VASCULAR_ACCESS_ERRHYISIS", "渗血" },
+            { "VASCULAR_ACCESS_THROMBUS", "血栓" },
+            { "VASCULAR_ACCESS_BLOOD", "血流情况" },
+            { "VASCULAR_ACCESS_BLOOD_INFECT", "导管相关血流感染" },
+            // CRRT相关
+            { "CRRT_CLASS", "CRRT模式" },
+            // 感染检查
+            { "INFECTIOUS_CHECK_RESULT", "感染检查结果" },
+        };
+
+        /// <summary>
+        /// 获取字段的中文名称，未找到则返回原始字段名
+        /// </summary>
+        private string GetFieldLabel(string fieldName)
+        {
+            if (FieldLabelMap.ContainsKey(fieldName))
+                return FieldLabelMap[fieldName];
+            return fieldName;
+        }
+
+        /// <summary>
+        /// 将 DataRow 的列值深拷贝到字典中（用于后续差异对比）
+        /// </summary>
+        private Dictionary<string, string> CloneRowToDict(DataRow row)
+        {
+            Dictionary<string, string> dict = new Dictionary<string, string>();
+            if (row == null) return dict;
+            foreach (DataColumn col in row.Table.Columns)
+            {
+                string val = row[col] == DBNull.Value ? "" : row[col].ToString().Trim();
+                dict[col.ColumnName] = val;
+            }
+            return dict;
+        }
+
+        /// <summary>
+        /// 对比旧值字典和新行数据，返回发生变化的字段列表（使用中文标签）
+        /// 格式：中文标签: 旧值 → 新值
+        /// </summary>
+        private string CompareDictWithRow(Dictionary<string, string> oldDict, DataRow newRow)
+        {
+            if (oldDict == null || oldDict.Count == 0 || newRow == null) return string.Empty;
+            StringBuilder sb = new StringBuilder();
+            foreach (var kv in oldDict)
+            {
+                if (!newRow.Table.Columns.Contains(kv.Key)) continue;
+                string newVal = newRow[kv.Key] == DBNull.Value ? "" : newRow[kv.Key].ToString().Trim();
+                if (kv.Value != newVal)
+                {
+                    if (sb.Length > 0) sb.Append("; ");
+                    string label = GetFieldLabel(kv.Key);
+                    sb.AppendFormat("{0}: {1} → {2}", label, kv.Value, newVal);
+                }
+            }
+            return sb.ToString();
+        }
+
         #endregion
 
         #region 属性
@@ -630,6 +875,18 @@ namespace Hemo.Client.UI.Hemodialysis
             {
                 loadRecipeInfo(txtHEMODIALYSIS_ID.Text.Trim());
             }
+
+            // 在所有控件数据加载完毕后，从UI控件拍一个数据快照作为审计日志的基准值
+            // 这样保存时对比的是"用户实际看到的初始值"与"用户修改后的值"，避免数据库NULL与UI默认值的差异
+            if (_CureMainDatatable != null && _CureMainDatatable.Rows.Count > 0)
+            {
+                DataTable snapshotDt = BaseControlInfo.GetDataTableByPanel(_CureMainDatatable, xtraScrollableControl1);
+                if (snapshotDt != null && snapshotDt.Rows.Count > 0)
+                {
+                    _initialDataSnapshot = CloneRowToDict(snapshotDt.Rows[0]);
+                }
+            }
+
             isAddDrugParmars = false;
             isLoadDate = false;
         }
@@ -889,6 +1146,23 @@ namespace Hemo.Client.UI.Hemodialysis
             DataRow dr;
             DataTable dtTemp;
 
+            // 记录修改前的旧值快照（深拷贝到字典，避免引用被后续操作覆盖）
+            Dictionary<string, string> oldParamDict = null;
+            string paramId = string.Empty;
+            if (!(isAdd || isAddHemoParmars) && _HemoialysisParamterDatatable != null)
+            {
+                dr = gridView1.GetFocusedDataRow();
+                if (dr != null)
+                {
+                    paramId = dr["HEMODIALYSIS_PARAMETERS_ID"].ToString();
+                    DataTable dtOld = Utility.GetSubTable(_HemoialysisParamterDatatable as DataTable, "HEMODIALYSIS_PARAMETERS_ID = '" + paramId + "'");
+                    if (dtOld != null && dtOld.Rows.Count > 0)
+                    {
+                        oldParamDict = CloneRowToDict(dtOld.Rows[0]);
+                    }
+                }
+            }
+
             if (isAdd || isAddHemoParmars)
             {
                 _HemoialysisParamterDatatable = new HemodialysisModel.MED_HEMODIALYSIS_PARAMETERSDataTable();
@@ -946,6 +1220,26 @@ namespace Hemo.Client.UI.Hemodialysis
 
 
                 result = objHemodialysisService.SaveCureMainSaveHemoParameters((HemodialysisModel.MED_HEMODIALYSIS_PARAMETERSDataTable)dtTemp);
+
+                // 记录审计日志 - 透析参数保存
+                string changeDetail = string.Empty;
+                string opType = (isAdd || isAddHemoParmars) ? "SAVE" : "UPDATE";
+                string logRemark = (isAdd || isAddHemoParmars) ? "新增透析参数" : "修改透析参数";
+                if (opType == "SAVE")
+                {
+                    changeDetail = "新增透析参数";
+                }
+                else if (oldParamDict != null)
+                {
+                    changeDetail = CompareDictWithRow(oldParamDict, dtTemp.Rows[0]);
+                    if (string.IsNullOrEmpty(changeDetail))
+                        changeDetail = "无字段变化";
+                }
+                if (string.IsNullOrEmpty(paramId) && dtTemp.Rows[0]["HEMODIALYSIS_PARAMETERS_ID"] != DBNull.Value)
+                {
+                    paramId = dtTemp.Rows[0]["HEMODIALYSIS_PARAMETERS_ID"].ToString();
+                }
+                WriteOperationLog(opType, "透析参数记录", paramId, changeDetail, logRemark);
             }
             return result;
         }
@@ -962,6 +1256,14 @@ namespace Hemo.Client.UI.Hemodialysis
             char status = '0';
 
             dt = Utility.GetSubTable(_CureDrugDatatable as DataTable, "CURE_DRUG_ID='" + txtCURE_DRUG_ID.Text + "'");
+
+            // 记录修改前的旧值快照（深拷贝到字典，避免引用被后续操作覆盖）
+            Dictionary<string, string> oldDrugDict = null;
+            string drugId = txtCURE_DRUG_ID.Text;
+            if (dt != null && dt.Rows.Count > 0)
+            {
+                oldDrugDict = CloneRowToDict(dt.Rows[0]);
+            }
 
             if (dt != null && dt.Rows.Count > 0)
             {
@@ -991,6 +1293,18 @@ namespace Hemo.Client.UI.Hemodialysis
                 dt.Rows[0]["CURE_ID"] = txtCURE_ID.Text;
                 dt.Rows[0]["RECIPE_ID"] = txtRECIPE_ID.Text;
                 result = objHemodialysisService.SaveCureDrug((HemodialysisModel.MED_CURE_DRUGDataTable)dt);
+
+                // 记录审计日志 - 给药信息保存
+                string changeDetail = string.Empty;
+                string statusText = lopSTATUS.EditValue != null ? lopSTATUS.EditValue.ToString() : "未执行";
+                if (oldDrugDict != null)
+                {
+                    changeDetail = CompareDictWithRow(oldDrugDict, dt.Rows[0]);
+                    if (string.IsNullOrEmpty(changeDetail))
+                        changeDetail = "无字段变化";
+                }
+                WriteOperationLog("UPDATE", "给药信息", drugId, changeDetail,
+                    "修改给药状态：" + statusText);
 
                 if (lopSTATUS.EditValue != null && lopSTATUS.EditValue.ToString() == "已执行")
                 {
@@ -1107,6 +1421,12 @@ namespace Hemo.Client.UI.Hemodialysis
             int result = 0;
             DataTable dt = _CureMainDatatable;
             DataRow dr;
+            // 使用页面加载时拍的UI快照作为对比基准（而非数据库原始行，避免NULL与UI默认值的差异）
+            Dictionary<string, string> oldDataDict = null;
+            if (!isAdd)
+            {
+                oldDataDict = _initialDataSnapshot;
+            }
             //当治疗单编号为空时默认为新增数据 
             if (txtCURE_ID.Text.Length == 0)
             {
@@ -1241,6 +1561,30 @@ namespace Hemo.Client.UI.Hemodialysis
                         dtCRRTCure.AddMED_CURE_MAIN_CRRTRow(row);
                     }
                     result = objHemodialysisService.SaveCRRTCureMain(dtCRRTCure);
+
+                    // 记录审计日志 - CRRT治疗单保存（只记录关键字段）
+                    string crrtInfo = string.Empty;
+                    if (dtCRRTCure.Rows.Count > 0)
+                    {
+                        DataRow crrtRow = dtCRRTCure.Rows[0];
+                        StringBuilder sb = new StringBuilder();
+                        string[] crrtFields = { "CURE_ID", "RECIPE_ID", "HEMODIALYSIS_ID", "CRRT_CLASS",
+                            "PRIMARY_DOCTOR", "PRIMARY_NURSE", "SUMMARY", "CREATE_DATE" };
+                        foreach (string field in crrtFields)
+                        {
+                            if (crrtRow.Table.Columns.Contains(field))
+                            {
+                                string val = crrtRow[field] == DBNull.Value ? "" : crrtRow[field].ToString().Trim();
+                                if (!string.IsNullOrEmpty(val))
+                                {
+                                    if (sb.Length > 0) sb.Append("; ");
+                                    sb.AppendFormat("{0}: {1}", field, val);
+                                }
+                            }
+                        }
+                        crrtInfo = sb.ToString();
+                    }
+                    WriteOperationLog("UPDATE", "CRRT治疗单", cureId, crrtInfo, "保存CRRT治疗单");
                 }
             }
 
@@ -1262,8 +1606,50 @@ namespace Hemo.Client.UI.Hemodialysis
                 }
                 //保存并发症
                 if (isAddComp)
+                {
                     result = objHemodialysisService.SaveComplication(this.complicatinTable);
+                    // 记录审计日志 - 并发症保存（只记录非空字段）
+                    string compValue = string.Empty;
+                    if (this.complicatinTable.Rows.Count > 0)
+                    {
+                        DataRow compRow = this.complicatinTable.Rows[0];
+                        StringBuilder sb = new StringBuilder();
+                        foreach (DataColumn col in compRow.Table.Columns)
+                        {
+                            if (col.ColumnName == "ID" || col.ColumnName == "NURSE_ID" || col.ColumnName == "MACHINE_ID"
+                                || col.ColumnName == "FIRST_PURIFIER_MODEL" || col.ColumnName == "HEMODIALYSIS_ID"
+                                || col.ColumnName == "CURE_ID" || col.ColumnName == "WORK_DATE")
+                                continue;
+                            string val = compRow[col] == DBNull.Value ? "" : compRow[col].ToString().Trim();
+                            if (!string.IsNullOrEmpty(val))
+                            {
+                                if (sb.Length > 0) sb.Append("; ");
+                                sb.AppendFormat("{0}: {1}", col.ColumnName, val);
+                            }
+                        }
+                        compValue = sb.ToString();
+                    }
+                    WriteOperationLog("UPDATE", "并发症信息", GetCurrentCureId(), compValue, "保存并发症信息");
+                }
             }
+
+            // 记录审计日志 - 治疗单保存
+            string changeDetail = string.Empty;
+            if (isAdd)
+            {
+                // 新增时只记录关键字段
+                changeDetail = "新增治疗单";
+            }
+            else if (oldDataDict != null && dt != null && dt.Rows.Count > 0)
+            {
+                // 修改时用字典快照与新行对比，只记录变化的字段
+                changeDetail = CompareDictWithRow(oldDataDict, dt.Rows[0]);
+                if (string.IsNullOrEmpty(changeDetail))
+                    changeDetail = "无字段变化";
+            }
+            string operationType = isAdd ? "SAVE" : "UPDATE";
+            string logRemark = isAdd ? "新增治疗单" : "修改治疗单";
+            WriteOperationLog(operationType, "治疗单主表", GetCurrentCureId(), changeDetail, logRemark);
 
             return result;
         }
@@ -1938,7 +2324,7 @@ namespace Hemo.Client.UI.Hemodialysis
                     cmbCREATE_DATE.EditValue = System.DateTime.Now.ToShortDateString();
                     cmbCreate_Time.EditValue = "0:00:00";
                     spnVENOUS_PRESSURE.EditValue = dr["VENOUS_PRESSURE"];
-                  //  spnARTERY_PRESSURE.EditValue = dr["ARTERY_PRESSURE"];
+                    //  spnARTERY_PRESSURE.EditValue = dr["ARTERY_PRESSURE"];
                     spnTRANSMEMBRANE_PRESSURE.EditValue = dr["TRANSMEMBRANE_PRESSURE"];
                     spnSYSTOLIC_PRESSURE.EditValue = 0;
                     spnDIASTOLIC_PRESSURE.EditValue = 0;
@@ -2078,10 +2464,44 @@ namespace Hemo.Client.UI.Hemodialysis
                 if (XtraMessageBox.Show("确定删除当前透析参数信息吗？", this.Text, MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.No)
                     return;
 
+                // 记录删除前的关键信息（用于审计日志）
+                string deletedParamId = txtHEMODIALYSIS_PARAMETERS_ID.Text;
+                string deletedInfo = string.Empty;
+                if (_HemoialysisParamterDatatable != null)
+                {
+                    DataTable dtOld = Utility.GetSubTable(_HemoialysisParamterDatatable as DataTable,
+                        "HEMODIALYSIS_PARAMETERS_ID = '" + deletedParamId + "'");
+                    if (dtOld != null && dtOld.Rows.Count > 0)
+                    {
+                        DataRow delRow = dtOld.Rows[0];
+                        // 只记录关键字段
+                        StringBuilder sb = new StringBuilder();
+                        string[] keyFields = { "CURE_ID", "HEMODIALYSIS_PARAMETERS_ID", "CREATE_DATE",
+                            "VASCULAR_ACCESS_ERRHYISIS", "VASCULAR_ACCESS_GLIDE", "VENOUS_PRESSURE",
+                            "TRANSMEMBRANE_PRESSURE", "BLOOD_FLOW", "DIALYSATE_FLOW", "UF" };
+                        foreach (string field in keyFields)
+                        {
+                            if (delRow.Table.Columns.Contains(field))
+                            {
+                                string val = delRow[field] == DBNull.Value ? "" : delRow[field].ToString().Trim();
+                                if (!string.IsNullOrEmpty(val))
+                                {
+                                    if (sb.Length > 0) sb.Append("; ");
+                                    sb.AppendFormat("{0}: {1}", field, val);
+                                }
+                            }
+                        }
+                        deletedInfo = sb.ToString();
+                    }
+                }
+
                 int result = objHemodialysisService.DeleteHemodialysisParametersByID(txtHEMODIALYSIS_PARAMETERS_ID.Text);
 
                 if (result > 0)
                 {
+                    // 记录审计日志 - 删除透析参数
+                    WriteOperationLog("DELETE", "透析参数记录", deletedParamId, deletedInfo, "删除透析参数");
+
                     loadParaneterGrid(txtCURE_ID.Text, txtHEMODIALYSIS_ID.Text.Trim());
                 }
             }
@@ -2400,7 +2820,7 @@ namespace Hemo.Client.UI.Hemodialysis
             {
                 //if (txtDRY_WATER_VALUE.Value != 0)
                 //{
-                    txtDRY_WATER_VALUE.Value = spnBEFORE_DRY_WEIGHT.Value - spnAFTER_DRY_WEIGHT.Value;
+                txtDRY_WATER_VALUE.Value = spnBEFORE_DRY_WEIGHT.Value - spnAFTER_DRY_WEIGHT.Value;
                 //}
             }
         }
@@ -2458,7 +2878,7 @@ namespace Hemo.Client.UI.Hemodialysis
             if (e.KeyCode == Keys.Enter)
             {
                 this.txtDRY_WATER_VALUE.EditValue = spnBEFORE_DRY_WEIGHT.Value - spnAFTER_DRY_WEIGHT.Value;
-                if (spnBEFORE_DRY_WEIGHT.Value - spnAFTER_DRY_WEIGHT.Value< 0)
+                if (spnBEFORE_DRY_WEIGHT.Value - spnAFTER_DRY_WEIGHT.Value < 0)
                     this.txtDRY_WATER_VALUE.Value = 0;
             }
         }

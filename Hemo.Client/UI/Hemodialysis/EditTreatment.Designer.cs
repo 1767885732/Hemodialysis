@@ -634,12 +634,12 @@
             this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.ToolStripMenuItem1});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(169, 28);
+            this.contextMenuStrip1.Size = new System.Drawing.Size(233, 42);
             // 
             // ToolStripMenuItem1
             // 
             this.ToolStripMenuItem1.Name = "ToolStripMenuItem1";
-            this.ToolStripMenuItem1.Size = new System.Drawing.Size(168, 24);
+            this.ToolStripMenuItem1.Size = new System.Drawing.Size(232, 38);
             this.ToolStripMenuItem1.Text = "添加参数记录";
             this.ToolStripMenuItem1.Click += new System.EventHandler(this.ToolStripMenuItem1_Click);
             // 
@@ -662,12 +662,12 @@
             this.contextMenuStrip2.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.添加给药记录ToolStripMenuItem});
             this.contextMenuStrip2.Name = "contextMenuStrip2";
-            this.contextMenuStrip2.Size = new System.Drawing.Size(169, 28);
+            this.contextMenuStrip2.Size = new System.Drawing.Size(233, 42);
             // 
             // 添加给药记录ToolStripMenuItem
             // 
             this.添加给药记录ToolStripMenuItem.Name = "添加给药记录ToolStripMenuItem";
-            this.添加给药记录ToolStripMenuItem.Size = new System.Drawing.Size(168, 24);
+            this.添加给药记录ToolStripMenuItem.Size = new System.Drawing.Size(232, 38);
             this.添加给药记录ToolStripMenuItem.Text = "添加给药记录";
             this.添加给药记录ToolStripMenuItem.Click += new System.EventHandler(this.ToolStripMenuItem_Click);
             // 
@@ -681,10 +681,10 @@
             // 
             this.panelControl2.Controls.Add(this.tableLayoutPanel1);
             this.panelControl2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelControl2.Location = new System.Drawing.Point(0, 53);
-            this.panelControl2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.panelControl2.Location = new System.Drawing.Point(0, 85);
+            this.panelControl2.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.panelControl2.Name = "panelControl2";
-            this.panelControl2.Size = new System.Drawing.Size(1325, 874);
+            this.panelControl2.Size = new System.Drawing.Size(2153, 1409);
             this.panelControl2.TabIndex = 264;
             // 
             // tableLayoutPanel1
@@ -694,13 +694,13 @@
             this.tableLayoutPanel1.Controls.Add(this.tabControls, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.panControlButton, 0, 1);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(2, 2);
-            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(3, 3);
+            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 2;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 45F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(1321, 870);
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 73F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(2147, 1403);
             this.tableLayoutPanel1.TabIndex = 264;
             // 
             // tabControls
@@ -710,11 +710,11 @@
             this.tabControls.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tabControls.HeaderLocation = DevExpress.XtraTab.TabHeaderLocation.Left;
             this.tabControls.HeaderOrientation = DevExpress.XtraTab.TabOrientation.Horizontal;
-            this.tabControls.Location = new System.Drawing.Point(3, 4);
-            this.tabControls.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.tabControls.Location = new System.Drawing.Point(5, 6);
+            this.tabControls.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.tabControls.Name = "tabControls";
             this.tabControls.SelectedTabPage = this.tab1;
-            this.tabControls.Size = new System.Drawing.Size(1315, 817);
+            this.tabControls.Size = new System.Drawing.Size(2137, 1318);
             this.tabControls.TabIndex = 263;
             this.tabControls.TabPages.AddRange(new DevExpress.XtraTab.XtraTabPage[] {
             this.tab1,
@@ -731,9 +731,9 @@
             this.tab1.Appearance.Header.Font = new System.Drawing.Font("微软雅黑", 10.5F);
             this.tab1.Appearance.Header.Options.UseFont = true;
             this.tab1.Controls.Add(this.xtraScrollableControl1);
-            this.tab1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.tab1.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.tab1.Name = "tab1";
-            this.tab1.Size = new System.Drawing.Size(1221, 810);
+            this.tab1.Size = new System.Drawing.Size(1992, 1306);
             this.tab1.Text = "治疗信息";
             // 
             // xtraScrollableControl1
@@ -742,9 +742,9 @@
             this.xtraScrollableControl1.Controls.Add(this.panelControl4);
             this.xtraScrollableControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.xtraScrollableControl1.Location = new System.Drawing.Point(0, 0);
-            this.xtraScrollableControl1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.xtraScrollableControl1.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.xtraScrollableControl1.Name = "xtraScrollableControl1";
-            this.xtraScrollableControl1.Size = new System.Drawing.Size(1221, 810);
+            this.xtraScrollableControl1.Size = new System.Drawing.Size(1992, 1306);
             this.xtraScrollableControl1.TabIndex = 0;
             // 
             // groupBox1
@@ -767,9 +767,9 @@
             this.groupBox1.Controls.Add(this.labelControl5);
             this.groupBox1.Controls.Add(this.cmbVEIN);
             this.groupBox1.Location = new System.Drawing.Point(0, 0);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(1099, 788);
+            this.groupBox1.Size = new System.Drawing.Size(1786, 1270);
             this.groupBox1.TabIndex = 513;
             this.groupBox1.Text = "治疗信息";
             // 
@@ -826,10 +826,10 @@
             this.panelControl3.Controls.Add(this.groupControl3);
             this.panelControl3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelControl3.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.panelControl3.Location = new System.Drawing.Point(2, 121);
+            this.panelControl3.Location = new System.Drawing.Point(3, 199);
             this.panelControl3.Margin = new System.Windows.Forms.Padding(0);
             this.panelControl3.Name = "panelControl3";
-            this.panelControl3.Size = new System.Drawing.Size(1095, 544);
+            this.panelControl3.Size = new System.Drawing.Size(1780, 873);
             this.panelControl3.TabIndex = 665;
             // 
             // spnLastWeight
@@ -840,8 +840,8 @@
             0,
             0});
             this.spnLastWeight.EnterMoveNextControl = true;
-            this.spnLastWeight.Location = new System.Drawing.Point(840, 185);
-            this.spnLastWeight.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.spnLastWeight.Location = new System.Drawing.Point(1365, 298);
+            this.spnLastWeight.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.spnLastWeight.Name = "spnLastWeight";
             this.spnLastWeight.Properties.Appearance.BackColor = System.Drawing.Color.White;
             this.spnLastWeight.Properties.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
@@ -851,36 +851,36 @@
             this.spnLastWeight.Properties.Appearance.Options.UseForeColor = true;
             this.spnLastWeight.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton()});
-            this.spnLastWeight.Size = new System.Drawing.Size(101, 26);
+            this.spnLastWeight.Size = new System.Drawing.Size(164, 38);
             this.spnLastWeight.TabIndex = 672;
             // 
             // labelControl36
             // 
             this.labelControl36.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.labelControl36.Location = new System.Drawing.Point(777, 189);
-            this.labelControl36.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.labelControl36.Location = new System.Drawing.Point(1263, 305);
+            this.labelControl36.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.labelControl36.Name = "labelControl36";
-            this.labelControl36.Size = new System.Drawing.Size(60, 20);
+            this.labelControl36.Size = new System.Drawing.Size(96, 31);
             this.labelControl36.TabIndex = 673;
             this.labelControl36.Text = "上次透后";
             // 
             // labelControl37
             // 
             this.labelControl37.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl37.Location = new System.Drawing.Point(943, 189);
-            this.labelControl37.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.labelControl37.Location = new System.Drawing.Point(1532, 305);
+            this.labelControl37.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.labelControl37.Name = "labelControl37";
-            this.labelControl37.Size = new System.Drawing.Size(20, 20);
+            this.labelControl37.Size = new System.Drawing.Size(30, 31);
             this.labelControl37.TabIndex = 674;
             this.labelControl37.Text = "Kg";
             // 
             // labelControl44
             // 
             this.labelControl44.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl44.Location = new System.Drawing.Point(806, 15);
-            this.labelControl44.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.labelControl44.Location = new System.Drawing.Point(1310, 24);
+            this.labelControl44.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.labelControl44.Name = "labelControl44";
-            this.labelControl44.Size = new System.Drawing.Size(30, 20);
+            this.labelControl44.Size = new System.Drawing.Size(48, 31);
             this.labelControl44.TabIndex = 665;
             this.labelControl44.Text = "净化";
             // 
@@ -892,8 +892,8 @@
             0,
             0});
             this.spnCLEAN_UP_TIMES.EnterMoveNextControl = true;
-            this.spnCLEAN_UP_TIMES.Location = new System.Drawing.Point(840, 12);
-            this.spnCLEAN_UP_TIMES.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.spnCLEAN_UP_TIMES.Location = new System.Drawing.Point(1365, 19);
+            this.spnCLEAN_UP_TIMES.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.spnCLEAN_UP_TIMES.Name = "spnCLEAN_UP_TIMES";
             this.spnCLEAN_UP_TIMES.Properties.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.spnCLEAN_UP_TIMES.Properties.Appearance.ForeColor = System.Drawing.Color.Blue;
@@ -901,24 +901,24 @@
             this.spnCLEAN_UP_TIMES.Properties.Appearance.Options.UseForeColor = true;
             this.spnCLEAN_UP_TIMES.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton()});
-            this.spnCLEAN_UP_TIMES.Size = new System.Drawing.Size(101, 26);
+            this.spnCLEAN_UP_TIMES.Size = new System.Drawing.Size(164, 38);
             this.spnCLEAN_UP_TIMES.TabIndex = 664;
             // 
             // labelControl48
             // 
             this.labelControl48.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl48.Location = new System.Drawing.Point(945, 72);
-            this.labelControl48.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.labelControl48.Location = new System.Drawing.Point(1536, 116);
+            this.labelControl48.Margin = new System.Windows.Forms.Padding(5, 8, 5, 8);
             this.labelControl48.Name = "labelControl48";
-            this.labelControl48.Size = new System.Drawing.Size(51, 20);
+            this.labelControl48.Size = new System.Drawing.Size(81, 31);
             this.labelControl48.TabIndex = 651;
             this.labelControl48.Text = "ml/min";
             // 
             // cmbPURIFICATION_MODE
             // 
             this.cmbPURIFICATION_MODE.EnterMoveNextControl = true;
-            this.cmbPURIFICATION_MODE.Location = new System.Drawing.Point(72, 12);
-            this.cmbPURIFICATION_MODE.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.cmbPURIFICATION_MODE.Location = new System.Drawing.Point(117, 19);
+            this.cmbPURIFICATION_MODE.Margin = new System.Windows.Forms.Padding(5, 8, 5, 8);
             this.cmbPURIFICATION_MODE.Name = "cmbPURIFICATION_MODE";
             this.cmbPURIFICATION_MODE.Properties.Appearance.BackColor = System.Drawing.Color.White;
             this.cmbPURIFICATION_MODE.Properties.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F);
@@ -930,35 +930,35 @@
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.cmbPURIFICATION_MODE.Properties.LookAndFeel.SkinName = "ExtendBlue";
             this.cmbPURIFICATION_MODE.Properties.NullText = "";
-            this.cmbPURIFICATION_MODE.Size = new System.Drawing.Size(184, 26);
+            this.cmbPURIFICATION_MODE.Size = new System.Drawing.Size(299, 38);
             this.cmbPURIFICATION_MODE.TabIndex = 550;
             this.cmbPURIFICATION_MODE.EditValueChanged += new System.EventHandler(this.cmbPURIFICATION_MODE_EditValueChanged);
             // 
             // labelControl22
             // 
             this.labelControl22.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl22.Location = new System.Drawing.Point(523, 15);
-            this.labelControl22.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.labelControl22.Location = new System.Drawing.Point(850, 24);
+            this.labelControl22.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.labelControl22.Name = "labelControl22";
-            this.labelControl22.Size = new System.Drawing.Size(60, 20);
+            this.labelControl22.Size = new System.Drawing.Size(96, 31);
             this.labelControl22.TabIndex = 563;
             this.labelControl22.Text = "治疗时间";
             // 
             // labelControl30
             // 
             this.labelControl30.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.labelControl30.Location = new System.Drawing.Point(266, 19);
-            this.labelControl30.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.labelControl30.Location = new System.Drawing.Point(432, 31);
+            this.labelControl30.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.labelControl30.Name = "labelControl30";
-            this.labelControl30.Size = new System.Drawing.Size(60, 20);
+            this.labelControl30.Size = new System.Drawing.Size(96, 31);
             this.labelControl30.TabIndex = 573;
             this.labelControl30.Text = "血管通路";
             // 
             // cmbVASCULAR_ACCESS_ID
             // 
             this.cmbVASCULAR_ACCESS_ID.EnterMoveNextControl = true;
-            this.cmbVASCULAR_ACCESS_ID.Location = new System.Drawing.Point(334, 12);
-            this.cmbVASCULAR_ACCESS_ID.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.cmbVASCULAR_ACCESS_ID.Location = new System.Drawing.Point(543, 19);
+            this.cmbVASCULAR_ACCESS_ID.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.cmbVASCULAR_ACCESS_ID.Name = "cmbVASCULAR_ACCESS_ID";
             this.cmbVASCULAR_ACCESS_ID.Properties.AllowNullInput = DevExpress.Utils.DefaultBoolean.True;
             this.cmbVASCULAR_ACCESS_ID.Properties.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
@@ -969,17 +969,17 @@
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.cmbVASCULAR_ACCESS_ID.Properties.LookAndFeel.SkinName = "ExtendBlue";
             this.cmbVASCULAR_ACCESS_ID.Properties.NullText = "";
-            this.cmbVASCULAR_ACCESS_ID.Size = new System.Drawing.Size(176, 26);
+            this.cmbVASCULAR_ACCESS_ID.Size = new System.Drawing.Size(286, 38);
             this.cmbVASCULAR_ACCESS_ID.TabIndex = 571;
             this.cmbVASCULAR_ACCESS_ID.EditValueChanged += new System.EventHandler(this.cmbVASCULAR_ACCESS_ID_EditValueChanged);
             // 
             // labelControl104
             // 
             this.labelControl104.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.labelControl104.Location = new System.Drawing.Point(739, 15);
-            this.labelControl104.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.labelControl104.Location = new System.Drawing.Point(1201, 24);
+            this.labelControl104.Margin = new System.Windows.Forms.Padding(5, 8, 5, 8);
             this.labelControl104.Name = "labelControl104";
-            this.labelControl104.Size = new System.Drawing.Size(15, 20);
+            this.labelControl104.Size = new System.Drawing.Size(24, 31);
             this.labelControl104.TabIndex = 569;
             this.labelControl104.Text = "分";
             this.labelControl104.Visible = false;
@@ -992,8 +992,8 @@
             0,
             0});
             this.spnFREQUENCY_HOURS.EnterMoveNextControl = true;
-            this.spnFREQUENCY_HOURS.Location = new System.Drawing.Point(587, 12);
-            this.spnFREQUENCY_HOURS.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.spnFREQUENCY_HOURS.Location = new System.Drawing.Point(954, 19);
+            this.spnFREQUENCY_HOURS.Margin = new System.Windows.Forms.Padding(5, 8, 5, 8);
             this.spnFREQUENCY_HOURS.Name = "spnFREQUENCY_HOURS";
             this.spnFREQUENCY_HOURS.Properties.Appearance.BackColor = System.Drawing.Color.White;
             this.spnFREQUENCY_HOURS.Properties.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
@@ -1008,26 +1008,26 @@
             0,
             0,
             0});
-            this.spnFREQUENCY_HOURS.Size = new System.Drawing.Size(51, 26);
+            this.spnFREQUENCY_HOURS.Size = new System.Drawing.Size(83, 38);
             this.spnFREQUENCY_HOURS.TabIndex = 551;
             // 
             // labelControl23
             // 
             this.labelControl23.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.labelControl23.Location = new System.Drawing.Point(643, 12);
-            this.labelControl23.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.labelControl23.Location = new System.Drawing.Point(1045, 19);
+            this.labelControl23.Margin = new System.Windows.Forms.Padding(5, 8, 5, 8);
             this.labelControl23.Name = "labelControl23";
-            this.labelControl23.Size = new System.Drawing.Size(15, 20);
+            this.labelControl23.Size = new System.Drawing.Size(24, 31);
             this.labelControl23.TabIndex = 564;
             this.labelControl23.Text = "时";
             // 
             // labelControl9
             // 
             this.labelControl9.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl9.Location = new System.Drawing.Point(7, 15);
-            this.labelControl9.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.labelControl9.Location = new System.Drawing.Point(11, 24);
+            this.labelControl9.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.labelControl9.Name = "labelControl9";
-            this.labelControl9.Size = new System.Drawing.Size(60, 20);
+            this.labelControl9.Size = new System.Drawing.Size(96, 31);
             this.labelControl9.TabIndex = 562;
             this.labelControl9.Text = "净化方式";
             // 
@@ -1038,8 +1038,8 @@
             0,
             0,
             0});
-            this.spnFREQUENCY_MINUTE.Location = new System.Drawing.Point(666, 12);
-            this.spnFREQUENCY_MINUTE.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.spnFREQUENCY_MINUTE.Location = new System.Drawing.Point(1082, 19);
+            this.spnFREQUENCY_MINUTE.Margin = new System.Windows.Forms.Padding(5, 8, 5, 8);
             this.spnFREQUENCY_MINUTE.Name = "spnFREQUENCY_MINUTE";
             this.spnFREQUENCY_MINUTE.Properties.Appearance.BackColor = System.Drawing.Color.White;
             this.spnFREQUENCY_MINUTE.Properties.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
@@ -1051,14 +1051,14 @@
             new DevExpress.XtraEditors.Controls.EditorButton()});
             this.spnFREQUENCY_MINUTE.Properties.Mask.EditMask = "d";
             this.spnFREQUENCY_MINUTE.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
-            this.spnFREQUENCY_MINUTE.Size = new System.Drawing.Size(70, 26);
+            this.spnFREQUENCY_MINUTE.Size = new System.Drawing.Size(114, 38);
             this.spnFREQUENCY_MINUTE.TabIndex = 553;
             // 
             // lupHEPARIN_SPECIES
             // 
             this.lupHEPARIN_SPECIES.EnterMoveNextControl = true;
-            this.lupHEPARIN_SPECIES.Location = new System.Drawing.Point(72, 122);
-            this.lupHEPARIN_SPECIES.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.lupHEPARIN_SPECIES.Location = new System.Drawing.Point(117, 197);
+            this.lupHEPARIN_SPECIES.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.lupHEPARIN_SPECIES.Name = "lupHEPARIN_SPECIES";
             this.lupHEPARIN_SPECIES.Properties.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.lupHEPARIN_SPECIES.Properties.Appearance.ForeColor = System.Drawing.Color.Blue;
@@ -1068,7 +1068,7 @@
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.lupHEPARIN_SPECIES.Properties.LookAndFeel.SkinName = "ExtendBlue";
             this.lupHEPARIN_SPECIES.Properties.NullText = "";
-            this.lupHEPARIN_SPECIES.Size = new System.Drawing.Size(184, 26);
+            this.lupHEPARIN_SPECIES.Size = new System.Drawing.Size(299, 38);
             this.lupHEPARIN_SPECIES.TabIndex = 586;
             // 
             // spnFIRST_HEPARIN
@@ -1079,8 +1079,8 @@
             0,
             0});
             this.spnFIRST_HEPARIN.EnterMoveNextControl = true;
-            this.spnFIRST_HEPARIN.Location = new System.Drawing.Point(334, 122);
-            this.spnFIRST_HEPARIN.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.spnFIRST_HEPARIN.Location = new System.Drawing.Point(543, 197);
+            this.spnFIRST_HEPARIN.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.spnFIRST_HEPARIN.Name = "spnFIRST_HEPARIN";
             this.spnFIRST_HEPARIN.Properties.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.spnFIRST_HEPARIN.Properties.Appearance.ForeColor = System.Drawing.Color.Blue;
@@ -1088,14 +1088,14 @@
             this.spnFIRST_HEPARIN.Properties.Appearance.Options.UseForeColor = true;
             this.spnFIRST_HEPARIN.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton()});
-            this.spnFIRST_HEPARIN.Size = new System.Drawing.Size(111, 26);
+            this.spnFIRST_HEPARIN.Size = new System.Drawing.Size(180, 38);
             this.spnFIRST_HEPARIN.TabIndex = 587;
             // 
             // cmbSECOND_DRUG_UNIT
             // 
             this.cmbSECOND_DRUG_UNIT.EnterMoveNextControl = true;
-            this.cmbSECOND_DRUG_UNIT.Location = new System.Drawing.Point(687, 123);
-            this.cmbSECOND_DRUG_UNIT.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.cmbSECOND_DRUG_UNIT.Location = new System.Drawing.Point(1116, 198);
+            this.cmbSECOND_DRUG_UNIT.Margin = new System.Windows.Forms.Padding(5, 8, 5, 8);
             this.cmbSECOND_DRUG_UNIT.Name = "cmbSECOND_DRUG_UNIT";
             this.cmbSECOND_DRUG_UNIT.Properties.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F);
             this.cmbSECOND_DRUG_UNIT.Properties.Appearance.ForeColor = System.Drawing.Color.Blue;
@@ -1105,34 +1105,34 @@
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.cmbSECOND_DRUG_UNIT.Properties.LookAndFeel.SkinName = "ExtendBlue";
             this.cmbSECOND_DRUG_UNIT.Properties.NullText = "";
-            this.cmbSECOND_DRUG_UNIT.Size = new System.Drawing.Size(63, 26);
+            this.cmbSECOND_DRUG_UNIT.Size = new System.Drawing.Size(102, 38);
             this.cmbSECOND_DRUG_UNIT.TabIndex = 590;
             // 
             // lblgssj
             // 
             this.lblgssj.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.lblgssj.Location = new System.Drawing.Point(267, 127);
-            this.lblgssj.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.lblgssj.Location = new System.Drawing.Point(434, 205);
+            this.lblgssj.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.lblgssj.Name = "lblgssj";
-            this.lblgssj.Size = new System.Drawing.Size(30, 20);
+            this.lblgssj.Size = new System.Drawing.Size(48, 31);
             this.lblgssj.TabIndex = 592;
             this.lblgssj.Text = "首量";
             // 
             // labelControl31
             // 
             this.labelControl31.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.labelControl31.Location = new System.Drawing.Point(7, 127);
-            this.labelControl31.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.labelControl31.Location = new System.Drawing.Point(11, 205);
+            this.labelControl31.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.labelControl31.Name = "labelControl31";
-            this.labelControl31.Size = new System.Drawing.Size(60, 20);
+            this.labelControl31.Size = new System.Drawing.Size(96, 31);
             this.labelControl31.TabIndex = 591;
             this.labelControl31.Text = "抗凝方式";
             // 
             // cmbFIRST_DRUG_UNIT
             // 
             this.cmbFIRST_DRUG_UNIT.EnterMoveNextControl = true;
-            this.cmbFIRST_DRUG_UNIT.Location = new System.Drawing.Point(447, 122);
-            this.cmbFIRST_DRUG_UNIT.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.cmbFIRST_DRUG_UNIT.Location = new System.Drawing.Point(726, 197);
+            this.cmbFIRST_DRUG_UNIT.Margin = new System.Windows.Forms.Padding(5, 8, 5, 8);
             this.cmbFIRST_DRUG_UNIT.Name = "cmbFIRST_DRUG_UNIT";
             this.cmbFIRST_DRUG_UNIT.Properties.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F);
             this.cmbFIRST_DRUG_UNIT.Properties.Appearance.ForeColor = System.Drawing.Color.Blue;
@@ -1142,16 +1142,16 @@
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.cmbFIRST_DRUG_UNIT.Properties.LookAndFeel.SkinName = "ExtendBlue";
             this.cmbFIRST_DRUG_UNIT.Properties.NullText = "";
-            this.cmbFIRST_DRUG_UNIT.Size = new System.Drawing.Size(63, 26);
+            this.cmbFIRST_DRUG_UNIT.Size = new System.Drawing.Size(102, 38);
             this.cmbFIRST_DRUG_UNIT.TabIndex = 588;
             // 
             // labelControl34
             // 
             this.labelControl34.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.labelControl34.Location = new System.Drawing.Point(551, 127);
-            this.labelControl34.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.labelControl34.Location = new System.Drawing.Point(895, 205);
+            this.labelControl34.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.labelControl34.Name = "labelControl34";
-            this.labelControl34.Size = new System.Drawing.Size(30, 20);
+            this.labelControl34.Size = new System.Drawing.Size(48, 31);
             this.labelControl34.TabIndex = 593;
             this.labelControl34.Text = "追加";
             // 
@@ -1163,8 +1163,8 @@
             0,
             0});
             this.spnDOSIS_SUSTENTATIVA.EnterMoveNextControl = true;
-            this.spnDOSIS_SUSTENTATIVA.Location = new System.Drawing.Point(587, 123);
-            this.spnDOSIS_SUSTENTATIVA.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.spnDOSIS_SUSTENTATIVA.Location = new System.Drawing.Point(954, 198);
+            this.spnDOSIS_SUSTENTATIVA.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.spnDOSIS_SUSTENTATIVA.Name = "spnDOSIS_SUSTENTATIVA";
             this.spnDOSIS_SUSTENTATIVA.Properties.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.spnDOSIS_SUSTENTATIVA.Properties.Appearance.ForeColor = System.Drawing.Color.Blue;
@@ -1172,14 +1172,14 @@
             this.spnDOSIS_SUSTENTATIVA.Properties.Appearance.Options.UseForeColor = true;
             this.spnDOSIS_SUSTENTATIVA.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton()});
-            this.spnDOSIS_SUSTENTATIVA.Size = new System.Drawing.Size(104, 26);
+            this.spnDOSIS_SUSTENTATIVA.Size = new System.Drawing.Size(169, 38);
             this.spnDOSIS_SUSTENTATIVA.TabIndex = 589;
             // 
             // lupMACHINE_TYPE
             // 
             this.lupMACHINE_TYPE.EnterMoveNextControl = true;
-            this.lupMACHINE_TYPE.Location = new System.Drawing.Point(72, 183);
-            this.lupMACHINE_TYPE.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.lupMACHINE_TYPE.Location = new System.Drawing.Point(117, 295);
+            this.lupMACHINE_TYPE.Margin = new System.Windows.Forms.Padding(5, 8, 5, 8);
             this.lupMACHINE_TYPE.Name = "lupMACHINE_TYPE";
             this.lupMACHINE_TYPE.Properties.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F);
             this.lupMACHINE_TYPE.Properties.Appearance.ForeColor = System.Drawing.Color.Blue;
@@ -1189,16 +1189,16 @@
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.lupMACHINE_TYPE.Properties.LookAndFeel.SkinName = "ExtendBlue";
             this.lupMACHINE_TYPE.Properties.NullText = "";
-            this.lupMACHINE_TYPE.Size = new System.Drawing.Size(184, 26);
+            this.lupMACHINE_TYPE.Size = new System.Drawing.Size(299, 38);
             this.lupMACHINE_TYPE.TabIndex = 555;
             // 
             // labelControl35
             // 
             this.labelControl35.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.labelControl35.Location = new System.Drawing.Point(9, 186);
-            this.labelControl35.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.labelControl35.Location = new System.Drawing.Point(15, 300);
+            this.labelControl35.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.labelControl35.Name = "labelControl35";
-            this.labelControl35.Size = new System.Drawing.Size(45, 20);
+            this.labelControl35.Size = new System.Drawing.Size(72, 31);
             this.labelControl35.TabIndex = 565;
             this.labelControl35.Text = "透析器";
             // 
@@ -1210,8 +1210,8 @@
             0,
             0});
             this.spnPURIFIER_M2.EnterMoveNextControl = true;
-            this.spnPURIFIER_M2.Location = new System.Drawing.Point(509, 185);
-            this.spnPURIFIER_M2.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.spnPURIFIER_M2.Location = new System.Drawing.Point(827, 298);
+            this.spnPURIFIER_M2.Margin = new System.Windows.Forms.Padding(5, 8, 5, 8);
             this.spnPURIFIER_M2.Name = "spnPURIFIER_M2";
             this.spnPURIFIER_M2.Properties.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F);
             this.spnPURIFIER_M2.Properties.Appearance.ForeColor = System.Drawing.Color.Blue;
@@ -1219,64 +1219,64 @@
             this.spnPURIFIER_M2.Properties.Appearance.Options.UseForeColor = true;
             this.spnPURIFIER_M2.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton()});
-            this.spnPURIFIER_M2.Size = new System.Drawing.Size(78, 26);
+            this.spnPURIFIER_M2.Size = new System.Drawing.Size(127, 38);
             this.spnPURIFIER_M2.TabIndex = 556;
             // 
             // labelControl42
             // 
             this.labelControl42.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.labelControl42.Location = new System.Drawing.Point(765, 75);
-            this.labelControl42.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.labelControl42.Location = new System.Drawing.Point(1243, 121);
+            this.labelControl42.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.labelControl42.Name = "labelControl42";
-            this.labelControl42.Size = new System.Drawing.Size(75, 20);
+            this.labelControl42.Size = new System.Drawing.Size(120, 31);
             this.labelControl42.TabIndex = 568;
             this.labelControl42.Text = "透析液流量";
             // 
             // labelControl17
             // 
             this.labelControl17.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.labelControl17.Location = new System.Drawing.Point(510, 75);
-            this.labelControl17.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.labelControl17.Location = new System.Drawing.Point(829, 121);
+            this.labelControl17.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.labelControl17.Name = "labelControl17";
-            this.labelControl17.Size = new System.Drawing.Size(75, 20);
+            this.labelControl17.Size = new System.Drawing.Size(120, 31);
             this.labelControl17.TabIndex = 568;
             this.labelControl17.Text = "透析液品牌";
             // 
             // lblTou
             // 
             this.lblTou.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.lblTou.Location = new System.Drawing.Point(270, 186);
-            this.lblTou.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.lblTou.Location = new System.Drawing.Point(439, 300);
+            this.lblTou.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.lblTou.Name = "lblTou";
-            this.lblTou.Size = new System.Drawing.Size(45, 20);
+            this.lblTou.Size = new System.Drawing.Size(72, 31);
             this.lblTou.TabIndex = 568;
             this.lblTou.Text = "透析膜";
             // 
             // labelControl81
             // 
             this.labelControl81.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.labelControl81.Location = new System.Drawing.Point(591, 189);
-            this.labelControl81.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.labelControl81.Location = new System.Drawing.Point(960, 305);
+            this.labelControl81.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.labelControl81.Name = "labelControl81";
-            this.labelControl81.Size = new System.Drawing.Size(45, 20);
+            this.labelControl81.Size = new System.Drawing.Size(72, 31);
             this.labelControl81.TabIndex = 566;
             this.labelControl81.Text = "灌流器";
             // 
             // labelControl41
             // 
             this.labelControl41.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.labelControl41.Location = new System.Drawing.Point(459, 189);
-            this.labelControl41.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.labelControl41.Location = new System.Drawing.Point(746, 305);
+            this.labelControl41.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.labelControl41.Name = "labelControl41";
-            this.labelControl41.Size = new System.Drawing.Size(45, 20);
+            this.labelControl41.Size = new System.Drawing.Size(72, 31);
             this.labelControl41.TabIndex = 566;
             this.labelControl41.Text = "膜面积";
             // 
             // lupSUBJECTIVE_COMFORT
             // 
             this.lupSUBJECTIVE_COMFORT.EnterMoveNextControl = true;
-            this.lupSUBJECTIVE_COMFORT.Location = new System.Drawing.Point(585, 71);
-            this.lupSUBJECTIVE_COMFORT.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.lupSUBJECTIVE_COMFORT.Location = new System.Drawing.Point(951, 114);
+            this.lupSUBJECTIVE_COMFORT.Margin = new System.Windows.Forms.Padding(5, 8, 5, 8);
             this.lupSUBJECTIVE_COMFORT.Name = "lupSUBJECTIVE_COMFORT";
             this.lupSUBJECTIVE_COMFORT.Properties.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F);
             this.lupSUBJECTIVE_COMFORT.Properties.Appearance.ForeColor = System.Drawing.Color.Blue;
@@ -1286,14 +1286,14 @@
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.lupSUBJECTIVE_COMFORT.Properties.LookAndFeel.SkinName = "ExtendBlue";
             this.lupSUBJECTIVE_COMFORT.Properties.NullText = "";
-            this.lupSUBJECTIVE_COMFORT.Size = new System.Drawing.Size(146, 26);
+            this.lupSUBJECTIVE_COMFORT.Size = new System.Drawing.Size(237, 38);
             this.lupSUBJECTIVE_COMFORT.TabIndex = 557;
             // 
             // lupIN_BASKET_WOUND_ALLERGY
             // 
             this.lupIN_BASKET_WOUND_ALLERGY.EnterMoveNextControl = true;
-            this.lupIN_BASKET_WOUND_ALLERGY.Location = new System.Drawing.Point(638, 184);
-            this.lupIN_BASKET_WOUND_ALLERGY.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.lupIN_BASKET_WOUND_ALLERGY.Location = new System.Drawing.Point(1037, 296);
+            this.lupIN_BASKET_WOUND_ALLERGY.Margin = new System.Windows.Forms.Padding(5, 8, 5, 8);
             this.lupIN_BASKET_WOUND_ALLERGY.Name = "lupIN_BASKET_WOUND_ALLERGY";
             this.lupIN_BASKET_WOUND_ALLERGY.Properties.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F);
             this.lupIN_BASKET_WOUND_ALLERGY.Properties.Appearance.ForeColor = System.Drawing.Color.Blue;
@@ -1303,14 +1303,14 @@
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.lupIN_BASKET_WOUND_ALLERGY.Properties.LookAndFeel.SkinName = "ExtendBlue";
             this.lupIN_BASKET_WOUND_ALLERGY.Properties.NullText = "";
-            this.lupIN_BASKET_WOUND_ALLERGY.Size = new System.Drawing.Size(112, 26);
+            this.lupIN_BASKET_WOUND_ALLERGY.Size = new System.Drawing.Size(182, 38);
             this.lupIN_BASKET_WOUND_ALLERGY.TabIndex = 557;
             // 
             // lupPURIFIER_NAME
             // 
             this.lupPURIFIER_NAME.EnterMoveNextControl = true;
-            this.lupPURIFIER_NAME.Location = new System.Drawing.Point(334, 183);
-            this.lupPURIFIER_NAME.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.lupPURIFIER_NAME.Location = new System.Drawing.Point(543, 295);
+            this.lupPURIFIER_NAME.Margin = new System.Windows.Forms.Padding(5, 8, 5, 8);
             this.lupPURIFIER_NAME.Name = "lupPURIFIER_NAME";
             this.lupPURIFIER_NAME.Properties.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F);
             this.lupPURIFIER_NAME.Properties.Appearance.ForeColor = System.Drawing.Color.Blue;
@@ -1320,14 +1320,14 @@
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.lupPURIFIER_NAME.Properties.LookAndFeel.SkinName = "ExtendBlue";
             this.lupPURIFIER_NAME.Properties.NullText = "";
-            this.lupPURIFIER_NAME.Size = new System.Drawing.Size(121, 26);
+            this.lupPURIFIER_NAME.Size = new System.Drawing.Size(197, 38);
             this.lupPURIFIER_NAME.TabIndex = 557;
             // 
             // lupMACHINE_ID_TAG
             // 
             this.lupMACHINE_ID_TAG.EnterMoveNextControl = true;
-            this.lupMACHINE_ID_TAG.Location = new System.Drawing.Point(171, 68);
-            this.lupMACHINE_ID_TAG.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.lupMACHINE_ID_TAG.Location = new System.Drawing.Point(278, 110);
+            this.lupMACHINE_ID_TAG.Margin = new System.Windows.Forms.Padding(5, 8, 5, 8);
             this.lupMACHINE_ID_TAG.Name = "lupMACHINE_ID_TAG";
             this.lupMACHINE_ID_TAG.Properties.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F);
             this.lupMACHINE_ID_TAG.Properties.Appearance.ForeColor = System.Drawing.Color.Blue;
@@ -1343,15 +1343,15 @@
             this.lupMACHINE_ID_TAG.Properties.LookAndFeel.SkinName = "ExtendBlue";
             this.lupMACHINE_ID_TAG.Properties.PopupSizeable = true;
             this.lupMACHINE_ID_TAG.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
-            this.lupMACHINE_ID_TAG.Size = new System.Drawing.Size(63, 26);
+            this.lupMACHINE_ID_TAG.Size = new System.Drawing.Size(102, 38);
             this.lupMACHINE_ID_TAG.TabIndex = 559;
             this.lupMACHINE_ID_TAG.Visible = false;
             // 
             // cmbMACHINE_ID
             // 
             this.cmbMACHINE_ID.EnterMoveNextControl = true;
-            this.cmbMACHINE_ID.Location = new System.Drawing.Point(72, 68);
-            this.cmbMACHINE_ID.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.cmbMACHINE_ID.Location = new System.Drawing.Point(117, 110);
+            this.cmbMACHINE_ID.Margin = new System.Windows.Forms.Padding(5, 8, 5, 8);
             this.cmbMACHINE_ID.Name = "cmbMACHINE_ID";
             this.cmbMACHINE_ID.Properties.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F);
             this.cmbMACHINE_ID.Properties.Appearance.ForeColor = System.Drawing.Color.Blue;
@@ -1364,16 +1364,16 @@
             this.cmbMACHINE_ID.Properties.LookAndFeel.SkinName = "ExtendBlue";
             this.cmbMACHINE_ID.Properties.PopupSizeable = true;
             this.cmbMACHINE_ID.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
-            this.cmbMACHINE_ID.Size = new System.Drawing.Size(162, 26);
+            this.cmbMACHINE_ID.Size = new System.Drawing.Size(263, 38);
             this.cmbMACHINE_ID.TabIndex = 558;
             // 
             // labelControl29
             // 
             this.labelControl29.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.labelControl29.Location = new System.Drawing.Point(24, 76);
-            this.labelControl29.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.labelControl29.Location = new System.Drawing.Point(39, 122);
+            this.labelControl29.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.labelControl29.Name = "labelControl29";
-            this.labelControl29.Size = new System.Drawing.Size(45, 20);
+            this.labelControl29.Size = new System.Drawing.Size(72, 31);
             this.labelControl29.TabIndex = 561;
             this.labelControl29.Text = "透析机";
             // 
@@ -1385,8 +1385,8 @@
             0,
             0});
             this.spnDIALYSATE_FLOW.EnterMoveNextControl = true;
-            this.spnDIALYSATE_FLOW.Location = new System.Drawing.Point(840, 68);
-            this.spnDIALYSATE_FLOW.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.spnDIALYSATE_FLOW.Location = new System.Drawing.Point(1365, 110);
+            this.spnDIALYSATE_FLOW.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.spnDIALYSATE_FLOW.Name = "spnDIALYSATE_FLOW";
             this.spnDIALYSATE_FLOW.Properties.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.spnDIALYSATE_FLOW.Properties.Appearance.ForeColor = System.Drawing.Color.Blue;
@@ -1394,7 +1394,7 @@
             this.spnDIALYSATE_FLOW.Properties.Appearance.Options.UseForeColor = true;
             this.spnDIALYSATE_FLOW.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton()});
-            this.spnDIALYSATE_FLOW.Size = new System.Drawing.Size(101, 26);
+            this.spnDIALYSATE_FLOW.Size = new System.Drawing.Size(164, 38);
             this.spnDIALYSATE_FLOW.TabIndex = 581;
             // 
             // spnDRY_WEIGHT_TAG
@@ -1405,8 +1405,8 @@
             0,
             0});
             this.spnDRY_WEIGHT_TAG.EnterMoveNextControl = true;
-            this.spnDRY_WEIGHT_TAG.Location = new System.Drawing.Point(840, 126);
-            this.spnDRY_WEIGHT_TAG.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.spnDRY_WEIGHT_TAG.Location = new System.Drawing.Point(1365, 203);
+            this.spnDRY_WEIGHT_TAG.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.spnDRY_WEIGHT_TAG.Name = "spnDRY_WEIGHT_TAG";
             this.spnDRY_WEIGHT_TAG.Properties.Appearance.BackColor = System.Drawing.Color.White;
             this.spnDRY_WEIGHT_TAG.Properties.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
@@ -1416,16 +1416,16 @@
             this.spnDRY_WEIGHT_TAG.Properties.Appearance.Options.UseForeColor = true;
             this.spnDRY_WEIGHT_TAG.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton()});
-            this.spnDRY_WEIGHT_TAG.Size = new System.Drawing.Size(101, 26);
+            this.spnDRY_WEIGHT_TAG.Size = new System.Drawing.Size(164, 38);
             this.spnDRY_WEIGHT_TAG.TabIndex = 617;
             // 
             // labelControl77
             // 
             this.labelControl77.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.labelControl77.Location = new System.Drawing.Point(765, 130);
-            this.labelControl77.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.labelControl77.Location = new System.Drawing.Point(1243, 209);
+            this.labelControl77.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.labelControl77.Name = "labelControl77";
-            this.labelControl77.Size = new System.Drawing.Size(75, 20);
+            this.labelControl77.Size = new System.Drawing.Size(120, 31);
             this.labelControl77.TabIndex = 624;
             this.labelControl77.Text = "衣物轮椅重";
             // 
@@ -1437,8 +1437,8 @@
             0,
             0});
             this.spnDRY_WEIGHT.EnterMoveNextControl = true;
-            this.spnDRY_WEIGHT.Location = new System.Drawing.Point(334, 71);
-            this.spnDRY_WEIGHT.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.spnDRY_WEIGHT.Location = new System.Drawing.Point(543, 114);
+            this.spnDRY_WEIGHT.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.spnDRY_WEIGHT.Name = "spnDRY_WEIGHT";
             this.spnDRY_WEIGHT.Properties.Appearance.BackColor = System.Drawing.Color.White;
             this.spnDRY_WEIGHT.Properties.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
@@ -1448,37 +1448,37 @@
             this.spnDRY_WEIGHT.Properties.Appearance.Options.UseForeColor = true;
             this.spnDRY_WEIGHT.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton()});
-            this.spnDRY_WEIGHT.Size = new System.Drawing.Size(101, 26);
+            this.spnDRY_WEIGHT.Size = new System.Drawing.Size(164, 38);
             this.spnDRY_WEIGHT.TabIndex = 617;
             this.spnDRY_WEIGHT.EditValueChanged += new System.EventHandler(this.spnDRY_WEIGHT_EditValueChanged);
             // 
             // labelControl10
             // 
             this.labelControl10.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl10.Location = new System.Drawing.Point(944, 127);
-            this.labelControl10.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.labelControl10.Location = new System.Drawing.Point(1534, 205);
+            this.labelControl10.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.labelControl10.Name = "labelControl10";
-            this.labelControl10.Size = new System.Drawing.Size(20, 20);
+            this.labelControl10.Size = new System.Drawing.Size(30, 31);
             this.labelControl10.TabIndex = 625;
             this.labelControl10.Text = "Kg";
             // 
             // labelControl119
             // 
             this.labelControl119.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.labelControl119.Location = new System.Drawing.Point(258, 76);
-            this.labelControl119.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.labelControl119.Location = new System.Drawing.Point(419, 122);
+            this.labelControl119.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.labelControl119.Name = "labelControl119";
-            this.labelControl119.Size = new System.Drawing.Size(45, 20);
+            this.labelControl119.Size = new System.Drawing.Size(72, 31);
             this.labelControl119.TabIndex = 624;
             this.labelControl119.Text = "干体重";
             // 
             // labelControl118
             // 
             this.labelControl118.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl118.Location = new System.Drawing.Point(437, 75);
-            this.labelControl118.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.labelControl118.Location = new System.Drawing.Point(710, 121);
+            this.labelControl118.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.labelControl118.Name = "labelControl118";
-            this.labelControl118.Size = new System.Drawing.Size(20, 20);
+            this.labelControl118.Size = new System.Drawing.Size(30, 31);
             this.labelControl118.TabIndex = 625;
             this.labelControl118.Text = "Kg";
             // 
@@ -1503,10 +1503,10 @@
             this.groupControl2.Controls.Add(this.txtBEFORE_DIASTOLIC_PRESSURE);
             this.groupControl2.Controls.Add(this.txtBEFORE_SYSTOLIC_PRESSURE);
             this.groupControl2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.groupControl2.Location = new System.Drawing.Point(0, 244);
-            this.groupControl2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.groupControl2.Location = new System.Drawing.Point(0, 390);
+            this.groupControl2.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.groupControl2.Name = "groupControl2";
-            this.groupControl2.Size = new System.Drawing.Size(1095, 85);
+            this.groupControl2.Size = new System.Drawing.Size(1780, 137);
             this.groupControl2.TabIndex = 666;
             this.groupControl2.Text = "透前数据";
             // 
@@ -1518,8 +1518,8 @@
             0,
             0});
             this.spnBEFORE_DRY_WEIGHT.EnterMoveNextControl = true;
-            this.spnBEFORE_DRY_WEIGHT.Location = new System.Drawing.Point(72, 45);
-            this.spnBEFORE_DRY_WEIGHT.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.spnBEFORE_DRY_WEIGHT.Location = new System.Drawing.Point(117, 73);
+            this.spnBEFORE_DRY_WEIGHT.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.spnBEFORE_DRY_WEIGHT.Name = "spnBEFORE_DRY_WEIGHT";
             this.spnBEFORE_DRY_WEIGHT.Properties.Appearance.BackColor = System.Drawing.Color.White;
             this.spnBEFORE_DRY_WEIGHT.Properties.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
@@ -1534,37 +1534,37 @@
             0,
             0,
             0});
-            this.spnBEFORE_DRY_WEIGHT.Size = new System.Drawing.Size(85, 26);
+            this.spnBEFORE_DRY_WEIGHT.Size = new System.Drawing.Size(138, 38);
             this.spnBEFORE_DRY_WEIGHT.TabIndex = 627;
             this.spnBEFORE_DRY_WEIGHT.EditValueChanged += new System.EventHandler(this.spnBEFORE_DRY_WEIGHT_EditValueChanged);
             // 
             // labelControlbefore
             // 
             this.labelControlbefore.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControlbefore.Location = new System.Drawing.Point(86, 49);
-            this.labelControlbefore.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.labelControlbefore.Location = new System.Drawing.Point(140, 79);
+            this.labelControlbefore.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.labelControlbefore.Name = "labelControlbefore";
-            this.labelControlbefore.Size = new System.Drawing.Size(30, 20);
+            this.labelControlbefore.Size = new System.Drawing.Size(48, 31);
             this.labelControlbefore.TabIndex = 635;
             this.labelControlbefore.Text = "卧床";
             // 
             // labelControlBeforeWeight
             // 
             this.labelControlBeforeWeight.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControlBeforeWeight.Location = new System.Drawing.Point(10, 48);
-            this.labelControlBeforeWeight.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.labelControlBeforeWeight.Location = new System.Drawing.Point(16, 77);
+            this.labelControlBeforeWeight.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.labelControlBeforeWeight.Name = "labelControlBeforeWeight";
-            this.labelControlBeforeWeight.Size = new System.Drawing.Size(60, 20);
+            this.labelControlBeforeWeight.Size = new System.Drawing.Size(96, 31);
             this.labelControlBeforeWeight.TabIndex = 635;
             this.labelControlBeforeWeight.Text = "透前体重";
             // 
             // labelControl6
             // 
             this.labelControl6.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl6.Location = new System.Drawing.Point(1002, 49);
-            this.labelControl6.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.labelControl6.Location = new System.Drawing.Point(1628, 79);
+            this.labelControl6.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.labelControl6.Name = "labelControl6";
-            this.labelControl6.Size = new System.Drawing.Size(20, 20);
+            this.labelControl6.Size = new System.Drawing.Size(30, 31);
             this.labelControl6.TabIndex = 638;
             this.labelControl6.Text = "Kg";
             // 
@@ -1576,8 +1576,8 @@
             0,
             0});
             this.spnUFR.EnterMoveNextControl = true;
-            this.spnUFR.Location = new System.Drawing.Point(936, 46);
-            this.spnUFR.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.spnUFR.Location = new System.Drawing.Point(1521, 74);
+            this.spnUFR.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.spnUFR.Name = "spnUFR";
             this.spnUFR.Properties.Appearance.BackColor = System.Drawing.Color.White;
             this.spnUFR.Properties.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
@@ -1587,66 +1587,66 @@
             this.spnUFR.Properties.Appearance.Options.UseForeColor = true;
             this.spnUFR.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton()});
-            this.spnUFR.Size = new System.Drawing.Size(59, 26);
+            this.spnUFR.Size = new System.Drawing.Size(96, 38);
             this.spnUFR.TabIndex = 631;
             this.spnUFR.KeyDown += new System.Windows.Forms.KeyEventHandler(this.spnUFR_KeyDown);
             // 
             // labelControl80
             // 
             this.labelControl80.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl80.Location = new System.Drawing.Point(825, 49);
-            this.labelControl80.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.labelControl80.Location = new System.Drawing.Point(1341, 79);
+            this.labelControl80.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.labelControl80.Name = "labelControl80";
-            this.labelControl80.Size = new System.Drawing.Size(116, 20);
+            this.labelControl80.Size = new System.Drawing.Size(187, 31);
             this.labelControl80.TabIndex = 562;
             this.labelControl80.Text = "min/次  预计脱水";
             // 
             // labelControl79
             // 
             this.labelControl79.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl79.Location = new System.Drawing.Point(671, 49);
-            this.labelControl79.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.labelControl79.Location = new System.Drawing.Point(1090, 79);
+            this.labelControl79.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.labelControl79.Name = "labelControl79";
-            this.labelControl79.Size = new System.Drawing.Size(94, 20);
+            this.labelControl79.Size = new System.Drawing.Size(153, 31);
             this.labelControl79.TabIndex = 562;
             this.labelControl79.Text = "min/次    呼吸";
             // 
             // labelControlbefo
             // 
-            this.labelControlbefo.Location = new System.Drawing.Point(163, 49);
-            this.labelControlbefo.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.labelControlbefo.Location = new System.Drawing.Point(265, 79);
+            this.labelControlbefo.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.labelControlbefo.Name = "labelControlbefo";
-            this.labelControlbefo.Size = new System.Drawing.Size(82, 18);
+            this.labelControlbefo.Size = new System.Drawing.Size(131, 29);
             this.labelControlbefo.TabIndex = 636;
             this.labelControlbefo.Text = "Kg 透前血压";
             // 
             // labelControl78
             // 
             this.labelControl78.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl78.Location = new System.Drawing.Point(543, 49);
-            this.labelControl78.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.labelControl78.Location = new System.Drawing.Point(882, 79);
+            this.labelControl78.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.labelControl78.Name = "labelControl78";
-            this.labelControl78.Size = new System.Drawing.Size(65, 20);
+            this.labelControl78.Size = new System.Drawing.Size(107, 31);
             this.labelControl78.TabIndex = 562;
             this.labelControl78.Text = "℃     脉搏";
             // 
             // labelControl102
             // 
             this.labelControl102.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl102.Location = new System.Drawing.Point(305, 50);
-            this.labelControl102.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.labelControl102.Location = new System.Drawing.Point(496, 81);
+            this.labelControl102.Margin = new System.Windows.Forms.Padding(5, 8, 5, 8);
             this.labelControl102.Name = "labelControl102";
-            this.labelControl102.Size = new System.Drawing.Size(7, 20);
+            this.labelControl102.Size = new System.Drawing.Size(11, 31);
             this.labelControl102.TabIndex = 651;
             this.labelControl102.Text = "/";
             // 
             // labelControl120
             // 
             this.labelControl120.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl120.Location = new System.Drawing.Point(384, 50);
-            this.labelControl120.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.labelControl120.Location = new System.Drawing.Point(624, 81);
+            this.labelControl120.Margin = new System.Windows.Forms.Padding(5, 8, 5, 8);
             this.labelControl120.Name = "labelControl120";
-            this.labelControl120.Size = new System.Drawing.Size(92, 20);
+            this.labelControl120.Size = new System.Drawing.Size(147, 31);
             this.labelControl120.TabIndex = 651;
             this.labelControl120.Text = "mmHg   体温";
             // 
@@ -1657,8 +1657,8 @@
             0,
             0,
             0});
-            this.txtBEFORE_TEMPERATURE.Location = new System.Drawing.Point(473, 46);
-            this.txtBEFORE_TEMPERATURE.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtBEFORE_TEMPERATURE.Location = new System.Drawing.Point(769, 74);
+            this.txtBEFORE_TEMPERATURE.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.txtBEFORE_TEMPERATURE.Name = "txtBEFORE_TEMPERATURE";
             this.txtBEFORE_TEMPERATURE.Properties.Appearance.BackColor = System.Drawing.Color.White;
             this.txtBEFORE_TEMPERATURE.Properties.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
@@ -1671,7 +1671,7 @@
             this.txtBEFORE_TEMPERATURE.Properties.EditValueChangedFiringMode = DevExpress.XtraEditors.Controls.EditValueChangedFiringMode.Default;
             this.txtBEFORE_TEMPERATURE.Properties.LookAndFeel.SkinName = "ExtendBlue";
             this.txtBEFORE_TEMPERATURE.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.None;
-            this.txtBEFORE_TEMPERATURE.Size = new System.Drawing.Size(61, 26);
+            this.txtBEFORE_TEMPERATURE.Size = new System.Drawing.Size(99, 38);
             this.txtBEFORE_TEMPERATURE.TabIndex = 630;
             // 
             // txtBEFORE_BP
@@ -1681,8 +1681,8 @@
             0,
             0,
             0});
-            this.txtBEFORE_BP.Location = new System.Drawing.Point(611, 46);
-            this.txtBEFORE_BP.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtBEFORE_BP.Location = new System.Drawing.Point(993, 74);
+            this.txtBEFORE_BP.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.txtBEFORE_BP.Name = "txtBEFORE_BP";
             this.txtBEFORE_BP.Properties.Appearance.BackColor = System.Drawing.Color.White;
             this.txtBEFORE_BP.Properties.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
@@ -1695,7 +1695,7 @@
             this.txtBEFORE_BP.Properties.EditValueChangedFiringMode = DevExpress.XtraEditors.Controls.EditValueChangedFiringMode.Default;
             this.txtBEFORE_BP.Properties.LookAndFeel.SkinName = "ExtendBlue";
             this.txtBEFORE_BP.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.None;
-            this.txtBEFORE_BP.Size = new System.Drawing.Size(51, 26);
+            this.txtBEFORE_BP.Size = new System.Drawing.Size(83, 38);
             this.txtBEFORE_BP.TabIndex = 630;
             // 
             // txtBR
@@ -1705,8 +1705,8 @@
             0,
             0,
             0});
-            this.txtBR.Location = new System.Drawing.Point(763, 46);
-            this.txtBR.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtBR.Location = new System.Drawing.Point(1240, 74);
+            this.txtBR.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.txtBR.Name = "txtBR";
             this.txtBR.Properties.Appearance.BackColor = System.Drawing.Color.White;
             this.txtBR.Properties.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
@@ -1719,7 +1719,7 @@
             this.txtBR.Properties.EditValueChangedFiringMode = DevExpress.XtraEditors.Controls.EditValueChangedFiringMode.Default;
             this.txtBR.Properties.LookAndFeel.SkinName = "ExtendBlue";
             this.txtBR.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.None;
-            this.txtBR.Size = new System.Drawing.Size(56, 26);
+            this.txtBR.Size = new System.Drawing.Size(91, 38);
             this.txtBR.TabIndex = 630;
             // 
             // txtBEFORE_DIASTOLIC_PRESSURE
@@ -1729,8 +1729,8 @@
             0,
             0,
             0});
-            this.txtBEFORE_DIASTOLIC_PRESSURE.Location = new System.Drawing.Point(317, 46);
-            this.txtBEFORE_DIASTOLIC_PRESSURE.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtBEFORE_DIASTOLIC_PRESSURE.Location = new System.Drawing.Point(515, 74);
+            this.txtBEFORE_DIASTOLIC_PRESSURE.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.txtBEFORE_DIASTOLIC_PRESSURE.Name = "txtBEFORE_DIASTOLIC_PRESSURE";
             this.txtBEFORE_DIASTOLIC_PRESSURE.Properties.Appearance.BackColor = System.Drawing.Color.White;
             this.txtBEFORE_DIASTOLIC_PRESSURE.Properties.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
@@ -1743,7 +1743,7 @@
             this.txtBEFORE_DIASTOLIC_PRESSURE.Properties.EditValueChangedFiringMode = DevExpress.XtraEditors.Controls.EditValueChangedFiringMode.Default;
             this.txtBEFORE_DIASTOLIC_PRESSURE.Properties.LookAndFeel.SkinName = "ExtendBlue";
             this.txtBEFORE_DIASTOLIC_PRESSURE.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.None;
-            this.txtBEFORE_DIASTOLIC_PRESSURE.Size = new System.Drawing.Size(57, 26);
+            this.txtBEFORE_DIASTOLIC_PRESSURE.Size = new System.Drawing.Size(93, 38);
             this.txtBEFORE_DIASTOLIC_PRESSURE.TabIndex = 630;
             // 
             // txtBEFORE_SYSTOLIC_PRESSURE
@@ -1753,8 +1753,8 @@
             0,
             0,
             0});
-            this.txtBEFORE_SYSTOLIC_PRESSURE.Location = new System.Drawing.Point(243, 46);
-            this.txtBEFORE_SYSTOLIC_PRESSURE.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtBEFORE_SYSTOLIC_PRESSURE.Location = new System.Drawing.Point(395, 74);
+            this.txtBEFORE_SYSTOLIC_PRESSURE.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.txtBEFORE_SYSTOLIC_PRESSURE.Name = "txtBEFORE_SYSTOLIC_PRESSURE";
             this.txtBEFORE_SYSTOLIC_PRESSURE.Properties.Appearance.BackColor = System.Drawing.Color.White;
             this.txtBEFORE_SYSTOLIC_PRESSURE.Properties.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
@@ -1767,7 +1767,7 @@
             this.txtBEFORE_SYSTOLIC_PRESSURE.Properties.EditValueChangedFiringMode = DevExpress.XtraEditors.Controls.EditValueChangedFiringMode.Default;
             this.txtBEFORE_SYSTOLIC_PRESSURE.Properties.LookAndFeel.SkinName = "ExtendBlue";
             this.txtBEFORE_SYSTOLIC_PRESSURE.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.None;
-            this.txtBEFORE_SYSTOLIC_PRESSURE.Size = new System.Drawing.Size(57, 26);
+            this.txtBEFORE_SYSTOLIC_PRESSURE.Size = new System.Drawing.Size(93, 38);
             this.txtBEFORE_SYSTOLIC_PRESSURE.TabIndex = 630;
             // 
             // groupControl3
@@ -1808,36 +1808,36 @@
             this.groupControl3.Controls.Add(this.txtAFTER_DIASTOLIC_PRESSURE);
             this.groupControl3.Controls.Add(this.txtAFTER_SYSTOLIC_PRESSURE);
             this.groupControl3.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.groupControl3.Location = new System.Drawing.Point(0, 329);
-            this.groupControl3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.groupControl3.Location = new System.Drawing.Point(0, 527);
+            this.groupControl3.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.groupControl3.Name = "groupControl3";
-            this.groupControl3.Size = new System.Drawing.Size(1095, 215);
+            this.groupControl3.Size = new System.Drawing.Size(1780, 346);
             this.groupControl3.TabIndex = 667;
             this.groupControl3.Text = "透后数据";
             // 
             // labelControl38
             // 
-            this.labelControl38.Location = new System.Drawing.Point(875, 90);
-            this.labelControl38.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.labelControl38.Location = new System.Drawing.Point(1422, 145);
+            this.labelControl38.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.labelControl38.Name = "labelControl38";
-            this.labelControl38.Size = new System.Drawing.Size(7, 18);
+            this.labelControl38.Size = new System.Drawing.Size(12, 29);
             this.labelControl38.TabIndex = 667;
             this.labelControl38.Text = "L";
             // 
             // labelControl33
             // 
-            this.labelControl33.Location = new System.Drawing.Point(598, 93);
-            this.labelControl33.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.labelControl33.Location = new System.Drawing.Point(972, 150);
+            this.labelControl33.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.labelControl33.Name = "labelControl33";
-            this.labelControl33.Size = new System.Drawing.Size(7, 18);
+            this.labelControl33.Size = new System.Drawing.Size(12, 29);
             this.labelControl33.TabIndex = 666;
             this.labelControl33.Text = "L";
             // 
             // chkIN_BED
             // 
             this.chkIN_BED.EditValue = "0";
-            this.chkIN_BED.Location = new System.Drawing.Point(1030, 40);
-            this.chkIN_BED.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.chkIN_BED.Location = new System.Drawing.Point(1674, 64);
+            this.chkIN_BED.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.chkIN_BED.Name = "chkIN_BED";
             this.chkIN_BED.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
             this.chkIN_BED.Properties.Appearance.Font = new System.Drawing.Font("微软雅黑", 10F);
@@ -1847,7 +1847,7 @@
             this.chkIN_BED.Properties.NullStyle = DevExpress.XtraEditors.Controls.StyleIndeterminate.Unchecked;
             this.chkIN_BED.Properties.ValueChecked = "1";
             this.chkIN_BED.Properties.ValueUnchecked = "0";
-            this.chkIN_BED.Size = new System.Drawing.Size(57, 27);
+            this.chkIN_BED.Size = new System.Drawing.Size(93, 39);
             this.chkIN_BED.TabIndex = 665;
             this.chkIN_BED.CheckedChanged += new System.EventHandler(this.checkBed_CheckedChanged);
             // 
@@ -1859,8 +1859,8 @@
             0,
             0});
             this.spnAFTER_DRY_WEIGHT.EnterMoveNextControl = true;
-            this.spnAFTER_DRY_WEIGHT.Location = new System.Drawing.Point(72, 44);
-            this.spnAFTER_DRY_WEIGHT.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.spnAFTER_DRY_WEIGHT.Location = new System.Drawing.Point(117, 71);
+            this.spnAFTER_DRY_WEIGHT.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.spnAFTER_DRY_WEIGHT.Name = "spnAFTER_DRY_WEIGHT";
             this.spnAFTER_DRY_WEIGHT.Properties.Appearance.BackColor = System.Drawing.Color.White;
             this.spnAFTER_DRY_WEIGHT.Properties.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
@@ -1875,25 +1875,25 @@
             0,
             0,
             0});
-            this.spnAFTER_DRY_WEIGHT.Size = new System.Drawing.Size(82, 26);
+            this.spnAFTER_DRY_WEIGHT.Size = new System.Drawing.Size(133, 38);
             this.spnAFTER_DRY_WEIGHT.TabIndex = 629;
             this.spnAFTER_DRY_WEIGHT.EditValueChanged += new System.EventHandler(this.spnAFTER_DRY_WEIGHT_EditValueChanged_1);
             // 
             // labelControlAfter
             // 
             this.labelControlAfter.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControlAfter.Location = new System.Drawing.Point(81, 49);
-            this.labelControlAfter.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.labelControlAfter.Location = new System.Drawing.Point(132, 79);
+            this.labelControlAfter.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.labelControlAfter.Name = "labelControlAfter";
-            this.labelControlAfter.Size = new System.Drawing.Size(30, 20);
+            this.labelControlAfter.Size = new System.Drawing.Size(48, 31);
             this.labelControlAfter.TabIndex = 635;
             this.labelControlAfter.Text = "卧床";
             // 
             // checkOrder
             // 
             this.checkOrder.EditValue = "0";
-            this.checkOrder.Location = new System.Drawing.Point(24, 180);
-            this.checkOrder.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.checkOrder.Location = new System.Drawing.Point(39, 290);
+            this.checkOrder.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.checkOrder.Name = "checkOrder";
             this.checkOrder.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
             this.checkOrder.Properties.Appearance.Options.UseBackColor = true;
@@ -1901,7 +1901,7 @@
             this.checkOrder.Properties.NullStyle = DevExpress.XtraEditors.Controls.StyleIndeterminate.Unchecked;
             this.checkOrder.Properties.ValueChecked = "1";
             this.checkOrder.Properties.ValueUnchecked = "0";
-            this.checkOrder.Size = new System.Drawing.Size(72, 22);
+            this.checkOrder.Size = new System.Drawing.Size(117, 34);
             this.checkOrder.TabIndex = 663;
             this.checkOrder.Visible = false;
             this.checkOrder.CheckedChanged += new System.EventHandler(this.checkOrder_CheckedChanged);
@@ -1909,49 +1909,49 @@
             // labelControl109
             // 
             this.labelControl109.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl109.Location = new System.Drawing.Point(830, 45);
-            this.labelControl109.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.labelControl109.Location = new System.Drawing.Point(1349, 73);
+            this.labelControl109.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.labelControl109.Name = "labelControl109";
-            this.labelControl109.Size = new System.Drawing.Size(112, 20);
+            this.labelControl109.Size = new System.Drawing.Size(180, 31);
             this.labelControl109.TabIndex = 562;
             this.labelControl109.Text = "min/次 实际脱水";
             // 
             // labelControlaftere
             // 
-            this.labelControlaftere.Location = new System.Drawing.Point(163, 45);
-            this.labelControlaftere.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.labelControlaftere.Location = new System.Drawing.Point(265, 73);
+            this.labelControlaftere.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.labelControlaftere.Name = "labelControlaftere";
-            this.labelControlaftere.Size = new System.Drawing.Size(82, 18);
+            this.labelControlaftere.Size = new System.Drawing.Size(131, 29);
             this.labelControlaftere.TabIndex = 636;
             this.labelControlaftere.Text = "Kg 透后血压";
             // 
             // labelControl96
             // 
             this.labelControl96.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl96.Location = new System.Drawing.Point(543, 45);
-            this.labelControl96.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.labelControl96.Location = new System.Drawing.Point(882, 73);
+            this.labelControl96.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.labelControl96.Name = "labelControl96";
-            this.labelControl96.Size = new System.Drawing.Size(65, 20);
+            this.labelControl96.Size = new System.Drawing.Size(107, 31);
             this.labelControl96.TabIndex = 562;
             this.labelControl96.Text = "℃     脉搏";
             // 
             // labelControl92
             // 
             this.labelControl92.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl92.Location = new System.Drawing.Point(10, 89);
-            this.labelControl92.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.labelControl92.Location = new System.Drawing.Point(16, 143);
+            this.labelControl92.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.labelControl92.Name = "labelControl92";
-            this.labelControl92.Size = new System.Drawing.Size(285, 20);
+            this.labelControl92.Size = new System.Drawing.Size(456, 31);
             this.labelControl92.TabIndex = 611;
             this.labelControl92.Text = "血液滤过或血液透滤：透析中置换液总量：";
             // 
             // labelControl97
             // 
             this.labelControl97.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl97.Location = new System.Drawing.Point(670, 45);
-            this.labelControl97.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.labelControl97.Location = new System.Drawing.Point(1089, 73);
+            this.labelControl97.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.labelControl97.Name = "labelControl97";
-            this.labelControl97.Size = new System.Drawing.Size(94, 20);
+            this.labelControl97.Size = new System.Drawing.Size(153, 31);
             this.labelControl97.TabIndex = 562;
             this.labelControl97.Text = "min/次    呼吸";
             // 
@@ -1963,8 +1963,8 @@
             0,
             0});
             this.txtDRY_WATER_VALUE.EnterMoveNextControl = true;
-            this.txtDRY_WATER_VALUE.Location = new System.Drawing.Point(936, 42);
-            this.txtDRY_WATER_VALUE.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtDRY_WATER_VALUE.Location = new System.Drawing.Point(1521, 68);
+            this.txtDRY_WATER_VALUE.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.txtDRY_WATER_VALUE.Name = "txtDRY_WATER_VALUE";
             this.txtDRY_WATER_VALUE.Properties.Appearance.BackColor = System.Drawing.Color.White;
             this.txtDRY_WATER_VALUE.Properties.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
@@ -1979,17 +1979,17 @@
             0,
             0,
             0});
-            this.txtDRY_WATER_VALUE.Size = new System.Drawing.Size(63, 26);
+            this.txtDRY_WATER_VALUE.Size = new System.Drawing.Size(102, 38);
             this.txtDRY_WATER_VALUE.TabIndex = 632;
             this.txtDRY_WATER_VALUE.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtDRY_WATER_VALUE_KeyDown);
             // 
             // labelControl8
             // 
             this.labelControl8.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl8.Location = new System.Drawing.Point(10, 48);
-            this.labelControl8.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.labelControl8.Location = new System.Drawing.Point(16, 77);
+            this.labelControl8.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.labelControl8.Name = "labelControl8";
-            this.labelControl8.Size = new System.Drawing.Size(60, 20);
+            this.labelControl8.Size = new System.Drawing.Size(96, 31);
             this.labelControl8.TabIndex = 637;
             this.labelControl8.Text = "透后体重";
             // 
@@ -2001,8 +2001,8 @@
             0,
             0});
             this.spnFILTRATION_DISPLACEMENT_LIQUID.EnterMoveNextControl = true;
-            this.spnFILTRATION_DISPLACEMENT_LIQUID.Location = new System.Drawing.Point(274, 85);
-            this.spnFILTRATION_DISPLACEMENT_LIQUID.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.spnFILTRATION_DISPLACEMENT_LIQUID.Location = new System.Drawing.Point(445, 137);
+            this.spnFILTRATION_DISPLACEMENT_LIQUID.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.spnFILTRATION_DISPLACEMENT_LIQUID.Name = "spnFILTRATION_DISPLACEMENT_LIQUID";
             this.spnFILTRATION_DISPLACEMENT_LIQUID.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
             this.spnFILTRATION_DISPLACEMENT_LIQUID.Properties.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
@@ -2017,24 +2017,24 @@
             0,
             0,
             0});
-            this.spnFILTRATION_DISPLACEMENT_LIQUID.Size = new System.Drawing.Size(114, 26);
+            this.spnFILTRATION_DISPLACEMENT_LIQUID.Size = new System.Drawing.Size(185, 38);
             this.spnFILTRATION_DISPLACEMENT_LIQUID.TabIndex = 605;
             // 
             // txtDOCTOR_ADVICE
             // 
             this.txtDOCTOR_ADVICE.EnterMoveNextControl = true;
-            this.txtDOCTOR_ADVICE.Location = new System.Drawing.Point(115, 126);
-            this.txtDOCTOR_ADVICE.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtDOCTOR_ADVICE.Location = new System.Drawing.Point(187, 203);
+            this.txtDOCTOR_ADVICE.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.txtDOCTOR_ADVICE.Name = "txtDOCTOR_ADVICE";
-            this.txtDOCTOR_ADVICE.Size = new System.Drawing.Size(883, 78);
+            this.txtDOCTOR_ADVICE.Size = new System.Drawing.Size(1435, 126);
             this.txtDOCTOR_ADVICE.TabIndex = 654;
             // 
             // labelControl93
             // 
-            this.labelControl93.Location = new System.Drawing.Point(397, 90);
-            this.labelControl93.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.labelControl93.Location = new System.Drawing.Point(645, 145);
+            this.labelControl93.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.labelControl93.Name = "labelControl93";
-            this.labelControl93.Size = new System.Drawing.Size(7, 18);
+            this.labelControl93.Size = new System.Drawing.Size(12, 29);
             this.labelControl93.TabIndex = 612;
             this.labelControl93.Text = "L";
             // 
@@ -2046,8 +2046,8 @@
             0,
             0});
             this.spnPERCOLATE.EnterMoveNextControl = true;
-            this.spnPERCOLATE.Location = new System.Drawing.Point(976, 85);
-            this.spnPERCOLATE.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.spnPERCOLATE.Location = new System.Drawing.Point(1586, 137);
+            this.spnPERCOLATE.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.spnPERCOLATE.Name = "spnPERCOLATE";
             this.spnPERCOLATE.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
             this.spnPERCOLATE.Properties.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
@@ -2062,53 +2062,53 @@
             0,
             0,
             0});
-            this.spnPERCOLATE.Size = new System.Drawing.Size(87, 26);
+            this.spnPERCOLATE.Size = new System.Drawing.Size(141, 38);
             this.spnPERCOLATE.TabIndex = 608;
             // 
             // labelControlCureTypeMemo
             // 
             this.labelControlCureTypeMemo.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControlCureTypeMemo.Location = new System.Drawing.Point(13, 138);
-            this.labelControlCureTypeMemo.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.labelControlCureTypeMemo.Location = new System.Drawing.Point(21, 222);
+            this.labelControlCureTypeMemo.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.labelControlCureTypeMemo.Name = "labelControlCureTypeMemo";
-            this.labelControlCureTypeMemo.Size = new System.Drawing.Size(105, 20);
+            this.labelControlCureTypeMemo.Size = new System.Drawing.Size(168, 31);
             this.labelControlCureTypeMemo.TabIndex = 655;
             this.labelControlCureTypeMemo.Text = "医生记录及医嘱";
             // 
             // txtSPECIAL_MATTER
             // 
-            this.txtSPECIAL_MATTER.Location = new System.Drawing.Point(115, 126);
-            this.txtSPECIAL_MATTER.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtSPECIAL_MATTER.Location = new System.Drawing.Point(187, 203);
+            this.txtSPECIAL_MATTER.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.txtSPECIAL_MATTER.Name = "txtSPECIAL_MATTER";
-            this.txtSPECIAL_MATTER.Size = new System.Drawing.Size(883, 78);
+            this.txtSPECIAL_MATTER.Size = new System.Drawing.Size(1435, 126);
             this.txtSPECIAL_MATTER.TabIndex = 652;
             // 
             // labelControl91
             // 
-            this.labelControl91.Location = new System.Drawing.Point(1070, 93);
-            this.labelControl91.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.labelControl91.Location = new System.Drawing.Point(1739, 150);
+            this.labelControl91.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.labelControl91.Name = "labelControl91";
-            this.labelControl91.Size = new System.Drawing.Size(7, 18);
+            this.labelControl91.Size = new System.Drawing.Size(12, 29);
             this.labelControl91.TabIndex = 610;
             this.labelControl91.Text = "L";
             // 
             // labelControl156
             // 
             this.labelControl156.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl156.Location = new System.Drawing.Point(381, 46);
-            this.labelControl156.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.labelControl156.Location = new System.Drawing.Point(619, 74);
+            this.labelControl156.Margin = new System.Windows.Forms.Padding(5, 8, 5, 8);
             this.labelControl156.Name = "labelControl156";
-            this.labelControl156.Size = new System.Drawing.Size(92, 20);
+            this.labelControl156.Size = new System.Drawing.Size(147, 31);
             this.labelControl156.TabIndex = 651;
             this.labelControl156.Text = "mmHg   体温";
             // 
             // labelControl157
             // 
             this.labelControl157.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl157.Location = new System.Drawing.Point(305, 46);
-            this.labelControl157.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.labelControl157.Location = new System.Drawing.Point(496, 74);
+            this.labelControl157.Margin = new System.Windows.Forms.Padding(5, 8, 5, 8);
             this.labelControl157.Name = "labelControl157";
-            this.labelControl157.Size = new System.Drawing.Size(7, 20);
+            this.labelControl157.Size = new System.Drawing.Size(11, 31);
             this.labelControl157.TabIndex = 651;
             this.labelControl157.Text = "/";
             // 
@@ -2120,8 +2120,8 @@
             0,
             0});
             this.spnFILTRATION_PERCOLATE.EnterMoveNextControl = true;
-            this.spnFILTRATION_PERCOLATE.Location = new System.Drawing.Point(510, 85);
-            this.spnFILTRATION_PERCOLATE.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.spnFILTRATION_PERCOLATE.Location = new System.Drawing.Point(829, 137);
+            this.spnFILTRATION_PERCOLATE.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.spnFILTRATION_PERCOLATE.Name = "spnFILTRATION_PERCOLATE";
             this.spnFILTRATION_PERCOLATE.Properties.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.spnFILTRATION_PERCOLATE.Properties.Appearance.ForeColor = System.Drawing.Color.Blue;
@@ -2129,35 +2129,35 @@
             this.spnFILTRATION_PERCOLATE.Properties.Appearance.Options.UseForeColor = true;
             this.spnFILTRATION_PERCOLATE.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton()});
-            this.spnFILTRATION_PERCOLATE.Size = new System.Drawing.Size(83, 26);
+            this.spnFILTRATION_PERCOLATE.Size = new System.Drawing.Size(135, 38);
             this.spnFILTRATION_PERCOLATE.TabIndex = 607;
             // 
             // labelControl95
             // 
             this.labelControl95.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl95.Location = new System.Drawing.Point(616, 89);
-            this.labelControl95.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.labelControl95.Location = new System.Drawing.Point(1001, 143);
+            this.labelControl95.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.labelControl95.Name = "labelControl95";
-            this.labelControl95.Size = new System.Drawing.Size(180, 20);
+            this.labelControl95.Size = new System.Drawing.Size(288, 31);
             this.labelControl95.TabIndex = 613;
             this.labelControl95.Text = "浆置换：透析中血浆总量：";
             // 
             // labelControl90
             // 
             this.labelControl90.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl90.Location = new System.Drawing.Point(906, 89);
-            this.labelControl90.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.labelControl90.Location = new System.Drawing.Point(1472, 143);
+            this.labelControl90.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.labelControl90.Name = "labelControl90";
-            this.labelControl90.Size = new System.Drawing.Size(105, 20);
+            this.labelControl90.Size = new System.Drawing.Size(168, 31);
             this.labelControl90.TabIndex = 609;
             this.labelControl90.Text = "滤过血浆总量：";
             // 
             // labelControl7
             // 
-            this.labelControl7.Location = new System.Drawing.Point(1005, 45);
-            this.labelControl7.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.labelControl7.Location = new System.Drawing.Point(1633, 73);
+            this.labelControl7.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.labelControl7.Name = "labelControl7";
-            this.labelControl7.Size = new System.Drawing.Size(17, 18);
+            this.labelControl7.Size = new System.Drawing.Size(27, 29);
             this.labelControl7.TabIndex = 634;
             this.labelControl7.Text = "Kg";
             // 
@@ -2168,8 +2168,8 @@
             0,
             0,
             0});
-            this.txtAFTER_TEMPERATURE.Location = new System.Drawing.Point(472, 42);
-            this.txtAFTER_TEMPERATURE.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtAFTER_TEMPERATURE.Location = new System.Drawing.Point(767, 68);
+            this.txtAFTER_TEMPERATURE.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.txtAFTER_TEMPERATURE.Name = "txtAFTER_TEMPERATURE";
             this.txtAFTER_TEMPERATURE.Properties.Appearance.BackColor = System.Drawing.Color.White;
             this.txtAFTER_TEMPERATURE.Properties.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
@@ -2182,7 +2182,7 @@
             this.txtAFTER_TEMPERATURE.Properties.EditValueChangedFiringMode = DevExpress.XtraEditors.Controls.EditValueChangedFiringMode.Default;
             this.txtAFTER_TEMPERATURE.Properties.LookAndFeel.SkinName = "ExtendBlue";
             this.txtAFTER_TEMPERATURE.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.None;
-            this.txtAFTER_TEMPERATURE.Size = new System.Drawing.Size(61, 26);
+            this.txtAFTER_TEMPERATURE.Size = new System.Drawing.Size(99, 38);
             this.txtAFTER_TEMPERATURE.TabIndex = 630;
             // 
             // spnDISPLACEMENT_LIQUID
@@ -2193,8 +2193,8 @@
             0,
             0});
             this.spnDISPLACEMENT_LIQUID.EnterMoveNextControl = true;
-            this.spnDISPLACEMENT_LIQUID.Location = new System.Drawing.Point(782, 84);
-            this.spnDISPLACEMENT_LIQUID.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.spnDISPLACEMENT_LIQUID.Location = new System.Drawing.Point(1271, 135);
+            this.spnDISPLACEMENT_LIQUID.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.spnDISPLACEMENT_LIQUID.Name = "spnDISPLACEMENT_LIQUID";
             this.spnDISPLACEMENT_LIQUID.Properties.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.spnDISPLACEMENT_LIQUID.Properties.Appearance.ForeColor = System.Drawing.Color.Blue;
@@ -2207,7 +2207,7 @@
             0,
             0,
             0});
-            this.spnDISPLACEMENT_LIQUID.Size = new System.Drawing.Size(89, 26);
+            this.spnDISPLACEMENT_LIQUID.Size = new System.Drawing.Size(145, 38);
             this.spnDISPLACEMENT_LIQUID.TabIndex = 606;
             // 
             // txtAFTER_BP
@@ -2217,8 +2217,8 @@
             0,
             0,
             0});
-            this.txtAFTER_BP.Location = new System.Drawing.Point(613, 42);
-            this.txtAFTER_BP.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtAFTER_BP.Location = new System.Drawing.Point(996, 68);
+            this.txtAFTER_BP.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.txtAFTER_BP.Name = "txtAFTER_BP";
             this.txtAFTER_BP.Properties.Appearance.BackColor = System.Drawing.Color.White;
             this.txtAFTER_BP.Properties.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
@@ -2231,16 +2231,16 @@
             this.txtAFTER_BP.Properties.EditValueChangedFiringMode = DevExpress.XtraEditors.Controls.EditValueChangedFiringMode.Default;
             this.txtAFTER_BP.Properties.LookAndFeel.SkinName = "ExtendBlue";
             this.txtAFTER_BP.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.None;
-            this.txtAFTER_BP.Size = new System.Drawing.Size(51, 26);
+            this.txtAFTER_BP.Size = new System.Drawing.Size(83, 38);
             this.txtAFTER_BP.TabIndex = 630;
             // 
             // labelControl89
             // 
             this.labelControl89.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.labelControl89.Location = new System.Drawing.Point(434, 87);
-            this.labelControl89.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.labelControl89.Location = new System.Drawing.Point(705, 140);
+            this.labelControl89.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.labelControl89.Name = "labelControl89";
-            this.labelControl89.Size = new System.Drawing.Size(75, 20);
+            this.labelControl89.Size = new System.Drawing.Size(120, 31);
             this.labelControl89.TabIndex = 615;
             this.labelControl89.Text = "滤过液总量";
             // 
@@ -2251,8 +2251,8 @@
             0,
             0,
             0});
-            this.txtAFTERBR.Location = new System.Drawing.Point(765, 42);
-            this.txtAFTERBR.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtAFTERBR.Location = new System.Drawing.Point(1243, 68);
+            this.txtAFTERBR.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.txtAFTERBR.Name = "txtAFTERBR";
             this.txtAFTERBR.Properties.Appearance.BackColor = System.Drawing.Color.White;
             this.txtAFTERBR.Properties.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
@@ -2265,7 +2265,7 @@
             this.txtAFTERBR.Properties.EditValueChangedFiringMode = DevExpress.XtraEditors.Controls.EditValueChangedFiringMode.Default;
             this.txtAFTERBR.Properties.LookAndFeel.SkinName = "ExtendBlue";
             this.txtAFTERBR.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.None;
-            this.txtAFTERBR.Size = new System.Drawing.Size(56, 26);
+            this.txtAFTERBR.Size = new System.Drawing.Size(91, 38);
             this.txtAFTERBR.TabIndex = 630;
             // 
             // txtAFTER_DIASTOLIC_PRESSURE
@@ -2275,8 +2275,8 @@
             0,
             0,
             0});
-            this.txtAFTER_DIASTOLIC_PRESSURE.Location = new System.Drawing.Point(317, 42);
-            this.txtAFTER_DIASTOLIC_PRESSURE.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtAFTER_DIASTOLIC_PRESSURE.Location = new System.Drawing.Point(515, 68);
+            this.txtAFTER_DIASTOLIC_PRESSURE.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.txtAFTER_DIASTOLIC_PRESSURE.Name = "txtAFTER_DIASTOLIC_PRESSURE";
             this.txtAFTER_DIASTOLIC_PRESSURE.Properties.Appearance.BackColor = System.Drawing.Color.White;
             this.txtAFTER_DIASTOLIC_PRESSURE.Properties.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
@@ -2289,7 +2289,7 @@
             this.txtAFTER_DIASTOLIC_PRESSURE.Properties.EditValueChangedFiringMode = DevExpress.XtraEditors.Controls.EditValueChangedFiringMode.Default;
             this.txtAFTER_DIASTOLIC_PRESSURE.Properties.LookAndFeel.SkinName = "ExtendBlue";
             this.txtAFTER_DIASTOLIC_PRESSURE.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.None;
-            this.txtAFTER_DIASTOLIC_PRESSURE.Size = new System.Drawing.Size(57, 26);
+            this.txtAFTER_DIASTOLIC_PRESSURE.Size = new System.Drawing.Size(93, 38);
             this.txtAFTER_DIASTOLIC_PRESSURE.TabIndex = 630;
             // 
             // txtAFTER_SYSTOLIC_PRESSURE
@@ -2299,8 +2299,8 @@
             0,
             0,
             0});
-            this.txtAFTER_SYSTOLIC_PRESSURE.Location = new System.Drawing.Point(243, 42);
-            this.txtAFTER_SYSTOLIC_PRESSURE.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtAFTER_SYSTOLIC_PRESSURE.Location = new System.Drawing.Point(395, 68);
+            this.txtAFTER_SYSTOLIC_PRESSURE.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.txtAFTER_SYSTOLIC_PRESSURE.Name = "txtAFTER_SYSTOLIC_PRESSURE";
             this.txtAFTER_SYSTOLIC_PRESSURE.Properties.Appearance.BackColor = System.Drawing.Color.White;
             this.txtAFTER_SYSTOLIC_PRESSURE.Properties.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
@@ -2313,7 +2313,7 @@
             this.txtAFTER_SYSTOLIC_PRESSURE.Properties.EditValueChangedFiringMode = DevExpress.XtraEditors.Controls.EditValueChangedFiringMode.Default;
             this.txtAFTER_SYSTOLIC_PRESSURE.Properties.LookAndFeel.SkinName = "ExtendBlue";
             this.txtAFTER_SYSTOLIC_PRESSURE.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.None;
-            this.txtAFTER_SYSTOLIC_PRESSURE.Size = new System.Drawing.Size(57, 26);
+            this.txtAFTER_SYSTOLIC_PRESSURE.Size = new System.Drawing.Size(93, 38);
             this.txtAFTER_SYSTOLIC_PRESSURE.TabIndex = 630;
             // 
             // groupControl4
@@ -2322,10 +2322,10 @@
             this.groupControl4.AppearanceCaption.Options.UseFont = true;
             this.groupControl4.Controls.Add(this.xtraTabControlCRRT);
             this.groupControl4.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.groupControl4.Location = new System.Drawing.Point(2, 665);
-            this.groupControl4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.groupControl4.Location = new System.Drawing.Point(3, 1072);
+            this.groupControl4.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.groupControl4.Name = "groupControl4";
-            this.groupControl4.Size = new System.Drawing.Size(1095, 121);
+            this.groupControl4.Size = new System.Drawing.Size(1780, 195);
             this.groupControl4.TabIndex = 667;
             this.groupControl4.Text = "CRRT数据相关";
             // 
@@ -2334,14 +2334,14 @@
             this.xtraTabControlCRRT.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.xtraTabControlCRRT.BorderStylePage = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.xtraTabControlCRRT.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.xtraTabControlCRRT.Location = new System.Drawing.Point(2, 28);
-            this.xtraTabControlCRRT.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.xtraTabControlCRRT.Location = new System.Drawing.Point(3, 49);
+            this.xtraTabControlCRRT.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.xtraTabControlCRRT.Name = "xtraTabControlCRRT";
             this.xtraTabControlCRRT.PaintStyleName = "PropertyView";
             this.xtraTabControlCRRT.SelectedTabPage = this.xtraTabPageCrrt;
             this.xtraTabControlCRRT.ShowHeaderFocus = DevExpress.Utils.DefaultBoolean.False;
             this.xtraTabControlCRRT.ShowTabHeader = DevExpress.Utils.DefaultBoolean.False;
-            this.xtraTabControlCRRT.Size = new System.Drawing.Size(1091, 91);
+            this.xtraTabControlCRRT.Size = new System.Drawing.Size(1774, 143);
             this.xtraTabControlCRRT.TabIndex = 666;
             this.xtraTabControlCRRT.TabPages.AddRange(new DevExpress.XtraTab.XtraTabPage[] {
             this.xtraTabPageCrrt});
@@ -2360,18 +2360,18 @@
             this.xtraTabPageCrrt.Controls.Add(this.labelControl158);
             this.xtraTabPageCrrt.Controls.Add(this.txtBEFORE_DRY_WEIGHT_TAG);
             this.xtraTabPageCrrt.Controls.Add(this.txtAFTER_DRY_WEIGHT_TAG);
-            this.xtraTabPageCrrt.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.xtraTabPageCrrt.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.xtraTabPageCrrt.Name = "xtraTabPageCrrt";
-            this.xtraTabPageCrrt.Size = new System.Drawing.Size(1091, 91);
+            this.xtraTabPageCrrt.Size = new System.Drawing.Size(1774, 143);
             this.xtraTabPageCrrt.Text = "xtraTabPage4";
             // 
             // labelControl45
             // 
             this.labelControl45.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl45.Location = new System.Drawing.Point(593, 15);
-            this.labelControl45.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.labelControl45.Location = new System.Drawing.Point(964, 24);
+            this.labelControl45.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.labelControl45.Name = "labelControl45";
-            this.labelControl45.Size = new System.Drawing.Size(75, 20);
+            this.labelControl45.Size = new System.Drawing.Size(120, 31);
             this.labelControl45.TabIndex = 668;
             this.labelControl45.Text = "治疗单编号";
             this.labelControl45.Visible = false;
@@ -2380,8 +2380,8 @@
             // 
             this.txtCURE_ID.Enabled = false;
             this.txtCURE_ID.EnterMoveNextControl = true;
-            this.txtCURE_ID.Location = new System.Drawing.Point(669, 9);
-            this.txtCURE_ID.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtCURE_ID.Location = new System.Drawing.Point(1087, 15);
+            this.txtCURE_ID.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.txtCURE_ID.Name = "txtCURE_ID";
             this.txtCURE_ID.Properties.Appearance.BackColor = System.Drawing.Color.WhiteSmoke;
             this.txtCURE_ID.Properties.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
@@ -2390,15 +2390,15 @@
             this.txtCURE_ID.Properties.Appearance.Options.UseFont = true;
             this.txtCURE_ID.Properties.Appearance.Options.UseForeColor = true;
             this.txtCURE_ID.Properties.LookAndFeel.SkinName = "ExtendBlue";
-            this.txtCURE_ID.Size = new System.Drawing.Size(57, 26);
+            this.txtCURE_ID.Size = new System.Drawing.Size(93, 38);
             this.txtCURE_ID.TabIndex = 667;
             this.txtCURE_ID.Visible = false;
             // 
             // txtHEMODIALYSIS_ID
             // 
             this.txtHEMODIALYSIS_ID.EnterMoveNextControl = true;
-            this.txtHEMODIALYSIS_ID.Location = new System.Drawing.Point(902, 9);
-            this.txtHEMODIALYSIS_ID.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtHEMODIALYSIS_ID.Location = new System.Drawing.Point(1466, 15);
+            this.txtHEMODIALYSIS_ID.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.txtHEMODIALYSIS_ID.Name = "txtHEMODIALYSIS_ID";
             this.txtHEMODIALYSIS_ID.Properties.Appearance.BackColor = System.Drawing.Color.White;
             this.txtHEMODIALYSIS_ID.Properties.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
@@ -2407,7 +2407,7 @@
             this.txtHEMODIALYSIS_ID.Properties.Appearance.Options.UseFont = true;
             this.txtHEMODIALYSIS_ID.Properties.Appearance.Options.UseForeColor = true;
             this.txtHEMODIALYSIS_ID.Properties.LookAndFeel.SkinName = "ExtendBlue";
-            this.txtHEMODIALYSIS_ID.Size = new System.Drawing.Size(57, 26);
+            this.txtHEMODIALYSIS_ID.Size = new System.Drawing.Size(93, 38);
             this.txtHEMODIALYSIS_ID.TabIndex = 666;
             this.txtHEMODIALYSIS_ID.Visible = false;
             // 
@@ -2419,19 +2419,19 @@
             new DevExpress.XtraEditors.Controls.CheckedListBoxItem("0", "前置换"),
             new DevExpress.XtraEditors.Controls.CheckedListBoxItem("1", "后置换"),
             new DevExpress.XtraEditors.Controls.CheckedListBoxItem("2", "前后置换）")});
-            this.chkDISPLACEMENT_MODE.Location = new System.Drawing.Point(227, 18);
-            this.chkDISPLACEMENT_MODE.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.chkDISPLACEMENT_MODE.Location = new System.Drawing.Point(369, 29);
+            this.chkDISPLACEMENT_MODE.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.chkDISPLACEMENT_MODE.MultiColumn = true;
             this.chkDISPLACEMENT_MODE.Name = "chkDISPLACEMENT_MODE";
             this.chkDISPLACEMENT_MODE.SelectionMode = System.Windows.Forms.SelectionMode.MultiSimple;
-            this.chkDISPLACEMENT_MODE.Size = new System.Drawing.Size(317, 27);
+            this.chkDISPLACEMENT_MODE.Size = new System.Drawing.Size(515, 44);
             this.chkDISPLACEMENT_MODE.TabIndex = 662;
             // 
             // txtRECIPE_ID
             // 
             this.txtRECIPE_ID.EnterMoveNextControl = true;
-            this.txtRECIPE_ID.Location = new System.Drawing.Point(791, 9);
-            this.txtRECIPE_ID.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtRECIPE_ID.Location = new System.Drawing.Point(1285, 15);
+            this.txtRECIPE_ID.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.txtRECIPE_ID.Name = "txtRECIPE_ID";
             this.txtRECIPE_ID.Properties.Appearance.BackColor = System.Drawing.Color.White;
             this.txtRECIPE_ID.Properties.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
@@ -2440,17 +2440,17 @@
             this.txtRECIPE_ID.Properties.Appearance.Options.UseFont = true;
             this.txtRECIPE_ID.Properties.Appearance.Options.UseForeColor = true;
             this.txtRECIPE_ID.Properties.LookAndFeel.SkinName = "ExtendBlue";
-            this.txtRECIPE_ID.Size = new System.Drawing.Size(57, 26);
+            this.txtRECIPE_ID.Size = new System.Drawing.Size(93, 38);
             this.txtRECIPE_ID.TabIndex = 664;
             this.txtRECIPE_ID.Visible = false;
             // 
             // labelControl49
             // 
             this.labelControl49.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl49.Location = new System.Drawing.Point(853, 15);
-            this.labelControl49.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.labelControl49.Location = new System.Drawing.Point(1386, 24);
+            this.labelControl49.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.labelControl49.Name = "labelControl49";
-            this.labelControl49.Size = new System.Drawing.Size(45, 20);
+            this.labelControl49.Size = new System.Drawing.Size(72, 31);
             this.labelControl49.TabIndex = 665;
             this.labelControl49.Text = "透析号";
             this.labelControl49.Visible = false;
@@ -2458,10 +2458,10 @@
             // labelControl52
             // 
             this.labelControl52.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl52.Location = new System.Drawing.Point(729, 13);
-            this.labelControl52.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.labelControl52.Location = new System.Drawing.Point(1185, 21);
+            this.labelControl52.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.labelControl52.Name = "labelControl52";
-            this.labelControl52.Size = new System.Drawing.Size(60, 20);
+            this.labelControl52.Size = new System.Drawing.Size(96, 31);
             this.labelControl52.TabIndex = 665;
             this.labelControl52.Text = "处方编号";
             this.labelControl52.Visible = false;
@@ -2474,8 +2474,8 @@
             0,
             0});
             this.spnDISPLACEMENT_FLOW.EnterMoveNextControl = true;
-            this.spnDISPLACEMENT_FLOW.Location = new System.Drawing.Point(83, 14);
-            this.spnDISPLACEMENT_FLOW.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.spnDISPLACEMENT_FLOW.Location = new System.Drawing.Point(135, 23);
+            this.spnDISPLACEMENT_FLOW.Margin = new System.Windows.Forms.Padding(5, 8, 5, 8);
             this.spnDISPLACEMENT_FLOW.Name = "spnDISPLACEMENT_FLOW";
             this.spnDISPLACEMENT_FLOW.Properties.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F);
             this.spnDISPLACEMENT_FLOW.Properties.Appearance.ForeColor = System.Drawing.Color.Blue;
@@ -2483,34 +2483,34 @@
             this.spnDISPLACEMENT_FLOW.Properties.Appearance.Options.UseForeColor = true;
             this.spnDISPLACEMENT_FLOW.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton()});
-            this.spnDISPLACEMENT_FLOW.Size = new System.Drawing.Size(89, 26);
+            this.spnDISPLACEMENT_FLOW.Size = new System.Drawing.Size(145, 38);
             this.spnDISPLACEMENT_FLOW.TabIndex = 574;
             // 
             // labelControl159
             // 
             this.labelControl159.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F);
-            this.labelControl159.Location = new System.Drawing.Point(8, 18);
-            this.labelControl159.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.labelControl159.Location = new System.Drawing.Point(13, 29);
+            this.labelControl159.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.labelControl159.Name = "labelControl159";
-            this.labelControl159.Size = new System.Drawing.Size(75, 20);
+            this.labelControl159.Size = new System.Drawing.Size(120, 31);
             this.labelControl159.TabIndex = 575;
             this.labelControl159.Text = "置换液流速";
             // 
             // labelControl158
             // 
             this.labelControl158.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F);
-            this.labelControl158.Location = new System.Drawing.Point(179, 18);
-            this.labelControl158.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.labelControl158.Location = new System.Drawing.Point(291, 29);
+            this.labelControl158.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.labelControl158.Name = "labelControl158";
-            this.labelControl158.Size = new System.Drawing.Size(48, 20);
+            this.labelControl158.Size = new System.Drawing.Size(77, 31);
             this.labelControl158.TabIndex = 576;
             this.labelControl158.Text = "ml/h（";
             // 
             // txtBEFORE_DRY_WEIGHT_TAG
             // 
             this.txtBEFORE_DRY_WEIGHT_TAG.EnterMoveNextControl = true;
-            this.txtBEFORE_DRY_WEIGHT_TAG.Location = new System.Drawing.Point(966, 14);
-            this.txtBEFORE_DRY_WEIGHT_TAG.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtBEFORE_DRY_WEIGHT_TAG.Location = new System.Drawing.Point(1570, 23);
+            this.txtBEFORE_DRY_WEIGHT_TAG.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.txtBEFORE_DRY_WEIGHT_TAG.Name = "txtBEFORE_DRY_WEIGHT_TAG";
             this.txtBEFORE_DRY_WEIGHT_TAG.Properties.Appearance.BackColor = System.Drawing.Color.White;
             this.txtBEFORE_DRY_WEIGHT_TAG.Properties.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
@@ -2519,15 +2519,15 @@
             this.txtBEFORE_DRY_WEIGHT_TAG.Properties.Appearance.Options.UseFont = true;
             this.txtBEFORE_DRY_WEIGHT_TAG.Properties.Appearance.Options.UseForeColor = true;
             this.txtBEFORE_DRY_WEIGHT_TAG.Properties.LookAndFeel.SkinName = "ExtendBlue";
-            this.txtBEFORE_DRY_WEIGHT_TAG.Size = new System.Drawing.Size(29, 26);
+            this.txtBEFORE_DRY_WEIGHT_TAG.Size = new System.Drawing.Size(47, 38);
             this.txtBEFORE_DRY_WEIGHT_TAG.TabIndex = 628;
             this.txtBEFORE_DRY_WEIGHT_TAG.Visible = false;
             // 
             // txtAFTER_DRY_WEIGHT_TAG
             // 
             this.txtAFTER_DRY_WEIGHT_TAG.EnterMoveNextControl = true;
-            this.txtAFTER_DRY_WEIGHT_TAG.Location = new System.Drawing.Point(937, 48);
-            this.txtAFTER_DRY_WEIGHT_TAG.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtAFTER_DRY_WEIGHT_TAG.Location = new System.Drawing.Point(1523, 77);
+            this.txtAFTER_DRY_WEIGHT_TAG.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.txtAFTER_DRY_WEIGHT_TAG.Name = "txtAFTER_DRY_WEIGHT_TAG";
             this.txtAFTER_DRY_WEIGHT_TAG.Properties.Appearance.BackColor = System.Drawing.Color.White;
             this.txtAFTER_DRY_WEIGHT_TAG.Properties.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
@@ -2536,7 +2536,7 @@
             this.txtAFTER_DRY_WEIGHT_TAG.Properties.Appearance.Options.UseFont = true;
             this.txtAFTER_DRY_WEIGHT_TAG.Properties.Appearance.Options.UseForeColor = true;
             this.txtAFTER_DRY_WEIGHT_TAG.Properties.LookAndFeel.SkinName = "ExtendBlue";
-            this.txtAFTER_DRY_WEIGHT_TAG.Size = new System.Drawing.Size(16, 26);
+            this.txtAFTER_DRY_WEIGHT_TAG.Size = new System.Drawing.Size(26, 38);
             this.txtAFTER_DRY_WEIGHT_TAG.TabIndex = 630;
             this.txtAFTER_DRY_WEIGHT_TAG.Visible = false;
             // 
@@ -2547,14 +2547,14 @@
             this.xtraTabControlPG.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.xtraTabControlPG.BorderStylePage = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.xtraTabControlPG.Dock = System.Windows.Forms.DockStyle.Top;
-            this.xtraTabControlPG.Location = new System.Drawing.Point(2, 31);
+            this.xtraTabControlPG.Location = new System.Drawing.Point(3, 54);
             this.xtraTabControlPG.Margin = new System.Windows.Forms.Padding(0);
             this.xtraTabControlPG.Name = "xtraTabControlPG";
             this.xtraTabControlPG.PaintStyleName = "PropertyView";
             this.xtraTabControlPG.SelectedTabPage = this.xtraTabPageDGPG;
             this.xtraTabControlPG.ShowHeaderFocus = DevExpress.Utils.DefaultBoolean.False;
             this.xtraTabControlPG.ShowTabHeader = DevExpress.Utils.DefaultBoolean.False;
-            this.xtraTabControlPG.Size = new System.Drawing.Size(1095, 90);
+            this.xtraTabControlPG.Size = new System.Drawing.Size(1780, 145);
             this.xtraTabControlPG.TabIndex = 664;
             this.xtraTabControlPG.TabPages.AddRange(new DevExpress.XtraTab.XtraTabPage[] {
             this.xtraTabPageDGPG,
@@ -2582,40 +2582,40 @@
             this.xtraTabPageDGPG.Controls.Add(this.labelControl84);
             this.xtraTabPageDGPG.Margin = new System.Windows.Forms.Padding(0);
             this.xtraTabPageDGPG.Name = "xtraTabPageDGPG";
-            this.xtraTabPageDGPG.Size = new System.Drawing.Size(1095, 90);
+            this.xtraTabPageDGPG.Size = new System.Drawing.Size(1780, 145);
             this.xtraTabPageDGPG.Text = "导管评估";
             // 
             // rdoVASCULAR_ACCESS_FIRM
             // 
             this.rdoVASCULAR_ACCESS_FIRM.EditValue = "0";
-            this.rdoVASCULAR_ACCESS_FIRM.Location = new System.Drawing.Point(145, 10);
-            this.rdoVASCULAR_ACCESS_FIRM.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.rdoVASCULAR_ACCESS_FIRM.Location = new System.Drawing.Point(236, 16);
+            this.rdoVASCULAR_ACCESS_FIRM.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.rdoVASCULAR_ACCESS_FIRM.Name = "rdoVASCULAR_ACCESS_FIRM";
             this.rdoVASCULAR_ACCESS_FIRM.Properties.Items.AddRange(new DevExpress.XtraEditors.Controls.RadioGroupItem[] {
             new DevExpress.XtraEditors.Controls.RadioGroupItem("0", "是"),
             new DevExpress.XtraEditors.Controls.RadioGroupItem("1", "否")});
-            this.rdoVASCULAR_ACCESS_FIRM.Size = new System.Drawing.Size(109, 35);
+            this.rdoVASCULAR_ACCESS_FIRM.Size = new System.Drawing.Size(177, 56);
             this.rdoVASCULAR_ACCESS_FIRM.TabIndex = 527;
             // 
             // rdoVASCULAR_ACCESS_BLOOD_INFECT
             // 
             this.rdoVASCULAR_ACCESS_BLOOD_INFECT.EditValue = "1";
-            this.rdoVASCULAR_ACCESS_BLOOD_INFECT.Location = new System.Drawing.Point(739, 49);
-            this.rdoVASCULAR_ACCESS_BLOOD_INFECT.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.rdoVASCULAR_ACCESS_BLOOD_INFECT.Location = new System.Drawing.Point(1201, 79);
+            this.rdoVASCULAR_ACCESS_BLOOD_INFECT.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.rdoVASCULAR_ACCESS_BLOOD_INFECT.Name = "rdoVASCULAR_ACCESS_BLOOD_INFECT";
             this.rdoVASCULAR_ACCESS_BLOOD_INFECT.Properties.Items.AddRange(new DevExpress.XtraEditors.Controls.RadioGroupItem[] {
             new DevExpress.XtraEditors.Controls.RadioGroupItem("0", "是"),
             new DevExpress.XtraEditors.Controls.RadioGroupItem("1", "否")});
-            this.rdoVASCULAR_ACCESS_BLOOD_INFECT.Size = new System.Drawing.Size(109, 35);
+            this.rdoVASCULAR_ACCESS_BLOOD_INFECT.Size = new System.Drawing.Size(177, 56);
             this.rdoVASCULAR_ACCESS_BLOOD_INFECT.TabIndex = 662;
             // 
             // btnClear
             // 
             this.btnClear.ImageIndex = 13;
-            this.btnClear.Location = new System.Drawing.Point(855, 21);
-            this.btnClear.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnClear.Location = new System.Drawing.Point(1389, 34);
+            this.btnClear.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.btnClear.Name = "btnClear";
-            this.btnClear.Size = new System.Drawing.Size(63, 30);
+            this.btnClear.Size = new System.Drawing.Size(102, 48);
             this.btnClear.TabIndex = 540;
             this.btnClear.Text = "清除";
             this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
@@ -2623,162 +2623,162 @@
             // labelControl15
             // 
             this.labelControl15.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.labelControl15.Location = new System.Drawing.Point(616, 55);
-            this.labelControl15.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.labelControl15.Location = new System.Drawing.Point(1001, 89);
+            this.labelControl15.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.labelControl15.Name = "labelControl15";
-            this.labelControl15.Size = new System.Drawing.Size(120, 20);
+            this.labelControl15.Size = new System.Drawing.Size(192, 31);
             this.labelControl15.TabIndex = 663;
             this.labelControl15.Text = "导管相关血流感染";
             // 
             // rdoVASCULAR_ACCESS_ERRHYISIS
             // 
             this.rdoVASCULAR_ACCESS_ERRHYISIS.EditValue = "1";
-            this.rdoVASCULAR_ACCESS_ERRHYISIS.Location = new System.Drawing.Point(145, 49);
-            this.rdoVASCULAR_ACCESS_ERRHYISIS.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.rdoVASCULAR_ACCESS_ERRHYISIS.Location = new System.Drawing.Point(236, 79);
+            this.rdoVASCULAR_ACCESS_ERRHYISIS.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.rdoVASCULAR_ACCESS_ERRHYISIS.Name = "rdoVASCULAR_ACCESS_ERRHYISIS";
             this.rdoVASCULAR_ACCESS_ERRHYISIS.Properties.Items.AddRange(new DevExpress.XtraEditors.Controls.RadioGroupItem[] {
             new DevExpress.XtraEditors.Controls.RadioGroupItem("0", "有"),
             new DevExpress.XtraEditors.Controls.RadioGroupItem("1", "无")});
-            this.rdoVASCULAR_ACCESS_ERRHYISIS.Size = new System.Drawing.Size(109, 35);
+            this.rdoVASCULAR_ACCESS_ERRHYISIS.Size = new System.Drawing.Size(177, 56);
             this.rdoVASCULAR_ACCESS_ERRHYISIS.TabIndex = 531;
             // 
             // rdoVASCULAR_ACCESS_GLIDE
             // 
             this.rdoVASCULAR_ACCESS_GLIDE.EditValue = "0";
-            this.rdoVASCULAR_ACCESS_GLIDE.Location = new System.Drawing.Point(315, 13);
-            this.rdoVASCULAR_ACCESS_GLIDE.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.rdoVASCULAR_ACCESS_GLIDE.Location = new System.Drawing.Point(512, 21);
+            this.rdoVASCULAR_ACCESS_GLIDE.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.rdoVASCULAR_ACCESS_GLIDE.Name = "rdoVASCULAR_ACCESS_GLIDE";
             this.rdoVASCULAR_ACCESS_GLIDE.Properties.Items.AddRange(new DevExpress.XtraEditors.Controls.RadioGroupItem[] {
             new DevExpress.XtraEditors.Controls.RadioGroupItem("0", "有"),
             new DevExpress.XtraEditors.Controls.RadioGroupItem("1", "无")});
-            this.rdoVASCULAR_ACCESS_GLIDE.Size = new System.Drawing.Size(109, 35);
+            this.rdoVASCULAR_ACCESS_GLIDE.Size = new System.Drawing.Size(177, 56);
             this.rdoVASCULAR_ACCESS_GLIDE.TabIndex = 529;
             // 
             // rdoIN_BASKET_PLASTER_ALLERGY
             // 
             this.rdoIN_BASKET_PLASTER_ALLERGY.EditValue = "1";
-            this.rdoIN_BASKET_PLASTER_ALLERGY.Location = new System.Drawing.Point(315, 49);
-            this.rdoIN_BASKET_PLASTER_ALLERGY.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.rdoIN_BASKET_PLASTER_ALLERGY.Location = new System.Drawing.Point(512, 79);
+            this.rdoIN_BASKET_PLASTER_ALLERGY.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.rdoIN_BASKET_PLASTER_ALLERGY.Name = "rdoIN_BASKET_PLASTER_ALLERGY";
             this.rdoIN_BASKET_PLASTER_ALLERGY.Properties.Items.AddRange(new DevExpress.XtraEditors.Controls.RadioGroupItem[] {
             new DevExpress.XtraEditors.Controls.RadioGroupItem("0", "有"),
             new DevExpress.XtraEditors.Controls.RadioGroupItem("1", "无")});
-            this.rdoIN_BASKET_PLASTER_ALLERGY.Size = new System.Drawing.Size(109, 35);
+            this.rdoIN_BASKET_PLASTER_ALLERGY.Size = new System.Drawing.Size(177, 56);
             this.rdoIN_BASKET_PLASTER_ALLERGY.TabIndex = 531;
             // 
             // labelControl16
             // 
             this.labelControl16.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.labelControl16.Location = new System.Drawing.Point(273, 55);
-            this.labelControl16.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.labelControl16.Location = new System.Drawing.Point(444, 89);
+            this.labelControl16.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.labelControl16.Name = "labelControl16";
-            this.labelControl16.Size = new System.Drawing.Size(30, 20);
+            this.labelControl16.Size = new System.Drawing.Size(48, 31);
             this.labelControl16.TabIndex = 537;
             this.labelControl16.Text = "渗液";
             // 
             // rdoVASCULAR_ACCESS_THROMBUS
             // 
             this.rdoVASCULAR_ACCESS_THROMBUS.EditValue = "1";
-            this.rdoVASCULAR_ACCESS_THROMBUS.Location = new System.Drawing.Point(499, 49);
-            this.rdoVASCULAR_ACCESS_THROMBUS.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.rdoVASCULAR_ACCESS_THROMBUS.Location = new System.Drawing.Point(811, 79);
+            this.rdoVASCULAR_ACCESS_THROMBUS.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.rdoVASCULAR_ACCESS_THROMBUS.Name = "rdoVASCULAR_ACCESS_THROMBUS";
             this.rdoVASCULAR_ACCESS_THROMBUS.Properties.Items.AddRange(new DevExpress.XtraEditors.Controls.RadioGroupItem[] {
             new DevExpress.XtraEditors.Controls.RadioGroupItem("0", "有"),
             new DevExpress.XtraEditors.Controls.RadioGroupItem("1", "无")});
-            this.rdoVASCULAR_ACCESS_THROMBUS.Size = new System.Drawing.Size(109, 35);
+            this.rdoVASCULAR_ACCESS_THROMBUS.Size = new System.Drawing.Size(177, 56);
             this.rdoVASCULAR_ACCESS_THROMBUS.TabIndex = 532;
             // 
             // labelControl85
             // 
             this.labelControl85.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.labelControl85.Location = new System.Drawing.Point(83, 58);
-            this.labelControl85.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.labelControl85.Location = new System.Drawing.Point(135, 93);
+            this.labelControl85.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.labelControl85.Name = "labelControl85";
-            this.labelControl85.Size = new System.Drawing.Size(30, 20);
+            this.labelControl85.Size = new System.Drawing.Size(48, 31);
             this.labelControl85.TabIndex = 537;
             this.labelControl85.Text = "渗血";
             // 
             // rdoVASCULAR_ACCESS_SWELLING
             // 
             this.rdoVASCULAR_ACCESS_SWELLING.EditValue = "0";
-            this.rdoVASCULAR_ACCESS_SWELLING.Location = new System.Drawing.Point(739, 10);
-            this.rdoVASCULAR_ACCESS_SWELLING.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.rdoVASCULAR_ACCESS_SWELLING.Location = new System.Drawing.Point(1201, 16);
+            this.rdoVASCULAR_ACCESS_SWELLING.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.rdoVASCULAR_ACCESS_SWELLING.Name = "rdoVASCULAR_ACCESS_SWELLING";
             this.rdoVASCULAR_ACCESS_SWELLING.Properties.Items.AddRange(new DevExpress.XtraEditors.Controls.RadioGroupItem[] {
             new DevExpress.XtraEditors.Controls.RadioGroupItem("0", "有"),
             new DevExpress.XtraEditors.Controls.RadioGroupItem("1", "无")});
-            this.rdoVASCULAR_ACCESS_SWELLING.Size = new System.Drawing.Size(109, 35);
+            this.rdoVASCULAR_ACCESS_SWELLING.Size = new System.Drawing.Size(177, 56);
             this.rdoVASCULAR_ACCESS_SWELLING.TabIndex = 530;
             // 
             // labelControl83
             // 
             this.labelControl83.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.labelControl83.Location = new System.Drawing.Point(273, 19);
-            this.labelControl83.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.labelControl83.Location = new System.Drawing.Point(444, 31);
+            this.labelControl83.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.labelControl83.Name = "labelControl83";
-            this.labelControl83.Size = new System.Drawing.Size(30, 20);
+            this.labelControl83.Size = new System.Drawing.Size(48, 31);
             this.labelControl83.TabIndex = 528;
             this.labelControl83.Text = "滑脱";
             // 
             // labelControl88
             // 
             this.labelControl88.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.labelControl88.Location = new System.Drawing.Point(9, 15);
-            this.labelControl88.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.labelControl88.Location = new System.Drawing.Point(15, 24);
+            this.labelControl88.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.labelControl88.Name = "labelControl88";
-            this.labelControl88.Size = new System.Drawing.Size(75, 20);
+            this.labelControl88.Size = new System.Drawing.Size(120, 31);
             this.labelControl88.TabIndex = 539;
             this.labelControl88.Text = "导管评估：";
             // 
             // labelControl87
             // 
             this.labelControl87.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.labelControl87.Location = new System.Drawing.Point(438, 19);
-            this.labelControl87.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.labelControl87.Location = new System.Drawing.Point(712, 31);
+            this.labelControl87.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.labelControl87.Name = "labelControl87";
-            this.labelControl87.Size = new System.Drawing.Size(60, 20);
+            this.labelControl87.Size = new System.Drawing.Size(96, 31);
             this.labelControl87.TabIndex = 535;
             this.labelControl87.Text = "血流情况";
             // 
             // labelControl86
             // 
             this.labelControl86.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.labelControl86.Location = new System.Drawing.Point(438, 55);
-            this.labelControl86.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.labelControl86.Location = new System.Drawing.Point(712, 89);
+            this.labelControl86.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.labelControl86.Name = "labelControl86";
-            this.labelControl86.Size = new System.Drawing.Size(30, 20);
+            this.labelControl86.Size = new System.Drawing.Size(48, 31);
             this.labelControl86.TabIndex = 538;
             this.labelControl86.Text = "血栓";
             // 
             // labelControl63
             // 
             this.labelControl63.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.labelControl63.Location = new System.Drawing.Point(81, 15);
-            this.labelControl63.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.labelControl63.Location = new System.Drawing.Point(132, 24);
+            this.labelControl63.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.labelControl63.Name = "labelControl63";
-            this.labelControl63.Size = new System.Drawing.Size(60, 20);
+            this.labelControl63.Size = new System.Drawing.Size(96, 31);
             this.labelControl63.TabIndex = 534;
             this.labelControl63.Text = "固定牢固";
             // 
             // rdoVASCULAR_ACCESS_BLOOD
             // 
             this.rdoVASCULAR_ACCESS_BLOOD.EditValue = "0";
-            this.rdoVASCULAR_ACCESS_BLOOD.Location = new System.Drawing.Point(499, 15);
-            this.rdoVASCULAR_ACCESS_BLOOD.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.rdoVASCULAR_ACCESS_BLOOD.Location = new System.Drawing.Point(811, 24);
+            this.rdoVASCULAR_ACCESS_BLOOD.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.rdoVASCULAR_ACCESS_BLOOD.Name = "rdoVASCULAR_ACCESS_BLOOD";
             this.rdoVASCULAR_ACCESS_BLOOD.Properties.Items.AddRange(new DevExpress.XtraEditors.Controls.RadioGroupItem[] {
             new DevExpress.XtraEditors.Controls.RadioGroupItem("0", "良好"),
             new DevExpress.XtraEditors.Controls.RadioGroupItem("1", "欠佳")});
-            this.rdoVASCULAR_ACCESS_BLOOD.Size = new System.Drawing.Size(109, 35);
+            this.rdoVASCULAR_ACCESS_BLOOD.Size = new System.Drawing.Size(177, 56);
             this.rdoVASCULAR_ACCESS_BLOOD.TabIndex = 533;
             // 
             // labelControl84
             // 
             this.labelControl84.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.labelControl84.Location = new System.Drawing.Point(619, 19);
-            this.labelControl84.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.labelControl84.Location = new System.Drawing.Point(1006, 31);
+            this.labelControl84.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.labelControl84.Name = "labelControl84";
-            this.labelControl84.Size = new System.Drawing.Size(105, 20);
+            this.labelControl84.Size = new System.Drawing.Size(168, 31);
             this.labelControl84.TabIndex = 536;
             this.labelControl84.Text = "穿刺点局部红肿";
             // 
@@ -2798,44 +2798,44 @@
             this.xtraTabPageNLPG.Controls.Add(this.labelControl28);
             this.xtraTabPageNLPG.Controls.Add(this.rdoIN_BASKET_CLEAN);
             this.xtraTabPageNLPG.Controls.Add(this.labelControl32);
-            this.xtraTabPageNLPG.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.xtraTabPageNLPG.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.xtraTabPageNLPG.Name = "xtraTabPageNLPG";
-            this.xtraTabPageNLPG.Size = new System.Drawing.Size(1095, 90);
+            this.xtraTabPageNLPG.Size = new System.Drawing.Size(1776, 145);
             this.xtraTabPageNLPG.Text = "内瘘评估";
             // 
             // rdoIN_BASKET_NOISE
             // 
             this.rdoIN_BASKET_NOISE.EditValue = "0";
-            this.rdoIN_BASKET_NOISE.Location = new System.Drawing.Point(365, 10);
-            this.rdoIN_BASKET_NOISE.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.rdoIN_BASKET_NOISE.Location = new System.Drawing.Point(593, 16);
+            this.rdoIN_BASKET_NOISE.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.rdoIN_BASKET_NOISE.Name = "rdoIN_BASKET_NOISE";
             this.rdoIN_BASKET_NOISE.Properties.Items.AddRange(new DevExpress.XtraEditors.Controls.RadioGroupItem[] {
             new DevExpress.XtraEditors.Controls.RadioGroupItem("0", "强"),
             new DevExpress.XtraEditors.Controls.RadioGroupItem("1", "弱"),
             new DevExpress.XtraEditors.Controls.RadioGroupItem("2", "无")});
-            this.rdoIN_BASKET_NOISE.Size = new System.Drawing.Size(163, 35);
+            this.rdoIN_BASKET_NOISE.Size = new System.Drawing.Size(265, 56);
             this.rdoIN_BASKET_NOISE.TabIndex = 664;
             // 
             // rdoIN_BASKET_TREMOR
             // 
             this.rdoIN_BASKET_TREMOR.EditValue = "0";
-            this.rdoIN_BASKET_TREMOR.Location = new System.Drawing.Point(143, 10);
-            this.rdoIN_BASKET_TREMOR.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.rdoIN_BASKET_TREMOR.Location = new System.Drawing.Point(232, 16);
+            this.rdoIN_BASKET_TREMOR.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.rdoIN_BASKET_TREMOR.Name = "rdoIN_BASKET_TREMOR";
             this.rdoIN_BASKET_TREMOR.Properties.Items.AddRange(new DevExpress.XtraEditors.Controls.RadioGroupItem[] {
             new DevExpress.XtraEditors.Controls.RadioGroupItem("0", "强"),
             new DevExpress.XtraEditors.Controls.RadioGroupItem("1", "弱"),
             new DevExpress.XtraEditors.Controls.RadioGroupItem("2", "无")});
-            this.rdoIN_BASKET_TREMOR.Size = new System.Drawing.Size(163, 35);
+            this.rdoIN_BASKET_TREMOR.Size = new System.Drawing.Size(265, 56);
             this.rdoIN_BASKET_TREMOR.TabIndex = 664;
             // 
             // btnClear1
             // 
             this.btnClear1.ImageIndex = 13;
-            this.btnClear1.Location = new System.Drawing.Point(731, 17);
-            this.btnClear1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnClear1.Location = new System.Drawing.Point(1188, 27);
+            this.btnClear1.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.btnClear1.Name = "btnClear1";
-            this.btnClear1.Size = new System.Drawing.Size(63, 30);
+            this.btnClear1.Size = new System.Drawing.Size(102, 48);
             this.btnClear1.TabIndex = 679;
             this.btnClear1.Text = "清除";
             this.btnClear1.Click += new System.EventHandler(this.btnClear1_Click);
@@ -2843,76 +2843,76 @@
             // rdoIN_BASKET_ECCHYMOSIS
             // 
             this.rdoIN_BASKET_ECCHYMOSIS.EditValue = "1";
-            this.rdoIN_BASKET_ECCHYMOSIS.Location = new System.Drawing.Point(143, 51);
-            this.rdoIN_BASKET_ECCHYMOSIS.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.rdoIN_BASKET_ECCHYMOSIS.Location = new System.Drawing.Point(232, 82);
+            this.rdoIN_BASKET_ECCHYMOSIS.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.rdoIN_BASKET_ECCHYMOSIS.Name = "rdoIN_BASKET_ECCHYMOSIS";
             this.rdoIN_BASKET_ECCHYMOSIS.Properties.Items.AddRange(new DevExpress.XtraEditors.Controls.RadioGroupItem[] {
             new DevExpress.XtraEditors.Controls.RadioGroupItem("0", "有"),
             new DevExpress.XtraEditors.Controls.RadioGroupItem("1", "无")});
-            this.rdoIN_BASKET_ECCHYMOSIS.Size = new System.Drawing.Size(109, 35);
+            this.rdoIN_BASKET_ECCHYMOSIS.Size = new System.Drawing.Size(177, 56);
             this.rdoIN_BASKET_ECCHYMOSIS.TabIndex = 669;
             // 
             // labelControl18
             // 
             this.labelControl18.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.labelControl18.Location = new System.Drawing.Point(82, 57);
-            this.labelControl18.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.labelControl18.Location = new System.Drawing.Point(133, 92);
+            this.labelControl18.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.labelControl18.Name = "labelControl18";
-            this.labelControl18.Size = new System.Drawing.Size(30, 20);
+            this.labelControl18.Size = new System.Drawing.Size(48, 31);
             this.labelControl18.TabIndex = 675;
             this.labelControl18.Text = "渗液";
             // 
             // rdoIN_BASKET_VASCULAR_ELASTICITY
             // 
             this.rdoIN_BASKET_VASCULAR_ELASTICITY.EditValue = "1";
-            this.rdoIN_BASKET_VASCULAR_ELASTICITY.Location = new System.Drawing.Point(365, 53);
-            this.rdoIN_BASKET_VASCULAR_ELASTICITY.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.rdoIN_BASKET_VASCULAR_ELASTICITY.Location = new System.Drawing.Point(593, 85);
+            this.rdoIN_BASKET_VASCULAR_ELASTICITY.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.rdoIN_BASKET_VASCULAR_ELASTICITY.Name = "rdoIN_BASKET_VASCULAR_ELASTICITY";
             this.rdoIN_BASKET_VASCULAR_ELASTICITY.Properties.Items.AddRange(new DevExpress.XtraEditors.Controls.RadioGroupItem[] {
             new DevExpress.XtraEditors.Controls.RadioGroupItem("0", "有"),
             new DevExpress.XtraEditors.Controls.RadioGroupItem("1", "无")});
-            this.rdoIN_BASKET_VASCULAR_ELASTICITY.Size = new System.Drawing.Size(109, 35);
+            this.rdoIN_BASKET_VASCULAR_ELASTICITY.Size = new System.Drawing.Size(177, 56);
             this.rdoIN_BASKET_VASCULAR_ELASTICITY.TabIndex = 670;
             // 
             // rdoIN_BASKET_RED_HOT
             // 
             this.rdoIN_BASKET_RED_HOT.EditValue = "1";
-            this.rdoIN_BASKET_RED_HOT.Location = new System.Drawing.Point(595, 10);
-            this.rdoIN_BASKET_RED_HOT.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.rdoIN_BASKET_RED_HOT.Location = new System.Drawing.Point(967, 16);
+            this.rdoIN_BASKET_RED_HOT.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.rdoIN_BASKET_RED_HOT.Name = "rdoIN_BASKET_RED_HOT";
             this.rdoIN_BASKET_RED_HOT.Properties.Items.AddRange(new DevExpress.XtraEditors.Controls.RadioGroupItem[] {
             new DevExpress.XtraEditors.Controls.RadioGroupItem("0", "有"),
             new DevExpress.XtraEditors.Controls.RadioGroupItem("1", "无")});
-            this.rdoIN_BASKET_RED_HOT.Size = new System.Drawing.Size(109, 35);
+            this.rdoIN_BASKET_RED_HOT.Size = new System.Drawing.Size(177, 56);
             this.rdoIN_BASKET_RED_HOT.TabIndex = 667;
             // 
             // labelControl20
             // 
             this.labelControl20.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.labelControl20.Location = new System.Drawing.Point(330, 17);
-            this.labelControl20.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.labelControl20.Location = new System.Drawing.Point(536, 27);
+            this.labelControl20.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.labelControl20.Name = "labelControl20";
-            this.labelControl20.Size = new System.Drawing.Size(30, 20);
+            this.labelControl20.Size = new System.Drawing.Size(48, 31);
             this.labelControl20.TabIndex = 665;
             this.labelControl20.Text = "杂音";
             // 
             // labelControl21
             // 
             this.labelControl21.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.labelControl21.Location = new System.Drawing.Point(9, 15);
-            this.labelControl21.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.labelControl21.Location = new System.Drawing.Point(15, 24);
+            this.labelControl21.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.labelControl21.Name = "labelControl21";
-            this.labelControl21.Size = new System.Drawing.Size(75, 20);
+            this.labelControl21.Size = new System.Drawing.Size(120, 31);
             this.labelControl21.TabIndex = 678;
             this.labelControl21.Text = "内瘘评估：";
             // 
             // labelControl24
             // 
             this.labelControl24.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.labelControl24.Location = new System.Drawing.Point(766, 51);
-            this.labelControl24.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.labelControl24.Location = new System.Drawing.Point(1245, 82);
+            this.labelControl24.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.labelControl24.Name = "labelControl24";
-            this.labelControl24.Size = new System.Drawing.Size(60, 20);
+            this.labelControl24.Size = new System.Drawing.Size(96, 31);
             this.labelControl24.TabIndex = 673;
             this.labelControl24.Text = "血流情况";
             this.labelControl24.Visible = false;
@@ -2920,43 +2920,43 @@
             // labelControl25
             // 
             this.labelControl25.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.labelControl25.Location = new System.Drawing.Point(330, 59);
-            this.labelControl25.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.labelControl25.Location = new System.Drawing.Point(536, 95);
+            this.labelControl25.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.labelControl25.Name = "labelControl25";
-            this.labelControl25.Size = new System.Drawing.Size(30, 20);
+            this.labelControl25.Size = new System.Drawing.Size(48, 31);
             this.labelControl25.TabIndex = 677;
             this.labelControl25.Text = "血栓";
             // 
             // labelControl28
             // 
             this.labelControl28.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.labelControl28.Location = new System.Drawing.Point(82, 15);
-            this.labelControl28.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.labelControl28.Location = new System.Drawing.Point(133, 24);
+            this.labelControl28.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.labelControl28.Name = "labelControl28";
-            this.labelControl28.Size = new System.Drawing.Size(60, 20);
+            this.labelControl28.Size = new System.Drawing.Size(96, 31);
             this.labelControl28.TabIndex = 672;
             this.labelControl28.Text = "内瘘震颤";
             // 
             // rdoIN_BASKET_CLEAN
             // 
             this.rdoIN_BASKET_CLEAN.EditValue = "0";
-            this.rdoIN_BASKET_CLEAN.Location = new System.Drawing.Point(832, 44);
-            this.rdoIN_BASKET_CLEAN.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.rdoIN_BASKET_CLEAN.Location = new System.Drawing.Point(1352, 71);
+            this.rdoIN_BASKET_CLEAN.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.rdoIN_BASKET_CLEAN.Name = "rdoIN_BASKET_CLEAN";
             this.rdoIN_BASKET_CLEAN.Properties.Items.AddRange(new DevExpress.XtraEditors.Controls.RadioGroupItem[] {
             new DevExpress.XtraEditors.Controls.RadioGroupItem("0", "良好"),
             new DevExpress.XtraEditors.Controls.RadioGroupItem("1", "欠佳")});
-            this.rdoIN_BASKET_CLEAN.Size = new System.Drawing.Size(109, 35);
+            this.rdoIN_BASKET_CLEAN.Size = new System.Drawing.Size(177, 56);
             this.rdoIN_BASKET_CLEAN.TabIndex = 671;
             this.rdoIN_BASKET_CLEAN.Visible = false;
             // 
             // labelControl32
             // 
             this.labelControl32.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.labelControl32.Location = new System.Drawing.Point(545, 21);
-            this.labelControl32.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.labelControl32.Location = new System.Drawing.Point(886, 34);
+            this.labelControl32.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.labelControl32.Name = "labelControl32";
-            this.labelControl32.Size = new System.Drawing.Size(30, 20);
+            this.labelControl32.Size = new System.Drawing.Size(48, 31);
             this.labelControl32.TabIndex = 674;
             this.labelControl32.Text = "红肿";
             // 
@@ -2968,8 +2968,8 @@
             0,
             0});
             this.spnUF.EnterMoveNextControl = true;
-            this.spnUF.Location = new System.Drawing.Point(464, -1);
-            this.spnUF.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.spnUF.Location = new System.Drawing.Point(754, -2);
+            this.spnUF.Margin = new System.Windows.Forms.Padding(5, 8, 5, 8);
             this.spnUF.Name = "spnUF";
             this.spnUF.Properties.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F);
             this.spnUF.Properties.Appearance.ForeColor = System.Drawing.Color.Blue;
@@ -2977,17 +2977,17 @@
             this.spnUF.Properties.Appearance.Options.UseForeColor = true;
             this.spnUF.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton()});
-            this.spnUF.Size = new System.Drawing.Size(83, 26);
+            this.spnUF.Size = new System.Drawing.Size(135, 38);
             this.spnUF.TabIndex = 598;
             this.spnUF.Visible = false;
             // 
             // lab1
             // 
             this.lab1.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F);
-            this.lab1.Location = new System.Drawing.Point(225, 12);
-            this.lab1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.lab1.Location = new System.Drawing.Point(366, 19);
+            this.lab1.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.lab1.Name = "lab1";
-            this.lab1.Size = new System.Drawing.Size(45, 20);
+            this.lab1.Size = new System.Drawing.Size(72, 31);
             this.lab1.TabIndex = 595;
             this.lab1.Text = "超滤率";
             this.lab1.Visible = false;
@@ -3000,8 +3000,8 @@
             0,
             0});
             this.spnUFR2.EnterMoveNextControl = true;
-            this.spnUFR2.Location = new System.Drawing.Point(272, -1);
-            this.spnUFR2.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.spnUFR2.Location = new System.Drawing.Point(442, -2);
+            this.spnUFR2.Margin = new System.Windows.Forms.Padding(5, 8, 5, 8);
             this.spnUFR2.Name = "spnUFR2";
             this.spnUFR2.Properties.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F);
             this.spnUFR2.Properties.Appearance.ForeColor = System.Drawing.Color.Blue;
@@ -3010,17 +3010,17 @@
             this.spnUFR2.Properties.AutoHeight = false;
             this.spnUFR2.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton()});
-            this.spnUFR2.Size = new System.Drawing.Size(89, 24);
+            this.spnUFR2.Size = new System.Drawing.Size(145, 24);
             this.spnUFR2.TabIndex = 594;
             this.spnUFR2.Visible = false;
             // 
             // labelControl163
             // 
             this.labelControl163.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F);
-            this.labelControl163.Location = new System.Drawing.Point(368, 9);
-            this.labelControl163.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.labelControl163.Location = new System.Drawing.Point(598, 15);
+            this.labelControl163.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.labelControl163.Name = "labelControl163";
-            this.labelControl163.Size = new System.Drawing.Size(33, 20);
+            this.labelControl163.Size = new System.Drawing.Size(53, 31);
             this.labelControl163.TabIndex = 596;
             this.labelControl163.Text = "ml/h";
             this.labelControl163.Visible = false;
@@ -3028,10 +3028,10 @@
             // labelControl1
             // 
             this.labelControl1.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.labelControl1.Location = new System.Drawing.Point(430, 9);
-            this.labelControl1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.labelControl1.Location = new System.Drawing.Point(699, 15);
+            this.labelControl1.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.labelControl1.Name = "labelControl1";
-            this.labelControl1.Size = new System.Drawing.Size(30, 20);
+            this.labelControl1.Size = new System.Drawing.Size(48, 31);
             this.labelControl1.TabIndex = 597;
             this.labelControl1.Text = "超滤";
             this.labelControl1.Visible = false;
@@ -3039,10 +3039,10 @@
             // labelControl3
             // 
             this.labelControl3.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F);
-            this.labelControl3.Location = new System.Drawing.Point(554, 9);
-            this.labelControl3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.labelControl3.Location = new System.Drawing.Point(900, 15);
+            this.labelControl3.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.labelControl3.Name = "labelControl3";
-            this.labelControl3.Size = new System.Drawing.Size(33, 20);
+            this.labelControl3.Size = new System.Drawing.Size(53, 31);
             this.labelControl3.TabIndex = 599;
             this.labelControl3.Text = "ml/h";
             this.labelControl3.Visible = false;
@@ -3050,10 +3050,10 @@
             // labelControl4
             // 
             this.labelControl4.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.labelControl4.Location = new System.Drawing.Point(600, 9);
-            this.labelControl4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.labelControl4.Location = new System.Drawing.Point(975, 15);
+            this.labelControl4.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.labelControl4.Name = "labelControl4";
-            this.labelControl4.Size = new System.Drawing.Size(45, 20);
+            this.labelControl4.Size = new System.Drawing.Size(72, 31);
             this.labelControl4.TabIndex = 600;
             this.labelControl4.Text = "总超滤";
             this.labelControl4.Visible = false;
@@ -3066,8 +3066,8 @@
             0,
             0});
             this.spnSUM_UF.EnterMoveNextControl = true;
-            this.spnSUM_UF.Location = new System.Drawing.Point(648, -1);
-            this.spnSUM_UF.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.spnSUM_UF.Location = new System.Drawing.Point(1053, -2);
+            this.spnSUM_UF.Margin = new System.Windows.Forms.Padding(5, 8, 5, 8);
             this.spnSUM_UF.Name = "spnSUM_UF";
             this.spnSUM_UF.Properties.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F);
             this.spnSUM_UF.Properties.Appearance.ForeColor = System.Drawing.Color.Blue;
@@ -3075,17 +3075,17 @@
             this.spnSUM_UF.Properties.Appearance.Options.UseForeColor = true;
             this.spnSUM_UF.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton()});
-            this.spnSUM_UF.Size = new System.Drawing.Size(83, 26);
+            this.spnSUM_UF.Size = new System.Drawing.Size(135, 38);
             this.spnSUM_UF.TabIndex = 601;
             this.spnSUM_UF.Visible = false;
             // 
             // labelControl5
             // 
             this.labelControl5.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F);
-            this.labelControl5.Location = new System.Drawing.Point(738, 9);
-            this.labelControl5.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.labelControl5.Location = new System.Drawing.Point(1199, 15);
+            this.labelControl5.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.labelControl5.Name = "labelControl5";
-            this.labelControl5.Size = new System.Drawing.Size(18, 20);
+            this.labelControl5.Size = new System.Drawing.Size(28, 31);
             this.labelControl5.TabIndex = 602;
             this.labelControl5.Text = "ml";
             this.labelControl5.Visible = false;
@@ -3093,8 +3093,8 @@
             // cmbVEIN
             // 
             this.cmbVEIN.EnterMoveNextControl = true;
-            this.cmbVEIN.Location = new System.Drawing.Point(795, -1);
-            this.cmbVEIN.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.cmbVEIN.Location = new System.Drawing.Point(1292, -2);
+            this.cmbVEIN.Margin = new System.Windows.Forms.Padding(5, 8, 5, 8);
             this.cmbVEIN.Name = "cmbVEIN";
             this.cmbVEIN.Properties.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F);
             this.cmbVEIN.Properties.Appearance.ForeColor = System.Drawing.Color.Blue;
@@ -3109,7 +3109,7 @@
             this.cmbVEIN.Properties.LookAndFeel.SkinName = "ExtendBlue";
             this.cmbVEIN.Properties.PopupSizeable = true;
             this.cmbVEIN.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
-            this.cmbVEIN.Size = new System.Drawing.Size(63, 26);
+            this.cmbVEIN.Size = new System.Drawing.Size(102, 38);
             this.cmbVEIN.TabIndex = 572;
             this.cmbVEIN.Visible = false;
             // 
@@ -3122,17 +3122,17 @@
             this.panelControl4.Controls.Add(this.labelControl2);
             this.panelControl4.Controls.Add(this.cmbPRIMARY_NURSE);
             this.panelControl4.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panelControl4.Location = new System.Drawing.Point(0, 788);
-            this.panelControl4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.panelControl4.Location = new System.Drawing.Point(0, 1270);
+            this.panelControl4.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.panelControl4.Name = "panelControl4";
-            this.panelControl4.Size = new System.Drawing.Size(1200, 46);
+            this.panelControl4.Size = new System.Drawing.Size(1958, 74);
             this.panelControl4.TabIndex = 662;
             // 
             // lupPUNCTURE_NURSE
             // 
             this.lupPUNCTURE_NURSE.EnterMoveNextControl = true;
-            this.lupPUNCTURE_NURSE.Location = new System.Drawing.Point(579, 9);
-            this.lupPUNCTURE_NURSE.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.lupPUNCTURE_NURSE.Location = new System.Drawing.Point(941, 15);
+            this.lupPUNCTURE_NURSE.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.lupPUNCTURE_NURSE.Name = "lupPUNCTURE_NURSE";
             this.lupPUNCTURE_NURSE.Properties.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.lupPUNCTURE_NURSE.Properties.Appearance.ForeColor = System.Drawing.Color.Blue;
@@ -3142,14 +3142,14 @@
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.lupPUNCTURE_NURSE.Properties.LookAndFeel.SkinName = "ExtendBlue";
             this.lupPUNCTURE_NURSE.Properties.NullText = "";
-            this.lupPUNCTURE_NURSE.Size = new System.Drawing.Size(130, 26);
+            this.lupPUNCTURE_NURSE.Size = new System.Drawing.Size(211, 38);
             this.lupPUNCTURE_NURSE.TabIndex = 656;
             // 
             // cmbPRIMARY_DOCTOR
             // 
             this.cmbPRIMARY_DOCTOR.EnterMoveNextControl = true;
-            this.cmbPRIMARY_DOCTOR.Location = new System.Drawing.Point(173, 6);
-            this.cmbPRIMARY_DOCTOR.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.cmbPRIMARY_DOCTOR.Location = new System.Drawing.Point(281, 10);
+            this.cmbPRIMARY_DOCTOR.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.cmbPRIMARY_DOCTOR.Name = "cmbPRIMARY_DOCTOR";
             this.cmbPRIMARY_DOCTOR.Properties.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.cmbPRIMARY_DOCTOR.Properties.Appearance.ForeColor = System.Drawing.Color.Blue;
@@ -3159,44 +3159,44 @@
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.cmbPRIMARY_DOCTOR.Properties.LookAndFeel.SkinName = "ExtendBlue";
             this.cmbPRIMARY_DOCTOR.Properties.NullText = "";
-            this.cmbPRIMARY_DOCTOR.Size = new System.Drawing.Size(130, 26);
+            this.cmbPRIMARY_DOCTOR.Size = new System.Drawing.Size(211, 38);
             this.cmbPRIMARY_DOCTOR.TabIndex = 656;
             // 
             // labelControl26
             // 
             this.labelControl26.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl26.Location = new System.Drawing.Point(109, 10);
-            this.labelControl26.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.labelControl26.Location = new System.Drawing.Point(177, 16);
+            this.labelControl26.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.labelControl26.Name = "labelControl26";
-            this.labelControl26.Size = new System.Drawing.Size(60, 20);
+            this.labelControl26.Size = new System.Drawing.Size(96, 31);
             this.labelControl26.TabIndex = 657;
             this.labelControl26.Text = "责任医生";
             // 
             // labelControl27
             // 
             this.labelControl27.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl27.Location = new System.Drawing.Point(312, 12);
-            this.labelControl27.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.labelControl27.Location = new System.Drawing.Point(507, 19);
+            this.labelControl27.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.labelControl27.Name = "labelControl27";
-            this.labelControl27.Size = new System.Drawing.Size(60, 20);
+            this.labelControl27.Size = new System.Drawing.Size(96, 31);
             this.labelControl27.TabIndex = 659;
             this.labelControl27.Text = "责任护士";
             // 
             // labelControl2
             // 
             this.labelControl2.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl2.Location = new System.Drawing.Point(515, 13);
-            this.labelControl2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.labelControl2.Location = new System.Drawing.Point(837, 21);
+            this.labelControl2.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.labelControl2.Name = "labelControl2";
-            this.labelControl2.Size = new System.Drawing.Size(60, 20);
+            this.labelControl2.Size = new System.Drawing.Size(96, 31);
             this.labelControl2.TabIndex = 657;
             this.labelControl2.Text = "穿刺护士";
             // 
             // cmbPRIMARY_NURSE
             // 
             this.cmbPRIMARY_NURSE.EnterMoveNextControl = true;
-            this.cmbPRIMARY_NURSE.Location = new System.Drawing.Point(376, 8);
-            this.cmbPRIMARY_NURSE.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.cmbPRIMARY_NURSE.Location = new System.Drawing.Point(611, 13);
+            this.cmbPRIMARY_NURSE.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.cmbPRIMARY_NURSE.Name = "cmbPRIMARY_NURSE";
             this.cmbPRIMARY_NURSE.Properties.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.cmbPRIMARY_NURSE.Properties.Appearance.ForeColor = System.Drawing.Color.Blue;
@@ -3206,7 +3206,7 @@
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.cmbPRIMARY_NURSE.Properties.LookAndFeel.SkinName = "ExtendBlue";
             this.cmbPRIMARY_NURSE.Properties.NullText = "";
-            this.cmbPRIMARY_NURSE.Size = new System.Drawing.Size(130, 26);
+            this.cmbPRIMARY_NURSE.Size = new System.Drawing.Size(211, 38);
             this.cmbPRIMARY_NURSE.TabIndex = 658;
             // 
             // tab2
@@ -3215,9 +3215,9 @@
             this.tab2.Appearance.Header.Options.UseFont = true;
             this.tab2.Controls.Add(this.panelControl1);
             this.tab2.Controls.Add(this.panDrug);
-            this.tab2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.tab2.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.tab2.Name = "tab2";
-            this.tab2.Size = new System.Drawing.Size(1221, 810);
+            this.tab2.Size = new System.Drawing.Size(1992, 1306);
             this.tab2.Text = "临时医嘱";
             // 
             // panelControl1
@@ -3226,20 +3226,20 @@
             this.panelControl1.Controls.Add(this.gridControl4);
             this.panelControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelControl1.Location = new System.Drawing.Point(0, 0);
-            this.panelControl1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.panelControl1.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.panelControl1.Name = "panelControl1";
-            this.panelControl1.Size = new System.Drawing.Size(1221, 562);
+            this.panelControl1.Size = new System.Drawing.Size(1992, 906);
             this.panelControl1.TabIndex = 2;
             // 
             // gridControl4
             // 
             this.gridControl4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gridControl4.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.gridControl4.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.gridControl4.Location = new System.Drawing.Point(0, 0);
             this.gridControl4.MainView = this.gridView4;
-            this.gridControl4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.gridControl4.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.gridControl4.Name = "gridControl4";
-            this.gridControl4.Size = new System.Drawing.Size(1221, 562);
+            this.gridControl4.Size = new System.Drawing.Size(1992, 906);
             this.gridControl4.TabIndex = 5;
             this.gridControl4.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView4,
@@ -3493,18 +3493,18 @@
             this.panDrug.Controls.Add(this.lupDRUG_TIMETYPE);
             this.panDrug.Controls.Add(this.cbmDRUG_DAYS);
             this.panDrug.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panDrug.Location = new System.Drawing.Point(0, 562);
-            this.panDrug.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.panDrug.Location = new System.Drawing.Point(0, 906);
+            this.panDrug.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.panDrug.Name = "panDrug";
-            this.panDrug.Size = new System.Drawing.Size(1221, 248);
+            this.panDrug.Size = new System.Drawing.Size(1992, 400);
             this.panDrug.TabIndex = 3;
             // 
             // txtEXEC_TIME
             // 
             this.txtEXEC_TIME.EditValue = new System.DateTime(2013, 4, 8, 0, 0, 0, 0);
             this.txtEXEC_TIME.Enabled = false;
-            this.txtEXEC_TIME.Location = new System.Drawing.Point(491, 67);
-            this.txtEXEC_TIME.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtEXEC_TIME.Location = new System.Drawing.Point(798, 108);
+            this.txtEXEC_TIME.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.txtEXEC_TIME.Name = "txtEXEC_TIME";
             this.txtEXEC_TIME.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
             this.txtEXEC_TIME.Properties.Appearance.ForeColor = System.Drawing.Color.Blue;
@@ -3512,15 +3512,15 @@
             this.txtEXEC_TIME.Properties.Appearance.Options.UseForeColor = true;
             this.txtEXEC_TIME.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton()});
-            this.txtEXEC_TIME.Size = new System.Drawing.Size(101, 24);
+            this.txtEXEC_TIME.Size = new System.Drawing.Size(164, 36);
             this.txtEXEC_TIME.TabIndex = 12;
             // 
             // txtEXEC_DATE
             // 
             this.txtEXEC_DATE.EditValue = null;
             this.txtEXEC_DATE.EnterMoveNextControl = true;
-            this.txtEXEC_DATE.Location = new System.Drawing.Point(387, 66);
-            this.txtEXEC_DATE.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.txtEXEC_DATE.Location = new System.Drawing.Point(629, 106);
+            this.txtEXEC_DATE.Margin = new System.Windows.Forms.Padding(5, 8, 5, 8);
             this.txtEXEC_DATE.Name = "txtEXEC_DATE";
             this.txtEXEC_DATE.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
             this.txtEXEC_DATE.Properties.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
@@ -3533,24 +3533,24 @@
             this.txtEXEC_DATE.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton()});
             this.txtEXEC_DATE.Properties.LookAndFeel.SkinName = "ExtendBlue";
-            this.txtEXEC_DATE.Size = new System.Drawing.Size(101, 26);
+            this.txtEXEC_DATE.Size = new System.Drawing.Size(164, 38);
             this.txtEXEC_DATE.TabIndex = 11;
             // 
             // labelControl76
             // 
             this.labelControl76.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl76.Location = new System.Drawing.Point(328, 68);
-            this.labelControl76.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.labelControl76.Location = new System.Drawing.Point(533, 110);
+            this.labelControl76.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.labelControl76.Name = "labelControl76";
-            this.labelControl76.Size = new System.Drawing.Size(60, 20);
+            this.labelControl76.Size = new System.Drawing.Size(96, 31);
             this.labelControl76.TabIndex = 402;
             this.labelControl76.Text = "执行时间";
             // 
             // lopDISPENSINGNURSE
             // 
             this.lopDISPENSINGNURSE.EnterMoveNextControl = true;
-            this.lopDISPENSINGNURSE.Location = new System.Drawing.Point(657, 66);
-            this.lopDISPENSINGNURSE.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.lopDISPENSINGNURSE.Location = new System.Drawing.Point(1068, 106);
+            this.lopDISPENSINGNURSE.Margin = new System.Windows.Forms.Padding(5, 8, 5, 8);
             this.lopDISPENSINGNURSE.Name = "lopDISPENSINGNURSE";
             this.lopDISPENSINGNURSE.Properties.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F);
             this.lopDISPENSINGNURSE.Properties.Appearance.ForeColor = System.Drawing.Color.Blue;
@@ -3559,17 +3559,17 @@
             this.lopDISPENSINGNURSE.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.lopDISPENSINGNURSE.Properties.LookAndFeel.SkinName = "ExtendBlue";
-            this.lopDISPENSINGNURSE.Size = new System.Drawing.Size(113, 26);
+            this.lopDISPENSINGNURSE.Size = new System.Drawing.Size(184, 38);
             this.lopDISPENSINGNURSE.TabIndex = 13;
             this.lopDISPENSINGNURSE.Visible = false;
             // 
             // labelControl12
             // 
             this.labelControl12.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl12.Location = new System.Drawing.Point(595, 68);
-            this.labelControl12.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.labelControl12.Location = new System.Drawing.Point(967, 110);
+            this.labelControl12.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.labelControl12.Name = "labelControl12";
-            this.labelControl12.Size = new System.Drawing.Size(60, 20);
+            this.labelControl12.Size = new System.Drawing.Size(96, 31);
             this.labelControl12.TabIndex = 400;
             this.labelControl12.Text = "摆药护士";
             this.labelControl12.Visible = false;
@@ -3577,8 +3577,8 @@
             // lopCHECKNURSE
             // 
             this.lopCHECKNURSE.EnterMoveNextControl = true;
-            this.lopCHECKNURSE.Location = new System.Drawing.Point(839, 66);
-            this.lopCHECKNURSE.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.lopCHECKNURSE.Location = new System.Drawing.Point(1363, 106);
+            this.lopCHECKNURSE.Margin = new System.Windows.Forms.Padding(5, 8, 5, 8);
             this.lopCHECKNURSE.Name = "lopCHECKNURSE";
             this.lopCHECKNURSE.Properties.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F);
             this.lopCHECKNURSE.Properties.Appearance.ForeColor = System.Drawing.Color.Blue;
@@ -3587,17 +3587,17 @@
             this.lopCHECKNURSE.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.lopCHECKNURSE.Properties.LookAndFeel.SkinName = "ExtendBlue";
-            this.lopCHECKNURSE.Size = new System.Drawing.Size(113, 26);
+            this.lopCHECKNURSE.Size = new System.Drawing.Size(184, 38);
             this.lopCHECKNURSE.TabIndex = 13;
             this.lopCHECKNURSE.Visible = false;
             // 
             // labelControl11
             // 
             this.labelControl11.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl11.Location = new System.Drawing.Point(777, 68);
-            this.labelControl11.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.labelControl11.Location = new System.Drawing.Point(1263, 110);
+            this.labelControl11.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.labelControl11.Name = "labelControl11";
-            this.labelControl11.Size = new System.Drawing.Size(60, 20);
+            this.labelControl11.Size = new System.Drawing.Size(96, 31);
             this.labelControl11.TabIndex = 400;
             this.labelControl11.Text = "核对护士";
             this.labelControl11.Visible = false;
@@ -3605,8 +3605,8 @@
             // lopDRUG_NURSE_ID
             // 
             this.lopDRUG_NURSE_ID.EnterMoveNextControl = true;
-            this.lopDRUG_NURSE_ID.Location = new System.Drawing.Point(862, 66);
-            this.lopDRUG_NURSE_ID.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.lopDRUG_NURSE_ID.Location = new System.Drawing.Point(1401, 106);
+            this.lopDRUG_NURSE_ID.Margin = new System.Windows.Forms.Padding(5, 8, 5, 8);
             this.lopDRUG_NURSE_ID.Name = "lopDRUG_NURSE_ID";
             this.lopDRUG_NURSE_ID.Properties.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F);
             this.lopDRUG_NURSE_ID.Properties.Appearance.ForeColor = System.Drawing.Color.Blue;
@@ -3615,23 +3615,23 @@
             this.lopDRUG_NURSE_ID.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.lopDRUG_NURSE_ID.Properties.LookAndFeel.SkinName = "ExtendBlue";
-            this.lopDRUG_NURSE_ID.Size = new System.Drawing.Size(113, 26);
+            this.lopDRUG_NURSE_ID.Size = new System.Drawing.Size(184, 38);
             this.lopDRUG_NURSE_ID.TabIndex = 13;
             // 
             // labelControl75
             // 
             this.labelControl75.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl75.Location = new System.Drawing.Point(800, 68);
-            this.labelControl75.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.labelControl75.Location = new System.Drawing.Point(1300, 110);
+            this.labelControl75.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.labelControl75.Name = "labelControl75";
-            this.labelControl75.Size = new System.Drawing.Size(60, 20);
+            this.labelControl75.Size = new System.Drawing.Size(96, 31);
             this.labelControl75.TabIndex = 400;
             this.labelControl75.Text = "执行护士";
             // 
             // lopSTATUS
             // 
-            this.lopSTATUS.Location = new System.Drawing.Point(654, 64);
-            this.lopSTATUS.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.lopSTATUS.Location = new System.Drawing.Point(1063, 103);
+            this.lopSTATUS.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.lopSTATUS.Name = "lopSTATUS";
             this.lopSTATUS.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
             this.lopSTATUS.Properties.Appearance.ForeColor = System.Drawing.Color.Blue;
@@ -3643,15 +3643,15 @@
             "已执行",
             "未执行",
             "退回"});
-            this.lopSTATUS.Size = new System.Drawing.Size(99, 24);
+            this.lopSTATUS.Size = new System.Drawing.Size(161, 36);
             this.lopSTATUS.TabIndex = 10;
             this.lopSTATUS.Visible = false;
             // 
             // txtDRUG_NAME
             // 
             this.txtDRUG_NAME.EnterMoveNextControl = true;
-            this.txtDRUG_NAME.Location = new System.Drawing.Point(254, 19);
-            this.txtDRUG_NAME.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.txtDRUG_NAME.Location = new System.Drawing.Point(413, 31);
+            this.txtDRUG_NAME.Margin = new System.Windows.Forms.Padding(5, 8, 5, 8);
             this.txtDRUG_NAME.Name = "txtDRUG_NAME";
             this.txtDRUG_NAME.Properties.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F);
             this.txtDRUG_NAME.Properties.Appearance.ForeColor = System.Drawing.Color.Blue;
@@ -3660,7 +3660,7 @@
             this.txtDRUG_NAME.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.txtDRUG_NAME.Properties.LookAndFeel.SkinName = "ExtendBlue";
-            this.txtDRUG_NAME.Size = new System.Drawing.Size(237, 26);
+            this.txtDRUG_NAME.Size = new System.Drawing.Size(385, 38);
             this.txtDRUG_NAME.TabIndex = 1;
             // 
             // lopDOCTOR_ID
@@ -3668,8 +3668,8 @@
             this.lopDOCTOR_ID.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lopDOCTOR_ID.EnterMoveNextControl = true;
-            this.lopDOCTOR_ID.Location = new System.Drawing.Point(862, 19);
-            this.lopDOCTOR_ID.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.lopDOCTOR_ID.Location = new System.Drawing.Point(1401, 31);
+            this.lopDOCTOR_ID.Margin = new System.Windows.Forms.Padding(5, 8, 5, 8);
             this.lopDOCTOR_ID.Name = "lopDOCTOR_ID";
             this.lopDOCTOR_ID.Properties.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F);
             this.lopDOCTOR_ID.Properties.Appearance.ForeColor = System.Drawing.Color.Blue;
@@ -3678,16 +3678,16 @@
             this.lopDOCTOR_ID.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.lopDOCTOR_ID.Properties.LookAndFeel.SkinName = "ExtendBlue";
-            this.lopDOCTOR_ID.Size = new System.Drawing.Size(341, 26);
+            this.lopDOCTOR_ID.Size = new System.Drawing.Size(562, 38);
             this.lopDOCTOR_ID.TabIndex = 5;
             // 
             // labelControl73
             // 
             this.labelControl73.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl73.Location = new System.Drawing.Point(800, 23);
-            this.labelControl73.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.labelControl73.Location = new System.Drawing.Point(1300, 37);
+            this.labelControl73.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.labelControl73.Name = "labelControl73";
-            this.labelControl73.Size = new System.Drawing.Size(60, 20);
+            this.labelControl73.Size = new System.Drawing.Size(96, 31);
             this.labelControl73.TabIndex = 396;
             this.labelControl73.Text = "开方医生";
             // 
@@ -3699,8 +3699,8 @@
             0,
             0});
             this.spnDRUG_TIMES.EnterMoveNextControl = true;
-            this.spnDRUG_TIMES.Location = new System.Drawing.Point(173, 66);
-            this.spnDRUG_TIMES.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.spnDRUG_TIMES.Location = new System.Drawing.Point(281, 106);
+            this.spnDRUG_TIMES.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.spnDRUG_TIMES.Name = "spnDRUG_TIMES";
             this.spnDRUG_TIMES.Properties.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.spnDRUG_TIMES.Properties.Appearance.ForeColor = System.Drawing.Color.Blue;
@@ -3708,15 +3708,15 @@
             this.spnDRUG_TIMES.Properties.Appearance.Options.UseForeColor = true;
             this.spnDRUG_TIMES.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton()});
-            this.spnDRUG_TIMES.Size = new System.Drawing.Size(54, 26);
+            this.spnDRUG_TIMES.Size = new System.Drawing.Size(88, 38);
             this.spnDRUG_TIMES.TabIndex = 7;
             // 
             // txtCREATE_DATE
             // 
             this.txtCREATE_DATE.EditValue = null;
             this.txtCREATE_DATE.EnterMoveNextControl = true;
-            this.txtCREATE_DATE.Location = new System.Drawing.Point(90, 18);
-            this.txtCREATE_DATE.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.txtCREATE_DATE.Location = new System.Drawing.Point(146, 29);
+            this.txtCREATE_DATE.Margin = new System.Windows.Forms.Padding(5, 8, 5, 8);
             this.txtCREATE_DATE.Name = "txtCREATE_DATE";
             this.txtCREATE_DATE.Properties.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.txtCREATE_DATE.Properties.Appearance.ForeColor = System.Drawing.Color.Blue;
@@ -3727,16 +3727,16 @@
             this.txtCREATE_DATE.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton()});
             this.txtCREATE_DATE.Properties.LookAndFeel.SkinName = "ExtendBlue";
-            this.txtCREATE_DATE.Size = new System.Drawing.Size(101, 26);
+            this.txtCREATE_DATE.Size = new System.Drawing.Size(164, 38);
             this.txtCREATE_DATE.TabIndex = 0;
             // 
             // labelControl72
             // 
             this.labelControl72.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl72.Location = new System.Drawing.Point(595, 67);
-            this.labelControl72.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.labelControl72.Location = new System.Drawing.Point(967, 108);
+            this.labelControl72.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.labelControl72.Name = "labelControl72";
-            this.labelControl72.Size = new System.Drawing.Size(60, 20);
+            this.labelControl72.Size = new System.Drawing.Size(96, 31);
             this.labelControl72.TabIndex = 9;
             this.labelControl72.Text = "执行状态";
             this.labelControl72.Visible = false;
@@ -3744,10 +3744,10 @@
             // labelControl57
             // 
             this.labelControl57.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl57.Location = new System.Drawing.Point(25, 68);
-            this.labelControl57.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.labelControl57.Location = new System.Drawing.Point(41, 110);
+            this.labelControl57.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.labelControl57.Name = "labelControl57";
-            this.labelControl57.Size = new System.Drawing.Size(60, 20);
+            this.labelControl57.Size = new System.Drawing.Size(96, 31);
             this.labelControl57.TabIndex = 392;
             this.labelControl57.Text = "给药阶段";
             // 
@@ -3755,39 +3755,39 @@
             // 
             this.txtREMARK.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtREMARK.Location = new System.Drawing.Point(90, 103);
-            this.txtREMARK.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtREMARK.Location = new System.Drawing.Point(146, 166);
+            this.txtREMARK.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.txtREMARK.Name = "txtREMARK";
             this.txtREMARK.Properties.Appearance.ForeColor = System.Drawing.Color.Blue;
             this.txtREMARK.Properties.Appearance.Options.UseForeColor = true;
-            this.txtREMARK.Size = new System.Drawing.Size(1097, 132);
+            this.txtREMARK.Size = new System.Drawing.Size(1791, 213);
             this.txtREMARK.TabIndex = 14;
             // 
             // labelControl56
             // 
             this.labelControl56.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl56.Location = new System.Drawing.Point(25, 167);
-            this.labelControl56.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.labelControl56.Location = new System.Drawing.Point(41, 269);
+            this.labelControl56.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.labelControl56.Name = "labelControl56";
-            this.labelControl56.Size = new System.Drawing.Size(30, 20);
+            this.labelControl56.Size = new System.Drawing.Size(48, 31);
             this.labelControl56.TabIndex = 390;
             this.labelControl56.Text = "备注";
             // 
             // labelControl55
             // 
             this.labelControl55.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F);
-            this.labelControl55.Location = new System.Drawing.Point(230, 69);
-            this.labelControl55.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.labelControl55.Location = new System.Drawing.Point(374, 111);
+            this.labelControl55.Margin = new System.Windows.Forms.Padding(5, 8, 5, 8);
             this.labelControl55.Name = "labelControl55";
-            this.labelControl55.Size = new System.Drawing.Size(15, 20);
+            this.labelControl55.Size = new System.Drawing.Size(24, 31);
             this.labelControl55.TabIndex = 388;
             this.labelControl55.Text = "周";
             // 
             // cmbDRUG_MODE
             // 
             this.cmbDRUG_MODE.EnterMoveNextControl = true;
-            this.cmbDRUG_MODE.Location = new System.Drawing.Point(682, 19);
-            this.cmbDRUG_MODE.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.cmbDRUG_MODE.Location = new System.Drawing.Point(1108, 31);
+            this.cmbDRUG_MODE.Margin = new System.Windows.Forms.Padding(5, 8, 5, 8);
             this.cmbDRUG_MODE.Name = "cmbDRUG_MODE";
             this.cmbDRUG_MODE.Properties.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F);
             this.cmbDRUG_MODE.Properties.Appearance.ForeColor = System.Drawing.Color.Blue;
@@ -3796,15 +3796,15 @@
             this.cmbDRUG_MODE.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.cmbDRUG_MODE.Properties.LookAndFeel.SkinName = "ExtendBlue";
-            this.cmbDRUG_MODE.Size = new System.Drawing.Size(113, 26);
+            this.cmbDRUG_MODE.Size = new System.Drawing.Size(184, 38);
             this.cmbDRUG_MODE.TabIndex = 4;
             this.cmbDRUG_MODE.EditValueChanged += new System.EventHandler(this.cmbDRUG_MODE_EditValueChanged);
             // 
             // cmbDOSAGE_UNITS
             // 
             this.cmbDOSAGE_UNITS.EnterMoveNextControl = true;
-            this.cmbDOSAGE_UNITS.Location = new System.Drawing.Point(581, 19);
-            this.cmbDOSAGE_UNITS.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.cmbDOSAGE_UNITS.Location = new System.Drawing.Point(944, 31);
+            this.cmbDOSAGE_UNITS.Margin = new System.Windows.Forms.Padding(5, 8, 5, 8);
             this.cmbDOSAGE_UNITS.Name = "cmbDOSAGE_UNITS";
             this.cmbDOSAGE_UNITS.Properties.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F);
             this.cmbDOSAGE_UNITS.Properties.Appearance.ForeColor = System.Drawing.Color.Blue;
@@ -3813,63 +3813,63 @@
             this.cmbDOSAGE_UNITS.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.cmbDOSAGE_UNITS.Properties.LookAndFeel.SkinName = "ExtendBlue";
-            this.cmbDOSAGE_UNITS.Size = new System.Drawing.Size(98, 26);
+            this.cmbDOSAGE_UNITS.Size = new System.Drawing.Size(159, 38);
             this.cmbDOSAGE_UNITS.TabIndex = 3;
             // 
             // txtCURE_DRUG_ID
             // 
             this.txtCURE_DRUG_ID.EnterMoveNextControl = true;
-            this.txtCURE_DRUG_ID.Location = new System.Drawing.Point(90, 190);
-            this.txtCURE_DRUG_ID.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.txtCURE_DRUG_ID.Location = new System.Drawing.Point(146, 306);
+            this.txtCURE_DRUG_ID.Margin = new System.Windows.Forms.Padding(5, 8, 5, 8);
             this.txtCURE_DRUG_ID.Name = "txtCURE_DRUG_ID";
             this.txtCURE_DRUG_ID.Properties.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F);
             this.txtCURE_DRUG_ID.Properties.Appearance.ForeColor = System.Drawing.Color.Blue;
             this.txtCURE_DRUG_ID.Properties.Appearance.Options.UseFont = true;
             this.txtCURE_DRUG_ID.Properties.Appearance.Options.UseForeColor = true;
             this.txtCURE_DRUG_ID.Properties.LookAndFeel.SkinName = "ExtendBlue";
-            this.txtCURE_DRUG_ID.Size = new System.Drawing.Size(1, 26);
+            this.txtCURE_DRUG_ID.Size = new System.Drawing.Size(2, 38);
             this.txtCURE_DRUG_ID.TabIndex = 2;
             this.txtCURE_DRUG_ID.Visible = false;
             // 
             // txtDOSAGE
             // 
             this.txtDOSAGE.EnterMoveNextControl = true;
-            this.txtDOSAGE.Location = new System.Drawing.Point(491, 19);
-            this.txtDOSAGE.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.txtDOSAGE.Location = new System.Drawing.Point(798, 31);
+            this.txtDOSAGE.Margin = new System.Windows.Forms.Padding(5, 8, 5, 8);
             this.txtDOSAGE.Name = "txtDOSAGE";
             this.txtDOSAGE.Properties.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F);
             this.txtDOSAGE.Properties.Appearance.ForeColor = System.Drawing.Color.Blue;
             this.txtDOSAGE.Properties.Appearance.Options.UseFont = true;
             this.txtDOSAGE.Properties.Appearance.Options.UseForeColor = true;
             this.txtDOSAGE.Properties.LookAndFeel.SkinName = "ExtendBlue";
-            this.txtDOSAGE.Size = new System.Drawing.Size(87, 26);
+            this.txtDOSAGE.Size = new System.Drawing.Size(141, 38);
             this.txtDOSAGE.TabIndex = 2;
             // 
             // labelControl54
             // 
             this.labelControl54.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F);
-            this.labelControl54.Location = new System.Drawing.Point(197, 22);
-            this.labelControl54.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.labelControl54.Location = new System.Drawing.Point(320, 35);
+            this.labelControl54.Margin = new System.Windows.Forms.Padding(5, 8, 5, 8);
             this.labelControl54.Name = "labelControl54";
-            this.labelControl54.Size = new System.Drawing.Size(60, 20);
+            this.labelControl54.Size = new System.Drawing.Size(96, 31);
             this.labelControl54.TabIndex = 384;
             this.labelControl54.Text = "项目名称";
             // 
             // labelControl53
             // 
             this.labelControl53.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl53.Location = new System.Drawing.Point(25, 23);
-            this.labelControl53.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.labelControl53.Location = new System.Drawing.Point(41, 37);
+            this.labelControl53.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.labelControl53.Name = "labelControl53";
-            this.labelControl53.Size = new System.Drawing.Size(60, 20);
+            this.labelControl53.Size = new System.Drawing.Size(96, 31);
             this.labelControl53.TabIndex = 380;
             this.labelControl53.Text = "录入时间";
             // 
             // lupDRUG_TIMETYPE
             // 
             this.lupDRUG_TIMETYPE.EditValue = "";
-            this.lupDRUG_TIMETYPE.Location = new System.Drawing.Point(90, 64);
-            this.lupDRUG_TIMETYPE.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.lupDRUG_TIMETYPE.Location = new System.Drawing.Point(146, 103);
+            this.lupDRUG_TIMETYPE.Margin = new System.Windows.Forms.Padding(5, 8, 5, 8);
             this.lupDRUG_TIMETYPE.Name = "lupDRUG_TIMETYPE";
             this.lupDRUG_TIMETYPE.Properties.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F);
             this.lupDRUG_TIMETYPE.Properties.Appearance.ForeColor = System.Drawing.Color.Blue;
@@ -3886,14 +3886,14 @@
             this.lupDRUG_TIMETYPE.Properties.NullText = "[EditValue is null]";
             this.lupDRUG_TIMETYPE.Properties.PopupSizeable = true;
             this.lupDRUG_TIMETYPE.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
-            this.lupDRUG_TIMETYPE.Size = new System.Drawing.Size(81, 26);
+            this.lupDRUG_TIMETYPE.Size = new System.Drawing.Size(132, 38);
             this.lupDRUG_TIMETYPE.TabIndex = 6;
             // 
             // cbmDRUG_DAYS
             // 
             this.cbmDRUG_DAYS.EditValue = "";
-            this.cbmDRUG_DAYS.Location = new System.Drawing.Point(246, 66);
-            this.cbmDRUG_DAYS.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.cbmDRUG_DAYS.Location = new System.Drawing.Point(400, 106);
+            this.cbmDRUG_DAYS.Margin = new System.Windows.Forms.Padding(5, 8, 5, 8);
             this.cbmDRUG_DAYS.Name = "cbmDRUG_DAYS";
             this.cbmDRUG_DAYS.Properties.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F);
             this.cbmDRUG_DAYS.Properties.Appearance.ForeColor = System.Drawing.Color.Blue;
@@ -3911,7 +3911,7 @@
             new DevExpress.XtraEditors.Controls.CheckedListBoxItem("7")});
             this.cbmDRUG_DAYS.Properties.LookAndFeel.SkinName = "ExtendBlue";
             this.cbmDRUG_DAYS.Properties.NullText = "[EditValue is null]";
-            this.cbmDRUG_DAYS.Size = new System.Drawing.Size(70, 26);
+            this.cbmDRUG_DAYS.Size = new System.Drawing.Size(114, 38);
             this.cbmDRUG_DAYS.TabIndex = 8;
             // 
             // tab3
@@ -3920,20 +3920,20 @@
             this.tab3.Appearance.Header.Options.UseFont = true;
             this.tab3.Controls.Add(this.gridControl1);
             this.tab3.Controls.Add(this.panParamter);
-            this.tab3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.tab3.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.tab3.Name = "tab3";
-            this.tab3.Size = new System.Drawing.Size(1221, 810);
+            this.tab3.Size = new System.Drawing.Size(1992, 1306);
             this.tab3.Text = "透析参数";
             // 
             // gridControl1
             // 
             this.gridControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gridControl1.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.gridControl1.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.gridControl1.Location = new System.Drawing.Point(0, 0);
             this.gridControl1.MainView = this.gridView1;
-            this.gridControl1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.gridControl1.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.gridControl1.Name = "gridControl1";
-            this.gridControl1.Size = new System.Drawing.Size(1221, 495);
+            this.gridControl1.Size = new System.Drawing.Size(1992, 798);
             this.gridControl1.TabIndex = 7;
             this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
@@ -4176,19 +4176,19 @@
             this.panParamter.Controls.Add(this.lupTempDrug);
             this.panParamter.Controls.Add(this.txtHEMODIALYSIS_PARAMETERS_ID);
             this.panParamter.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panParamter.Location = new System.Drawing.Point(0, 495);
-            this.panParamter.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.panParamter.Location = new System.Drawing.Point(0, 798);
+            this.panParamter.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.panParamter.Name = "panParamter";
-            this.panParamter.Size = new System.Drawing.Size(1221, 315);
+            this.panParamter.Size = new System.Drawing.Size(1992, 508);
             this.panParamter.TabIndex = 2;
             // 
             // labelControl13
             // 
             this.labelControl13.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F);
-            this.labelControl13.Location = new System.Drawing.Point(177, 104);
-            this.labelControl13.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.labelControl13.Location = new System.Drawing.Point(288, 168);
+            this.labelControl13.Margin = new System.Windows.Forms.Padding(5, 8, 5, 8);
             this.labelControl13.Name = "labelControl13";
-            this.labelControl13.Size = new System.Drawing.Size(15, 20);
+            this.labelControl13.Size = new System.Drawing.Size(24, 31);
             this.labelControl13.TabIndex = 505;
             this.labelControl13.Text = "℃";
             // 
@@ -4200,8 +4200,8 @@
             0,
             0});
             this.spnTEMPERATURE.EnterMoveNextControl = true;
-            this.spnTEMPERATURE.Location = new System.Drawing.Point(87, 100);
-            this.spnTEMPERATURE.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.spnTEMPERATURE.Location = new System.Drawing.Point(141, 161);
+            this.spnTEMPERATURE.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.spnTEMPERATURE.Name = "spnTEMPERATURE";
             this.spnTEMPERATURE.Properties.Appearance.BackColor = System.Drawing.Color.White;
             this.spnTEMPERATURE.Properties.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
@@ -4211,16 +4211,16 @@
             this.spnTEMPERATURE.Properties.Appearance.Options.UseForeColor = true;
             this.spnTEMPERATURE.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton()});
-            this.spnTEMPERATURE.Size = new System.Drawing.Size(83, 26);
+            this.spnTEMPERATURE.Size = new System.Drawing.Size(135, 38);
             this.spnTEMPERATURE.TabIndex = 503;
             // 
             // labelControl14
             // 
             this.labelControl14.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F);
-            this.labelControl14.Location = new System.Drawing.Point(25, 104);
-            this.labelControl14.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.labelControl14.Location = new System.Drawing.Point(41, 168);
+            this.labelControl14.Margin = new System.Windows.Forms.Padding(5, 8, 5, 8);
             this.labelControl14.Name = "labelControl14";
-            this.labelControl14.Size = new System.Drawing.Size(30, 20);
+            this.labelControl14.Size = new System.Drawing.Size(48, 31);
             this.labelControl14.TabIndex = 504;
             this.labelControl14.Text = "体温";
             // 
@@ -4228,57 +4228,57 @@
             // 
             this.txtCLINICAL_MANIFESTATION.EditValue = " ";
             this.txtCLINICAL_MANIFESTATION.EnterMoveNextControl = true;
-            this.txtCLINICAL_MANIFESTATION.Location = new System.Drawing.Point(87, 237);
-            this.txtCLINICAL_MANIFESTATION.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtCLINICAL_MANIFESTATION.Location = new System.Drawing.Point(141, 382);
+            this.txtCLINICAL_MANIFESTATION.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.txtCLINICAL_MANIFESTATION.Name = "txtCLINICAL_MANIFESTATION";
             this.txtCLINICAL_MANIFESTATION.Properties.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCLINICAL_MANIFESTATION.Properties.Appearance.ForeColor = System.Drawing.Color.Blue;
             this.txtCLINICAL_MANIFESTATION.Properties.Appearance.Options.UseFont = true;
             this.txtCLINICAL_MANIFESTATION.Properties.Appearance.Options.UseForeColor = true;
             this.txtCLINICAL_MANIFESTATION.Properties.MaxLength = 250;
-            this.txtCLINICAL_MANIFESTATION.Size = new System.Drawing.Size(915, 46);
+            this.txtCLINICAL_MANIFESTATION.Size = new System.Drawing.Size(1487, 74);
             this.txtCLINICAL_MANIFESTATION.TabIndex = 501;
             // 
             // labelControl19
             // 
             this.labelControl19.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl19.Location = new System.Drawing.Point(25, 249);
-            this.labelControl19.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.labelControl19.Location = new System.Drawing.Point(41, 401);
+            this.labelControl19.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.labelControl19.Name = "labelControl19";
-            this.labelControl19.Size = new System.Drawing.Size(60, 20);
+            this.labelControl19.Size = new System.Drawing.Size(96, 31);
             this.labelControl19.TabIndex = 502;
             this.labelControl19.Text = "临床表现";
             // 
             // labelControl99
             // 
             this.labelControl99.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F);
-            this.labelControl99.Location = new System.Drawing.Point(230, 59);
-            this.labelControl99.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.labelControl99.Location = new System.Drawing.Point(374, 95);
+            this.labelControl99.Margin = new System.Windows.Forms.Padding(5, 8, 5, 8);
             this.labelControl99.Name = "labelControl99";
-            this.labelControl99.Size = new System.Drawing.Size(45, 20);
+            this.labelControl99.Size = new System.Drawing.Size(72, 31);
             this.labelControl99.TabIndex = 477;
             this.labelControl99.Text = "血流量";
             // 
             // labelControl117
             // 
             this.labelControl117.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F);
-            this.labelControl117.Location = new System.Drawing.Point(25, 147);
-            this.labelControl117.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.labelControl117.Location = new System.Drawing.Point(41, 237);
+            this.labelControl117.Margin = new System.Windows.Forms.Padding(5, 8, 5, 8);
             this.labelControl117.Name = "labelControl117";
-            this.labelControl117.Size = new System.Drawing.Size(60, 20);
+            this.labelControl117.Size = new System.Drawing.Size(96, 31);
             this.labelControl117.TabIndex = 496;
             this.labelControl117.Text = "临时用药";
             // 
             // chkVASCULAR_ACCESS_ERRHYISIS_0
             // 
             this.chkVASCULAR_ACCESS_ERRHYISIS_0.EnterMoveNextControl = true;
-            this.chkVASCULAR_ACCESS_ERRHYISIS_0.Location = new System.Drawing.Point(1134, 192);
-            this.chkVASCULAR_ACCESS_ERRHYISIS_0.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.chkVASCULAR_ACCESS_ERRHYISIS_0.Location = new System.Drawing.Point(1843, 309);
+            this.chkVASCULAR_ACCESS_ERRHYISIS_0.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.chkVASCULAR_ACCESS_ERRHYISIS_0.Name = "chkVASCULAR_ACCESS_ERRHYISIS_0";
             this.chkVASCULAR_ACCESS_ERRHYISIS_0.Properties.Appearance.ForeColor = System.Drawing.Color.Blue;
             this.chkVASCULAR_ACCESS_ERRHYISIS_0.Properties.Appearance.Options.UseForeColor = true;
             this.chkVASCULAR_ACCESS_ERRHYISIS_0.Properties.Caption = "否";
-            this.chkVASCULAR_ACCESS_ERRHYISIS_0.Size = new System.Drawing.Size(39, 22);
+            this.chkVASCULAR_ACCESS_ERRHYISIS_0.Size = new System.Drawing.Size(63, 34);
             this.chkVASCULAR_ACCESS_ERRHYISIS_0.TabIndex = 465;
             this.chkVASCULAR_ACCESS_ERRHYISIS_0.Visible = false;
             this.chkVASCULAR_ACCESS_ERRHYISIS_0.CheckedChanged += new System.EventHandler(this.chkVASCULAR_ACCESS_ERRHYISIS_0_CheckedChanged);
@@ -4286,13 +4286,13 @@
             // chkVASCULAR_ACCESS_GLIDE_0
             // 
             this.chkVASCULAR_ACCESS_GLIDE_0.EnterMoveNextControl = true;
-            this.chkVASCULAR_ACCESS_GLIDE_0.Location = new System.Drawing.Point(1141, 235);
-            this.chkVASCULAR_ACCESS_GLIDE_0.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.chkVASCULAR_ACCESS_GLIDE_0.Location = new System.Drawing.Point(1854, 379);
+            this.chkVASCULAR_ACCESS_GLIDE_0.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.chkVASCULAR_ACCESS_GLIDE_0.Name = "chkVASCULAR_ACCESS_GLIDE_0";
             this.chkVASCULAR_ACCESS_GLIDE_0.Properties.Appearance.ForeColor = System.Drawing.Color.Blue;
             this.chkVASCULAR_ACCESS_GLIDE_0.Properties.Appearance.Options.UseForeColor = true;
             this.chkVASCULAR_ACCESS_GLIDE_0.Properties.Caption = "否";
-            this.chkVASCULAR_ACCESS_GLIDE_0.Size = new System.Drawing.Size(38, 22);
+            this.chkVASCULAR_ACCESS_GLIDE_0.Size = new System.Drawing.Size(62, 34);
             this.chkVASCULAR_ACCESS_GLIDE_0.TabIndex = 467;
             this.chkVASCULAR_ACCESS_GLIDE_0.Visible = false;
             this.chkVASCULAR_ACCESS_GLIDE_0.CheckedChanged += new System.EventHandler(this.chkpVASCULAR_ACCESS_GLIDE_0_CheckedChanged);
@@ -4300,13 +4300,13 @@
             // chkVASCULAR_ACCESS_ERRHYISIS_1
             // 
             this.chkVASCULAR_ACCESS_ERRHYISIS_1.EnterMoveNextControl = true;
-            this.chkVASCULAR_ACCESS_ERRHYISIS_1.Location = new System.Drawing.Point(1088, 192);
-            this.chkVASCULAR_ACCESS_ERRHYISIS_1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.chkVASCULAR_ACCESS_ERRHYISIS_1.Location = new System.Drawing.Point(1768, 309);
+            this.chkVASCULAR_ACCESS_ERRHYISIS_1.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.chkVASCULAR_ACCESS_ERRHYISIS_1.Name = "chkVASCULAR_ACCESS_ERRHYISIS_1";
             this.chkVASCULAR_ACCESS_ERRHYISIS_1.Properties.Appearance.ForeColor = System.Drawing.Color.Blue;
             this.chkVASCULAR_ACCESS_ERRHYISIS_1.Properties.Appearance.Options.UseForeColor = true;
             this.chkVASCULAR_ACCESS_ERRHYISIS_1.Properties.Caption = "是";
-            this.chkVASCULAR_ACCESS_ERRHYISIS_1.Size = new System.Drawing.Size(45, 22);
+            this.chkVASCULAR_ACCESS_ERRHYISIS_1.Size = new System.Drawing.Size(73, 34);
             this.chkVASCULAR_ACCESS_ERRHYISIS_1.TabIndex = 464;
             this.chkVASCULAR_ACCESS_ERRHYISIS_1.Visible = false;
             this.chkVASCULAR_ACCESS_ERRHYISIS_1.CheckedChanged += new System.EventHandler(this.chkVASCULAR_ACCESS_ERRHYISIS_1_CheckedChanged);
@@ -4314,13 +4314,13 @@
             // chkVASCULAR_ACCESS_GLIDE_1
             // 
             this.chkVASCULAR_ACCESS_GLIDE_1.EnterMoveNextControl = true;
-            this.chkVASCULAR_ACCESS_GLIDE_1.Location = new System.Drawing.Point(1089, 235);
-            this.chkVASCULAR_ACCESS_GLIDE_1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.chkVASCULAR_ACCESS_GLIDE_1.Location = new System.Drawing.Point(1770, 379);
+            this.chkVASCULAR_ACCESS_GLIDE_1.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.chkVASCULAR_ACCESS_GLIDE_1.Name = "chkVASCULAR_ACCESS_GLIDE_1";
             this.chkVASCULAR_ACCESS_GLIDE_1.Properties.Appearance.ForeColor = System.Drawing.Color.Blue;
             this.chkVASCULAR_ACCESS_GLIDE_1.Properties.Appearance.Options.UseForeColor = true;
             this.chkVASCULAR_ACCESS_GLIDE_1.Properties.Caption = "是";
-            this.chkVASCULAR_ACCESS_GLIDE_1.Size = new System.Drawing.Size(43, 22);
+            this.chkVASCULAR_ACCESS_GLIDE_1.Size = new System.Drawing.Size(70, 34);
             this.chkVASCULAR_ACCESS_GLIDE_1.TabIndex = 466;
             this.chkVASCULAR_ACCESS_GLIDE_1.Visible = false;
             this.chkVASCULAR_ACCESS_GLIDE_1.CheckedChanged += new System.EventHandler(this.chkVASCULAR_ACCESS_GLIDE_1_CheckedChanged);
@@ -4328,20 +4328,20 @@
             // labelControl115
             // 
             this.labelControl115.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F);
-            this.labelControl115.Location = new System.Drawing.Point(175, 58);
-            this.labelControl115.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.labelControl115.Location = new System.Drawing.Point(284, 93);
+            this.labelControl115.Margin = new System.Windows.Forms.Padding(5, 8, 5, 8);
             this.labelControl115.Name = "labelControl115";
-            this.labelControl115.Size = new System.Drawing.Size(49, 20);
+            this.labelControl115.Size = new System.Drawing.Size(77, 31);
             this.labelControl115.TabIndex = 490;
             this.labelControl115.Text = "ms/cm";
             // 
             // labelControl114
             // 
             this.labelControl114.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F);
-            this.labelControl114.Location = new System.Drawing.Point(875, 143);
-            this.labelControl114.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.labelControl114.Location = new System.Drawing.Point(1422, 230);
+            this.labelControl114.Margin = new System.Windows.Forms.Padding(5, 8, 5, 8);
             this.labelControl114.Name = "labelControl114";
-            this.labelControl114.Size = new System.Drawing.Size(51, 20);
+            this.labelControl114.Size = new System.Drawing.Size(81, 31);
             this.labelControl114.TabIndex = 491;
             this.labelControl114.Text = "ml/min";
             this.labelControl114.Visible = false;
@@ -4349,90 +4349,90 @@
             // labelControl113
             // 
             this.labelControl113.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F);
-            this.labelControl113.Location = new System.Drawing.Point(363, 59);
-            this.labelControl113.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.labelControl113.Location = new System.Drawing.Point(590, 95);
+            this.labelControl113.Margin = new System.Windows.Forms.Padding(5, 8, 5, 8);
             this.labelControl113.Name = "labelControl113";
-            this.labelControl113.Size = new System.Drawing.Size(51, 20);
+            this.labelControl113.Size = new System.Drawing.Size(81, 31);
             this.labelControl113.TabIndex = 489;
             this.labelControl113.Text = "ml/min";
             // 
             // labelControl112
             // 
             this.labelControl112.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F);
-            this.labelControl112.Location = new System.Drawing.Point(586, 58);
-            this.labelControl112.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.labelControl112.Location = new System.Drawing.Point(952, 93);
+            this.labelControl112.Margin = new System.Windows.Forms.Padding(5, 8, 5, 8);
             this.labelControl112.Name = "labelControl112";
-            this.labelControl112.Size = new System.Drawing.Size(51, 20);
+            this.labelControl112.Size = new System.Drawing.Size(81, 31);
             this.labelControl112.TabIndex = 488;
             this.labelControl112.Text = "ml/min";
             // 
             // labelControl111
             // 
             this.labelControl111.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F);
-            this.labelControl111.Location = new System.Drawing.Point(775, 59);
-            this.labelControl111.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.labelControl111.Location = new System.Drawing.Point(1259, 95);
+            this.labelControl111.Margin = new System.Windows.Forms.Padding(5, 8, 5, 8);
             this.labelControl111.Name = "labelControl111";
-            this.labelControl111.Size = new System.Drawing.Size(33, 20);
+            this.labelControl111.Size = new System.Drawing.Size(53, 31);
             this.labelControl111.TabIndex = 487;
             this.labelControl111.Text = "ml/h";
             // 
             // labelControl110
             // 
             this.labelControl110.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F);
-            this.labelControl110.Location = new System.Drawing.Point(987, 102);
-            this.labelControl110.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.labelControl110.Location = new System.Drawing.Point(1604, 164);
+            this.labelControl110.Margin = new System.Windows.Forms.Padding(5, 8, 5, 8);
             this.labelControl110.Name = "labelControl110";
-            this.labelControl110.Size = new System.Drawing.Size(36, 20);
+            this.labelControl110.Size = new System.Drawing.Size(58, 31);
             this.labelControl110.TabIndex = 485;
             this.labelControl110.Text = "次/分";
             // 
             // labelControl108
             // 
             this.labelControl108.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F);
-            this.labelControl108.Location = new System.Drawing.Point(777, 104);
-            this.labelControl108.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.labelControl108.Location = new System.Drawing.Point(1263, 168);
+            this.labelControl108.Margin = new System.Windows.Forms.Padding(5, 8, 5, 8);
             this.labelControl108.Name = "labelControl108";
-            this.labelControl108.Size = new System.Drawing.Size(36, 20);
+            this.labelControl108.Size = new System.Drawing.Size(58, 31);
             this.labelControl108.TabIndex = 486;
             this.labelControl108.Text = "次/分";
             // 
             // labelControl107
             // 
             this.labelControl107.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F);
-            this.labelControl107.Location = new System.Drawing.Point(586, 102);
-            this.labelControl107.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.labelControl107.Location = new System.Drawing.Point(952, 164);
+            this.labelControl107.Margin = new System.Windows.Forms.Padding(5, 8, 5, 8);
             this.labelControl107.Name = "labelControl107";
-            this.labelControl107.Size = new System.Drawing.Size(50, 20);
+            this.labelControl107.Size = new System.Drawing.Size(78, 31);
             this.labelControl107.TabIndex = 481;
             this.labelControl107.Text = "mmHg";
             // 
             // labelControl105
             // 
             this.labelControl105.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F);
-            this.labelControl105.Location = new System.Drawing.Point(366, 102);
-            this.labelControl105.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.labelControl105.Location = new System.Drawing.Point(595, 164);
+            this.labelControl105.Margin = new System.Windows.Forms.Padding(5, 8, 5, 8);
             this.labelControl105.Name = "labelControl105";
-            this.labelControl105.Size = new System.Drawing.Size(50, 20);
+            this.labelControl105.Size = new System.Drawing.Size(78, 31);
             this.labelControl105.TabIndex = 482;
             this.labelControl105.Text = "mmHg";
             // 
             // labelControl116
             // 
             this.labelControl116.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F);
-            this.labelControl116.Location = new System.Drawing.Point(987, 12);
-            this.labelControl116.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.labelControl116.Location = new System.Drawing.Point(1604, 19);
+            this.labelControl116.Margin = new System.Windows.Forms.Padding(5, 8, 5, 8);
             this.labelControl116.Name = "labelControl116";
-            this.labelControl116.Size = new System.Drawing.Size(50, 20);
+            this.labelControl116.Size = new System.Drawing.Size(78, 31);
             this.labelControl116.TabIndex = 484;
             this.labelControl116.Text = "mmHg";
             // 
             // labelControl106
             // 
             this.labelControl106.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F);
-            this.labelControl106.Location = new System.Drawing.Point(777, 10);
-            this.labelControl106.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.labelControl106.Location = new System.Drawing.Point(1263, 16);
+            this.labelControl106.Margin = new System.Windows.Forms.Padding(5, 8, 5, 8);
             this.labelControl106.Name = "labelControl106";
-            this.labelControl106.Size = new System.Drawing.Size(50, 20);
+            this.labelControl106.Size = new System.Drawing.Size(78, 31);
             this.labelControl106.TabIndex = 483;
             this.labelControl106.Text = "mmHg";
             // 
@@ -4444,8 +4444,8 @@
             0,
             0});
             this.spnBREATH.EnterMoveNextControl = true;
-            this.spnBREATH.Location = new System.Drawing.Point(897, 98);
-            this.spnBREATH.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.spnBREATH.Location = new System.Drawing.Point(1458, 158);
+            this.spnBREATH.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.spnBREATH.Name = "spnBREATH";
             this.spnBREATH.Properties.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.spnBREATH.Properties.Appearance.ForeColor = System.Drawing.Color.Blue;
@@ -4453,27 +4453,27 @@
             this.spnBREATH.Properties.Appearance.Options.UseForeColor = true;
             this.spnBREATH.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton()});
-            this.spnBREATH.Size = new System.Drawing.Size(83, 26);
+            this.spnBREATH.Size = new System.Drawing.Size(135, 38);
             this.spnBREATH.TabIndex = 459;
             this.spnBREATH.EditValueChanged += new System.EventHandler(this.spnBREATH_EditValueChanged);
             // 
             // labelControl101
             // 
             this.labelControl101.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F);
-            this.labelControl101.Location = new System.Drawing.Point(859, 102);
-            this.labelControl101.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.labelControl101.Location = new System.Drawing.Point(1396, 164);
+            this.labelControl101.Margin = new System.Windows.Forms.Padding(5, 8, 5, 8);
             this.labelControl101.Name = "labelControl101";
-            this.labelControl101.Size = new System.Drawing.Size(30, 20);
+            this.labelControl101.Size = new System.Drawing.Size(48, 31);
             this.labelControl101.TabIndex = 480;
             this.labelControl101.Text = "呼吸";
             // 
             // labelControl59
             // 
             this.labelControl59.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F);
-            this.labelControl59.Location = new System.Drawing.Point(1041, 195);
-            this.labelControl59.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.labelControl59.Location = new System.Drawing.Point(1692, 314);
+            this.labelControl59.Margin = new System.Windows.Forms.Padding(5, 8, 5, 8);
             this.labelControl59.Name = "labelControl59";
-            this.labelControl59.Size = new System.Drawing.Size(30, 20);
+            this.labelControl59.Size = new System.Drawing.Size(48, 31);
             this.labelControl59.TabIndex = 479;
             this.labelControl59.Text = "渗血";
             this.labelControl59.Visible = false;
@@ -4481,10 +4481,10 @@
             // rdpVASCULAR_ACCESS_GLIDE
             // 
             this.rdpVASCULAR_ACCESS_GLIDE.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F);
-            this.rdpVASCULAR_ACCESS_GLIDE.Location = new System.Drawing.Point(1042, 238);
-            this.rdpVASCULAR_ACCESS_GLIDE.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.rdpVASCULAR_ACCESS_GLIDE.Location = new System.Drawing.Point(1693, 383);
+            this.rdpVASCULAR_ACCESS_GLIDE.Margin = new System.Windows.Forms.Padding(5, 8, 5, 8);
             this.rdpVASCULAR_ACCESS_GLIDE.Name = "rdpVASCULAR_ACCESS_GLIDE";
-            this.rdpVASCULAR_ACCESS_GLIDE.Size = new System.Drawing.Size(30, 20);
+            this.rdpVASCULAR_ACCESS_GLIDE.Size = new System.Drawing.Size(48, 31);
             this.rdpVASCULAR_ACCESS_GLIDE.TabIndex = 478;
             this.rdpVASCULAR_ACCESS_GLIDE.Text = "滑脱";
             this.rdpVASCULAR_ACCESS_GLIDE.Visible = false;
@@ -4497,8 +4497,8 @@
             0,
             0});
             this.spnBLOOD_FLOW.EnterMoveNextControl = true;
-            this.spnBLOOD_FLOW.Location = new System.Drawing.Point(278, 55);
-            this.spnBLOOD_FLOW.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.spnBLOOD_FLOW.Location = new System.Drawing.Point(452, 89);
+            this.spnBLOOD_FLOW.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.spnBLOOD_FLOW.Name = "spnBLOOD_FLOW";
             this.spnBLOOD_FLOW.Properties.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.spnBLOOD_FLOW.Properties.Appearance.ForeColor = System.Drawing.Color.Blue;
@@ -4506,7 +4506,7 @@
             this.spnBLOOD_FLOW.Properties.Appearance.Options.UseForeColor = true;
             this.spnBLOOD_FLOW.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton()});
-            this.spnBLOOD_FLOW.Size = new System.Drawing.Size(83, 26);
+            this.spnBLOOD_FLOW.Size = new System.Drawing.Size(135, 38);
             this.spnBLOOD_FLOW.TabIndex = 456;
             // 
             // spnDISPLACEMENT
@@ -4517,8 +4517,8 @@
             0,
             0});
             this.spnDISPLACEMENT.EnterMoveNextControl = true;
-            this.spnDISPLACEMENT.Location = new System.Drawing.Point(791, 139);
-            this.spnDISPLACEMENT.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.spnDISPLACEMENT.Location = new System.Drawing.Point(1285, 224);
+            this.spnDISPLACEMENT.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.spnDISPLACEMENT.Name = "spnDISPLACEMENT";
             this.spnDISPLACEMENT.Properties.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.spnDISPLACEMENT.Properties.Appearance.ForeColor = System.Drawing.Color.Blue;
@@ -4526,7 +4526,7 @@
             this.spnDISPLACEMENT.Properties.Appearance.Options.UseForeColor = true;
             this.spnDISPLACEMENT.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton()});
-            this.spnDISPLACEMENT.Size = new System.Drawing.Size(83, 26);
+            this.spnDISPLACEMENT.Size = new System.Drawing.Size(135, 38);
             this.spnDISPLACEMENT.TabIndex = 455;
             this.spnDISPLACEMENT.Visible = false;
             this.spnDISPLACEMENT.EditValueChanged += new System.EventHandler(this.spnDISPLACEMENT_EditValueChanged);
@@ -4534,10 +4534,10 @@
             // labelControl98
             // 
             this.labelControl98.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F);
-            this.labelControl98.Location = new System.Drawing.Point(743, 143);
-            this.labelControl98.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.labelControl98.Location = new System.Drawing.Point(1207, 230);
+            this.labelControl98.Margin = new System.Windows.Forms.Padding(5, 8, 5, 8);
             this.labelControl98.Name = "labelControl98";
-            this.labelControl98.Size = new System.Drawing.Size(45, 20);
+            this.labelControl98.Size = new System.Drawing.Size(72, 31);
             this.labelControl98.TabIndex = 476;
             this.labelControl98.Text = "置换量";
             this.labelControl98.Visible = false;
@@ -4545,18 +4545,18 @@
             // labelControl74
             // 
             this.labelControl74.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl74.Location = new System.Drawing.Point(438, 12);
-            this.labelControl74.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.labelControl74.Location = new System.Drawing.Point(712, 19);
+            this.labelControl74.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.labelControl74.Name = "labelControl74";
-            this.labelControl74.Size = new System.Drawing.Size(60, 20);
+            this.labelControl74.Size = new System.Drawing.Size(96, 31);
             this.labelControl74.TabIndex = 475;
             this.labelControl74.Text = "记录护士";
             // 
             // lupNURSE_ID
             // 
             this.lupNURSE_ID.EnterMoveNextControl = true;
-            this.lupNURSE_ID.Location = new System.Drawing.Point(496, 8);
-            this.lupNURSE_ID.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.lupNURSE_ID.Location = new System.Drawing.Point(806, 13);
+            this.lupNURSE_ID.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.lupNURSE_ID.Name = "lupNURSE_ID";
             this.lupNURSE_ID.Properties.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.lupNURSE_ID.Properties.Appearance.ForeColor = System.Drawing.Color.Blue;
@@ -4566,7 +4566,7 @@
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.lupNURSE_ID.Properties.LookAndFeel.SkinName = "ExtendBlue";
             this.lupNURSE_ID.Properties.NullText = "";
-            this.lupNURSE_ID.Size = new System.Drawing.Size(83, 26);
+            this.lupNURSE_ID.Size = new System.Drawing.Size(135, 38);
             this.lupNURSE_ID.TabIndex = 450;
             // 
             // cmbCreate_Time
@@ -4574,8 +4574,8 @@
             this.cmbCreate_Time.EditValue = new System.DateTime(((long)(0)));
             this.cmbCreate_Time.Enabled = false;
             this.cmbCreate_Time.EnterMoveNextControl = true;
-            this.cmbCreate_Time.Location = new System.Drawing.Point(194, 17);
-            this.cmbCreate_Time.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.cmbCreate_Time.Location = new System.Drawing.Point(315, 27);
+            this.cmbCreate_Time.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.cmbCreate_Time.Name = "cmbCreate_Time";
             this.cmbCreate_Time.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.cmbCreate_Time.Properties.Appearance.ForeColor = System.Drawing.Color.Blue;
@@ -4584,7 +4584,7 @@
             this.cmbCreate_Time.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton()});
             this.cmbCreate_Time.Properties.Mask.EditMask = "t";
-            this.cmbCreate_Time.Size = new System.Drawing.Size(93, 24);
+            this.cmbCreate_Time.Size = new System.Drawing.Size(151, 36);
             this.cmbCreate_Time.TabIndex = 449;
             // 
             // spnDIALYSATE_RATE
@@ -4595,8 +4595,8 @@
             0,
             0});
             this.spnDIALYSATE_RATE.EnterMoveNextControl = true;
-            this.spnDIALYSATE_RATE.Location = new System.Drawing.Point(496, 54);
-            this.spnDIALYSATE_RATE.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.spnDIALYSATE_RATE.Location = new System.Drawing.Point(806, 87);
+            this.spnDIALYSATE_RATE.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.spnDIALYSATE_RATE.Name = "spnDIALYSATE_RATE";
             this.spnDIALYSATE_RATE.Properties.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.spnDIALYSATE_RATE.Properties.Appearance.ForeColor = System.Drawing.Color.Blue;
@@ -4604,40 +4604,40 @@
             this.spnDIALYSATE_RATE.Properties.Appearance.Options.UseForeColor = true;
             this.spnDIALYSATE_RATE.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton()});
-            this.spnDIALYSATE_RATE.Size = new System.Drawing.Size(83, 26);
+            this.spnDIALYSATE_RATE.Size = new System.Drawing.Size(135, 38);
             this.spnDIALYSATE_RATE.TabIndex = 457;
             // 
             // labelControl71
             // 
             this.labelControl71.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F);
-            this.labelControl71.Location = new System.Drawing.Point(421, 58);
-            this.labelControl71.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.labelControl71.Location = new System.Drawing.Point(684, 93);
+            this.labelControl71.Margin = new System.Windows.Forms.Padding(5, 8, 5, 8);
             this.labelControl71.Name = "labelControl71";
-            this.labelControl71.Size = new System.Drawing.Size(75, 20);
+            this.labelControl71.Size = new System.Drawing.Size(120, 31);
             this.labelControl71.TabIndex = 474;
             this.labelControl71.Text = "透析液流量";
             // 
             // txtCURE_MODE
             // 
             this.txtCURE_MODE.EnterMoveNextControl = true;
-            this.txtCURE_MODE.Location = new System.Drawing.Point(87, 183);
-            this.txtCURE_MODE.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtCURE_MODE.Location = new System.Drawing.Point(141, 295);
+            this.txtCURE_MODE.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.txtCURE_MODE.Name = "txtCURE_MODE";
             this.txtCURE_MODE.Properties.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCURE_MODE.Properties.Appearance.ForeColor = System.Drawing.Color.Blue;
             this.txtCURE_MODE.Properties.Appearance.Options.UseFont = true;
             this.txtCURE_MODE.Properties.Appearance.Options.UseForeColor = true;
             this.txtCURE_MODE.Properties.MaxLength = 250;
-            this.txtCURE_MODE.Size = new System.Drawing.Size(915, 46);
+            this.txtCURE_MODE.Size = new System.Drawing.Size(1487, 74);
             this.txtCURE_MODE.TabIndex = 469;
             // 
             // labelControl70
             // 
             this.labelControl70.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl70.Location = new System.Drawing.Point(25, 195);
-            this.labelControl70.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.labelControl70.Location = new System.Drawing.Point(41, 314);
+            this.labelControl70.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.labelControl70.Name = "labelControl70";
-            this.labelControl70.Size = new System.Drawing.Size(30, 20);
+            this.labelControl70.Size = new System.Drawing.Size(48, 31);
             this.labelControl70.TabIndex = 473;
             this.labelControl70.Text = "治疗";
             // 
@@ -4649,8 +4649,8 @@
             0,
             0});
             this.spnDIASTOLIC_PRESSURE.EnterMoveNextControl = true;
-            this.spnDIASTOLIC_PRESSURE.Location = new System.Drawing.Point(496, 98);
-            this.spnDIASTOLIC_PRESSURE.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.spnDIASTOLIC_PRESSURE.Location = new System.Drawing.Point(806, 158);
+            this.spnDIASTOLIC_PRESSURE.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.spnDIASTOLIC_PRESSURE.Name = "spnDIASTOLIC_PRESSURE";
             this.spnDIASTOLIC_PRESSURE.Properties.Appearance.BackColor = System.Drawing.Color.White;
             this.spnDIASTOLIC_PRESSURE.Properties.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
@@ -4660,16 +4660,16 @@
             this.spnDIASTOLIC_PRESSURE.Properties.Appearance.Options.UseForeColor = true;
             this.spnDIASTOLIC_PRESSURE.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton()});
-            this.spnDIASTOLIC_PRESSURE.Size = new System.Drawing.Size(83, 26);
+            this.spnDIASTOLIC_PRESSURE.Size = new System.Drawing.Size(135, 38);
             this.spnDIASTOLIC_PRESSURE.TabIndex = 461;
             // 
             // labelControl69
             // 
             this.labelControl69.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F);
-            this.labelControl69.Location = new System.Drawing.Point(450, 102);
-            this.labelControl69.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.labelControl69.Location = new System.Drawing.Point(731, 164);
+            this.labelControl69.Margin = new System.Windows.Forms.Padding(5, 8, 5, 8);
             this.labelControl69.Name = "labelControl69";
-            this.labelControl69.Size = new System.Drawing.Size(45, 20);
+            this.labelControl69.Size = new System.Drawing.Size(72, 31);
             this.labelControl69.TabIndex = 472;
             this.labelControl69.Text = "舒张压";
             // 
@@ -4681,8 +4681,8 @@
             0,
             0});
             this.spnURF.EnterMoveNextControl = true;
-            this.spnURF.Location = new System.Drawing.Point(689, 55);
-            this.spnURF.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.spnURF.Location = new System.Drawing.Point(1120, 89);
+            this.spnURF.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.spnURF.Name = "spnURF";
             this.spnURF.Properties.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.spnURF.Properties.Appearance.ForeColor = System.Drawing.Color.Blue;
@@ -4690,16 +4690,16 @@
             this.spnURF.Properties.Appearance.Options.UseForeColor = true;
             this.spnURF.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton()});
-            this.spnURF.Size = new System.Drawing.Size(83, 26);
+            this.spnURF.Size = new System.Drawing.Size(135, 38);
             this.spnURF.TabIndex = 458;
             // 
             // labelControl100
             // 
             this.labelControl100.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F);
-            this.labelControl100.Location = new System.Drawing.Point(639, 59);
-            this.labelControl100.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.labelControl100.Location = new System.Drawing.Point(1038, 95);
+            this.labelControl100.Margin = new System.Windows.Forms.Padding(5, 8, 5, 8);
             this.labelControl100.Name = "labelControl100";
-            this.labelControl100.Size = new System.Drawing.Size(45, 20);
+            this.labelControl100.Size = new System.Drawing.Size(72, 31);
             this.labelControl100.TabIndex = 471;
             this.labelControl100.Text = "超滤率";
             // 
@@ -4711,8 +4711,8 @@
             0,
             0});
             this.spnCARDIOTACH.EnterMoveNextControl = true;
-            this.spnCARDIOTACH.Location = new System.Drawing.Point(689, 98);
-            this.spnCARDIOTACH.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.spnCARDIOTACH.Location = new System.Drawing.Point(1120, 158);
+            this.spnCARDIOTACH.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.spnCARDIOTACH.Name = "spnCARDIOTACH";
             this.spnCARDIOTACH.Properties.Appearance.BackColor = System.Drawing.Color.White;
             this.spnCARDIOTACH.Properties.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
@@ -4722,16 +4722,16 @@
             this.spnCARDIOTACH.Properties.Appearance.Options.UseForeColor = true;
             this.spnCARDIOTACH.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton()});
-            this.spnCARDIOTACH.Size = new System.Drawing.Size(83, 26);
+            this.spnCARDIOTACH.Size = new System.Drawing.Size(135, 38);
             this.spnCARDIOTACH.TabIndex = 462;
             // 
             // labelControl67
             // 
             this.labelControl67.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F);
-            this.labelControl67.Location = new System.Drawing.Point(651, 103);
-            this.labelControl67.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.labelControl67.Location = new System.Drawing.Point(1058, 166);
+            this.labelControl67.Margin = new System.Windows.Forms.Padding(5, 8, 5, 8);
             this.labelControl67.Name = "labelControl67";
-            this.labelControl67.Size = new System.Drawing.Size(30, 20);
+            this.labelControl67.Size = new System.Drawing.Size(48, 31);
             this.labelControl67.TabIndex = 470;
             this.labelControl67.Text = "心率";
             // 
@@ -4743,8 +4743,8 @@
             0,
             0});
             this.spnCONDUCTIVITY.EnterMoveNextControl = true;
-            this.spnCONDUCTIVITY.Location = new System.Drawing.Point(87, 54);
-            this.spnCONDUCTIVITY.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.spnCONDUCTIVITY.Location = new System.Drawing.Point(141, 87);
+            this.spnCONDUCTIVITY.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.spnCONDUCTIVITY.Name = "spnCONDUCTIVITY";
             this.spnCONDUCTIVITY.Properties.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.spnCONDUCTIVITY.Properties.Appearance.ForeColor = System.Drawing.Color.Blue;
@@ -4752,16 +4752,16 @@
             this.spnCONDUCTIVITY.Properties.Appearance.Options.UseForeColor = true;
             this.spnCONDUCTIVITY.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton()});
-            this.spnCONDUCTIVITY.Size = new System.Drawing.Size(83, 26);
+            this.spnCONDUCTIVITY.Size = new System.Drawing.Size(135, 38);
             this.spnCONDUCTIVITY.TabIndex = 454;
             // 
             // labelControl66
             // 
             this.labelControl66.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F);
-            this.labelControl66.Location = new System.Drawing.Point(25, 58);
-            this.labelControl66.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.labelControl66.Location = new System.Drawing.Point(41, 93);
+            this.labelControl66.Margin = new System.Windows.Forms.Padding(5, 8, 5, 8);
             this.labelControl66.Name = "labelControl66";
-            this.labelControl66.Size = new System.Drawing.Size(45, 20);
+            this.labelControl66.Size = new System.Drawing.Size(72, 31);
             this.labelControl66.TabIndex = 469;
             this.labelControl66.Text = "电导度";
             // 
@@ -4773,8 +4773,8 @@
             0,
             0});
             this.spnANTICOAGULANT.EnterMoveNextControl = true;
-            this.spnANTICOAGULANT.Location = new System.Drawing.Point(897, 55);
-            this.spnANTICOAGULANT.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.spnANTICOAGULANT.Location = new System.Drawing.Point(1458, 89);
+            this.spnANTICOAGULANT.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.spnANTICOAGULANT.Name = "spnANTICOAGULANT";
             this.spnANTICOAGULANT.Properties.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.spnANTICOAGULANT.Properties.Appearance.ForeColor = System.Drawing.Color.Blue;
@@ -4782,16 +4782,16 @@
             this.spnANTICOAGULANT.Properties.Appearance.Options.UseForeColor = true;
             this.spnANTICOAGULANT.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton()});
-            this.spnANTICOAGULANT.Size = new System.Drawing.Size(83, 26);
+            this.spnANTICOAGULANT.Size = new System.Drawing.Size(135, 38);
             this.spnANTICOAGULANT.TabIndex = 463;
             // 
             // labelControl65
             // 
             this.labelControl65.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F);
-            this.labelControl65.Location = new System.Drawing.Point(846, 59);
-            this.labelControl65.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.labelControl65.Location = new System.Drawing.Point(1375, 95);
+            this.labelControl65.Margin = new System.Windows.Forms.Padding(5, 8, 5, 8);
             this.labelControl65.Name = "labelControl65";
-            this.labelControl65.Size = new System.Drawing.Size(45, 20);
+            this.labelControl65.Size = new System.Drawing.Size(72, 31);
             this.labelControl65.TabIndex = 468;
             this.labelControl65.Text = "抗凝剂";
             // 
@@ -4803,8 +4803,8 @@
             0,
             0});
             this.spnSYSTOLIC_PRESSURE.EnterMoveNextControl = true;
-            this.spnSYSTOLIC_PRESSURE.Location = new System.Drawing.Point(279, 98);
-            this.spnSYSTOLIC_PRESSURE.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.spnSYSTOLIC_PRESSURE.Location = new System.Drawing.Point(453, 158);
+            this.spnSYSTOLIC_PRESSURE.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.spnSYSTOLIC_PRESSURE.Name = "spnSYSTOLIC_PRESSURE";
             this.spnSYSTOLIC_PRESSURE.Properties.Appearance.BackColor = System.Drawing.Color.White;
             this.spnSYSTOLIC_PRESSURE.Properties.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
@@ -4814,16 +4814,16 @@
             this.spnSYSTOLIC_PRESSURE.Properties.Appearance.Options.UseForeColor = true;
             this.spnSYSTOLIC_PRESSURE.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton()});
-            this.spnSYSTOLIC_PRESSURE.Size = new System.Drawing.Size(83, 26);
+            this.spnSYSTOLIC_PRESSURE.Size = new System.Drawing.Size(135, 38);
             this.spnSYSTOLIC_PRESSURE.TabIndex = 460;
             // 
             // labelControl60
             // 
             this.labelControl60.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F);
-            this.labelControl60.Location = new System.Drawing.Point(229, 102);
-            this.labelControl60.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.labelControl60.Location = new System.Drawing.Point(372, 164);
+            this.labelControl60.Margin = new System.Windows.Forms.Padding(5, 8, 5, 8);
             this.labelControl60.Name = "labelControl60";
-            this.labelControl60.Size = new System.Drawing.Size(45, 20);
+            this.labelControl60.Size = new System.Drawing.Size(72, 31);
             this.labelControl60.TabIndex = 467;
             this.labelControl60.Text = "收缩压";
             // 
@@ -4835,8 +4835,8 @@
             0,
             0});
             this.spnTRANSMEMBRANE_PRESSURE.EnterMoveNextControl = true;
-            this.spnTRANSMEMBRANE_PRESSURE.Location = new System.Drawing.Point(897, 8);
-            this.spnTRANSMEMBRANE_PRESSURE.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.spnTRANSMEMBRANE_PRESSURE.Location = new System.Drawing.Point(1458, 13);
+            this.spnTRANSMEMBRANE_PRESSURE.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.spnTRANSMEMBRANE_PRESSURE.Name = "spnTRANSMEMBRANE_PRESSURE";
             this.spnTRANSMEMBRANE_PRESSURE.Properties.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.spnTRANSMEMBRANE_PRESSURE.Properties.Appearance.ForeColor = System.Drawing.Color.Blue;
@@ -4844,16 +4844,16 @@
             this.spnTRANSMEMBRANE_PRESSURE.Properties.Appearance.Options.UseForeColor = true;
             this.spnTRANSMEMBRANE_PRESSURE.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton()});
-            this.spnTRANSMEMBRANE_PRESSURE.Size = new System.Drawing.Size(83, 26);
+            this.spnTRANSMEMBRANE_PRESSURE.Size = new System.Drawing.Size(135, 38);
             this.spnTRANSMEMBRANE_PRESSURE.TabIndex = 453;
             // 
             // labelControl58
             // 
             this.labelControl58.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F);
-            this.labelControl58.Location = new System.Drawing.Point(835, 12);
-            this.labelControl58.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.labelControl58.Location = new System.Drawing.Point(1357, 19);
+            this.labelControl58.Margin = new System.Windows.Forms.Padding(5, 8, 5, 8);
             this.labelControl58.Name = "labelControl58";
-            this.labelControl58.Size = new System.Drawing.Size(45, 20);
+            this.labelControl58.Size = new System.Drawing.Size(72, 31);
             this.labelControl58.TabIndex = 466;
             this.labelControl58.Text = "跨膜压";
             // 
@@ -4865,8 +4865,8 @@
             0,
             0});
             this.spnVENOUS_PRESSURE.EnterMoveNextControl = true;
-            this.spnVENOUS_PRESSURE.Location = new System.Drawing.Point(689, 8);
-            this.spnVENOUS_PRESSURE.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.spnVENOUS_PRESSURE.Location = new System.Drawing.Point(1120, 13);
+            this.spnVENOUS_PRESSURE.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.spnVENOUS_PRESSURE.Name = "spnVENOUS_PRESSURE";
             this.spnVENOUS_PRESSURE.Properties.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.spnVENOUS_PRESSURE.Properties.Appearance.ForeColor = System.Drawing.Color.Blue;
@@ -4874,15 +4874,15 @@
             this.spnVENOUS_PRESSURE.Properties.Appearance.Options.UseForeColor = true;
             this.spnVENOUS_PRESSURE.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton()});
-            this.spnVENOUS_PRESSURE.Size = new System.Drawing.Size(83, 26);
+            this.spnVENOUS_PRESSURE.Size = new System.Drawing.Size(135, 38);
             this.spnVENOUS_PRESSURE.TabIndex = 451;
             // 
             // cmbCREATE_DATE
             // 
             this.cmbCREATE_DATE.EditValue = null;
             this.cmbCREATE_DATE.EnterMoveNextControl = true;
-            this.cmbCREATE_DATE.Location = new System.Drawing.Point(87, 12);
-            this.cmbCREATE_DATE.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.cmbCREATE_DATE.Location = new System.Drawing.Point(141, 19);
+            this.cmbCREATE_DATE.Margin = new System.Windows.Forms.Padding(5, 8, 5, 8);
             this.cmbCREATE_DATE.Name = "cmbCREATE_DATE";
             this.cmbCREATE_DATE.Properties.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.cmbCREATE_DATE.Properties.Appearance.ForeColor = System.Drawing.Color.Blue;
@@ -4893,34 +4893,34 @@
             this.cmbCREATE_DATE.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton()});
             this.cmbCREATE_DATE.Properties.LookAndFeel.SkinName = "ExtendBlue";
-            this.cmbCREATE_DATE.Size = new System.Drawing.Size(101, 26);
+            this.cmbCREATE_DATE.Size = new System.Drawing.Size(164, 38);
             this.cmbCREATE_DATE.TabIndex = 448;
             // 
             // labelControl61
             // 
             this.labelControl61.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F);
-            this.labelControl61.Location = new System.Drawing.Point(641, 12);
-            this.labelControl61.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.labelControl61.Location = new System.Drawing.Point(1042, 19);
+            this.labelControl61.Margin = new System.Windows.Forms.Padding(5, 8, 5, 8);
             this.labelControl61.Name = "labelControl61";
-            this.labelControl61.Size = new System.Drawing.Size(45, 20);
+            this.labelControl61.Size = new System.Drawing.Size(72, 31);
             this.labelControl61.TabIndex = 465;
             this.labelControl61.Text = "静脉压";
             // 
             // labelControl62
             // 
             this.labelControl62.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl62.Location = new System.Drawing.Point(25, 15);
-            this.labelControl62.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.labelControl62.Location = new System.Drawing.Point(41, 24);
+            this.labelControl62.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.labelControl62.Name = "labelControl62";
-            this.labelControl62.Size = new System.Drawing.Size(60, 20);
+            this.labelControl62.Size = new System.Drawing.Size(96, 31);
             this.labelControl62.TabIndex = 464;
             this.labelControl62.Text = "记录时间";
             // 
             // lupTempDrug
             // 
             this.lupTempDrug.EnterMoveNextControl = true;
-            this.lupTempDrug.Location = new System.Drawing.Point(87, 144);
-            this.lupTempDrug.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.lupTempDrug.Location = new System.Drawing.Point(141, 232);
+            this.lupTempDrug.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.lupTempDrug.Name = "lupTempDrug";
             this.lupTempDrug.Properties.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.lupTempDrug.Properties.Appearance.ForeColor = System.Drawing.Color.Blue;
@@ -4930,17 +4930,17 @@
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.lupTempDrug.Properties.LookAndFeel.SkinName = "ExtendBlue";
             this.lupTempDrug.Properties.NullText = "";
-            this.lupTempDrug.Size = new System.Drawing.Size(493, 26);
+            this.lupTempDrug.Size = new System.Drawing.Size(801, 38);
             this.lupTempDrug.TabIndex = 468;
             this.lupTempDrug.EditValueChanged += new System.EventHandler(this.lupTempDrug_EditValueChanged);
             // 
             // txtHEMODIALYSIS_PARAMETERS_ID
             // 
             this.txtHEMODIALYSIS_PARAMETERS_ID.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F);
-            this.txtHEMODIALYSIS_PARAMETERS_ID.Location = new System.Drawing.Point(834, 157);
-            this.txtHEMODIALYSIS_PARAMETERS_ID.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.txtHEMODIALYSIS_PARAMETERS_ID.Location = new System.Drawing.Point(1355, 253);
+            this.txtHEMODIALYSIS_PARAMETERS_ID.Margin = new System.Windows.Forms.Padding(5, 8, 5, 8);
             this.txtHEMODIALYSIS_PARAMETERS_ID.Name = "txtHEMODIALYSIS_PARAMETERS_ID";
-            this.txtHEMODIALYSIS_PARAMETERS_ID.Size = new System.Drawing.Size(0, 20);
+            this.txtHEMODIALYSIS_PARAMETERS_ID.Size = new System.Drawing.Size(0, 31);
             this.txtHEMODIALYSIS_PARAMETERS_ID.TabIndex = 434;
             this.txtHEMODIALYSIS_PARAMETERS_ID.Visible = false;
             // 
@@ -4949,9 +4949,9 @@
             this.tab4.Appearance.Header.Font = new System.Drawing.Font("微软雅黑", 10.5F);
             this.tab4.Appearance.Header.Options.UseFont = true;
             this.tab4.Controls.Add(this.txtSUMMARY);
-            this.tab4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.tab4.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.tab4.Name = "tab4";
-            this.tab4.Size = new System.Drawing.Size(1221, 810);
+            this.tab4.Size = new System.Drawing.Size(1992, 1306);
             this.tab4.Text = "透析小结";
             // 
             // txtSUMMARY
@@ -4959,9 +4959,9 @@
             this.txtSUMMARY.Dock = System.Windows.Forms.DockStyle.Fill;
             this.txtSUMMARY.EditValue = "本次透析过程顺利，平安离室。";
             this.txtSUMMARY.Location = new System.Drawing.Point(0, 0);
-            this.txtSUMMARY.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtSUMMARY.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.txtSUMMARY.Name = "txtSUMMARY";
-            this.txtSUMMARY.Size = new System.Drawing.Size(1221, 810);
+            this.txtSUMMARY.Size = new System.Drawing.Size(1992, 1306);
             this.txtSUMMARY.TabIndex = 0;
             // 
             // tab5
@@ -4977,75 +4977,75 @@
             this.tab5.Controls.Add(this.txtSUMMARY3);
             this.tab5.Controls.Add(this.btnQJJL);
             this.tab5.Controls.Add(this.txtSUMMARY2);
-            this.tab5.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.tab5.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.tab5.Name = "tab5";
-            this.tab5.Size = new System.Drawing.Size(1221, 810);
+            this.tab5.Size = new System.Drawing.Size(1992, 1306);
             this.tab5.Text = "抢救记录";
             // 
             // labelControl124
             // 
-            this.labelControl124.Location = new System.Drawing.Point(6, 336);
-            this.labelControl124.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.labelControl124.Location = new System.Drawing.Point(10, 541);
+            this.labelControl124.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.labelControl124.Name = "labelControl124";
-            this.labelControl124.Size = new System.Drawing.Size(75, 18);
+            this.labelControl124.Size = new System.Drawing.Size(120, 29);
             this.labelControl124.TabIndex = 44;
             this.labelControl124.Text = "抢救记录四";
             // 
             // labelControl123
             // 
-            this.labelControl123.Location = new System.Drawing.Point(6, 222);
-            this.labelControl123.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.labelControl123.Location = new System.Drawing.Point(10, 358);
+            this.labelControl123.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.labelControl123.Name = "labelControl123";
-            this.labelControl123.Size = new System.Drawing.Size(75, 18);
+            this.labelControl123.Size = new System.Drawing.Size(120, 29);
             this.labelControl123.TabIndex = 43;
             this.labelControl123.Text = "抢救记录三";
             // 
             // labelControl122
             // 
-            this.labelControl122.Location = new System.Drawing.Point(6, 112);
-            this.labelControl122.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.labelControl122.Location = new System.Drawing.Point(10, 180);
+            this.labelControl122.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.labelControl122.Name = "labelControl122";
-            this.labelControl122.Size = new System.Drawing.Size(75, 18);
+            this.labelControl122.Size = new System.Drawing.Size(120, 29);
             this.labelControl122.TabIndex = 42;
             this.labelControl122.Text = "抢救记录二";
             // 
             // labelControl121
             // 
-            this.labelControl121.Location = new System.Drawing.Point(6, 0);
-            this.labelControl121.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.labelControl121.Location = new System.Drawing.Point(10, 0);
+            this.labelControl121.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.labelControl121.Name = "labelControl121";
-            this.labelControl121.Size = new System.Drawing.Size(75, 18);
+            this.labelControl121.Size = new System.Drawing.Size(120, 29);
             this.labelControl121.TabIndex = 41;
             this.labelControl121.Text = "抢救记录一";
             // 
             // txtSUMMARY5
             // 
             this.txtSUMMARY5.EditValue = "";
-            this.txtSUMMARY5.Location = new System.Drawing.Point(0, 357);
-            this.txtSUMMARY5.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtSUMMARY5.Location = new System.Drawing.Point(0, 575);
+            this.txtSUMMARY5.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.txtSUMMARY5.Name = "txtSUMMARY5";
             this.txtSUMMARY5.Properties.MaxLength = 200;
-            this.txtSUMMARY5.Size = new System.Drawing.Size(1022, 90);
+            this.txtSUMMARY5.Size = new System.Drawing.Size(1661, 145);
             this.txtSUMMARY5.TabIndex = 40;
             // 
             // txtSUMMARY4
             // 
             this.txtSUMMARY4.EditValue = "";
-            this.txtSUMMARY4.Location = new System.Drawing.Point(0, 244);
-            this.txtSUMMARY4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtSUMMARY4.Location = new System.Drawing.Point(0, 393);
+            this.txtSUMMARY4.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.txtSUMMARY4.Name = "txtSUMMARY4";
             this.txtSUMMARY4.Properties.MaxLength = 200;
-            this.txtSUMMARY4.Size = new System.Drawing.Size(1022, 90);
+            this.txtSUMMARY4.Size = new System.Drawing.Size(1661, 145);
             this.txtSUMMARY4.TabIndex = 39;
             // 
             // txtSUMMARY3
             // 
             this.txtSUMMARY3.EditValue = "";
-            this.txtSUMMARY3.Location = new System.Drawing.Point(0, 132);
-            this.txtSUMMARY3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtSUMMARY3.Location = new System.Drawing.Point(0, 213);
+            this.txtSUMMARY3.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.txtSUMMARY3.Name = "txtSUMMARY3";
             this.txtSUMMARY3.Properties.MaxLength = 200;
-            this.txtSUMMARY3.Size = new System.Drawing.Size(1022, 90);
+            this.txtSUMMARY3.Size = new System.Drawing.Size(1661, 145);
             this.txtSUMMARY3.TabIndex = 38;
             // 
             // btnQJJL
@@ -5054,10 +5054,10 @@
             this.btnQJJL.ImageIndex = 0;
             this.btnQJJL.ImageList = this.imageCollection1;
             this.btnQJJL.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleLeft;
-            this.btnQJJL.Location = new System.Drawing.Point(671, 593);
-            this.btnQJJL.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnQJJL.Location = new System.Drawing.Point(1093, 960);
+            this.btnQJJL.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.btnQJJL.Name = "btnQJJL";
-            this.btnQJJL.Size = new System.Drawing.Size(181, 30);
+            this.btnQJJL.Size = new System.Drawing.Size(294, 48);
             this.btnQJJL.TabIndex = 37;
             this.btnQJJL.Text = "医生补录抢救记录";
             this.btnQJJL.Click += new System.EventHandler(this.btnQJJL_Click);
@@ -5065,11 +5065,11 @@
             // txtSUMMARY2
             // 
             this.txtSUMMARY2.EditValue = "";
-            this.txtSUMMARY2.Location = new System.Drawing.Point(0, 22);
-            this.txtSUMMARY2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtSUMMARY2.Location = new System.Drawing.Point(0, 35);
+            this.txtSUMMARY2.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.txtSUMMARY2.Name = "txtSUMMARY2";
             this.txtSUMMARY2.Properties.MaxLength = 200;
-            this.txtSUMMARY2.Size = new System.Drawing.Size(1022, 90);
+            this.txtSUMMARY2.Size = new System.Drawing.Size(1661, 145);
             this.txtSUMMARY2.TabIndex = 1;
             // 
             // xtraTabPage1
@@ -5077,9 +5077,9 @@
             this.xtraTabPage1.Appearance.Header.Font = new System.Drawing.Font("微软雅黑", 10.5F);
             this.xtraTabPage1.Appearance.Header.Options.UseFont = true;
             this.xtraTabPage1.Controls.Add(this.groupControl1);
-            this.xtraTabPage1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.xtraTabPage1.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.xtraTabPage1.Name = "xtraTabPage1";
-            this.xtraTabPage1.Size = new System.Drawing.Size(1221, 810);
+            this.xtraTabPage1.Size = new System.Drawing.Size(1992, 1306);
             this.xtraTabPage1.Text = "并发症";
             // 
             // groupControl1
@@ -5151,17 +5151,17 @@
             this.groupControl1.Controls.Add(this.labelControl154);
             this.groupControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupControl1.Location = new System.Drawing.Point(0, 0);
-            this.groupControl1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.groupControl1.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.groupControl1.Name = "groupControl1";
-            this.groupControl1.Size = new System.Drawing.Size(1221, 810);
+            this.groupControl1.Size = new System.Drawing.Size(1992, 1306);
             this.groupControl1.TabIndex = 735;
             this.groupControl1.Text = "并发症";
             // 
             // combOT_JZ
             // 
             this.combOT_JZ.EnterMoveNextControl = true;
-            this.combOT_JZ.Location = new System.Drawing.Point(766, 352);
-            this.combOT_JZ.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.combOT_JZ.Location = new System.Drawing.Point(1245, 567);
+            this.combOT_JZ.Margin = new System.Windows.Forms.Padding(5, 8, 5, 8);
             this.combOT_JZ.Name = "combOT_JZ";
             this.combOT_JZ.Properties.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F);
             this.combOT_JZ.Properties.Appearance.ForeColor = System.Drawing.Color.Blue;
@@ -5175,25 +5175,25 @@
             this.combOT_JZ.Properties.LookAndFeel.SkinName = "ExtendBlue";
             this.combOT_JZ.Properties.PopupSizeable = true;
             this.combOT_JZ.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
-            this.combOT_JZ.Size = new System.Drawing.Size(115, 26);
+            this.combOT_JZ.Size = new System.Drawing.Size(187, 38);
             this.combOT_JZ.TabIndex = 811;
             // 
             // labelControl150
             // 
             this.labelControl150.Appearance.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.labelControl150.Appearance.ForeColor = System.Drawing.Color.Red;
-            this.labelControl150.Location = new System.Drawing.Point(629, 360);
-            this.labelControl150.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.labelControl150.Location = new System.Drawing.Point(1022, 580);
+            this.labelControl150.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.labelControl150.Name = "labelControl150";
-            this.labelControl150.Size = new System.Drawing.Size(135, 15);
+            this.labelControl150.Size = new System.Drawing.Size(216, 24);
             this.labelControl150.TabIndex = 810;
             this.labelControl150.Text = "严重危及患者生命：";
             // 
             // combDXY
             // 
             this.combDXY.EnterMoveNextControl = true;
-            this.combDXY.Location = new System.Drawing.Point(462, 354);
-            this.combDXY.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.combDXY.Location = new System.Drawing.Point(751, 570);
+            this.combDXY.Margin = new System.Windows.Forms.Padding(5, 8, 5, 8);
             this.combDXY.Name = "combDXY";
             this.combDXY.Properties.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F);
             this.combDXY.Properties.Appearance.ForeColor = System.Drawing.Color.Blue;
@@ -5207,34 +5207,34 @@
             this.combDXY.Properties.LookAndFeel.SkinName = "ExtendBlue";
             this.combDXY.Properties.PopupSizeable = true;
             this.combDXY.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
-            this.combDXY.Size = new System.Drawing.Size(115, 26);
+            this.combDXY.Size = new System.Drawing.Size(187, 38);
             this.combDXY.TabIndex = 809;
             // 
             // labelControl151
             // 
             this.labelControl151.Appearance.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.labelControl151.Location = new System.Drawing.Point(395, 360);
-            this.labelControl151.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.labelControl151.Location = new System.Drawing.Point(642, 580);
+            this.labelControl151.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.labelControl151.Name = "labelControl151";
-            this.labelControl151.Size = new System.Drawing.Size(60, 15);
+            this.labelControl151.Size = new System.Drawing.Size(96, 24);
             this.labelControl151.TabIndex = 808;
             this.labelControl151.Text = "低血压：";
             // 
             // labelControl147
             // 
             this.labelControl147.Appearance.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.labelControl147.Location = new System.Drawing.Point(693, 36);
-            this.labelControl147.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.labelControl147.Location = new System.Drawing.Point(1126, 58);
+            this.labelControl147.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.labelControl147.Name = "labelControl147";
-            this.labelControl147.Size = new System.Drawing.Size(60, 15);
+            this.labelControl147.Size = new System.Drawing.Size(96, 24);
             this.labelControl147.TabIndex = 806;
             this.labelControl147.Text = "治疗护士";
             // 
             // combNURSE_ID
             // 
             this.combNURSE_ID.EnterMoveNextControl = true;
-            this.combNURSE_ID.Location = new System.Drawing.Point(766, 35);
-            this.combNURSE_ID.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.combNURSE_ID.Location = new System.Drawing.Point(1245, 56);
+            this.combNURSE_ID.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.combNURSE_ID.Name = "combNURSE_ID";
             this.combNURSE_ID.Properties.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.combNURSE_ID.Properties.Appearance.ForeColor = System.Drawing.Color.Blue;
@@ -5244,14 +5244,14 @@
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.combNURSE_ID.Properties.LookAndFeel.SkinName = "ExtendBlue";
             this.combNURSE_ID.Properties.NullText = "";
-            this.combNURSE_ID.Size = new System.Drawing.Size(115, 26);
+            this.combNURSE_ID.Size = new System.Drawing.Size(187, 38);
             this.combNURSE_ID.TabIndex = 804;
             // 
             // combMACHINE_ID
             // 
             this.combMACHINE_ID.EnterMoveNextControl = true;
-            this.combMACHINE_ID.Location = new System.Drawing.Point(462, 35);
-            this.combMACHINE_ID.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.combMACHINE_ID.Location = new System.Drawing.Point(751, 56);
+            this.combMACHINE_ID.Margin = new System.Windows.Forms.Padding(5, 8, 5, 8);
             this.combMACHINE_ID.Name = "combMACHINE_ID";
             this.combMACHINE_ID.Properties.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F);
             this.combMACHINE_ID.Properties.Appearance.ForeColor = System.Drawing.Color.Blue;
@@ -5264,24 +5264,24 @@
             this.combMACHINE_ID.Properties.LookAndFeel.SkinName = "ExtendBlue";
             this.combMACHINE_ID.Properties.PopupSizeable = true;
             this.combMACHINE_ID.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
-            this.combMACHINE_ID.Size = new System.Drawing.Size(114, 26);
+            this.combMACHINE_ID.Size = new System.Drawing.Size(185, 38);
             this.combMACHINE_ID.TabIndex = 801;
             // 
             // labelControl125
             // 
             this.labelControl125.Appearance.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.labelControl125.Location = new System.Drawing.Point(402, 36);
-            this.labelControl125.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.labelControl125.Location = new System.Drawing.Point(653, 58);
+            this.labelControl125.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.labelControl125.Name = "labelControl125";
-            this.labelControl125.Size = new System.Drawing.Size(45, 15);
+            this.labelControl125.Size = new System.Drawing.Size(72, 24);
             this.labelControl125.TabIndex = 805;
             this.labelControl125.Text = "透析机";
             // 
             // combMACHINE_ID_TAG
             // 
             this.combMACHINE_ID_TAG.EnterMoveNextControl = true;
-            this.combMACHINE_ID_TAG.Location = new System.Drawing.Point(577, 35);
-            this.combMACHINE_ID_TAG.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.combMACHINE_ID_TAG.Location = new System.Drawing.Point(938, 56);
+            this.combMACHINE_ID_TAG.Margin = new System.Windows.Forms.Padding(5, 8, 5, 8);
             this.combMACHINE_ID_TAG.Name = "combMACHINE_ID_TAG";
             this.combMACHINE_ID_TAG.Properties.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F);
             this.combMACHINE_ID_TAG.Properties.Appearance.ForeColor = System.Drawing.Color.Blue;
@@ -5297,14 +5297,14 @@
             this.combMACHINE_ID_TAG.Properties.LookAndFeel.SkinName = "ExtendBlue";
             this.combMACHINE_ID_TAG.Properties.PopupSizeable = true;
             this.combMACHINE_ID_TAG.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
-            this.combMACHINE_ID_TAG.Size = new System.Drawing.Size(57, 26);
+            this.combMACHINE_ID_TAG.Size = new System.Drawing.Size(93, 38);
             this.combMACHINE_ID_TAG.TabIndex = 803;
             // 
             // combFIRST_PURIFIER_MODEL
             // 
             this.combFIRST_PURIFIER_MODEL.EnterMoveNextControl = true;
-            this.combFIRST_PURIFIER_MODEL.Location = new System.Drawing.Point(210, 35);
-            this.combFIRST_PURIFIER_MODEL.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.combFIRST_PURIFIER_MODEL.Location = new System.Drawing.Point(341, 56);
+            this.combFIRST_PURIFIER_MODEL.Margin = new System.Windows.Forms.Padding(5, 8, 5, 8);
             this.combFIRST_PURIFIER_MODEL.Name = "combFIRST_PURIFIER_MODEL";
             this.combFIRST_PURIFIER_MODEL.Properties.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F);
             this.combFIRST_PURIFIER_MODEL.Properties.Appearance.ForeColor = System.Drawing.Color.Blue;
@@ -5314,24 +5314,24 @@
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.combFIRST_PURIFIER_MODEL.Properties.LookAndFeel.SkinName = "ExtendBlue";
             this.combFIRST_PURIFIER_MODEL.Properties.NullText = "";
-            this.combFIRST_PURIFIER_MODEL.Size = new System.Drawing.Size(115, 26);
+            this.combFIRST_PURIFIER_MODEL.Size = new System.Drawing.Size(187, 38);
             this.combFIRST_PURIFIER_MODEL.TabIndex = 799;
             // 
             // labelControl126
             // 
             this.labelControl126.Appearance.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.labelControl126.Location = new System.Drawing.Point(135, 36);
-            this.labelControl126.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.labelControl126.Location = new System.Drawing.Point(219, 58);
+            this.labelControl126.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.labelControl126.Name = "labelControl126";
-            this.labelControl126.Size = new System.Drawing.Size(75, 15);
+            this.labelControl126.Size = new System.Drawing.Size(120, 24);
             this.labelControl126.TabIndex = 802;
             this.labelControl126.Text = "净化器类型";
             // 
             // textEdit2
             // 
             this.textEdit2.EnterMoveNextControl = true;
-            this.textEdit2.Location = new System.Drawing.Point(283, 4);
-            this.textEdit2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.textEdit2.Location = new System.Drawing.Point(460, 6);
+            this.textEdit2.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.textEdit2.Name = "textEdit2";
             this.textEdit2.Properties.Appearance.BackColor = System.Drawing.Color.White;
             this.textEdit2.Properties.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
@@ -5340,15 +5340,15 @@
             this.textEdit2.Properties.Appearance.Options.UseFont = true;
             this.textEdit2.Properties.Appearance.Options.UseForeColor = true;
             this.textEdit2.Properties.LookAndFeel.SkinName = "ExtendBlue";
-            this.textEdit2.Size = new System.Drawing.Size(26, 26);
+            this.textEdit2.Size = new System.Drawing.Size(42, 38);
             this.textEdit2.TabIndex = 800;
             this.textEdit2.Visible = false;
             // 
             // combYSFYCD
             // 
             this.combYSFYCD.EnterMoveNextControl = true;
-            this.combYSFYCD.Location = new System.Drawing.Point(766, 318);
-            this.combYSFYCD.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.combYSFYCD.Location = new System.Drawing.Point(1245, 512);
+            this.combYSFYCD.Margin = new System.Windows.Forms.Padding(5, 8, 5, 8);
             this.combYSFYCD.Name = "combYSFYCD";
             this.combYSFYCD.Properties.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F);
             this.combYSFYCD.Properties.Appearance.ForeColor = System.Drawing.Color.Blue;
@@ -5362,14 +5362,14 @@
             this.combYSFYCD.Properties.LookAndFeel.SkinName = "ExtendBlue";
             this.combYSFYCD.Properties.PopupSizeable = true;
             this.combYSFYCD.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
-            this.combYSFYCD.Size = new System.Drawing.Size(115, 26);
+            this.combYSFYCD.Size = new System.Drawing.Size(187, 38);
             this.combYSFYCD.TabIndex = 757;
             // 
             // combXLSC
             // 
             this.combXLSC.EnterMoveNextControl = true;
-            this.combXLSC.Location = new System.Drawing.Point(766, 283);
-            this.combXLSC.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.combXLSC.Location = new System.Drawing.Point(1245, 456);
+            this.combXLSC.Margin = new System.Windows.Forms.Padding(5, 8, 5, 8);
             this.combXLSC.Name = "combXLSC";
             this.combXLSC.Properties.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F);
             this.combXLSC.Properties.Appearance.ForeColor = System.Drawing.Color.Blue;
@@ -5383,14 +5383,14 @@
             this.combXLSC.Properties.LookAndFeel.SkinName = "ExtendBlue";
             this.combXLSC.Properties.PopupSizeable = true;
             this.combXLSC.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
-            this.combXLSC.Size = new System.Drawing.Size(115, 26);
+            this.combXLSC.Size = new System.Drawing.Size(187, 38);
             this.combXLSC.TabIndex = 756;
             // 
             // combDXT
             // 
             this.combDXT.EnterMoveNextControl = true;
-            this.combDXT.Location = new System.Drawing.Point(766, 248);
-            this.combDXT.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.combDXT.Location = new System.Drawing.Point(1245, 400);
+            this.combDXT.Margin = new System.Windows.Forms.Padding(5, 8, 5, 8);
             this.combDXT.Name = "combDXT";
             this.combDXT.Properties.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F);
             this.combDXT.Properties.Appearance.ForeColor = System.Drawing.Color.Blue;
@@ -5404,14 +5404,14 @@
             this.combDXT.Properties.LookAndFeel.SkinName = "ExtendBlue";
             this.combDXT.Properties.PopupSizeable = true;
             this.combDXT.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
-            this.combDXT.Size = new System.Drawing.Size(115, 26);
+            this.combDXT.Size = new System.Drawing.Size(187, 38);
             this.combDXT.TabIndex = 755;
             // 
             // combXMXT
             // 
             this.combXMXT.EnterMoveNextControl = true;
-            this.combXMXT.Location = new System.Drawing.Point(766, 213);
-            this.combXMXT.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.combXMXT.Location = new System.Drawing.Point(1245, 343);
+            this.combXMXT.Margin = new System.Windows.Forms.Padding(5, 8, 5, 8);
             this.combXMXT.Name = "combXMXT";
             this.combXMXT.Properties.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F);
             this.combXMXT.Properties.Appearance.ForeColor = System.Drawing.Color.Blue;
@@ -5425,14 +5425,14 @@
             this.combXMXT.Properties.LookAndFeel.SkinName = "ExtendBlue";
             this.combXMXT.Properties.PopupSizeable = true;
             this.combXMXT.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
-            this.combXMXT.Size = new System.Drawing.Size(115, 26);
+            this.combXMXT.Size = new System.Drawing.Size(187, 38);
             this.combXMXT.TabIndex = 754;
             // 
             // combTWSG
             // 
             this.combTWSG.EnterMoveNextControl = true;
-            this.combTWSG.Location = new System.Drawing.Point(766, 179);
-            this.combTWSG.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.combTWSG.Location = new System.Drawing.Point(1245, 288);
+            this.combTWSG.Margin = new System.Windows.Forms.Padding(5, 8, 5, 8);
             this.combTWSG.Name = "combTWSG";
             this.combTWSG.Properties.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F);
             this.combTWSG.Properties.Appearance.ForeColor = System.Drawing.Color.Blue;
@@ -5446,14 +5446,14 @@
             this.combTWSG.Properties.LookAndFeel.SkinName = "ExtendBlue";
             this.combTWSG.Properties.PopupSizeable = true;
             this.combTWSG.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
-            this.combTWSG.Size = new System.Drawing.Size(115, 26);
+            this.combTWSG.Size = new System.Drawing.Size(187, 38);
             this.combTWSG.TabIndex = 753;
             // 
             // combSYPK
             // 
             this.combSYPK.EnterMoveNextControl = true;
-            this.combSYPK.Location = new System.Drawing.Point(766, 144);
-            this.combSYPK.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.combSYPK.Location = new System.Drawing.Point(1245, 232);
+            this.combSYPK.Margin = new System.Windows.Forms.Padding(5, 8, 5, 8);
             this.combSYPK.Name = "combSYPK";
             this.combSYPK.Properties.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F);
             this.combSYPK.Properties.Appearance.ForeColor = System.Drawing.Color.Blue;
@@ -5467,14 +5467,14 @@
             this.combSYPK.Properties.LookAndFeel.SkinName = "ExtendBlue";
             this.combSYPK.Properties.PopupSizeable = true;
             this.combSYPK.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
-            this.combSYPK.Size = new System.Drawing.Size(115, 26);
+            this.combSYPK.Size = new System.Drawing.Size(187, 38);
             this.combSYPK.TabIndex = 752;
             // 
             // combGXJ
             // 
             this.combGXJ.EnterMoveNextControl = true;
-            this.combGXJ.Location = new System.Drawing.Point(766, 109);
-            this.combGXJ.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.combGXJ.Location = new System.Drawing.Point(1245, 176);
+            this.combGXJ.Margin = new System.Windows.Forms.Padding(5, 8, 5, 8);
             this.combGXJ.Name = "combGXJ";
             this.combGXJ.Properties.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F);
             this.combGXJ.Properties.Appearance.ForeColor = System.Drawing.Color.Blue;
@@ -5488,14 +5488,14 @@
             this.combGXJ.Properties.LookAndFeel.SkinName = "ExtendBlue";
             this.combGXJ.Properties.PopupSizeable = true;
             this.combGXJ.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
-            this.combGXJ.Size = new System.Drawing.Size(115, 26);
+            this.combGXJ.Size = new System.Drawing.Size(187, 38);
             this.combGXJ.TabIndex = 751;
             // 
             // combXGTLGR
             // 
             this.combXGTLGR.EnterMoveNextControl = true;
-            this.combXGTLGR.Location = new System.Drawing.Point(766, 75);
-            this.combXGTLGR.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.combXGTLGR.Location = new System.Drawing.Point(1245, 121);
+            this.combXGTLGR.Margin = new System.Windows.Forms.Padding(5, 8, 5, 8);
             this.combXGTLGR.Name = "combXGTLGR";
             this.combXGTLGR.Properties.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F);
             this.combXGTLGR.Properties.Appearance.ForeColor = System.Drawing.Color.Blue;
@@ -5509,14 +5509,14 @@
             this.combXGTLGR.Properties.LookAndFeel.SkinName = "ExtendBlue";
             this.combXGTLGR.Properties.PopupSizeable = true;
             this.combXGTLGR.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
-            this.combXGTLGR.Size = new System.Drawing.Size(115, 26);
+            this.combXGTLGR.Size = new System.Drawing.Size(187, 38);
             this.combXGTLGR.TabIndex = 750;
             // 
             // combCC
             // 
             this.combCC.EnterMoveNextControl = true;
-            this.combCC.Location = new System.Drawing.Point(461, 318);
-            this.combCC.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.combCC.Location = new System.Drawing.Point(749, 512);
+            this.combCC.Margin = new System.Windows.Forms.Padding(5, 8, 5, 8);
             this.combCC.Name = "combCC";
             this.combCC.Properties.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F);
             this.combCC.Properties.Appearance.ForeColor = System.Drawing.Color.Blue;
@@ -5530,14 +5530,14 @@
             this.combCC.Properties.LookAndFeel.SkinName = "ExtendBlue";
             this.combCC.Properties.PopupSizeable = true;
             this.combCC.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
-            this.combCC.Size = new System.Drawing.Size(115, 26);
+            this.combCC.Size = new System.Drawing.Size(187, 38);
             this.combCC.TabIndex = 749;
             // 
             // combXYSG
             // 
             this.combXYSG.EnterMoveNextControl = true;
-            this.combXYSG.Location = new System.Drawing.Point(461, 283);
-            this.combXYSG.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.combXYSG.Location = new System.Drawing.Point(749, 456);
+            this.combXYSG.Margin = new System.Windows.Forms.Padding(5, 8, 5, 8);
             this.combXYSG.Name = "combXYSG";
             this.combXYSG.Properties.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F);
             this.combXYSG.Properties.Appearance.ForeColor = System.Drawing.Color.Blue;
@@ -5551,14 +5551,14 @@
             this.combXYSG.Properties.LookAndFeel.SkinName = "ExtendBlue";
             this.combXYSG.Properties.PopupSizeable = true;
             this.combXYSG.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
-            this.combXYSG.Size = new System.Drawing.Size(115, 26);
+            this.combXYSG.Size = new System.Drawing.Size(187, 38);
             this.combXYSG.TabIndex = 748;
             // 
             // combJRJL
             // 
             this.combJRJL.EnterMoveNextControl = true;
-            this.combJRJL.Location = new System.Drawing.Point(461, 248);
-            this.combJRJL.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.combJRJL.Location = new System.Drawing.Point(749, 400);
+            this.combJRJL.Margin = new System.Windows.Forms.Padding(5, 8, 5, 8);
             this.combJRJL.Name = "combJRJL";
             this.combJRJL.Properties.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F);
             this.combJRJL.Properties.Appearance.ForeColor = System.Drawing.Color.Blue;
@@ -5572,14 +5572,14 @@
             this.combJRJL.Properties.LookAndFeel.SkinName = "ExtendBlue";
             this.combJRJL.Properties.PopupSizeable = true;
             this.combJRJL.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
-            this.combJRJL.Size = new System.Drawing.Size(115, 26);
+            this.combJRJL.Size = new System.Drawing.Size(187, 38);
             this.combJRJL.TabIndex = 747;
             // 
             // combGM
             // 
             this.combGM.EnterMoveNextControl = true;
-            this.combGM.Location = new System.Drawing.Point(461, 213);
-            this.combGM.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.combGM.Location = new System.Drawing.Point(749, 343);
+            this.combGM.Margin = new System.Windows.Forms.Padding(5, 8, 5, 8);
             this.combGM.Name = "combGM";
             this.combGM.Properties.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F);
             this.combGM.Properties.Appearance.ForeColor = System.Drawing.Color.Blue;
@@ -5593,14 +5593,14 @@
             this.combGM.Properties.LookAndFeel.SkinName = "ExtendBlue";
             this.combGM.Properties.PopupSizeable = true;
             this.combGM.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
-            this.combGM.Size = new System.Drawing.Size(115, 26);
+            this.combGM.Size = new System.Drawing.Size(187, 38);
             this.combGM.TabIndex = 746;
             // 
             // combEXOT
             // 
             this.combEXOT.EnterMoveNextControl = true;
-            this.combEXOT.Location = new System.Drawing.Point(461, 179);
-            this.combEXOT.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.combEXOT.Location = new System.Drawing.Point(749, 288);
+            this.combEXOT.Margin = new System.Windows.Forms.Padding(5, 8, 5, 8);
             this.combEXOT.Name = "combEXOT";
             this.combEXOT.Properties.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F);
             this.combEXOT.Properties.Appearance.ForeColor = System.Drawing.Color.Blue;
@@ -5614,14 +5614,14 @@
             this.combEXOT.Properties.LookAndFeel.SkinName = "ExtendBlue";
             this.combEXOT.Properties.PopupSizeable = true;
             this.combEXOT.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
-            this.combEXOT.Size = new System.Drawing.Size(115, 26);
+            this.combEXOT.Size = new System.Drawing.Size(187, 38);
             this.combEXOT.TabIndex = 745;
             // 
             // combTXQPM
             // 
             this.combTXQPM.EnterMoveNextControl = true;
-            this.combTXQPM.Location = new System.Drawing.Point(461, 144);
-            this.combTXQPM.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.combTXQPM.Location = new System.Drawing.Point(749, 232);
+            this.combTXQPM.Margin = new System.Windows.Forms.Padding(5, 8, 5, 8);
             this.combTXQPM.Name = "combTXQPM";
             this.combTXQPM.Properties.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F);
             this.combTXQPM.Properties.Appearance.ForeColor = System.Drawing.Color.Blue;
@@ -5635,14 +5635,14 @@
             this.combTXQPM.Properties.LookAndFeel.SkinName = "ExtendBlue";
             this.combTXQPM.Properties.PopupSizeable = true;
             this.combTXQPM.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
-            this.combTXQPM.Size = new System.Drawing.Size(115, 26);
+            this.combTXQPM.Size = new System.Drawing.Size(187, 38);
             this.combTXQPM.TabIndex = 744;
             // 
             // combRGSNG
             // 
             this.combRGSNG.EnterMoveNextControl = true;
-            this.combRGSNG.Location = new System.Drawing.Point(461, 109);
-            this.combRGSNG.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.combRGSNG.Location = new System.Drawing.Point(749, 176);
+            this.combRGSNG.Margin = new System.Windows.Forms.Padding(5, 8, 5, 8);
             this.combRGSNG.Name = "combRGSNG";
             this.combRGSNG.Properties.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F);
             this.combRGSNG.Properties.Appearance.ForeColor = System.Drawing.Color.Blue;
@@ -5656,14 +5656,14 @@
             this.combRGSNG.Properties.LookAndFeel.SkinName = "ExtendBlue";
             this.combRGSNG.Properties.PopupSizeable = true;
             this.combRGSNG.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
-            this.combRGSNG.Size = new System.Drawing.Size(115, 26);
+            this.combRGSNG.Size = new System.Drawing.Size(187, 38);
             this.combRGSNG.TabIndex = 743;
             // 
             // combCCCSZ
             // 
             this.combCCCSZ.EnterMoveNextControl = true;
-            this.combCCCSZ.Location = new System.Drawing.Point(461, 75);
-            this.combCCCSZ.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.combCCCSZ.Location = new System.Drawing.Point(749, 121);
+            this.combCCCSZ.Margin = new System.Windows.Forms.Padding(5, 8, 5, 8);
             this.combCCCSZ.Name = "combCCCSZ";
             this.combCCCSZ.Properties.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F);
             this.combCCCSZ.Properties.Appearance.ForeColor = System.Drawing.Color.Blue;
@@ -5677,14 +5677,14 @@
             this.combCCCSZ.Properties.LookAndFeel.SkinName = "ExtendBlue";
             this.combCCCSZ.Properties.PopupSizeable = true;
             this.combCCCSZ.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
-            this.combCCCSZ.Size = new System.Drawing.Size(115, 26);
+            this.combCCCSZ.Size = new System.Drawing.Size(187, 38);
             this.combCCCSZ.TabIndex = 742;
             // 
             // combTSWZ
             // 
             this.combTSWZ.EnterMoveNextControl = true;
-            this.combTSWZ.Location = new System.Drawing.Point(210, 355);
-            this.combTSWZ.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.combTSWZ.Location = new System.Drawing.Point(341, 572);
+            this.combTSWZ.Margin = new System.Windows.Forms.Padding(5, 8, 5, 8);
             this.combTSWZ.Name = "combTSWZ";
             this.combTSWZ.Properties.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F);
             this.combTSWZ.Properties.Appearance.ForeColor = System.Drawing.Color.Blue;
@@ -5698,14 +5698,14 @@
             this.combTSWZ.Properties.LookAndFeel.SkinName = "ExtendBlue";
             this.combTSWZ.Properties.PopupSizeable = true;
             this.combTSWZ.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
-            this.combTSWZ.Size = new System.Drawing.Size(115, 26);
+            this.combTSWZ.Size = new System.Drawing.Size(187, 38);
             this.combTSWZ.TabIndex = 741;
             // 
             // combXS
             // 
             this.combXS.EnterMoveNextControl = true;
-            this.combXS.Location = new System.Drawing.Point(210, 318);
-            this.combXS.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.combXS.Location = new System.Drawing.Point(341, 512);
+            this.combXS.Margin = new System.Windows.Forms.Padding(5, 8, 5, 8);
             this.combXS.Name = "combXS";
             this.combXS.Properties.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F);
             this.combXS.Properties.Appearance.ForeColor = System.Drawing.Color.Blue;
@@ -5719,14 +5719,14 @@
             this.combXS.Properties.LookAndFeel.SkinName = "ExtendBlue";
             this.combXS.Properties.PopupSizeable = true;
             this.combXS.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
-            this.combXS.Size = new System.Drawing.Size(115, 26);
+            this.combXS.Size = new System.Drawing.Size(187, 38);
             this.combXS.TabIndex = 740;
             // 
             // combXYXJXK
             // 
             this.combXYXJXK.EnterMoveNextControl = true;
-            this.combXYXJXK.Location = new System.Drawing.Point(210, 283);
-            this.combXYXJXK.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.combXYXJXK.Location = new System.Drawing.Point(341, 456);
+            this.combXYXJXK.Margin = new System.Windows.Forms.Padding(5, 8, 5, 8);
             this.combXYXJXK.Name = "combXYXJXK";
             this.combXYXJXK.Properties.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F);
             this.combXYXJXK.Properties.Appearance.ForeColor = System.Drawing.Color.Blue;
@@ -5740,14 +5740,14 @@
             this.combXYXJXK.Properties.LookAndFeel.SkinName = "ExtendBlue";
             this.combXYXJXK.Properties.PopupSizeable = true;
             this.combXYXJXK.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
-            this.combXYXJXK.Size = new System.Drawing.Size(115, 26);
+            this.combXYXJXK.Size = new System.Drawing.Size(187, 38);
             this.combXYXJXK.TabIndex = 739;
             // 
             // combFT
             // 
             this.combFT.EnterMoveNextControl = true;
-            this.combFT.Location = new System.Drawing.Point(210, 248);
-            this.combFT.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.combFT.Location = new System.Drawing.Point(341, 400);
+            this.combFT.Margin = new System.Windows.Forms.Padding(5, 8, 5, 8);
             this.combFT.Name = "combFT";
             this.combFT.Properties.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F);
             this.combFT.Properties.Appearance.ForeColor = System.Drawing.Color.Blue;
@@ -5761,14 +5761,14 @@
             this.combFT.Properties.LookAndFeel.SkinName = "ExtendBlue";
             this.combFT.Properties.PopupSizeable = true;
             this.combFT.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
-            this.combFT.Size = new System.Drawing.Size(115, 26);
+            this.combFT.Size = new System.Drawing.Size(187, 38);
             this.combFT.TabIndex = 738;
             // 
             // combPFSY
             // 
             this.combPFSY.EnterMoveNextControl = true;
-            this.combPFSY.Location = new System.Drawing.Point(210, 213);
-            this.combPFSY.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.combPFSY.Location = new System.Drawing.Point(341, 343);
+            this.combPFSY.Margin = new System.Windows.Forms.Padding(5, 8, 5, 8);
             this.combPFSY.Name = "combPFSY";
             this.combPFSY.Properties.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F);
             this.combPFSY.Properties.Appearance.ForeColor = System.Drawing.Color.Blue;
@@ -5782,14 +5782,14 @@
             this.combPFSY.Properties.LookAndFeel.SkinName = "ExtendBlue";
             this.combPFSY.Properties.PopupSizeable = true;
             this.combPFSY.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
-            this.combPFSY.Size = new System.Drawing.Size(115, 26);
+            this.combPFSY.Size = new System.Drawing.Size(187, 38);
             this.combPFSY.TabIndex = 737;
             // 
             // combTYTT
             // 
             this.combTYTT.EnterMoveNextControl = true;
-            this.combTYTT.Location = new System.Drawing.Point(210, 179);
-            this.combTYTT.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.combTYTT.Location = new System.Drawing.Point(341, 288);
+            this.combTYTT.Margin = new System.Windows.Forms.Padding(5, 8, 5, 8);
             this.combTYTT.Name = "combTYTT";
             this.combTYTT.Properties.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F);
             this.combTYTT.Properties.Appearance.ForeColor = System.Drawing.Color.Blue;
@@ -5803,14 +5803,14 @@
             this.combTYTT.Properties.LookAndFeel.SkinName = "ExtendBlue";
             this.combTYTT.Properties.PopupSizeable = true;
             this.combTYTT.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
-            this.combTYTT.Size = new System.Drawing.Size(115, 26);
+            this.combTYTT.Size = new System.Drawing.Size(187, 38);
             this.combTYTT.TabIndex = 736;
             // 
             // combSX
             // 
             this.combSX.EnterMoveNextControl = true;
-            this.combSX.Location = new System.Drawing.Point(210, 144);
-            this.combSX.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.combSX.Location = new System.Drawing.Point(341, 232);
+            this.combSX.Margin = new System.Windows.Forms.Padding(5, 8, 5, 8);
             this.combSX.Name = "combSX";
             this.combSX.Properties.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F);
             this.combSX.Properties.Appearance.ForeColor = System.Drawing.Color.Blue;
@@ -5824,14 +5824,14 @@
             this.combSX.Properties.LookAndFeel.SkinName = "ExtendBlue";
             this.combSX.Properties.PopupSizeable = true;
             this.combSX.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
-            this.combSX.Size = new System.Drawing.Size(115, 26);
+            this.combSX.Size = new System.Drawing.Size(187, 38);
             this.combSX.TabIndex = 735;
             // 
             // combCCZTL
             // 
             this.combCCZTL.EnterMoveNextControl = true;
-            this.combCCZTL.Location = new System.Drawing.Point(210, 109);
-            this.combCCZTL.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.combCCZTL.Location = new System.Drawing.Point(341, 176);
+            this.combCCZTL.Margin = new System.Windows.Forms.Padding(5, 8, 5, 8);
             this.combCCZTL.Name = "combCCZTL";
             this.combCCZTL.Properties.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F);
             this.combCCZTL.Properties.Appearance.ForeColor = System.Drawing.Color.Blue;
@@ -5845,14 +5845,14 @@
             this.combCCZTL.Properties.LookAndFeel.SkinName = "ExtendBlue";
             this.combCCZTL.Properties.PopupSizeable = true;
             this.combCCZTL.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
-            this.combCCZTL.Size = new System.Drawing.Size(115, 26);
+            this.combCCZTL.Size = new System.Drawing.Size(187, 38);
             this.combCCZTL.TabIndex = 734;
             // 
             // combCCSW
             // 
             this.combCCSW.EnterMoveNextControl = true;
-            this.combCCSW.Location = new System.Drawing.Point(210, 75);
-            this.combCCSW.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.combCCSW.Location = new System.Drawing.Point(341, 121);
+            this.combCCSW.Margin = new System.Windows.Forms.Padding(5, 8, 5, 8);
             this.combCCSW.Name = "combCCSW";
             this.combCCSW.Properties.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F);
             this.combCCSW.Properties.Appearance.ForeColor = System.Drawing.Color.Blue;
@@ -5866,256 +5866,256 @@
             this.combCCSW.Properties.LookAndFeel.SkinName = "ExtendBlue";
             this.combCCSW.Properties.PopupSizeable = true;
             this.combCCSW.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
-            this.combCCSW.Size = new System.Drawing.Size(115, 26);
+            this.combCCSW.Size = new System.Drawing.Size(187, 38);
             this.combCCSW.TabIndex = 733;
             // 
             // labelControl127
             // 
             this.labelControl127.Appearance.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.labelControl127.Location = new System.Drawing.Point(95, 360);
-            this.labelControl127.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.labelControl127.Location = new System.Drawing.Point(154, 580);
+            this.labelControl127.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.labelControl127.Name = "labelControl127";
-            this.labelControl127.Size = new System.Drawing.Size(114, 15);
+            this.labelControl127.Size = new System.Drawing.Size(180, 24);
             this.labelControl127.TabIndex = 145;
             this.labelControl127.Text = "脱水误差≥1Kg：";
             // 
             // labelControl128
             // 
             this.labelControl128.Appearance.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.labelControl128.Location = new System.Drawing.Point(158, 325);
-            this.labelControl128.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.labelControl128.Location = new System.Drawing.Point(257, 524);
+            this.labelControl128.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.labelControl128.Name = "labelControl128";
-            this.labelControl128.Size = new System.Drawing.Size(45, 15);
+            this.labelControl128.Size = new System.Drawing.Size(72, 24);
             this.labelControl128.TabIndex = 139;
             this.labelControl128.Text = "心衰：";
             // 
             // labelControl129
             // 
             this.labelControl129.Appearance.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.labelControl129.Location = new System.Drawing.Point(655, 325);
-            this.labelControl129.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.labelControl129.Location = new System.Drawing.Point(1064, 524);
+            this.labelControl129.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.labelControl129.Name = "labelControl129";
-            this.labelControl129.Size = new System.Drawing.Size(105, 15);
+            this.labelControl129.Size = new System.Drawing.Size(168, 24);
             this.labelControl129.TabIndex = 143;
             this.labelControl129.Text = "意识反应迟钝：";
             // 
             // labelControl130
             // 
             this.labelControl130.Appearance.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.labelControl130.Location = new System.Drawing.Point(409, 325);
-            this.labelControl130.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.labelControl130.Location = new System.Drawing.Point(665, 524);
+            this.labelControl130.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.labelControl130.Name = "labelControl130";
-            this.labelControl130.Size = new System.Drawing.Size(45, 15);
+            this.labelControl130.Size = new System.Drawing.Size(72, 24);
             this.labelControl130.TabIndex = 141;
             this.labelControl130.Text = "抽搐：";
             // 
             // labelControl131
             // 
             this.labelControl131.Appearance.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.labelControl131.Location = new System.Drawing.Point(103, 289);
-            this.labelControl131.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.labelControl131.Location = new System.Drawing.Point(167, 466);
+            this.labelControl131.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.labelControl131.Name = "labelControl131";
-            this.labelControl131.Size = new System.Drawing.Size(105, 15);
+            this.labelControl131.Size = new System.Drawing.Size(168, 24);
             this.labelControl131.TabIndex = 133;
             this.labelControl131.Text = "血压下降休克：";
             // 
             // labelControl132
             // 
             this.labelControl132.Appearance.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.labelControl132.Location = new System.Drawing.Point(685, 289);
-            this.labelControl132.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.labelControl132.Location = new System.Drawing.Point(1113, 466);
+            this.labelControl132.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.labelControl132.Name = "labelControl132";
-            this.labelControl132.Size = new System.Drawing.Size(75, 15);
+            this.labelControl132.Size = new System.Drawing.Size(120, 24);
             this.labelControl132.TabIndex = 137;
             this.labelControl132.Text = "心律失常：";
             // 
             // labelControl133
             // 
             this.labelControl133.Appearance.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.labelControl133.Location = new System.Drawing.Point(379, 289);
-            this.labelControl133.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.labelControl133.Location = new System.Drawing.Point(616, 466);
+            this.labelControl133.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.labelControl133.Name = "labelControl133";
-            this.labelControl133.Size = new System.Drawing.Size(75, 15);
+            this.labelControl133.Size = new System.Drawing.Size(120, 24);
             this.labelControl133.TabIndex = 135;
             this.labelControl133.Text = "血压升高：";
             // 
             // labelControl134
             // 
             this.labelControl134.Appearance.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.labelControl134.Location = new System.Drawing.Point(155, 252);
-            this.labelControl134.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.labelControl134.Location = new System.Drawing.Point(252, 406);
+            this.labelControl134.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.labelControl134.Name = "labelControl134";
-            this.labelControl134.Size = new System.Drawing.Size(45, 15);
+            this.labelControl134.Size = new System.Drawing.Size(72, 24);
             this.labelControl134.TabIndex = 127;
             this.labelControl134.Text = "腹痛：";
             // 
             // labelControl135
             // 
             this.labelControl135.Appearance.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.labelControl135.Location = new System.Drawing.Point(699, 253);
-            this.labelControl135.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.labelControl135.Location = new System.Drawing.Point(1136, 408);
+            this.labelControl135.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.labelControl135.Name = "labelControl135";
-            this.labelControl135.Size = new System.Drawing.Size(60, 15);
+            this.labelControl135.Size = new System.Drawing.Size(96, 24);
             this.labelControl135.TabIndex = 131;
             this.labelControl135.Text = "低血糖：";
             // 
             // labelControl136
             // 
             this.labelControl136.Appearance.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.labelControl136.Location = new System.Drawing.Point(379, 253);
-            this.labelControl136.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.labelControl136.Location = new System.Drawing.Point(616, 408);
+            this.labelControl136.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.labelControl136.Name = "labelControl136";
-            this.labelControl136.Size = new System.Drawing.Size(75, 15);
+            this.labelControl136.Size = new System.Drawing.Size(120, 24);
             this.labelControl136.TabIndex = 129;
             this.labelControl136.Text = "肌肉痉挛：";
             // 
             // labelControl137
             // 
             this.labelControl137.Appearance.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.labelControl137.Location = new System.Drawing.Point(129, 219);
-            this.labelControl137.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.labelControl137.Location = new System.Drawing.Point(210, 353);
+            this.labelControl137.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.labelControl137.Name = "labelControl137";
-            this.labelControl137.Size = new System.Drawing.Size(75, 15);
+            this.labelControl137.Size = new System.Drawing.Size(120, 24);
             this.labelControl137.TabIndex = 121;
             this.labelControl137.Text = "皮肤瘙痒：";
             // 
             // labelControl138
             // 
             this.labelControl138.Appearance.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.labelControl138.Location = new System.Drawing.Point(670, 219);
-            this.labelControl138.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.labelControl138.Location = new System.Drawing.Point(1089, 353);
+            this.labelControl138.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.labelControl138.Name = "labelControl138";
-            this.labelControl138.Size = new System.Drawing.Size(90, 15);
+            this.labelControl138.Size = new System.Drawing.Size(144, 24);
             this.labelControl138.TabIndex = 125;
             this.labelControl138.Text = "胸闷、胸痛：";
             // 
             // labelControl139
             // 
             this.labelControl139.Appearance.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.labelControl139.Location = new System.Drawing.Point(409, 219);
-            this.labelControl139.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.labelControl139.Location = new System.Drawing.Point(665, 353);
+            this.labelControl139.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.labelControl139.Name = "labelControl139";
-            this.labelControl139.Size = new System.Drawing.Size(45, 15);
+            this.labelControl139.Size = new System.Drawing.Size(72, 24);
             this.labelControl139.TabIndex = 123;
             this.labelControl139.Text = "过敏：";
             // 
             // labelControl140
             // 
             this.labelControl140.Appearance.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.labelControl140.Location = new System.Drawing.Point(114, 184);
-            this.labelControl140.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.labelControl140.Location = new System.Drawing.Point(185, 296);
+            this.labelControl140.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.labelControl140.Name = "labelControl140";
-            this.labelControl140.Size = new System.Drawing.Size(90, 15);
+            this.labelControl140.Size = new System.Drawing.Size(144, 24);
             this.labelControl140.TabIndex = 115;
             this.labelControl140.Text = "头晕、头痛：";
             // 
             // labelControl141
             // 
             this.labelControl141.Appearance.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.labelControl141.Location = new System.Drawing.Point(685, 184);
-            this.labelControl141.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.labelControl141.Location = new System.Drawing.Point(1113, 296);
+            this.labelControl141.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.labelControl141.Name = "labelControl141";
-            this.labelControl141.Size = new System.Drawing.Size(75, 15);
+            this.labelControl141.Size = new System.Drawing.Size(120, 24);
             this.labelControl141.TabIndex = 119;
             this.labelControl141.Text = "体温升高：";
             // 
             // labelControl142
             // 
             this.labelControl142.Appearance.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.labelControl142.Location = new System.Drawing.Point(365, 184);
-            this.labelControl142.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.labelControl142.Location = new System.Drawing.Point(593, 296);
+            this.labelControl142.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.labelControl142.Name = "labelControl142";
-            this.labelControl142.Size = new System.Drawing.Size(90, 15);
+            this.labelControl142.Size = new System.Drawing.Size(144, 24);
             this.labelControl142.TabIndex = 117;
             this.labelControl142.Text = "恶心、呕吐：";
             // 
             // labelControl143
             // 
             this.labelControl143.Appearance.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.labelControl143.Location = new System.Drawing.Point(159, 149);
-            this.labelControl143.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.labelControl143.Location = new System.Drawing.Point(258, 240);
+            this.labelControl143.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.labelControl143.Name = "labelControl143";
-            this.labelControl143.Size = new System.Drawing.Size(45, 15);
+            this.labelControl143.Size = new System.Drawing.Size(72, 24);
             this.labelControl143.TabIndex = 109;
             this.labelControl143.Text = "失血：";
             // 
             // labelControl144
             // 
             this.labelControl144.Appearance.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.labelControl144.Location = new System.Drawing.Point(685, 149);
-            this.labelControl144.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.labelControl144.Location = new System.Drawing.Point(1113, 240);
+            this.labelControl144.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.labelControl144.Name = "labelControl144";
-            this.labelControl144.Size = new System.Drawing.Size(75, 15);
+            this.labelControl144.Size = new System.Drawing.Size(120, 24);
             this.labelControl144.TabIndex = 113;
             this.labelControl144.Text = "输液排空：";
             // 
             // labelControl145
             // 
             this.labelControl145.Appearance.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.labelControl145.Location = new System.Drawing.Point(365, 149);
-            this.labelControl145.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.labelControl145.Location = new System.Drawing.Point(593, 240);
+            this.labelControl145.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.labelControl145.Name = "labelControl145";
-            this.labelControl145.Size = new System.Drawing.Size(90, 15);
+            this.labelControl145.Size = new System.Drawing.Size(144, 24);
             this.labelControl145.TabIndex = 111;
             this.labelControl145.Text = "透析器破膜：";
             // 
             // labelControl146
             // 
             this.labelControl146.Appearance.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.labelControl146.Location = new System.Drawing.Point(74, 113);
-            this.labelControl146.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.labelControl146.Location = new System.Drawing.Point(120, 182);
+            this.labelControl146.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.labelControl146.Name = "labelControl146";
-            this.labelControl146.Size = new System.Drawing.Size(135, 15);
+            this.labelControl146.Size = new System.Drawing.Size(216, 24);
             this.labelControl146.TabIndex = 103;
             this.labelControl146.Text = "穿刺针脱落或自拔：";
             // 
             // labelControl148
             // 
             this.labelControl148.Appearance.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.labelControl148.Location = new System.Drawing.Point(699, 114);
-            this.labelControl148.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.labelControl148.Location = new System.Drawing.Point(1136, 184);
+            this.labelControl148.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.labelControl148.Name = "labelControl148";
-            this.labelControl148.Size = new System.Drawing.Size(60, 15);
+            this.labelControl148.Size = new System.Drawing.Size(96, 24);
             this.labelControl148.TabIndex = 107;
             this.labelControl148.Text = "高血钾：";
             // 
             // labelControl149
             // 
             this.labelControl149.Appearance.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.labelControl149.Location = new System.Drawing.Point(365, 114);
-            this.labelControl149.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.labelControl149.Location = new System.Drawing.Point(593, 184);
+            this.labelControl149.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.labelControl149.Name = "labelControl149";
-            this.labelControl149.Size = new System.Drawing.Size(90, 15);
+            this.labelControl149.Size = new System.Drawing.Size(144, 24);
             this.labelControl149.TabIndex = 105;
             this.labelControl149.Text = "人工肾凝固：";
             // 
             // labelControl152
             // 
             this.labelControl152.Appearance.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.labelControl152.Location = new System.Drawing.Point(128, 82);
-            this.labelControl152.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.labelControl152.Location = new System.Drawing.Point(208, 132);
+            this.labelControl152.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.labelControl152.Name = "labelControl152";
-            this.labelControl152.Size = new System.Drawing.Size(75, 15);
+            this.labelControl152.Size = new System.Drawing.Size(120, 24);
             this.labelControl152.TabIndex = 52;
             this.labelControl152.Text = "穿刺失误：";
             // 
             // labelControl153
             // 
             this.labelControl153.Appearance.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.labelControl153.Location = new System.Drawing.Point(610, 80);
-            this.labelControl153.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.labelControl153.Location = new System.Drawing.Point(991, 129);
+            this.labelControl153.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.labelControl153.Name = "labelControl153";
-            this.labelControl153.Size = new System.Drawing.Size(150, 15);
+            this.labelControl153.Size = new System.Drawing.Size(240, 24);
             this.labelControl153.TabIndex = 101;
             this.labelControl153.Text = "血管通路感染、堵塞：";
             // 
             // labelControl154
             // 
             this.labelControl154.Appearance.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.labelControl154.Location = new System.Drawing.Point(365, 80);
-            this.labelControl154.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.labelControl154.Location = new System.Drawing.Point(593, 129);
+            this.labelControl154.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.labelControl154.Name = "labelControl154";
-            this.labelControl154.Size = new System.Drawing.Size(90, 15);
+            this.labelControl154.Size = new System.Drawing.Size(144, 24);
             this.labelControl154.TabIndex = 77;
             this.labelControl154.Text = "穿刺处血肿：";
             // 
@@ -6132,10 +6132,10 @@
             this.panControlButton.Controls.Add(this.btnAdd);
             this.panControlButton.Controls.Add(this.btnSave);
             this.panControlButton.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panControlButton.Location = new System.Drawing.Point(0, 825);
+            this.panControlButton.Location = new System.Drawing.Point(0, 1330);
             this.panControlButton.Margin = new System.Windows.Forms.Padding(0);
             this.panControlButton.Name = "panControlButton";
-            this.panControlButton.Size = new System.Drawing.Size(1321, 45);
+            this.panControlButton.Size = new System.Drawing.Size(2147, 73);
             this.panControlButton.TabIndex = 262;
             // 
             // btnGatherData
@@ -6143,10 +6143,10 @@
             this.btnGatherData.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnGatherData.ImageIndex = 5;
             this.btnGatherData.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleLeft;
-            this.btnGatherData.Location = new System.Drawing.Point(730, 8);
-            this.btnGatherData.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnGatherData.Location = new System.Drawing.Point(1187, 13);
+            this.btnGatherData.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.btnGatherData.Name = "btnGatherData";
-            this.btnGatherData.Size = new System.Drawing.Size(112, 30);
+            this.btnGatherData.Size = new System.Drawing.Size(182, 48);
             this.btnGatherData.TabIndex = 301;
             this.btnGatherData.Text = "采集数据(&G)";
             this.btnGatherData.Visible = false;
@@ -6156,10 +6156,10 @@
             // 
             this.btnShowSummary.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnShowSummary.ImageIndex = 0;
-            this.btnShowSummary.Location = new System.Drawing.Point(1134, 8);
-            this.btnShowSummary.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnShowSummary.Location = new System.Drawing.Point(1844, 13);
+            this.btnShowSummary.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.btnShowSummary.Name = "btnShowSummary";
-            this.btnShowSummary.Size = new System.Drawing.Size(82, 30);
+            this.btnShowSummary.Size = new System.Drawing.Size(133, 48);
             this.btnShowSummary.TabIndex = 299;
             this.btnShowSummary.Text = "模板(&M)";
             this.btnShowSummary.Visible = false;
@@ -6169,10 +6169,10 @@
             // 
             this.btnDelete.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnDelete.ImageIndex = 3;
-            this.btnDelete.Location = new System.Drawing.Point(1131, 8);
-            this.btnDelete.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnDelete.Location = new System.Drawing.Point(1839, 13);
+            this.btnDelete.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(86, 30);
+            this.btnDelete.Size = new System.Drawing.Size(140, 48);
             this.btnDelete.TabIndex = 298;
             this.btnDelete.Text = "删除(&Z)";
             this.btnDelete.Visible = false;
@@ -6182,10 +6182,10 @@
             // 
             this.btnCopy.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnCopy.ImageIndex = 4;
-            this.btnCopy.Location = new System.Drawing.Point(940, 8);
-            this.btnCopy.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnCopy.Location = new System.Drawing.Point(1528, 13);
+            this.btnCopy.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.btnCopy.Name = "btnCopy";
-            this.btnCopy.Size = new System.Drawing.Size(86, 30);
+            this.btnCopy.Size = new System.Drawing.Size(140, 48);
             this.btnCopy.TabIndex = 34;
             this.btnCopy.Text = "复制(&C)";
             this.btnCopy.Visible = false;
@@ -6196,10 +6196,10 @@
             this.btnEdit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnEdit.Enabled = false;
             this.btnEdit.ImageIndex = 5;
-            this.btnEdit.Location = new System.Drawing.Point(1033, 8);
-            this.btnEdit.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnEdit.Location = new System.Drawing.Point(1679, 13);
+            this.btnEdit.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.btnEdit.Name = "btnEdit";
-            this.btnEdit.Size = new System.Drawing.Size(91, 30);
+            this.btnEdit.Size = new System.Drawing.Size(148, 48);
             this.btnEdit.TabIndex = 297;
             this.btnEdit.Text = "编辑(&E)";
             this.btnEdit.Visible = false;
@@ -6209,10 +6209,10 @@
             // 
             this.btn_Back.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btn_Back.ImageIndex = 13;
-            this.btn_Back.Location = new System.Drawing.Point(627, 6);
-            this.btn_Back.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btn_Back.Location = new System.Drawing.Point(1020, 10);
+            this.btn_Back.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.btn_Back.Name = "btn_Back";
-            this.btn_Back.Size = new System.Drawing.Size(94, 30);
+            this.btn_Back.Size = new System.Drawing.Size(153, 48);
             this.btn_Back.TabIndex = 33;
             this.btn_Back.Text = "退回(&B)";
             this.btn_Back.Visible = false;
@@ -6222,10 +6222,10 @@
             // 
             this.btn_exect.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btn_exect.ImageIndex = 11;
-            this.btn_exect.Location = new System.Drawing.Point(752, 8);
-            this.btn_exect.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btn_exect.Location = new System.Drawing.Point(1223, 13);
+            this.btn_exect.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.btn_exect.Name = "btn_exect";
-            this.btn_exect.Size = new System.Drawing.Size(90, 30);
+            this.btn_exect.Size = new System.Drawing.Size(146, 48);
             this.btn_exect.TabIndex = 33;
             this.btn_exect.Text = "执行(&E)";
             this.btn_exect.Visible = false;
@@ -6237,10 +6237,10 @@
             this.btnAdd.ImageIndex = 0;
             this.btnAdd.ImageList = this.imageCollection1;
             this.btnAdd.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleLeft;
-            this.btnAdd.Location = new System.Drawing.Point(848, 6);
-            this.btnAdd.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnAdd.Location = new System.Drawing.Point(1379, 10);
+            this.btnAdd.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(86, 30);
+            this.btnAdd.Size = new System.Drawing.Size(140, 48);
             this.btnAdd.TabIndex = 33;
             this.btnAdd.Text = "新增(&A)";
             this.btnAdd.Visible = false;
@@ -6250,10 +6250,10 @@
             // 
             this.btnSave.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnSave.ImageIndex = 7;
-            this.btnSave.Location = new System.Drawing.Point(1225, 8);
-            this.btnSave.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnSave.Location = new System.Drawing.Point(1991, 13);
+            this.btnSave.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(87, 30);
+            this.btnSave.Size = new System.Drawing.Size(141, 48);
             this.btnSave.TabIndex = 38;
             this.btnSave.Text = "保存(&S)";
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
@@ -6263,14 +6263,14 @@
             this.ctlUserLongInfo1.DIAGNOSE = "";
             this.ctlUserLongInfo1.FormContainer = null;
             this.ctlUserLongInfo1.HEMODIALYSIS_ID = "";
-            this.ctlUserLongInfo1.Location = new System.Drawing.Point(162, 3);
-            this.ctlUserLongInfo1.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.ctlUserLongInfo1.Location = new System.Drawing.Point(263, 5);
+            this.ctlUserLongInfo1.Margin = new System.Windows.Forms.Padding(5, 8, 5, 8);
             this.ctlUserLongInfo1.Name = "ctlUserLongInfo1";
             this.ctlUserLongInfo1.PanBorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Default;
-            this.ctlUserLongInfo1.PanelWidth = 946;
+            this.ctlUserLongInfo1.PanelWidth = 1537;
             this.ctlUserLongInfo1.PatientType = "";
             this.ctlUserLongInfo1.PatientTypeEnabled = true;
-            this.ctlUserLongInfo1.Size = new System.Drawing.Size(946, 50);
+            this.ctlUserLongInfo1.Size = new System.Drawing.Size(1537, 81);
             this.ctlUserLongInfo1.TabIndex = 2;
             // 
             // panel_Top
@@ -6280,47 +6280,47 @@
             this.panel_Top.Controls.Add(this.labelControl68);
             this.panel_Top.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel_Top.Location = new System.Drawing.Point(0, 0);
-            this.panel_Top.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.panel_Top.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.panel_Top.Name = "panel_Top";
-            this.panel_Top.Size = new System.Drawing.Size(1325, 53);
+            this.panel_Top.Size = new System.Drawing.Size(2153, 85);
             this.panel_Top.TabIndex = 265;
             // 
             // Data_CureData
             // 
             this.Data_CureData.EditValue = new System.DateTime(2013, 9, 23, 0, 0, 0, 0);
             this.Data_CureData.EnterMoveNextControl = true;
-            this.Data_CureData.Location = new System.Drawing.Point(237, 18);
-            this.Data_CureData.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.Data_CureData.Location = new System.Drawing.Point(385, 29);
+            this.Data_CureData.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.Data_CureData.Name = "Data_CureData";
             this.Data_CureData.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.Data_CureData.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton()});
-            this.Data_CureData.Size = new System.Drawing.Size(137, 24);
+            this.Data_CureData.Size = new System.Drawing.Size(223, 36);
             this.Data_CureData.TabIndex = 1;
             this.Data_CureData.EditValueChanged += new System.EventHandler(this.Data_CureData_EditValueChanged);
             // 
             // labelControl68
             // 
             this.labelControl68.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl68.Location = new System.Drawing.Point(0, 17);
-            this.labelControl68.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.labelControl68.Location = new System.Drawing.Point(0, 27);
+            this.labelControl68.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.labelControl68.Name = "labelControl68";
-            this.labelControl68.Size = new System.Drawing.Size(168, 24);
+            this.labelControl68.Size = new System.Drawing.Size(264, 39);
             this.labelControl68.TabIndex = 0;
             this.labelControl68.Text = "请选择补录日期：";
             // 
             // EditTreatment
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 18F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 29F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.Controls.Add(this.panelControl2);
             this.Controls.Add(this.panel_Top);
-            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.MinimumSize = new System.Drawing.Size(1059, 675);
+            this.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
+            this.MinimumSize = new System.Drawing.Size(1721, 1088);
             this.Name = "EditTreatment";
-            this.Size = new System.Drawing.Size(1325, 927);
+            this.Size = new System.Drawing.Size(2153, 1494);
             this.Load += new System.EventHandler(this.EditTreatment_Load);
             this.contextMenuStrip1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.imageCollection1)).EndInit();

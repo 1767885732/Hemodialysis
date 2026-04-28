@@ -12116,5 +12116,28 @@ ON DTL.HEMODIALYSIS_ID=PAT.HEMODIALYSIS_ID LEFT JOIN MED_BORROW_MEDICINE_DETAIL 
             }
         }
         #endregion
+
+
+        #region 操作审计日志相关SQL
+
+        /// <summary>
+        /// 新增操作审计日志
+        /// </summary>
+        public string InsertOperationLog
+        {
+            get
+            {
+                return @"INSERT INTO MED_OPERATION_LOG 
+                    (LOG_ID, USER_ID, USER_NAME, LOGIN_NAME, OPERATION_TYPE, MODULE_NAME, 
+                     ELEMENT_NAME, ELEMENT_ID, CHANGE_DETAIL, CURE_ID, HEMODIALYSIS_ID, 
+                     OPERATION_TIME, REMARK, CREATED_DATE)
+                    VALUES 
+                    (:LOG_ID, :USER_ID, :USER_NAME, :LOGIN_NAME, :OPERATION_TYPE, :MODULE_NAME, 
+                     :ELEMENT_NAME, :ELEMENT_ID, :CHANGE_DETAIL, :CURE_ID, :HEMODIALYSIS_ID, 
+                     SYSDATE, :REMARK, SYSDATE)";
+            }
+        }
+
+        #endregion
     }
 }

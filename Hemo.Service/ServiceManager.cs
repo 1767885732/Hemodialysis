@@ -26,6 +26,7 @@ using Hemo.IService.PatientSchedule;
 using Hemo.IService.Permission;
 using Hemo.Utilities;
 using Hemo.IService.DataReport;
+using Hemo.IService.AuditLog;
 
 namespace Hemo.Service
 {
@@ -248,6 +249,17 @@ namespace Hemo.Service
             get
             {
                 return serviceFactory.CreateDataReportService();
+            }
+        }
+
+        /// <summary>
+        /// 操作审计日志服务
+        /// </summary>
+        public IOperationLog OperationLogService
+        {
+            get
+            {
+                return serviceFactory.CreateOperationLogService();
             }
         }
     }

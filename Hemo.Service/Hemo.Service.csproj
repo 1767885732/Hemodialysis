@@ -51,6 +51,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AbstractServiceFactory.cs" />
+    <Compile Include="AuditLog\OperationLogService.cs" />
     <Compile Include="DataReport\DataReportService.cs" />
     <Compile Include="Dept\DeptService.cs" />
     <Compile Include="Dict\StaffDictService.cs" />

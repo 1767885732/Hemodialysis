@@ -49,6 +49,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AuditLog\OperationLogBll.cs" />
     <Compile Include="BaseClass.cs" />
     <Compile Include="DataReport\DataReportBll.cs" />
     <Compile Include="Dept\DeptBll.cs" />

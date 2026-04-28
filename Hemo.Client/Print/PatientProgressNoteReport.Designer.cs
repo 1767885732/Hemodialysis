@@ -30,6 +30,11 @@ namespace Hemo.Client.Print
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PatientProgressNoteReport));
             this.Detail = new DevExpress.XtraReports.UI.DetailBand();
+            this.xrLabel13 = new DevExpress.XtraReports.UI.XRLabel();
+            this.xrLabel12 = new DevExpress.XtraReports.UI.XRLabel();
+            this.xrLabel11 = new DevExpress.XtraReports.UI.XRLabel();
+            this.xrLabel10 = new DevExpress.XtraReports.UI.XRLabel();
+            this.xrLabel4 = new DevExpress.XtraReports.UI.XRLabel();
             this.lblNUTRITIONAL_STATUS_NOTE = new DevExpress.XtraReports.UI.XRLabel();
             this.lblBONE_MINERAL_NOTE = new DevExpress.XtraReports.UI.XRLabel();
             this.lblANEMIA_CORRECTION_NOTE = new DevExpress.XtraReports.UI.XRLabel();
@@ -99,11 +104,6 @@ namespace Hemo.Client.Print
             this.xrLabel2 = new DevExpress.XtraReports.UI.XRLabel();
             this.xrLabel3 = new DevExpress.XtraReports.UI.XRLabel();
             this.xrLabel1 = new DevExpress.XtraReports.UI.XRLabel();
-            this.xrLabel4 = new DevExpress.XtraReports.UI.XRLabel();
-            this.xrLabel10 = new DevExpress.XtraReports.UI.XRLabel();
-            this.xrLabel11 = new DevExpress.XtraReports.UI.XRLabel();
-            this.xrLabel12 = new DevExpress.XtraReports.UI.XRLabel();
-            this.xrLabel13 = new DevExpress.XtraReports.UI.XRLabel();
             this.hemodialysisModel1 = new Hemo.Model.HemodialysisModel();
             ((System.ComponentModel.ISupportInitialize)(this.txtPROGRESS_NODE)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.hemodialysisModel1)).BeginInit();
@@ -178,13 +178,73 @@ namespace Hemo.Client.Print
             this.Detail.Padding = new DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 100F);
             this.Detail.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft;
             // 
+            // xrLabel13
+            // 
+            this.xrLabel13.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.xrLabel13.LocationFloat = new DevExpress.Utils.PointFloat(540.6246F, 314F);
+            this.xrLabel13.Name = "xrLabel13";
+            this.xrLabel13.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrLabel13.SizeF = new System.Drawing.SizeF(50F, 23F);
+            this.xrLabel13.StylePriority.UseFont = false;
+            this.xrLabel13.StylePriority.UseTextAlignment = false;
+            this.xrLabel13.Text = "建议：";
+            this.xrLabel13.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
+            // 
+            // xrLabel12
+            // 
+            this.xrLabel12.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.xrLabel12.LocationFloat = new DevExpress.Utils.PointFloat(540.6246F, 276F);
+            this.xrLabel12.Name = "xrLabel12";
+            this.xrLabel12.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrLabel12.SizeF = new System.Drawing.SizeF(50F, 23F);
+            this.xrLabel12.StylePriority.UseFont = false;
+            this.xrLabel12.StylePriority.UseTextAlignment = false;
+            this.xrLabel12.Text = "建议：";
+            this.xrLabel12.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
+            // 
+            // xrLabel11
+            // 
+            this.xrLabel11.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.xrLabel11.LocationFloat = new DevExpress.Utils.PointFloat(540.6246F, 238F);
+            this.xrLabel11.Name = "xrLabel11";
+            this.xrLabel11.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrLabel11.SizeF = new System.Drawing.SizeF(50F, 23F);
+            this.xrLabel11.StylePriority.UseFont = false;
+            this.xrLabel11.StylePriority.UseTextAlignment = false;
+            this.xrLabel11.Text = "建议：";
+            this.xrLabel11.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
+            // 
+            // xrLabel10
+            // 
+            this.xrLabel10.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.xrLabel10.LocationFloat = new DevExpress.Utils.PointFloat(540.6246F, 124F);
+            this.xrLabel10.Name = "xrLabel10";
+            this.xrLabel10.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrLabel10.SizeF = new System.Drawing.SizeF(50F, 23F);
+            this.xrLabel10.StylePriority.UseFont = false;
+            this.xrLabel10.StylePriority.UseTextAlignment = false;
+            this.xrLabel10.Text = "建议：";
+            this.xrLabel10.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
+            // 
+            // xrLabel4
+            // 
+            this.xrLabel4.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.xrLabel4.LocationFloat = new DevExpress.Utils.PointFloat(540.6246F, 86F);
+            this.xrLabel4.Name = "xrLabel4";
+            this.xrLabel4.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrLabel4.SizeF = new System.Drawing.SizeF(50F, 23F);
+            this.xrLabel4.StylePriority.UseFont = false;
+            this.xrLabel4.StylePriority.UseTextAlignment = false;
+            this.xrLabel4.Text = "建议：";
+            this.xrLabel4.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
+            // 
             // lblNUTRITIONAL_STATUS_NOTE
             // 
             this.lblNUTRITIONAL_STATUS_NOTE.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.lblNUTRITIONAL_STATUS_NOTE.LocationFloat = new DevExpress.Utils.PointFloat(539.7917F, 314F);
+            this.lblNUTRITIONAL_STATUS_NOTE.LocationFloat = new DevExpress.Utils.PointFloat(590.6248F, 314F);
             this.lblNUTRITIONAL_STATUS_NOTE.Name = "lblNUTRITIONAL_STATUS_NOTE";
             this.lblNUTRITIONAL_STATUS_NOTE.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.lblNUTRITIONAL_STATUS_NOTE.SizeF = new System.Drawing.SizeF(270.2084F, 23F);
+            this.lblNUTRITIONAL_STATUS_NOTE.SizeF = new System.Drawing.SizeF(229.3752F, 23F);
             this.lblNUTRITIONAL_STATUS_NOTE.StylePriority.UseFont = false;
             this.lblNUTRITIONAL_STATUS_NOTE.StylePriority.UseTextAlignment = false;
             this.lblNUTRITIONAL_STATUS_NOTE.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
@@ -192,10 +252,10 @@ namespace Hemo.Client.Print
             // lblBONE_MINERAL_NOTE
             // 
             this.lblBONE_MINERAL_NOTE.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.lblBONE_MINERAL_NOTE.LocationFloat = new DevExpress.Utils.PointFloat(539.7917F, 276F);
+            this.lblBONE_MINERAL_NOTE.LocationFloat = new DevExpress.Utils.PointFloat(590.6248F, 276F);
             this.lblBONE_MINERAL_NOTE.Name = "lblBONE_MINERAL_NOTE";
             this.lblBONE_MINERAL_NOTE.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.lblBONE_MINERAL_NOTE.SizeF = new System.Drawing.SizeF(270.2083F, 23F);
+            this.lblBONE_MINERAL_NOTE.SizeF = new System.Drawing.SizeF(229.3752F, 23F);
             this.lblBONE_MINERAL_NOTE.StylePriority.UseFont = false;
             this.lblBONE_MINERAL_NOTE.StylePriority.UseTextAlignment = false;
             this.lblBONE_MINERAL_NOTE.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
@@ -203,10 +263,10 @@ namespace Hemo.Client.Print
             // lblANEMIA_CORRECTION_NOTE
             // 
             this.lblANEMIA_CORRECTION_NOTE.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.lblANEMIA_CORRECTION_NOTE.LocationFloat = new DevExpress.Utils.PointFloat(539.7917F, 238F);
+            this.lblANEMIA_CORRECTION_NOTE.LocationFloat = new DevExpress.Utils.PointFloat(590.6248F, 238F);
             this.lblANEMIA_CORRECTION_NOTE.Name = "lblANEMIA_CORRECTION_NOTE";
             this.lblANEMIA_CORRECTION_NOTE.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.lblANEMIA_CORRECTION_NOTE.SizeF = new System.Drawing.SizeF(270.2084F, 22.99998F);
+            this.lblANEMIA_CORRECTION_NOTE.SizeF = new System.Drawing.SizeF(229.3751F, 22.99998F);
             this.lblANEMIA_CORRECTION_NOTE.StylePriority.UseFont = false;
             this.lblANEMIA_CORRECTION_NOTE.StylePriority.UseTextAlignment = false;
             this.lblANEMIA_CORRECTION_NOTE.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
@@ -214,10 +274,10 @@ namespace Hemo.Client.Print
             // lblTHERAPEUTIC_METHOD_NOTE
             // 
             this.lblTHERAPEUTIC_METHOD_NOTE.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.lblTHERAPEUTIC_METHOD_NOTE.LocationFloat = new DevExpress.Utils.PointFloat(539.7917F, 124F);
+            this.lblTHERAPEUTIC_METHOD_NOTE.LocationFloat = new DevExpress.Utils.PointFloat(590.6248F, 124F);
             this.lblTHERAPEUTIC_METHOD_NOTE.Name = "lblTHERAPEUTIC_METHOD_NOTE";
             this.lblTHERAPEUTIC_METHOD_NOTE.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.lblTHERAPEUTIC_METHOD_NOTE.SizeF = new System.Drawing.SizeF(270.2084F, 22.99999F);
+            this.lblTHERAPEUTIC_METHOD_NOTE.SizeF = new System.Drawing.SizeF(229.3751F, 22.99999F);
             this.lblTHERAPEUTIC_METHOD_NOTE.StylePriority.UseFont = false;
             this.lblTHERAPEUTIC_METHOD_NOTE.StylePriority.UseTextAlignment = false;
             this.lblTHERAPEUTIC_METHOD_NOTE.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
@@ -225,7 +285,7 @@ namespace Hemo.Client.Print
             // xrLabel7
             // 
             this.xrLabel7.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.xrLabel7.LocationFloat = new DevExpress.Utils.PointFloat(10F, 124F);
+            this.xrLabel7.LocationFloat = new DevExpress.Utils.PointFloat(60.83301F, 124F);
             this.xrLabel7.Name = "xrLabel7";
             this.xrLabel7.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
             this.xrLabel7.SizeF = new System.Drawing.SizeF(80F, 23F);
@@ -237,7 +297,7 @@ namespace Hemo.Client.Print
             // chkTHERAPEUTIC_METHOD_CHANGE
             // 
             this.chkTHERAPEUTIC_METHOD_CHANGE.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.chkTHERAPEUTIC_METHOD_CHANGE.LocationFloat = new DevExpress.Utils.PointFloat(155F, 124F);
+            this.chkTHERAPEUTIC_METHOD_CHANGE.LocationFloat = new DevExpress.Utils.PointFloat(205.833F, 124F);
             this.chkTHERAPEUTIC_METHOD_CHANGE.Name = "chkTHERAPEUTIC_METHOD_CHANGE";
             this.chkTHERAPEUTIC_METHOD_CHANGE.SizeF = new System.Drawing.SizeF(65F, 23F);
             this.chkTHERAPEUTIC_METHOD_CHANGE.StylePriority.UseFont = false;
@@ -247,7 +307,7 @@ namespace Hemo.Client.Print
             // lblTHERAPEUTIC_METHOD_CHANGE
             // 
             this.lblTHERAPEUTIC_METHOD_CHANGE.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.lblTHERAPEUTIC_METHOD_CHANGE.LocationFloat = new DevExpress.Utils.PointFloat(220F, 124F);
+            this.lblTHERAPEUTIC_METHOD_CHANGE.LocationFloat = new DevExpress.Utils.PointFloat(270.833F, 124F);
             this.lblTHERAPEUTIC_METHOD_CHANGE.Name = "lblTHERAPEUTIC_METHOD_CHANGE";
             this.lblTHERAPEUTIC_METHOD_CHANGE.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
             this.lblTHERAPEUTIC_METHOD_CHANGE.SizeF = new System.Drawing.SizeF(230F, 23F);
@@ -258,7 +318,7 @@ namespace Hemo.Client.Print
             // chkTHERAPEUTIC_METHOD_NOCHANGE
             // 
             this.chkTHERAPEUTIC_METHOD_NOCHANGE.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.chkTHERAPEUTIC_METHOD_NOCHANGE.LocationFloat = new DevExpress.Utils.PointFloat(89.99999F, 124F);
+            this.chkTHERAPEUTIC_METHOD_NOCHANGE.LocationFloat = new DevExpress.Utils.PointFloat(140.833F, 124F);
             this.chkTHERAPEUTIC_METHOD_NOCHANGE.Name = "chkTHERAPEUTIC_METHOD_NOCHANGE";
             this.chkTHERAPEUTIC_METHOD_NOCHANGE.SizeF = new System.Drawing.SizeF(65F, 23F);
             this.chkTHERAPEUTIC_METHOD_NOCHANGE.StylePriority.UseFont = false;
@@ -268,10 +328,10 @@ namespace Hemo.Client.Print
             // lblVASCULAR_ACCESS_NOTE
             // 
             this.lblVASCULAR_ACCESS_NOTE.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.lblVASCULAR_ACCESS_NOTE.LocationFloat = new DevExpress.Utils.PointFloat(539.7917F, 86F);
+            this.lblVASCULAR_ACCESS_NOTE.LocationFloat = new DevExpress.Utils.PointFloat(590.6248F, 86F);
             this.lblVASCULAR_ACCESS_NOTE.Name = "lblVASCULAR_ACCESS_NOTE";
             this.lblVASCULAR_ACCESS_NOTE.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.lblVASCULAR_ACCESS_NOTE.SizeF = new System.Drawing.SizeF(270.2083F, 23F);
+            this.lblVASCULAR_ACCESS_NOTE.SizeF = new System.Drawing.SizeF(229.3752F, 23F);
             this.lblVASCULAR_ACCESS_NOTE.StylePriority.UseFont = false;
             this.lblVASCULAR_ACCESS_NOTE.StylePriority.UseTextAlignment = false;
             this.lblVASCULAR_ACCESS_NOTE.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
@@ -279,7 +339,7 @@ namespace Hemo.Client.Print
             // xrLabel33
             // 
             this.xrLabel33.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.xrLabel33.LocationFloat = new DevExpress.Utils.PointFloat(10F, 352F);
+            this.xrLabel33.LocationFloat = new DevExpress.Utils.PointFloat(60.83301F, 352.0001F);
             this.xrLabel33.Name = "xrLabel33";
             this.xrLabel33.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
             this.xrLabel33.SizeF = new System.Drawing.SizeF(80F, 23F);
@@ -291,16 +351,16 @@ namespace Hemo.Client.Print
             // txtPROGRESS_NODE
             // 
             this.txtPROGRESS_NODE.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.txtPROGRESS_NODE.LocationFloat = new DevExpress.Utils.PointFloat(89.99999F, 352.0001F);
+            this.txtPROGRESS_NODE.LocationFloat = new DevExpress.Utils.PointFloat(140.833F, 352.0001F);
             this.txtPROGRESS_NODE.Name = "txtPROGRESS_NODE";
             this.txtPROGRESS_NODE.SerializableRtfString = resources.GetString("txtPROGRESS_NODE.SerializableRtfString");
-            this.txtPROGRESS_NODE.SizeF = new System.Drawing.SizeF(720F, 54.99991F);
+            this.txtPROGRESS_NODE.SizeF = new System.Drawing.SizeF(679.1668F, 54.99991F);
             this.txtPROGRESS_NODE.StylePriority.UseFont = false;
             // 
             // xrLabel55
             // 
             this.xrLabel55.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.xrLabel55.LocationFloat = new DevExpress.Utils.PointFloat(10F, 314F);
+            this.xrLabel55.LocationFloat = new DevExpress.Utils.PointFloat(60.83301F, 314F);
             this.xrLabel55.Name = "xrLabel55";
             this.xrLabel55.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
             this.xrLabel55.SizeF = new System.Drawing.SizeF(80F, 23F);
@@ -312,7 +372,7 @@ namespace Hemo.Client.Print
             // chkNUTRITIONAL_STATUS_NOTGOOD
             // 
             this.chkNUTRITIONAL_STATUS_NOTGOOD.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.chkNUTRITIONAL_STATUS_NOTGOOD.LocationFloat = new DevExpress.Utils.PointFloat(155F, 314F);
+            this.chkNUTRITIONAL_STATUS_NOTGOOD.LocationFloat = new DevExpress.Utils.PointFloat(205.833F, 314F);
             this.chkNUTRITIONAL_STATUS_NOTGOOD.Name = "chkNUTRITIONAL_STATUS_NOTGOOD";
             this.chkNUTRITIONAL_STATUS_NOTGOOD.SizeF = new System.Drawing.SizeF(65F, 23F);
             this.chkNUTRITIONAL_STATUS_NOTGOOD.StylePriority.UseFont = false;
@@ -322,7 +382,7 @@ namespace Hemo.Client.Print
             // lblNUTRITIONAL_STATUS_BAD
             // 
             this.lblNUTRITIONAL_STATUS_BAD.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.lblNUTRITIONAL_STATUS_BAD.LocationFloat = new DevExpress.Utils.PointFloat(220F, 314F);
+            this.lblNUTRITIONAL_STATUS_BAD.LocationFloat = new DevExpress.Utils.PointFloat(270.833F, 314F);
             this.lblNUTRITIONAL_STATUS_BAD.Name = "lblNUTRITIONAL_STATUS_BAD";
             this.lblNUTRITIONAL_STATUS_BAD.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
             this.lblNUTRITIONAL_STATUS_BAD.SizeF = new System.Drawing.SizeF(230F, 23F);
@@ -333,7 +393,7 @@ namespace Hemo.Client.Print
             // chkNUTRITIONAL_STATUS_GOOD
             // 
             this.chkNUTRITIONAL_STATUS_GOOD.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.chkNUTRITIONAL_STATUS_GOOD.LocationFloat = new DevExpress.Utils.PointFloat(89.99999F, 314F);
+            this.chkNUTRITIONAL_STATUS_GOOD.LocationFloat = new DevExpress.Utils.PointFloat(140.833F, 314F);
             this.chkNUTRITIONAL_STATUS_GOOD.Name = "chkNUTRITIONAL_STATUS_GOOD";
             this.chkNUTRITIONAL_STATUS_GOOD.SizeF = new System.Drawing.SizeF(65F, 23F);
             this.chkNUTRITIONAL_STATUS_GOOD.StylePriority.UseFont = false;
@@ -343,7 +403,7 @@ namespace Hemo.Client.Print
             // xrLabel53
             // 
             this.xrLabel53.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.xrLabel53.LocationFloat = new DevExpress.Utils.PointFloat(10F, 276F);
+            this.xrLabel53.LocationFloat = new DevExpress.Utils.PointFloat(60.83301F, 276F);
             this.xrLabel53.Name = "xrLabel53";
             this.xrLabel53.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
             this.xrLabel53.SizeF = new System.Drawing.SizeF(165F, 23F);
@@ -355,7 +415,7 @@ namespace Hemo.Client.Print
             // chkBONE_MINERAL_NOTGOOD
             // 
             this.chkBONE_MINERAL_NOTGOOD.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.chkBONE_MINERAL_NOTGOOD.LocationFloat = new DevExpress.Utils.PointFloat(225F, 276F);
+            this.chkBONE_MINERAL_NOTGOOD.LocationFloat = new DevExpress.Utils.PointFloat(275.833F, 276F);
             this.chkBONE_MINERAL_NOTGOOD.Name = "chkBONE_MINERAL_NOTGOOD";
             this.chkBONE_MINERAL_NOTGOOD.SizeF = new System.Drawing.SizeF(35F, 23F);
             this.chkBONE_MINERAL_NOTGOOD.StylePriority.UseFont = false;
@@ -365,7 +425,7 @@ namespace Hemo.Client.Print
             // lblBONE_MINERAL_BAD
             // 
             this.lblBONE_MINERAL_BAD.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.lblBONE_MINERAL_BAD.LocationFloat = new DevExpress.Utils.PointFloat(260F, 276F);
+            this.lblBONE_MINERAL_BAD.LocationFloat = new DevExpress.Utils.PointFloat(310.833F, 276F);
             this.lblBONE_MINERAL_BAD.Name = "lblBONE_MINERAL_BAD";
             this.lblBONE_MINERAL_BAD.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
             this.lblBONE_MINERAL_BAD.SizeF = new System.Drawing.SizeF(210F, 23F);
@@ -376,7 +436,7 @@ namespace Hemo.Client.Print
             // chkBONE_MINERAL_GOOD
             // 
             this.chkBONE_MINERAL_GOOD.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.chkBONE_MINERAL_GOOD.LocationFloat = new DevExpress.Utils.PointFloat(175F, 276F);
+            this.chkBONE_MINERAL_GOOD.LocationFloat = new DevExpress.Utils.PointFloat(225.833F, 276F);
             this.chkBONE_MINERAL_GOOD.Name = "chkBONE_MINERAL_GOOD";
             this.chkBONE_MINERAL_GOOD.SizeF = new System.Drawing.SizeF(50F, 23F);
             this.chkBONE_MINERAL_GOOD.StylePriority.UseFont = false;
@@ -386,7 +446,7 @@ namespace Hemo.Client.Print
             // xrLabel51
             // 
             this.xrLabel51.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.xrLabel51.LocationFloat = new DevExpress.Utils.PointFloat(10F, 238F);
+            this.xrLabel51.LocationFloat = new DevExpress.Utils.PointFloat(60.83301F, 238F);
             this.xrLabel51.Name = "xrLabel51";
             this.xrLabel51.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
             this.xrLabel51.SizeF = new System.Drawing.SizeF(80F, 23F);
@@ -398,7 +458,7 @@ namespace Hemo.Client.Print
             // chkANEMIA_CORRECTION_NOTGOOD
             // 
             this.chkANEMIA_CORRECTION_NOTGOOD.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.chkANEMIA_CORRECTION_NOTGOOD.LocationFloat = new DevExpress.Utils.PointFloat(155F, 238F);
+            this.chkANEMIA_CORRECTION_NOTGOOD.LocationFloat = new DevExpress.Utils.PointFloat(205.833F, 238F);
             this.chkANEMIA_CORRECTION_NOTGOOD.Name = "chkANEMIA_CORRECTION_NOTGOOD";
             this.chkANEMIA_CORRECTION_NOTGOOD.SizeF = new System.Drawing.SizeF(65F, 23F);
             this.chkANEMIA_CORRECTION_NOTGOOD.StylePriority.UseFont = false;
@@ -408,7 +468,7 @@ namespace Hemo.Client.Print
             // lblANEMIA_CORRECTION_BAD
             // 
             this.lblANEMIA_CORRECTION_BAD.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.lblANEMIA_CORRECTION_BAD.LocationFloat = new DevExpress.Utils.PointFloat(220F, 238F);
+            this.lblANEMIA_CORRECTION_BAD.LocationFloat = new DevExpress.Utils.PointFloat(270.833F, 238F);
             this.lblANEMIA_CORRECTION_BAD.Name = "lblANEMIA_CORRECTION_BAD";
             this.lblANEMIA_CORRECTION_BAD.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
             this.lblANEMIA_CORRECTION_BAD.SizeF = new System.Drawing.SizeF(230F, 23F);
@@ -419,7 +479,7 @@ namespace Hemo.Client.Print
             // chkANEMIA_CORRECTION_GOOD
             // 
             this.chkANEMIA_CORRECTION_GOOD.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.chkANEMIA_CORRECTION_GOOD.LocationFloat = new DevExpress.Utils.PointFloat(90F, 238F);
+            this.chkANEMIA_CORRECTION_GOOD.LocationFloat = new DevExpress.Utils.PointFloat(140.833F, 238F);
             this.chkANEMIA_CORRECTION_GOOD.Name = "chkANEMIA_CORRECTION_GOOD";
             this.chkANEMIA_CORRECTION_GOOD.SizeF = new System.Drawing.SizeF(65F, 23F);
             this.chkANEMIA_CORRECTION_GOOD.StylePriority.UseFont = false;
@@ -429,7 +489,7 @@ namespace Hemo.Client.Print
             // xrLabel49
             // 
             this.xrLabel49.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.xrLabel49.LocationFloat = new DevExpress.Utils.PointFloat(10F, 86F);
+            this.xrLabel49.LocationFloat = new DevExpress.Utils.PointFloat(60.83301F, 86F);
             this.xrLabel49.Name = "xrLabel49";
             this.xrLabel49.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
             this.xrLabel49.SizeF = new System.Drawing.SizeF(80F, 23F);
@@ -441,7 +501,7 @@ namespace Hemo.Client.Print
             // chkVASCULAR_ACCESS_CHANGE
             // 
             this.chkVASCULAR_ACCESS_CHANGE.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.chkVASCULAR_ACCESS_CHANGE.LocationFloat = new DevExpress.Utils.PointFloat(155F, 86F);
+            this.chkVASCULAR_ACCESS_CHANGE.LocationFloat = new DevExpress.Utils.PointFloat(205.833F, 86F);
             this.chkVASCULAR_ACCESS_CHANGE.Name = "chkVASCULAR_ACCESS_CHANGE";
             this.chkVASCULAR_ACCESS_CHANGE.SizeF = new System.Drawing.SizeF(65F, 23F);
             this.chkVASCULAR_ACCESS_CHANGE.StylePriority.UseFont = false;
@@ -451,7 +511,7 @@ namespace Hemo.Client.Print
             // lblVASCULAR_ACCESS_CHANGE
             // 
             this.lblVASCULAR_ACCESS_CHANGE.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.lblVASCULAR_ACCESS_CHANGE.LocationFloat = new DevExpress.Utils.PointFloat(220F, 86F);
+            this.lblVASCULAR_ACCESS_CHANGE.LocationFloat = new DevExpress.Utils.PointFloat(270.833F, 86F);
             this.lblVASCULAR_ACCESS_CHANGE.Name = "lblVASCULAR_ACCESS_CHANGE";
             this.lblVASCULAR_ACCESS_CHANGE.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
             this.lblVASCULAR_ACCESS_CHANGE.SizeF = new System.Drawing.SizeF(230F, 23F);
@@ -462,7 +522,7 @@ namespace Hemo.Client.Print
             // chkVASCULAR_ACCESS_NOCHANGE
             // 
             this.chkVASCULAR_ACCESS_NOCHANGE.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.chkVASCULAR_ACCESS_NOCHANGE.LocationFloat = new DevExpress.Utils.PointFloat(90F, 86F);
+            this.chkVASCULAR_ACCESS_NOCHANGE.LocationFloat = new DevExpress.Utils.PointFloat(140.833F, 86F);
             this.chkVASCULAR_ACCESS_NOCHANGE.Name = "chkVASCULAR_ACCESS_NOCHANGE";
             this.chkVASCULAR_ACCESS_NOCHANGE.SizeF = new System.Drawing.SizeF(65F, 23F);
             this.chkVASCULAR_ACCESS_NOCHANGE.StylePriority.UseFont = false;
@@ -472,7 +532,7 @@ namespace Hemo.Client.Print
             // xrLabel45
             // 
             this.xrLabel45.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.xrLabel45.LocationFloat = new DevExpress.Utils.PointFloat(392.5F, 200F);
+            this.xrLabel45.LocationFloat = new DevExpress.Utils.PointFloat(443.333F, 200F);
             this.xrLabel45.Name = "xrLabel45";
             this.xrLabel45.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
             this.xrLabel45.SizeF = new System.Drawing.SizeF(45F, 23F);
@@ -484,7 +544,7 @@ namespace Hemo.Client.Print
             // xrLabel43
             // 
             this.xrLabel43.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.xrLabel43.LocationFloat = new DevExpress.Utils.PointFloat(10F, 200F);
+            this.xrLabel43.LocationFloat = new DevExpress.Utils.PointFloat(60.83301F, 200F);
             this.xrLabel43.Name = "xrLabel43";
             this.xrLabel43.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
             this.xrLabel43.SizeF = new System.Drawing.SizeF(80F, 23F);
@@ -496,7 +556,7 @@ namespace Hemo.Client.Print
             // xrLabel46
             // 
             this.xrLabel46.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.xrLabel46.LocationFloat = new DevExpress.Utils.PointFloat(447.5F, 200F);
+            this.xrLabel46.LocationFloat = new DevExpress.Utils.PointFloat(498.3329F, 200F);
             this.xrLabel46.Name = "xrLabel46";
             this.xrLabel46.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
             this.xrLabel46.SizeF = new System.Drawing.SizeF(65F, 23F);
@@ -508,7 +568,7 @@ namespace Hemo.Client.Print
             // xrLabel48
             // 
             this.xrLabel48.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.xrLabel48.LocationFloat = new DevExpress.Utils.PointFloat(582.7085F, 200F);
+            this.xrLabel48.LocationFloat = new DevExpress.Utils.PointFloat(633.5415F, 200F);
             this.xrLabel48.Name = "xrLabel48";
             this.xrLabel48.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
             this.xrLabel48.SizeF = new System.Drawing.SizeF(45F, 23F);
@@ -520,7 +580,7 @@ namespace Hemo.Client.Print
             // lblLOW_BLOOD_PRESSURE
             // 
             this.lblLOW_BLOOD_PRESSURE.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.lblLOW_BLOOD_PRESSURE.LocationFloat = new DevExpress.Utils.PointFloat(512.5F, 200F);
+            this.lblLOW_BLOOD_PRESSURE.LocationFloat = new DevExpress.Utils.PointFloat(563.333F, 200F);
             this.lblLOW_BLOOD_PRESSURE.Name = "lblLOW_BLOOD_PRESSURE";
             this.lblLOW_BLOOD_PRESSURE.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
             this.lblLOW_BLOOD_PRESSURE.SizeF = new System.Drawing.SizeF(70F, 23F);
@@ -531,7 +591,7 @@ namespace Hemo.Client.Print
             // chkBLOOD_CONTROL_GOOD
             // 
             this.chkBLOOD_CONTROL_GOOD.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.chkBLOOD_CONTROL_GOOD.LocationFloat = new DevExpress.Utils.PointFloat(90F, 200F);
+            this.chkBLOOD_CONTROL_GOOD.LocationFloat = new DevExpress.Utils.PointFloat(140.833F, 200F);
             this.chkBLOOD_CONTROL_GOOD.Name = "chkBLOOD_CONTROL_GOOD";
             this.chkBLOOD_CONTROL_GOOD.SizeF = new System.Drawing.SizeF(65F, 23F);
             this.chkBLOOD_CONTROL_GOOD.StylePriority.UseFont = false;
@@ -541,7 +601,7 @@ namespace Hemo.Client.Print
             // lblHIGH_BLOOD_PRESSURE
             // 
             this.lblHIGH_BLOOD_PRESSURE.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.lblHIGH_BLOOD_PRESSURE.LocationFloat = new DevExpress.Utils.PointFloat(322.5F, 200F);
+            this.lblHIGH_BLOOD_PRESSURE.LocationFloat = new DevExpress.Utils.PointFloat(373.333F, 200F);
             this.lblHIGH_BLOOD_PRESSURE.Name = "lblHIGH_BLOOD_PRESSURE";
             this.lblHIGH_BLOOD_PRESSURE.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
             this.lblHIGH_BLOOD_PRESSURE.SizeF = new System.Drawing.SizeF(70F, 23F);
@@ -552,7 +612,7 @@ namespace Hemo.Client.Print
             // chkBLOOD_CONTROL_NOTGOOD
             // 
             this.chkBLOOD_CONTROL_NOTGOOD.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.chkBLOOD_CONTROL_NOTGOOD.LocationFloat = new DevExpress.Utils.PointFloat(155F, 200F);
+            this.chkBLOOD_CONTROL_NOTGOOD.LocationFloat = new DevExpress.Utils.PointFloat(205.833F, 200F);
             this.chkBLOOD_CONTROL_NOTGOOD.Name = "chkBLOOD_CONTROL_NOTGOOD";
             this.chkBLOOD_CONTROL_NOTGOOD.SizeF = new System.Drawing.SizeF(65F, 23F);
             this.chkBLOOD_CONTROL_NOTGOOD.StylePriority.UseFont = false;
@@ -562,7 +622,7 @@ namespace Hemo.Client.Print
             // xrLabel37
             // 
             this.xrLabel37.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.xrLabel37.LocationFloat = new DevExpress.Utils.PointFloat(252.5F, 200F);
+            this.xrLabel37.LocationFloat = new DevExpress.Utils.PointFloat(303.333F, 200F);
             this.xrLabel37.Name = "xrLabel37";
             this.xrLabel37.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
             this.xrLabel37.SizeF = new System.Drawing.SizeF(70F, 23F);
@@ -574,7 +634,7 @@ namespace Hemo.Client.Print
             // xrLabel41
             // 
             this.xrLabel41.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.xrLabel41.LocationFloat = new DevExpress.Utils.PointFloat(582.7085F, 162F);
+            this.xrLabel41.LocationFloat = new DevExpress.Utils.PointFloat(633.5415F, 162F);
             this.xrLabel41.Name = "xrLabel41";
             this.xrLabel41.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
             this.xrLabel41.SizeF = new System.Drawing.SizeF(25F, 23F);
@@ -586,7 +646,7 @@ namespace Hemo.Client.Print
             // xrLabel40
             // 
             this.xrLabel40.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.xrLabel40.LocationFloat = new DevExpress.Utils.PointFloat(10F, 162F);
+            this.xrLabel40.LocationFloat = new DevExpress.Utils.PointFloat(60.83301F, 162F);
             this.xrLabel40.Name = "xrLabel40";
             this.xrLabel40.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
             this.xrLabel40.SizeF = new System.Drawing.SizeF(80F, 23F);
@@ -598,7 +658,7 @@ namespace Hemo.Client.Print
             // xrLabel39
             // 
             this.xrLabel39.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.xrLabel39.LocationFloat = new DevExpress.Utils.PointFloat(417.5F, 162F);
+            this.xrLabel39.LocationFloat = new DevExpress.Utils.PointFloat(468.333F, 162F);
             this.xrLabel39.Name = "xrLabel39";
             this.xrLabel39.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
             this.xrLabel39.SizeF = new System.Drawing.SizeF(95F, 23F);
@@ -610,7 +670,7 @@ namespace Hemo.Client.Print
             // xrLabel44
             // 
             this.xrLabel44.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.xrLabel44.LocationFloat = new DevExpress.Utils.PointFloat(652.7085F, 162F);
+            this.xrLabel44.LocationFloat = new DevExpress.Utils.PointFloat(703.5416F, 162F);
             this.xrLabel44.Name = "xrLabel44";
             this.xrLabel44.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
             this.xrLabel44.SizeF = new System.Drawing.SizeF(65F, 23F);
@@ -622,7 +682,7 @@ namespace Hemo.Client.Print
             // 
             // lblPERCENT_DRY_WEIGHT
             // 
-            this.lblPERCENT_DRY_WEIGHT.LocationFloat = new DevExpress.Utils.PointFloat(617.7085F, 162F);
+            this.lblPERCENT_DRY_WEIGHT.LocationFloat = new DevExpress.Utils.PointFloat(668.5414F, 162F);
             this.lblPERCENT_DRY_WEIGHT.Name = "lblPERCENT_DRY_WEIGHT";
             this.lblPERCENT_DRY_WEIGHT.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
             this.lblPERCENT_DRY_WEIGHT.SizeF = new System.Drawing.SizeF(35F, 23F);
@@ -631,7 +691,7 @@ namespace Hemo.Client.Print
             // 
             // xrLabel42
             // 
-            this.xrLabel42.LocationFloat = new DevExpress.Utils.PointFloat(607.7085F, 162F);
+            this.xrLabel42.LocationFloat = new DevExpress.Utils.PointFloat(658.5415F, 162F);
             this.xrLabel42.Name = "xrLabel42";
             this.xrLabel42.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
             this.xrLabel42.SizeF = new System.Drawing.SizeF(10F, 23F);
@@ -642,7 +702,7 @@ namespace Hemo.Client.Print
             // xrLabel38
             // 
             this.xrLabel38.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.xrLabel38.LocationFloat = new DevExpress.Utils.PointFloat(392.5F, 162F);
+            this.xrLabel38.LocationFloat = new DevExpress.Utils.PointFloat(443.333F, 162F);
             this.xrLabel38.Name = "xrLabel38";
             this.xrLabel38.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
             this.xrLabel38.SizeF = new System.Drawing.SizeF(25F, 23F);
@@ -654,7 +714,7 @@ namespace Hemo.Client.Print
             // chkCAPACITY_CONTROL_NOTGOOD
             // 
             this.chkCAPACITY_CONTROL_NOTGOOD.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.chkCAPACITY_CONTROL_NOTGOOD.LocationFloat = new DevExpress.Utils.PointFloat(155F, 162F);
+            this.chkCAPACITY_CONTROL_NOTGOOD.LocationFloat = new DevExpress.Utils.PointFloat(205.833F, 162F);
             this.chkCAPACITY_CONTROL_NOTGOOD.Name = "chkCAPACITY_CONTROL_NOTGOOD";
             this.chkCAPACITY_CONTROL_NOTGOOD.SizeF = new System.Drawing.SizeF(65F, 23F);
             this.chkCAPACITY_CONTROL_NOTGOOD.StylePriority.UseFont = false;
@@ -664,7 +724,7 @@ namespace Hemo.Client.Print
             // chkCAPACITY_CONTROL_GOOD
             // 
             this.chkCAPACITY_CONTROL_GOOD.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.chkCAPACITY_CONTROL_GOOD.LocationFloat = new DevExpress.Utils.PointFloat(90F, 162F);
+            this.chkCAPACITY_CONTROL_GOOD.LocationFloat = new DevExpress.Utils.PointFloat(140.833F, 162F);
             this.chkCAPACITY_CONTROL_GOOD.Name = "chkCAPACITY_CONTROL_GOOD";
             this.chkCAPACITY_CONTROL_GOOD.SizeF = new System.Drawing.SizeF(65F, 23F);
             this.chkCAPACITY_CONTROL_GOOD.StylePriority.UseFont = false;
@@ -673,7 +733,7 @@ namespace Hemo.Client.Print
             // 
             // lblMAX_DRY_WEIHGT
             // 
-            this.lblMAX_DRY_WEIHGT.LocationFloat = new DevExpress.Utils.PointFloat(512.5F, 162F);
+            this.lblMAX_DRY_WEIHGT.LocationFloat = new DevExpress.Utils.PointFloat(563.333F, 162F);
             this.lblMAX_DRY_WEIHGT.Name = "lblMAX_DRY_WEIHGT";
             this.lblMAX_DRY_WEIHGT.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
             this.lblMAX_DRY_WEIHGT.SizeF = new System.Drawing.SizeF(70F, 23F);
@@ -683,7 +743,7 @@ namespace Hemo.Client.Print
             // lblDRY_WEIHGT
             // 
             this.lblDRY_WEIHGT.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.lblDRY_WEIHGT.LocationFloat = new DevExpress.Utils.PointFloat(322.5F, 162F);
+            this.lblDRY_WEIHGT.LocationFloat = new DevExpress.Utils.PointFloat(373.333F, 162F);
             this.lblDRY_WEIHGT.Name = "lblDRY_WEIHGT";
             this.lblDRY_WEIHGT.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
             this.lblDRY_WEIHGT.SizeF = new System.Drawing.SizeF(70F, 23F);
@@ -694,7 +754,7 @@ namespace Hemo.Client.Print
             // xrLabel36
             // 
             this.xrLabel36.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.xrLabel36.LocationFloat = new DevExpress.Utils.PointFloat(252.5F, 162F);
+            this.xrLabel36.LocationFloat = new DevExpress.Utils.PointFloat(303.333F, 162F);
             this.xrLabel36.Name = "xrLabel36";
             this.xrLabel36.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
             this.xrLabel36.SizeF = new System.Drawing.SizeF(70F, 23F);
@@ -706,7 +766,7 @@ namespace Hemo.Client.Print
             // xrLabel35
             // 
             this.xrLabel35.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.xrLabel35.LocationFloat = new DevExpress.Utils.PointFloat(10F, 48F);
+            this.xrLabel35.LocationFloat = new DevExpress.Utils.PointFloat(60.83301F, 48F);
             this.xrLabel35.Name = "xrLabel35";
             this.xrLabel35.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
             this.xrLabel35.SizeF = new System.Drawing.SizeF(80F, 23F);
@@ -718,7 +778,7 @@ namespace Hemo.Client.Print
             // chkCOMPLAINTS_HAS
             // 
             this.chkCOMPLAINTS_HAS.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.chkCOMPLAINTS_HAS.LocationFloat = new DevExpress.Utils.PointFloat(155F, 48F);
+            this.chkCOMPLAINTS_HAS.LocationFloat = new DevExpress.Utils.PointFloat(205.833F, 48F);
             this.chkCOMPLAINTS_HAS.Name = "chkCOMPLAINTS_HAS";
             this.chkCOMPLAINTS_HAS.SizeF = new System.Drawing.SizeF(65F, 23F);
             this.chkCOMPLAINTS_HAS.StylePriority.UseFont = false;
@@ -728,7 +788,7 @@ namespace Hemo.Client.Print
             // lblCOMPLAINTS_CONTENT
             // 
             this.lblCOMPLAINTS_CONTENT.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.lblCOMPLAINTS_CONTENT.LocationFloat = new DevExpress.Utils.PointFloat(220F, 47.99998F);
+            this.lblCOMPLAINTS_CONTENT.LocationFloat = new DevExpress.Utils.PointFloat(270.833F, 47.99998F);
             this.lblCOMPLAINTS_CONTENT.Name = "lblCOMPLAINTS_CONTENT";
             this.lblCOMPLAINTS_CONTENT.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
             this.lblCOMPLAINTS_CONTENT.SizeF = new System.Drawing.SizeF(529.0001F, 23F);
@@ -739,7 +799,7 @@ namespace Hemo.Client.Print
             // chkCOMPLAINTS_NOTHAS
             // 
             this.chkCOMPLAINTS_NOTHAS.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.chkCOMPLAINTS_NOTHAS.LocationFloat = new DevExpress.Utils.PointFloat(90F, 48F);
+            this.chkCOMPLAINTS_NOTHAS.LocationFloat = new DevExpress.Utils.PointFloat(140.833F, 48F);
             this.chkCOMPLAINTS_NOTHAS.Name = "chkCOMPLAINTS_NOTHAS";
             this.chkCOMPLAINTS_NOTHAS.SizeF = new System.Drawing.SizeF(65F, 23F);
             this.chkCOMPLAINTS_NOTHAS.StylePriority.UseFont = false;
@@ -749,7 +809,7 @@ namespace Hemo.Client.Print
             // lblDOCTOR
             // 
             this.lblDOCTOR.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.lblDOCTOR.LocationFloat = new DevExpress.Utils.PointFloat(660.0001F, 417F);
+            this.lblDOCTOR.LocationFloat = new DevExpress.Utils.PointFloat(710.8331F, 417F);
             this.lblDOCTOR.Name = "lblDOCTOR";
             this.lblDOCTOR.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
             this.lblDOCTOR.SizeF = new System.Drawing.SizeF(80F, 23F);
@@ -761,7 +821,7 @@ namespace Hemo.Client.Print
             // xrLabel9
             // 
             this.xrLabel9.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.xrLabel9.LocationFloat = new DevExpress.Utils.PointFloat(582.7085F, 417F);
+            this.xrLabel9.LocationFloat = new DevExpress.Utils.PointFloat(633.5415F, 417F);
             this.xrLabel9.Name = "xrLabel9";
             this.xrLabel9.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
             this.xrLabel9.SizeF = new System.Drawing.SizeF(77.2915F, 23F);
@@ -773,7 +833,7 @@ namespace Hemo.Client.Print
             // lblCREATE_DATE
             // 
             this.lblCREATE_DATE.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.lblCREATE_DATE.LocationFloat = new DevExpress.Utils.PointFloat(90F, 10.00001F);
+            this.lblCREATE_DATE.LocationFloat = new DevExpress.Utils.PointFloat(140.833F, 10.00001F);
             this.lblCREATE_DATE.Name = "lblCREATE_DATE";
             this.lblCREATE_DATE.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
             this.lblCREATE_DATE.SizeF = new System.Drawing.SizeF(100.4167F, 23F);
@@ -785,7 +845,7 @@ namespace Hemo.Client.Print
             // xrLabel5
             // 
             this.xrLabel5.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.xrLabel5.LocationFloat = new DevExpress.Utils.PointFloat(10F, 10F);
+            this.xrLabel5.LocationFloat = new DevExpress.Utils.PointFloat(60.83301F, 10.00001F);
             this.xrLabel5.Name = "xrLabel5";
             this.xrLabel5.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
             this.xrLabel5.SizeF = new System.Drawing.SizeF(80F, 23F);
@@ -803,6 +863,7 @@ namespace Hemo.Client.Print
             // 
             // BottomMargin
             // 
+            this.BottomMargin.HeightF = 100F;
             this.BottomMargin.Name = "BottomMargin";
             this.BottomMargin.Padding = new DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 100F);
             this.BottomMargin.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft;
@@ -825,14 +886,14 @@ namespace Hemo.Client.Print
             // 
             // xrLine1
             // 
-            this.xrLine1.LocationFloat = new DevExpress.Utils.PointFloat(0F, 125F);
+            this.xrLine1.LocationFloat = new DevExpress.Utils.PointFloat(43.22917F, 125F);
             this.xrLine1.Name = "xrLine1";
             this.xrLine1.SizeF = new System.Drawing.SizeF(749F, 12.58334F);
             // 
             // lblAGE
             // 
             this.lblAGE.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.lblAGE.LocationFloat = new DevExpress.Utils.PointFloat(321.6671F, 99.99998F);
+            this.lblAGE.LocationFloat = new DevExpress.Utils.PointFloat(382.5001F, 102F);
             this.lblAGE.Name = "lblAGE";
             this.lblAGE.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
             this.lblAGE.SizeF = new System.Drawing.SizeF(63.54169F, 23.00001F);
@@ -843,7 +904,7 @@ namespace Hemo.Client.Print
             // xrLabel6
             // 
             this.xrLabel6.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.xrLabel6.LocationFloat = new DevExpress.Utils.PointFloat(255.2087F, 100F);
+            this.xrLabel6.LocationFloat = new DevExpress.Utils.PointFloat(316.0417F, 102F);
             this.xrLabel6.Name = "xrLabel6";
             this.xrLabel6.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
             this.xrLabel6.SizeF = new System.Drawing.SizeF(66.4585F, 23F);
@@ -855,7 +916,7 @@ namespace Hemo.Client.Print
             // lblHEMODIALYSIS_ID
             // 
             this.lblHEMODIALYSIS_ID.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.lblHEMODIALYSIS_ID.LocationFloat = new DevExpress.Utils.PointFloat(466.0419F, 99.99997F);
+            this.lblHEMODIALYSIS_ID.LocationFloat = new DevExpress.Utils.PointFloat(526.875F, 102F);
             this.lblHEMODIALYSIS_ID.Name = "lblHEMODIALYSIS_ID";
             this.lblHEMODIALYSIS_ID.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
             this.lblHEMODIALYSIS_ID.SizeF = new System.Drawing.SizeF(105F, 23F);
@@ -866,7 +927,7 @@ namespace Hemo.Client.Print
             // xrLabel8
             // 
             this.xrLabel8.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.xrLabel8.LocationFloat = new DevExpress.Utils.PointFloat(385.2087F, 99.99997F);
+            this.xrLabel8.LocationFloat = new DevExpress.Utils.PointFloat(446.0417F, 102F);
             this.xrLabel8.Name = "xrLabel8";
             this.xrLabel8.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
             this.xrLabel8.SizeF = new System.Drawing.SizeF(80.8331F, 23F);
@@ -878,7 +939,7 @@ namespace Hemo.Client.Print
             // lblNAME
             // 
             this.lblNAME.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.lblNAME.LocationFloat = new DevExpress.Utils.PointFloat(55.20833F, 100F);
+            this.lblNAME.LocationFloat = new DevExpress.Utils.PointFloat(116.0413F, 102F);
             this.lblNAME.Name = "lblNAME";
             this.lblNAME.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
             this.lblNAME.SizeF = new System.Drawing.SizeF(76.04173F, 23F);
@@ -889,7 +950,7 @@ namespace Hemo.Client.Print
             // lblSEX
             // 
             this.lblSEX.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.lblSEX.LocationFloat = new DevExpress.Utils.PointFloat(191.667F, 99.99999F);
+            this.lblSEX.LocationFloat = new DevExpress.Utils.PointFloat(252.5F, 102F);
             this.lblSEX.Name = "lblSEX";
             this.lblSEX.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
             this.lblSEX.SizeF = new System.Drawing.SizeF(63.54169F, 23.00001F);
@@ -900,7 +961,7 @@ namespace Hemo.Client.Print
             // xrLabel2
             // 
             this.xrLabel2.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.xrLabel2.LocationFloat = new DevExpress.Utils.PointFloat(0F, 100F);
+            this.xrLabel2.LocationFloat = new DevExpress.Utils.PointFloat(60.83301F, 102F);
             this.xrLabel2.Name = "xrLabel2";
             this.xrLabel2.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
             this.xrLabel2.SizeF = new System.Drawing.SizeF(55.20832F, 23F);
@@ -912,7 +973,7 @@ namespace Hemo.Client.Print
             // xrLabel3
             // 
             this.xrLabel3.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.xrLabel3.LocationFloat = new DevExpress.Utils.PointFloat(131.2501F, 100F);
+            this.xrLabel3.LocationFloat = new DevExpress.Utils.PointFloat(192.0831F, 102F);
             this.xrLabel3.Name = "xrLabel3";
             this.xrLabel3.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
             this.xrLabel3.SizeF = new System.Drawing.SizeF(60.41684F, 23F);
@@ -933,66 +994,6 @@ namespace Hemo.Client.Print
             this.xrLabel1.Text = "上海市普陀区人民医院血透患者病程记录";
             this.xrLabel1.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
             // 
-            // xrLabel4
-            // 
-            this.xrLabel4.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.xrLabel4.LocationFloat = new DevExpress.Utils.PointFloat(489.7916F, 86F);
-            this.xrLabel4.Name = "xrLabel4";
-            this.xrLabel4.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.xrLabel4.SizeF = new System.Drawing.SizeF(50F, 23F);
-            this.xrLabel4.StylePriority.UseFont = false;
-            this.xrLabel4.StylePriority.UseTextAlignment = false;
-            this.xrLabel4.Text = "建议：";
-            this.xrLabel4.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
-            // 
-            // xrLabel10
-            // 
-            this.xrLabel10.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.xrLabel10.LocationFloat = new DevExpress.Utils.PointFloat(489.7916F, 124F);
-            this.xrLabel10.Name = "xrLabel10";
-            this.xrLabel10.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.xrLabel10.SizeF = new System.Drawing.SizeF(50F, 23F);
-            this.xrLabel10.StylePriority.UseFont = false;
-            this.xrLabel10.StylePriority.UseTextAlignment = false;
-            this.xrLabel10.Text = "建议：";
-            this.xrLabel10.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
-            // 
-            // xrLabel11
-            // 
-            this.xrLabel11.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.xrLabel11.LocationFloat = new DevExpress.Utils.PointFloat(489.7916F, 238F);
-            this.xrLabel11.Name = "xrLabel11";
-            this.xrLabel11.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.xrLabel11.SizeF = new System.Drawing.SizeF(50F, 23F);
-            this.xrLabel11.StylePriority.UseFont = false;
-            this.xrLabel11.StylePriority.UseTextAlignment = false;
-            this.xrLabel11.Text = "建议：";
-            this.xrLabel11.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
-            // 
-            // xrLabel12
-            // 
-            this.xrLabel12.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.xrLabel12.LocationFloat = new DevExpress.Utils.PointFloat(489.7916F, 276F);
-            this.xrLabel12.Name = "xrLabel12";
-            this.xrLabel12.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.xrLabel12.SizeF = new System.Drawing.SizeF(50F, 23F);
-            this.xrLabel12.StylePriority.UseFont = false;
-            this.xrLabel12.StylePriority.UseTextAlignment = false;
-            this.xrLabel12.Text = "建议：";
-            this.xrLabel12.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
-            // 
-            // xrLabel13
-            // 
-            this.xrLabel13.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.xrLabel13.LocationFloat = new DevExpress.Utils.PointFloat(489.7916F, 314F);
-            this.xrLabel13.Name = "xrLabel13";
-            this.xrLabel13.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.xrLabel13.SizeF = new System.Drawing.SizeF(50F, 23F);
-            this.xrLabel13.StylePriority.UseFont = false;
-            this.xrLabel13.StylePriority.UseTextAlignment = false;
-            this.xrLabel13.Text = "建议：";
-            this.xrLabel13.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
-            // 
             // hemodialysisModel1
             // 
             this.hemodialysisModel1.DataSetName = "HemodialysisModel";
@@ -1006,7 +1007,7 @@ namespace Hemo.Client.Print
             this.BottomMargin,
             this.PageHeader});
             this.Margins = new System.Drawing.Printing.Margins(10, 10, 0, 100);
-            this.Version = "10.1";
+            this.Version = "15.1";
             this.BeforePrint += new System.Drawing.Printing.PrintEventHandler(this.PatientProgressNoteReport_BeforePrint);
             ((System.ComponentModel.ISupportInitialize)(this.txtPROGRESS_NODE)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.hemodialysisModel1)).EndInit();
