@@ -202,6 +202,7 @@
             this.contextMenuStrip3 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.ctlUserInfo1 = new Hemo.Client.UI.Hemodialysis.CtlUserInfo();
+            this.dxSimpleButton1 = new Hemo.Client.Controls.DXSimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl2)).BeginInit();
             this.panelControl2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txtEndDate.Properties.CalendarTimeProperties)).BeginInit();
@@ -1977,6 +1978,7 @@
             // 
             // panelControl1
             // 
+            this.panelControl1.Controls.Add(this.dxSimpleButton1);
             this.panelControl1.Controls.Add(this.btnPrint);
             this.panelControl1.Controls.Add(this.btnSaveTemp);
             this.panelControl1.Controls.Add(this.btn_UseTemplate);
@@ -1994,7 +1996,7 @@
             // btnPrint
             // 
             this.btnPrint.ImageIndex = 6;
-            this.btnPrint.Location = new System.Drawing.Point(625, 14);
+            this.btnPrint.Location = new System.Drawing.Point(476, 16);
             this.btnPrint.Margin = new System.Windows.Forms.Padding(6);
             this.btnPrint.Name = "btnPrint";
             this.btnPrint.Size = new System.Drawing.Size(139, 52);
@@ -2005,7 +2007,7 @@
             // btnSaveTemp
             // 
             this.btnSaveTemp.ImageIndex = 14;
-            this.btnSaveTemp.Location = new System.Drawing.Point(775, 16);
+            this.btnSaveTemp.Location = new System.Drawing.Point(626, 18);
             this.btnSaveTemp.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.btnSaveTemp.Name = "btnSaveTemp";
             this.btnSaveTemp.Size = new System.Drawing.Size(184, 48);
@@ -2016,7 +2018,7 @@
             // btn_UseTemplate
             // 
             this.btn_UseTemplate.ImageIndex = 7;
-            this.btn_UseTemplate.Location = new System.Drawing.Point(970, 16);
+            this.btn_UseTemplate.Location = new System.Drawing.Point(821, 18);
             this.btn_UseTemplate.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.btn_UseTemplate.Name = "btn_UseTemplate";
             this.btn_UseTemplate.Size = new System.Drawing.Size(184, 48);
@@ -2263,6 +2265,16 @@
             this.ctlUserInfo1.Name = "ctlUserInfo1";
             this.ctlUserInfo1.Size = new System.Drawing.Size(8, 83);
             this.ctlUserInfo1.TabIndex = 3;
+            // 
+            // dxSimpleButton1
+            // 
+            this.dxSimpleButton1.ImageIndex = 1;
+            this.dxSimpleButton1.Location = new System.Drawing.Point(1015, 16);
+            this.dxSimpleButton1.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
+            this.dxSimpleButton1.Name = "dxSimpleButton1";
+            this.dxSimpleButton1.Size = new System.Drawing.Size(140, 52);
+            this.dxSimpleButton1.TabIndex = 303;
+            this.dxSimpleButton1.Text = "停止(&S)";
             // 
             // QueryRecipeListUI
             // 
@@ -2524,5 +2536,6 @@
         private DevExpress.XtraTab.XtraTabPage xtraTabPage9;
         private ReportChart.PatientRecipeFrm patientRecipeFrm2;
         private Controls.DXSimpleButton btnPrint;
+        private Controls.DXSimpleButton dxSimpleButton1;
     }
 }

@@ -772,6 +772,7 @@ namespace Hemo.Client.UI.PatientFixUI
                 if (isShow && e.Button == System.Windows.Forms.MouseButtons.Right)
                 {
                     this.contextMenuStrip2.Show(MousePosition);
+                    this.ToolStripMenuItemDelete.Visible = false;
                     this.toolStripMenuItemDrug.Visible = false;
                     this.ToolStripMenuItemForCom.Visible = true;
                     this.ToolStripMenuItemForComCancle.Visible = false;
@@ -779,6 +780,7 @@ namespace Hemo.Client.UI.PatientFixUI
                 else if (e.Button == System.Windows.Forms.MouseButtons.Right)
                 {
                     this.contextMenuStrip2.Show(MousePosition);
+                    this.ToolStripMenuItemDelete.Visible = false;
                     this.toolStripMenuItemDrug.Visible = false;
                     this.ToolStripMenuItemForCom.Visible = false;
                     this.ToolStripMenuItemForComCancle.Visible = true;
@@ -801,6 +803,7 @@ namespace Hemo.Client.UI.PatientFixUI
                 if (e.Button == System.Windows.Forms.MouseButtons.Right && (dr.STATUS == "2"))
                 {
                     this.contextMenuStrip2.Show(MousePosition);
+                    this.ToolStripMenuItemDelete.Visible = false;
                     this.toolStripMenuItemDrug.Visible = true;
                     this.ToolStripMenuItemForCom.Visible = false;
                     this.ToolStripMenuItemForComCancle.Visible = false;
@@ -809,7 +812,8 @@ namespace Hemo.Client.UI.PatientFixUI
                 else if (e.Button == System.Windows.Forms.MouseButtons.Right && (dr.STATUS == "0"))
                 {
                     this.contextMenuStrip2.Show(MousePosition);
-                    this.toolStripMenuItemDrug.Visible = true;
+                    this.ToolStripMenuItemDelete.Visible = true;
+                    this.toolStripMenuItemDrug.Visible = false;
                     this.ToolStripMenuItemForCom.Visible = false;
                     this.ToolStripMenuItemForComCancle.Visible = false;
                 }
@@ -838,6 +842,7 @@ namespace Hemo.Client.UI.PatientFixUI
                 if (isShow && e.Button == System.Windows.Forms.MouseButtons.Right)
                 {
                     this.contextMenuStrip2.Show(MousePosition);
+                    this.ToolStripMenuItemDelete.Visible = false;
                     this.toolStripMenuItemForLong.Visible = false;
                     this.ToolStripMenuItemForCom.Visible = true;
                     this.ToolStripMenuItemForComCancle.Visible = false;
@@ -845,6 +850,7 @@ namespace Hemo.Client.UI.PatientFixUI
                 else if (e.Button == System.Windows.Forms.MouseButtons.Right)
                 {
                     this.contextMenuStrip2.Show(MousePosition);
+                    this.ToolStripMenuItemDelete.Visible = false;
                     this.toolStripMenuItemDrug.Visible = false;
                     this.ToolStripMenuItemForCom.Visible = false;
                     this.ToolStripMenuItemForComCancle.Visible = true;
@@ -864,6 +870,7 @@ namespace Hemo.Client.UI.PatientFixUI
                 if (e.Button == System.Windows.Forms.MouseButtons.Right && (dr.STATUS == "2"))
                 {
                     this.contextMenuStrip2.Show(MousePosition);
+                    this.ToolStripMenuItemDelete.Visible = false;
                     this.toolStripMenuItemForLong.Visible = true;
                     this.ToolStripMenuItemForCom.Visible = false;
                     this.ToolStripMenuItemForComCancle.Visible = false;
@@ -871,7 +878,8 @@ namespace Hemo.Client.UI.PatientFixUI
                 else if (e.Button == System.Windows.Forms.MouseButtons.Right && (dr.STATUS == "0"))
                 {
                     this.contextMenuStrip2.Show(MousePosition);
-                    this.toolStripMenuItemForLong.Visible = true;
+                    this.ToolStripMenuItemDelete.Visible = true;
+                    this.toolStripMenuItemForLong.Visible = false;
                     this.ToolStripMenuItemForCom.Visible = false;
                     this.ToolStripMenuItemForComCancle.Visible = false;
                 }
@@ -1558,7 +1566,6 @@ namespace Hemo.Client.UI.PatientFixUI
                 XtraMessageBox.Show("打印失败：" + ex.Message, "医嘱打印", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
-
         #endregion
 
         #region 方法
