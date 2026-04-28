@@ -1,6 +1,7 @@
 ﻿namespace Hemo.Client.UI.PatientFixUI
 {
-    partial class QueryRecipeListUI {
+    partial class QueryRecipeListUI
+    {
         /// <summary>
         /// Required designer variable.
         /// </summary>
@@ -10,8 +11,10 @@
         /// Clean up any resources being used.
         /// </summary>
         /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
-        protected override void Dispose(bool disposing) {
-            if (disposing && (components != null)) {
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
                 components.Dispose();
             }
             base.Dispose(disposing);
@@ -23,7 +26,8 @@
         /// Required method for Designer support - do not modify
         /// the contents of this method with the code editor.
         /// </summary>
-        private void InitializeComponent() {
+        private void InitializeComponent()
+        {
             this.components = new System.ComponentModel.Container();
             this.UserInfo = new Hemo.Client.Controls.CtlUserLongInfo();
             this.panelControl2 = new DevExpress.XtraEditors.PanelControl();
@@ -171,6 +175,7 @@
             this.lupDRUG_TIMETYPE = new DevExpress.XtraEditors.ComboBoxEdit();
             this.cbmDRUG_DAYS = new DevExpress.XtraEditors.CheckedComboBoxEdit();
             this.panelControl1 = new DevExpress.XtraEditors.PanelControl();
+            this.btnPrint = new Hemo.Client.Controls.DXSimpleButton();
             this.btnSaveTemp = new Hemo.Client.Controls.DXSimpleButton();
             this.btn_UseTemplate = new Hemo.Client.Controls.DXSimpleButton();
             this.btnAddDrug = new Hemo.Client.Controls.DXSimpleButton();
@@ -556,11 +561,11 @@
             // xtraTabControl1
             // 
             this.xtraTabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.xtraTabControl1.Location = new System.Drawing.Point(0, 752);
+            this.xtraTabControl1.Location = new System.Drawing.Point(0, 470);
             this.xtraTabControl1.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.xtraTabControl1.Name = "xtraTabControl1";
             this.xtraTabControl1.SelectedTabPage = this.xtraTabPage1;
-            this.xtraTabControl1.Size = new System.Drawing.Size(2706, 763);
+            this.xtraTabControl1.Size = new System.Drawing.Size(1691, 477);
             this.xtraTabControl1.TabIndex = 344;
             this.xtraTabControl1.TabPages.AddRange(new DevExpress.XtraTab.XtraTabPage[] {
             this.xtraTabPage1,
@@ -574,7 +579,7 @@
             this.xtraTabPage1.Controls.Add(this.simpleButton1);
             this.xtraTabPage1.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.xtraTabPage1.Name = "xtraTabPage1";
-            this.xtraTabPage1.Size = new System.Drawing.Size(2694, 696);
+            this.xtraTabPage1.Size = new System.Drawing.Size(1679, 410);
             this.xtraTabPage1.Text = "长期透析方案";
             // 
             // gridRecipe
@@ -585,7 +590,7 @@
             this.gridRecipe.MainView = this.gridVRecipe;
             this.gridRecipe.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.gridRecipe.Name = "gridRecipe";
-            this.gridRecipe.Size = new System.Drawing.Size(4310, 1114);
+            this.gridRecipe.Size = new System.Drawing.Size(1679, 410);
             this.gridRecipe.TabIndex = 3;
             this.gridRecipe.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridVRecipe});
@@ -721,7 +726,7 @@
             this.xtraTabPage2.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.xtraTabPage2.Name = "xtraTabPage2";
             this.xtraTabPage2.PageVisible = false;
-            this.xtraTabPage2.Size = new System.Drawing.Size(1680, 695);
+            this.xtraTabPage2.Size = new System.Drawing.Size(1679, 410);
             this.xtraTabPage2.Text = " 临时医嘱 ";
             // 
             // gridRecipeTemp
@@ -732,7 +737,7 @@
             this.gridRecipeTemp.MainView = this.gridView3;
             this.gridRecipeTemp.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.gridRecipeTemp.Name = "gridRecipeTemp";
-            this.gridRecipeTemp.Size = new System.Drawing.Size(2688, 1112);
+            this.gridRecipeTemp.Size = new System.Drawing.Size(1679, 410);
             this.gridRecipeTemp.TabIndex = 4;
             this.gridRecipeTemp.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView3});
@@ -848,7 +853,7 @@
             // busyIndicator1
             // 
             this.busyIndicator1.Location = new System.Drawing.Point(718, 314);
-            this.busyIndicator1.Margin = new System.Windows.Forms.Padding(10, 10, 10, 10);
+            this.busyIndicator1.Margin = new System.Windows.Forms.Padding(10);
             this.busyIndicator1.Name = "busyIndicator1";
             this.busyIndicator1.Size = new System.Drawing.Size(218, 97);
             this.busyIndicator1.TabIndex = 343;
@@ -862,7 +867,7 @@
             this.grdCureList.MainView = this.gridView2;
             this.grdCureList.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.grdCureList.Name = "grdCureList";
-            this.grdCureList.Size = new System.Drawing.Size(2706, 470);
+            this.grdCureList.Size = new System.Drawing.Size(1691, 470);
             this.grdCureList.TabIndex = 3;
             this.grdCureList.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView2});
@@ -1046,17 +1051,17 @@
             this.panelControl3.Controls.Add(this.btnClose);
             this.panelControl3.Controls.Add(this.btnCopy);
             this.panelControl3.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panelControl3.Location = new System.Drawing.Point(0, 1566);
+            this.panelControl3.Location = new System.Drawing.Point(0, 947);
             this.panelControl3.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.panelControl3.Name = "panelControl3";
-            this.panelControl3.Size = new System.Drawing.Size(2706, 85);
+            this.panelControl3.Size = new System.Drawing.Size(1691, 85);
             this.panelControl3.TabIndex = 345;
             // 
             // btnRefresh
             // 
             this.btnRefresh.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnRefresh.ImageIndex = 5;
-            this.btnRefresh.Location = new System.Drawing.Point(2366, 19);
+            this.btnRefresh.Location = new System.Drawing.Point(1351, 19);
             this.btnRefresh.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.btnRefresh.Name = "btnRefresh";
             this.btnRefresh.Size = new System.Drawing.Size(140, 52);
@@ -1068,7 +1073,7 @@
             // 
             this.btnStop.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnStop.ImageIndex = 1;
-            this.btnStop.Location = new System.Drawing.Point(2220, 19);
+            this.btnStop.Location = new System.Drawing.Point(1205, 19);
             this.btnStop.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.btnStop.Name = "btnStop";
             this.btnStop.Size = new System.Drawing.Size(140, 52);
@@ -1080,7 +1085,7 @@
             // 
             this.btnEdit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnEdit.ImageIndex = 2;
-            this.btnEdit.Location = new System.Drawing.Point(1921, 19);
+            this.btnEdit.Location = new System.Drawing.Point(906, 19);
             this.btnEdit.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.btnEdit.Name = "btnEdit";
             this.btnEdit.Size = new System.Drawing.Size(140, 52);
@@ -1092,7 +1097,7 @@
             // 
             this.btnAdd.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnAdd.ImageIndex = 0;
-            this.btnAdd.Location = new System.Drawing.Point(2072, 19);
+            this.btnAdd.Location = new System.Drawing.Point(1057, 19);
             this.btnAdd.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(140, 52);
@@ -1104,7 +1109,7 @@
             // 
             this.btnClose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnClose.ImageIndex = 3;
-            this.btnClose.Location = new System.Drawing.Point(2512, 19);
+            this.btnClose.Location = new System.Drawing.Point(1497, 19);
             this.btnClose.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(140, 52);
@@ -1117,7 +1122,7 @@
             // 
             this.btnCopy.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnCopy.ImageIndex = 4;
-            this.btnCopy.Location = new System.Drawing.Point(1770, 19);
+            this.btnCopy.Location = new System.Drawing.Point(755, 19);
             this.btnCopy.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.btnCopy.Name = "btnCopy";
             this.btnCopy.Size = new System.Drawing.Size(140, 52);
@@ -1144,7 +1149,7 @@
             this.xtraTabControl3.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.xtraTabControl3.Name = "xtraTabControl3";
             this.xtraTabControl3.SelectedTabPage = this.xtraTabPage5;
-            this.xtraTabControl3.Size = new System.Drawing.Size(2706, 803);
+            this.xtraTabControl3.Size = new System.Drawing.Size(1691, 502);
             this.xtraTabControl3.TabIndex = 345;
             this.xtraTabControl3.TabPages.AddRange(new DevExpress.XtraTab.XtraTabPage[] {
             this.xtraTabPage5,
@@ -1156,7 +1161,7 @@
             this.xtraTabPage5.Controls.Add(this.gridDrugList);
             this.xtraTabPage5.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.xtraTabPage5.Name = "xtraTabPage5";
-            this.xtraTabPage5.Size = new System.Drawing.Size(1679, 614);
+            this.xtraTabPage5.Size = new System.Drawing.Size(1679, 445);
             this.xtraTabPage5.Text = "临时医嘱";
             // 
             // gridDrugList
@@ -1169,7 +1174,7 @@
             this.gridDrugList.Name = "gridDrugList";
             this.gridDrugList.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
             this.repositoryItemTextEdit1});
-            this.gridDrugList.Size = new System.Drawing.Size(2686, 982);
+            this.gridDrugList.Size = new System.Drawing.Size(1679, 445);
             this.gridDrugList.TabIndex = 7;
             this.gridDrugList.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView5});
@@ -1384,7 +1389,7 @@
             this.xtraTabPage6.Controls.Add(this.gridDrugListLong);
             this.xtraTabPage6.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.xtraTabPage6.Name = "xtraTabPage6";
-            this.xtraTabPage6.Size = new System.Drawing.Size(2694, 746);
+            this.xtraTabPage6.Size = new System.Drawing.Size(1679, 445);
             this.xtraTabPage6.Text = "长期医嘱";
             // 
             // gridDrugListLong
@@ -1395,7 +1400,7 @@
             this.gridDrugListLong.MainView = this.gridView7;
             this.gridDrugListLong.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.gridDrugListLong.Name = "gridDrugListLong";
-            this.gridDrugListLong.Size = new System.Drawing.Size(4310, 1194);
+            this.gridDrugListLong.Size = new System.Drawing.Size(1679, 445);
             this.gridDrugListLong.TabIndex = 8;
             this.gridDrugListLong.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView7});
@@ -1620,10 +1625,10 @@
             this.panDrug.Controls.Add(this.lupDRUG_TIMETYPE);
             this.panDrug.Controls.Add(this.cbmDRUG_DAYS);
             this.panDrug.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panDrug.Location = new System.Drawing.Point(0, 1072);
+            this.panDrug.Location = new System.Drawing.Point(0, 502);
             this.panDrug.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.panDrug.Name = "panDrug";
-            this.panDrug.Size = new System.Drawing.Size(2706, 448);
+            this.panDrug.Size = new System.Drawing.Size(1691, 448);
             this.panDrug.TabIndex = 8;
             // 
             // cmbDRUG_TIMES
@@ -1972,18 +1977,30 @@
             // 
             // panelControl1
             // 
+            this.panelControl1.Controls.Add(this.btnPrint);
             this.panelControl1.Controls.Add(this.btnSaveTemp);
             this.panelControl1.Controls.Add(this.btn_UseTemplate);
             this.panelControl1.Controls.Add(this.btnAddDrug);
             this.panelControl1.Controls.Add(this.btnCloseDrug);
             this.panelControl1.Controls.Add(this.btnSaveDrug);
             this.panelControl1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panelControl1.Location = new System.Drawing.Point(0, 1570);
+            this.panelControl1.Location = new System.Drawing.Point(0, 950);
             this.panelControl1.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.panelControl1.Name = "panelControl1";
-            this.panelControl1.Size = new System.Drawing.Size(2706, 82);
+            this.panelControl1.Size = new System.Drawing.Size(1691, 82);
             this.panelControl1.TabIndex = 264;
             this.panelControl1.Paint += new System.Windows.Forms.PaintEventHandler(this.panelControl1_Paint);
+            // 
+            // btnPrint
+            // 
+            this.btnPrint.ImageIndex = 6;
+            this.btnPrint.Location = new System.Drawing.Point(625, 14);
+            this.btnPrint.Margin = new System.Windows.Forms.Padding(6);
+            this.btnPrint.Name = "btnPrint";
+            this.btnPrint.Size = new System.Drawing.Size(139, 52);
+            this.btnPrint.TabIndex = 298;
+            this.btnPrint.Text = "打印(&P) ";
+            this.btnPrint.Click += new System.EventHandler(this.btnPrint_Click);
             // 
             // btnSaveTemp
             // 
@@ -2057,12 +2074,12 @@
             this.xtraTabControl4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.xtraTabControl4.HeaderLocation = DevExpress.XtraTab.TabHeaderLocation.Left;
             this.xtraTabControl4.HeaderOrientation = DevExpress.XtraTab.TabOrientation.Vertical;
-            this.xtraTabControl4.Location = new System.Drawing.Point(0, 16);
+            this.xtraTabControl4.Location = new System.Drawing.Point(0, 10);
             this.xtraTabControl4.Margin = new System.Windows.Forms.Padding(5, 10, 5, 10);
             this.xtraTabControl4.Name = "xtraTabControl4";
             this.xtraTabControl4.SelectedTabPage = this.xtraTabPage9;
             this.xtraTabControl4.ShowTabHeader = DevExpress.Utils.DefaultBoolean.True;
-            this.xtraTabControl4.Size = new System.Drawing.Size(2706, 1635);
+            this.xtraTabControl4.Size = new System.Drawing.Size(1691, 1022);
             this.xtraTabControl4.TabIndex = 0;
             this.xtraTabControl4.TabPages.AddRange(new DevExpress.XtraTab.XtraTabPage[] {
             this.xtraTabPage9,
@@ -2075,7 +2092,7 @@
             this.xtraTabPage9.Controls.Add(this.patientRecipeFrm2);
             this.xtraTabPage9.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.xtraTabPage9.Name = "xtraTabPage9";
-            this.xtraTabPage9.Size = new System.Drawing.Size(2649, 1623);
+            this.xtraTabPage9.Size = new System.Drawing.Size(1634, 1010);
             this.xtraTabPage9.Text = "干体重与抗凝";
             // 
             // patientRecipeFrm2
@@ -2088,7 +2105,7 @@
             this.patientRecipeFrm2.Margin = new System.Windows.Forms.Padding(5, 10, 5, 10);
             this.patientRecipeFrm2.Name = "patientRecipeFrm2";
             this.patientRecipeFrm2.OnGetPatientRecipeChart = null;
-            this.patientRecipeFrm2.Size = new System.Drawing.Size(4238, 2597);
+            this.patientRecipeFrm2.Size = new System.Drawing.Size(1634, 1010);
             this.patientRecipeFrm2.TabIndex = 3;
             this.patientRecipeFrm2.Title = null;
             // 
@@ -2097,7 +2114,7 @@
             this.xtraTabPage10.Controls.Add(this.patientRecipeFrm3);
             this.xtraTabPage10.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.xtraTabPage10.Name = "xtraTabPage10";
-            this.xtraTabPage10.Size = new System.Drawing.Size(1635, 1009);
+            this.xtraTabPage10.Size = new System.Drawing.Size(1634, 1010);
             this.xtraTabPage10.Text = "spkt/V";
             // 
             // patientRecipeFrm3
@@ -2110,7 +2127,7 @@
             this.patientRecipeFrm3.Margin = new System.Windows.Forms.Padding(5, 10, 5, 10);
             this.patientRecipeFrm3.Name = "patientRecipeFrm3";
             this.patientRecipeFrm3.OnGetPatientRecipeChart = null;
-            this.patientRecipeFrm3.Size = new System.Drawing.Size(2616, 1614);
+            this.patientRecipeFrm3.Size = new System.Drawing.Size(1634, 1010);
             this.patientRecipeFrm3.TabIndex = 3;
             this.patientRecipeFrm3.Title = null;
             // 
@@ -2119,7 +2136,7 @@
             this.xtraTabPage11.Controls.Add(this.patientRecipeFrm4);
             this.xtraTabPage11.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.xtraTabPage11.Name = "xtraTabPage11";
-            this.xtraTabPage11.Size = new System.Drawing.Size(1635, 1009);
+            this.xtraTabPage11.Size = new System.Drawing.Size(1634, 1010);
             this.xtraTabPage11.Text = "URR";
             // 
             // patientRecipeFrm4
@@ -2132,7 +2149,7 @@
             this.patientRecipeFrm4.Margin = new System.Windows.Forms.Padding(5, 10, 5, 10);
             this.patientRecipeFrm4.Name = "patientRecipeFrm4";
             this.patientRecipeFrm4.OnGetPatientRecipeChart = null;
-            this.patientRecipeFrm4.Size = new System.Drawing.Size(2616, 1614);
+            this.patientRecipeFrm4.Size = new System.Drawing.Size(1634, 1010);
             this.patientRecipeFrm4.TabIndex = 3;
             this.patientRecipeFrm4.Title = null;
             // 
@@ -2506,5 +2523,6 @@
         private ReportChart.PatientRecipeFrm patientRecipeFrm3;
         private DevExpress.XtraTab.XtraTabPage xtraTabPage9;
         private ReportChart.PatientRecipeFrm patientRecipeFrm2;
+        private Controls.DXSimpleButton btnPrint;
     }
 }

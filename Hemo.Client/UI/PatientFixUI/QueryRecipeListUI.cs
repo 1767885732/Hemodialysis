@@ -492,7 +492,7 @@ namespace Hemo.Client.UI.PatientFixUI
             }
 
             if (this.xtraTabControl2.SelectedTabPageIndex == 3)
-            {                
+            {
                 loadChart(this.patientRecipeFrm2);
             }
         }
@@ -772,7 +772,6 @@ namespace Hemo.Client.UI.PatientFixUI
                 if (isShow && e.Button == System.Windows.Forms.MouseButtons.Right)
                 {
                     this.contextMenuStrip2.Show(MousePosition);
-                    this.ToolStripMenuItemDelete.Visible = false;
                     this.toolStripMenuItemDrug.Visible = false;
                     this.ToolStripMenuItemForCom.Visible = true;
                     this.ToolStripMenuItemForComCancle.Visible = false;
@@ -780,7 +779,6 @@ namespace Hemo.Client.UI.PatientFixUI
                 else if (e.Button == System.Windows.Forms.MouseButtons.Right)
                 {
                     this.contextMenuStrip2.Show(MousePosition);
-                    this.ToolStripMenuItemDelete.Visible = false;
                     this.toolStripMenuItemDrug.Visible = false;
                     this.ToolStripMenuItemForCom.Visible = false;
                     this.ToolStripMenuItemForComCancle.Visible = true;
@@ -803,7 +801,6 @@ namespace Hemo.Client.UI.PatientFixUI
                 if (e.Button == System.Windows.Forms.MouseButtons.Right && (dr.STATUS == "2"))
                 {
                     this.contextMenuStrip2.Show(MousePosition);
-                    this.ToolStripMenuItemDelete.Visible = false;
                     this.toolStripMenuItemDrug.Visible = true;
                     this.ToolStripMenuItemForCom.Visible = false;
                     this.ToolStripMenuItemForComCancle.Visible = false;
@@ -812,8 +809,7 @@ namespace Hemo.Client.UI.PatientFixUI
                 else if (e.Button == System.Windows.Forms.MouseButtons.Right && (dr.STATUS == "0"))
                 {
                     this.contextMenuStrip2.Show(MousePosition);
-                    this.ToolStripMenuItemDelete.Visible = true;
-                    this.toolStripMenuItemDrug.Visible = false;
+                    this.toolStripMenuItemDrug.Visible = true;
                     this.ToolStripMenuItemForCom.Visible = false;
                     this.ToolStripMenuItemForComCancle.Visible = false;
                 }
@@ -842,7 +838,6 @@ namespace Hemo.Client.UI.PatientFixUI
                 if (isShow && e.Button == System.Windows.Forms.MouseButtons.Right)
                 {
                     this.contextMenuStrip2.Show(MousePosition);
-                    this.ToolStripMenuItemDelete.Visible = false;
                     this.toolStripMenuItemForLong.Visible = false;
                     this.ToolStripMenuItemForCom.Visible = true;
                     this.ToolStripMenuItemForComCancle.Visible = false;
@@ -850,7 +845,6 @@ namespace Hemo.Client.UI.PatientFixUI
                 else if (e.Button == System.Windows.Forms.MouseButtons.Right)
                 {
                     this.contextMenuStrip2.Show(MousePosition);
-                    this.ToolStripMenuItemDelete.Visible = false;
                     this.toolStripMenuItemDrug.Visible = false;
                     this.ToolStripMenuItemForCom.Visible = false;
                     this.ToolStripMenuItemForComCancle.Visible = true;
@@ -870,7 +864,6 @@ namespace Hemo.Client.UI.PatientFixUI
                 if (e.Button == System.Windows.Forms.MouseButtons.Right && (dr.STATUS == "2"))
                 {
                     this.contextMenuStrip2.Show(MousePosition);
-                    this.ToolStripMenuItemDelete.Visible = false;
                     this.toolStripMenuItemForLong.Visible = true;
                     this.ToolStripMenuItemForCom.Visible = false;
                     this.ToolStripMenuItemForComCancle.Visible = false;
@@ -878,8 +871,7 @@ namespace Hemo.Client.UI.PatientFixUI
                 else if (e.Button == System.Windows.Forms.MouseButtons.Right && (dr.STATUS == "0"))
                 {
                     this.contextMenuStrip2.Show(MousePosition);
-                    this.ToolStripMenuItemDelete.Visible = true;
-                    this.toolStripMenuItemForLong.Visible = false;
+                    this.toolStripMenuItemForLong.Visible = true;
                     this.ToolStripMenuItemForCom.Visible = false;
                     this.ToolStripMenuItemForComCancle.Visible = false;
                 }
@@ -1537,6 +1529,36 @@ namespace Hemo.Client.UI.PatientFixUI
             this.btnAddDrug.Enabled = true;
         }
 
+        /// <summary>
+        /// 2026-04-28 龙宇涵 打印当前全部医嘱（临时医嘱 + 长期医嘱）
+        /// </summary>
+        private void btnPrint_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                DevExpress.XtraPrinting.PrintingSystem ps = new DevExpress.XtraPrinting.PrintingSystem();
+                DevExpress.XtraPrintingLinks.CompositeLink compositeLink = new DevExpress.XtraPrintingLinks.CompositeLink(ps);
+
+                DevExpress.XtraPrinting.PrintableComponentLink link1 = new DevExpress.XtraPrinting.PrintableComponentLink();
+                link1.Component = this.gridDrugList;
+                link1.CreateDocument(ps);
+
+                DevExpress.XtraPrinting.PrintableComponentLink link2 = new DevExpress.XtraPrinting.PrintableComponentLink();
+                link2.Component = this.gridDrugListLong;
+                link2.CreateDocument(ps);
+
+                compositeLink.Links.Add(link1);
+                compositeLink.Links.Add(link2);
+                compositeLink.CreateDocument();
+
+                compositeLink.ShowPreviewDialog();
+            }
+            catch (Exception ex)
+            {
+                XtraMessageBox.Show("打印失败：" + ex.Message, "医嘱打印", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
         #endregion
 
         #region 方法
@@ -1714,7 +1736,7 @@ namespace Hemo.Client.UI.PatientFixUI
             dr3["VALUE"] = "3";
             dr3["TEXT"] = "每周";
             dt.Rows.Add(dr3);
-            
+
             DataRow dr4 = dt.NewRow();
             dr4["VALUE"] = "4";
             dr4["TEXT"] = "其他";
@@ -1757,7 +1779,7 @@ namespace Hemo.Client.UI.PatientFixUI
             DataTable dt = null;
             using (BackgroundWorker worker = new BackgroundWorker())
             {
-                worker.DoWork += delegate(object sender1, DoWorkEventArgs e1)
+                worker.DoWork += delegate (object sender1, DoWorkEventArgs e1)
                 {
                     dt = objHemodialysisService.GetQueryRecipeList(pHemoID);
                     //拼接过滤查询条件 
@@ -1794,7 +1816,7 @@ namespace Hemo.Client.UI.PatientFixUI
 
                     dt = Utility.GetSubTable(dt, strSqlQuery.ToString(), "recipe_date desc");
                 };
-                worker.RunWorkerCompleted += delegate(object sender2, RunWorkerCompletedEventArgs e2)
+                worker.RunWorkerCompleted += delegate (object sender2, RunWorkerCompletedEventArgs e2)
                 {
                     if (dt != null && dt.Rows.Count > 0)
                     {
