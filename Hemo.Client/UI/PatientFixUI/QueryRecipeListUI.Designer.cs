@@ -175,6 +175,7 @@
             this.lupDRUG_TIMETYPE = new DevExpress.XtraEditors.ComboBoxEdit();
             this.cbmDRUG_DAYS = new DevExpress.XtraEditors.CheckedComboBoxEdit();
             this.panelControl1 = new DevExpress.XtraEditors.PanelControl();
+            this.dxSimpleButton1 = new Hemo.Client.Controls.DXSimpleButton();
             this.btnPrint = new Hemo.Client.Controls.DXSimpleButton();
             this.btnSaveTemp = new Hemo.Client.Controls.DXSimpleButton();
             this.btn_UseTemplate = new Hemo.Client.Controls.DXSimpleButton();
@@ -202,7 +203,6 @@
             this.contextMenuStrip3 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.ctlUserInfo1 = new Hemo.Client.UI.Hemodialysis.CtlUserInfo();
-            this.dxSimpleButton1 = new Hemo.Client.Controls.DXSimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl2)).BeginInit();
             this.panelControl2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txtEndDate.Properties.CalendarTimeProperties)).BeginInit();
@@ -1993,6 +1993,17 @@
             this.panelControl1.TabIndex = 264;
             this.panelControl1.Paint += new System.Windows.Forms.PaintEventHandler(this.panelControl1_Paint);
             // 
+            // dxSimpleButton1
+            // 
+            this.dxSimpleButton1.ImageIndex = 1;
+            this.dxSimpleButton1.Location = new System.Drawing.Point(1015, 16);
+            this.dxSimpleButton1.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
+            this.dxSimpleButton1.Name = "dxSimpleButton1";
+            this.dxSimpleButton1.Size = new System.Drawing.Size(140, 52);
+            this.dxSimpleButton1.TabIndex = 303;
+            this.dxSimpleButton1.Text = "停止(&S)";
+            this.dxSimpleButton1.Click += new System.EventHandler(this.dxSimpleButton1_Click);
+            // 
             // btnPrint
             // 
             this.btnPrint.ImageIndex = 6;
@@ -2265,16 +2276,6 @@
             this.ctlUserInfo1.Name = "ctlUserInfo1";
             this.ctlUserInfo1.Size = new System.Drawing.Size(8, 83);
             this.ctlUserInfo1.TabIndex = 3;
-            // 
-            // dxSimpleButton1
-            // 
-            this.dxSimpleButton1.ImageIndex = 1;
-            this.dxSimpleButton1.Location = new System.Drawing.Point(1015, 16);
-            this.dxSimpleButton1.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
-            this.dxSimpleButton1.Name = "dxSimpleButton1";
-            this.dxSimpleButton1.Size = new System.Drawing.Size(140, 52);
-            this.dxSimpleButton1.TabIndex = 303;
-            this.dxSimpleButton1.Text = "停止(&S)";
             // 
             // QueryRecipeListUI
             // 

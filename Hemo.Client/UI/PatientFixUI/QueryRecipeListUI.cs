@@ -88,6 +88,8 @@ namespace Hemo.Client.UI.PatientFixUI
             InitializeComponent();
             this.hemoId = pHemoID;
             this.tabIndex = pTabIndex;
+            // 从右键菜单中移除「删除」菜单项
+            contextMenuStrip2.Items.Remove(this.ToolStripMenuItemDelete);
         }
 
         #endregion
@@ -772,7 +774,6 @@ namespace Hemo.Client.UI.PatientFixUI
                 if (isShow && e.Button == System.Windows.Forms.MouseButtons.Right)
                 {
                     this.contextMenuStrip2.Show(MousePosition);
-                    this.ToolStripMenuItemDelete.Visible = false;
                     this.toolStripMenuItemDrug.Visible = false;
                     this.ToolStripMenuItemForCom.Visible = true;
                     this.ToolStripMenuItemForComCancle.Visible = false;
@@ -780,7 +781,6 @@ namespace Hemo.Client.UI.PatientFixUI
                 else if (e.Button == System.Windows.Forms.MouseButtons.Right)
                 {
                     this.contextMenuStrip2.Show(MousePosition);
-                    this.ToolStripMenuItemDelete.Visible = false;
                     this.toolStripMenuItemDrug.Visible = false;
                     this.ToolStripMenuItemForCom.Visible = false;
                     this.ToolStripMenuItemForComCancle.Visible = true;
@@ -803,7 +803,6 @@ namespace Hemo.Client.UI.PatientFixUI
                 if (e.Button == System.Windows.Forms.MouseButtons.Right && (dr.STATUS == "2"))
                 {
                     this.contextMenuStrip2.Show(MousePosition);
-                    this.ToolStripMenuItemDelete.Visible = false;
                     this.toolStripMenuItemDrug.Visible = true;
                     this.ToolStripMenuItemForCom.Visible = false;
                     this.ToolStripMenuItemForComCancle.Visible = false;
@@ -812,8 +811,7 @@ namespace Hemo.Client.UI.PatientFixUI
                 else if (e.Button == System.Windows.Forms.MouseButtons.Right && (dr.STATUS == "0"))
                 {
                     this.contextMenuStrip2.Show(MousePosition);
-                    this.ToolStripMenuItemDelete.Visible = true;
-                    this.toolStripMenuItemDrug.Visible = false;
+                    this.toolStripMenuItemDrug.Visible = true;
                     this.ToolStripMenuItemForCom.Visible = false;
                     this.ToolStripMenuItemForComCancle.Visible = false;
                 }
@@ -842,7 +840,6 @@ namespace Hemo.Client.UI.PatientFixUI
                 if (isShow && e.Button == System.Windows.Forms.MouseButtons.Right)
                 {
                     this.contextMenuStrip2.Show(MousePosition);
-                    this.ToolStripMenuItemDelete.Visible = false;
                     this.toolStripMenuItemForLong.Visible = false;
                     this.ToolStripMenuItemForCom.Visible = true;
                     this.ToolStripMenuItemForComCancle.Visible = false;
@@ -850,7 +847,6 @@ namespace Hemo.Client.UI.PatientFixUI
                 else if (e.Button == System.Windows.Forms.MouseButtons.Right)
                 {
                     this.contextMenuStrip2.Show(MousePosition);
-                    this.ToolStripMenuItemDelete.Visible = false;
                     this.toolStripMenuItemDrug.Visible = false;
                     this.ToolStripMenuItemForCom.Visible = false;
                     this.ToolStripMenuItemForComCancle.Visible = true;
@@ -870,7 +866,6 @@ namespace Hemo.Client.UI.PatientFixUI
                 if (e.Button == System.Windows.Forms.MouseButtons.Right && (dr.STATUS == "2"))
                 {
                     this.contextMenuStrip2.Show(MousePosition);
-                    this.ToolStripMenuItemDelete.Visible = false;
                     this.toolStripMenuItemForLong.Visible = true;
                     this.ToolStripMenuItemForCom.Visible = false;
                     this.ToolStripMenuItemForComCancle.Visible = false;
@@ -878,8 +873,7 @@ namespace Hemo.Client.UI.PatientFixUI
                 else if (e.Button == System.Windows.Forms.MouseButtons.Right && (dr.STATUS == "0"))
                 {
                     this.contextMenuStrip2.Show(MousePosition);
-                    this.ToolStripMenuItemDelete.Visible = true;
-                    this.toolStripMenuItemForLong.Visible = false;
+                    this.toolStripMenuItemForLong.Visible = true;
                     this.ToolStripMenuItemForCom.Visible = false;
                     this.ToolStripMenuItemForComCancle.Visible = false;
                 }
@@ -1547,12 +1541,16 @@ namespace Hemo.Client.UI.PatientFixUI
                 DevExpress.XtraPrinting.PrintingSystem ps = new DevExpress.XtraPrinting.PrintingSystem();
                 DevExpress.XtraPrintingLinks.CompositeLink compositeLink = new DevExpress.XtraPrintingLinks.CompositeLink(ps);
 
+                // 临时医嘱
                 DevExpress.XtraPrinting.PrintableComponentLink link1 = new DevExpress.XtraPrinting.PrintableComponentLink();
                 link1.Component = this.gridDrugList;
+                link1.CreateReportHeaderArea += new DevExpress.XtraPrinting.CreateAreaEventHandler(link1_CreateReportHeaderArea);
                 link1.CreateDocument(ps);
 
+                // 长期医嘱
                 DevExpress.XtraPrinting.PrintableComponentLink link2 = new DevExpress.XtraPrinting.PrintableComponentLink();
                 link2.Component = this.gridDrugListLong;
+                link2.CreateReportHeaderArea += new DevExpress.XtraPrinting.CreateAreaEventHandler(link2_CreateReportHeaderArea);
                 link2.CreateDocument(ps);
 
                 compositeLink.Links.Add(link1);
@@ -1566,6 +1564,67 @@ namespace Hemo.Client.UI.PatientFixUI
                 XtraMessageBox.Show("打印失败：" + ex.Message, "医嘱打印", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
+        private void link1_CreateReportHeaderArea(object sender, DevExpress.XtraPrinting.CreateAreaEventArgs e)
+        {
+            DevExpress.XtraPrinting.TextBrick brick = e.Graph.DrawString("临时医嘱", Color.Black, new RectangleF(0, 0, 0, 25), DevExpress.XtraPrinting.BorderSide.None);
+            brick.Font = new Font("宋体", 14F, FontStyle.Bold);
+            brick.StringFormat = new DevExpress.XtraPrinting.BrickStringFormat(StringAlignment.Center);
+        }
+
+        private void link2_CreateReportHeaderArea(object sender, DevExpress.XtraPrinting.CreateAreaEventArgs e)
+        {
+            DevExpress.XtraPrinting.TextBrick brick = e.Graph.DrawString("长期医嘱", Color.Black, new RectangleF(0, 0, 0, 25), DevExpress.XtraPrinting.BorderSide.None);
+            brick.Font = new Font("宋体", 14F, FontStyle.Bold);
+            brick.StringFormat = new DevExpress.XtraPrinting.BrickStringFormat(StringAlignment.Center);
+        }
+
+        /// <summary>
+        /// 停止选中的医嘱（临时医嘱或长期医嘱）
+        /// 停止后状态变为"3"，护士端不保留，数据可追溯
+        /// </summary>
+        private void dxSimpleButton1_Click(object sender, EventArgs e)
+        {
+            if (this.xtraTabControl3.SelectedTabPageIndex == 0)
+            {
+                // 临时医嘱
+                var dr = gridView5.GetFocusedDataRow() as HemodialysisModel.MED_CURE_DRUGRow;
+                if (dr == null)
+                {
+                    XtraMessageBox.Show("请选择要停止的临时医嘱！", "医嘱列表");
+                    return;
+                }
+                if (dr.STATUS == "3")
+                {
+                    XtraMessageBox.Show("该医嘱已停止，无需重复操作。", "医嘱列表");
+                    return;
+                }
+                if (XtraMessageBox.Show("确定停止当前临时医嘱吗？", "医嘱列表", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.No)
+                    return;
+                objHemodialysisService.SaveExeDrugStatus("3", dr.CURE_DRUG_ID);
+                loadCureDurgList(dr.HEMODIALYSIS_ID);
+            }
+            else
+            {
+                // 长期医嘱
+                var dr = gridView7.GetFocusedDataRow() as HemodialysisModel.MED_CURE_LONGDRUGRow;
+                if (dr == null)
+                {
+                    XtraMessageBox.Show("请选择要停止的长期医嘱！", "医嘱列表");
+                    return;
+                }
+                if (dr.STATUS == "3")
+                {
+                    XtraMessageBox.Show("该医嘱已停止，无需重复操作。", "医嘱列表");
+                    return;
+                }
+                if (XtraMessageBox.Show("确定停止当前长期医嘱吗？", "医嘱列表", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.No)
+                    return;
+                objHemodialysisService.SaveExeDrugLongStatus("3", dr.CURE_DRUG_ID);
+                loadCureDurgList(dr.HEMODIALYSIS_ID);
+            }
+        }
+
         #endregion
 
         #region 方法
