@@ -1538,26 +1538,27 @@ namespace Hemo.Client.UI.PatientFixUI
         {
             try
             {
-                DevExpress.XtraPrinting.PrintingSystem ps = new DevExpress.XtraPrinting.PrintingSystem();
-                DevExpress.XtraPrintingLinks.CompositeLink compositeLink = new DevExpress.XtraPrintingLinks.CompositeLink(ps);
-
                 // 临时医嘱
-                DevExpress.XtraPrinting.PrintableComponentLink link1 = new DevExpress.XtraPrinting.PrintableComponentLink();
+                DevExpress.XtraPrinting.PrintingSystem ps1 = new DevExpress.XtraPrinting.PrintingSystem();
+                DevExpress.XtraPrinting.PrintableComponentLink link1 = new DevExpress.XtraPrinting.PrintableComponentLink(ps1);
                 link1.Component = this.gridDrugList;
-                link1.CreateReportHeaderArea += new DevExpress.XtraPrinting.CreateAreaEventHandler(link1_CreateReportHeaderArea);
-                link1.CreateDocument(ps);
+                link1.CreateMarginalHeaderArea += new DevExpress.XtraPrinting.CreateAreaEventHandler(link1_CreateMarginalHeaderArea);
+                link1.CreateDocument();
 
                 // 长期医嘱
-                DevExpress.XtraPrinting.PrintableComponentLink link2 = new DevExpress.XtraPrinting.PrintableComponentLink();
+                DevExpress.XtraPrinting.PrintingSystem ps2 = new DevExpress.XtraPrinting.PrintingSystem();
+                DevExpress.XtraPrinting.PrintableComponentLink link2 = new DevExpress.XtraPrinting.PrintableComponentLink(ps2);
                 link2.Component = this.gridDrugListLong;
-                link2.CreateReportHeaderArea += new DevExpress.XtraPrinting.CreateAreaEventHandler(link2_CreateReportHeaderArea);
-                link2.CreateDocument(ps);
+                link2.CreateMarginalHeaderArea += new DevExpress.XtraPrinting.CreateAreaEventHandler(link2_CreateMarginalHeaderArea);
+                link2.CreateDocument();
 
-                compositeLink.Links.Add(link1);
-                compositeLink.Links.Add(link2);
-                compositeLink.CreateDocument();
+                // 将长期医嘱的页面追加到临时医嘱的 PrintingSystem 中，合并为一个文档
+                foreach (DevExpress.XtraPrinting.Page page in ps2.Document.Pages)
+                {
+                    ps1.Document.Pages.Add(page);
+                }
 
-                compositeLink.ShowPreviewDialog();
+                ps1.PreviewFormEx.Show();
             }
             catch (Exception ex)
             {
@@ -1565,18 +1566,26 @@ namespace Hemo.Client.UI.PatientFixUI
             }
         }
 
-        private void link1_CreateReportHeaderArea(object sender, DevExpress.XtraPrinting.CreateAreaEventArgs e)
+        private void link1_CreateMarginalHeaderArea(object sender, DevExpress.XtraPrinting.CreateAreaEventArgs e)
         {
-            DevExpress.XtraPrinting.TextBrick brick = e.Graph.DrawString("临时医嘱", Color.Black, new RectangleF(0, 0, 0, 25), DevExpress.XtraPrinting.BorderSide.None);
-            brick.Font = new Font("宋体", 14F, FontStyle.Bold);
-            brick.StringFormat = new DevExpress.XtraPrinting.BrickStringFormat(StringAlignment.Center);
+            DevExpress.XtraPrinting.PageInfoBrick brick = e.Graph.DrawPageInfo(
+                DevExpress.XtraPrinting.PageInfo.None, "临时医嘱", Color.DarkBlue,
+                new RectangleF(0, 0, 150, 21), DevExpress.XtraPrinting.BorderSide.None);
+            brick.LineAlignment = DevExpress.XtraPrinting.BrickAlignment.Center;
+            brick.Alignment = DevExpress.XtraPrinting.BrickAlignment.Center;
+            brick.AutoWidth = true;
+            brick.Font = new System.Drawing.Font("宋体", 11f, System.Drawing.FontStyle.Bold);
         }
 
-        private void link2_CreateReportHeaderArea(object sender, DevExpress.XtraPrinting.CreateAreaEventArgs e)
+        private void link2_CreateMarginalHeaderArea(object sender, DevExpress.XtraPrinting.CreateAreaEventArgs e)
         {
-            DevExpress.XtraPrinting.TextBrick brick = e.Graph.DrawString("长期医嘱", Color.Black, new RectangleF(0, 0, 0, 25), DevExpress.XtraPrinting.BorderSide.None);
-            brick.Font = new Font("宋体", 14F, FontStyle.Bold);
-            brick.StringFormat = new DevExpress.XtraPrinting.BrickStringFormat(StringAlignment.Center);
+            DevExpress.XtraPrinting.PageInfoBrick brick = e.Graph.DrawPageInfo(
+                DevExpress.XtraPrinting.PageInfo.None, "长期医嘱", Color.DarkBlue,
+                new RectangleF(0, 0, 150, 21), DevExpress.XtraPrinting.BorderSide.None);
+            brick.LineAlignment = DevExpress.XtraPrinting.BrickAlignment.Center;
+            brick.Alignment = DevExpress.XtraPrinting.BrickAlignment.Center;
+            brick.AutoWidth = true;
+            brick.Font = new System.Drawing.Font("宋体", 11f, System.Drawing.FontStyle.Bold);
         }
 
         /// <summary>
