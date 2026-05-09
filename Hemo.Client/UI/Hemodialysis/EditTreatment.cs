@@ -216,16 +216,16 @@ namespace Hemo.Client.UI.Hemodialysis
             { "BEFORE_DRY_WEIGHT", "透前体重" },
             { "BEFORE_SYSTOLIC_PRESSURE", "透前收缩压" },
             { "BEFORE_DIASTOLIC_PRESSURE", "透前舒张压" },
-            { "BEFORE_BP", "透前平均动脉压" },
+            { "BEFORE_BP", "透前脉搏" },
             { "BEFORE_TEMPERATURE", "透前体温" },
-            { "BR", "透前脉搏" },
+            { "BR", "透前呼吸" },
             // 透后数据
             { "AFTER_DRY_WEIGHT", "透后体重" },
             { "AFTER_SYSTOLIC_PRESSURE", "透后收缩压" },
             { "AFTER_DIASTOLIC_PRESSURE", "透后舒张压" },
-            { "AFTER_BP", "透后平均动脉压" },
+            { "AFTER_BP", "透后脉搏" },
             { "AFTER_TEMPERATURE", "透后体温" },
-            { "AFTERBR", "透后脉搏" },
+            { "AFTERBR", "透后呼吸" },
             // 基本治疗参数
             { "DRY_WEIGHT", "干体重" },
             { "DIALYSATE_FLOW", "透析液流量" },
@@ -282,6 +282,7 @@ namespace Hemo.Client.UI.Hemodialysis
             { "VASCULAR_ACCESS_THROMBUS", "血栓" },
             { "VASCULAR_ACCESS_BLOOD", "血流情况" },
             { "VASCULAR_ACCESS_BLOOD_INFECT", "导管相关血流感染" },
+            { "IN_BASKET_PLASTER_ALLERGY","渗液" },
             // CRRT相关
             { "CRRT_CLASS", "CRRT模式" },
             // 感染检查
@@ -883,6 +884,23 @@ namespace Hemo.Client.UI.Hemodialysis
                 DataTable snapshotDt = BaseControlInfo.GetDataTableByPanel(_CureMainDatatable, xtraScrollableControl1);
                 if (snapshotDt != null && snapshotDt.Rows.Count > 0)
                 {
+                    // 手动补充 RadioGroup 的值（GetDataTableByPanel 可能无法获取 RadioGroup）
+                    if (rdoVASCULAR_ACCESS_FIRM.EditValue != null)
+                        snapshotDt.Rows[0]["VASCULAR_ACCESS_FIRM"] = rdoVASCULAR_ACCESS_FIRM.EditValue;
+                    if (rdoVASCULAR_ACCESS_GLIDE.EditValue != null)
+                        snapshotDt.Rows[0]["VASCULAR_ACCESS_GLIDE"] = rdoVASCULAR_ACCESS_GLIDE.EditValue;
+                    if (rdoVASCULAR_ACCESS_SWELLING.EditValue != null)
+                        snapshotDt.Rows[0]["VASCULAR_ACCESS_SWELLING"] = rdoVASCULAR_ACCESS_SWELLING.EditValue;
+                    if (rdoVASCULAR_ACCESS_THROMBUS.EditValue != null)
+                        snapshotDt.Rows[0]["VASCULAR_ACCESS_THROMBUS"] = rdoVASCULAR_ACCESS_THROMBUS.EditValue;
+                    if (rdoVASCULAR_ACCESS_BLOOD.EditValue != null)
+                        snapshotDt.Rows[0]["VASCULAR_ACCESS_BLOOD"] = rdoVASCULAR_ACCESS_BLOOD.EditValue;
+                    if (rdoVASCULAR_ACCESS_ERRHYISIS.EditValue != null)
+                        snapshotDt.Rows[0]["VASCULAR_ACCESS_ERRHYISIS"] = rdoVASCULAR_ACCESS_ERRHYISIS.EditValue;
+                    if (rdoVASCULAR_ACCESS_BLOOD_INFECT.EditValue != null)
+                        snapshotDt.Rows[0]["VASCULAR_ACCESS_BLOOD_INFECT"] = rdoVASCULAR_ACCESS_BLOOD_INFECT.EditValue;
+                    if (rdoIN_BASKET_PLASTER_ALLERGY.EditValue != null)
+                        snapshotDt.Rows[0]["IN_BASKET_PLASTER_ALLERGY"] = rdoIN_BASKET_PLASTER_ALLERGY.EditValue;
                     _initialDataSnapshot = CloneRowToDict(snapshotDt.Rows[0]);
                 }
             }
@@ -1460,6 +1478,7 @@ namespace Hemo.Client.UI.Hemodialysis
             dt.Rows[0]["VASCULAR_ACCESS_BLOOD"] = rdoVASCULAR_ACCESS_BLOOD.EditValue;
             dt.Rows[0]["VASCULAR_ACCESS_ERRHYISIS"] = rdoVASCULAR_ACCESS_ERRHYISIS.EditValue;
             dt.Rows[0]["VASCULAR_ACCESS_BLOOD_INFECT"] = rdoVASCULAR_ACCESS_BLOOD_INFECT.EditValue;
+            dt.Rows[0]["IN_BASKET_PLASTER_ALLERGY"] = rdoIN_BASKET_PLASTER_ALLERGY.EditValue;
 
             //透析小结 
             dt.Rows[0]["SUMMARY"] = txtSUMMARY.Text;
@@ -1651,6 +1670,27 @@ namespace Hemo.Client.UI.Hemodialysis
             string logRemark = isAdd ? "新增治疗单" : "修改治疗单";
             WriteOperationLog(operationType, "治疗单主表", GetCurrentCureId(), changeDetail, logRemark);
 
+            if (dt != null && dt.Rows.Count > 0)
+            {
+                // 手动补充 RadioGroup 的值到快照
+                if (rdoVASCULAR_ACCESS_FIRM.EditValue != null)
+                    dt.Rows[0]["VASCULAR_ACCESS_FIRM"] = rdoVASCULAR_ACCESS_FIRM.EditValue;
+                if (rdoVASCULAR_ACCESS_GLIDE.EditValue != null)
+                    dt.Rows[0]["VASCULAR_ACCESS_GLIDE"] = rdoVASCULAR_ACCESS_GLIDE.EditValue;
+                if (rdoVASCULAR_ACCESS_SWELLING.EditValue != null)
+                    dt.Rows[0]["VASCULAR_ACCESS_SWELLING"] = rdoVASCULAR_ACCESS_SWELLING.EditValue;
+                if (rdoVASCULAR_ACCESS_THROMBUS.EditValue != null)
+                    dt.Rows[0]["VASCULAR_ACCESS_THROMBUS"] = rdoVASCULAR_ACCESS_THROMBUS.EditValue;
+                if (rdoVASCULAR_ACCESS_BLOOD.EditValue != null)
+                    dt.Rows[0]["VASCULAR_ACCESS_BLOOD"] = rdoVASCULAR_ACCESS_BLOOD.EditValue;
+                if (rdoVASCULAR_ACCESS_ERRHYISIS.EditValue != null)
+                    dt.Rows[0]["VASCULAR_ACCESS_ERRHYISIS"] = rdoVASCULAR_ACCESS_ERRHYISIS.EditValue;
+                if (rdoVASCULAR_ACCESS_BLOOD_INFECT.EditValue != null)
+                    dt.Rows[0]["VASCULAR_ACCESS_BLOOD_INFECT"] = rdoVASCULAR_ACCESS_BLOOD_INFECT.EditValue;
+                if (rdoIN_BASKET_PLASTER_ALLERGY.EditValue != null)
+                    dt.Rows[0]["IN_BASKET_PLASTER_ALLERGY"] = rdoIN_BASKET_PLASTER_ALLERGY.EditValue;
+                _initialDataSnapshot = CloneRowToDict(dt.Rows[0]);
+            }
             return result;
         }
 

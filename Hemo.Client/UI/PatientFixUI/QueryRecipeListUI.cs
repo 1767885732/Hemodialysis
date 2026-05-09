@@ -36,6 +36,7 @@ using Hemo.Client.UI.Machine;
 using Hemo.Client.UI.Hemodialysis;
 using Microsoft.VisualBasic;
 using System.Windows.Forms;
+using DevExpress.XtraPrintingLinks;
 
 namespace Hemo.Client.UI.PatientFixUI
 {
@@ -1538,21 +1539,34 @@ namespace Hemo.Client.UI.PatientFixUI
         {
             try
             {
+                this.gridView5.OptionsPrint.PrintHeader = false;
+                this.gridView7.OptionsPrint.PrintHeader = false;
+
                 // 临时医嘱
                 DevExpress.XtraPrinting.PrintingSystem ps1 = new DevExpress.XtraPrinting.PrintingSystem();
                 DevExpress.XtraPrinting.PrintableComponentLink link1 = new DevExpress.XtraPrinting.PrintableComponentLink(ps1);
                 link1.Component = this.gridDrugList;
-                link1.CreateMarginalHeaderArea += new DevExpress.XtraPrinting.CreateAreaEventHandler(link1_CreateMarginalHeaderArea);
+                DevExpress.XtraPrinting.PageHeaderFooter phf1 = link1.PageHeaderFooter as DevExpress.XtraPrinting.PageHeaderFooter;
+                phf1.Header.Content.Clear();
+                phf1.Header.Content.AddRange(new string[] { "", "临时医嘱", "" });
+                phf1.Header.Font = new System.Drawing.Font("宋体", 14, System.Drawing.FontStyle.Bold);
+                phf1.Header.LineAlignment = DevExpress.XtraPrinting.BrickAlignment.Center;
+                link1.CreateReportHeaderArea += new DevExpress.XtraPrinting.CreateAreaEventHandler(link1_CreateReportHeaderArea);
                 link1.CreateDocument();
 
                 // 长期医嘱
                 DevExpress.XtraPrinting.PrintingSystem ps2 = new DevExpress.XtraPrinting.PrintingSystem();
                 DevExpress.XtraPrinting.PrintableComponentLink link2 = new DevExpress.XtraPrinting.PrintableComponentLink(ps2);
                 link2.Component = this.gridDrugListLong;
-                link2.CreateMarginalHeaderArea += new DevExpress.XtraPrinting.CreateAreaEventHandler(link2_CreateMarginalHeaderArea);
+                DevExpress.XtraPrinting.PageHeaderFooter phf2 = link2.PageHeaderFooter as DevExpress.XtraPrinting.PageHeaderFooter;
+                phf2.Header.Content.Clear();
+                phf2.Header.Content.AddRange(new string[] { "", "长期医嘱", "" });
+                phf2.Header.Font = new System.Drawing.Font("宋体", 14, System.Drawing.FontStyle.Bold);
+                phf2.Header.LineAlignment = DevExpress.XtraPrinting.BrickAlignment.Center;
+                link2.CreateReportHeaderArea += new DevExpress.XtraPrinting.CreateAreaEventHandler(link2_CreateReportHeaderArea);
                 link2.CreateDocument();
 
-                // 将长期医嘱的页面追加到临时医嘱的 PrintingSystem 中，合并为一个文档
+                // 合并为一个文档
                 foreach (DevExpress.XtraPrinting.Page page in ps2.Document.Pages)
                 {
                     ps1.Document.Pages.Add(page);
@@ -1566,26 +1580,56 @@ namespace Hemo.Client.UI.PatientFixUI
             }
         }
 
-        private void link1_CreateMarginalHeaderArea(object sender, DevExpress.XtraPrinting.CreateAreaEventArgs e)
+        private void link1_CreateReportHeaderArea(object sender, DevExpress.XtraPrinting.CreateAreaEventArgs e)
         {
-            DevExpress.XtraPrinting.PageInfoBrick brick = e.Graph.DrawPageInfo(
-                DevExpress.XtraPrinting.PageInfo.None, "临时医嘱", Color.DarkBlue,
-                new RectangleF(0, 0, 150, 21), DevExpress.XtraPrinting.BorderSide.None);
-            brick.LineAlignment = DevExpress.XtraPrinting.BrickAlignment.Center;
-            brick.Alignment = DevExpress.XtraPrinting.BrickAlignment.Center;
-            brick.AutoWidth = true;
-            brick.Font = new System.Drawing.Font("宋体", 11f, System.Drawing.FontStyle.Bold);
+            DrawColumnHeaders(e, this.gridView5);
         }
 
-        private void link2_CreateMarginalHeaderArea(object sender, DevExpress.XtraPrinting.CreateAreaEventArgs e)
+        private void link2_CreateReportHeaderArea(object sender, DevExpress.XtraPrinting.CreateAreaEventArgs e)
         {
-            DevExpress.XtraPrinting.PageInfoBrick brick = e.Graph.DrawPageInfo(
-                DevExpress.XtraPrinting.PageInfo.None, "长期医嘱", Color.DarkBlue,
-                new RectangleF(0, 0, 150, 21), DevExpress.XtraPrinting.BorderSide.None);
-            brick.LineAlignment = DevExpress.XtraPrinting.BrickAlignment.Center;
-            brick.Alignment = DevExpress.XtraPrinting.BrickAlignment.Center;
-            brick.AutoWidth = true;
-            brick.Font = new System.Drawing.Font("宋体", 11f, System.Drawing.FontStyle.Bold);
+            DrawColumnHeaders(e, this.gridView7);
+        }
+
+        private void DrawColumnHeaders(DevExpress.XtraPrinting.CreateAreaEventArgs e, DevExpress.XtraGrid.Views.Grid.GridView gridView)
+        {
+            // 按 VisibleIndex 排序，和屏幕显示顺序一致
+            var visibleCols = new System.Collections.Generic.List<DevExpress.XtraGrid.Columns.GridColumn>();
+            foreach (DevExpress.XtraGrid.Columns.GridColumn col in gridView.Columns)
+            {
+                if (col.Visible)
+                    visibleCols.Add(col);
+            }
+            visibleCols.Sort(delegate (DevExpress.XtraGrid.Columns.GridColumn a, DevExpress.XtraGrid.Columns.GridColumn b)
+            {
+                return a.VisibleIndex.CompareTo(b.VisibleIndex);
+            });
+
+            // 计算所有可见列的总宽度
+            float totalColWidth = 0;
+            foreach (var col in visibleCols)
+            {
+                totalColWidth += (float)col.Width;
+            }
+
+            // 获取打印可用宽度，按比例缩放列宽
+            float usableWidth = e.Graph.ClientPageSize.Width;
+            float scale = usableWidth / totalColWidth;
+
+            float x = 0;
+            float headerHeight = 22f;
+            foreach (var col in visibleCols)
+            {
+                float colWidth = (float)col.Width * scale;
+
+                DevExpress.XtraPrinting.TextBrick brick = e.Graph.DrawString(col.Caption, Color.Black,
+                    new RectangleF(x, 0, colWidth, headerHeight),
+                    DevExpress.XtraPrinting.BorderSide.All);
+                brick.BackColor = Color.LightGray;
+                brick.StringFormat = new DevExpress.XtraPrinting.BrickStringFormat(System.Drawing.StringAlignment.Center);
+                brick.Font = new System.Drawing.Font("宋体", 9F);
+
+                x += colWidth;
+            }
         }
 
         /// <summary>

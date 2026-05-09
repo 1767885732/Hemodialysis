@@ -389,7 +389,7 @@
             // 
             // cmbTHERAPEUTIC_METHOD
             // 
-            this.cmbTHERAPEUTIC_METHOD.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.cmbTHERAPEUTIC_METHOD.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.cmbTHERAPEUTIC_METHOD.EnterMoveNextControl = true;
             this.cmbTHERAPEUTIC_METHOD.Location = new System.Drawing.Point(1432, 23);
@@ -446,7 +446,7 @@
             // 
             // lupRECIPE_TYPE
             // 
-            this.lupRECIPE_TYPE.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.lupRECIPE_TYPE.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lupRECIPE_TYPE.EnterMoveNextControl = true;
             this.lupRECIPE_TYPE.Location = new System.Drawing.Point(1383, 19);
@@ -476,7 +476,7 @@
             // 
             // cmbStatus
             // 
-            this.cmbStatus.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.cmbStatus.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.cmbStatus.EnterMoveNextControl = true;
             this.cmbStatus.Location = new System.Drawing.Point(1432, 21);
@@ -1183,8 +1183,6 @@
             // 
             // gridView5
             // 
-            this.gridView5.Appearance.HeaderPanel.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.gridView5.Appearance.HeaderPanel.Options.UseFont = true;
             this.gridView5.Appearance.Row.BackColor = System.Drawing.Color.Transparent;
             this.gridView5.Appearance.Row.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.gridView5.Appearance.Row.Options.UseFont = true;
@@ -1409,8 +1407,6 @@
             // 
             // gridView7
             // 
-            this.gridView7.Appearance.HeaderPanel.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.gridView7.Appearance.HeaderPanel.Options.UseFont = true;
             this.gridView7.Appearance.Row.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.gridView7.Appearance.Row.Options.UseFont = true;
             this.gridView7.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
