@@ -81,11 +81,9 @@ namespace Hemo.Business
         public static PatientModel.MED_PATIENTSDataTable GetPatientList()
         {
             PatientModel.MED_PATIENTSDataTable Result = new PatientModel.MED_PATIENTSDataTable();
-            PatientModel.MED_PATIENTSDataTable ResultTemp = new PatientModel.MED_PATIENTSDataTable();
 
-            GetData<PatientModel.MED_PATIENTSDataTable>(ResultTemp, "GetPatientList", null);
-            ResultTemp.OrderBy(i => i.NAME).CopyToDataTable<PatientModel.MED_PATIENTSRow>(Result, LoadOption.PreserveChanges);
-            //var dt = Utilities.Utility.GetSubTable(Result as DataTable, "", "name");
+            GetData<PatientModel.MED_PATIENTSDataTable>(Result, "GetPatientList", null);
+            Result.DefaultView.Sort = "NAME ASC";
             return Result;
         }
 
@@ -97,12 +95,11 @@ namespace Hemo.Business
         public static PatientModel.MED_PATIENTSDataTable GetPatientListByType(string pType)
         {
             PatientModel.MED_PATIENTSDataTable Result = new PatientModel.MED_PATIENTSDataTable();
-            PatientModel.MED_PATIENTSDataTable ResultTemp = new PatientModel.MED_PATIENTSDataTable();
 
             DbParameter[] Params = new DbParameter[1];
             Params[0] = IDatabase.BuildDbParameter("TIME_TYPE", DbType.String, pType.Trim());
-            GetData<PatientModel.MED_PATIENTSDataTable>(ResultTemp, "GetPatientListByType", Params);
-            ResultTemp.OrderBy(i => i.NAME).CopyToDataTable<PatientModel.MED_PATIENTSRow>(Result, LoadOption.PreserveChanges);
+            GetData<PatientModel.MED_PATIENTSDataTable>(Result, "GetPatientListByType", Params);
+            Result.DefaultView.Sort = "NAME ASC";
             return Result;
         }
         /// <summary>
