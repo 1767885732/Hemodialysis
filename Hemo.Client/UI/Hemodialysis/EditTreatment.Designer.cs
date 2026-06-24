@@ -168,6 +168,9 @@
             this.labelControl63 = new DevExpress.XtraEditors.LabelControl();
             this.rdoVASCULAR_ACCESS_BLOOD = new DevExpress.XtraEditors.RadioGroup();
             this.labelControl84 = new DevExpress.XtraEditors.LabelControl();
+            this.chkDGPGPending = new DevExpress.XtraEditors.CheckEdit();
+            this.lblDGPGPendingDate = new DevExpress.XtraEditors.LabelControl();
+            this.dtDGPGPendingDate = new DevExpress.XtraEditors.DateEdit();
             this.xtraTabPageNLPG = new DevExpress.XtraTab.XtraTabPage();
             this.rdoIN_BASKET_NOISE = new DevExpress.XtraEditors.RadioGroup();
             this.rdoIN_BASKET_TREMOR = new DevExpress.XtraEditors.RadioGroup();
@@ -509,6 +512,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.rdoVASCULAR_ACCESS_THROMBUS.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.rdoVASCULAR_ACCESS_SWELLING.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.rdoVASCULAR_ACCESS_BLOOD.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chkDGPGPending.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtDGPGPendingDate.Properties.CalendarTimeProperties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtDGPGPendingDate.Properties)).BeginInit();
             this.xtraTabPageNLPG.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.rdoIN_BASKET_NOISE.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.rdoIN_BASKET_TREMOR.Properties)).BeginInit();
@@ -2487,6 +2493,9 @@
             this.xtraTabPageDGPG.Controls.Add(this.labelControl63);
             this.xtraTabPageDGPG.Controls.Add(this.rdoVASCULAR_ACCESS_BLOOD);
             this.xtraTabPageDGPG.Controls.Add(this.labelControl84);
+            this.xtraTabPageDGPG.Controls.Add(this.chkDGPGPending);
+            this.xtraTabPageDGPG.Controls.Add(this.lblDGPGPendingDate);
+            this.xtraTabPageDGPG.Controls.Add(this.dtDGPGPendingDate);
             this.xtraTabPageDGPG.Margin = new System.Windows.Forms.Padding(0);
             this.xtraTabPageDGPG.Name = "xtraTabPageDGPG";
             this.xtraTabPageDGPG.Size = new System.Drawing.Size(958, 70);
@@ -2670,6 +2679,37 @@
             this.labelControl84.Size = new System.Drawing.Size(84, 17);
             this.labelControl84.TabIndex = 536;
             this.labelControl84.Text = "穿刺点局部红肿";
+            // 
+            // chkDGPGPending
+            // 
+            this.chkDGPGPending.Location = new System.Drawing.Point(790, 10);
+            this.chkDGPGPending.Name = "chkDGPGPending";
+            this.chkDGPGPending.Properties.Caption = "待定";
+            this.chkDGPGPending.Size = new System.Drawing.Size(53, 19);
+            this.chkDGPGPending.TabIndex = 665;
+            this.chkDGPGPending.CheckedChanged += new System.EventHandler(this.chkDGPGPending_CheckedChanged);
+            // 
+            // lblDGPGPendingDate
+            // 
+            this.lblDGPGPendingDate.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.lblDGPGPendingDate.Location = new System.Drawing.Point(770, 42);
+            this.lblDGPGPendingDate.Name = "lblDGPGPendingDate";
+            this.lblDGPGPendingDate.Size = new System.Drawing.Size(36, 17);
+            this.lblDGPGPendingDate.TabIndex = 666;
+            this.lblDGPGPendingDate.Text = "日期";
+            // 
+            // dtDGPGPendingDate
+            // 
+            this.dtDGPGPendingDate.EditValue = null;
+            this.dtDGPGPendingDate.Enabled = false;
+            this.dtDGPGPendingDate.Location = new System.Drawing.Point(815, 38);
+            this.dtDGPGPendingDate.Name = "dtDGPGPendingDate";
+            this.dtDGPGPendingDate.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.dtDGPGPendingDate.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton()});
+            this.dtDGPGPendingDate.Size = new System.Drawing.Size(120, 20);
+            this.dtDGPGPendingDate.TabIndex = 667;
             // 
             // xtraTabPageNLPG
             // 
@@ -6193,6 +6233,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.rdoVASCULAR_ACCESS_THROMBUS.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.rdoVASCULAR_ACCESS_SWELLING.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.rdoVASCULAR_ACCESS_BLOOD.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chkDGPGPending.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtDGPGPendingDate.Properties.CalendarTimeProperties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtDGPGPendingDate.Properties)).EndInit();
             this.xtraTabPageNLPG.ResumeLayout(false);
             this.xtraTabPageNLPG.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.rdoIN_BASKET_NOISE.Properties)).EndInit();
@@ -6635,6 +6678,9 @@
         private DevExpress.XtraEditors.LabelControl txtHEMODIALYSIS_PARAMETERS_ID;
         private DevExpress.XtraEditors.RadioGroup rdoVASCULAR_ACCESS_BLOOD_INFECT;
         private DevExpress.XtraEditors.LabelControl labelControl15;
+        private DevExpress.XtraEditors.CheckEdit chkDGPGPending;
+        private DevExpress.XtraEditors.LabelControl lblDGPGPendingDate;
+        private DevExpress.XtraEditors.DateEdit dtDGPGPendingDate;
         private Controls.CtlUserLongInfo ctlUserLongInfo1;
         private DevExpress.XtraEditors.PanelControl panelControl3;
         private DevExpress.XtraEditors.LabelControl labelControl17;
