@@ -1,0 +1,51 @@
+﻿<UserControl x:Class="Hemo.Client.Doc.门诊长期血透同意书"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="1300" d:DesignWidth="816">
+    <Grid>
+        <Label Content="血液净化科" FontFamily="宋体" FontSize="26"  Height="50" HorizontalAlignment="Left" HorizontalContentAlignment="Center" Margin="141,76,0,0" Name="lblHospital" VerticalAlignment="Top" VerticalContentAlignment="Center" Width="522" FontStyle="Normal" />
+        <Label Content="门诊长期血透同意书" FontSize="22" Height="44" HorizontalAlignment="Left" HorizontalContentAlignment="Center" Margin="202,132,0,0" Name="label2" VerticalAlignment="Top" VerticalContentAlignment="Center" Width="405" FontFamily="宋体"  />
+        <Label Content="姓名：" Height="27" HorizontalAlignment="Left"  Name="label3" VerticalAlignment="Top" FontSize="17" FontFamily="宋体"  Width="51" Margin="83,196,0,0" />
+        <TextBox Height="23"  BorderThickness="0,0,0,0" BorderBrush="Black" Name="txtName" IsReadOnly="False" Margin="140,200,0,1177" HorizontalAlignment="Left" Width="92" FontSize="17" FontFamily="宋体"  />
+        <Label Content="性别：" Height="27" HorizontalAlignment="Left"  Name="label33" VerticalAlignment="Top" FontSize="17" FontFamily="宋体"  Width="51" Margin="237,196,0,0" />
+        <TextBox Height="23"  BorderThickness="0,0,0,0" BorderBrush="Black" Name="txtSex" IsReadOnly="False" Margin="294,200,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="98" FontSize="17" FontFamily="宋体"  />
+        <Label  Content="年龄：" Height="27" HorizontalAlignment="Left"  Name="label34" VerticalAlignment="Top" FontSize="17" FontFamily="宋体"  Width="53" Margin="398,196,0,0" />
+        <TextBox Height="23"  BorderThickness="0,0,0,0" BorderBrush="Black" Name="txtAge" IsReadOnly="False" Margin="457,200,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="61" FontSize="17" FontFamily="宋体"  />
+        <Label Content="门诊/住院号：" Height="28" Name="label6" VerticalAlignment="Top" FontSize="17" FontFamily="宋体"  Margin="524,196,0,0" HorizontalAlignment="Left" Width="161" />
+        <TextBox Height="23"  BorderThickness="0,0,0,0" BorderBrush="Black" Name="txtAdmissionNumber" IsReadOnly="False" Margin="0,200,43,0" VerticalAlignment="Top" HorizontalAlignment="Right" Width="82" FontSize="17" FontFamily="宋体"  />
+        <Label Content="诊断：" Height="29" HorizontalAlignment="Left"  Name="label31" VerticalAlignment="Top" FontSize="17" FontFamily="宋体"  Width="50" Margin="84,234,0,0" />
+        <Label Content="血管通路：" Height="29" HorizontalAlignment="Left"  Name="label32" VerticalAlignment="Top" FontSize="17" FontFamily="宋体"  Width="135" Margin="444,236,0,0" />
+        <TextBox Height="23"  BorderThickness="0,0,0,0" BorderBrush="Black" Name="txtVascularAccess" IsReadOnly="False" Margin="0,240,53,0" VerticalAlignment="Top" HorizontalAlignment="Right" Width="178"  FontSize="17" FontFamily="宋体" />
+        <TextBlock FontFamily="宋体" FontSize="17"  Height="58" HorizontalAlignment="Left" LineHeight="35" Margin="84,271,0,0" Name="textBlock5" Text="一. 尿毒症（包括急性和慢性肾功能衰竭），病情危重，累及全身各器官。目前，血液透析是治疗尿毒症的方法之一，对慢性肾衰患者仅能延长病人生命，不治疗原发病。" TextWrapping="Wrap" VerticalAlignment="Top" Width="679" />
+        <Label Content="患者/家属签名：" FontFamily="宋体" FontSize="15"  Height="25" HorizontalAlignment="Left" Margin="246,1008,0,0" Name="label4" VerticalAlignment="Top" Width="121" />
+        <Label Content="" FontFamily="宋体" FontSize="17"  Height="25" HorizontalAlignment="Left" Margin="373,1008,0,0" Name="label7" VerticalAlignment="Top" Width="120" />
+        <Label Content="家属与患者关系：" FontFamily="宋体" FontSize="15"  Height="25" HorizontalAlignment="Left" Margin="499,1008,0,0" Name="label8" VerticalAlignment="Top" Width="132" />
+        <Label Content="" FontFamily="宋体" FontSize="17"  Height="25" HorizontalAlignment="Left" Margin="632,1008,0,0" Name="label9" VerticalAlignment="Top" Width="120" />
+        <Label Content="告知医师签字：" FontFamily="宋体" FontSize="15"  Height="25" HorizontalAlignment="Left" Margin="246,1037,0,0" Name="label10" VerticalAlignment="Top" Width="121" />
+        <Label Content="" FontFamily="宋体" FontSize="17"  Height="25" HorizontalAlignment="Right" Margin="0,1037,323,0" Name="label11" VerticalAlignment="Top" Width="120" />
+        <Label Content="      年    月    日" FontFamily="宋体" FontSize="17"  Height="34" HorizontalAlignment="Left" Margin="574,1037,0,0" Name="lblDate" VerticalAlignment="Top" Width="178" />
+        <TextBox BorderBrush="Black" BorderThickness="0,0,0,0" FontFamily="宋体" FontSize="17"  Height="23" HorizontalAlignment="Left" IsReadOnly="False" Margin="141,240,0,1137" Name="txtDiagnose" Width="126" />
+        <Label Content="原发病：" FontFamily="宋体" FontSize="17"  Height="29" HorizontalAlignment="Left" Margin="273,236,0,0" Name="label12" VerticalAlignment="Top" Width="94" />
+        <TextBlock FontFamily="宋体" FontSize="17"  Height="130" HorizontalAlignment="Left" LineHeight="35" Margin="84,335,0,0" Name="textBlock1" Text="二. 为防止血液在体外管路和透析器发生凝固，一般需要在透析前和透析过程中注射肝素等抗凝药物。部分病人因为出血倾向、活动性出血或手术后需要减少肝素使用剂量、或使用低分子肝素抗凝或其他特殊的抗凝方法，可能会造成体外凝血，体外循环的血液不能回输体内，造成部分血液丢失。" TextWrapping="Wrap" VerticalAlignment="Top" Width="679" />
+        <TextBlock FontFamily="宋体" FontSize="17"  Height="369" HorizontalAlignment="Left" LineHeight="35" Margin="84,471,0,0" Name="textBlock3" Text="三. 由于医学科技水平的局限，血透过程中和治疗期间可能存在下列医疗风险，可能造成严重后果，甚至危及生命：
+1）治疗过程中因抗凝导致出血或加剧原有出血倾向，发生脑出血、消化道出血、穿刺或手术部位出血及心脏压塞等；
+2）血液透析（滤过）治疗可能影响心血管系统稳定性，导致血压下降或血压升高，心肌缺血，心律失常，心力衰竭甚至心跳骤停；
+3）可能并发感染或使原有感染加重；
+4）各种类型的血管通路均有可能发生与其相关的感染、血栓形成；
+5）可能会出现对透析器的过敏反应；
+6）个别患者透析中或透析后可能出现肌肉痉挛，头痛，严重者癫痫发作；
+7）治疗过程中可能出现管路及滤器凝血，造成失血；
+8）可能导致肿瘤播散；
+9）发生血源传播性疾病（例如乙肝、丙肝等）的机会明显高于普通人群；
+10）治疗过程中可能因患者无法耐受而必须中断治疗。
+" TextWrapping="Wrap" VerticalAlignment="Top" Width="679" />
+        <TextBlock FontFamily="宋体" FontSize="17"  Height="200" HorizontalAlignment="Left" LineHeight="35" Margin="82,793,0,0" Name="textBlock2" Text="四.透析器复用风险
+根据卫生部文件和中华医学会血液透析SOP规定，非传染病患者的透析器可消毒复用。虽经医院严格冲洗、消毒、检测及各项复用检验合格，但由于医疗技术水平局限，尚难完全杜绝透析器复用后发生反应和可能血源性传播传染性疾病。
+医生已明确告知以上医疗风险，病人和/或家属已充分理解，要求接受血液透析（滤过）治疗并同意透析器复用，愿承担其风险，签字为证。
+" TextWrapping="Wrap" VerticalAlignment="Top" Width="679" AllowDrop="True" />
+        <TextBox BorderBrush="Black" BorderThickness="0,0,0,0" FontFamily="宋体" FontSize="17"  Height="23" HorizontalAlignment="Left" IsReadOnly="False" Margin="373,240,0,0" Name="txtProtopathy" VerticalAlignment="Top" Width="65" />
+    </Grid>
+</UserControl>

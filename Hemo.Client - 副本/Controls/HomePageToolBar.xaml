@@ -1,0 +1,25 @@
+﻿<UserControl x:Class="Hemo.Client.Controls.HomePageToolBar"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="30" d:DesignWidth="200">
+    <Grid Opacity="0">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="50*" />
+            <ColumnDefinition Width="100*" />
+            <ColumnDefinition Width="50*" />
+        </Grid.ColumnDefinitions>
+        <Grid Grid.Column="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="33*" />
+                <ColumnDefinition Width="33*" />
+                <ColumnDefinition Width="34*" />
+            </Grid.ColumnDefinitions>
+            <Image  x:Name="WNewBtn"   MouseLeftButtonDown="WNewBtn_OnMouseLeftButtonDown"  MouseEnter="WNewBtn_OnMouseEnter" MouseLeave="WNewBtn_OnMouseLeave"   Opacity="0" Grid.Column="0"  HorizontalAlignment="Center" VerticalAlignment="Center"  Source="/Resources/leftN.png"/>
+            <Image x:Name="WEditBtn" MouseLeftButtonDown="WEditBtn_OnMouseLeftButtonDown" MouseEnter="WEditBtn_OnMouseEnter" MouseLeave="WEditBtn_OnMouseLeave"  Opacity="0" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" Source="/Resources/rightN.png"/>
+
+        </Grid>
+    </Grid>
+</UserControl>

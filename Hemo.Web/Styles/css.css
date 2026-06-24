@@ -1,0 +1,16 @@
+﻿
+.main {
+    width: 100%;
+    float: left;
+}
+.main .content {
+    margin-left: 220px;
+    background-color: red;
+}
+.sitebar {
+    width: 220px;
+    float: left;
+    margin-left: -100%;
+     overflow:hidden;
+    
+}

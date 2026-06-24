@@ -1,0 +1,9 @@
+D:\WorkFiles\Projects\上海市普陀区人民医院\项目代码\Hemodialysis\Hemo.DataAccess\bin\Release\iMedical.Data.dll
+D:\WorkFiles\Projects\上海市普陀区人民医院\项目代码\Hemodialysis\Hemo.DataAccess\bin\Release\Devart.Data.dll
+D:\WorkFiles\Projects\上海市普陀区人民医院\项目代码\Hemodialysis\Hemo.DataAccess\bin\Release\Devart.Data.Oracle.dll
+D:\WorkFiles\Projects\上海市普陀区人民医院\项目代码\Hemodialysis\Hemo.DataAccess\bin\Release\Oracle.ManagedDataAccess.dll
+D:\WorkFiles\Projects\上海市普陀区人民医院\项目代码\Hemodialysis\Hemo.DataAccess\bin\Release\Oracle.ManagedDataAccessDTC.dll
+D:\WorkFiles\Projects\上海市普陀区人民医院\项目代码\Hemodialysis\Hemo.DataAccess\obj\Release\Hemo.DataAccess.csproj.AssemblyReference.cache
+D:\WorkFiles\Projects\上海市普陀区人民医院\项目代码\Hemodialysis\Hemo.DataAccess\obj\Release\Hemo.DataAccess.csproj.CoreCompileInputs.cache
+D:\WorkFiles\Projects\上海市普陀区人民医院\项目代码\Hemodialysis\Hemo.DataAccess\obj\Release\Hemo.DataAccess.csproj.CopyComplete
+D:\WorkFiles\Projects\上海市普陀区人民医院\项目代码\Hemodialysis\Hemo.DataAccess\obj\Release\iMedical.Data.dll

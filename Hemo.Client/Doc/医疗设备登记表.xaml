@@ -1,0 +1,273 @@
+﻿<UserControl x:Class="Hemo.Client.Doc.医疗设备登记表"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="1100" d:DesignWidth="816"  FontFamily="宋体" Loaded="UserControl_Loaded">
+    <UserControl.Resources>
+        <Style x:Key="mainframeName" TargetType="Label">
+            <Setter Property="FontSize" Value="15"/>
+            <Setter Property="HorizontalAlignment" Value="Center" />
+            <Setter Property="HorizontalContentAlignment" Value="Center" />
+            <Setter Property="VerticalAlignment" Value="Center" />
+            <Setter Property="VerticalContentAlignment" Value="Center"/>
+        </Style>
+
+        <Style x:Key="txtBlockMainframe" TargetType="TextBlock">
+            <Setter Property="FontSize" Value="15"/>
+            <Setter Property="HorizontalAlignment" Value="Center" />
+            <Setter Property="VerticalAlignment" Value="Center" />
+            <Setter Property="TextAlignment" Value="Center" />
+        </Style>
+        
+        <Style TargetType="DataGridColumnHeader" x:Key="columnHeader">
+            <Setter Property="Background" Value="Transparent"/>
+            <Setter Property="HorizontalAlignment" Value="Center"/>
+            <Setter Property="HorizontalContentAlignment" Value="Center"/>
+            <Setter Property="VerticalAlignment" Value="Center"/>
+            <Setter Property="VerticalContentAlignment" Value="Center"/>
+            <Setter Property="FontSize" Value="15"/>
+        </Style>
+
+        <Style TargetType="DataGridCell" x:Key="cell">
+            <Setter Property="Background" Value="Transparent"/>
+            <Setter Property="HorizontalAlignment" Value="Center"/>
+            <Setter Property="HorizontalContentAlignment" Value="Center"/>
+            <Setter Property="VerticalAlignment" Value="Center"/>
+            <Setter Property="VerticalContentAlignment" Value="Center"/>
+            <Setter Property="FontSize" Value="15"/>
+        </Style>
+    </UserControl.Resources>
+
+    <Grid Margin="20,60">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50" />
+            <RowDefinition Height="280" />
+            <RowDefinition Height="570" />
+            <RowDefinition Height="40" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="50"/>
+            <ColumnDefinition Width="726"/>
+        </Grid.ColumnDefinitions>
+
+        <Label Grid.Column="0" Grid.Row="0" Content="表3-3" HorizontalContentAlignment="Center" VerticalContentAlignment="Bottom" />
+        <Label Grid.Column="1" Grid.Row="0" Content="医 疗 设 备 登 记 表" HorizontalAlignment="Center" VerticalAlignment="Bottom" FontSize="30" />
+        <Border Grid.Column="0" Grid.Row="1" BorderBrush="Black" BorderThickness="1,1,1,0">
+            <TextBlock Text="主机" FontSize="15"  HorizontalAlignment="Center" VerticalAlignment="Center" TextAlignment="Center" TextWrapping="Wrap" Height="40" Width="20" />
+        </Border>
+        <Grid Grid.Column="1" Grid.Row="1" x:Name="mainframeGrid">
+            <Grid.RowDefinitions>
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="100" />
+                <ColumnDefinition Width="263" />
+                <ColumnDefinition Width="100" />
+                <ColumnDefinition Width="263" />
+            </Grid.ColumnDefinitions>
+
+            <Border Grid.Column="0" Grid.Row="0" BorderBrush="Black" BorderThickness="0,1,1,1">
+                <Label Style="{StaticResource ResourceKey=mainframeName}" Content="中文名称" />
+            </Border>
+            <Border Grid.Column="1" Grid.Row="0" BorderBrush="Black" BorderThickness="0,1,1,1">
+                <TextBlock Style="{StaticResource ResourceKey=txtBlockMainframe}" Text="{Binding Path=CHINESENAME}" />
+            </Border>
+            <Border Grid.Column="2" BorderBrush="Black" BorderThickness="0,1,1,1">
+                <Label Style="{StaticResource ResourceKey=mainframeName}" Content="出厂日期" />
+            </Border>
+            <Border Grid.Column="3" Grid.Row="0" BorderBrush="Black" BorderThickness="0,1,1,1">
+                <TextBlock Style="{StaticResource ResourceKey=txtBlockMainframe}" Text="{Binding Path=FACTORYDATE}" />
+            </Border>
+            <Border Grid.Column="0" Grid.Row="1" BorderBrush="Black" BorderThickness="0,0,1,1">
+                <Label Style="{StaticResource ResourceKey=mainframeName}" Content="外文名称" />
+            </Border>
+            <Border Grid.Column="1" Grid.Row="1" BorderBrush="Black" BorderThickness="0,0,1,1">
+                <TextBlock Style="{StaticResource ResourceKey=txtBlockMainframe}" Text="{Binding Path=ENGLISHNAME}" />
+            </Border>
+            <Border Grid.Column="2" Grid.Row="1" BorderBrush="Black" BorderThickness="0,0,1,1">
+                <Label Style="{StaticResource ResourceKey=mainframeName}" Content="到货日期" />
+            </Border>
+            <Border Grid.Column="3" Grid.Row="1" BorderBrush="Black" BorderThickness="0,0,1,1">
+                <TextBlock Style="{StaticResource ResourceKey=txtBlockMainframe}" Text="{Binding Path=ARRIVALDATE}" />
+            </Border>
+            <Border Grid.Column="0" Grid.Row="2" BorderBrush="Black" BorderThickness="0,0,1,1">
+                <Label Style="{StaticResource ResourceKey=mainframeName}" Content="型号规格" />
+            </Border>
+            <Border Grid.Column="1" Grid.Row="2" BorderBrush="Black" BorderThickness="0,0,1,1">
+                <TextBlock Style="{StaticResource ResourceKey=txtBlockMainframe}" Text="{Binding Path=TYPE}" />
+            </Border>
+            <Border Grid.Column="2" Grid.Row="2" BorderBrush="Black" BorderThickness="0,0,1,1">
+                <Label Style="{StaticResource ResourceKey=mainframeName}" Content="启用日期" />
+            </Border>
+            <Border Grid.Column="3" Grid.Row="2" BorderBrush="Black" BorderThickness="0,0,1,1">
+                <TextBlock Style="{StaticResource ResourceKey=txtBlockMainframe}" Text="{Binding Path=STARTDATE}" />
+            </Border>
+            <Border Grid.Column="0" Grid.Row="3" BorderBrush="Black" BorderThickness="0,0,1,1">
+                <Label Style="{StaticResource ResourceKey=mainframeName}" Content="国别厂家" />
+            </Border>
+            <Border Grid.Column="1" Grid.Row="3" BorderBrush="Black" BorderThickness="0,0,1,1">
+                <TextBlock Style="{StaticResource ResourceKey=txtBlockMainframe}" Text="{Binding Path=MANUFACTURER}" />
+            </Border>
+            <Border Grid.Column="2" Grid.Row="3" BorderBrush="Black" BorderThickness="0,0,1,1">
+                <Label Style="{StaticResource ResourceKey=mainframeName}" Content="使用年限" />
+            </Border>
+            <Border Grid.Column="3" Grid.Row="3" BorderBrush="Black" BorderThickness="0,0,1,1">
+                <TextBlock Style="{StaticResource ResourceKey=txtBlockMainframe}" Text="{Binding Path=AGELIMIT}" />
+            </Border>
+            <Border Grid.Column="0" Grid.Row="4" BorderBrush="Black" BorderThickness="0,0,1,1">
+                <Label Style="{StaticResource ResourceKey=mainframeName}" Content="合同号" />
+            </Border>
+            <Border Grid.Column="1" Grid.Row="4" BorderBrush="Black" BorderThickness="0,0,1,1">
+                <TextBlock Style="{StaticResource ResourceKey=txtBlockMainframe}" Text="{Binding Path=CONTRACT}" />
+            </Border>
+            <Border Grid.Column="2" Grid.Row="4" BorderBrush="Black" BorderThickness="0,0,1,1">
+                <Label Style="{StaticResource ResourceKey=mainframeName}" Content="使用定额" />
+            </Border>
+            <Border Grid.Column="3" Grid.Row="4" BorderBrush="Black" BorderThickness="0,0,1,1">
+                <TextBlock Style="{StaticResource ResourceKey=txtBlockMainframe}" Text="{Binding Path=USEQUOTA}" />
+            </Border>
+            <Grid Grid.Column="0" Grid.Row="5" >
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="30"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Border Grid.Column="0" BorderBrush="Black" BorderThickness="0,0,1,0">
+                    <Label Style="{StaticResource ResourceKey=mainframeName}" Content="单" />
+                </Border>
+                <Border Grid.Column="1" BorderBrush="Black" BorderThickness="0,0,1,1">
+                    <Label Style="{StaticResource ResourceKey=mainframeName}" Content="人民币" />
+                </Border>
+            </Grid>
+            <Border Grid.Column="1" Grid.Row="5" BorderBrush="Black" BorderThickness="0,0,1,1">
+                <TextBlock Style="{StaticResource ResourceKey=txtBlockMainframe}" Text="{Binding Path=PRICEBYRMB}" />
+            </Border>
+            <Border Grid.Column="2" Grid.Row="5" BorderBrush="Black" BorderThickness="0,0,1,1">
+                <Label Style="{StaticResource ResourceKey=mainframeName}" Content="上级拨款" />
+            </Border>
+            <Border Grid.Column="3" Grid.Row="5" BorderBrush="Black" BorderThickness="0,0,1,1">
+                <TextBlock Style="{StaticResource ResourceKey=txtBlockMainframe}" Text="{Binding Path=APPROPRIATION}" />
+            </Border>
+            <Grid Grid.Column="0" Grid.Row="6" >
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="30"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Border Grid.Column="0" BorderBrush="Black" BorderThickness="0,0,1,1">
+                    <Label Style="{StaticResource ResourceKey=mainframeName}" Content="价" />
+                </Border>
+                <Border Grid.Column="1" BorderBrush="Black" BorderThickness="0,0,1,1">
+                    <Label Style="{StaticResource ResourceKey=mainframeName}" Content="美元" />
+                </Border>
+            </Grid>
+            <Border Grid.Column="1" Grid.Row="6" BorderBrush="Black" BorderThickness="0,0,1,1">
+                <TextBlock Style="{StaticResource ResourceKey=txtBlockMainframe}" Text="{Binding Path=PRICEBYDOLLOR}" />
+            </Border>
+            <Border Grid.Column="2" Grid.Row="6" BorderBrush="Black" BorderThickness="0,0,1,1">
+                <Label Style="{StaticResource ResourceKey=mainframeName}" Content="自筹金额" />
+            </Border>
+            <Border Grid.Column="3" Grid.Row="6" BorderBrush="Black" BorderThickness="0,0,1,1">
+                <TextBlock Style="{StaticResource ResourceKey=txtBlockMainframe}" Text="{Binding Path=SELFFINANCING}" />
+            </Border>
+        </Grid>
+        <Border Grid.Column="0" Grid.Row="2" BorderBrush="Black" BorderThickness="1,1,1,1">
+            <TextBlock Text="主要附属设备" FontSize="15" HorizontalAlignment="Center" VerticalAlignment="Center" TextAlignment="Center" LineHeight="30" Width="20" TextWrapping="Wrap" />
+        </Border>
+        <DataGrid Grid.Column="1" Grid.Row="2" x:Name="accessoryEquipGrid" Background="Transparent" GridLinesVisibility="All"
+                  ColumnHeaderStyle="{StaticResource ResourceKey=columnHeader}" CanUserAddRows="False" CanUserResizeColumns="False" AllowDrop="False" 
+                  RowHeaderWidth="0" HorizontalAlignment="Left" AutoGenerateColumns="False" BorderBrush="Black" BorderThickness="0,0,1,1"
+                  ScrollViewer.HorizontalScrollBarVisibility="Hidden" ScrollViewer.VerticalScrollBarVisibility="Hidden">
+            <DataGrid.Columns>
+                <DataGridTemplateColumn>
+                    <DataGridTemplateColumn.HeaderTemplate>
+                        <DataTemplate>
+                            <Border Height="40" Width="100" BorderBrush="Black" BorderThickness="0,0,1,1">
+                                <TextBlock Text="名 称" HorizontalAlignment="Center" VerticalAlignment="Center" TextAlignment="Center"/>
+                            </Border>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.HeaderTemplate>
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <TextBlock Text="{Binding Path=NAME}" TextAlignment="Center" />
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+                <DataGridTemplateColumn>
+                    <DataGridTemplateColumn.HeaderTemplate>
+                        <DataTemplate>
+                            <Border Height="40" Width="263" BorderBrush="Black" BorderThickness="0,0,1,1" >
+                                <TextBlock Text="型 号 规 格" HorizontalAlignment="Center" VerticalAlignment="Center" TextAlignment="Center"/>
+                            </Border>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.HeaderTemplate>
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <TextBlock Text="{Binding Path=TYPE}" TextAlignment="Center" />
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+                <DataGridTemplateColumn>
+                    <DataGridTemplateColumn.HeaderTemplate>
+                        <DataTemplate>
+                            <Border Height="40" Width="100" BorderBrush="Black" BorderThickness="0,0,1,1">
+                                <TextBlock Text="数 量" HorizontalAlignment="Center" VerticalAlignment="Center" TextAlignment="Center"/>
+                            </Border>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.HeaderTemplate>
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <TextBlock Text="{Binding Path=COUNT}" TextAlignment="Center" />
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+                <DataGridTemplateColumn>
+                    <DataGridTemplateColumn.HeaderTemplate>
+                        <DataTemplate>
+                            <Border Height="40" Width="263" BorderBrush="Black" BorderThickness="0,0,0,1" >
+                                <TextBlock Text="出 厂 编 号" HorizontalAlignment="Center" VerticalAlignment="Center" TextAlignment="Center"/>
+                            </Border>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.HeaderTemplate>
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <TextBlock Text="{Binding Path=FACTORYNUMBER}" TextAlignment="Center" />
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+
+        <Grid Grid.Column="1" Grid.Row="3">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="80"/>
+                <ColumnDefinition Width="160*"/>
+                <ColumnDefinition Width="80"/>
+                <ColumnDefinition Width="160*"/>
+                <ColumnDefinition Width="50"/>
+                <ColumnDefinition Width="30"/>
+                <ColumnDefinition Width="50"/>
+                <ColumnDefinition Width="30"/>
+                <ColumnDefinition Width="50"/>
+                <ColumnDefinition Width="30"/>
+            </Grid.ColumnDefinitions>
+
+            <Label Grid.Column="0" Content="填表人" />
+            <TextBlock Grid.Column="1" x:Name="tianbianren"/>
+            <Label Grid.Column="2" Content="接收人" />
+            <TextBlock Grid.Column="3" x:Name="jieshouren"/>
+            <TextBlock Grid.Column="4" x:Name="year"/>
+            <Label Grid.Column="5" Content="年" />
+            <TextBlock Grid.Column="6" x:Name="month"/>
+            <Label Grid.Column="7" Content="月" />
+            <TextBlock Grid.Column="8" x:Name="day"/>
+            <Label Grid.Column="9" Content="日" />
+        </Grid>
+    </Grid>
+</UserControl>

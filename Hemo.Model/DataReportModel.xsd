@@ -1,0 +1,1091 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataReportModel" targetNamespace="http://tempuri.org/DataReportModel.xsd" xmlns:mstns="http://tempuri.org/DataReportModel.xsd" xmlns="http://tempuri.org/DataReportModel.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataReportModel" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DataReportModel" msprop:Generator_UserDSName="DataReportModel">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="MED_PATIENT_DATAREPORT" msprop:Generator_TableClassName="MED_PATIENT_DATAREPORTDataTable" msprop:Generator_TableVarName="tableMED_PATIENT_DATAREPORT" msprop:Generator_TablePropName="MED_PATIENT_DATAREPORT" msprop:Generator_RowDeletingName="MED_PATIENT_DATAREPORTRowDeleting" msprop:Generator_RowChangingName="MED_PATIENT_DATAREPORTRowChanging" msprop:Generator_RowEvHandlerName="MED_PATIENT_DATAREPORTRowChangeEventHandler" msprop:Generator_RowDeletedName="MED_PATIENT_DATAREPORTRowDeleted" msprop:Generator_UserTableName="MED_PATIENT_DATAREPORT" msprop:Generator_RowChangedName="MED_PATIENT_DATAREPORTRowChanged" msprop:Generator_RowEvArgName="MED_PATIENT_DATAREPORTRowChangeEvent" msprop:Generator_RowClassName="MED_PATIENT_DATAREPORTRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ID" msprop:Generator_ColumnVarNameInTable="columnID" msprop:Generator_ColumnPropNameInRow="ID" msprop:Generator_ColumnPropNameInTable="IDColumn" msprop:Generator_UserColumnName="ID" type="xs:string" />
+              <xs:element name="HEMODIALYSIS_ID" msprop:Generator_ColumnVarNameInTable="columnHEMODIALYSIS_ID" msprop:Generator_ColumnPropNameInRow="HEMODIALYSIS_ID" msprop:Generator_ColumnPropNameInTable="HEMODIALYSIS_IDColumn" msprop:Generator_UserColumnName="HEMODIALYSIS_ID" type="xs:string" />
+              <xs:element name="BASEINFO" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="BASEINFO" msprop:Generator_ColumnVarNameInTable="columnBASEINFO" msprop:Generator_ColumnPropNameInTable="BASEINFOColumn" msprop:Generator_UserColumnName="BASEINFO" type="xs:string" default="" minOccurs="0" />
+              <xs:element name="STATE" msprop:Generator_ColumnVarNameInTable="columnSTATE" msprop:Generator_ColumnPropNameInRow="STATE" msprop:Generator_ColumnPropNameInTable="STATEColumn" msprop:Generator_UserColumnName="STATE" type="xs:string" minOccurs="0" />
+              <xs:element name="TYPE" msprop:Generator_ColumnVarNameInTable="columnTYPE" msprop:Generator_ColumnPropNameInRow="TYPE" msprop:Generator_ColumnPropNameInTable="TYPEColumn" msprop:Generator_UserColumnName="TYPE" type="xs:string" minOccurs="0" />
+              <xs:element name="UPTIME" msprop:Generator_ColumnVarNameInTable="columnUPTIME" msprop:Generator_ColumnPropNameInRow="UPTIME" msprop:Generator_ColumnPropNameInTable="UPTIMEColumn" msprop:Generator_UserColumnName="UPTIME" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="UPUSER" msprop:Generator_ColumnVarNameInTable="columnUPUSER" msprop:Generator_ColumnPropNameInRow="UPUSER" msprop:Generator_ColumnPropNameInTable="UPUSERColumn" msprop:Generator_UserColumnName="UPUSER" type="xs:string" minOccurs="0" />
+              <xs:element name="MAPIP" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="MAPIP" msprop:Generator_ColumnVarNameInTable="columnMAPIP" msprop:Generator_ColumnPropNameInTable="MAPIPColumn" msprop:Generator_UserColumnName="MAPIP" type="xs:string" default="" minOccurs="0" />
+              <xs:element name="EXTEND" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="EXTEND" msprop:Generator_ColumnVarNameInTable="columnEXTEND" msprop:Generator_ColumnPropNameInTable="EXTENDColumn" msprop:Generator_UserColumnName="EXTEND" type="xs:string" default="" minOccurs="0" />
+              <xs:element name="EXTEND1" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="EXTEND1" msprop:Generator_ColumnVarNameInTable="columnEXTEND1" msprop:Generator_ColumnPropNameInTable="EXTEND1Column" msprop:Generator_UserColumnName="EXTEND1" type="xs:string" default="" minOccurs="0" />
+              <xs:element name="EXTEND2" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="EXTEND2" msprop:Generator_ColumnVarNameInTable="columnEXTEND2" msprop:Generator_ColumnPropNameInTable="EXTEND2Column" msprop:Generator_UserColumnName="EXTEND2" type="xs:string" default="" minOccurs="0" />
+              <xs:element name="EXTEND3" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="EXTEND3" msprop:Generator_ColumnVarNameInTable="columnEXTEND3" msprop:Generator_ColumnPropNameInTable="EXTEND3Column" msprop:Generator_UserColumnName="EXTEND3" type="xs:string" default="" minOccurs="0" />
+              <xs:element name="EXTEND4" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="EXTEND4" msprop:Generator_ColumnVarNameInTable="columnEXTEND4" msprop:Generator_ColumnPropNameInTable="EXTEND4Column" msprop:Generator_UserColumnName="EXTEND4" type="xs:string" default="" minOccurs="0" />
+              <xs:element name="EXTEND5" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="EXTEND5" msprop:Generator_ColumnVarNameInTable="columnEXTEND5" msprop:Generator_ColumnPropNameInTable="EXTEND5Column" msprop:Generator_UserColumnName="EXTEND5" type="xs:string" default="" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="MED_VASCULAR_ACCESS" msprop:Generator_TableClassName="MED_VASCULAR_ACCESSDataTable" msprop:Generator_TableVarName="tableMED_VASCULAR_ACCESS" msprop:Generator_TablePropName="MED_VASCULAR_ACCESS" msprop:Generator_RowDeletingName="MED_VASCULAR_ACCESSRowDeleting" msprop:Generator_RowChangingName="MED_VASCULAR_ACCESSRowChanging" msprop:Generator_RowEvHandlerName="MED_VASCULAR_ACCESSRowChangeEventHandler" msprop:Generator_RowDeletedName="MED_VASCULAR_ACCESSRowDeleted" msprop:Generator_UserTableName="MED_VASCULAR_ACCESS" msprop:Generator_RowChangedName="MED_VASCULAR_ACCESSRowChanged" msprop:Generator_RowEvArgName="MED_VASCULAR_ACCESSRowChangeEvent" msprop:Generator_RowClassName="MED_VASCULAR_ACCESSRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="VASCULAR_ACCESS_ID" msprop:Generator_ColumnVarNameInTable="columnVASCULAR_ACCESS_ID" msprop:Generator_ColumnPropNameInRow="VASCULAR_ACCESS_ID" msprop:Generator_ColumnPropNameInTable="VASCULAR_ACCESS_IDColumn" msprop:Generator_UserColumnName="VASCULAR_ACCESS_ID" type="xs:string" />
+              <xs:element name="PATIENT_ID" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="PATIENT_ID" msprop:Generator_ColumnVarNameInTable="columnPATIENT_ID" msprop:Generator_ColumnPropNameInTable="PATIENT_IDColumn" msprop:Generator_UserColumnName="PATIENT_ID" type="xs:string" default="" minOccurs="0" />
+              <xs:element name="VASCULAR_ACCESS_TYPE" msprop:Generator_ColumnVarNameInTable="columnVASCULAR_ACCESS_TYPE" msprop:Generator_ColumnPropNameInRow="VASCULAR_ACCESS_TYPE" msprop:Generator_ColumnPropNameInTable="VASCULAR_ACCESS_TYPEColumn" msprop:Generator_UserColumnName="VASCULAR_ACCESS_TYPE" type="xs:string" minOccurs="0" />
+              <xs:element name="ACCESS_MATERIA" msprop:Generator_ColumnVarNameInTable="columnACCESS_MATERIA" msprop:Generator_ColumnPropNameInRow="ACCESS_MATERIA" msprop:Generator_ColumnPropNameInTable="ACCESS_MATERIAColumn" msprop:Generator_UserColumnName="ACCESS_MATERIA" type="xs:string" minOccurs="0" />
+              <xs:element name="LATERAL_POSITION" msprop:Generator_ColumnVarNameInTable="columnLATERAL_POSITION" msprop:Generator_ColumnPropNameInRow="LATERAL_POSITION" msprop:Generator_ColumnPropNameInTable="LATERAL_POSITIONColumn" msprop:Generator_UserColumnName="LATERAL_POSITION" type="xs:string" minOccurs="0" />
+              <xs:element name="VASCULAR_POSTION" msprop:Generator_ColumnVarNameInTable="columnVASCULAR_POSTION" msprop:Generator_ColumnPropNameInRow="VASCULAR_POSTION" msprop:Generator_ColumnPropNameInTable="VASCULAR_POSTIONColumn" msprop:Generator_UserColumnName="VASCULAR_POSTION" type="xs:string" minOccurs="0" />
+              <xs:element name="BLOOD_VESSEL" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="BLOOD_VESSEL" msprop:Generator_ColumnVarNameInTable="columnBLOOD_VESSEL" msprop:Generator_ColumnPropNameInTable="BLOOD_VESSELColumn" msprop:Generator_UserColumnName="BLOOD_VESSEL" type="xs:string" default="" minOccurs="0" />
+              <xs:element name="MODUS_OPERANDI" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="MODUS_OPERANDI" msprop:Generator_ColumnVarNameInTable="columnMODUS_OPERANDI" msprop:Generator_ColumnPropNameInTable="MODUS_OPERANDIColumn" msprop:Generator_UserColumnName="MODUS_OPERANDI" type="xs:string" default="" minOccurs="0" />
+              <xs:element name="ACCESS_CLASS" msprop:Generator_ColumnVarNameInTable="columnACCESS_CLASS" msprop:Generator_ColumnPropNameInRow="ACCESS_CLASS" msprop:Generator_ColumnPropNameInTable="ACCESS_CLASSColumn" msprop:Generator_UserColumnName="ACCESS_CLASS" type="xs:string" minOccurs="0" />
+              <xs:element name="CREATE_DATE" msprop:Generator_ColumnVarNameInTable="columnCREATE_DATE" msprop:Generator_ColumnPropNameInRow="CREATE_DATE" msprop:Generator_ColumnPropNameInTable="CREATE_DATEColumn" msprop:Generator_UserColumnName="CREATE_DATE" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="HOSPITAL" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="HOSPITAL" msprop:Generator_ColumnVarNameInTable="columnHOSPITAL" msprop:Generator_ColumnPropNameInTable="HOSPITALColumn" msprop:Generator_UserColumnName="HOSPITAL" type="xs:string" default="" minOccurs="0" />
+              <xs:element name="ACCESS_STATUS" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="ACCESS_STATUS" msprop:Generator_ColumnVarNameInTable="columnACCESS_STATUS" msprop:Generator_ColumnPropNameInTable="ACCESS_STATUSColumn" msprop:Generator_UserColumnName="ACCESS_STATUS" type="xs:string" default="" minOccurs="0" />
+              <xs:element name="FIRST_DATE" msprop:Generator_ColumnVarNameInTable="columnFIRST_DATE" msprop:Generator_ColumnPropNameInRow="FIRST_DATE" msprop:Generator_ColumnPropNameInTable="FIRST_DATEColumn" msprop:Generator_UserColumnName="FIRST_DATE" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="IS_SUCCESS" msprop:Generator_ColumnVarNameInTable="columnIS_SUCCESS" msprop:Generator_ColumnPropNameInRow="IS_SUCCESS" msprop:Generator_ColumnPropNameInTable="IS_SUCCESSColumn" msprop:Generator_UserColumnName="IS_SUCCESS" type="xs:string" minOccurs="0" />
+              <xs:element name="FIRST_LOSE_DATE" msprop:Generator_ColumnVarNameInTable="columnFIRST_LOSE_DATE" msprop:Generator_ColumnPropNameInRow="FIRST_LOSE_DATE" msprop:Generator_ColumnPropNameInTable="FIRST_LOSE_DATEColumn" msprop:Generator_UserColumnName="FIRST_LOSE_DATE" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="TUBE_DRAWING_DATE" msprop:Generator_ColumnVarNameInTable="columnTUBE_DRAWING_DATE" msprop:Generator_ColumnPropNameInRow="TUBE_DRAWING_DATE" msprop:Generator_ColumnPropNameInTable="TUBE_DRAWING_DATEColumn" msprop:Generator_UserColumnName="TUBE_DRAWING_DATE" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="LOSE_REASON" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="LOSE_REASON" msprop:Generator_ColumnVarNameInTable="columnLOSE_REASON" msprop:Generator_ColumnPropNameInTable="LOSE_REASONColumn" msprop:Generator_UserColumnName="LOSE_REASON" type="xs:string" default="" minOccurs="0" />
+              <xs:element name="HEMODIALYSIS_ID" msprop:Generator_ColumnVarNameInTable="columnHEMODIALYSIS_ID" msprop:Generator_ColumnPropNameInRow="HEMODIALYSIS_ID" msprop:Generator_ColumnPropNameInTable="HEMODIALYSIS_IDColumn" msprop:Generator_UserColumnName="HEMODIALYSIS_ID" type="xs:string" minOccurs="0" />
+              <xs:element name="VASCULAR_ACCESS_TYPENAME" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="VASCULAR_ACCESS_TYPENAME" msprop:Generator_ColumnVarNameInTable="columnVASCULAR_ACCESS_TYPENAME" msprop:Generator_ColumnPropNameInTable="VASCULAR_ACCESS_TYPENAMEColumn" msprop:Generator_UserColumnName="VASCULAR_ACCESS_TYPENAME" type="xs:string" default="" minOccurs="0" />
+              <xs:element name="ACCESS_MATERIANAME" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="ACCESS_MATERIANAME" msprop:Generator_ColumnVarNameInTable="columnACCESS_MATERIANAME" msprop:Generator_ColumnPropNameInTable="ACCESS_MATERIANAMEColumn" msprop:Generator_UserColumnName="ACCESS_MATERIANAME" type="xs:string" default="" minOccurs="0" />
+              <xs:element name="LATERAL_POSITIONNAME" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="LATERAL_POSITIONNAME" msprop:Generator_ColumnVarNameInTable="columnLATERAL_POSITIONNAME" msprop:Generator_ColumnPropNameInTable="LATERAL_POSITIONNAMEColumn" msprop:Generator_UserColumnName="LATERAL_POSITIONNAME" type="xs:string" default="" minOccurs="0" />
+              <xs:element name="VASCULAR_POSTIONNAME" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="VASCULAR_POSTIONNAME" msprop:Generator_ColumnVarNameInTable="columnVASCULAR_POSTIONNAME" msprop:Generator_ColumnPropNameInTable="VASCULAR_POSTIONNAMEColumn" msprop:Generator_UserColumnName="VASCULAR_POSTIONNAME" type="xs:string" default="" minOccurs="0" />
+              <xs:element name="ACCESS_CLASSNAME" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="ACCESS_CLASSNAME" msprop:Generator_ColumnVarNameInTable="columnACCESS_CLASSNAME" msprop:Generator_ColumnPropNameInTable="ACCESS_CLASSNAMEColumn" msprop:Generator_UserColumnName="ACCESS_CLASSNAME" type="xs:string" default="" minOccurs="0" />
+              <xs:element name="ACCESS_STATUSNAME" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="ACCESS_STATUSNAME" msprop:Generator_ColumnVarNameInTable="columnACCESS_STATUSNAME" msprop:Generator_ColumnPropNameInTable="ACCESS_STATUSNAMEColumn" msprop:Generator_UserColumnName="ACCESS_STATUSNAME" type="xs:string" default="" minOccurs="0" />
+              <xs:element name="ISUPLOAD" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="ISUPLOAD" msprop:Generator_ColumnVarNameInTable="columnISUPLOAD" msprop:Generator_ColumnPropNameInTable="ISUPLOADColumn" msprop:Generator_UserColumnName="ISUPLOAD" type="xs:string" default="" minOccurs="0" />
+              <xs:element name="UPSTATE" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="UPSTATE" msprop:Generator_ColumnVarNameInTable="columnUPSTATE" msprop:Generator_ColumnPropNameInTable="UPSTATEColumn" msprop:Generator_UserColumnName="UPSTATE" type="xs:string" default="" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="MED_HEMO_RECIPE" msprop:Generator_TableClassName="MED_HEMO_RECIPEDataTable" msprop:Generator_TableVarName="tableMED_HEMO_RECIPE" msprop:Generator_TablePropName="MED_HEMO_RECIPE" msprop:Generator_RowDeletingName="MED_HEMO_RECIPERowDeleting" msprop:Generator_RowChangingName="MED_HEMO_RECIPERowChanging" msprop:Generator_RowEvHandlerName="MED_HEMO_RECIPERowChangeEventHandler" msprop:Generator_RowDeletedName="MED_HEMO_RECIPERowDeleted" msprop:Generator_UserTableName="MED_HEMO_RECIPE" msprop:Generator_RowChangedName="MED_HEMO_RECIPERowChanged" msprop:Generator_RowEvArgName="MED_HEMO_RECIPERowChangeEvent" msprop:Generator_RowClassName="MED_HEMO_RECIPERow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="RECIPE_ID" msprop:Generator_ColumnVarNameInTable="columnRECIPE_ID" msprop:Generator_ColumnPropNameInRow="RECIPE_ID" msprop:Generator_ColumnPropNameInTable="RECIPE_IDColumn" msprop:Generator_UserColumnName="RECIPE_ID">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PATIENT_ID" msprop:Generator_ColumnVarNameInTable="columnPATIENT_ID" msprop:Generator_ColumnPropNameInRow="PATIENT_ID" msprop:Generator_ColumnPropNameInTable="PATIENT_IDColumn" msprop:Generator_UserColumnName="PATIENT_ID" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RECIPE_DATE" msprop:Generator_ColumnVarNameInTable="columnRECIPE_DATE" msprop:Generator_ColumnPropNameInRow="RECIPE_DATE" msprop:Generator_ColumnPropNameInTable="RECIPE_DATEColumn" msprop:Generator_UserColumnName="RECIPE_DATE" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="PURIFICATION_MODE" msprop:Generator_ColumnVarNameInTable="columnPURIFICATION_MODE" msprop:Generator_ColumnPropNameInRow="PURIFICATION_MODE" msprop:Generator_ColumnPropNameInTable="PURIFICATION_MODEColumn" msprop:Generator_UserColumnName="PURIFICATION_MODE" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FREQUENCY_WEEK" msprop:Generator_ColumnVarNameInTable="columnFREQUENCY_WEEK" msprop:Generator_ColumnPropNameInRow="FREQUENCY_WEEK" msprop:Generator_ColumnPropNameInTable="FREQUENCY_WEEKColumn" msprop:Generator_UserColumnName="FREQUENCY_WEEK" type="xs:decimal" minOccurs="0" />
+              <xs:element name="FREQUENCY_TIMES" msprop:Generator_ColumnVarNameInTable="columnFREQUENCY_TIMES" msprop:Generator_ColumnPropNameInRow="FREQUENCY_TIMES" msprop:Generator_ColumnPropNameInTable="FREQUENCY_TIMESColumn" msprop:Generator_UserColumnName="FREQUENCY_TIMES" type="xs:decimal" minOccurs="0" />
+              <xs:element name="FREQUENCY_HOURS" msprop:Generator_ColumnVarNameInTable="columnFREQUENCY_HOURS" msprop:Generator_ColumnPropNameInRow="FREQUENCY_HOURS" msprop:Generator_ColumnPropNameInTable="FREQUENCY_HOURSColumn" msprop:Generator_UserColumnName="FREQUENCY_HOURS" type="xs:decimal" minOccurs="0" />
+              <xs:element name="SPKT_V" msprop:Generator_ColumnVarNameInTable="columnSPKT_V" msprop:Generator_ColumnPropNameInRow="SPKT_V" msprop:Generator_ColumnPropNameInTable="SPKT_VColumn" msprop:Generator_UserColumnName="SPKT_V" type="xs:decimal" minOccurs="0" />
+              <xs:element name="URR" msprop:Generator_ColumnVarNameInTable="columnURR" msprop:Generator_ColumnPropNameInRow="URR" msprop:Generator_ColumnPropNameInTable="URRColumn" msprop:Generator_UserColumnName="URR" type="xs:decimal" minOccurs="0" />
+              <xs:element name="FIRST_PURIFIER_MODEL" msprop:Generator_ColumnVarNameInTable="columnFIRST_PURIFIER_MODEL" msprop:Generator_ColumnPropNameInRow="FIRST_PURIFIER_MODEL" msprop:Generator_ColumnPropNameInTable="FIRST_PURIFIER_MODELColumn" msprop:Generator_UserColumnName="FIRST_PURIFIER_MODEL" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FIRST_PURIFIER_NAME" msprop:Generator_ColumnVarNameInTable="columnFIRST_PURIFIER_NAME" msprop:Generator_ColumnPropNameInRow="FIRST_PURIFIER_NAME" msprop:Generator_ColumnPropNameInTable="FIRST_PURIFIER_NAMEColumn" msprop:Generator_UserColumnName="FIRST_PURIFIER_NAME" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FIRST_PURIFIER_M2" msprop:Generator_ColumnVarNameInTable="columnFIRST_PURIFIER_M2" msprop:Generator_ColumnPropNameInRow="FIRST_PURIFIER_M2" msprop:Generator_ColumnPropNameInTable="FIRST_PURIFIER_M2Column" msprop:Generator_UserColumnName="FIRST_PURIFIER_M2" type="xs:decimal" minOccurs="0" />
+              <xs:element name="FIRST_PURIFIER_KOA" msprop:Generator_ColumnVarNameInTable="columnFIRST_PURIFIER_KOA" msprop:Generator_ColumnPropNameInRow="FIRST_PURIFIER_KOA" msprop:Generator_ColumnPropNameInTable="FIRST_PURIFIER_KOAColumn" msprop:Generator_UserColumnName="FIRST_PURIFIER_KOA" type="xs:decimal" minOccurs="0" />
+              <xs:element name="FIRST_PURIFIER_KUF" msprop:Generator_ColumnVarNameInTable="columnFIRST_PURIFIER_KUF" msprop:Generator_ColumnPropNameInRow="FIRST_PURIFIER_KUF" msprop:Generator_ColumnPropNameInTable="FIRST_PURIFIER_KUFColumn" msprop:Generator_UserColumnName="FIRST_PURIFIER_KUF" type="xs:decimal" minOccurs="0" />
+              <xs:element name="SECOND_PURIFIER_MODEL" msprop:Generator_ColumnVarNameInTable="columnSECOND_PURIFIER_MODEL" msprop:Generator_ColumnPropNameInRow="SECOND_PURIFIER_MODEL" msprop:Generator_ColumnPropNameInTable="SECOND_PURIFIER_MODELColumn" msprop:Generator_UserColumnName="SECOND_PURIFIER_MODEL" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SECOND_PURIFIER_NAME" msprop:Generator_ColumnVarNameInTable="columnSECOND_PURIFIER_NAME" msprop:Generator_ColumnPropNameInRow="SECOND_PURIFIER_NAME" msprop:Generator_ColumnPropNameInTable="SECOND_PURIFIER_NAMEColumn" msprop:Generator_UserColumnName="SECOND_PURIFIER_NAME" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SECOND_PURIFIER_M2" msprop:Generator_ColumnVarNameInTable="columnSECOND_PURIFIER_M2" msprop:Generator_ColumnPropNameInRow="SECOND_PURIFIER_M2" msprop:Generator_ColumnPropNameInTable="SECOND_PURIFIER_M2Column" msprop:Generator_UserColumnName="SECOND_PURIFIER_M2" type="xs:decimal" minOccurs="0" />
+              <xs:element name="SECOND_PURIFIER_KOA" msprop:Generator_ColumnVarNameInTable="columnSECOND_PURIFIER_KOA" msprop:Generator_ColumnPropNameInRow="SECOND_PURIFIER_KOA" msprop:Generator_ColumnPropNameInTable="SECOND_PURIFIER_KOAColumn" msprop:Generator_UserColumnName="SECOND_PURIFIER_KOA" type="xs:decimal" minOccurs="0" />
+              <xs:element name="SECOND_PURIFIER_KUF" msprop:Generator_ColumnVarNameInTable="columnSECOND_PURIFIER_KUF" msprop:Generator_ColumnPropNameInRow="SECOND_PURIFIER_KUF" msprop:Generator_ColumnPropNameInTable="SECOND_PURIFIER_KUFColumn" msprop:Generator_UserColumnName="SECOND_PURIFIER_KUF" type="xs:decimal" minOccurs="0" />
+              <xs:element name="SODION" msprop:Generator_ColumnVarNameInTable="columnSODION" msprop:Generator_ColumnPropNameInRow="SODION" msprop:Generator_ColumnPropNameInTable="SODIONColumn" msprop:Generator_UserColumnName="SODION" type="xs:decimal" minOccurs="0" />
+              <xs:element name="POTASSIUM_ION" msprop:Generator_ColumnVarNameInTable="columnPOTASSIUM_ION" msprop:Generator_ColumnPropNameInRow="POTASSIUM_ION" msprop:Generator_ColumnPropNameInTable="POTASSIUM_IONColumn" msprop:Generator_UserColumnName="POTASSIUM_ION" type="xs:decimal" minOccurs="0" />
+              <xs:element name="CALCIUM_ION" msprop:Generator_ColumnVarNameInTable="columnCALCIUM_ION" msprop:Generator_ColumnPropNameInRow="CALCIUM_ION" msprop:Generator_ColumnPropNameInTable="CALCIUM_IONColumn" msprop:Generator_UserColumnName="CALCIUM_ION" type="xs:decimal" minOccurs="0" />
+              <xs:element name="BICARBONATE_RADICAL" msprop:Generator_ColumnVarNameInTable="columnBICARBONATE_RADICAL" msprop:Generator_ColumnPropNameInRow="BICARBONATE_RADICAL" msprop:Generator_ColumnPropNameInTable="BICARBONATE_RADICALColumn" msprop:Generator_UserColumnName="BICARBONATE_RADICAL" type="xs:decimal" minOccurs="0" />
+              <xs:element name="BLOOW_FLOW" msprop:Generator_ColumnVarNameInTable="columnBLOOW_FLOW" msprop:Generator_ColumnPropNameInRow="BLOOW_FLOW" msprop:Generator_ColumnPropNameInTable="BLOOW_FLOWColumn" msprop:Generator_UserColumnName="BLOOW_FLOW" type="xs:decimal" minOccurs="0" />
+              <xs:element name="DIALYSATE_FLOW" msprop:Generator_ColumnVarNameInTable="columnDIALYSATE_FLOW" msprop:Generator_ColumnPropNameInRow="DIALYSATE_FLOW" msprop:Generator_ColumnPropNameInTable="DIALYSATE_FLOWColumn" msprop:Generator_UserColumnName="DIALYSATE_FLOW" type="xs:decimal" minOccurs="0" />
+              <xs:element name="DIALYSATE_TEMPERATURE" msprop:Generator_ColumnVarNameInTable="columnDIALYSATE_TEMPERATURE" msprop:Generator_ColumnPropNameInRow="DIALYSATE_TEMPERATURE" msprop:Generator_ColumnPropNameInTable="DIALYSATE_TEMPERATUREColumn" msprop:Generator_UserColumnName="DIALYSATE_TEMPERATURE" type="xs:decimal" minOccurs="0" />
+              <xs:element name="DISPLACEMENT_LIQUID" msprop:Generator_ColumnVarNameInTable="columnDISPLACEMENT_LIQUID" msprop:Generator_ColumnPropNameInRow="DISPLACEMENT_LIQUID" msprop:Generator_ColumnPropNameInTable="DISPLACEMENT_LIQUIDColumn" msprop:Generator_UserColumnName="DISPLACEMENT_LIQUID" type="xs:decimal" minOccurs="0" />
+              <xs:element name="BLOOD_DISPLACEMENT" msprop:Generator_ColumnVarNameInTable="columnBLOOD_DISPLACEMENT" msprop:Generator_ColumnPropNameInRow="BLOOD_DISPLACEMENT" msprop:Generator_ColumnPropNameInTable="BLOOD_DISPLACEMENTColumn" msprop:Generator_UserColumnName="BLOOD_DISPLACEMENT" type="xs:decimal" minOccurs="0" />
+              <xs:element name="THERAPEUTIC_METHOD" msprop:Generator_ColumnVarNameInTable="columnTHERAPEUTIC_METHOD" msprop:Generator_ColumnPropNameInRow="THERAPEUTIC_METHOD" msprop:Generator_ColumnPropNameInTable="THERAPEUTIC_METHODColumn" msprop:Generator_UserColumnName="THERAPEUTIC_METHOD" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FIRST_DRUG_NAME" msprop:Generator_ColumnVarNameInTable="columnFIRST_DRUG_NAME" msprop:Generator_ColumnPropNameInRow="FIRST_DRUG_NAME" msprop:Generator_ColumnPropNameInTable="FIRST_DRUG_NAMEColumn" msprop:Generator_UserColumnName="FIRST_DRUG_NAME" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FIRST_DRUG_DOSAGE" msprop:Generator_ColumnVarNameInTable="columnFIRST_DRUG_DOSAGE" msprop:Generator_ColumnPropNameInRow="FIRST_DRUG_DOSAGE" msprop:Generator_ColumnPropNameInTable="FIRST_DRUG_DOSAGEColumn" msprop:Generator_UserColumnName="FIRST_DRUG_DOSAGE" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FIRST_DRUG_UNIT" msprop:Generator_ColumnVarNameInTable="columnFIRST_DRUG_UNIT" msprop:Generator_ColumnPropNameInRow="FIRST_DRUG_UNIT" msprop:Generator_ColumnPropNameInTable="FIRST_DRUG_UNITColumn" msprop:Generator_UserColumnName="FIRST_DRUG_UNIT" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FIRST_DRUG_MODE" msprop:Generator_ColumnVarNameInTable="columnFIRST_DRUG_MODE" msprop:Generator_ColumnPropNameInRow="FIRST_DRUG_MODE" msprop:Generator_ColumnPropNameInTable="FIRST_DRUG_MODEColumn" msprop:Generator_UserColumnName="FIRST_DRUG_MODE" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SECOND_DRUG_NAME" msprop:Generator_ColumnVarNameInTable="columnSECOND_DRUG_NAME" msprop:Generator_ColumnPropNameInRow="SECOND_DRUG_NAME" msprop:Generator_ColumnPropNameInTable="SECOND_DRUG_NAMEColumn" msprop:Generator_UserColumnName="SECOND_DRUG_NAME" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SECOND_DRUG_DOSAGE" msprop:Generator_ColumnVarNameInTable="columnSECOND_DRUG_DOSAGE" msprop:Generator_ColumnPropNameInRow="SECOND_DRUG_DOSAGE" msprop:Generator_ColumnPropNameInTable="SECOND_DRUG_DOSAGEColumn" msprop:Generator_UserColumnName="SECOND_DRUG_DOSAGE" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SECOND_DRUG_UNIT" msprop:Generator_ColumnVarNameInTable="columnSECOND_DRUG_UNIT" msprop:Generator_ColumnPropNameInRow="SECOND_DRUG_UNIT" msprop:Generator_ColumnPropNameInTable="SECOND_DRUG_UNITColumn" msprop:Generator_UserColumnName="SECOND_DRUG_UNIT" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SECOND_DRUG_MODE" msprop:Generator_ColumnVarNameInTable="columnSECOND_DRUG_MODE" msprop:Generator_ColumnPropNameInRow="SECOND_DRUG_MODE" msprop:Generator_ColumnPropNameInTable="SECOND_DRUG_MODEColumn" msprop:Generator_UserColumnName="SECOND_DRUG_MODE" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="USER_ID" msprop:Generator_ColumnVarNameInTable="columnUSER_ID" msprop:Generator_ColumnPropNameInRow="USER_ID" msprop:Generator_ColumnPropNameInTable="USER_IDColumn" msprop:Generator_UserColumnName="USER_ID" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="HEMODIALYSIS_ID" msprop:Generator_ColumnVarNameInTable="columnHEMODIALYSIS_ID" msprop:Generator_ColumnPropNameInRow="HEMODIALYSIS_ID" msprop:Generator_ColumnPropNameInTable="HEMODIALYSIS_IDColumn" msprop:Generator_UserColumnName="HEMODIALYSIS_ID">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="STATUS" msprop:Generator_ColumnVarNameInTable="columnSTATUS" msprop:Generator_ColumnPropNameInRow="STATUS" msprop:Generator_ColumnPropNameInTable="STATUSColumn" msprop:Generator_UserColumnName="STATUS" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="VASCULAR_ACCESS_ID" msprop:Generator_ColumnVarNameInTable="columnVASCULAR_ACCESS_ID" msprop:Generator_ColumnPropNameInRow="VASCULAR_ACCESS_ID" msprop:Generator_ColumnPropNameInTable="VASCULAR_ACCESS_IDColumn" msprop:Generator_UserColumnName="VASCULAR_ACCESS_ID" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RECIPE_TYPE" msprop:Generator_ColumnVarNameInTable="columnRECIPE_TYPE" msprop:Generator_ColumnPropNameInRow="RECIPE_TYPE" msprop:Generator_ColumnPropNameInTable="RECIPE_TYPEColumn" msprop:Generator_UserColumnName="RECIPE_TYPE" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="UFR" msprop:Generator_ColumnVarNameInTable="columnUFR" msprop:Generator_ColumnPropNameInRow="UFR" msprop:Generator_ColumnPropNameInTable="UFRColumn" msprop:Generator_UserColumnName="UFR" type="xs:decimal" minOccurs="0" />
+              <xs:element name="TODAY_BLOODA" msprop:Generator_ColumnVarNameInTable="columnTODAY_BLOODA" msprop:Generator_ColumnPropNameInRow="TODAY_BLOODA" msprop:Generator_ColumnPropNameInTable="TODAY_BLOODAColumn" msprop:Generator_UserColumnName="TODAY_BLOODA" type="xs:decimal" default="0" minOccurs="0" />
+              <xs:element name="TODAY_BLOODB" msprop:Generator_ColumnVarNameInTable="columnTODAY_BLOODB" msprop:Generator_ColumnPropNameInRow="TODAY_BLOODB" msprop:Generator_ColumnPropNameInTable="TODAY_BLOODBColumn" msprop:Generator_UserColumnName="TODAY_BLOODB" type="xs:decimal" default="0" minOccurs="0" />
+              <xs:element name="REMARK" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="REMARK" msprop:Generator_ColumnVarNameInTable="columnREMARK" msprop:Generator_ColumnPropNameInTable="REMARKColumn" msprop:Generator_UserColumnName="REMARK" default="" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2000" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TODAY_BLOODP" msprop:nullValue="0" msprop:Generator_ColumnPropNameInRow="TODAY_BLOODP" msprop:Generator_ColumnVarNameInTable="columnTODAY_BLOODP" msprop:Generator_ColumnPropNameInTable="TODAY_BLOODPColumn" msprop:Generator_UserColumnName="TODAY_BLOODP" type="xs:int" default="0" minOccurs="0" />
+              <xs:element name="DRY_WEIGHT_REMARK" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="DRY_WEIGHT_REMARK" msprop:Generator_ColumnVarNameInTable="columnDRY_WEIGHT_REMARK" msprop:Generator_ColumnPropNameInTable="DRY_WEIGHT_REMARKColumn" msprop:Generator_UserColumnName="DRY_WEIGHT_REMARK" type="xs:string" default="" minOccurs="0" />
+              <xs:element name="DRY_WEIGHT" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="DRY_WEIGHT" msprop:Generator_ColumnVarNameInTable="columnDRY_WEIGHT" msprop:Generator_ColumnPropNameInTable="DRY_WEIGHTColumn" msprop:Generator_UserColumnName="DRY_WEIGHT" type="xs:string" default="0" minOccurs="0" />
+              <xs:element name="TODAY_WEIGHT" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="TODAY_WEIGHT" msprop:Generator_ColumnVarNameInTable="columnTODAY_WEIGHT" msprop:Generator_ColumnPropNameInTable="TODAY_WEIGHTColumn" msprop:Generator_UserColumnName="TODAY_WEIGHT" type="xs:string" default="0" minOccurs="0" />
+              <xs:element name="ISUPLOAD" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="ISUPLOAD" msprop:Generator_ColumnVarNameInTable="columnISUPLOAD" msprop:Generator_ColumnPropNameInTable="ISUPLOADColumn" msprop:Generator_UserColumnName="ISUPLOAD" type="xs:string" default="" minOccurs="0" />
+              <xs:element name="UPSTATE" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="UPSTATE" msprop:Generator_ColumnVarNameInTable="columnUPSTATE" msprop:Generator_ColumnPropNameInTable="UPSTATEColumn" msprop:Generator_UserColumnName="UPSTATE" type="xs:string" default="" minOccurs="0" />
+              <xs:element name="FIRST_PURIFIER_M2INDEX" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="FIRST_PURIFIER_M2INDEX" msprop:Generator_ColumnVarNameInTable="columnFIRST_PURIFIER_M2INDEX" msprop:Generator_ColumnPropNameInTable="FIRST_PURIFIER_M2INDEXColumn" msprop:Generator_UserColumnName="FIRST_PURIFIER_M2INDEX" type="xs:string" default="" minOccurs="0" />
+              <xs:element name="PURIFICATION_MODENAME" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="PURIFICATION_MODENAME" msprop:Generator_ColumnVarNameInTable="columnPURIFICATION_MODENAME" msprop:Generator_ColumnPropNameInTable="PURIFICATION_MODENAMEColumn" msprop:Generator_UserColumnName="PURIFICATION_MODENAME" type="xs:string" default="" minOccurs="0" />
+              <xs:element name="FIRST_PURIFIER_MODELNAME" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="FIRST_PURIFIER_MODELNAME" msprop:Generator_ColumnVarNameInTable="columnFIRST_PURIFIER_MODELNAME" msprop:Generator_ColumnPropNameInTable="FIRST_PURIFIER_MODELNAMEColumn" msprop:Generator_UserColumnName="FIRST_PURIFIER_MODELNAME" type="xs:string" default="" minOccurs="0" />
+              <xs:element name="FIRST_PURIFIER_NAMESTR" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="FIRST_PURIFIER_NAMESTR" msprop:Generator_ColumnVarNameInTable="columnFIRST_PURIFIER_NAMESTR" msprop:Generator_ColumnPropNameInTable="FIRST_PURIFIER_NAMESTRColumn" msprop:Generator_UserColumnName="FIRST_PURIFIER_NAMESTR" type="xs:string" default="" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="MED_CURE_MAIN" msprop:Generator_TableClassName="MED_CURE_MAINDataTable" msprop:Generator_TableVarName="tableMED_CURE_MAIN" msprop:Generator_TablePropName="MED_CURE_MAIN" msprop:Generator_RowDeletingName="MED_CURE_MAINRowDeleting" msprop:Generator_RowChangingName="MED_CURE_MAINRowChanging" msprop:Generator_RowEvHandlerName="MED_CURE_MAINRowChangeEventHandler" msprop:Generator_RowDeletedName="MED_CURE_MAINRowDeleted" msprop:Generator_UserTableName="MED_CURE_MAIN" msprop:Generator_RowChangedName="MED_CURE_MAINRowChanged" msprop:Generator_RowEvArgName="MED_CURE_MAINRowChangeEvent" msprop:Generator_RowClassName="MED_CURE_MAINRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CURE_ID" msprop:Generator_ColumnVarNameInTable="columnCURE_ID" msprop:Generator_ColumnPropNameInRow="CURE_ID" msprop:Generator_ColumnPropNameInTable="CURE_IDColumn" msprop:Generator_UserColumnName="CURE_ID">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RECIPE_ID" msprop:Generator_ColumnVarNameInTable="columnRECIPE_ID" msprop:Generator_ColumnPropNameInRow="RECIPE_ID" msprop:Generator_ColumnPropNameInTable="RECIPE_IDColumn" msprop:Generator_UserColumnName="RECIPE_ID">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="HEMODIALYSIS_ID" msprop:Generator_ColumnVarNameInTable="columnHEMODIALYSIS_ID" msprop:Generator_ColumnPropNameInRow="HEMODIALYSIS_ID" msprop:Generator_ColumnPropNameInTable="HEMODIALYSIS_IDColumn" msprop:Generator_UserColumnName="HEMODIALYSIS_ID" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RECIPE_TYPE" msprop:Generator_ColumnVarNameInTable="columnRECIPE_TYPE" msprop:Generator_ColumnPropNameInRow="RECIPE_TYPE" msprop:Generator_ColumnPropNameInTable="RECIPE_TYPEColumn" msprop:Generator_UserColumnName="RECIPE_TYPE" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CALCIUM_ION" msprop:Generator_ColumnVarNameInTable="columnCALCIUM_ION" msprop:Generator_ColumnPropNameInRow="CALCIUM_ION" msprop:Generator_ColumnPropNameInTable="CALCIUM_IONColumn" msprop:Generator_UserColumnName="CALCIUM_ION" type="xs:double" minOccurs="0" />
+              <xs:element name="CURE_STATUS" msprop:Generator_ColumnVarNameInTable="columnCURE_STATUS" msprop:Generator_ColumnPropNameInRow="CURE_STATUS" msprop:Generator_ColumnPropNameInTable="CURE_STATUSColumn" msprop:Generator_UserColumnName="CURE_STATUS" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DOCTOR_ID" msprop:Generator_ColumnVarNameInTable="columnDOCTOR_ID" msprop:Generator_ColumnPropNameInRow="DOCTOR_ID" msprop:Generator_ColumnPropNameInTable="DOCTOR_IDColumn" msprop:Generator_UserColumnName="DOCTOR_ID" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RECIPE_DATE" msprop:Generator_ColumnVarNameInTable="columnRECIPE_DATE" msprop:Generator_ColumnPropNameInRow="RECIPE_DATE" msprop:Generator_ColumnPropNameInTable="RECIPE_DATEColumn" msprop:Generator_UserColumnName="RECIPE_DATE" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="BLOOW_FLOW" msprop:Generator_ColumnVarNameInTable="columnBLOOW_FLOW" msprop:Generator_ColumnPropNameInRow="BLOOW_FLOW" msprop:Generator_ColumnPropNameInTable="BLOOW_FLOWColumn" msprop:Generator_UserColumnName="BLOOW_FLOW" type="xs:double" minOccurs="0" />
+              <xs:element name="DIALYSATE_FLOW" msprop:Generator_ColumnVarNameInTable="columnDIALYSATE_FLOW" msprop:Generator_ColumnPropNameInRow="DIALYSATE_FLOW" msprop:Generator_ColumnPropNameInTable="DIALYSATE_FLOWColumn" msprop:Generator_UserColumnName="DIALYSATE_FLOW" type="xs:double" minOccurs="0" />
+              <xs:element name="DIALYSATE_TEMPERATURE" msprop:Generator_ColumnVarNameInTable="columnDIALYSATE_TEMPERATURE" msprop:Generator_ColumnPropNameInRow="DIALYSATE_TEMPERATURE" msprop:Generator_ColumnPropNameInTable="DIALYSATE_TEMPERATUREColumn" msprop:Generator_UserColumnName="DIALYSATE_TEMPERATURE" type="xs:double" minOccurs="0" />
+              <xs:element name="UFR" msprop:Generator_ColumnVarNameInTable="columnUFR" msprop:Generator_ColumnPropNameInRow="UFR" msprop:Generator_ColumnPropNameInTable="UFRColumn" msprop:Generator_UserColumnName="UFR" type="xs:double" minOccurs="0" />
+              <xs:element name="SODION" msprop:Generator_ColumnVarNameInTable="columnSODION" msprop:Generator_ColumnPropNameInRow="SODION" msprop:Generator_ColumnPropNameInTable="SODIONColumn" msprop:Generator_UserColumnName="SODION" type="xs:double" minOccurs="0" />
+              <xs:element name="POTASSIUM_ION" msprop:Generator_ColumnVarNameInTable="columnPOTASSIUM_ION" msprop:Generator_ColumnPropNameInRow="POTASSIUM_ION" msprop:Generator_ColumnPropNameInTable="POTASSIUM_IONColumn" msprop:Generator_UserColumnName="POTASSIUM_ION" type="xs:double" minOccurs="0" />
+              <xs:element name="PERFORM_SCHEDULE" msprop:Generator_ColumnVarNameInTable="columnPERFORM_SCHEDULE" msprop:Generator_ColumnPropNameInRow="PERFORM_SCHEDULE" msprop:Generator_ColumnPropNameInTable="PERFORM_SCHEDULEColumn" msprop:Generator_UserColumnName="PERFORM_SCHEDULE" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="NURSE_ID" msprop:Generator_ColumnVarNameInTable="columnNURSE_ID" msprop:Generator_ColumnPropNameInRow="NURSE_ID" msprop:Generator_ColumnPropNameInTable="NURSE_IDColumn" msprop:Generator_UserColumnName="NURSE_ID" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PURIFICATION_MODE" msprop:Generator_ColumnVarNameInTable="columnPURIFICATION_MODE" msprop:Generator_ColumnPropNameInRow="PURIFICATION_MODE" msprop:Generator_ColumnPropNameInTable="PURIFICATION_MODEColumn" msprop:Generator_UserColumnName="PURIFICATION_MODE" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CLEAN_UP_TIMES" msprop:Generator_ColumnVarNameInTable="columnCLEAN_UP_TIMES" msprop:Generator_ColumnPropNameInRow="CLEAN_UP_TIMES" msprop:Generator_ColumnPropNameInTable="CLEAN_UP_TIMESColumn" msprop:Generator_UserColumnName="CLEAN_UP_TIMES" type="xs:int" minOccurs="0" />
+              <xs:element name="FREQUENCY_HOURS" msprop:Generator_ColumnVarNameInTable="columnFREQUENCY_HOURS" msprop:Generator_ColumnPropNameInRow="FREQUENCY_HOURS" msprop:Generator_ColumnPropNameInTable="FREQUENCY_HOURSColumn" msprop:Generator_UserColumnName="FREQUENCY_HOURS" type="xs:double" minOccurs="0" />
+              <xs:element name="FREQUENCY_MINS" msprop:Generator_ColumnVarNameInTable="columnFREQUENCY_MINS" msprop:Generator_ColumnPropNameInRow="FREQUENCY_MINS" msprop:Generator_ColumnPropNameInTable="FREQUENCY_MINSColumn" msprop:Generator_UserColumnName="FREQUENCY_MINS" type="xs:double" minOccurs="0" />
+              <xs:element name="BEGIN_TIME" msprop:Generator_ColumnVarNameInTable="columnBEGIN_TIME" msprop:Generator_ColumnPropNameInRow="BEGIN_TIME" msprop:Generator_ColumnPropNameInTable="BEGIN_TIMEColumn" msprop:Generator_UserColumnName="BEGIN_TIME" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="END_TIME" msprop:Generator_ColumnVarNameInTable="columnEND_TIME" msprop:Generator_ColumnPropNameInRow="END_TIME" msprop:Generator_ColumnPropNameInTable="END_TIMEColumn" msprop:Generator_UserColumnName="END_TIME" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="LAST_TIME_DRY_WEIGHT" msprop:Generator_ColumnVarNameInTable="columnLAST_TIME_DRY_WEIGHT" msprop:Generator_ColumnPropNameInRow="LAST_TIME_DRY_WEIGHT" msprop:Generator_ColumnPropNameInTable="LAST_TIME_DRY_WEIGHTColumn" msprop:Generator_UserColumnName="LAST_TIME_DRY_WEIGHT" type="xs:double" minOccurs="0" />
+              <xs:element name="BEFORE_DRY_WEIGHT" msprop:Generator_ColumnVarNameInTable="columnBEFORE_DRY_WEIGHT" msprop:Generator_ColumnPropNameInRow="BEFORE_DRY_WEIGHT" msprop:Generator_ColumnPropNameInTable="BEFORE_DRY_WEIGHTColumn" msprop:Generator_UserColumnName="BEFORE_DRY_WEIGHT" type="xs:string" minOccurs="0" />
+              <xs:element name="BEFORE_SYSTOLIC_PRESSURE" msprop:Generator_ColumnVarNameInTable="columnBEFORE_SYSTOLIC_PRESSURE" msprop:Generator_ColumnPropNameInRow="BEFORE_SYSTOLIC_PRESSURE" msprop:Generator_ColumnPropNameInTable="BEFORE_SYSTOLIC_PRESSUREColumn" msprop:Generator_UserColumnName="BEFORE_SYSTOLIC_PRESSURE" type="xs:double" minOccurs="0" />
+              <xs:element name="BEFORE_DIASTOLIC_PRESSURE" msprop:Generator_ColumnVarNameInTable="columnBEFORE_DIASTOLIC_PRESSURE" msprop:Generator_ColumnPropNameInRow="BEFORE_DIASTOLIC_PRESSURE" msprop:Generator_ColumnPropNameInTable="BEFORE_DIASTOLIC_PRESSUREColumn" msprop:Generator_UserColumnName="BEFORE_DIASTOLIC_PRESSURE" type="xs:double" minOccurs="0" />
+              <xs:element name="BEFORE_BP" msprop:nullValue="0" msprop:Generator_ColumnPropNameInRow="BEFORE_BP" msprop:Generator_ColumnVarNameInTable="columnBEFORE_BP" msprop:Generator_ColumnPropNameInTable="BEFORE_BPColumn" msprop:Generator_UserColumnName="BEFORE_BP" type="xs:int" default="0" minOccurs="0" />
+              <xs:element name="AFTER_SYSTOLIC_PRESSURE" msprop:Generator_ColumnVarNameInTable="columnAFTER_SYSTOLIC_PRESSURE" msprop:Generator_ColumnPropNameInRow="AFTER_SYSTOLIC_PRESSURE" msprop:Generator_ColumnPropNameInTable="AFTER_SYSTOLIC_PRESSUREColumn" msprop:Generator_UserColumnName="AFTER_SYSTOLIC_PRESSURE" type="xs:double" minOccurs="0" />
+              <xs:element name="AFTER_DIASTOLIC_PRESSURE" msprop:Generator_ColumnVarNameInTable="columnAFTER_DIASTOLIC_PRESSURE" msprop:Generator_ColumnPropNameInRow="AFTER_DIASTOLIC_PRESSURE" msprop:Generator_ColumnPropNameInTable="AFTER_DIASTOLIC_PRESSUREColumn" msprop:Generator_UserColumnName="AFTER_DIASTOLIC_PRESSURE" type="xs:double" minOccurs="0" />
+              <xs:element name="AFTER_BP" msprop:nullValue="0" msprop:Generator_ColumnPropNameInRow="AFTER_BP" msprop:Generator_ColumnVarNameInTable="columnAFTER_BP" msprop:Generator_ColumnPropNameInTable="AFTER_BPColumn" msprop:Generator_UserColumnName="AFTER_BP" type="xs:int" default="0" minOccurs="0" />
+              <xs:element name="DRY_WATER_VALUE" msprop:Generator_ColumnVarNameInTable="columnDRY_WATER_VALUE" msprop:Generator_ColumnPropNameInRow="DRY_WATER_VALUE" msprop:Generator_ColumnPropNameInTable="DRY_WATER_VALUEColumn" msprop:Generator_UserColumnName="DRY_WATER_VALUE" type="xs:double" minOccurs="0" />
+              <xs:element name="BEFORE_TEMPERATURE" msprop:Generator_ColumnVarNameInTable="columnBEFORE_TEMPERATURE" msprop:Generator_ColumnPropNameInRow="BEFORE_TEMPERATURE" msprop:Generator_ColumnPropNameInTable="BEFORE_TEMPERATUREColumn" msprop:Generator_UserColumnName="BEFORE_TEMPERATURE" type="xs:double" minOccurs="0" />
+              <xs:element name="AFTER_TEMPERATURE" msprop:Generator_ColumnVarNameInTable="columnAFTER_TEMPERATURE" msprop:Generator_ColumnPropNameInRow="AFTER_TEMPERATURE" msprop:Generator_ColumnPropNameInTable="AFTER_TEMPERATUREColumn" msprop:Generator_UserColumnName="AFTER_TEMPERATURE" type="xs:double" minOccurs="0" />
+              <xs:element name="BEFORE_HEART_RATE" msprop:Generator_ColumnVarNameInTable="columnBEFORE_HEART_RATE" msprop:Generator_ColumnPropNameInRow="BEFORE_HEART_RATE" msprop:Generator_ColumnPropNameInTable="BEFORE_HEART_RATEColumn" msprop:Generator_UserColumnName="BEFORE_HEART_RATE" type="xs:double" minOccurs="0" />
+              <xs:element name="AFTER_HEART_RATE" msprop:Generator_ColumnVarNameInTable="columnAFTER_HEART_RATE" msprop:Generator_ColumnPropNameInRow="AFTER_HEART_RATE" msprop:Generator_ColumnPropNameInTable="AFTER_HEART_RATEColumn" msprop:Generator_UserColumnName="AFTER_HEART_RATE" type="xs:double" minOccurs="0" />
+              <xs:element name="PRIMARY_NURSE" msprop:Generator_ColumnVarNameInTable="columnPRIMARY_NURSE" msprop:Generator_ColumnPropNameInRow="PRIMARY_NURSE" msprop:Generator_ColumnPropNameInTable="PRIMARY_NURSEColumn" msprop:Generator_UserColumnName="PRIMARY_NURSE" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PRIMARY_DOCTOR" msprop:Generator_ColumnVarNameInTable="columnPRIMARY_DOCTOR" msprop:Generator_ColumnPropNameInRow="PRIMARY_DOCTOR" msprop:Generator_ColumnPropNameInTable="PRIMARY_DOCTORColumn" msprop:Generator_UserColumnName="PRIMARY_DOCTOR" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PUNCTURE_NURSE" msprop:Generator_ColumnVarNameInTable="columnPUNCTURE_NURSE" msprop:Generator_ColumnPropNameInRow="PUNCTURE_NURSE" msprop:Generator_ColumnPropNameInTable="PUNCTURE_NURSEColumn" msprop:Generator_UserColumnName="PUNCTURE_NURSE" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MACHINE_ID" msprop:Generator_ColumnVarNameInTable="columnMACHINE_ID" msprop:Generator_ColumnPropNameInRow="MACHINE_ID" msprop:Generator_ColumnPropNameInTable="MACHINE_IDColumn" msprop:Generator_UserColumnName="MACHINE_ID" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="VASCULAR_ACCESS_ID" msprop:Generator_ColumnVarNameInTable="columnVASCULAR_ACCESS_ID" msprop:Generator_ColumnPropNameInRow="VASCULAR_ACCESS_ID" msprop:Generator_ColumnPropNameInTable="VASCULAR_ACCESS_IDColumn" msprop:Generator_UserColumnName="VASCULAR_ACCESS_ID" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="HEPARIN_SPECIES" msprop:Generator_ColumnVarNameInTable="columnHEPARIN_SPECIES" msprop:Generator_ColumnPropNameInRow="HEPARIN_SPECIES" msprop:Generator_ColumnPropNameInTable="HEPARIN_SPECIESColumn" msprop:Generator_UserColumnName="HEPARIN_SPECIES" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FIRST_HEPARIN" msprop:Generator_ColumnVarNameInTable="columnFIRST_HEPARIN" msprop:Generator_ColumnPropNameInRow="FIRST_HEPARIN" msprop:Generator_ColumnPropNameInTable="FIRST_HEPARINColumn" msprop:Generator_UserColumnName="FIRST_HEPARIN" type="xs:double" minOccurs="0" />
+              <xs:element name="DOSIS_SUSTENTATIVA" msprop:Generator_ColumnVarNameInTable="columnDOSIS_SUSTENTATIVA" msprop:Generator_ColumnPropNameInRow="DOSIS_SUSTENTATIVA" msprop:Generator_ColumnPropNameInTable="DOSIS_SUSTENTATIVAColumn" msprop:Generator_UserColumnName="DOSIS_SUSTENTATIVA" type="xs:float" minOccurs="0" />
+              <xs:element name="MACHINE_TYPE" msprop:Generator_ColumnVarNameInTable="columnMACHINE_TYPE" msprop:Generator_ColumnPropNameInRow="MACHINE_TYPE" msprop:Generator_ColumnPropNameInTable="MACHINE_TYPEColumn" msprop:Generator_UserColumnName="MACHINE_TYPE" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PURIFIER_NAME" msprop:Generator_ColumnVarNameInTable="columnPURIFIER_NAME" msprop:Generator_ColumnPropNameInRow="PURIFIER_NAME" msprop:Generator_ColumnPropNameInTable="PURIFIER_NAMEColumn" msprop:Generator_UserColumnName="PURIFIER_NAME" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PURIFIER_M2" msprop:Generator_ColumnVarNameInTable="columnPURIFIER_M2" msprop:Generator_ColumnPropNameInRow="PURIFIER_M2" msprop:Generator_ColumnPropNameInTable="PURIFIER_M2Column" msprop:Generator_UserColumnName="PURIFIER_M2" type="xs:double" minOccurs="0" />
+              <xs:element name="USE_TYPE" msprop:Generator_ColumnVarNameInTable="columnUSE_TYPE" msprop:Generator_ColumnPropNameInRow="USE_TYPE" msprop:Generator_ColumnPropNameInTable="USE_TYPEColumn" msprop:Generator_UserColumnName="USE_TYPE" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="REUSE_TIMES" msprop:Generator_ColumnVarNameInTable="columnREUSE_TIMES" msprop:Generator_ColumnPropNameInRow="REUSE_TIMES" msprop:Generator_ColumnPropNameInTable="REUSE_TIMESColumn" msprop:Generator_UserColumnName="REUSE_TIMES" type="xs:double" minOccurs="0" />
+              <xs:element name="A_LIQUID" msprop:Generator_ColumnVarNameInTable="columnA_LIQUID" msprop:Generator_ColumnPropNameInRow="A_LIQUID" msprop:Generator_ColumnPropNameInTable="A_LIQUIDColumn" msprop:Generator_UserColumnName="A_LIQUID" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="B_LIQUID" msprop:Generator_ColumnVarNameInTable="columnB_LIQUID" msprop:Generator_ColumnPropNameInRow="B_LIQUID" msprop:Generator_ColumnPropNameInTable="B_LIQUIDColumn" msprop:Generator_UserColumnName="B_LIQUID" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BIRCARBONATE" msprop:Generator_ColumnVarNameInTable="columnBIRCARBONATE" msprop:Generator_ColumnPropNameInRow="BIRCARBONATE" msprop:Generator_ColumnPropNameInTable="BIRCARBONATEColumn" msprop:Generator_UserColumnName="BIRCARBONATE" type="xs:double" minOccurs="0" />
+              <xs:element name="AMYLACEUM" msprop:Generator_ColumnVarNameInTable="columnAMYLACEUM" msprop:Generator_ColumnPropNameInRow="AMYLACEUM" msprop:Generator_ColumnPropNameInTable="AMYLACEUMColumn" msprop:Generator_UserColumnName="AMYLACEUM" type="xs:double" minOccurs="0" />
+              <xs:element name="SUMMARY" msprop:Generator_ColumnVarNameInTable="columnSUMMARY" msprop:Generator_ColumnPropNameInRow="SUMMARY" msprop:Generator_ColumnPropNameInTable="SUMMARYColumn" msprop:Generator_UserColumnName="SUMMARY" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="4000" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CURE_CREATE_DATE" msprop:Generator_ColumnVarNameInTable="columnCURE_CREATE_DATE" msprop:Generator_ColumnPropNameInRow="CURE_CREATE_DATE" msprop:Generator_ColumnPropNameInTable="CURE_CREATE_DATEColumn" msprop:Generator_UserColumnName="CURE_CREATE_DATE" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="VASCULAR_ACCESS_FIRM" msprop:Generator_ColumnVarNameInTable="columnVASCULAR_ACCESS_FIRM" msprop:Generator_ColumnPropNameInRow="VASCULAR_ACCESS_FIRM" msprop:Generator_ColumnPropNameInTable="VASCULAR_ACCESS_FIRMColumn" msprop:Generator_UserColumnName="VASCULAR_ACCESS_FIRM" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="VASCULAR_ACCESS_GLIDE" msprop:Generator_ColumnVarNameInTable="columnVASCULAR_ACCESS_GLIDE" msprop:Generator_ColumnPropNameInRow="VASCULAR_ACCESS_GLIDE" msprop:Generator_ColumnPropNameInTable="VASCULAR_ACCESS_GLIDEColumn" msprop:Generator_UserColumnName="VASCULAR_ACCESS_GLIDE" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="VASCULAR_ACCESS_SWELLING" msprop:Generator_ColumnVarNameInTable="columnVASCULAR_ACCESS_SWELLING" msprop:Generator_ColumnPropNameInRow="VASCULAR_ACCESS_SWELLING" msprop:Generator_ColumnPropNameInTable="VASCULAR_ACCESS_SWELLINGColumn" msprop:Generator_UserColumnName="VASCULAR_ACCESS_SWELLING" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="VASCULAR_ACCESS_ERRHYISIS" msprop:Generator_ColumnVarNameInTable="columnVASCULAR_ACCESS_ERRHYISIS" msprop:Generator_ColumnPropNameInRow="VASCULAR_ACCESS_ERRHYISIS" msprop:Generator_ColumnPropNameInTable="VASCULAR_ACCESS_ERRHYISISColumn" msprop:Generator_UserColumnName="VASCULAR_ACCESS_ERRHYISIS" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="VASCULAR_ACCESS_THROMBUS" msprop:Generator_ColumnVarNameInTable="columnVASCULAR_ACCESS_THROMBUS" msprop:Generator_ColumnPropNameInRow="VASCULAR_ACCESS_THROMBUS" msprop:Generator_ColumnPropNameInTable="VASCULAR_ACCESS_THROMBUSColumn" msprop:Generator_UserColumnName="VASCULAR_ACCESS_THROMBUS" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="VASCULAR_ACCESS_BLOOD" msprop:Generator_ColumnVarNameInTable="columnVASCULAR_ACCESS_BLOOD" msprop:Generator_ColumnPropNameInRow="VASCULAR_ACCESS_BLOOD" msprop:Generator_ColumnPropNameInTable="VASCULAR_ACCESS_BLOODColumn" msprop:Generator_UserColumnName="VASCULAR_ACCESS_BLOOD" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FILTRATION_DISPLACEMENT_LIQUID" msprop:Generator_ColumnVarNameInTable="columnFILTRATION_DISPLACEMENT_LIQUID" msprop:Generator_ColumnPropNameInRow="FILTRATION_DISPLACEMENT_LIQUID" msprop:Generator_ColumnPropNameInTable="FILTRATION_DISPLACEMENT_LIQUIDColumn" msprop:Generator_UserColumnName="FILTRATION_DISPLACEMENT_LIQUID" type="xs:double" minOccurs="0" />
+              <xs:element name="FILTRATION_PERCOLATE" msprop:Generator_ColumnVarNameInTable="columnFILTRATION_PERCOLATE" msprop:Generator_ColumnPropNameInRow="FILTRATION_PERCOLATE" msprop:Generator_ColumnPropNameInTable="FILTRATION_PERCOLATEColumn" msprop:Generator_UserColumnName="FILTRATION_PERCOLATE" type="xs:double" minOccurs="0" />
+              <xs:element name="DISPLACEMENT_LIQUID" msprop:Generator_ColumnVarNameInTable="columnDISPLACEMENT_LIQUID" msprop:Generator_ColumnPropNameInRow="DISPLACEMENT_LIQUID" msprop:Generator_ColumnPropNameInTable="DISPLACEMENT_LIQUIDColumn" msprop:Generator_UserColumnName="DISPLACEMENT_LIQUID" type="xs:double" minOccurs="0" />
+              <xs:element name="PERCOLATE" msprop:Generator_ColumnVarNameInTable="columnPERCOLATE" msprop:Generator_ColumnPropNameInRow="PERCOLATE" msprop:Generator_ColumnPropNameInTable="PERCOLATEColumn" msprop:Generator_UserColumnName="PERCOLATE" type="xs:double" minOccurs="0" />
+              <xs:element name="DOCTOR_ADVICE" msprop:Generator_ColumnVarNameInTable="columnDOCTOR_ADVICE" msprop:Generator_ColumnPropNameInRow="DOCTOR_ADVICE" msprop:Generator_ColumnPropNameInTable="DOCTOR_ADVICEColumn" msprop:Generator_UserColumnName="DOCTOR_ADVICE" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2000" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SUMMARY2" msprop:Generator_ColumnVarNameInTable="columnSUMMARY2" msprop:Generator_ColumnPropNameInRow="SUMMARY2" msprop:Generator_ColumnPropNameInTable="SUMMARY2Column" msprop:Generator_UserColumnName="SUMMARY2" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="500" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CHECK_NURSE" msprop:Generator_ColumnVarNameInTable="columnCHECK_NURSE" msprop:Generator_ColumnPropNameInRow="CHECK_NURSE" msprop:Generator_ColumnPropNameInTable="CHECK_NURSEColumn" msprop:Generator_UserColumnName="CHECK_NURSE" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="500" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FIRST_DRUG_UNIT" msprop:Generator_ColumnVarNameInTable="columnFIRST_DRUG_UNIT" msprop:Generator_ColumnPropNameInRow="FIRST_DRUG_UNIT" msprop:Generator_ColumnPropNameInTable="FIRST_DRUG_UNITColumn" msprop:Generator_UserColumnName="FIRST_DRUG_UNIT" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="500" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SECOND_DRUG_UNIT" msprop:Generator_ColumnVarNameInTable="columnSECOND_DRUG_UNIT" msprop:Generator_ColumnPropNameInRow="SECOND_DRUG_UNIT" msprop:Generator_ColumnPropNameInTable="SECOND_DRUG_UNITColumn" msprop:Generator_UserColumnName="SECOND_DRUG_UNIT" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="500" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="VEIN" msprop:Generator_ColumnVarNameInTable="columnVEIN" msprop:Generator_ColumnPropNameInRow="VEIN" msprop:Generator_ColumnPropNameInTable="VEINColumn" msprop:Generator_UserColumnName="VEIN" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="500" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BEFORE_DRY_WEIGHT_TAG" msprop:Generator_ColumnVarNameInTable="columnBEFORE_DRY_WEIGHT_TAG" msprop:Generator_ColumnPropNameInRow="BEFORE_DRY_WEIGHT_TAG" msprop:Generator_ColumnPropNameInTable="BEFORE_DRY_WEIGHT_TAGColumn" msprop:Generator_UserColumnName="BEFORE_DRY_WEIGHT_TAG" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="200" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="AFTER_DRY_WEIGHT_TAG" msprop:Generator_ColumnVarNameInTable="columnAFTER_DRY_WEIGHT_TAG" msprop:Generator_ColumnPropNameInRow="AFTER_DRY_WEIGHT_TAG" msprop:Generator_ColumnPropNameInTable="AFTER_DRY_WEIGHT_TAGColumn" msprop:Generator_UserColumnName="AFTER_DRY_WEIGHT_TAG" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="200" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="REUSE_TIMES_TAG" msprop:Generator_ColumnVarNameInTable="columnREUSE_TIMES_TAG" msprop:Generator_ColumnPropNameInRow="REUSE_TIMES_TAG" msprop:Generator_ColumnPropNameInTable="REUSE_TIMES_TAGColumn" msprop:Generator_UserColumnName="REUSE_TIMES_TAG" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="200" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MACHINE_ID_TAG" msprop:Generator_ColumnVarNameInTable="columnMACHINE_ID_TAG" msprop:Generator_ColumnPropNameInRow="MACHINE_ID_TAG" msprop:Generator_ColumnPropNameInTable="MACHINE_ID_TAGColumn" msprop:Generator_UserColumnName="MACHINE_ID_TAG" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="200" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BLOOD_UP" msprop:Generator_ColumnVarNameInTable="columnBLOOD_UP" msprop:Generator_ColumnPropNameInRow="BLOOD_UP" msprop:Generator_ColumnPropNameInTable="BLOOD_UPColumn" msprop:Generator_UserColumnName="BLOOD_UP" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BLOOD_TYPE" msprop:Generator_ColumnVarNameInTable="columnBLOOD_TYPE" msprop:Generator_ColumnPropNameInRow="BLOOD_TYPE" msprop:Generator_ColumnPropNameInTable="BLOOD_TYPEColumn" msprop:Generator_UserColumnName="BLOOD_TYPE" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BLOOD_TRANSFUSION" msprop:Generator_ColumnVarNameInTable="columnBLOOD_TRANSFUSION" msprop:Generator_ColumnPropNameInRow="BLOOD_TRANSFUSION" msprop:Generator_ColumnPropNameInTable="BLOOD_TRANSFUSIONColumn" msprop:Generator_UserColumnName="BLOOD_TRANSFUSION" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="COAGULATION_IN_DIALYSER" msprop:Generator_ColumnVarNameInTable="columnCOAGULATION_IN_DIALYSER" msprop:Generator_ColumnPropNameInRow="COAGULATION_IN_DIALYSER" msprop:Generator_ColumnPropNameInTable="COAGULATION_IN_DIALYSERColumn" msprop:Generator_UserColumnName="COAGULATION_IN_DIALYSER" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="IN_BASKET_CLEAN" msprop:Generator_ColumnVarNameInTable="columnIN_BASKET_CLEAN" msprop:Generator_ColumnPropNameInRow="IN_BASKET_CLEAN" msprop:Generator_ColumnPropNameInTable="IN_BASKET_CLEANColumn" msprop:Generator_UserColumnName="IN_BASKET_CLEAN" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="IN_BASKET_RED_HOT" msprop:Generator_ColumnVarNameInTable="columnIN_BASKET_RED_HOT" msprop:Generator_ColumnPropNameInRow="IN_BASKET_RED_HOT" msprop:Generator_ColumnPropNameInTable="IN_BASKET_RED_HOTColumn" msprop:Generator_UserColumnName="IN_BASKET_RED_HOT" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="IN_BASKET_ECCHYMOSIS" msprop:Generator_ColumnVarNameInTable="columnIN_BASKET_ECCHYMOSIS" msprop:Generator_ColumnPropNameInRow="IN_BASKET_ECCHYMOSIS" msprop:Generator_ColumnPropNameInTable="IN_BASKET_ECCHYMOSISColumn" msprop:Generator_UserColumnName="IN_BASKET_ECCHYMOSIS" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="IN_BASKET_TREMOR" msprop:Generator_ColumnVarNameInTable="columnIN_BASKET_TREMOR" msprop:Generator_ColumnPropNameInRow="IN_BASKET_TREMOR" msprop:Generator_ColumnPropNameInTable="IN_BASKET_TREMORColumn" msprop:Generator_UserColumnName="IN_BASKET_TREMOR" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="IN_BASKET_NOISE" msprop:Generator_ColumnVarNameInTable="columnIN_BASKET_NOISE" msprop:Generator_ColumnPropNameInRow="IN_BASKET_NOISE" msprop:Generator_ColumnPropNameInTable="IN_BASKET_NOISEColumn" msprop:Generator_UserColumnName="IN_BASKET_NOISE" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="IN_BASKET_VASCULAR_ELASTICITY" msprop:Generator_ColumnVarNameInTable="columnIN_BASKET_VASCULAR_ELASTICITY" msprop:Generator_ColumnPropNameInRow="IN_BASKET_VASCULAR_ELASTICITY" msprop:Generator_ColumnPropNameInTable="IN_BASKET_VASCULAR_ELASTICITYColumn" msprop:Generator_UserColumnName="IN_BASKET_VASCULAR_ELASTICITY" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="IN_BASKET_VASCULAR_OTHER" msprop:Generator_ColumnVarNameInTable="columnIN_BASKET_VASCULAR_OTHER" msprop:Generator_ColumnPropNameInRow="IN_BASKET_VASCULAR_OTHER" msprop:Generator_ColumnPropNameInTable="IN_BASKET_VASCULAR_OTHERColumn" msprop:Generator_UserColumnName="IN_BASKET_VASCULAR_OTHER" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="500" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="IN_BASKET_WOUND_ALLERGY" msprop:Generator_ColumnVarNameInTable="columnIN_BASKET_WOUND_ALLERGY" msprop:Generator_ColumnPropNameInRow="IN_BASKET_WOUND_ALLERGY" msprop:Generator_ColumnPropNameInTable="IN_BASKET_WOUND_ALLERGYColumn" msprop:Generator_UserColumnName="IN_BASKET_WOUND_ALLERGY" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="IN_BASKET_PLASTER_ALLERGY" msprop:Generator_ColumnVarNameInTable="columnIN_BASKET_PLASTER_ALLERGY" msprop:Generator_ColumnPropNameInRow="IN_BASKET_PLASTER_ALLERGY" msprop:Generator_ColumnPropNameInTable="IN_BASKET_PLASTER_ALLERGYColumn" msprop:Generator_UserColumnName="IN_BASKET_PLASTER_ALLERGY" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="VASCULAR_ACCESS_TYPE" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="VASCULAR_ACCESS_TYPE" msprop:Generator_ColumnVarNameInTable="columnVASCULAR_ACCESS_TYPE" msprop:Generator_ColumnPropNameInTable="VASCULAR_ACCESS_TYPEColumn" msprop:Generator_UserColumnName="VASCULAR_ACCESS_TYPE" default="" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DRY_WEIGHT_TAG" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="DRY_WEIGHT_TAG" msprop:Generator_ColumnVarNameInTable="columnDRY_WEIGHT_TAG" msprop:Generator_ColumnPropNameInTable="DRY_WEIGHT_TAGColumn" msprop:Generator_UserColumnName="DRY_WEIGHT_TAG" default="" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SUBJECTIVE_COMFORT" msprop:nullValue="0" msprop:Generator_ColumnPropNameInRow="SUBJECTIVE_COMFORT" msprop:Generator_ColumnVarNameInTable="columnSUBJECTIVE_COMFORT" msprop:Generator_ColumnPropNameInTable="SUBJECTIVE_COMFORTColumn" msprop:Generator_UserColumnName="SUBJECTIVE_COMFORT" type="xs:string" default="0" minOccurs="0" />
+              <xs:element name="MACHINE_STATUS" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="MACHINE_STATUS" msprop:Generator_ColumnVarNameInTable="columnMACHINE_STATUS" msprop:Generator_ColumnPropNameInTable="MACHINE_STATUSColumn" msprop:Generator_UserColumnName="MACHINE_STATUS" type="xs:string" default="" minOccurs="0" />
+              <xs:element name="VASCULAR_ACCESS_STATE" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="VASCULAR_ACCESS_STATE" msprop:Generator_ColumnVarNameInTable="columnVASCULAR_ACCESS_STATE" msprop:Generator_ColumnPropNameInTable="VASCULAR_ACCESS_STATEColumn" msprop:Generator_UserColumnName="VASCULAR_ACCESS_STATE" type="xs:string" default="" minOccurs="0" />
+              <xs:element name="DRY_WEIGHT" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="DRY_WEIGHT" msprop:Generator_ColumnVarNameInTable="columnDRY_WEIGHT" msprop:Generator_ColumnPropNameInTable="DRY_WEIGHTColumn" msprop:Generator_UserColumnName="DRY_WEIGHT" type="xs:string" default="0" minOccurs="0" />
+              <xs:element name="AFTER_DRY_WEIGHT" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="AFTER_DRY_WEIGHT" msprop:Generator_ColumnVarNameInTable="columnAFTER_DRY_WEIGHT" msprop:Generator_ColumnPropNameInTable="AFTER_DRY_WEIGHTColumn" msprop:Generator_UserColumnName="AFTER_DRY_WEIGHT" type="xs:string" default="0" minOccurs="0" />
+              <xs:element name="ISUPLOAD" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="ISUPLOAD" msprop:Generator_ColumnVarNameInTable="columnISUPLOAD" msprop:Generator_ColumnPropNameInTable="ISUPLOADColumn" msprop:Generator_UserColumnName="ISUPLOAD" type="xs:string" default="" minOccurs="0" />
+              <xs:element name="UPSTATE" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="UPSTATE" msprop:Generator_ColumnVarNameInTable="columnUPSTATE" msprop:Generator_ColumnPropNameInTable="UPSTATEColumn" msprop:Generator_UserColumnName="UPSTATE" type="xs:string" default="" minOccurs="0" />
+              <xs:element name="ITEM_NAME" msprop:Generator_ColumnVarNameInTable="columnITEM_NAME" msprop:Generator_ColumnPropNameInRow="ITEM_NAME" msprop:Generator_ColumnPropNameInTable="ITEM_NAMEColumn" msprop:Generator_UserColumnName="ITEM_NAME" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="MED_ESTIMATE_SUFFICIENCY" msprop:Generator_TableClassName="MED_ESTIMATE_SUFFICIENCYDataTable" msprop:Generator_TableVarName="tableMED_ESTIMATE_SUFFICIENCY" msprop:Generator_TablePropName="MED_ESTIMATE_SUFFICIENCY" msprop:Generator_RowDeletingName="MED_ESTIMATE_SUFFICIENCYRowDeleting" msprop:Generator_RowChangingName="MED_ESTIMATE_SUFFICIENCYRowChanging" msprop:Generator_RowEvHandlerName="MED_ESTIMATE_SUFFICIENCYRowChangeEventHandler" msprop:Generator_RowDeletedName="MED_ESTIMATE_SUFFICIENCYRowDeleted" msprop:Generator_UserTableName="MED_ESTIMATE_SUFFICIENCY" msprop:Generator_RowChangedName="MED_ESTIMATE_SUFFICIENCYRowChanged" msprop:Generator_RowEvArgName="MED_ESTIMATE_SUFFICIENCYRowChangeEvent" msprop:Generator_RowClassName="MED_ESTIMATE_SUFFICIENCYRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CREATE_DATE" msdata:Caption="录入日期" msprop:Generator_ColumnVarNameInTable="columnCREATE_DATE" msprop:Generator_ColumnPropNameInRow="CREATE_DATE" msprop:Generator_ColumnPropNameInTable="CREATE_DATEColumn" msprop:Generator_UserColumnName="CREATE_DATE" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="HEMODIALYSIS_ID" msdata:Caption="透析编号" msprop:Generator_ColumnVarNameInTable="columnHEMODIALYSIS_ID" msprop:Generator_ColumnPropNameInRow="HEMODIALYSIS_ID" msprop:Generator_ColumnPropNameInTable="HEMODIALYSIS_IDColumn" msprop:Generator_UserColumnName="HEMODIALYSIS_ID">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SPKT_V" msdata:Caption="尿素清除指数" msprop:Generator_ColumnVarNameInTable="columnSPKT_V" msprop:Generator_ColumnPropNameInRow="SPKT_V" msprop:Generator_ColumnPropNameInTable="SPKT_VColumn" msprop:Generator_UserColumnName="SPKT_V" type="xs:decimal" minOccurs="0" />
+              <xs:element name="BEFORE_BLOODUREA" msdata:Caption="透前血尿素" msprop:Generator_ColumnVarNameInTable="columnBEFORE_BLOODUREA" msprop:Generator_ColumnPropNameInRow="BEFORE_BLOODUREA" msprop:Generator_ColumnPropNameInTable="BEFORE_BLOODUREAColumn" msprop:Generator_UserColumnName="BEFORE_BLOODUREA" type="xs:decimal" minOccurs="0" />
+              <xs:element name="AFTER_BLOODUREA" msdata:Caption="透后血尿素" msprop:Generator_ColumnVarNameInTable="columnAFTER_BLOODUREA" msprop:Generator_ColumnPropNameInRow="AFTER_BLOODUREA" msprop:Generator_ColumnPropNameInTable="AFTER_BLOODUREAColumn" msprop:Generator_UserColumnName="AFTER_BLOODUREA" type="xs:decimal" minOccurs="0" />
+              <xs:element name="TIME" msdata:Caption="时间，单位h" msprop:Generator_ColumnVarNameInTable="columnTIME" msprop:Generator_ColumnPropNameInRow="TIME" msprop:Generator_ColumnPropNameInTable="TIMEColumn" msprop:Generator_UserColumnName="TIME" type="xs:decimal" minOccurs="0" />
+              <xs:element name="UF" msdata:Caption="超滤量，单位L" msprop:Generator_ColumnVarNameInTable="columnUF" msprop:Generator_ColumnPropNameInRow="UF" msprop:Generator_ColumnPropNameInTable="UFColumn" msprop:Generator_UserColumnName="UF" type="xs:decimal" minOccurs="0" />
+              <xs:element name="WEIGHT" msdata:Caption="体重，单位kg" msprop:Generator_ColumnVarNameInTable="columnWEIGHT" msprop:Generator_ColumnPropNameInRow="WEIGHT" msprop:Generator_ColumnPropNameInTable="WEIGHTColumn" msprop:Generator_UserColumnName="WEIGHT" type="xs:decimal" minOccurs="0" />
+              <xs:element name="URR" msdata:Caption="URR计算结果" msprop:Generator_ColumnVarNameInTable="columnURR" msprop:Generator_ColumnPropNameInRow="URR" msprop:Generator_ColumnPropNameInTable="URRColumn" msprop:Generator_UserColumnName="URR" type="xs:decimal" minOccurs="0" />
+              <xs:element name="ID" msdata:Caption="主键ID" msprop:Generator_ColumnVarNameInTable="columnID" msprop:Generator_ColumnPropNameInRow="ID" msprop:Generator_ColumnPropNameInTable="IDColumn" msprop:Generator_UserColumnName="ID">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="IS_DELETE" msdata:Caption="是否删除" msprop:Generator_ColumnVarNameInTable="columnIS_DELETE" msprop:Generator_ColumnPropNameInRow="IS_DELETE" msprop:Generator_ColumnPropNameInTable="IS_DELETEColumn" msprop:Generator_UserColumnName="IS_DELETE" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TS" msprop:Generator_ColumnVarNameInTable="columnTS" msprop:Generator_ColumnPropNameInRow="TS" msprop:Generator_ColumnPropNameInTable="TSColumn" msprop:Generator_UserColumnName="TS" type="xs:decimal" minOccurs="0" />
+              <xs:element name="SI" msprop:Generator_ColumnVarNameInTable="columnSI" msprop:Generator_ColumnPropNameInRow="SI" msprop:Generator_ColumnPropNameInTable="SIColumn" msprop:Generator_UserColumnName="SI" type="xs:decimal" minOccurs="0" />
+              <xs:element name="TIBC" msprop:Generator_ColumnVarNameInTable="columnTIBC" msprop:Generator_ColumnPropNameInRow="TIBC" msprop:Generator_ColumnPropNameInTable="TIBCColumn" msprop:Generator_UserColumnName="TIBC" type="xs:decimal" minOccurs="0" />
+              <xs:element name="FLAG" msprop:Generator_ColumnVarNameInTable="columnFLAG" msprop:Generator_ColumnPropNameInRow="FLAG" msprop:Generator_ColumnPropNameInTable="FLAGColumn" msprop:Generator_UserColumnName="FLAG" type="xs:string" minOccurs="0" />
+              <xs:element name="SCR" msprop:Generator_ColumnVarNameInTable="columnSCR" msprop:Generator_ColumnPropNameInRow="SCR" msprop:Generator_ColumnPropNameInTable="SCRColumn" msprop:Generator_UserColumnName="SCR" type="xs:decimal" minOccurs="0" />
+              <xs:element name="AGE" msprop:Generator_ColumnVarNameInTable="columnAGE" msprop:Generator_ColumnPropNameInRow="AGE" msprop:Generator_ColumnPropNameInTable="AGEColumn" msprop:Generator_UserColumnName="AGE" type="xs:decimal" minOccurs="0" />
+              <xs:element name="IS_FEMALE" msprop:Generator_ColumnVarNameInTable="columnIS_FEMALE" msprop:Generator_ColumnPropNameInRow="IS_FEMALE" msprop:Generator_ColumnPropNameInTable="IS_FEMALEColumn" msprop:Generator_UserColumnName="IS_FEMALE" type="xs:string" minOccurs="0" />
+              <xs:element name="IS_BLACK" msprop:Generator_ColumnVarNameInTable="columnIS_BLACK" msprop:Generator_ColumnPropNameInRow="IS_BLACK" msprop:Generator_ColumnPropNameInTable="IS_BLACKColumn" msprop:Generator_UserColumnName="IS_BLACK" type="xs:string" minOccurs="0" />
+              <xs:element name="GFR" msprop:Generator_ColumnVarNameInTable="columnGFR" msprop:Generator_ColumnPropNameInRow="GFR" msprop:Generator_ColumnPropNameInTable="GFRColumn" msprop:Generator_UserColumnName="GFR" type="xs:decimal" minOccurs="0" />
+              <xs:element name="CCR" msprop:Generator_ColumnVarNameInTable="columnCCR" msprop:Generator_ColumnPropNameInRow="CCR" msprop:Generator_ColumnPropNameInTable="CCRColumn" msprop:Generator_UserColumnName="CCR" type="xs:decimal" minOccurs="0" />
+              <xs:element name="ISUPLOAD" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="ISUPLOAD" msprop:Generator_ColumnVarNameInTable="columnISUPLOAD" msprop:Generator_ColumnPropNameInTable="ISUPLOADColumn" msprop:Generator_UserColumnName="ISUPLOAD" type="xs:string" default="" minOccurs="0" />
+              <xs:element name="UPSTATE" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="UPSTATE" msprop:Generator_ColumnVarNameInTable="columnUPSTATE" msprop:Generator_ColumnPropNameInTable="UPSTATEColumn" msprop:Generator_UserColumnName="UPSTATE" type="xs:string" default="" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="MED_LAB_MASTER" msprop:Generator_TableClassName="MED_LAB_MASTERDataTable" msprop:Generator_TableVarName="tableMED_LAB_MASTER" msprop:Generator_TablePropName="MED_LAB_MASTER" msprop:Generator_RowDeletingName="MED_LAB_MASTERRowDeleting" msprop:Generator_RowChangingName="MED_LAB_MASTERRowChanging" msprop:Generator_RowEvHandlerName="MED_LAB_MASTERRowChangeEventHandler" msprop:Generator_RowDeletedName="MED_LAB_MASTERRowDeleted" msprop:Generator_UserTableName="MED_LAB_MASTER" msprop:Generator_RowChangedName="MED_LAB_MASTERRowChanged" msprop:Generator_RowEvArgName="MED_LAB_MASTERRowChangeEvent" msprop:Generator_RowClassName="MED_LAB_MASTERRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="TEST_NO" msprop:Generator_ColumnVarNameInTable="columnTEST_NO" msprop:Generator_ColumnPropNameInRow="TEST_NO" msprop:Generator_ColumnPropNameInTable="TEST_NOColumn" msprop:Generator_UserColumnName="TEST_NO" type="xs:string" />
+              <xs:element name="SPECIMEN" msprop:Generator_ColumnVarNameInTable="columnSPECIMEN" msprop:Generator_ColumnPropNameInRow="SPECIMEN" msprop:Generator_ColumnPropNameInTable="SPECIMENColumn" msprop:Generator_UserColumnName="SPECIMEN" type="xs:string" minOccurs="0" />
+              <xs:element name="RESULTS_RPT_DATE_TIME" msprop:Generator_ColumnVarNameInTable="columnRESULTS_RPT_DATE_TIME" msprop:Generator_ColumnPropNameInRow="RESULTS_RPT_DATE_TIME" msprop:Generator_ColumnPropNameInTable="RESULTS_RPT_DATE_TIMEColumn" msprop:Generator_UserColumnName="RESULTS_RPT_DATE_TIME" type="xs:string" minOccurs="0" />
+              <xs:element name="ITEM_NO" msprop:Generator_ColumnVarNameInTable="columnITEM_NO" msprop:Generator_ColumnPropNameInRow="ITEM_NO" msprop:Generator_ColumnPropNameInTable="ITEM_NOColumn" msprop:Generator_UserColumnName="ITEM_NO" type="xs:string" minOccurs="0" />
+              <xs:element name="ITEM_NAME" msprop:Generator_ColumnVarNameInTable="columnITEM_NAME" msprop:Generator_ColumnPropNameInRow="ITEM_NAME" msprop:Generator_ColumnPropNameInTable="ITEM_NAMEColumn" msprop:Generator_UserColumnName="ITEM_NAME" type="xs:string" minOccurs="0" />
+              <xs:element name="REPORT_ITEM_CODE" msprop:Generator_ColumnVarNameInTable="columnREPORT_ITEM_CODE" msprop:Generator_ColumnPropNameInRow="REPORT_ITEM_CODE" msprop:Generator_ColumnPropNameInTable="REPORT_ITEM_CODEColumn" msprop:Generator_UserColumnName="REPORT_ITEM_CODE" type="xs:string" />
+              <xs:element name="REPORT_ITEM_NAME" msprop:Generator_ColumnVarNameInTable="columnREPORT_ITEM_NAME" msprop:Generator_ColumnPropNameInRow="REPORT_ITEM_NAME" msprop:Generator_ColumnPropNameInTable="REPORT_ITEM_NAMEColumn" msprop:Generator_UserColumnName="REPORT_ITEM_NAME" type="xs:string" minOccurs="0" />
+              <xs:element name="RESULT" msprop:Generator_ColumnVarNameInTable="columnRESULT" msprop:Generator_ColumnPropNameInRow="RESULT" msprop:Generator_ColumnPropNameInTable="RESULTColumn" msprop:Generator_UserColumnName="RESULT" type="xs:string" minOccurs="0" />
+              <xs:element name="UNITS" msprop:Generator_ColumnVarNameInTable="columnUNITS" msprop:Generator_ColumnPropNameInRow="UNITS" msprop:Generator_ColumnPropNameInTable="UNITSColumn" msprop:Generator_UserColumnName="UNITS" type="xs:string" minOccurs="0" />
+              <xs:element name="REFERENCE_RESULT" msprop:Generator_ColumnVarNameInTable="columnREFERENCE_RESULT" msprop:Generator_ColumnPropNameInRow="REFERENCE_RESULT" msprop:Generator_ColumnPropNameInTable="REFERENCE_RESULTColumn" msprop:Generator_UserColumnName="REFERENCE_RESULT" type="xs:string" minOccurs="0" />
+              <xs:element name="ISUPLOAD" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="ISUPLOAD" msprop:Generator_ColumnVarNameInTable="columnISUPLOAD" msprop:Generator_ColumnPropNameInTable="ISUPLOADColumn" msprop:Generator_UserColumnName="ISUPLOAD" type="xs:string" default="" minOccurs="0" />
+              <xs:element name="UPSTATE" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="UPSTATE" msprop:Generator_ColumnVarNameInTable="columnUPSTATE" msprop:Generator_ColumnPropNameInTable="UPSTATEColumn" msprop:Generator_UserColumnName="UPSTATE" type="xs:string" default="" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="MED_LAB_UPLOAD" msprop:Generator_TableClassName="MED_LAB_UPLOADDataTable" msprop:Generator_TableVarName="tableMED_LAB_UPLOAD" msprop:Generator_TablePropName="MED_LAB_UPLOAD" msprop:Generator_RowDeletingName="MED_LAB_UPLOADRowDeleting" msprop:Generator_RowChangingName="MED_LAB_UPLOADRowChanging" msprop:Generator_RowEvHandlerName="MED_LAB_UPLOADRowChangeEventHandler" msprop:Generator_RowDeletedName="MED_LAB_UPLOADRowDeleted" msprop:Generator_UserTableName="MED_LAB_UPLOAD" msprop:Generator_RowChangedName="MED_LAB_UPLOADRowChanged" msprop:Generator_RowEvArgName="MED_LAB_UPLOADRowChangeEvent" msprop:Generator_RowClassName="MED_LAB_UPLOADRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ID" msprop:Generator_ColumnVarNameInTable="columnID" msprop:Generator_ColumnPropNameInRow="ID" msprop:Generator_ColumnPropNameInTable="IDColumn" msprop:Generator_UserColumnName="ID" type="xs:string" />
+              <xs:element name="XCGRQ" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="XCGRQ" msprop:Generator_ColumnVarNameInTable="columnXCGRQ" msprop:Generator_ColumnPropNameInTable="XCGRQColumn" msprop:Generator_UserColumnName="XCGRQ" type="xs:string" default="" minOccurs="0" />
+              <xs:element name="BXBJC" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="BXBJC" msprop:Generator_ColumnVarNameInTable="columnBXBJC" msprop:Generator_ColumnPropNameInTable="BXBJCColumn" msprop:Generator_UserColumnName="BXBJC" type="xs:string" default="" minOccurs="0" />
+              <xs:element name="XHDBJC" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="XHDBJC" msprop:Generator_ColumnVarNameInTable="columnXHDBJC" msprop:Generator_ColumnPropNameInTable="XHDBJCColumn" msprop:Generator_UserColumnName="XHDBJC" type="xs:string" default="" minOccurs="0" />
+              <xs:element name="HXBYJJC" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="HXBYJJC" msprop:Generator_ColumnVarNameInTable="columnHXBYJJC" msprop:Generator_ColumnPropNameInTable="HXBYJJCColumn" msprop:Generator_UserColumnName="HXBYJJC" type="xs:string" default="" minOccurs="0" />
+              <xs:element name="XXBJC" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="XXBJC" msprop:Generator_ColumnVarNameInTable="columnXXBJC" msprop:Generator_ColumnPropNameInTable="XXBJCColumn" msprop:Generator_UserColumnName="XXBJC" type="xs:string" default="" minOccurs="0" />
+              <xs:element name="JCRQXZG" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="JCRQXZG" msprop:Generator_ColumnVarNameInTable="columnJCRQXZG" msprop:Generator_ColumnPropNameInTable="JCRQXZGColumn" msprop:Generator_UserColumnName="JCRQXZG" type="xs:string" default="" minOccurs="0" />
+              <xs:element name="XZG" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="XZG" msprop:Generator_ColumnVarNameInTable="columnXZG" msprop:Generator_ColumnPropNameInTable="XZGColumn" msprop:Generator_UserColumnName="XZG" type="xs:string" default="" minOccurs="0" />
+              <xs:element name="XL" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="XL" msprop:Generator_ColumnVarNameInTable="columnXL" msprop:Generator_ColumnPropNameInTable="XLColumn" msprop:Generator_UserColumnName="XL" type="xs:string" default="" minOccurs="0" />
+              <xs:element name="IPTH" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="IPTH" msprop:Generator_ColumnVarNameInTable="columnIPTH" msprop:Generator_ColumnPropNameInTable="IPTHColumn" msprop:Generator_UserColumnName="IPTH" type="xs:string" default="" minOccurs="0" />
+              <xs:element name="JCRQC" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="JCRQC" msprop:Generator_ColumnVarNameInTable="columnJCRQC" msprop:Generator_ColumnPropNameInTable="JCRQCColumn" msprop:Generator_UserColumnName="JCRQC" type="xs:string" default="" minOccurs="0" />
+              <xs:element name="XTQE" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="XTQE" msprop:Generator_ColumnVarNameInTable="columnXTQE" msprop:Generator_ColumnPropNameInTable="XTQEColumn" msprop:Generator_UserColumnName="XTQE" type="xs:string" default="" minOccurs="0" />
+              <xs:element name="ZTJHL" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="ZTJHL" msprop:Generator_ColumnVarNameInTable="columnZTJHL" msprop:Generator_ColumnPropNameInTable="ZTJHLColumn" msprop:Generator_UserColumnName="ZTJHL" type="xs:string" default="" minOccurs="0" />
+              <xs:element name="ZTBHD" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="ZTBHD" msprop:Generator_ColumnVarNameInTable="columnZTBHD" msprop:Generator_ColumnPropNameInTable="ZTBHDColumn" msprop:Generator_UserColumnName="ZTBHD" type="xs:string" default="" minOccurs="0" />
+              <xs:element name="TDB" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="TDB" msprop:Generator_ColumnVarNameInTable="columnTDB" msprop:Generator_ColumnPropNameInTable="TDBColumn" msprop:Generator_UserColumnName="TDB" type="xs:string" default="" minOccurs="0" />
+              <xs:element name="JCRQN" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="JCRQN" msprop:Generator_ColumnVarNameInTable="columnJCRQN" msprop:Generator_ColumnPropNameInTable="JCRQNColumn" msprop:Generator_UserColumnName="JCRQN" type="xs:string" default="" minOccurs="0" />
+              <xs:element name="TQNSMGDL" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="TQNSMGDL" msprop:Generator_ColumnVarNameInTable="columnTQNSMGDL" msprop:Generator_ColumnPropNameInTable="TQNSMGDLColumn" msprop:Generator_UserColumnName="TQNSMGDL" type="xs:string" default="" minOccurs="0" />
+              <xs:element name="NIAOSU" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="NIAOSU" msprop:Generator_ColumnVarNameInTable="columnNIAOSU" msprop:Generator_ColumnPropNameInTable="NIAOSUColumn" msprop:Generator_UserColumnName="NIAOSU" type="xs:string" default="" minOccurs="0" />
+              <xs:element name="THJGMGDL" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="THJGMGDL" msprop:Generator_ColumnVarNameInTable="columnTHJGMGDL" msprop:Generator_ColumnPropNameInTable="THJGMGDLColumn" msprop:Generator_UserColumnName="THJGMGDL" type="xs:string" default="" minOccurs="0" />
+              <xs:element name="JIGAN" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="JIGAN" msprop:Generator_ColumnVarNameInTable="columnJIGAN" msprop:Generator_ColumnPropNameInTable="JIGANColumn" msprop:Generator_UserColumnName="JIGAN" type="xs:string" default="" minOccurs="0" />
+              <xs:element name="ZZDBA" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="ZZDBA" msprop:Generator_ColumnVarNameInTable="columnZZDBA" msprop:Generator_ColumnPropNameInTable="ZZDBAColumn" msprop:Generator_UserColumnName="ZZDBA" type="xs:string" default="" minOccurs="0" />
+              <xs:element name="XBDBV" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="XBDBV" msprop:Generator_ColumnVarNameInTable="columnXBDBV" msprop:Generator_ColumnPropNameInTable="XBDBVColumn" msprop:Generator_UserColumnName="XBDBV" type="xs:string" default="" minOccurs="0" />
+              <xs:element name="ASTADD" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="ASTADD" msprop:Generator_ColumnVarNameInTable="columnASTADD" msprop:Generator_ColumnPropNameInTable="ASTADDColumn" msprop:Generator_UserColumnName="ASTADD" type="xs:string" default="" minOccurs="0" />
+              <xs:element name="ALTADD" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="ALTADD" msprop:Generator_ColumnVarNameInTable="columnALTADD" msprop:Generator_ColumnPropNameInTable="ALTADDColumn" msprop:Generator_UserColumnName="ALTADD" type="xs:string" default="" minOccurs="0" />
+              <xs:element name="ZDHSADD" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="ZDHSADD" msprop:Generator_ColumnVarNameInTable="columnZDHSADD" msprop:Generator_ColumnPropNameInTable="ZDHSADDColumn" msprop:Generator_UserColumnName="ZDHSADD" type="xs:string" default="" minOccurs="0" />
+              <xs:element name="GYSZ" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="GYSZ" msprop:Generator_ColumnVarNameInTable="columnGYSZ" msprop:Generator_ColumnPropNameInTable="GYSZColumn" msprop:Generator_UserColumnName="GYSZ" type="xs:string" default="" minOccurs="0" />
+              <xs:element name="ZDGC" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="ZDGC" msprop:Generator_ColumnVarNameInTable="columnZDGC" msprop:Generator_ColumnPropNameInTable="ZDGCColumn" msprop:Generator_UserColumnName="ZDGC" type="xs:string" default="" minOccurs="0" />
+              <xs:element name="DMDZDB" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="DMDZDB" msprop:Generator_ColumnVarNameInTable="columnDMDZDB" msprop:Generator_ColumnPropNameInTable="DMDZDBColumn" msprop:Generator_UserColumnName="DMDZDB" type="xs:string" default="" minOccurs="0" />
+              <xs:element name="GMDZDB" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="GMDZDB" msprop:Generator_ColumnVarNameInTable="columnGMDZDB" msprop:Generator_ColumnPropNameInTable="GMDZDBColumn" msprop:Generator_UserColumnName="GMDZDB" type="xs:string" default="" minOccurs="0" />
+              <xs:element name="XUETANG" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="XUETANG" msprop:Generator_ColumnVarNameInTable="columnXUETANG" msprop:Generator_ColumnPropNameInTable="XUETANGColumn" msprop:Generator_UserColumnName="XUETANG" type="xs:string" default="" minOccurs="0" />
+              <xs:element name="XUEJIA" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="XUEJIA" msprop:Generator_ColumnVarNameInTable="columnXUEJIA" msprop:Generator_ColumnPropNameInTable="XUEJIAColumn" msprop:Generator_UserColumnName="XUEJIA" type="xs:string" default="" minOccurs="0" />
+              <xs:element name="XUENA" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="XUENA" msprop:Generator_ColumnVarNameInTable="columnXUENA" msprop:Generator_ColumnPropNameInTable="XUENAColumn" msprop:Generator_UserColumnName="XUENA" type="xs:string" default="" minOccurs="0" />
+              <xs:element name="XUELV" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="XUELV" msprop:Generator_ColumnVarNameInTable="columnXUELV" msprop:Generator_ColumnPropNameInTable="XUELVColumn" msprop:Generator_UserColumnName="XUELV" type="xs:string" default="" minOccurs="0" />
+              <xs:element name="ERYANGHUATAN" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="ERYANGHUATAN" msprop:Generator_ColumnVarNameInTable="columnERYANGHUATAN" msprop:Generator_ColumnPropNameInTable="ERYANGHUATANColumn" msprop:Generator_UserColumnName="ERYANGHUATAN" type="xs:string" default="" minOccurs="0" />
+              <xs:element name="JCRQZZZ" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="JCRQZZZ" msprop:Generator_ColumnVarNameInTable="columnJCRQZZZ" msprop:Generator_ColumnPropNameInTable="JCRQZZZColumn" msprop:Generator_UserColumnName="JCRQZZZ" type="xs:string" default="" minOccurs="0" />
+              <xs:element name="CFYDBJC" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="CFYDBJC" msprop:Generator_ColumnVarNameInTable="columnCFYDBJC" msprop:Generator_ColumnPropNameInTable="CFYDBJCColumn" msprop:Generator_UserColumnName="CFYDBJC" type="xs:string" default="" minOccurs="0" />
+              <xs:element name="BTEWQDBJC" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="BTEWQDBJC" msprop:Generator_ColumnVarNameInTable="columnBTEWQDBJC" msprop:Generator_ColumnPropNameInTable="BTEWQDBJCColumn" msprop:Generator_UserColumnName="BTEWQDBJC" type="xs:string" default="" minOccurs="0" />
+              <xs:element name="JCRQE" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="JCRQE" msprop:Generator_ColumnVarNameInTable="columnJCRQE" msprop:Generator_ColumnPropNameInTable="JCRQEColumn" msprop:Generator_UserColumnName="JCRQE" type="xs:string" default="" minOccurs="0" />
+              <xs:element name="HBSAG" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="HBSAG" msprop:Generator_ColumnVarNameInTable="columnHBSAG" msprop:Generator_ColumnPropNameInTable="HBSAGColumn" msprop:Generator_UserColumnName="HBSAG" type="xs:string" default="" minOccurs="0" />
+              <xs:element name="ANTIHBS" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="ANTIHBS" msprop:Generator_ColumnVarNameInTable="columnANTIHBS" msprop:Generator_ColumnPropNameInTable="ANTIHBSColumn" msprop:Generator_UserColumnName="ANTIHBS" type="xs:string" default="" minOccurs="0" />
+              <xs:element name="HBEAG" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="HBEAG" msprop:Generator_ColumnVarNameInTable="columnHBEAG" msprop:Generator_ColumnPropNameInTable="HBEAGColumn" msprop:Generator_UserColumnName="HBEAG" type="xs:string" default="" minOccurs="0" />
+              <xs:element name="ANTIHBE" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="ANTIHBE" msprop:Generator_ColumnVarNameInTable="columnANTIHBE" msprop:Generator_ColumnPropNameInTable="ANTIHBEColumn" msprop:Generator_UserColumnName="ANTIHBE" type="xs:string" default="" minOccurs="0" />
+              <xs:element name="ANTIHBC" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="ANTIHBC" msprop:Generator_ColumnVarNameInTable="columnANTIHBC" msprop:Generator_ColumnPropNameInTable="ANTIHBCColumn" msprop:Generator_UserColumnName="ANTIHBC" type="xs:string" default="" minOccurs="0" />
+              <xs:element name="JCRQD" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="JCRQD" msprop:Generator_ColumnVarNameInTable="columnJCRQD" msprop:Generator_ColumnPropNameInTable="JCRQDColumn" msprop:Generator_UserColumnName="JCRQD" type="xs:string" default="" minOccurs="0" />
+              <xs:element name="HBV_NUMBER" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="HBV_NUMBER" msprop:Generator_ColumnVarNameInTable="columnHBV_NUMBER" msprop:Generator_ColumnPropNameInTable="HBV_NUMBERColumn" msprop:Generator_UserColumnName="HBV_NUMBER" type="xs:string" default="" minOccurs="0" />
+              <xs:element name="JCRQF" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="JCRQF" msprop:Generator_ColumnVarNameInTable="columnJCRQF" msprop:Generator_ColumnPropNameInTable="JCRQFColumn" msprop:Generator_UserColumnName="JCRQF" type="xs:string" default="" minOccurs="0" />
+              <xs:element name="HCVBB" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="HCVBB" msprop:Generator_ColumnVarNameInTable="columnHCVBB" msprop:Generator_ColumnPropNameInTable="HCVBBColumn" msprop:Generator_UserColumnName="HCVBB" type="xs:string" default="" minOccurs="0" />
+              <xs:element name="JCRQHCV" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="JCRQHCV" msprop:Generator_ColumnVarNameInTable="columnJCRQHCV" msprop:Generator_ColumnPropNameInTable="JCRQHCVColumn" msprop:Generator_UserColumnName="JCRQHCV" type="xs:string" default="" minOccurs="0" />
+              <xs:element name="HCVRNAV_NUMBER" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="HCVRNAV_NUMBER" msprop:Generator_ColumnVarNameInTable="columnHCVRNAV_NUMBER" msprop:Generator_ColumnPropNameInTable="HCVRNAV_NUMBERColumn" msprop:Generator_UserColumnName="HCVRNAV_NUMBER" type="xs:string" default="" minOccurs="0" />
+              <xs:element name="JCRQAIDS" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="JCRQAIDS" msprop:Generator_ColumnVarNameInTable="columnJCRQAIDS" msprop:Generator_ColumnPropNameInTable="JCRQAIDSColumn" msprop:Generator_UserColumnName="JCRQAIDS" type="xs:string" default="" minOccurs="0" />
+              <xs:element name="AIDRES" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="AIDRES" msprop:Generator_ColumnVarNameInTable="columnAIDRES" msprop:Generator_ColumnPropNameInTable="AIDRESColumn" msprop:Generator_UserColumnName="AIDRES" type="xs:string" default="" minOccurs="0" />
+              <xs:element name="JCRQMEIDU" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="JCRQMEIDU" msprop:Generator_ColumnVarNameInTable="columnJCRQMEIDU" msprop:Generator_ColumnPropNameInTable="JCRQMEIDUColumn" msprop:Generator_UserColumnName="JCRQMEIDU" type="xs:string" default="" minOccurs="0" />
+              <xs:element name="MEDIDURES" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="MEDIDURES" msprop:Generator_ColumnVarNameInTable="columnMEDIDURES" msprop:Generator_ColumnPropNameInTable="MEDIDURESColumn" msprop:Generator_UserColumnName="MEDIDURES" type="xs:string" default="" minOccurs="0" />
+              <xs:element name="JHKT" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="JHKT" msprop:Generator_ColumnVarNameInTable="columnJHKT" msprop:Generator_ColumnPropNameInTable="JHKTColumn" msprop:Generator_UserColumnName="JHKT" type="xs:string" default="" minOccurs="0" />
+              <xs:element name="JHKTSY" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="JHKTSY" msprop:Generator_ColumnVarNameInTable="columnJHKTSY" msprop:Generator_ColumnPropNameInTable="JHKTSYColumn" msprop:Generator_UserColumnName="JHKTSY" type="xs:string" default="" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="MED_UPLOAD_LOG" msprop:Generator_TableClassName="MED_UPLOAD_LOGDataTable" msprop:Generator_TableVarName="tableMED_UPLOAD_LOG" msprop:Generator_TablePropName="MED_UPLOAD_LOG" msprop:Generator_RowDeletingName="MED_UPLOAD_LOGRowDeleting" msprop:Generator_RowChangingName="MED_UPLOAD_LOGRowChanging" msprop:Generator_RowEvHandlerName="MED_UPLOAD_LOGRowChangeEventHandler" msprop:Generator_RowDeletedName="MED_UPLOAD_LOGRowDeleted" msprop:Generator_UserTableName="MED_UPLOAD_LOG" msprop:Generator_RowChangedName="MED_UPLOAD_LOGRowChanged" msprop:Generator_RowEvArgName="MED_UPLOAD_LOGRowChangeEvent" msprop:Generator_RowClassName="MED_UPLOAD_LOGRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ID" msprop:Generator_ColumnVarNameInTable="columnID" msprop:Generator_ColumnPropNameInRow="ID" msprop:Generator_ColumnPropNameInTable="IDColumn" msprop:Generator_UserColumnName="ID">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="UPLOAD_ITEM_NAME" msprop:Generator_ColumnVarNameInTable="columnUPLOAD_ITEM_NAME" msprop:Generator_ColumnPropNameInRow="UPLOAD_ITEM_NAME" msprop:Generator_ColumnPropNameInTable="UPLOAD_ITEM_NAMEColumn" msprop:Generator_UserColumnName="UPLOAD_ITEM_NAME">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="HEMODIALYSIS_ID" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="HEMODIALYSIS_ID" msprop:Generator_ColumnVarNameInTable="columnHEMODIALYSIS_ID" msprop:Generator_ColumnPropNameInTable="HEMODIALYSIS_IDColumn" msprop:Generator_UserColumnName="HEMODIALYSIS_ID" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BELONG_YEAR" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="BELONG_YEAR" msprop:Generator_ColumnVarNameInTable="columnBELONG_YEAR" msprop:Generator_ColumnPropNameInTable="BELONG_YEARColumn" msprop:Generator_UserColumnName="BELONG_YEAR" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="UPLOADER" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="UPLOADER" msprop:Generator_ColumnVarNameInTable="columnUPLOADER" msprop:Generator_ColumnPropNameInTable="UPLOADERColumn" msprop:Generator_UserColumnName="UPLOADER" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="UPLOAD_DATE" msprop:Generator_ColumnVarNameInTable="columnUPLOAD_DATE" msprop:Generator_ColumnPropNameInRow="UPLOAD_DATE" msprop:Generator_ColumnPropNameInTable="UPLOAD_DATEColumn" msprop:Generator_UserColumnName="UPLOAD_DATE" type="xs:dateTime" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="MED_PATIENTS" msprop:Generator_TableClassName="MED_PATIENTSDataTable" msprop:Generator_TableVarName="tableMED_PATIENTS" msprop:Generator_TablePropName="MED_PATIENTS" msprop:Generator_RowDeletingName="MED_PATIENTSRowDeleting" msprop:Generator_RowChangingName="MED_PATIENTSRowChanging" msprop:Generator_RowEvHandlerName="MED_PATIENTSRowChangeEventHandler" msprop:Generator_RowDeletedName="MED_PATIENTSRowDeleted" msprop:Generator_UserTableName="MED_PATIENTS" msprop:Generator_RowChangedName="MED_PATIENTSRowChanged" msprop:Generator_RowEvArgName="MED_PATIENTSRowChangeEvent" msprop:Generator_RowClassName="MED_PATIENTSRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="HEMODIALYSIS_ID" msprop:Generator_ColumnVarNameInTable="columnHEMODIALYSIS_ID" msprop:Generator_ColumnPropNameInRow="HEMODIALYSIS_ID" msprop:Generator_ColumnPropNameInTable="HEMODIALYSIS_IDColumn" msprop:Generator_UserColumnName="HEMODIALYSIS_ID">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PATIENT_ID" msprop:Generator_ColumnVarNameInTable="columnPATIENT_ID" msprop:Generator_ColumnPropNameInRow="PATIENT_ID" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInTable="PATIENT_IDColumn" msprop:Generator_UserColumnName="PATIENT_ID" default="" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="NAME" msprop:Generator_ColumnVarNameInTable="columnNAME" msprop:Generator_ColumnPropNameInRow="NAME" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInTable="NAMEColumn" msprop:Generator_UserColumnName="NAME" default="" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SEX" msprop:Generator_ColumnVarNameInTable="columnSEX" msprop:Generator_ColumnPropNameInRow="SEX" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInTable="SEXColumn" msprop:Generator_UserColumnName="SEX" default="" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BIRTHDAY" msprop:Generator_ColumnVarNameInTable="columnBIRTHDAY" msprop:Generator_ColumnPropNameInRow="BIRTHDAY" msprop:nullValue="1900-10-10" msprop:Generator_ColumnPropNameInTable="BIRTHDAYColumn" msprop:Generator_UserColumnName="BIRTHDAY" type="xs:dateTime" default="1900-10-10T00:00:00+08:00" minOccurs="0" />
+              <xs:element name="AGE" msprop:Generator_ColumnVarNameInTable="columnAGE" msprop:Generator_ColumnPropNameInRow="AGE" msprop:nullValue="0" msprop:Generator_ColumnPropNameInTable="AGEColumn" msprop:Generator_UserColumnName="AGE" type="xs:decimal" default="0" minOccurs="0" />
+              <xs:element name="NATIVEPLACE" msprop:Generator_ColumnVarNameInTable="columnNATIVEPLACE" msprop:Generator_ColumnPropNameInRow="NATIVEPLACE" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInTable="NATIVEPLACEColumn" msprop:Generator_UserColumnName="NATIVEPLACE" default="" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="JOB" msprop:Generator_ColumnVarNameInTable="columnJOB" msprop:Generator_ColumnPropNameInRow="JOB" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInTable="JOBColumn" msprop:Generator_UserColumnName="JOB" default="" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MARITAL" msprop:Generator_ColumnVarNameInTable="columnMARITAL" msprop:Generator_ColumnPropNameInRow="MARITAL" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInTable="MARITALColumn" msprop:Generator_UserColumnName="MARITAL" default="" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CREDENTIALS_TYPE" msprop:Generator_ColumnVarNameInTable="columnCREDENTIALS_TYPE" msprop:Generator_ColumnPropNameInRow="CREDENTIALS_TYPE" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInTable="CREDENTIALS_TYPEColumn" msprop:Generator_UserColumnName="CREDENTIALS_TYPE" default="" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CREDENTIALS_NUMBER" msprop:Generator_ColumnVarNameInTable="columnCREDENTIALS_NUMBER" msprop:Generator_ColumnPropNameInRow="CREDENTIALS_NUMBER" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInTable="CREDENTIALS_NUMBERColumn" msprop:Generator_UserColumnName="CREDENTIALS_NUMBER" default="" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="EDUCATION" msprop:Generator_ColumnVarNameInTable="columnEDUCATION" msprop:Generator_ColumnPropNameInRow="EDUCATION" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInTable="EDUCATIONColumn" msprop:Generator_UserColumnName="EDUCATION" default="" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="NATION" msprop:Generator_ColumnVarNameInTable="columnNATION" msprop:Generator_ColumnPropNameInRow="NATION" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInTable="NATIONColumn" msprop:Generator_UserColumnName="NATION" default="" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="WORK_TELEPHONE" msprop:Generator_ColumnVarNameInTable="columnWORK_TELEPHONE" msprop:Generator_ColumnPropNameInRow="WORK_TELEPHONE" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInTable="WORK_TELEPHONEColumn" msprop:Generator_UserColumnName="WORK_TELEPHONE" default="" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ADDRESS" msprop:Generator_ColumnVarNameInTable="columnADDRESS" msprop:Generator_ColumnPropNameInRow="ADDRESS" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInTable="ADDRESSColumn" msprop:Generator_UserColumnName="ADDRESS" default="" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="200" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MEDICAL_TYPE" msprop:Generator_ColumnVarNameInTable="columnMEDICAL_TYPE" msprop:Generator_ColumnPropNameInRow="MEDICAL_TYPE" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInTable="MEDICAL_TYPEColumn" msprop:Generator_UserColumnName="MEDICAL_TYPE" default="" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TELEPHONE" msprop:Generator_ColumnVarNameInTable="columnTELEPHONE" msprop:Generator_ColumnPropNameInRow="TELEPHONE" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInTable="TELEPHONEColumn" msprop:Generator_UserColumnName="TELEPHONE" default="" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TIME_TYPE" msprop:Generator_ColumnVarNameInTable="columnTIME_TYPE" msprop:Generator_ColumnPropNameInRow="TIME_TYPE" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInTable="TIME_TYPEColumn" msprop:Generator_UserColumnName="TIME_TYPE" default="" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SPECIFIC_TIME" msprop:Generator_ColumnVarNameInTable="columnSPECIFIC_TIME" msprop:Generator_ColumnPropNameInRow="SPECIFIC_TIME" msprop:Generator_ColumnPropNameInTable="SPECIFIC_TIMEColumn" msprop:Generator_UserColumnName="SPECIFIC_TIME" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="ADMISSION_NUMBER" msprop:Generator_ColumnVarNameInTable="columnADMISSION_NUMBER" msprop:Generator_ColumnPropNameInRow="ADMISSION_NUMBER" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInTable="ADMISSION_NUMBERColumn" msprop:Generator_UserColumnName="ADMISSION_NUMBER" default="" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="IS_NEW" msprop:Generator_ColumnVarNameInTable="columnIS_NEW" msprop:Generator_ColumnPropNameInRow="IS_NEW" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInTable="IS_NEWColumn" msprop:Generator_UserColumnName="IS_NEW" type="xs:string" default="" minOccurs="0" />
+              <xs:element name="WHAT_HOSPITAL_IN" msprop:Generator_ColumnVarNameInTable="columnWHAT_HOSPITAL_IN" msprop:Generator_ColumnPropNameInRow="WHAT_HOSPITAL_IN" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInTable="WHAT_HOSPITAL_INColumn" msprop:Generator_UserColumnName="WHAT_HOSPITAL_IN" default="" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="200" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="WHAT_DEPARTMENT_IN" msprop:Generator_ColumnVarNameInTable="columnWHAT_DEPARTMENT_IN" msprop:Generator_ColumnPropNameInRow="WHAT_DEPARTMENT_IN" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInTable="WHAT_DEPARTMENT_INColumn" msprop:Generator_UserColumnName="WHAT_DEPARTMENT_IN" default="" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="200" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FIRST_VISIT" msprop:Generator_ColumnVarNameInTable="columnFIRST_VISIT" msprop:Generator_ColumnPropNameInRow="FIRST_VISIT" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInTable="FIRST_VISITColumn" msprop:Generator_UserColumnName="FIRST_VISIT" default="" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="200" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DIAGNOSE" msprop:Generator_ColumnVarNameInTable="columnDIAGNOSE" msprop:Generator_ColumnPropNameInRow="DIAGNOSE" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInTable="DIAGNOSEColumn" msprop:Generator_UserColumnName="DIAGNOSE" default="" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="200" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="LEAVE_HOSPITAL_TIME" msprop:Generator_ColumnVarNameInTable="columnLEAVE_HOSPITAL_TIME" msprop:Generator_ColumnPropNameInRow="LEAVE_HOSPITAL_TIME" msprop:nullValue="_throw" msprop:Generator_ColumnPropNameInTable="LEAVE_HOSPITAL_TIMEColumn" msprop:Generator_UserColumnName="LEAVE_HOSPITAL_TIME" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="INFECTIOUS_CHECK_RESULT" msprop:Generator_ColumnVarNameInTable="columnINFECTIOUS_CHECK_RESULT" msprop:Generator_ColumnPropNameInRow="INFECTIOUS_CHECK_RESULT" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInTable="INFECTIOUS_CHECK_RESULTColumn" msprop:Generator_UserColumnName="INFECTIOUS_CHECK_RESULT" default="" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="200" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="INPUT_CODE" msprop:Generator_ColumnVarNameInTable="columnINPUT_CODE" msprop:Generator_ColumnPropNameInRow="INPUT_CODE" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInTable="INPUT_CODEColumn" msprop:Generator_UserColumnName="INPUT_CODE" default="" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="VISIT_ID" msprop:Generator_ColumnVarNameInTable="columnVISIT_ID" msprop:Generator_ColumnPropNameInRow="VISIT_ID" msprop:nullValue="0" msprop:Generator_ColumnPropNameInTable="VISIT_IDColumn" msprop:Generator_UserColumnName="VISIT_ID" type="xs:decimal" default="0" minOccurs="0" />
+              <xs:element name="WARD_CODE" msprop:Generator_ColumnVarNameInTable="columnWARD_CODE" msprop:Generator_ColumnPropNameInRow="WARD_CODE" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInTable="WARD_CODEColumn" msprop:Generator_UserColumnName="WARD_CODE" default="" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BED_NO" msprop:Generator_ColumnVarNameInTable="columnBED_NO" msprop:Generator_ColumnPropNameInRow="BED_NO" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInTable="BED_NOColumn" msprop:Generator_UserColumnName="BED_NO" default="" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PATIENT_HEAD_PORTRAIT" msprop:Generator_ColumnVarNameInTable="columnPATIENT_HEAD_PORTRAIT" msprop:Generator_ColumnPropNameInRow="PATIENT_HEAD_PORTRAIT" msprop:Generator_ColumnPropNameInTable="PATIENT_HEAD_PORTRAITColumn" msprop:Generator_UserColumnName="PATIENT_HEAD_PORTRAIT" type="xs:base64Binary" minOccurs="0" />
+              <xs:element name="CREATE_DATE" msprop:Generator_ColumnVarNameInTable="columnCREATE_DATE" msprop:Generator_ColumnPropNameInRow="CREATE_DATE" msprop:Generator_ColumnPropNameInTable="CREATE_DATEColumn" msprop:Generator_UserColumnName="CREATE_DATE" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="PATIENT_TAG" msprop:Generator_ColumnVarNameInTable="columnPATIENT_TAG" msprop:Generator_ColumnPropNameInRow="PATIENT_TAG" msprop:Generator_ColumnPropNameInTable="PATIENT_TAGColumn" msprop:Generator_UserColumnName="PATIENT_TAG" type="xs:base64Binary" minOccurs="0" />
+              <xs:element name="IS_DELETE" msprop:Generator_ColumnVarNameInTable="columnIS_DELETE" msprop:Generator_ColumnPropNameInRow="IS_DELETE" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInTable="IS_DELETEColumn" msprop:Generator_UserColumnName="IS_DELETE" default="0" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ROOMID" msprop:Generator_ColumnVarNameInTable="columnROOMID" msprop:Generator_ColumnPropNameInRow="ROOMID" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInTable="ROOMIDColumn" msprop:Generator_UserColumnName="ROOMID" type="xs:string" default="" minOccurs="0" />
+              <xs:element name="CARDNO" msprop:Generator_ColumnVarNameInTable="columnCARDNO" msprop:Generator_ColumnPropNameInRow="CARDNO" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInTable="CARDNOColumn" msprop:Generator_UserColumnName="CARDNO" type="xs:string" default="" minOccurs="0" />
+              <xs:element name="RECIPECOUNT" msprop:Generator_ColumnVarNameInTable="columnRECIPECOUNT" msprop:Generator_ColumnPropNameInRow="RECIPECOUNT" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInTable="RECIPECOUNTColumn" msprop:Generator_UserColumnName="RECIPECOUNT" type="xs:string" default="" minOccurs="0" />
+              <xs:element name="PAT_PIC" msprop:Generator_ColumnVarNameInTable="columnPAT_PIC" msprop:Generator_ColumnPropNameInRow="PAT_PIC" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInTable="PAT_PICColumn" msprop:Generator_UserColumnName="PAT_PIC" type="xs:base64Binary" minOccurs="0" />
+              <xs:element name="ISUPLOAD" msprop:Generator_ColumnVarNameInTable="columnISUPLOAD" msprop:Generator_ColumnPropNameInRow="ISUPLOAD" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInTable="ISUPLOADColumn" msprop:Generator_UserColumnName="ISUPLOAD" type="xs:string" default="" minOccurs="0" />
+              <xs:element name="IS_UP" msprop:Generator_ColumnVarNameInTable="columnIS_UP" msprop:Generator_ColumnPropNameInRow="IS_UP" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInTable="IS_UPColumn" msprop:Generator_UserColumnName="IS_UP" default="0" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="UPSTATE" msprop:Generator_ColumnVarNameInTable="columnUPSTATE" msprop:Generator_ColumnPropNameInRow="UPSTATE" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInTable="UPSTATEColumn" msprop:Generator_UserColumnName="UPSTATE" type="xs:string" default="" minOccurs="0" />
+              <xs:element name="BASEINFO" msprop:Generator_ColumnVarNameInTable="columnBASEINFO" msprop:Generator_ColumnPropNameInRow="BASEINFO" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInTable="BASEINFOColumn" msprop:Generator_UserColumnName="BASEINFO" type="xs:string" default="" minOccurs="0" />
+              <xs:element name="PATIENT_VASCULAR_ACCESS" msprop:Generator_ColumnVarNameInTable="columnPATIENT_VASCULAR_ACCESS" msprop:Generator_ColumnPropNameInRow="PATIENT_VASCULAR_ACCESS" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInTable="PATIENT_VASCULAR_ACCESSColumn" msprop:Generator_UserColumnName="PATIENT_VASCULAR_ACCESS" type="xs:string" default="" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:MED_PATIENT_DATAREPORT" />
+      <xs:field xpath="mstns:ID" />
+    </xs:unique>
+    <xs:unique name="MED_VASCULAR_ACCESS_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:MED_VASCULAR_ACCESS" />
+      <xs:field xpath="mstns:VASCULAR_ACCESS_ID" />
+    </xs:unique>
+    <xs:unique name="MED_HEMO_RECIPE_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:MED_HEMO_RECIPE" />
+      <xs:field xpath="mstns:RECIPE_ID" />
+    </xs:unique>
+    <xs:unique name="MED_CURE_MAIN_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:MED_CURE_MAIN" />
+      <xs:field xpath="mstns:CURE_ID" />
+      <xs:field xpath="mstns:RECIPE_ID" />
+    </xs:unique>
+    <xs:unique name="MED_ESTIMATE_SUFFICIENCY_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:MED_ESTIMATE_SUFFICIENCY" />
+      <xs:field xpath="mstns:ID" />
+    </xs:unique>
+    <xs:unique name="MED_LAB_MASTER_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:MED_LAB_MASTER" />
+      <xs:field xpath="mstns:TEST_NO" />
+      <xs:field xpath="mstns:REPORT_ITEM_CODE" />
+    </xs:unique>
+    <xs:unique name="MED_LAB_UPLOAD_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:MED_LAB_UPLOAD" />
+      <xs:field xpath="mstns:ID" />
+    </xs:unique>
+    <xs:unique name="MED_UPLOAD_LOG_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:MED_UPLOAD_LOG" />
+      <xs:field xpath="mstns:ID" />
+    </xs:unique>
+    <xs:unique name="MED_PATIENTS_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:MED_PATIENTS" />
+      <xs:field xpath="mstns:HEMODIALYSIS_ID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

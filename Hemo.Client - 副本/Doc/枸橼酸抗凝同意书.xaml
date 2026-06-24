@@ -1,0 +1,48 @@
+﻿<UserControl x:Class="Hemo.Client.Doc.枸橼酸抗凝同意书"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="1100" d:DesignWidth="760">
+    <Grid>
+        <Label Content="" FontFamily="宋体" FontSize="26"  Height="50" HorizontalAlignment="Left" HorizontalContentAlignment="Center" Margin="141,76,0,0" Name="lblHospital" VerticalAlignment="Top" VerticalContentAlignment="Center" Width="522" FontStyle="Normal" />
+        <Label Content="血液透析枸橼酸抗凝风险知情同意书" FontSize="22" Height="44" HorizontalAlignment="Left" HorizontalContentAlignment="Center" Margin="202,132,0,0" Name="label2" VerticalAlignment="Top" VerticalContentAlignment="Center" Width="405" FontFamily="宋体"  />
+        <Label Content="姓名：" Height="27" HorizontalAlignment="Left"  Name="label3" VerticalAlignment="Top" FontSize="17" FontFamily="宋体"  Width="51" Margin="85,196,0,0" />
+        <TextBox Height="23"  BorderThickness="0,0,0,0" BorderBrush="Black" Name="txtName" IsReadOnly="False" Margin="0,200,544,877" FontSize="17" FontFamily="宋体"  HorizontalAlignment="Right" Width="78" />
+        <Label Content="性别：" Height="27" HorizontalAlignment="Left"  Name="label33" VerticalAlignment="Top" FontSize="17" FontFamily="宋体"  Width="51" Margin="237,196,0,0" />
+        <TextBox Height="23"  BorderThickness="0,0,0,0" BorderBrush="Black" Name="txtSex" IsReadOnly="False" Margin="294,200,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="44" FontSize="17" FontFamily="宋体"  />
+        <Label  Content="年龄：" Height="27" HorizontalAlignment="Right"  Name="label34" VerticalAlignment="Top" FontSize="17" FontFamily="宋体"  Width="51" Margin="0,196,339,0" />
+        <TextBox Height="23"  BorderThickness="0,0,0,0" BorderBrush="Black" Name="txtAge" IsReadOnly="False" Margin="450,200,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="52" FontSize="17" FontFamily="宋体"  />
+        <Label Content="门诊/住院号：" Height="28" Name="label6" VerticalAlignment="Top" FontSize="17" FontFamily="宋体"  Margin="506,196,137,0" />
+        <TextBox Height="23"  BorderThickness="0,0,0,0" BorderBrush="Black" Name="txtAdmissionNumber" IsReadOnly="False" Margin="0,200,48,0" VerticalAlignment="Top" HorizontalAlignment="Right" Width="89" FontSize="17" FontFamily="宋体"  />
+        <Label Content="诊断：" Height="29" HorizontalAlignment="Left"  Name="label31" VerticalAlignment="Top" FontSize="17" FontFamily="宋体"  Width="65" Margin="85,234,0,0" />
+        <Label Content="血管通路情况：" Height="29" HorizontalAlignment="Left"  Name="label32" VerticalAlignment="Top" FontSize="17" FontFamily="宋体"  Width="123" Margin="323,234,0,0" />
+        <TextBox Height="23"  BorderThickness="0,0,0,0" BorderBrush="Black" Name="txtVascularAccess" IsReadOnly="False" Margin="448,238,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="267"  FontSize="17" FontFamily="宋体" />
+        <TextBlock LineHeight="35" TextWrapping="Wrap" Height="22" Margin="118,269,0,0" Name="textBlock1" Text="您/您的亲属因" VerticalAlignment="Top" FontSize="17" FontFamily="宋体"  HorizontalAlignment="Left" Width="122" />
+        <TextBlock  Text="需枸橼酸抗凝下进行血液透析治疗，选择此" FontFamily="宋体" FontSize="17"  Height="22" HorizontalAlignment="Left" LineHeight="35" Margin="353,269,0,0" Name="textBlock4" TextWrapping="Wrap" VerticalAlignment="Top" Width="404" />
+        <TextBlock FontFamily="宋体" FontSize="17"  Height="22" HorizontalAlignment="Left" LineHeight="35" Margin="85,297,0,0" Name="textBlock3" Text="方式治疗的原因以及可能存在的风险如下：" TextWrapping="Wrap" VerticalAlignment="Top" Width="330" />
+        <TextBlock FontFamily="宋体" FontSize="17"  Height="60" HorizontalAlignment="Left" LineHeight="35" Margin="85,325,0,0" Name="textBlock5" Text="(一) 尿毒症（包括急性或慢性肾衰竭）、急性中毒以及其他重症需血液净化的患者，由于凝血功能较差，应用肝素透析可引起出血，使贫血加重；" TextWrapping="Wrap" VerticalAlignment="Top" Width="605" />
+        <TextBlock FontFamily="宋体" FontSize="17"  Height="57" HorizontalAlignment="left" LineHeight="35" Margin="85,816,0,0" Name="textBlock2" Text="    医生已明确告知以上医疗风险，病人和/或家属已充分理解，要求接受枸橼酸钠抗凝下行透析治疗，理解其风险并配合治疗，签字为证。" TextWrapping="Wrap" VerticalAlignment="Top" Width="605" />
+        <Label Content="" FontFamily="宋体" FontSize="17"  Height="22" HorizontalAlignment="Left" Margin="243,269,0,0" Name="label5" VerticalAlignment="Top" Width="107" />
+        <Label Content="患者/家属签名：" FontFamily="宋体" FontSize="15"  Height="25" HorizontalAlignment="Left" Margin="415,879,0,0" Name="label4" VerticalAlignment="Top" Width="132" />
+        <Image Name="imgPatientSign" HorizontalAlignment="Left" Margin="553,873,0,0" VerticalAlignment="Top" Width="150" Height="40"/>
+        <Label Content="家属与患者关系：" FontFamily="宋体" FontSize="15"  Height="25" HorizontalAlignment="Left" Margin="415,910,0,0" Name="label8" VerticalAlignment="Top" Width="132" />
+        <Label Content="" FontFamily="宋体" FontSize="17"  Height="25" HorizontalAlignment="Left" Margin="553,920,0,0" Name="label9" VerticalAlignment="Top" Width="135" />
+        <Label Content="告知医师签字：" FontFamily="宋体" FontSize="15"  Height="25" HorizontalAlignment="Left" Margin="415,941,0,0" Name="label10" VerticalAlignment="Top" Width="132" />
+        <Label Content="" FontFamily="宋体" FontSize="17"  Height="25" HorizontalAlignment="Left" Margin="553,951,0,0" Name="label11" VerticalAlignment="Top" Width="135" />
+        <Label Content="      年    月    日" FontFamily="宋体" FontSize="17"  Height="30" HorizontalAlignment="Left" Margin="503,982,0,0" Name="lblDate" VerticalAlignment="Top" Width="185" />
+        <TextBox BorderBrush="Black" BorderThickness="0,0,0,0" FontFamily="宋体" FontSize="17"  Height="23" HorizontalAlignment="Right" IsReadOnly="False" Margin="0,240,441,837" Name="txtDiagnose" Width="181" />
+        <Label Content="(二) 使用肝素透析，可使身体原有的脏器出血加重，严重者危及生命；" FontFamily="宋体" FontSize="17" FontWeight="Normal" Height="30" HorizontalAlignment="Left" Margin="80,385,0,0" Name="label16" VerticalAlignment="Top" />
+        <Label Content="(五) 肝功能异常患者，枸橼酸钙在体内代谢缓慢，蓄积后引起中毒；" FontFamily="宋体" FontSize="17" FontWeight="Normal" Height="30" HorizontalAlignment="Left" Margin="80,535,0,0" Name="label14" VerticalAlignment="Top" />
+        <Label Content="(六) 血钠升高，引起水钠储留，血压升高；" FontFamily="宋体" FontSize="17" FontWeight="Normal" Height="30" HorizontalAlignment="Left" Margin="80,565,0,0" Name="label15" VerticalAlignment="Top" />
+        <Label Content="(九) 透析器、管路凝血堵塞，需重新更换新的透析器和管路，增加患者费用；" FontFamily="宋体" FontSize="17" FontWeight="Normal" Height="30" HorizontalAlignment="Left" Margin="80,715,0,0" Name="label19" VerticalAlignment="Top" />
+        <Label Content="(十) 由于现实医学条件的限制，无法实时监测患者体内钙的水平变化；" FontFamily="宋体" FontSize="17" FontWeight="Normal" Height="30" HorizontalAlignment="Left" Margin="80,745,0,0" Name="label20" VerticalAlignment="Top" />
+        <Label Content="(十一) 由于医学的复杂性，可能发生其他不可预见的并发症。" FontFamily="宋体" FontSize="17" FontWeight="Normal" Height="30" HorizontalAlignment="Left" Margin="80,775,0,0" Name="label21" VerticalAlignment="Top" Width="605" />
+        <TextBlock FontFamily="宋体" FontSize="17" Height="60" HorizontalAlignment="Left" LineHeight="35" Margin="85,415,0,0" Name="textBlock6" Text="(三) 枸椽酸根离子与血中钙离子生成难解离的可溶性络合物枸椽酸钙，
+使血中钙离子减少，凝血过程受到抑制从而阻止血液凝固；" TextWrapping="Wrap" VerticalAlignment="Top" Width="605" />
+        <TextBlock FontFamily="宋体" FontSize="17" Height="60" HorizontalAlignment="Left" LineHeight="35" Margin="85,475,0,0" Name="textBlock7" Text="(四) 枸橼酸钠抗凝可增加超滤量，超滤率过大容易堵塞管路和透析器，因此脱水不够，可引起血压升高，或心力衰竭；" TextWrapping="Wrap" VerticalAlignment="Top" Width="605" />
+        <TextBlock FontFamily="宋体" FontSize="17" Height="60" HorizontalAlignment="Left" LineHeight="35" Margin="85,595,0,0" Name="textBlock8" Text="(七) 枸橼酸钠用量偏小，透析器、管路有小血栓形成，随血路进入血液循环，引起肺栓塞、脑栓塞、心血管栓塞等并发症；" TextWrapping="Wrap" VerticalAlignment="Top" Width="605" />
+        <TextBlock FontFamily="宋体" FontSize="17" Height="60" HorizontalAlignment="Left" LineHeight="35" Margin="85,655,0,0" Name="textBlock9" Text="(八) 枸橼酸钠过量，可引起血钙过低和代谢性碱中毒而出现口唇发麻、手足抽搐，甚至出血倾向、血压下降，心室颤动或停搏，严重者危及生命；" TextWrapping="Wrap" VerticalAlignment="Top" Width="605" />
+    </Grid>
+</UserControl>

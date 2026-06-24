@@ -1,0 +1,65 @@
+﻿<UserControl x:Class="Hemo.Client.Doc.血液净化治疗知情同意书"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="1100" d:DesignWidth="760">
+    <Grid Loaded="Grid_Loaded">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="233*" />
+            <ColumnDefinition Width="583*" />
+        </Grid.ColumnDefinitions>
+        <Label Content="" FontFamily="宋体" FontSize="26"  Height="50" HorizontalAlignment="Left" HorizontalContentAlignment="Center" Margin="144,24,0,0" Name="lblHospital" VerticalAlignment="Top" VerticalContentAlignment="Center" Width="522" FontStyle="Normal" Grid.ColumnSpan="2" />
+        <Label Content="血液透析(滤过)治疗知情同意书" FontSize="22" Height="44" HorizontalAlignment="Left" HorizontalContentAlignment="Center" Margin="0,77,0,0" Name="label2" VerticalAlignment="Top" VerticalContentAlignment="Center" Width="335" FontFamily="宋体" Grid.Column="1" />
+        <TextBlock LineHeight="30" TextWrapping="Wrap" Height="60" HorizontalAlignment="Left" Margin="85,203,0,0" Name="textBlock1" Text="一、血液透析(滤过)能有效清除身体内过多的水份和毒素，是治疗急性和慢性肾衰竭等疾病的有效方法。" VerticalAlignment="Top" FontSize="17" Width="605" Grid.ColumnSpan="2" FontFamily="宋体"  />
+        <Label Content="三、为了有效引出血液，治疗前需要建立血管通路(动静脉内瘘或深静脉插管)。" FontSize="17" Height="30" HorizontalAlignment="Left" Margin="85,313,0,0" Name="label15" VerticalAlignment="Top" Grid.ColumnSpan="2" FontFamily="宋体"  />
+        <Label Content="四、为防止血液在体外管路和透析器发生凝固，一般需要在透析前和透析过程中" FontSize="17" Height="30" HorizontalAlignment="Left" Margin="85,343,0,0" Name="label16" VerticalAlignment="Top" Grid.ColumnSpan="2" FontFamily="宋体"  />
+        <Label Content="注射肝素等抗凝药物。" FontSize="17" Height="30" HorizontalAlignment="Left" Margin="118,373,0,0" Name="label17" VerticalAlignment="Top" FontFamily="宋体" Grid.ColumnSpan="2" Width="172" />
+        <Label Content="五、由于医学科技水平的局限，血透过程中和治疗医疗风险，可能造成严重期间" FontSize="17" Height="30" HorizontalAlignment="Left" Margin="85,403,0,0" Name="label18" VerticalAlignment="Top" FontFamily="宋体" Grid.ColumnSpan="2" Width="673" />
+        <Label Content="存在下列医疗风险，可能造成严重后果，甚至危及生命：" FontSize="17" Height="30" HorizontalAlignment="Left" Margin="118,433,0,0" Name="label19" VerticalAlignment="Top" FontFamily="宋体" Grid.ColumnSpan="2" Width="474" />
+        <Label Content="1、低血糖、心里衰竭、心悸埂塞、心律失常、脑血管意外；" FontSize="17" Height="34" HorizontalAlignment="Left" Margin="118,465,0,0" Name="label20" VerticalAlignment="Top" Grid.ColumnSpan="2" FontFamily="宋体"  />
+        <Label Content="2、透析过程中发生空气栓塞；" FontSize="17" Height="34" HorizontalAlignment="Left" Margin="118,497,0,0" Name="label21" VerticalAlignment="Top" FontFamily="宋体" Grid.ColumnSpan="2" Width="246" />
+        <TextBlock FontSize="17" Height="25" HorizontalAlignment="Left" LineHeight="30" Margin="85,763,0,0" Name="textBlock3" Text="病人和/或家属已接受医疗风险的告知，并要求接受血液透析治疗。" TextWrapping="Wrap" VerticalAlignment="Top" Width="605" Grid.ColumnSpan="2" FontFamily="宋体" FontWeight="Bold" />
+        <Label Content="病人/家属签名：" FontSize="17" Height="34" HorizontalAlignment="Left" Margin="85,820,0,0" Name="label24" VerticalAlignment="Top" Width="129" FontFamily="宋体" />
+        <Image Name="imgPatientSign" HorizontalAlignment="Left" Margin="225,818,0,0" VerticalAlignment="Top" Width="150" Height="40" Grid.ColumnSpan="2"/>
+        <StackPanel Grid.ColumnSpan="2" Height="28" HorizontalAlignment="Left" Margin="70,131,0,0" Name="stackPanel1" Orientation="Horizontal" VerticalAlignment="Top" Width="760">
+            <Label Content="姓名：" FontFamily="宋体" FontSize="17" Grid.Column="1" Height="27" Name="label3" Width="75" />
+            <TextBox BorderBrush="Black" BorderThickness="0,0,0,1" Grid.Column="1" Height="23" IsReadOnly="False" Name="txtName" Width="74" />
+            <Label Content="性别：" FontFamily="宋体" FontSize="17" Grid.Column="1" Height="27" Name="label33" Width="51" />
+            <TextBox BorderBrush="Black" BorderThickness="0,0,0,1" Grid.Column="1" Height="23" IsReadOnly="False" Name="txtSex" Width="55" />
+            <Label Content="年龄：" FontFamily="宋体" FontSize="17" Grid.Column="1" Height="27" Name="label34" Width="53" />
+            <TextBox BorderBrush="Black" BorderThickness="0,0,0,1" Grid.Column="1" Height="23" IsReadOnly="False" Name="txtAge" Width="67" />
+            <Label Content="门诊(住院号)：" FontFamily="宋体" FontSize="17" Height="30" Name="label30" VerticalAlignment="Top" Width="124" />
+            <TextBox BorderBrush="Black" BorderThickness="0,0,0,1" Height="23" IsReadOnly="False" Name="txtDeptCode" Width="174" />
+        </StackPanel>
+        <StackPanel Grid.ColumnSpan="2" Height="28" HorizontalAlignment="Left" Margin="70,163,0,0" Name="stackPanel2" Orientation="Horizontal" VerticalAlignment="Top" Width="760">
+            <Label Content="诊断：" FontFamily="宋体" FontSize="17" Grid.Column="1" Height="27" Name="label4" Width="73" />
+            <TextBox BorderBrush="Black" BorderThickness="0,0,0,1" Grid.Column="1" Height="23" IsReadOnly="False" Name="txtDIAGNOSE" Width="217" />
+            <Label Content="血管通路情况：" FontFamily="宋体" FontSize="17" Grid.Column="1" Height="27" Name="label1" Width="121" />
+            <TextBox BorderBrush="Black" BorderThickness="0,0,0,1" Grid.Column="1" Height="23" IsReadOnly="False" Name="txtVASCULAR_ACCESS" Width="262" />
+        </StackPanel>
+        <TextBlock FontFamily="宋体" FontSize="17" Grid.ColumnSpan="2" Height="60" HorizontalAlignment="Left" LineHeight="30" Margin="85,263,0,0" Name="textBlock4"   Text="二、血液透析（滤过）治疗时，首先需要将患者血液引出体外，然后通过透析或滤过等方法清除水份和毒素，经处理后的血液再回到患者体内。" TextWrapping="Wrap" VerticalAlignment="Top" Width="605" />
+        <Label Content="告知医生签名：" FontFamily="宋体" FontSize="17" Height="34" HorizontalAlignment="Left" Margin="210,820,0,0" Name="label6" VerticalAlignment="Top" Width="129" Grid.Column="1" />
+        <Label Content="" FontFamily="宋体" FontSize="17" Height="34" HorizontalAlignment="Left" Margin="342,820,0,0" Name="label7" VerticalAlignment="Top" Width="126" Grid.Column="1" />
+        <Label Content="3、过敏反应；" FontFamily="宋体" FontSize="17" Height="34" HorizontalAlignment="Left" Margin="118,528,0,0" Name="label23" VerticalAlignment="Top" Width="246" Grid.ColumnSpan="2" />
+        <Label Content="4、透析失衡，电解质酸碱平衡紊乱；" FontFamily="宋体" FontSize="17" Grid.ColumnSpan="2" Height="34" HorizontalAlignment="Left" Margin="118,557,0,0" Name="label28" VerticalAlignment="Top" Width="444" />
+        <Label Content="5、溶血、出血、严重感染；" FontFamily="宋体" FontSize="17" Grid.ColumnSpan="2" Height="34" HorizontalAlignment="Left" Margin="118,585,0,0" Name="label29" VerticalAlignment="Top" />
+        <Label Content="6、瘘管阻塞，感染；" FontFamily="宋体" FontSize="17" Grid.ColumnSpan="2" Height="34" HorizontalAlignment="Left" Margin="118,616,0,0" Name="label31" VerticalAlignment="Top" Width="246" />
+        <Label Content="7、出现肝损、肾性骨病、消化道疾病等；" FontFamily="宋体" FontSize="17" Grid.ColumnSpan="2" Height="34" HorizontalAlignment="Left" Margin="118,647,0,0" Name="label32" VerticalAlignment="Top" Width="330" />
+        <Label Content="8、病毒性肝炎等传染病；" FontFamily="宋体" FontSize="17" Grid.ColumnSpan="2" Height="34" HorizontalAlignment="Left" Margin="118,676,0,0" Name="label35" VerticalAlignment="Top" Width="444" />
+        <Label Content="9、其它。" FontFamily="宋体" FontSize="17" Grid.ColumnSpan="2" Height="34" HorizontalAlignment="Left" Margin="118,704,0,0" Name="label36" VerticalAlignment="Top" Width="444" />
+        <TextBox BorderBrush="Black" BorderThickness="0,0,0,1" Height="23" HorizontalAlignment="Left" IsReadOnly="False" Margin="85,860,0,137" Name="textBox1" Width="74" />
+        <Label Content="年" FontFamily="宋体" FontSize="17" Height="27" HorizontalAlignment="Left" Margin="161,860,0,133" Name="label5" Width="26" />
+        <TextBox BorderBrush="Black" BorderThickness="0,0,0,1" Height="23" HorizontalAlignment="Left" IsReadOnly="False" Margin="192,860,0,134" Name="textBox2" Width="68" Grid.ColumnSpan="2" />
+        <Label Content="月" FontFamily="宋体" FontSize="17" Height="27" Margin="16,860,501,132" Name="label8" Grid.Column="1" />
+        <TextBox BorderBrush="Black" BorderThickness="0,0,0,1" Height="23" HorizontalAlignment="Left" IsReadOnly="False" Margin="47,860,0,135" Name="textBox3" Width="74" Grid.Column="1" />
+        <Label Content="日" FontFamily="宋体" FontSize="17" Grid.Column="1" Height="27" Margin="119,860,398,131" Name="label9" />
+        <TextBox BorderBrush="Black" BorderThickness="0,0,0,1" Height="23" HorizontalAlignment="Left" IsReadOnly="False" Margin="218,860,0,134" Name="textBox4" Width="74" Grid.Column="1" />
+        <Label Content="年" FontFamily="宋体" FontSize="17" Height="27" HorizontalAlignment="Left" Margin="293,860,0,130" Name="label10" Width="26" Grid.Column="1" />
+        <TextBox BorderBrush="Black" BorderThickness="0,0,0,1" Height="23" HorizontalAlignment="Left" IsReadOnly="False" Margin="324,860,0,131" Name="textBox5" Width="68" Grid.Column="1" />
+        <Label Content="月" FontFamily="宋体" FontSize="17" Height="27" Margin="396,860,121,129" Name="label11" Grid.Column="1" />
+        <TextBox BorderBrush="Black" BorderThickness="0,0,0,1" Height="23" HorizontalAlignment="Left" IsReadOnly="False" Margin="426,860,0,132" Name="textBox6" Width="74" Grid.Column="1" />
+        <Label Content="日" FontFamily="宋体" FontSize="17" Grid.Column="1" Height="27" Margin="497,860,20,128" Name="label12" />
+    </Grid>
+</UserControl>

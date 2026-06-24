@@ -1,0 +1,17 @@
+﻿<UserControl x:Class="Hemo.Client.Doc.术后告知"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="1000" d:DesignWidth="760">
+    <Grid>
+        <Label Content="动静脉内瘘术后注意事项" FontFamily="宋体" FontSize="22"  Height="50" HorizontalAlignment="Left" HorizontalContentAlignment="Center" Margin="141,66,0,0" Name="label1" VerticalAlignment="Top" VerticalContentAlignment="Center" Width="522" FontStyle="Normal" />
+        <TextBlock FontFamily="宋体" FontSize="17"  Height="260" HorizontalAlignment="Left" LineHeight="35" Margin="85,134,0,0" Name="textBlock1" Text="1.内瘘侧肢体禁止测量血压、输液等相关操作。                            2.尽量抬高术侧肢体，促进静脉回流；需穿宽松衣袖的衣服。睡眠时注意不能压到术侧肢体。                                                          3.术后第二天开始内瘘侧肢体锻炼（反复握拳），1~2个月后经医生检查后决定内瘘使用时间。                                                          4.保持敷料清洁干燥，术后2~3天换药，10~14天拆线。                      5.如遇特殊情况，及时就医。" TextWrapping="Wrap" VerticalAlignment="Top" Width="605" />
+        <Label Content="" FontFamily="宋体" FontSize="26" FontStyle="Normal" Height="50" HorizontalAlignment="Left" HorizontalContentAlignment="Center" Margin="141,20,0,0" Name="lblHospital" VerticalAlignment="Top" VerticalContentAlignment="Center" Width="522" />
+        <Label Content="患者签名：" FontFamily="宋体" FontSize="15" Height="25" HorizontalAlignment="Left" Margin="441,406,0,0" Name="label4" VerticalAlignment="Top" Width="121" />
+        <Image Name="imgPatientSign" HorizontalAlignment="Left" Margin="568,400,0,0" VerticalAlignment="Top" Width="150" Height="40"/>
+        <Label Content="医生/护士签名：" FontFamily="宋体" FontSize="15" Height="25" HorizontalAlignment="Left" Margin="441,447,0,0" Name="label2" VerticalAlignment="Top" Width="121" />
+        <Label Content="" FontFamily="宋体" FontSize="17" Height="25" HorizontalAlignment="Left" Margin="568,447,0,0" Name="label3" VerticalAlignment="Top" Width="120" />
+    </Grid>
+</UserControl>

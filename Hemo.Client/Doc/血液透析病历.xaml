@@ -1,0 +1,151 @@
+﻿<UserControl x:Class="Hemo.Client.Doc.血液透析病历"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="1100" d:DesignWidth="816">
+    <Grid>
+        <Label Content="" FontFamily="宋体" FontSize="26" FontStyle="Normal"  Height="50" HorizontalAlignment="Left" HorizontalContentAlignment="Center" Margin="118,49,0,0" Name="lblHospital" VerticalAlignment="Top" VerticalContentAlignment="Center" Width="590" />
+        <Label Content="血液透析病历" FontFamily="宋体" FontSize="22"  Height="44" HorizontalAlignment="Left" HorizontalContentAlignment="Center" Margin="245,95,0,0" Name="label2" VerticalAlignment="Top" VerticalContentAlignment="Center" Width="292" />
+        <Label Content="姓名：" FontFamily="宋体" FontSize="17"  Height="27" HorizontalAlignment="Left" Margin="91,156,0,0" Name="lblName" VerticalAlignment="Top" Width="51" />
+        <TextBox BorderBrush="Black" BorderThickness="0,0,0,0" FontFamily="宋体" FontSize="17"  Height="23" HorizontalAlignment="Left" IsReadOnly="False" Margin="148,160,0,917" Name="txtName" Width="92" />
+        <Label Content="姓别：" FontFamily="宋体" FontSize="17"  Height="27" Margin="245,156,520,0" Name="label3" VerticalAlignment="Top" />
+        <TextBox BorderBrush="Black" BorderThickness="0,0,0,0" FontFamily="宋体" FontSize="17"  Height="23" HorizontalAlignment="Left" IsReadOnly="False" Margin="302,160,0,917" Name="txtSex" Width="92" />
+        <Label Content="年龄：" FontFamily="宋体" FontSize="17"  Height="27" Margin="402,156,363,0" Name="label4" VerticalAlignment="Top" />
+        <TextBox BorderBrush="Black" BorderThickness="0,0,0,0" FontFamily="宋体" FontSize="17"  Height="23" HorizontalAlignment="Right" IsReadOnly="False" Margin="0,160,265,917" Name="txtAge" Width="92" />
+        <Label Content="病案号：" FontFamily="宋体" FontSize="17"  Height="27" Margin="559,156,0,0" Name="label5" VerticalAlignment="Top" HorizontalAlignment="Left" Width="69" />
+        <TextBox BorderBrush="Black" BorderThickness="0,0,0,0" FontFamily="宋体" FontSize="17"  Height="23" HorizontalAlignment="Right" IsReadOnly="False" Margin="0,160,98,917" Name="txtPatientID" Width="92" />
+        <Label Content="家庭住址：" FontFamily="宋体" FontSize="17"  Height="27" HorizontalAlignment="Left" Margin="91,189,0,0" Name="label6" VerticalAlignment="Top" Width="84" />
+        <TextBox BorderBrush="Black" BorderThickness="0,0,0,0" FontFamily="宋体" FontSize="17"  Height="23" HorizontalAlignment="Right" IsReadOnly="False" Margin="0,193,108,884" Name="txtADDRESS" Width="527" />
+        <Label Content="联系人：" FontFamily="宋体" FontSize="17"  Height="27" HorizontalAlignment="Left" Margin="91,222,0,0" Name="label7" VerticalAlignment="Top" Width="70" />
+        <TextBox BorderBrush="Black" BorderThickness="0,0,0,0" FontFamily="宋体" FontSize="17"  Height="23" HorizontalAlignment="Right" IsReadOnly="False" Margin="0,226,576,851" Name="textBox2" Width="73" />
+        <Label Content="关系：" FontFamily="宋体" FontSize="17"  Height="27" Margin="245,222,520,0" Name="label8" VerticalAlignment="Top" />
+        <TextBox BorderBrush="Black" BorderThickness="0,0,0,0" FontFamily="宋体" FontSize="17"  Height="23" HorizontalAlignment="Right" IsReadOnly="False" Margin="0,226,422,851" Name="textBox3" Width="92" />
+        <Label Content="联系人电话：" FontFamily="宋体" FontSize="17"  Height="27" Margin="402,222,306,0" Name="label9" VerticalAlignment="Top" />
+        <TextBox BorderBrush="Black" BorderThickness="0,0,0,0" FontFamily="宋体" FontSize="17"  Height="23" HorizontalAlignment="Right" IsReadOnly="False" Margin="0,226,188,851" Name="txtTELEPHONE" Width="112" />
+        <Label Content="原发病：" FontFamily="宋体" FontSize="17"  Height="27" HorizontalAlignment="Left" Margin="91,255,0,0" Name="label10" VerticalAlignment="Top" Width="70" />
+        <TextBox BorderBrush="Black" BorderThickness="0,0,0,0" FontFamily="宋体" FontSize="17"  Height="23" HorizontalAlignment="Right" IsReadOnly="False" Margin="0,259,438,818" Name="textBox5" Width="211" />
+        <Label Content="确诊日期：" FontFamily="宋体" FontSize="17"  Height="27" Margin="402,255,0,0" Name="label11" VerticalAlignment="Top" HorizontalAlignment="Left" Width="99" />
+        <TextBox BorderBrush="Black" BorderThickness="0,0,0,0" FontFamily="宋体" FontSize="17"  Height="23" HorizontalAlignment="Left" IsReadOnly="False" Margin="486,259,0,818" Name="txtCONFIRMED_DATE" Width="92" />
+        <Label Content="年" FontFamily="宋体" FontSize="17"  Height="27" HorizontalAlignment="Right" Margin="0,255,201,0" Name="label12" VerticalAlignment="Top" Width="34" />
+        <TextBox BorderBrush="Black" BorderThickness="0,0,0,0" FontFamily="宋体" FontSize="17"  Height="23" HorizontalAlignment="Left" IsReadOnly="False" Margin="616,259,0,818" Name="textBox8" Width="34" />
+        <Label Content="月" FontFamily="宋体" FontSize="17"  Height="27" Margin="656,255,126,0" Name="label14" VerticalAlignment="Top" />
+        <TextBox BorderBrush="Black" BorderThickness="0,0,0,0" FontFamily="宋体" FontSize="17"  Height="23" HorizontalAlignment="Left" IsReadOnly="False" Margin="688,259,0,818" Name="textBox7" Width="34" />
+        <Label Content="日" FontFamily="宋体" FontSize="17"  Height="27" Margin="0,255,54,0" Name="label13" VerticalAlignment="Top" HorizontalAlignment="Right" Width="34" />
+        <Label Content="药物过敏史：" FontFamily="宋体" FontSize="17"  Height="27" HorizontalAlignment="Left" Margin="91,284,0,0" Name="label15" VerticalAlignment="Top" Width="108" />
+        <TextBox BorderBrush="Black" BorderThickness="0,0,0,0" FontFamily="宋体" FontSize="17"  Height="23" HorizontalAlignment="Right" IsReadOnly="False" Margin="0,288,438,789" Name="textBox9" Width="173" />
+        <Label Content="初诊透析日期：" FontFamily="宋体" FontSize="17"  Height="27" HorizontalAlignment="Left" Margin="402,284,0,0" Name="label16" VerticalAlignment="Top" Width="119" />
+        <TextBox BorderBrush="Black" BorderThickness="0,0,0,0" FontFamily="宋体" FontSize="17"  Height="23" HorizontalAlignment="Left" IsReadOnly="False" Margin="527,288,0,789" Name="textBox10" Width="59" />
+        <Label Content="年" FontFamily="宋体" FontSize="17"  Height="27" HorizontalAlignment="Right" Margin="0,284,201,0" Name="label17" VerticalAlignment="Top" Width="34" />
+        <TextBox BorderBrush="Black" BorderThickness="0,0,0,0" FontFamily="宋体" FontSize="17"  Height="23" HorizontalAlignment="Left" IsReadOnly="False" Margin="616,288,0,789" Name="textBox11" Width="34" />
+        <Label Content="月" FontFamily="宋体" FontSize="17"  Height="27" Margin="656,284,126,0" Name="label18" VerticalAlignment="Top" />
+        <TextBox BorderBrush="Black" BorderThickness="0,0,0,0" FontFamily="宋体" FontSize="17"  Height="23" HorizontalAlignment="Left" IsReadOnly="False" Margin="688,288,0,789" Name="textBox12" Width="34" />
+        <Label Content="日" FontFamily="宋体" FontSize="17"  Height="27" HorizontalAlignment="Right" Margin="0,284,54,0" Name="label19" VerticalAlignment="Top" Width="34" />
+        <Label Content="血管通路：" FontFamily="宋体" FontSize="17"  Height="27" HorizontalAlignment="Left" Margin="91,317,0,0" Name="label20" VerticalAlignment="Top" Width="108" />
+        <CheckBox Content="临时导管" Height="22" HorizontalAlignment="Left" Margin="180,322,0,0" Name="chkTempVass" VerticalAlignment="Top" FontSize="17" FontFamily="宋体"  />
+        <CheckBox Content="长期导管" FontFamily="宋体" FontSize="17"  Height="22" HorizontalAlignment="Left" Margin="292,322,0,0" Name="checkBox1" VerticalAlignment="Top" />
+        <CheckBox Content="内瘘" FontFamily="宋体" FontSize="17"  Height="22" HorizontalAlignment="Left" Margin="410,322,0,0" Name="checkBox2" VerticalAlignment="Top" />
+        <CheckBox Content="直穿" FontFamily="宋体" FontSize="17"  Height="22" HorizontalAlignment="Right" Margin="0,322,268,0" Name="checkBox3" VerticalAlignment="Top" />
+        <Label Content="病史（发病时间、经过及主要治疗措施）：" FontFamily="宋体" FontSize="17"  Height="27" HorizontalAlignment="Left" Margin="91,348,0,0" Name="label21" VerticalAlignment="Top" Width="338" />
+        <TextBox BorderBrush="Black" BorderThickness="0,0,0,0" FontFamily="宋体" FontSize="17"  HorizontalAlignment="Right" IsReadOnly="False" Margin="0,381,86,627" Name="textBox13" Width="628" />
+        <Label Content="临床主要症状：" FontFamily="宋体" FontSize="17"  Height="27" HorizontalAlignment="Left" Margin="91,478,0,0" Name="label22" VerticalAlignment="Top" Width="132" />
+        <CheckBox Content="头晕" FontFamily="宋体" FontSize="17"  Height="22" HorizontalAlignment="Left" Margin="210,484,0,0" Name="checkBox4" VerticalAlignment="Top" />
+        <CheckBox Content="头疼" FontFamily="宋体" FontSize="17"  Height="22" HorizontalAlignment="Left" Margin="281,484,0,0" Name="checkBox5" VerticalAlignment="Top" />
+        <CheckBox Content="胸闷" FontFamily="宋体" FontSize="17"  Height="22" HorizontalAlignment="Left" Margin="354,484,0,0" Name="checkBox6" VerticalAlignment="Top" />
+        <CheckBox Content="平卧困难" FontFamily="宋体" FontSize="17"  Height="22" HorizontalAlignment="Left" Margin="424,484,0,0" Name="checkBox7" VerticalAlignment="Top" />
+        <CheckBox Content="恶心" FontFamily="宋体" FontSize="17"  Height="22" HorizontalAlignment="Left" Margin="521,484,0,0" Name="checkBox8" VerticalAlignment="Top" />
+        <CheckBox Content="呕吐" FontFamily="宋体" FontSize="17"  Height="22" HorizontalAlignment="Left" Margin="581,484,0,0" Name="checkBox9" VerticalAlignment="Top" />
+        <CheckBox Content="腹痛" FontFamily="宋体" FontSize="17"  Height="22" HorizontalAlignment="Left" Margin="645,483,0,0" Name="checkBox10" VerticalAlignment="Top" />
+        <CheckBox Content="腹泻" FontFamily="宋体" FontSize="17"  Height="22" HorizontalAlignment="Left" Margin="210,512,0,0" Name="checkBox11" VerticalAlignment="Top" />
+        <CheckBox Content="浮肿" FontFamily="宋体" FontSize="17"  Height="22" HorizontalAlignment="Right" Margin="0,512,483,0" Name="checkBox12" VerticalAlignment="Top" />
+        <CheckBox Content="乏力" FontFamily="宋体" FontSize="17"  Height="22" HorizontalAlignment="Left" Margin="354,512,0,0" Name="checkBox13" VerticalAlignment="Top" />
+        <CheckBox Content="皮肤瘙痒" FontFamily="宋体" FontSize="17"  Height="22" HorizontalAlignment="Left" Margin="424,512,0,0" Name="checkBox14" VerticalAlignment="Top" />
+        <CheckBox Content="骨痛" FontFamily="宋体" FontSize="17"  Height="22" HorizontalAlignment="Left" Margin="521,512,0,0" Name="checkBox15" VerticalAlignment="Top" />
+        <CheckBox Content="抽筋" FontFamily="宋体" FontSize="17"  Height="22" HorizontalAlignment="Left" Margin="581,512,0,0" Name="checkBox16" VerticalAlignment="Top" />
+        <Label Content="尿量约：" FontFamily="宋体" FontSize="17"  Height="27" HorizontalAlignment="Right" Margin="0,507,101,0" Name="label23" VerticalAlignment="Top" Width="70" />
+        <Label Content="ml" FontFamily="宋体" FontSize="17"  Height="27" HorizontalAlignment="Right" Margin="0,507,30,0" Name="label24" VerticalAlignment="Top" Width="28" />
+        <TextBox BorderBrush="Black" BorderThickness="0,0,0,0" FontFamily="宋体" FontSize="17"  Height="23" HorizontalAlignment="Left" IsReadOnly="False" Margin="721,508,0,569" Name="textBox14" Width="34" />
+        <Label Content="体格检验：" FontFamily="宋体" FontSize="17"  Height="27" HorizontalAlignment="Left" Margin="91,538,0,0" Name="label25" VerticalAlignment="Top" Width="108" />
+        <Label Content="一般状态" FontFamily="宋体" FontSize="17"  Height="27" HorizontalAlignment="Left" Margin="91,579,0,0" Name="label26" VerticalAlignment="Top" Width="108" />
+        <TextBox BorderBrush="Black" BorderThickness="0,0,0,0" FontFamily="宋体" FontSize="17"  Height="23" HorizontalAlignment="Left" IsReadOnly="False" Margin="180,583,0,494" Name="textBox15" Width="82" />
+        <Label Content="T：" FontFamily="宋体" FontSize="17"  Height="27" HorizontalAlignment="Right" Margin="0,579,520,0" Name="label27" VerticalAlignment="Top" Width="31" />
+        <Label Content="P：" FontFamily="宋体" FontSize="17"  Height="27" HorizontalAlignment="Left" Margin="334,579,0,0" Name="label28" VerticalAlignment="Top" Width="31" />
+        <Label Content="R：" FontFamily="宋体" FontSize="17"  Height="27" HorizontalAlignment="Right" Margin="0,579,310,0" Name="label29" VerticalAlignment="Top" Width="31" />
+        <Label Content="次/分" FontFamily="宋体" FontSize="17"  Height="27" HorizontalAlignment="Right" Margin="0,579,220,0" Name="label30" VerticalAlignment="Top" Width="54" />
+        <Label Content="BP：" FontFamily="宋体" FontSize="17"  Height="27" HorizontalAlignment="Right" Margin="0,579,159,0" Name="label31" VerticalAlignment="Top" Width="31" />
+        <Label Content="mmHg" FontFamily="宋体" FontSize="17"  Height="36" HorizontalAlignment="Right" Margin="0,579,30,0" Name="label32" VerticalAlignment="Top" Width="65" />
+        <Label Content="体重：" FontFamily="宋体" FontSize="17"  Height="27" HorizontalAlignment="Left" Margin="91,622,0,0" Name="label33" VerticalAlignment="Top" Width="51" />
+        <Label Content="Kg" FontFamily="宋体" FontSize="17"  Height="37" HorizontalAlignment="Right" Margin="0,622,575,0" Name="label34" VerticalAlignment="Top" Width="31" />
+        <Label Content="水肿：" FontFamily="宋体" FontSize="17"  Height="27" HorizontalAlignment="Left" Margin="459,622,0,0" Name="label35" VerticalAlignment="Top" Width="51" />
+        <CheckBox Content="无" FontFamily="宋体" FontSize="17"  Height="22" HorizontalAlignment="Left" Margin="510,627,0,0" Name="checkBox17" VerticalAlignment="Top" />
+        <CheckBox Content="有" FontFamily="宋体" FontSize="17"  Height="22" HorizontalAlignment="Right" Margin="0,627,223,0" Name="checkBox18" VerticalAlignment="Top" />
+        <Label Content="（部位：" FontFamily="宋体" FontSize="17"  Height="27" HorizontalAlignment="Left" Margin="597,622,0,0" Name="label36" VerticalAlignment="Top" Width="72" />
+        <TextBox BorderBrush="Black" BorderThickness="0,0,0,0" FontFamily="宋体" FontSize="17"  Height="23" HorizontalAlignment="Right" IsReadOnly="False" Margin="0,623,74,454" Name="textBox16" Width="68" />
+        <Label Content="）" FontFamily="宋体" FontSize="17"  Height="27" HorizontalAlignment="Right" Margin="0,622,8,0" Name="label37" VerticalAlignment="Top" Width="72" />
+        <TextBox BorderBrush="Black" BorderThickness="0,0,0,0" FontFamily="宋体" FontSize="17"  Height="23" HorizontalAlignment="Left" IsReadOnly="False" Margin="289,583,0,494" Name="textBox17" Width="44" />
+        <Label Content="次/分" FontFamily="宋体" FontSize="17"  Height="27" HorizontalAlignment="Right" Margin="0,579,349,0" Name="label39" VerticalAlignment="Top" Width="54" />
+        <TextBox BorderBrush="Black" BorderThickness="0,0,0,0" FontFamily="宋体" FontSize="17"  Height="23" HorizontalAlignment="Right" IsReadOnly="False" Margin="0,583,410,494" Name="textBox18" Width="44" />
+        <TextBox BorderBrush="Black" BorderThickness="0,0,0,0" FontFamily="宋体" FontSize="17"  Height="23" HorizontalAlignment="Left" IsReadOnly="False" Margin="500,583,0,494" Name="textBox19" Width="44" />
+        <TextBox BorderBrush="Black" BorderThickness="0,0,0,0" FontFamily="宋体" FontSize="17"  Height="23" HorizontalAlignment="Left" IsReadOnly="False" Margin="664,579,0,498" Name="textBox21" Width="44" />
+        <TextBox BorderBrush="Black" BorderThickness="0,0,0,0" FontFamily="宋体" FontSize="17"  Height="23" HorizontalAlignment="Left" IsReadOnly="False" Margin="155,623,0,454" Name="textBox20" Width="44" />
+        <Label Content="皮疹：" FontFamily="宋体" FontSize="17"  Height="27" HorizontalAlignment="Left" Margin="91,665,0,0" Name="label38" VerticalAlignment="Top" Width="51" />
+        <CheckBox Content="无" FontFamily="宋体" FontSize="17"  Height="22" HorizontalAlignment="Left" Margin="142,670,0,0" Name="checkBox19" VerticalAlignment="Top" />
+        <CheckBox Content="有" FontFamily="宋体" FontSize="17"  Height="22" HorizontalAlignment="Right" Margin="0,670,591,0" Name="checkBox20" VerticalAlignment="Top" />
+        <Label Content="（部位：" FontFamily="宋体" FontSize="17"  Height="27" HorizontalAlignment="Left" Margin="229,665,0,0" Name="label40" VerticalAlignment="Top" Width="72" />
+        <TextBox BorderBrush="Black" BorderThickness="0,0,0,0" FontFamily="宋体" FontSize="17"  Height="23" HorizontalAlignment="Right" IsReadOnly="False" Margin="0,666,442,411" Name="textBox22" Width="68" />
+        <Label Content="）" FontFamily="宋体" FontSize="17"  Height="27" HorizontalAlignment="Right" Margin="0,665,376,0" Name="label41" VerticalAlignment="Top" Width="72" />
+        <Label Content="出血：" FontFamily="宋体" FontSize="17"  Height="27" HorizontalAlignment="Left" Margin="459,664,0,0" Name="label42" VerticalAlignment="Top" Width="51" />
+        <CheckBox Content="无" FontFamily="宋体" FontSize="17"  Height="22" HorizontalAlignment="Left" Margin="510,669,0,0" Name="checkBox21" VerticalAlignment="Top" />
+        <CheckBox Content="有" FontFamily="宋体" FontSize="17"  Height="22" HorizontalAlignment="Right" Margin="0,669,223,0" Name="checkBox22" VerticalAlignment="Top" />
+        <Label Content="（部位：" FontFamily="宋体" FontSize="17"  Height="27" HorizontalAlignment="Left" Margin="597,664,0,0" Name="label43" VerticalAlignment="Top" Width="72" />
+        <TextBox BorderBrush="Black" BorderThickness="0,0,0,0" FontFamily="宋体" FontSize="17"  Height="23" HorizontalAlignment="Right" IsReadOnly="False" Margin="0,665,74,412" Name="textBox23" Width="68" />
+        <Label Content="）" FontFamily="宋体" FontSize="17"  Height="27" HorizontalAlignment="Right" Margin="0,664,8,0" Name="label44" VerticalAlignment="Top" Width="72" />
+        <Label Content="眼：" FontFamily="宋体" FontSize="17"  Height="27" HorizontalAlignment="Left" Margin="91,707,0,0" Name="label45" VerticalAlignment="Top" Width="34" />
+        <Label Content="口腔：" FontFamily="宋体" FontSize="17"  Height="27" HorizontalAlignment="Left" Margin="206,707,0,0" Name="label46" VerticalAlignment="Top" Width="56" />
+        <Label Content="颈部：" FontFamily="宋体" FontSize="17"  Height="27" HorizontalAlignment="Right" Margin="0,707,410,0" Name="label47" VerticalAlignment="Top" Width="52" />
+        <TextBox BorderBrush="Black" BorderThickness="0,0,0,0" FontFamily="宋体" FontSize="17"  Height="23" HorizontalAlignment="Left" IsReadOnly="False" Margin="257,711,0,366" Name="textBox24" Width="91" />
+        <TextBox BorderBrush="Black" BorderThickness="0,0,0,0" FontFamily="宋体" FontSize="17"  Height="23" HorizontalAlignment="Left" IsReadOnly="False" Margin="124,711,0,366" Name="textBox25" Width="75" />
+        <TextBox BorderBrush="Black" BorderThickness="0,0,0,0" FontFamily="宋体" FontSize="17"  Height="23" HorizontalAlignment="Left" IsReadOnly="False" Margin="419,707,0,370" Name="textBox26" Width="91" />
+        <Label Content="心脏：心率" FontFamily="宋体" FontSize="17"  Height="27" HorizontalAlignment="Left" Margin="91,740,0,0" Name="label48" VerticalAlignment="Top" Width="108" />
+        <TextBox BorderBrush="Black" BorderThickness="0,0,0,0" FontFamily="宋体" FontSize="17"  Height="23" HorizontalAlignment="Left" IsReadOnly="False" Margin="197,744,0,333" Name="textBox27" Width="75" />
+        <Label Content="/min" FontFamily="宋体" FontSize="17"  Height="27" HorizontalAlignment="Right" Margin="0,740,487,0" Name="label49" VerticalAlignment="Top" Width="52" />
+        <Label Content="心音：" FontFamily="宋体" FontSize="17"  Height="27" HorizontalAlignment="Right" Margin="0,740,363,0" Name="label50" VerticalAlignment="Top" Width="52" />
+        <TextBox BorderBrush="Black" BorderThickness="0,0,0,0" FontFamily="宋体" FontSize="17"  Height="23" HorizontalAlignment="Right" IsReadOnly="False" Margin="0,744,288,333" Name="textBox28" Width="75" />
+        <Label Content="肝脾：" FontFamily="宋体" FontSize="17"  Height="27" HorizontalAlignment="Right" Margin="0,775,203,0" Name="label51" VerticalAlignment="Top" Width="52" />
+        <TextBox BorderBrush="Black" BorderThickness="0,0,0,0" FontFamily="宋体" FontSize="17"  Height="23" HorizontalAlignment="Right" IsReadOnly="False" Margin="0,779,50,298" Name="textBox29" Width="153" />
+        <Label Content="腹部：" FontFamily="宋体" FontSize="17"  Height="27" HorizontalAlignment="Right" Margin="0,775,424,0" Name="label52" VerticalAlignment="Top" Width="52" />
+        <TextBox BorderBrush="Black" BorderThickness="0,0,0,0" FontFamily="宋体" FontSize="17"  Height="23" HorizontalAlignment="Left" IsReadOnly="False" Margin="402,779,0,298" Name="textBox30" Width="156" />
+        <Label Content="肺部：" FontFamily="宋体" FontSize="17"  Height="27" HorizontalAlignment="Right" Margin="0,776,675,0" Name="label53" VerticalAlignment="Top" Width="52" />
+        <TextBox BorderBrush="Black" BorderThickness="0,0,0,0" FontFamily="宋体" FontSize="17"  Height="23" HorizontalAlignment="Right" IsReadOnly="False" Margin="0,778,483,0" Name="textBox31" Width="166" VerticalAlignment="Top" />
+        <Label Content="辅助检测：" FontFamily="宋体" FontSize="17"  Height="27" HorizontalAlignment="Left" Margin="91,804,0,0" Name="label54" VerticalAlignment="Top" Width="85" />
+        <TextBox BorderBrush="Black" BorderThickness="0,0,0,0" FontFamily="宋体" FontSize="17"  Height="23" HorizontalAlignment="Right" IsReadOnly="False" Margin="0,808,441,269" Name="textBox32" Width="190" />
+        <Label Content="传染病指标：乙肝：HBsAg" FontFamily="宋体" FontSize="17"  Height="35" HorizontalAlignment="Left" Margin="91,837,0,0" Name="label55" VerticalAlignment="Top" Width="225" />
+        <TextBox BorderBrush="Black" BorderThickness="0,0,0,0" FontFamily="宋体" FontSize="17"  Height="23" HorizontalAlignment="Right" IsReadOnly="False" Margin="0,841,438,236" Name="textBox33" Width="76" />
+        <Label Content="，HbsAb" FontFamily="宋体" FontSize="17"  Height="27" HorizontalAlignment="Right" Margin="0,839,354,0" Name="label56" VerticalAlignment="Top" Width="85" />
+        <TextBox BorderBrush="Black" BorderThickness="0,0,0,0" FontFamily="宋体" FontSize="17"  Height="23" HorizontalAlignment="Right" IsReadOnly="False" Margin="0,843,285,234" Name="textBox34" Width="76" />
+        <Label Content="，HBeAg" FontFamily="宋体" FontSize="17"  Height="35" HorizontalAlignment="Left" Margin="530,837,0,0" Name="label57" VerticalAlignment="Top" Width="85" />
+        <TextBox BorderBrush="Black" BorderThickness="0,0,0,0" FontFamily="宋体" FontSize="17"  Height="23" HorizontalAlignment="Right" IsReadOnly="False" Margin="0,843,127,234" Name="textBox35" Width="76" />
+        <Label Content="，" FontFamily="宋体" FontSize="17"  Height="35" HorizontalAlignment="Right" Margin="0,837,94,0" Name="label58" VerticalAlignment="Top" Width="34" />
+        <Label Content="HBeAb" FontFamily="宋体" FontSize="17"  Height="35" HorizontalAlignment="Left" Margin="196,878,0,0" Name="label59" VerticalAlignment="Top" Width="56" />
+        <TextBox BorderBrush="Black" BorderThickness="0,0,0,0" FontFamily="宋体" FontSize="17"  Height="23" HorizontalAlignment="Right" IsReadOnly="False" Margin="0,881,495,196" Name="textBox36" Width="68" />
+        <Label Content="，HBcAb" FontFamily="宋体" FontSize="17"  Height="27" HorizontalAlignment="Right" Margin="0,876,411,0" Name="label60" VerticalAlignment="Top" Width="85" />
+        <TextBox BorderBrush="Black" BorderThickness="0,0,0,0" FontFamily="宋体" FontSize="17"  Height="23" HorizontalAlignment="Right" IsReadOnly="False" Margin="0,880,352,197" Name="textBox37" Width="66" />
+        <Label Content="，丙肝" FontFamily="宋体" FontSize="17"  Height="27" HorizontalAlignment="Right" Margin="0,876,295,0" Name="label61" VerticalAlignment="Top" Width="69" />
+        <TextBox BorderBrush="Black" BorderThickness="0,0,0,0" FontFamily="宋体" FontSize="17"  Height="23" HorizontalAlignment="Left" IsReadOnly="False" Margin="522,879,0,198" Name="textBox38" Width="67" />
+        <Label Content="梅素：" FontFamily="宋体" FontSize="17"  Height="28" HorizontalAlignment="Right" Margin="0,875,178,0" Name="label62" VerticalAlignment="Top" Width="51" />
+        <TextBox BorderBrush="Black" BorderThickness="0,0,0,0" FontFamily="宋体" FontSize="17"  Height="23" HorizontalAlignment="Right" IsReadOnly="False" Margin="0,879,114,198" Name="textBox39" Width="67" />
+        <Label Content="HIV：" FontFamily="宋体" FontSize="17"  Height="28" HorizontalAlignment="Right" Margin="0,875,67,0" Name="label63" VerticalAlignment="Top" Width="51" />
+        <TextBox BorderBrush="Black" BorderThickness="0,0,0,0" FontFamily="宋体" FontSize="17"  Height="23" HorizontalAlignment="Right" IsReadOnly="False" Margin="0,879,3,198" Name="textBox40" Width="67" />
+        <Label Content="上级医师：" FontFamily="宋体" FontSize="17"  Height="27" HorizontalAlignment="Left" Margin="91,1021,0,0" Name="label64" VerticalAlignment="Top" Width="85" />
+        <TextBox BorderBrush="Black" BorderThickness="0,0,0,0" FontFamily="宋体" FontSize="17"  Height="23" HorizontalAlignment="Left" IsReadOnly="False" Margin="183,1025,0,52" Name="textBox41" Width="125" />
+        <Label Content="医师：" FontFamily="宋体" FontSize="17"  Height="27" HorizontalAlignment="Left" Margin="321,1021,0,0" Name="label65" VerticalAlignment="Top" Width="57" />
+        <TextBox BorderBrush="Black" BorderThickness="0,0,0,0" FontFamily="宋体" FontSize="17"  Height="23" HorizontalAlignment="Left" IsReadOnly="False" Margin="376,1025,0,52" Name="textBox42" Width="86" />
+        <Label Content="年" FontFamily="宋体" FontSize="17"  Height="27" HorizontalAlignment="Right" Margin="0,1021,242,0" Name="label66" VerticalAlignment="Top" Width="34" />
+        <Label Content="月" FontFamily="宋体" FontSize="17"  Height="27" HorizontalAlignment="Left" Margin="626,1021,0,0" Name="label67" VerticalAlignment="Top" Width="34" />
+        <Label Content="日" FontFamily="宋体" FontSize="17"  Height="27" HorizontalAlignment="Right" Margin="0,1021,78,0" Name="label68" VerticalAlignment="Top" Width="34" />
+        <TextBox BorderBrush="Black" BorderThickness="0,0,0,0" FontFamily="宋体" FontSize="17"  Height="23" HorizontalAlignment="Left" IsReadOnly="False" Margin="464,1025,0,52" Name="textBox43" Width="69" />
+        <TextBox BorderBrush="Black" BorderThickness="0,0,0,0" FontFamily="宋体" FontSize="17"  Height="23" HorizontalAlignment="Left" IsReadOnly="False" Margin="576,1025,0,52" Name="textBox44" Width="46" />
+        <TextBox BorderBrush="Black" BorderThickness="0,0,0,0" FontFamily="宋体" FontSize="17"  Height="23" HorizontalAlignment="Right" IsReadOnly="False" Margin="0,1025,117,52" Name="textBox45" Width="43" />
+    </Grid>
+</UserControl>

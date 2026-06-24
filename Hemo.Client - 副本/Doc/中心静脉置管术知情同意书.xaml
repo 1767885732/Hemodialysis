@@ -1,0 +1,55 @@
+﻿<UserControl x:Class="Hemo.Client.Doc.中心静脉置管术知情同意书"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="1100" d:DesignWidth="760">
+    <Grid>
+        <Label Content="" FontFamily="宋体" FontSize="26"  Height="50" HorizontalAlignment="Left" HorizontalContentAlignment="Center" Margin="144,20,0,0" Name="lblHospital" VerticalAlignment="Top" VerticalContentAlignment="Center" Width="522" FontStyle="Normal" />
+        <Label Content="中心静脉置管术知情同意书" FontSize="22" Height="33" HorizontalAlignment="Left" HorizontalContentAlignment="Center" Margin="209,73,0,0" Name="label2" VerticalAlignment="Top" VerticalContentAlignment="Center" Width="405" FontFamily="宋体"  />
+        <StackPanel Height="28" Orientation="Horizontal" HorizontalAlignment="Left"  Name="stackPanel1" VerticalAlignment="Top" Margin="28,147,0,0" Width="750">
+            <Label Content="患者姓名：" Height="27" Name="label3" FontSize="17" FontFamily="宋体" Grid.Column="1" Width="85" />
+            <TextBox Height="23" BorderThickness="0,0,0,1" BorderBrush="Black" Name="txtName" Grid.Column="1" Width="74" IsReadOnly="False" />
+            <Label Content="性别：" Height="27" Name="label33" FontSize="17" FontFamily="宋体" Grid.Column="1" Width="51" />
+            <TextBox Height="23" BorderThickness="0,0,0,1" BorderBrush="Black" Name="txtSex" Grid.Column="1" Width="55" IsReadOnly="False" />
+            <Label Content="年龄：" Height="27" Name="label34" FontSize="17" FontFamily="宋体" Grid.Column="1" Width="53" />
+            <TextBox Height="23" BorderThickness="0,0,0,1" BorderBrush="Black" Name="txtAge" Grid.Column="1" Width="67" IsReadOnly="False" />
+            <Label Content="科室：" FontFamily="宋体" FontSize="17" Height="30" Name="label1" Width="52" />
+            <TextBox BorderBrush="Black" BorderThickness="0,0,0,1" Height="23" IsReadOnly="False" Name="textBox1" Width="62" />
+            <Label Content="科室：" Height="30"  Name="label30" VerticalAlignment="Top" FontSize="17" FontFamily="宋体"  Width="52" />
+            <TextBox Height="23"  BorderThickness="0,0,0,1" BorderBrush="Black" Name="txtDeptCode" Width="62" IsReadOnly="False" />
+            <Label Content="床号：" Height="27" HorizontalAlignment="Left"  Name="label32" VerticalAlignment="Top" FontSize="17" FontFamily="宋体"  Grid.Column="1" Width="51" />
+            <TextBox Height="23"  BorderThickness="0,0,0,1" BorderBrush="Black" Name="txtBedNum"  Grid.Column="1" Width="87" IsReadOnly="False" />
+        </StackPanel>
+        <Label Content="患者因病情需要行血液净化治疗,目前需要先行中心静脉插管以建立必要的血管通路" HorizontalAlignment="Left" Margin="85,208,0,856" Name="label9" FontSize="14" FontFamily="宋体"  Width="631" />
+        <Label Content="(颈静脉临时/长期、股静脉、锁骨下静脉插管 )，插管手术可能发生的情况和准备采取的对策：" FontSize="14" Height="36" HorizontalAlignment="Left" Margin="85,238,0,0" Name="label12" VerticalAlignment="Top" FontFamily="宋体" Width="722" />
+        <Label Content="1、麻醉意外（过敏，窒息，严重者可导致死亡）" FontSize="14" Height="34" HorizontalAlignment="Left" Margin="118,267,0,0" Name="label14" VerticalAlignment="Top" FontFamily="宋体" Width="654" />
+        <TextBlock LineHeight="25" TextWrapping="Wrap" Height="26" Margin="122,299,0,0" Name="textBlock4" Text="2、出血，皮下血肿，压迫局部组织等，置管过程中出现心率失常，心跳骤停，呼吸窘迫等" VerticalAlignment="Top" FontSize="14" FontFamily="宋体"  HorizontalAlignment="Left" Width="639" />
+        <TextBlock LineHeight="25" TextWrapping="Wrap" Height="25" Margin="122,327,0,0" Name="textBlock5" Text="3、通路流量不好，血栓形成，影响血透，严重需要更换通路或作进一步相关创伤性检查治疗" VerticalAlignment="Top" FontSize="14" FontFamily="宋体"  HorizontalAlignment="Left" Width="639" />
+        <Label Content="4、导管感染，导管断裂破损" FontSize="14" Height="34" HorizontalAlignment="Left" Margin="118,349,0,0" Name="label16" VerticalAlignment="Top" FontFamily="宋体"  />
+        <Label Content="5、其他不可预知的意外" FontSize="14" Height="34" HorizontalAlignment="Left" Margin="118,378,0,0" Name="label17" VerticalAlignment="Top" FontFamily="宋体"  />
+        <Label Content="6、医务人员将采取必要的预防和救治措施以合理的控制医疗风险，但由于现有医疗水平所限，" FontSize="14" Height="34" HorizontalAlignment="Left" Margin="118,409,0,0" Name="label18" VerticalAlignment="Top" FontFamily="宋体"  />
+        <Label Content="仍有可能出现不能遇见，不能避免并不能克服的其他情况" FontSize="14" Height="34" HorizontalAlignment="Left" Margin="118,439,0,0" Name="label22" VerticalAlignment="Top" FontFamily="宋体"  />
+        <Label Content="7、麻醉药物过敏。" FontSize="14" Height="34" HorizontalAlignment="Left" Margin="118,469,0,0" Name="label19" VerticalAlignment="Top" FontFamily="宋体"  />
+        <TextBlock FontSize="14" Height="92" HorizontalAlignment="Left" LineHeight="30" Margin="85,511,0,0" Name="textBlock2" Text="    上述的手术合并症系手术医生在手术操作过程中可能会出现的一些意外情况，但有的后果很严重，在出现这些合并症之后，医院保证给病人以积极的治疗和抢救，治疗和抢救的所有费用由病人负担。如同意，请签字" TextWrapping="Wrap" VerticalAlignment="Top" Width="605" FontFamily="宋体"  />
+        <Label Content="与病人的关系：" FontSize="17" Height="34" HorizontalAlignment="Left" Margin="212,973,0,0" Name="label26" VerticalAlignment="Top" FontFamily="宋体"  />
+        <Label Content="" FontSize="17" Height="34" HorizontalAlignment="Right" Margin="0,973,291,0" Name="label27" VerticalAlignment="Top" Width="126" FontFamily="宋体"  />
+        <Label Content="家属(或法定代理人)签字：" FontSize="17" Height="34" HorizontalAlignment="Left" Margin="212,925,0,0" Name="label28" VerticalAlignment="Top" FontFamily="宋体"  />
+        <Image Name="imgPatientSign" HorizontalAlignment="Right" Margin="0,920,180,0" VerticalAlignment="Top" Width="150" Height="40"/>
+        <Label Content="                                 肾内科   医师：        日期：" FontFamily="宋体" FontSize="14" Height="34" HorizontalAlignment="Left" Margin="114,603,0,0" Name="label10" VerticalAlignment="Top" Width="609" />
+        <Label Content="患者意见：" FontFamily="宋体" FontSize="14" Height="34" HorizontalAlignment="Left" Margin="85,629,0,0" Name="label11" VerticalAlignment="Top" />
+        <TextBlock FontFamily="宋体" FontSize="14" Height="61" HorizontalAlignment="Left" LineHeight="30" Margin="85,673,0,0" Name="textBlock1" Text="    我已认真阅读、聆听并完全理解上述条款，我愿意接受该手术并自愿配合医生进行必要的相关医疗行为。" TextWrapping="Wrap" VerticalAlignment="Top" Width="605" />
+        <Label Content="                                       患者签字：        日期：" FontFamily="宋体" FontSize="14" Height="34" HorizontalAlignment="Left" Margin="112,736,0,0" Name="label13" VerticalAlignment="Top" Width="609" />
+        <Label Content="家属(或法定代理人)意见：" FontFamily="宋体" FontSize="17" Height="34" HorizontalAlignment="Left" Margin="85,782,0,0" Name="label15" VerticalAlignment="Top" />
+        <TextBlock FontFamily="宋体" FontSize="17" Height="84" HorizontalAlignment="Left" LineHeight="30" Margin="85,826,0,0" Name="textBlock3" Text="    我已认真阅读、聆听并完全理解上述条款，我同意医生对患者进行该手术并进行与此相关的必要的一切医疗行为。因患者病情所需，我代表患者及家属在此签字，并承担一切与此相关的法律责任。" TextWrapping="Wrap" VerticalAlignment="Top" Width="605" />
+        <Label Content="日期：" FontFamily="宋体" FontSize="17" Height="34" HorizontalAlignment="Left" Margin="510,973,0,0" Name="label20" VerticalAlignment="Top" />
+        <Label Content="" FontFamily="宋体" FontSize="17" Height="34" HorizontalAlignment="Right" Margin="0,973,61,0" Name="label21" VerticalAlignment="Top" Width="126" />
+        <StackPanel Height="28" HorizontalAlignment="Left" Margin="28,179,0,0" Name="stackPanel2" Orientation="Horizontal" VerticalAlignment="Top" Width="723">
+            <Label Content="病案号/透析号：" FontFamily="宋体" FontSize="17" Grid.Column="1" Height="27" Name="label4" Width="130" />
+            <TextBox BorderBrush="Black" BorderThickness="0,0,0,1" Grid.Column="1" Height="23" IsReadOnly="False" Name="txtHemoID" Width="82" />
+            <Label Content="                           诊断：" FontFamily="宋体" FontSize="17" Grid.Column="1" Height="28" HorizontalAlignment="Right" Name="label25" VerticalAlignment="Top" Width="285" />
+            <TextBox BorderBrush="Black" BorderThickness="0,0,0,1" Grid.Column="1" Height="23" IsReadOnly="False" Name="txtDIAGNOSE" Width="217" />
+        </StackPanel>
+    </Grid>
+</UserControl>

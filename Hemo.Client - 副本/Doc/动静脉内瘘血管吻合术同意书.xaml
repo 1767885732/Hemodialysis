@@ -1,0 +1,44 @@
+﻿<UserControl x:Class="Hemo.Client.Doc.动静脉内瘘血管吻合术同意书"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="1100" d:DesignWidth="760">
+    <Grid>
+
+        <Label Content="" FontFamily="宋体" FontSize="26" FontWeight="Normal" Height="50" HorizontalAlignment="Left" HorizontalContentAlignment="Center" Margin="141,76,0,0" Name="lblHospital" VerticalAlignment="Top" VerticalContentAlignment="Center" Width="522" FontStyle="Normal" />
+        <Label Content="动静脉内瘘血管吻合术同意书" FontSize="22" Height="44" HorizontalAlignment="Left" HorizontalContentAlignment="Center" Margin="202,132,0,0" Name="label2" VerticalAlignment="Top" VerticalContentAlignment="Center" Width="405" FontFamily="宋体"  />
+        <Label Content="姓名：" Height="27" HorizontalAlignment="Left"  Name="label3" VerticalAlignment="Top" FontSize="17" FontFamily="宋体" FontWeight="Normal" Width="51" Margin="85,196,0,0" />
+        <TextBox Height="23"  BorderThickness="0,0,0,0" BorderBrush="Black" Name="txtName" IsReadOnly="False" Margin="139,200,0,877" HorizontalAlignment="Left" Width="92" FontSize="17" FontFamily="宋体" FontWeight="Normal" />
+        <Label Content="性别：" Height="27" HorizontalAlignment="Left"  Name="label33" VerticalAlignment="Top" FontSize="17" FontFamily="宋体" FontWeight="Normal" Width="51" Margin="237,196,0,0" />
+        <TextBox Height="23"  BorderThickness="0,0,0,0" BorderBrush="Black" Name="txtSex" IsReadOnly="False" Margin="294,200,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="98" FontSize="17" FontFamily="宋体" FontWeight="Normal" />
+        <Label  Content="年龄：" Height="27" HorizontalAlignment="Left"  Name="label34" VerticalAlignment="Top" FontSize="17" FontFamily="宋体" FontWeight="Normal" Width="53" Margin="398,196,0,0" />
+        <TextBox Height="23"  BorderThickness="0,0,0,0" BorderBrush="Black" Name="txtAge" IsReadOnly="False" Margin="451,200,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="99" FontSize="17" FontFamily="宋体" FontWeight="Normal" />
+        <Label Content="住院号：" Height="28" Name="label6" VerticalAlignment="Top" FontSize="17" FontFamily="宋体" FontWeight="Normal" Margin="556,196,0,0" HorizontalAlignment="Left" Width="69" />
+        <TextBox Height="23"  BorderThickness="0,0,0,0" BorderBrush="Black" Name="txtAdmissionNumber" IsReadOnly="False" Margin="629,200,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="99" FontSize="17" FontFamily="宋体" FontWeight="Normal" />
+        <Label Content="病区：" Height="29" HorizontalAlignment="Left"  Name="label31" VerticalAlignment="Top" FontSize="17" FontFamily="宋体" FontWeight="Normal" Width="50" Margin="85,234,0,0" />
+        <TextBox Height="23"  BorderThickness="0,0,0,0" BorderBrush="Black" Name="txtWhatDepartmentID" IsReadOnly="False" Margin="139,240,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="92" DataContext="{Binding}" FontSize="17" FontFamily="宋体" FontWeight="Normal" />
+        <Label Content="拟行手术方式：" Height="29" HorizontalAlignment="Left"  Name="label32" VerticalAlignment="Top" FontSize="17" FontFamily="宋体" FontWeight="Normal" Width="123" Margin="237,234,0,0" />
+        <TextBox Height="23"  BorderThickness="0,0,0,0" BorderBrush="Black" Name="txtOperationType" IsReadOnly="False" Margin="357,240,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="221" MouseDoubleClick="txtOperationType_MouseDoubleClick" FontWeight="Normal" FontSize="17" FontFamily="宋体" />
+        <TextBlock LineHeight="35" TextWrapping="Wrap" Height="60" Margin="85,297,0,0" Name="textBlock1" Text="    动静脉内瘘是血液透析使用时间最长的一种血管通路，行动静脉内瘘吻合术可能出现以下情况：" VerticalAlignment="Top" FontSize="17" FontFamily="宋体" FontWeight="Normal" HorizontalAlignment="Left" Width="605" />
+        <Label Content="1、麻醉意外，心跳呼吸骤停；" FontSize="17" Height="34" HorizontalAlignment="Left" Margin="118,363,0,0" Name="label14" VerticalAlignment="Top" FontFamily="宋体" FontWeight="Normal" />
+        <Label Content="2、术中出血；" FontSize="17" Height="34" HorizontalAlignment="Left" Margin="118,395,0,0" Name="label15" VerticalAlignment="Top" FontFamily="宋体" FontWeight="Normal" />
+        <Label Content="3、术中损伤周围血管、神经、肌腱等造成肢端缺血及相应功能障碍；" FontSize="17" Height="34" HorizontalAlignment="Left" Margin="118,426,0,0" Name="label16" VerticalAlignment="Top" FontFamily="宋体" FontWeight="Normal" />
+        <Label Content="4、自身血管条件差，吻合不成功；" FontSize="17" Height="34" HorizontalAlignment="Left" Margin="118,460,0,0" Name="label17" VerticalAlignment="Top" FontFamily="宋体" FontWeight="Normal" />
+        <Label Content="5、术后血栓形成，动静脉内瘘闭塞；" FontSize="17" Height="34" HorizontalAlignment="Left" Margin="118,494,0,0" Name="label18" VerticalAlignment="Top" FontFamily="宋体" FontWeight="Normal" />
+        <Label Content="6、术后切口感染，切口愈合延迟；" FontSize="17" Height="34" HorizontalAlignment="Left" Margin="118,528,0,0" Name="label19" VerticalAlignment="Top" FontFamily="宋体" FontWeight="Normal" />
+        <Label Content="7、术后术侧手部长期肿胀、疼痛或发生窃血综合征；" FontSize="17" Height="34" HorizontalAlignment="Left" Margin="118,562,0,0" Name="label20" VerticalAlignment="Top" FontFamily="宋体" FontWeight="Normal" />
+        <Label Content="8、术后发生心力衰竭；" FontSize="17" Height="34" HorizontalAlignment="Left" Margin="118,597,0,0" Name="label23" VerticalAlignment="Top" FontFamily="宋体" FontWeight="Normal" />
+        <Label Content="9、术后渗血，伤口血肿、血清肿，必要时局部需要处理；" FontSize="17" Height="34" HorizontalAlignment="Left" Margin="118,634,0,0" Name="label211" VerticalAlignment="Top" FontFamily="宋体" FontWeight="Normal" />
+        <Label Content="10、其他无法预知的情况；" FontSize="17" Height="34" HorizontalAlignment="Left" Margin="118,673,0,0" Name="label251" VerticalAlignment="Top" FontFamily="宋体" FontWeight="Normal" />
+        <TextBlock FontSize="17" Height="60" HorizontalAlignment="Left" LineHeight="35" Margin="85,717,0,0" Name="textBlock3" Text="   以上意外情况发生率很低，但仍可能发生，请患者或被委托人仔细阅读本同意书，若同意手术请签字。" TextWrapping="Wrap" VerticalAlignment="Top" Width="605" FontFamily="宋体" FontWeight="Normal" />
+        <Label Content="与患者关系" FontSize="17" Height="34" HorizontalAlignment="Left" Margin="408,810,0,0" Name="label24" VerticalAlignment="Top" Width="108" FontFamily="宋体" FontWeight="Normal" />
+        <Label Content="" FontSize="17" Height="34" HorizontalAlignment="Left" Margin="519,810,0,0" Name="label25" VerticalAlignment="Top" Width="180" FontFamily="宋体" FontWeight="Normal" />
+        <Label Content="医师签字" FontSize="17" Height="34" HorizontalAlignment="Left" Margin="85,868,0,0" Name="label28" VerticalAlignment="Top" FontFamily="宋体" FontWeight="Normal" />
+        <Label Content="" FontSize="17" Height="34" HorizontalAlignment="Left" Margin="251,868,0,0" Name="label29" VerticalAlignment="Top" Width="126" FontFamily="宋体" FontWeight="Normal" />
+        <Label Content="        年       月        日" FontSize="17" Height="34" HorizontalAlignment="Left" Margin="441,910,0,0" Name="lblDate" VerticalAlignment="Top" FontFamily="宋体" FontWeight="Normal" />
+        <Label Content="患者或被委托人签字" FontFamily="宋体" FontSize="17" FontWeight="Normal" Height="34" HorizontalAlignment="Left" Margin="85,810,0,0" Name="label4" VerticalAlignment="Top" />
+        <Image Name="imgPatientSign" HorizontalAlignment="Left" Margin="251,806,0,0" VerticalAlignment="Top" Width="150" Height="40"/>
+    </Grid>
+</UserControl>

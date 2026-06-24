@@ -1,0 +1,93 @@
+﻿<UserControl x:Class="Hemo.Client.Doc.透析充分性评估"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="1100" d:DesignWidth="816">
+    <Grid>
+        <Label Content="血液透析充分性评估" FontFamily="宋体" FontSize="22" FontStyle="Normal" Height="32" HorizontalAlignment="Left" HorizontalContentAlignment="Center" Margin="158,12,0,0" Name="label1" VerticalAlignment="Top" VerticalContentAlignment="Center" Width="446" />
+        <Label Content="姓名:" FontFamily="宋体" FontSize="17" Height="27" HorizontalAlignment="Left" Margin="128,54,0,0" Name="lblName" VerticalAlignment="Top" Width="51" />
+        <TextBox BorderBrush="Black" BorderThickness="0,0,0,0" FontFamily="宋体" FontSize="17" Height="23" HorizontalAlignment="Left" IsReadOnly="False" Margin="185,45,0,1027" Name="txtName"  Width="87" />
+        <Label Content="日期:" FontFamily="宋体" FontSize="17" Height="27" HorizontalAlignment="Left" Margin="524,56,0,0" Name="label36" VerticalAlignment="Top" Width="51" />
+        <TextBox BorderBrush="Black" BorderThickness="0,0,0,0" FontFamily="宋体" FontSize="17" Height="23" HorizontalAlignment="Left" IsReadOnly="False" Margin="580,45,70,1018" Name="txtDate" Width="165" />
+        <Label Content="透析号:" FontFamily="宋体" FontSize="17" Height="27" HorizontalAlignment="Left" Margin="305,56,0,0" Name="label42" VerticalAlignment="Top" Width="76" />
+        <TextBox BorderBrush="Black" BorderThickness="0,0,0,0" FontFamily="宋体" FontSize="17" Height="23" HorizontalAlignment="Left" IsReadOnly="False" Margin="387,45,309,1019" Name="txtID" Width="125" />
+        <Label Content="一、" FontFamily="宋体" FontSize="17" Height="27" HorizontalAlignment="Left" Margin="37,102,0,0" Name="label2" VerticalAlignment="Top" Width="51" />
+        <Label Content="1、血压" FontSize="15" Height="29" HorizontalAlignment="Left" Margin="37,143,0,0" Name="label6" VerticalAlignment="Top" Width="66" />
+        <Label Content="1）透析中血压" FontSize="15" Height="29" HorizontalAlignment="Left" Margin="158,143,0,0" Name="label3" VerticalAlignment="Top" Width="114" />
+        <CheckBox Content="良好（&lt;140/90）" Height="19" HorizontalAlignment="Left" Margin="309,151,0,0" Name="INDIALYSISBP0" VerticalAlignment="Top" Width="112" />
+        <CheckBox Content="欠佳（140-160/90-109）" Height="19" HorizontalAlignment="Left" Margin="435,151,0,0" Name="INDIALYSISBP1" VerticalAlignment="Top" Width="156" />
+        <CheckBox Content="差（>180/110）" Height="19" HorizontalAlignment="Left" Margin="617,151,0,0" Name="INDIALYSISBP2" VerticalAlignment="Top" Width="156" />
+        <Label Content="透析间期" FontSize="15" Height="29" HorizontalAlignment="Left" Margin="181,167,0,0" Name="label4" VerticalAlignment="Top" Width="91" />
+        <CheckBox Content="良好（&lt;130/80）" Height="19" HorizontalAlignment="Left" Margin="309,176,0,0" Name="DIALYSISBP0" VerticalAlignment="Top" Width="112" />
+        <CheckBox Content="欠佳（131-160/81-109）" Height="19" HorizontalAlignment="Left" Margin="435,176,0,0" Name="DIALYSISBP1" VerticalAlignment="Top" Width="156" />
+        <CheckBox Content="差(>180/110)" Height="19" HorizontalAlignment="Left" Margin="617,176,0,0" Name="DIALYSISBP2" VerticalAlignment="Top" Width="156" />
+        <Label Content="2、容量状态" FontSize="15" Height="29" HorizontalAlignment="Left" Margin="37,193,0,0" Name="label5" VerticalAlignment="Top" Width="98" />
+        <CheckBox Content="心功能II级" Height="19" HorizontalAlignment="Left" Margin="360,201,0,0" Name="HEART1" VerticalAlignment="Top" Width="112" />
+        <CheckBox Content="心功能III级" Height="19" HorizontalAlignment="Left" Margin="486,201,0,0" Name="HEART2" VerticalAlignment="Top" Width="105" />
+        <CheckBox Content="心功能IV级" Height="19" HorizontalAlignment="Left" Margin="632,201,0,0" Name="HEART3" VerticalAlignment="Top" Width="90" />
+        <CheckBox Content="心功能I级" Height="19" HorizontalAlignment="Left" Margin="228,201,0,0" Name="HEART0" VerticalAlignment="Top" Width="112" />
+        <Label Content="1）" FontSize="15" Height="29" HorizontalAlignment="Left" Margin="158,193,0,0" Name="label7" VerticalAlignment="Top" Width="31" />
+        <CheckBox Content="轻度水肿" Height="19" HorizontalAlignment="Left" Margin="360,226,0,0" Name="EDEMA1" VerticalAlignment="Top" Width="112" />
+        <CheckBox Content="中度水肿" Height="19" HorizontalAlignment="Left" Margin="486,226,0,0" Name="EDEMA2" VerticalAlignment="Top" Width="118" />
+        <CheckBox Content="重度水肿" Height="19" HorizontalAlignment="Left" Margin="632,226,0,0" Name="EDEMA3" VerticalAlignment="Top" Width="90" />
+        <CheckBox Content="无水肿" Height="19" HorizontalAlignment="Left" Margin="228,226,0,0" Name="EDEMA0" VerticalAlignment="Top" Width="112" />
+        <Label Content="2）" FontSize="15" Height="29" HorizontalAlignment="Left" Margin="158,218,0,0" Name="label8" VerticalAlignment="Top" Width="31" />
+        <CheckBox Content=">5%" Height="19" HorizontalAlignment="Left" Margin="486,251,0,0" Name="WEIGHTADD1" VerticalAlignment="Top" Width="112" />
+        <CheckBox Content="&lt;5%" Height="19" HorizontalAlignment="Left" Margin="360,251,0,0" Name="WEIGHTADD0" VerticalAlignment="Top" Width="112" />
+        <Label Content="3）透析间期体重增长" FontSize="15" Height="29" HorizontalAlignment="Left" Margin="158,243,0,0" Name="label9" VerticalAlignment="Top" Width="158" />
+        <Label Content="3、营养状态" FontSize="15" Height="27" HorizontalAlignment="Left" Margin="37,269,0,0" Name="label10" VerticalAlignment="Top" Width="98" />
+        <CheckBox Content="欠佳" Height="19" HorizontalAlignment="Left" Margin="302,277,0,0" Name="NUTRITION1" VerticalAlignment="Top" Width="112" />
+        <CheckBox Content="差" Height="19" HorizontalAlignment="Left" Margin="428,277,0,0" Name="NUTRITION2" VerticalAlignment="Top" Width="118" />
+        <CheckBox Content="良好" Height="19" HorizontalAlignment="Left" Margin="170,277,0,0" Name="NUTRITION0" VerticalAlignment="Top" Width="112" />
+        <Label Content="4、皮肤瘙痒" FontSize="15" Height="27" HorizontalAlignment="Left" Margin="37,293,0,0" Name="label11" VerticalAlignment="Top" Width="98" />
+        <CheckBox Content="有" Height="19" HorizontalAlignment="Left" Margin="302,301,0,0" Name="SKIN1" VerticalAlignment="Top" Width="112" />
+        <CheckBox Content="无" Height="19" HorizontalAlignment="Left" Margin="170,301,0,0" Name="SKIN0" VerticalAlignment="Top" Width="112" />
+        <Label Content="5、骨痛" FontSize="15" Height="27" HorizontalAlignment="Left" Margin="37,318,0,0" Name="label12" VerticalAlignment="Top" Width="98" />
+        <CheckBox Content="有" Height="19" HorizontalAlignment="Left" Margin="302,326,0,0" Name="BONEPAIN1" VerticalAlignment="Top" Width="112" />
+        <CheckBox Content="无" Height="19" HorizontalAlignment="Left" Margin="170,326,0,0" Name="BONEPAIN0" VerticalAlignment="Top" Width="112" />
+        <Label Content="6、睡眠障碍" FontSize="15" Height="27" HorizontalAlignment="Left" Margin="37,343,0,0" Name="label13" VerticalAlignment="Top" Width="98" />
+        <CheckBox Content="有" Height="19" HorizontalAlignment="Left" Margin="302,351,0,0" Name="SLEEP1" VerticalAlignment="Top" Width="112" />
+        <CheckBox Content="无" Height="19" HorizontalAlignment="Left" Margin="170,351,0,0" Name="SLEEP0" VerticalAlignment="Top" Width="112" />
+        <Label Content="7、透析中并发症" FontSize="15" Height="27" HorizontalAlignment="Left" Margin="37,368,0,0" Name="label14" VerticalAlignment="Top" Width="127" />
+        <CheckBox Content="有" Height="19" HorizontalAlignment="Left" Margin="302,376,0,0" Name="COMPLICATION1" VerticalAlignment="Top" Width="112" />
+        <CheckBox Content="无" Height="19" HorizontalAlignment="Left" Margin="170,376,0,0" Name="COMPLICATION0" VerticalAlignment="Top" Width="112" />
+        <TextBox BorderBrush="Black" TextAlignment="Left" Height="23" Width="350" BorderThickness="0,0,0,1" FontFamily="宋体" FontSize="15" IsReadOnly="False" Margin="346,363,120,714" Name="txtCOMPLICATION" />
+        <Label Content="8、贫血" FontSize="15" Height="29" HorizontalAlignment="Left" Margin="37,392,0,0" Name="label15" VerticalAlignment="Top" Width="98" />
+        <CheckBox Content="轻度" Height="19" HorizontalAlignment="Left" Margin="302,400,0,0" Name="ANEMIA1" VerticalAlignment="Top" Width="112" />
+        <CheckBox Content="中度" Height="19" HorizontalAlignment="Left" Margin="428,400,0,0" Name="ANEMIA2" VerticalAlignment="Top" Width="105" />
+        <CheckBox Content="重度" Height="19" HorizontalAlignment="Left" Margin="574,400,0,0" Name="ANEMIA3" VerticalAlignment="Top" Width="90" />
+        <CheckBox Content="无" Height="19" HorizontalAlignment="Left" Margin="170,400,0,0" Name="ANEMIA0" VerticalAlignment="Top" Width="112" />
+        <Label Content="9、电解质和酸碱平衡紊乱" FontSize="15" Height="29" HorizontalAlignment="Left" Margin="37,415,0,0" Name="label16" VerticalAlignment="Top" Width="185" />
+        <CheckBox Content="有" Height="19" HorizontalAlignment="Left" Margin="428,423,0,0" Name="DISORDER1" VerticalAlignment="Top" Width="112" />
+        <CheckBox Content="无" Height="19" HorizontalAlignment="Right" Margin="0,423,462,0" Name="DISORDER0" VerticalAlignment="Top" Width="52" />
+        <Label Content="10、P" FontSize="15" Height="27" HorizontalAlignment="Left" Margin="37,438,0,0" Name="label17" VerticalAlignment="Top" Width="98" />
+        <CheckBox Content="1.13-1.78" Height="19" HorizontalAlignment="Left" Margin="302,446,0,0" Name="P1" VerticalAlignment="Top" Width="112" />
+        <CheckBox Content=">1.78" Height="19" HorizontalAlignment="Left" Margin="428,446,0,0" Name="P2" VerticalAlignment="Top" Width="118" />
+        <CheckBox Content="&lt;1.13" Height="19" HorizontalAlignment="Right" Margin="0,446,534,0" Name="P0" VerticalAlignment="Top" Width="112" />
+        <Label Content="11、Ca" FontSize="15" Height="27" HorizontalAlignment="Left" Margin="37,459,0,0" Name="label18" VerticalAlignment="Top" Width="98" />
+        <CheckBox Content="2.10-2.37" Height="19" HorizontalAlignment="Left" Margin="302,467,0,0" Name="CA1" VerticalAlignment="Top" Width="112" />
+        <CheckBox Content="&gt;2.37" Height="19" HorizontalAlignment="Left" Margin="428,467,0,0" Name="CA2" VerticalAlignment="Top" Width="118" />
+        <CheckBox Content="&lt;2.10" Height="19" HorizontalAlignment="Left" Margin="170,467,0,0" Name="CA0" VerticalAlignment="Top" Width="112" />
+        <Label Content="12、iPTH" FontSize="15" Height="27" HorizontalAlignment="Left" Margin="37,479,0,0" Name="label19" VerticalAlignment="Top" Width="98" />
+        <CheckBox Content="300-500" Height="19" HorizontalAlignment="Left" Margin="302,487,0,0" Name="IPTH1" VerticalAlignment="Top" Width="112" />
+        <CheckBox Content=">500" Height="19" HorizontalAlignment="Left" Margin="428,487,0,0" Name="IPTH2" VerticalAlignment="Top" Width="118" />
+        <CheckBox Content="100-300" Height="19" HorizontalAlignment="Left" Margin="170,487,0,0" Name="IPTH0" VerticalAlignment="Top" Width="112" />
+        <Label Content="13、Kt/V" FontSize="15" Height="27" HorizontalAlignment="Left" Margin="37,500,0,0" Name="label20" VerticalAlignment="Top" Width="98" />
+        <CheckBox Content="1.2-1.4" Height="19" HorizontalAlignment="Left" Margin="302,508,0,0" Name="KTV1" VerticalAlignment="Top" Width="112" />
+        <CheckBox Content=">1.4" Height="19" HorizontalAlignment="Left" Margin="428,508,0,0" Name="KTV2" VerticalAlignment="Top" Width="118" />
+        <CheckBox Content="&lt;1.2" Height="19" HorizontalAlignment="Left" Margin="170,508,0,0" Name="KTV0" VerticalAlignment="Top" Width="112" />
+        <Label Content="14、URR " FontSize="15" Height="27" HorizontalAlignment="Left" Margin="37,522,0,0" Name="label21" VerticalAlignment="Top" Width="98" />
+        <CheckBox Content="65%-70%" Height="19" HorizontalAlignment="Left" Margin="302,530,0,0" Name="URR1" VerticalAlignment="Top" Width="112" />
+        <CheckBox Content=">70%" Height="19" HorizontalAlignment="Left" Margin="428,530,0,0" Name="URR2" VerticalAlignment="Top" Width="118" />
+        <CheckBox Content="&lt;65%" Height="19" HorizontalAlignment="Left" Margin="170,530,0,0" Name="URR0" VerticalAlignment="Top" Width="112" />
+        <Label Content="二、质量控制和改进措施" FontFamily="宋体" FontSize="17" Height="27" HorizontalAlignment="Left" Margin="37,566,0,0" Name="label22" VerticalAlignment="Top" Width="212" />
+        <Label Content="1、患者透析充分性：" FontSize="15" Height="29" HorizontalAlignment="Left" Margin="37,599,0,0" Name="label23" VerticalAlignment="Top" Width="152" />
+        <TextBlock Margin="47,634,0,366" Name="SUFFICIENCY" Text="" TextWrapping="Wrap" Height="102" Width="730" HorizontalAlignment="Left" TextDecorations="Underline"/>
+        <Label Content="2、透析方案：" FontSize="15" Height="29" HorizontalAlignment="Left" Margin="37,754,0,0" Name="label24" VerticalAlignment="Top" Width="152" />
+        <TextBlock Margin="47,789,0,231" Name="PLAN" Text="" TextWrapping="Wrap" Height="102" Width="730" HorizontalAlignment="Left" TextDecorations="Underline"/>
+        <Label Content="3、用药调整：" FontSize="15" Height="29" HorizontalAlignment="Left" Margin="37,904,0,0" Name="label25" VerticalAlignment="Top" Width="152" />
+        <TextBlock Margin="47,939,0,61" Name="DRUG" Text="" TextWrapping="Wrap" Height="102" Width="730" HorizontalAlignment="Left" TextDecorations="Underline"/>
+    </Grid>
+</UserControl>

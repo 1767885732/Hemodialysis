@@ -1,0 +1,148 @@
+﻿  未授权提示建议:
+  public static readonly string dogTipStr = "您的系统未授权,请联系厂家给予授权！";
+  public static readonly string dogTipStr1 = "您的系统已超过授权数量{0},请联系厂家给予新的授权！";
+
+1、正确配置"DocareAuth.config"文件中的如下节点
+   <!--授权服务器IP/域名/或主机名 公司内部开发可以配置为192.168.0.31-->
+   <AuthServer>192.168.0.31</AuthServer>  
+2、引用程序集
+3、导入命名空间 using Medicalsystem.Auth.Client;
+4、在程序启动时调用  DAuthContext.Init(1);
+   参数说明1	测试系统 2	麻醉信息系统 3	ICU信息系统 4	数字化手术室 5	临床路径管理信息系统 6	电子病历管理信息系统 7	供应室信息管理系统 8	血液透析信息系统 9	院前急救系统 10	急诊信息系统
+5、通过DAuthContext.Current获取授权信息
+6、必要时可以通过如下函数进行授权信息的更新
+        /// <summary>
+        /// 授权信息更新 异步
+        /// </summary>
+        /// <param name="action">异步回调函数</param>
+        public static void UpdateAuthAsync(Action<DAuthContext> action);
+
+	    /// <summary>
+        /// 授权信息更新
+        /// </summary>
+        public static void UpdateAuth();
+
+		 /// <summary>
+        /// 清除授权
+        /// </summary>        
+        public static void Clear();
+
+		 /// <summary>
+        /// 加密字符串
+        /// </summary>
+        /// <param name="message">要加密的字符</param>
+        /// <returns>加密后的字符串</returns>
+        public static string Encrypt(string message);
+		 /// <summary>
+        /// 验证加密字符串
+        /// </summary>
+        /// <param name="decrypt">未加密的字符串</param>
+        /// <param name="encrypt">加密结果</param>
+        /// <returns>ture 验证通过 false 验证失败</returns>
+        public static bool IsEncrypt(string decrypt, string encrypt);
+
+7、属性说明
+
+      
+        /// <summary>
+        /// 授权产品ID
+        /// </summary>
+        public int AppID
+        {
+            get { return _appID; }
+        }
+
+      
+    
+       /// <summary>
+        /// 设备数1 
+        /// </summary>
+        public int LimitedOne
+        {
+            get;
+           
+        }
+
+        /// <summary>
+        /// 设备数2 
+        /// </summary>
+        public int LimitedTwo
+        {
+            get;
+            
+        }
+      
+        /// <summary>
+        /// 医院编码 
+        /// </summary>
+        public int HospitalID
+        {
+            get { return _hospitalID; }
+
+        }
+
+        /// <summary>
+        /// 医院名称 
+        /// </summary>
+        public string HospitalName
+        {
+            get { return _hospitalName; }
+
+        }
+
+       
+        /// <summary>
+        ///错误代码    
+        ///100001 = 未检测到加密狗,请确认加密狗已经正确安装!
+        ///100002 = 读取加密狗数据失败,可能是伪造的加密狗硬件!
+        ///100003 = 加密狗用途验证失败,请使用授权专用的加密狗硬件!
+        ///100004 = 加密狗中的授权医院未在授权服务器中注册(需要更新授权服务器软件)!         
+        ///100005 = 产品未在硬件加密狗中授权!;
+        ///100006 = 获取授权信息发生系统错误(授权服务器连接不正确,网络等错误)
+        ///100007 = 非法的授权服务器,加密算法验证失败!       
+        /// </summary>
+        public string LastErrorCode
+        {
+            get { return _licenseErrorCode; }
+
+        }
+      
+        /// <summary>
+        /// 错误信息 
+        /// </summary>
+        public string LastError
+        {
+            get { return _licenseError; }
+
+        }
+
+
+      
+        /// <summary>
+        /// 授权日期 
+        /// </summary>
+        public DateTime LicenseDate
+        {
+            get { return _licenseDate; }
+
+        }
+
+       
+        /// <summary>
+        /// 授权结束日期 
+        /// </summary>
+        public DateTime LicenseEndDate
+        {
+            get { return _licenseEndDate; }
+
+        }
+
+    
+        /// <summary>
+        /// 扩展信息 
+        /// </summary>
+        public Dictionary<string, string> Messages
+        {
+            get { return _Messages; }
+
+        }

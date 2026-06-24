@@ -1,0 +1,7 @@
+D:\WorkFiles\Projects\上海市普陀区人民医院\项目代码\Hemodialysis\Hemo.IService\bin\Release\Hemo.IService.dll
+D:\WorkFiles\Projects\上海市普陀区人民医院\项目代码\Hemodialysis\Hemo.IService\bin\Release\Hemo.Model.dll
+D:\WorkFiles\Projects\上海市普陀区人民医院\项目代码\Hemodialysis\Hemo.IService\bin\Release\Hemo.Model.dll.config
+D:\WorkFiles\Projects\上海市普陀区人民医院\项目代码\Hemodialysis\Hemo.IService\obj\Release\Hemo.IService.csproj.AssemblyReference.cache
+D:\WorkFiles\Projects\上海市普陀区人民医院\项目代码\Hemodialysis\Hemo.IService\obj\Release\Hemo.IService.csproj.CoreCompileInputs.cache
+D:\WorkFiles\Projects\上海市普陀区人民医院\项目代码\Hemodialysis\Hemo.IService\obj\Release\Hemo.IService.csproj.CopyComplete
+D:\WorkFiles\Projects\上海市普陀区人民医院\项目代码\Hemodialysis\Hemo.IService\obj\Release\Hemo.IService.dll

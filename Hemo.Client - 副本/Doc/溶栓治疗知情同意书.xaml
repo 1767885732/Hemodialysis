@@ -1,0 +1,46 @@
+﻿<UserControl x:Class="Hemo.Client.Doc.溶栓治疗知情同意书"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="1000" d:DesignWidth="816">
+    <Grid>
+        <Label Content="" FontFamily="宋体" FontSize="26"  Height="50" HorizontalAlignment="Left" HorizontalContentAlignment="Center" Margin="141,76,0,0" Name="lblHospital" VerticalAlignment="Top" VerticalContentAlignment="Center" Width="522" FontStyle="Normal" />
+        <Label Content="透析导管尿激酶溶栓治疗风险知情同意书" FontSize="22" Height="44" HorizontalAlignment="Left" HorizontalContentAlignment="Center" Margin="202,132,0,0" Name="label2" VerticalAlignment="Top" VerticalContentAlignment="Center" Width="426" FontFamily="宋体"  />
+        <Label Content="姓名：" Height="27" HorizontalAlignment="Left"  Name="label3" VerticalAlignment="Top" FontSize="17" FontFamily="宋体"  Width="53" Margin="84,196,0,0" />
+        <TextBox Height="23"  BorderThickness="0,0,0,0" BorderBrush="Black" Name="txtName" IsReadOnly="False" Margin="141,200,0,877" HorizontalAlignment="Left" Width="105" FontSize="17" FontFamily="宋体"  />
+        <Label Content="性别：" Height="27" HorizontalAlignment="Right"  Name="label33" VerticalAlignment="Top" FontSize="17" FontFamily="宋体"  Width="51" Margin="0,196,513,0" />
+        <TextBox Height="23"  BorderThickness="0,0,0,0" BorderBrush="Black" Name="txtSex" IsReadOnly="False" Margin="0,200,467,0" VerticalAlignment="Top" HorizontalAlignment="Right" Width="40" FontSize="17" FontFamily="宋体"  />
+        <Label  Content="年龄：" Height="27" HorizontalAlignment="Left"  Name="label34" VerticalAlignment="Top" FontSize="17" FontFamily="宋体"  Width="53" Margin="355,196,0,0" />
+        <TextBox Height="23"  BorderThickness="0,0,0,0" BorderBrush="Black" Name="txtAge" IsReadOnly="False" Margin="414,200,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="60" FontSize="17" FontFamily="宋体"  />
+
+        <Label  Content="门诊/住院号：" Height="27" HorizontalAlignment="Left"  Name="label41" VerticalAlignment="Top" FontSize="17" FontFamily="宋体"  Width="117" Margin="480,196,0,0" />
+        <TextBox Height="23"  BorderThickness="0,0,0,0" BorderBrush="Black" Name="txtAdmissionNumber" IsReadOnly="False" Margin="603,200,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="151" FontSize="17" FontFamily="宋体"  />
+        <Label  Content="原发病：" Height="27" HorizontalAlignment="Left"  Name="label43" VerticalAlignment="Top" FontSize="17" FontFamily="宋体"  Width="68" Margin="252,229,0,0" />
+        <TextBox Height="23"  BorderThickness="0,0,0,0" BorderBrush="Black" Name="txtProtopathy" IsReadOnly="False" Margin="0,233,342,0" VerticalAlignment="Top" HorizontalAlignment="Right" Width="148" FontSize="17" FontFamily="宋体"  />
+
+        <Label  Content="血管通路：" Height="27" Name="label44" VerticalAlignment="Top" FontSize="17" FontFamily="宋体"  Margin="480,229,0,0" HorizontalAlignment="Left" Width="91" />
+        <TextBox Height="23"  BorderThickness="0,0,0,0" BorderBrush="Black" Name="txtVascularAccess" IsReadOnly="False" Margin="0,233,62,0" VerticalAlignment="Top" FontSize="17" FontFamily="宋体"  HorizontalAlignment="Right" Width="177" />
+        <Label Content="病人/ 家属签名：" FontFamily="宋体" FontSize="17"  Height="27" HorizontalAlignment="Left" Margin="211,910,0,0" Name="label19" VerticalAlignment="Top" Width="144" />
+        <Label Content="" FontFamily="宋体" FontSize="17"  Height="25" HorizontalAlignment="Left" Margin="361,912,0,0" Name="label20" VerticalAlignment="Top" Width="120" />
+        <Label ClipToBounds="False" Content="家属与病人关系：" FontFamily="宋体" FontSize="17"  Height="27" HorizontalAlignment="Left" Margin="487,910,0,0" Name="label21" VerticalAlignment="Top" Width="141" />
+        <Label Content="" FontFamily="宋体" FontSize="17"  Height="25" HorizontalAlignment="Left" Margin="634,912,0,0" Name="label22" VerticalAlignment="Top" Width="120" />
+        <Label ClipToBounds="False" Content="告知医师签名：" FontFamily="宋体" FontSize="17"  Height="27" HorizontalAlignment="Left" Margin="211,943,0,0" Name="label10" VerticalAlignment="Top" Width="144" />
+        <Label Content="" FontFamily="宋体" FontSize="17"  Height="25" HorizontalAlignment="Right" Margin="0,945,335,0" Name="label11" VerticalAlignment="Top" Width="120" />
+        <TextBox BorderBrush="Black" BorderThickness="0,0,0,0" FontFamily="宋体" FontSize="17"  Height="23" IsReadOnly="False" Margin="141,233,0,0" Name="txtDiagnosis" VerticalAlignment="Top" HorizontalAlignment="Left" Width="105" />
+        <Label Content="诊断：" FontFamily="宋体" FontSize="17"  Height="27" HorizontalAlignment="Left" Margin="84,229,0,0" Name="label27" VerticalAlignment="Top" Width="53" />
+        <TextBlock FontFamily="宋体" FontSize="17"  Height="341" HorizontalAlignment="Left" LineHeight="35" Margin="84,390,0,0" Name="textBlock1" Text="1.即使严格地无菌操作，随着溶栓次数的增加，导管感染的几率大大增加；
+2.溶栓过程中可能出现血栓栓子脱落，引起一系列并发症，如肺栓塞、脑梗塞等全身其他脏器的栓塞梗死，甚至危及生命；
+3.偶见尿激酶过敏性休克，可能危及生命，引起呼吸心跳骤停；
+4.可能引起全身脏器器官出血，如皮肤、粘膜、肉眼及显微镜下血尿、血痰或小量咳血、呕血，严重可发生大量咯血或消化道大出血，腹膜后出血及颅内、纵隔内或心包出血，可能加重本身的贫血，甚至危及生命；
+5.尿激酶尚可见恶心、呕吐、食欲不振、疲倦，可出现肝功能指标一过性异常；
+6.溶栓不成功，血管通路仍不能满足透析的需要；
+7.其他医疗上无法预知的风险。
+" TextWrapping="Wrap" VerticalAlignment="Top" Width="694" />
+        <TextBlock FontFamily="宋体" FontSize="17"  Height="57" HorizontalAlignment="Left" LineHeight="35" Margin="84,737,0,0" Name="textBlock4" Text="    医生已明确告知以上医疗风险，病人和/或家属已充分理解，要求接受深静脉导管尿激酶溶栓治疗，理解其风险并配合治疗，签字为证。" TextWrapping="Wrap" VerticalAlignment="Top" Width="670" />
+        <TextBlock FontFamily="宋体" FontSize="17"  Height="93" HorizontalAlignment="Left" LineHeight="35" Margin="84,262,0,0" Name="textBlock7" Text="    血管通路是血液透析患者生命线，良好的通路功能是顺利进行血液透析的保证。中心静脉置管是常用的透析通路之一，但并发症的出现限制了其长期使用，其中导管内血栓形成就是常见并发症之一。" TextWrapping="Wrap" VerticalAlignment="Top" Width="694" />
+        <TextBlock FontFamily="宋体" FontSize="17"  Height="23" HorizontalAlignment="Left" LineHeight="35" Margin="84,361,0,0" Name="textBlock8" Text="    尿激酶是临床常用的溶栓药物之一。现将尿激酶溶栓过程中可能发生的风险告知如下：" TextWrapping="Wrap" VerticalAlignment="Top" Width="694" />
+        <Label Content="      年    月    日" FontFamily="宋体" FontSize="17"  Height="34" HorizontalAlignment="Left" Margin="487,943,0,0" Name="lblDate" VerticalAlignment="Top" Width="267" />
+    </Grid>
+</UserControl>

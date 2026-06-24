@@ -1,0 +1,382 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{578F5C8B-8529-4F7E-8F5E-F4979C5596B8}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Hemo.Model</RootNamespace>
+    <AssemblyName>Hemo.Model</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Oracle.DataAccess, Version=4.112.3.0, Culture=neutral, PublicKeyToken=89b483f429c47342" />
+    <Reference Include="Oracle.ManagedDataAccess, Version=4.121.1.0, Culture=neutral, PublicKeyToken=89b483f429c47342, processorArchitecture=MSIL">
+      <HintPath>..\Lib\Oracle.ManagedDataAccess.dll</HintPath>
+    </Reference>
+    <Reference Include="Oracle.ManagedDataAccessDTC, Version=4.121.1.0, Culture=neutral, PublicKeyToken=89b483f429c47342">
+      <HintPath>..\Lib\Oracle.ManagedDataAccessDTC.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Data.OracleClient" />
+    <Reference Include="System.DirectoryServices.Protocols" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ConfigModel.cs">
+      <DependentUpon>ConfigModel.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ConfigModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ConfigModel.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataReportModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataReportModel.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DictModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DictModel.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="HemodialysisModel.cs">
+      <DependentUpon>HemodialysisModel.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="HemodialysisModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HemodialysisModel.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="HemoModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HemoModel.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="MachineModel.cs">
+      <DependentUpon>MachineModel.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="MachineModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MachineModel.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DeptModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DeptModel.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DrugModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DrugModel.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ErythropoietinModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ErythropoietinModel.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="MaterialModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MaterialModel.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="MaterialScheduleModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MaterialScheduleModel.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="OrderModel.cs">
+      <DependentUpon>OrderModel.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="OrderModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OrderModel.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PatientKolcabaModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PatientKolcabaModel.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PatientModel.cs">
+      <DependentUpon>PatientModel.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PatientModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PatientModel.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PatientScheduleModel.cs">
+      <DependentUpon>PatientScheduleModel.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PatientScheduleModel.Designer.cs">
+      <DependentUpon>PatientScheduleModel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PermissionModel.cs">
+      <DependentUpon>PermissionModel.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PermissionModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PermissionModel.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="ReportRelationModel.cs">
+      <DependentUpon>ReportRelationModel.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ReportRelationModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportRelationModel.xsd</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="ConfigModel.xsc">
+      <DependentUpon>ConfigModel.xsd</DependentUpon>
+    </None>
+    <None Include="ConfigModel.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ConfigModel.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="ConfigModel.xss">
+      <DependentUpon>ConfigModel.xsd</DependentUpon>
+    </None>
+    <None Include="DataReportModel.xsc">
+      <DependentUpon>DataReportModel.xsd</DependentUpon>
+    </None>
+    <None Include="DataReportModel.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataReportModel.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataReportModel.xss">
+      <DependentUpon>DataReportModel.xsd</DependentUpon>
+    </None>
+    <None Include="DictModel.xsc">
+      <DependentUpon>DictModel.xsd</DependentUpon>
+    </None>
+    <None Include="DictModel.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DictModel.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DictModel.xss">
+      <DependentUpon>DictModel.xsd</DependentUpon>
+    </None>
+    <None Include="HemodialysisModel.xsc">
+      <DependentUpon>HemodialysisModel.xsd</DependentUpon>
+    </None>
+    <None Include="HemodialysisModel.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>HemodialysisModel.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="HemodialysisModel.xss">
+      <DependentUpon>HemodialysisModel.xsd</DependentUpon>
+    </None>
+    <None Include="HemoModel.xsc">
+      <DependentUpon>HemoModel.xsd</DependentUpon>
+    </None>
+    <None Include="HemoModel.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>HemoModel.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="HemoModel.xss">
+      <DependentUpon>HemoModel.xsd</DependentUpon>
+    </None>
+    <None Include="MachineModel.xsc">
+      <DependentUpon>MachineModel.xsd</DependentUpon>
+    </None>
+    <None Include="MachineModel.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MachineModel.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="MachineModel.xss">
+      <DependentUpon>MachineModel.xsd</DependentUpon>
+    </None>
+    <None Include="DeptModel.xsc">
+      <DependentUpon>DeptModel.xsd</DependentUpon>
+    </None>
+    <None Include="DeptModel.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DeptModel.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DeptModel.xss">
+      <DependentUpon>DeptModel.xsd</DependentUpon>
+    </None>
+    <None Include="DrugModel.xsc">
+      <DependentUpon>DrugModel.xsd</DependentUpon>
+    </None>
+    <None Include="DrugModel.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DrugModel.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DrugModel.xss">
+      <DependentUpon>DrugModel.xsd</DependentUpon>
+    </None>
+    <None Include="ErythropoietinModel.xsc">
+      <DependentUpon>ErythropoietinModel.xsd</DependentUpon>
+    </None>
+    <None Include="ErythropoietinModel.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ErythropoietinModel.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="ErythropoietinModel.xss">
+      <DependentUpon>ErythropoietinModel.xsd</DependentUpon>
+    </None>
+    <None Include="MaterialModel.xsc">
+      <DependentUpon>MaterialModel.xsd</DependentUpon>
+    </None>
+    <None Include="MaterialModel.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MaterialModel.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="MaterialModel.xss">
+      <DependentUpon>MaterialModel.xsd</DependentUpon>
+    </None>
+    <None Include="MaterialScheduleModel.xsc">
+      <DependentUpon>MaterialScheduleModel.xsd</DependentUpon>
+    </None>
+    <None Include="MaterialScheduleModel.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MaterialScheduleModel.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="MaterialScheduleModel.xss">
+      <DependentUpon>MaterialScheduleModel.xsd</DependentUpon>
+    </None>
+    <None Include="OrderModel.xsc">
+      <DependentUpon>OrderModel.xsd</DependentUpon>
+    </None>
+    <None Include="OrderModel.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>OrderModel.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="OrderModel.xss">
+      <DependentUpon>OrderModel.xsd</DependentUpon>
+    </None>
+    <None Include="PatientKolcabaModel.xsc">
+      <DependentUpon>PatientKolcabaModel.xsd</DependentUpon>
+    </None>
+    <None Include="PatientKolcabaModel.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PatientKolcabaModel.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="PatientKolcabaModel.xss">
+      <DependentUpon>PatientKolcabaModel.xsd</DependentUpon>
+    </None>
+    <None Include="PatientModel.xsc">
+      <DependentUpon>PatientModel.xsd</DependentUpon>
+    </None>
+    <None Include="PatientModel.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PatientModel.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="PatientModel.xss">
+      <DependentUpon>PatientModel.xsd</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PatientScheduleModel.xsc">
+      <DependentUpon>PatientScheduleModel.xsd</DependentUpon>
+    </None>
+    <None Include="PatientScheduleModel.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+    </None>
+    <None Include="PatientScheduleModel.xss">
+      <DependentUpon>PatientScheduleModel.xsd</DependentUpon>
+    </None>
+    <None Include="PermissionModel.xsc">
+      <DependentUpon>PermissionModel.xsd</DependentUpon>
+    </None>
+    <None Include="PermissionModel.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PermissionModel.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="PermissionModel.xss">
+      <DependentUpon>PermissionModel.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="ReportRelationModel.xsc">
+      <DependentUpon>ReportRelationModel.xsd</DependentUpon>
+    </None>
+    <None Include="ReportRelationModel.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ReportRelationModel.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="ReportRelationModel.xss">
+      <DependentUpon>ReportRelationModel.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

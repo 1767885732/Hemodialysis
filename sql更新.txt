@@ -1,0 +1,10 @@
+
+--2026-05-27 刘建超 血透主程序 长期遗嘱和临时遗嘱添加停止时间 ORACLE数据库
+alter table MED_CURE_DRUG add STOP_TIME date;
+comment on column MED_CURE_DRUG.STOP_TIME is '医嘱停止时间';
+alter table MED_CURE_LONGDRUG add STOP_TIME date;
+comment on column MED_CURE_LONGDRUG.STOP_TIME is '医嘱停止时间';
+
+-- 2026-05-28 刘建超 患者信息中添加患者标签（首次透析/他院转入） ORACLE数据库
+alter table MED_PATIENTS add PAT_LABEL VARCHAR2(100);
+comment on column MED_PATIENTS.PAT_LABEL is '患者标签（首次透析、他院转入）';

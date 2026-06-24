@@ -1,0 +1,366 @@
+﻿<UserControl x:Class="Hemo.Client.Controls.CtlFirstPageView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:buttonPanel="clr-namespace:DevExpress.XtraEditors.ButtonPanel;assembly=DevExpress.Utils.v15.1"
+             mc:Ignorable="d" 
+             d:DesignHeight="360" d:DesignWidth="840">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="10*" />
+            <ColumnDefinition Width="830*" />
+        </Grid.ColumnDefinitions>
+        
+        <Grid Grid.Column="1">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="25*" />
+            <RowDefinition Height="30*" />
+            <RowDefinition Height="175*" />
+            <RowDefinition Height="30*" />
+            <RowDefinition Height="30*" />
+            <RowDefinition Height="30*" />
+            <RowDefinition Height="40*" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="160 *" />
+            <ColumnDefinition Width="20*" />
+            <ColumnDefinition Width="110*" />
+            <ColumnDefinition Width="110*" />
+            <ColumnDefinition Width="110*" />
+            <ColumnDefinition Width="110*" />
+            <ColumnDefinition Width="110*" />
+            <ColumnDefinition Width="110*" />
+        </Grid.ColumnDefinitions>
+
+        <TextBlock   Grid.Row="0" Grid.Column="0" TextWrapping="Wrap" HorizontalAlignment="Stretch" TextAlignment="Center"  VerticalAlignment="Stretch"  Background="#0172C5"  />
+        <TextBlock   Grid.Row="0" Grid.Column="2" Grid.ColumnSpan="7" TextWrapping="Wrap"  TextAlignment="Center"   HorizontalAlignment="Stretch"   VerticalAlignment="Stretch"   Background="#0172C5" />
+        <Label  Grid.Row="0" Grid.Column="0"  Name="Label1" Content="血管通路" HorizontalAlignment="Center" VerticalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Foreground="#FFFFFF" FontSize="15"  FontWeight="Bold" FontFamily="Microsoft YaHei"  />
+        <Label  Grid.Row="0" Grid.Column="2" Grid.ColumnSpan="7"  Name="Label2" Content="班次表" HorizontalAlignment="Center" VerticalAlignment="Center"  HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Foreground="#FFFFFF" FontSize="15" FontWeight="Bold" FontFamily="Microsoft YaHei" />
+        <Label Name="patientVascularName" Content="     " HorizontalAlignment="Stretch" VerticalAlignment="Stretch" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.Row="6" FontFamily="Microsoft YaHei" Foreground="#0172C5" />
+            <Image Name="picVasAccess" Grid.Row="1" Grid.Column="0" Grid.RowSpan="5" Source="/Hemo.Client;component/Resources/human_organs.png"/>
+        <TextBlock Text="关键指标" Grid.Row="1" Grid.Column="2" TextAlignment="Center" HorizontalAlignment="Stretch" VerticalAlignment="Center" FontSize="16" FontFamily="Microsoft YaHei" Foreground="#0166CE" />
+        <Grid Grid.Row="2" Grid.Column="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="8*" />
+                <ColumnDefinition Width="103*" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="30*" />
+                <RowDefinition Height="30*" />
+                <RowDefinition Height="30*" />
+                <RowDefinition Height="30*" />
+                <RowDefinition Height="30*" />
+            </Grid.RowDefinitions>
+            <Grid Grid.Column="1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="15" />
+                    <ColumnDefinition Width="46*" />
+                </Grid.ColumnDefinitions>
+                <TextBlock Grid.Column="1" Text=" 透前体重(Kg)" FontSize="13" HorizontalAlignment="Left" VerticalAlignment="Center" FontFamily="Microsoft YaHei" Foreground="#0172C5"  />
+                <Ellipse Grid.Column="0" Fill="#FF3C1B"  Stroke="#FF3C1B" HorizontalAlignment="Center" Width="12" Height="12" VerticalAlignment="Center"/>
+            </Grid>
+            <Grid Grid.Row="1" Grid.Column="1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="15" />
+                    <ColumnDefinition Width="46*" />
+                </Grid.ColumnDefinitions>
+                <TextBlock Grid.Column="1" Text=" 透后体重(Kg)" FontSize="13" HorizontalAlignment="Left" VerticalAlignment="Center" FontFamily="Microsoft YaHei" Foreground="SteelBlue" />
+                <Ellipse Grid.Column="0" Fill="#FF4C8D" Stroke="#FF4C8D" HorizontalAlignment="Center" Width="12" Height="12" VerticalAlignment="Center"/>
+            </Grid>
+            <Grid Grid.Row="3" Grid.Column="1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="15" />
+                    <ColumnDefinition Width="46*" />
+                </Grid.ColumnDefinitions>
+                <TextBlock Grid.Column="1" Text=" 血压(mmhg)" FontSize="13" HorizontalAlignment="Left" VerticalAlignment="Center" FontFamily="Microsoft YaHei"  Foreground="SteelBlue" />
+                <Ellipse Grid.Column="0" Fill="#178ADE"  Stroke="#178ADE" HorizontalAlignment="Center" Width="12" Height="12" VerticalAlignment="Center"/>
+            </Grid>
+            <Grid Grid.Row="2" Grid.Column="1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="15" />
+                    <ColumnDefinition Width="46*" />
+                </Grid.ColumnDefinitions>
+                <TextBlock Grid.Column="1" Text=" 脉搏(bpm) " FontSize="13" HorizontalAlignment="Left" VerticalAlignment="Center" FontFamily="Microsoft YaHei" Foreground="SteelBlue" />
+                <Ellipse Grid.Column="0" Fill="#81D819"  Stroke="#81D819" HorizontalAlignment="Center" Width="12" Height="12" VerticalAlignment="Center"   />
+            </Grid>
+            <Grid Grid.Row="4" Grid.Column="1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="15" />
+                    <ColumnDefinition Width="46*" />
+                </Grid.ColumnDefinitions>
+                <TextBlock Grid.Column="1" Text=" 脱水量(Kg)" FontSize="13" HorizontalAlignment="Left" VerticalAlignment="Center" FontFamily="Microsoft YaHei" Foreground="SteelBlue" />
+                <Ellipse Grid.Column="0" Fill="#FFE400"  Stroke="#FFE400" HorizontalAlignment="Center" Width="12" Height="12" VerticalAlignment="Center"/>
+            </Grid>
+        </Grid>
+            <TextBox Name="txt10" Text=" 星期一2017-02-13" Grid.Row="1" Grid.Column="3" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" TextWrapping="Wrap" Background="#E5F6FE" FontSize="15" FontFamily="Microsoft YaHei" Foreground="#0166CE" BorderBrush="#E5F6FE" IsReadOnly="True" MouseDoubleClick="PageTitle_MouseDoubleClick" />
+            <TextBox Name="txt11" Text=" 星期二2017-02-13" Grid.Row="1" Grid.Column="4" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" TextWrapping="Wrap" Background="#9DE2FF" FontSize="15" FontFamily="Microsoft YaHei" Foreground="#0166CE" BorderBrush="#9DE2FF" IsReadOnly="True" MouseDoubleClick="PageTitle_MouseDoubleClick" />
+            <TextBox Name="txt12" Text=" 星期三2017-02-13" Grid.Row="1" Grid.Column="5" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" TextWrapping="Wrap" Background="#E5F6FE" FontSize="15" FontFamily="Microsoft YaHei" Foreground="#0166CE" BorderBrush="#E5F6FE" IsReadOnly="True" MouseDoubleClick="PageTitle_MouseDoubleClick" />
+            <TextBox Name="txt13" Text=" 星期四2017-02-13" Grid.Row="1" Grid.Column="6" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" TextWrapping="Wrap" Background="#9DE2FF" FontSize="15" FontFamily="Microsoft YaHei" Foreground="#0166CE" BorderBrush="#9DE2FF" IsReadOnly="True" MouseDoubleClick="PageTitle_MouseDoubleClick" />
+            <TextBox Name="txt14" Text=" 星期五2017-02-13" Grid.Row="1" Grid.Column="7" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" TextWrapping="Wrap" Background="#E5F6FE" FontSize="15" FontFamily="Microsoft YaHei" Foreground="#0166CE" BorderBrush="#E5F6FE" IsReadOnly="True" MouseDoubleClick="PageTitle_MouseDoubleClick" />
+            <Grid Grid.Row="2" Grid.Column="3" Background="#F4F9FC">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="40*" />
+                <ColumnDefinition Width="70*" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="40*" />
+                <RowDefinition Height="40*" />
+                <RowDefinition Height="40*" />
+                <RowDefinition Height="40*" />
+                <RowDefinition Height="40*" />
+            </Grid.RowDefinitions>
+            <Rectangle RadiusX="15" RadiusY="15" Height="30" StrokeThickness="1" Stroke="#E5E5E5" Width="80"  VerticalAlignment="Center" HorizontalAlignment="Center" Fill="White" Grid.ColumnSpan="2"  />
+            <TextBox Name="txt1" Text=" " HorizontalAlignment="Left" VerticalAlignment="Center" BorderThickness="0" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF333333" Grid.Column="1"></TextBox>
+            <Ellipse Fill="#FF3C1B"  Stroke="#FF3C1B" HorizontalAlignment="Right" Width="13" Height="13"   VerticalAlignment="Center"/>
+
+
+            <Rectangle Grid.Row="1"     RadiusX="15" RadiusY="15" Height="30"  StrokeThickness="1" Stroke="#E5E5E5"  Width="80"  VerticalAlignment="Center" Fill="White" Grid.ColumnSpan="2"  />
+            <TextBox Grid.Row="1"   Name="txt2" Text=" " HorizontalAlignment="Left" VerticalAlignment="Center" BorderThickness="0" Background="{x:Null}" BorderBrush="{x:Null}"  Foreground="#FF333333" Grid.Column="1" ></TextBox>
+            <Ellipse Grid.Row="1"   Fill="#FF4C8D"  Stroke="#FF4C8D" HorizontalAlignment="Right" Width="13" Height="13"  VerticalAlignment="Center"/>
+
+            <Rectangle  Grid.Row="2"   RadiusX="15" RadiusY="15" Height="30"   StrokeThickness="1" Stroke="#E5E5E5"  Width="80"  VerticalAlignment="Center" Fill="White" Grid.ColumnSpan="2"  />
+
+            <TextBox  Grid.Row="2"    Name="txt3" Text=" " HorizontalAlignment="Left" VerticalAlignment="Center" BorderThickness="0" Background="{x:Null}" BorderBrush="{x:Null}"  Foreground="#FF333333" Grid.Column="1" ></TextBox>
+            <Ellipse  Grid.Row="2"    Fill="#81D819"  Stroke="#81D819" HorizontalAlignment="Right" Width="13" Height="13" VerticalAlignment="Stretch"/>
+
+            <Rectangle Grid.Row="3"     RadiusX="15" RadiusY="15" Height="30"   StrokeThickness="1" Stroke="#E5E5E5"  Width="80"  VerticalAlignment="Center" Fill="White" Grid.ColumnSpan="2"  />
+
+            <TextBox Grid.Row="3"   Name="txt4" Text=" " HorizontalAlignment="Left" VerticalAlignment="Center" BorderThickness="0" Background="{x:Null}" BorderBrush="{x:Null}"  Foreground="#FF333333" Grid.Column="1" ></TextBox>
+            <Ellipse Grid.Row="3"    Fill="#178ADE"  Stroke="#178ADE" HorizontalAlignment="Right" Width="13" Height="13"  VerticalAlignment="Center"/>
+
+            <Rectangle Grid.Row="4"     RadiusX="15" RadiusY="15" Height="30"   StrokeThickness="1" Stroke="#E5E5E5"  Width="80"  VerticalAlignment="Center" Fill="White" Grid.ColumnSpan="2"  />
+
+            <TextBox Grid.Row="4"  Name="txt5" Text=" " HorizontalAlignment="Left" VerticalAlignment="Center" BorderThickness="0" Background="{x:Null}" BorderBrush="{x:Null}"  Foreground="#FF333333" Grid.Column="1" />
+            <Ellipse Grid.Row="4"   Fill="#FFE400"  Stroke="#FFE400" HorizontalAlignment="Right" Width="13" Height="13"  VerticalAlignment="Stretch"/>
+
+
+        </Grid>
+            <Grid Grid.Row="2" Grid.Column="4" Background="#F4F9FC">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="40*" />
+                <ColumnDefinition Width="70*" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="40*" />
+                <RowDefinition Height="40*" />
+                <RowDefinition Height="40*" />
+                <RowDefinition Height="40*" />
+                <RowDefinition Height="40*" />
+            </Grid.RowDefinitions>
+
+            <Rectangle   Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2"  RadiusX="15" RadiusY="15" Height="30" StrokeThickness="1" Stroke="#E5E5E5" Width="80" HorizontalAlignment="Center" VerticalAlignment="Center" Fill="White"/>
+            <TextBox Grid.Row="0" Grid.Column="1"  Name="txt21" Text=" " HorizontalAlignment="Left" VerticalAlignment="Center" BorderThickness="0" Background="{x:Null}" BorderBrush="{x:Null}"  Foreground="#FF333333"/>
+            <Ellipse Grid.Row="0"  Grid.Column="0" Fill="#FF3C1B"  Stroke="#FF3C1B" HorizontalAlignment="Right" Width="13" Height="13"  VerticalAlignment="Center"/>
+
+            <Rectangle Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2"     RadiusX="15" RadiusY="15" Height="30" StrokeThickness="1" Stroke="#E5E5E5" Width="80" HorizontalAlignment="Center" VerticalAlignment="Center" Fill="White"/>
+
+            <TextBox Grid.Row="1"  Grid.Column="1"  Name="txt22" Text=" " HorizontalAlignment="Left" VerticalAlignment="Center" BorderThickness="0" Background="{x:Null}" BorderBrush="{x:Null}"  Foreground="#FF333333"/>
+            <Ellipse Grid.Row="1"  Grid.Column="0" Fill="#FF4C8D"  Stroke="#FF4C8D" HorizontalAlignment="Right" Width="13" Height="13"  VerticalAlignment="Stretch"/>
+
+            <Rectangle  Grid.Row="2"  Grid.Column="0" Grid.ColumnSpan="2"   RadiusX="15" RadiusY="15" Height="30" StrokeThickness="1" Stroke="#E5E5E5" Width="80"  VerticalAlignment="Center" Fill="White"/>
+
+            <TextBox  Grid.Row="2"  Grid.Column="1"  Name="txt23" Text=" " HorizontalAlignment="Left" VerticalAlignment="Center" BorderThickness="0" Background="{x:Null}" BorderBrush="{x:Null}"  Foreground="#FF333333"/>
+            <Ellipse  Grid.Row="2"  Grid.Column="0"   Fill="#81D819"  Stroke="#81D819" HorizontalAlignment="Right" Width="13" Height="13"    VerticalAlignment="Stretch"/>
+
+            <Rectangle Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2"   RadiusX="15" RadiusY="15" Height="30" StrokeThickness="1" Stroke="#E5E5E5"  Width="80"  VerticalAlignment="Center" Fill="White"/>
+
+            <TextBox Grid.Row="3" Grid.Column="1"  Name="txt24" Text=" " HorizontalAlignment="Left" VerticalAlignment="Center" BorderThickness="0" Background="{x:Null}" BorderBrush="{x:Null}"  Foreground="#FF333333"/>
+            <Ellipse Grid.Row="3"  Grid.Column="0"   Fill="#178ADE"  Stroke="#178ADE" HorizontalAlignment="Right" Width="13" Height="13"  VerticalAlignment="Stretch"/>
+
+            <Rectangle  Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="2"   RadiusX="15" RadiusY="15" Height="30" StrokeThickness="1" Stroke="#E5E5E5"   Width="80"  VerticalAlignment="Center" Fill="White"/>
+
+            <TextBox  Grid.Row="4"  Grid.Column="1"  Name="txt25" Text=" " HorizontalAlignment="Left" VerticalAlignment="Center" BorderThickness="0" Background="{x:Null}" BorderBrush="{x:Null}"  Foreground="#FF333333"/>
+            <Ellipse  Grid.Row="4" Grid.Column="0"    Fill="#FFE400"  Stroke="#FFE400" HorizontalAlignment="Right" Width="13" Height="13" VerticalAlignment="Stretch"/>
+
+        </Grid>
+            <Grid Grid.Row="2" Grid.Column="5" Background="#F4F9FC">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="40*" />
+                <ColumnDefinition Width="70*" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="40*" />
+                <RowDefinition Height="40*" />
+                <RowDefinition Height="40*" />
+                <RowDefinition Height="40*" />
+                <RowDefinition Height="40*" />
+            </Grid.RowDefinitions>
+
+            <Rectangle   Grid.Row="0" Grid.Column="0" HorizontalAlignment="Center" Grid.ColumnSpan="2"  RadiusX="15" RadiusY="15" Height="30" StrokeThickness="1" Stroke="#E5E5E5"  Width="80"  VerticalAlignment="Center" Fill="White"/>
+
+            <TextBox Grid.Row="0" Grid.Column="1" Name="txt31" Text=" " HorizontalAlignment="Left" VerticalAlignment="Center" BorderThickness="0" Background="{x:Null}" BorderBrush="{x:Null}"  Foreground="#FF333333"/>
+            <Ellipse Grid.Row="0" Grid.Column="0" Fill="#FF3C1B"  Stroke="#FF3C1B" HorizontalAlignment="Right" Width="13" Height="13"  VerticalAlignment="Stretch"/>
+
+            <Rectangle Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2"   RadiusX="15" RadiusY="15" Height="30" StrokeThickness="1" Stroke="#E5E5E5"  Width="80"  VerticalAlignment="Center" Fill="White"/>
+
+            <TextBox Grid.Row="1" Grid.Column="1"  Name="txt32" Text=" " HorizontalAlignment="Left" VerticalAlignment="Center" BorderThickness="0" Background="{x:Null}" BorderBrush="{x:Null}"  Foreground="#FF333333"/>
+            <Ellipse Grid.Row="1" Grid.Column="0"  Fill="#FF4C8D"  Stroke="#FF4C8D" HorizontalAlignment="Right" Width="13" Height="13"  VerticalAlignment="Center"/>
+
+            <Rectangle  Grid.Row="2"  Grid.Column="0" Grid.ColumnSpan="2"  RadiusX="15" RadiusY="15" Height="30" StrokeThickness="1" Stroke="#E5E5E5"  Width="80"  VerticalAlignment="Center" Fill="White"/>
+
+            <TextBox  Grid.Row="2"  Grid.Column="1"  Name="txt33" Text=" " HorizontalAlignment="Left" VerticalAlignment="Center" BorderThickness="0" Background="{x:Null}" BorderBrush="{x:Null}"  Foreground="#FF333333"/>
+            <Ellipse  Grid.Row="2"  Grid.Column="0"  Fill="#81D819"  Stroke="#81D819" HorizontalAlignment="Right" Width="13" Height="13"  VerticalAlignment="Center"/>
+
+            <Rectangle Grid.Row="3"  Grid.Column="0" Grid.ColumnSpan="2"   RadiusX="15" RadiusY="15" Height="30" StrokeThickness="1" Stroke="#E5E5E5"  Width="80"  VerticalAlignment="Center" Fill="White"/>
+
+            <TextBox Grid.Row="3" Grid.Column="1" Name="txt34" Text=" " HorizontalAlignment="Left" VerticalAlignment="Center" BorderThickness="0" Background="{x:Null}" BorderBrush="{x:Null}"  Foreground="#FF333333"/>
+            <Ellipse Grid.Row="3"  Grid.Column="0"   Fill="#178ADE"  Stroke="#178ADE" HorizontalAlignment="Right" Width="13" Height="13"  VerticalAlignment="Center"/>
+
+            <Rectangle  Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="2" RadiusX="15" RadiusY="15" Height="30" StrokeThickness="1" Stroke="#E5E5E5"  Width="80"  VerticalAlignment="Center" Fill="White"/>
+
+            <TextBox  Grid.Row="4"   Grid.Column="1"  Name="txt35" Text=" " HorizontalAlignment="Left" VerticalAlignment="Center" BorderThickness="0" Background="{x:Null}" BorderBrush="{x:Null}"  Foreground="#FF333333"/>
+            <Ellipse  Grid.Row="4"  Grid.Column="0"  Fill="#FFE400"  Stroke="#FFE400" HorizontalAlignment="Right" Width="13" Height="13"  VerticalAlignment="Center"/>
+
+
+        </Grid>
+            <Grid Grid.Row="2" Grid.Column="6" Background="#F4F9FC">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="40*" />
+                <ColumnDefinition Width="70*" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="40*" />
+                <RowDefinition Height="40*" />
+                <RowDefinition Height="40*" />
+                <RowDefinition Height="40*" />
+                <RowDefinition Height="40*" />
+            </Grid.RowDefinitions>
+
+            <Rectangle   Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" RadiusX="15" RadiusY="15" Height="30" StrokeThickness="1" Stroke="#E5E5E5"  Width="80"  VerticalAlignment="Center" Fill="White"/>
+            <TextBox Grid.Row="0" Grid.Column="1"  Name="txt41" Text=" " HorizontalAlignment="Left" VerticalAlignment="Center" BorderThickness="0" Background="{x:Null}" BorderBrush="{x:Null}"  Foreground="#FF333333"/>
+            <Ellipse Grid.Row="0" Grid.Column="0" Fill="#FF3C1B"  Stroke="#FF3C1B" HorizontalAlignment="Right" Width="13" Height="13"   VerticalAlignment="Stretch"/>
+
+            <Rectangle Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2"  RadiusX="15" RadiusY="15" Height="30" StrokeThickness="1" Stroke="#E5E5E5"  Width="80"  VerticalAlignment="Center" Fill="White"/>
+            <TextBox Grid.Row="1" Grid.Column="1" Name="txt42" Text=" " HorizontalAlignment="Left" VerticalAlignment="Center" BorderThickness="0" Background="{x:Null}" BorderBrush="{x:Null}"  Foreground="#FF333333"/>
+            <Ellipse Grid.Row="1" Grid.Column="0" Fill="#FF4C8D"  Stroke="#FF4C8D" HorizontalAlignment="Right" Width="13" Height="13"   VerticalAlignment="Stretch"/>
+
+            <Rectangle  Grid.Row="2"  Grid.Column="0" Grid.ColumnSpan="2"   RadiusX="15" RadiusY="15" Height="30" StrokeThickness="1" Stroke="#E5E5E5"  Width="80"  VerticalAlignment="Center" Fill="White"/>
+            <TextBox  Grid.Row="2"   Grid.Column="1"  Name="txt43" Text=" " HorizontalAlignment="Left" VerticalAlignment="Center" BorderThickness="0" Background="{x:Null}" BorderBrush="{x:Null}"  Foreground="#FF333333"/>
+            <Ellipse  Grid.Row="2"  Grid.Column="0"  Fill="#81D819"  Stroke="#81D819" HorizontalAlignment="Right" Width="13" Height="13"   VerticalAlignment="Stretch"/>
+
+            <Rectangle Grid.Row="3"  Grid.Column="0" Grid.ColumnSpan="2"   RadiusX="15" RadiusY="15" Height="30" StrokeThickness="1" Stroke="#E5E5E5"  Width="80"  VerticalAlignment="Center" Fill="White"/>
+            <TextBox Grid.Row="3" Grid.Column="1" Name="txt44" Text=" " HorizontalAlignment="Left" VerticalAlignment="Center" BorderThickness="0" Background="{x:Null}" BorderBrush="{x:Null}"  Foreground="#FF333333"/>
+            <Ellipse Grid.Row="3" Grid.Column="0" Fill="#178ADE"  Stroke="#178ADE" HorizontalAlignment="Right" Width="13" Height="13"   VerticalAlignment="Stretch"/>
+
+            <Rectangle  Grid.Row="4"  Grid.Column="0" Grid.ColumnSpan="2"   RadiusX="15" RadiusY="15" Height="30" StrokeThickness="1" Stroke="#E5E5E5"  Width="80"  VerticalAlignment="Center" Fill="White"/>
+            <TextBox  Grid.Row="4"   Grid.Column="1"  Name="txt45" Text=" " HorizontalAlignment="Left" VerticalAlignment="Center" BorderThickness="0" Background="{x:Null}" BorderBrush="{x:Null}"  Foreground="#FF333333"/>
+            <Ellipse  Grid.Row="4"  Grid.Column="0"  Fill="#FFE400"  Stroke="#FFE400" HorizontalAlignment="Right" Width="13" Height="13"   VerticalAlignment="Stretch"/>
+        </Grid>
+            <Grid Grid.Row="2" Grid.Column="7" Background="#F4F9FC">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="40*" />
+                <ColumnDefinition Width="70*" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="40*" />
+                <RowDefinition Height="40*" />
+                <RowDefinition Height="40*" />
+                <RowDefinition Height="40*" />
+                <RowDefinition Height="40*" />
+            </Grid.RowDefinitions>
+            <Rectangle   Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2"  RadiusX="15" RadiusY="15" Height="30" StrokeThickness="1" Stroke="#E5E5E5"   Width="80"  VerticalAlignment="Center" Fill="White"/>
+            <TextBox Grid.Row="0" Grid.Column="1" Name="txt51" Text=" " HorizontalAlignment="Left" VerticalAlignment="Center" BorderThickness="0" Background="{x:Null}" BorderBrush="{x:Null}"  Foreground="#FF333333"/>
+            <Ellipse Grid.Row="0" Grid.Column="0" Fill="#FF3C1B"  Stroke="#FF3C1B" HorizontalAlignment="Right" Width="13" Height="13"   VerticalAlignment="Stretch"/>
+
+            <Rectangle Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2"   RadiusX="15" RadiusY="15" Height="30" StrokeThickness="1" Stroke="#E5E5E5"  Width="80"  VerticalAlignment="Center" Fill="White"/>
+            <TextBox Grid.Row="1" Grid.Column="1" Name="txt52" Text=" " HorizontalAlignment="Left" VerticalAlignment="Center" BorderThickness="0" Background="{x:Null}" BorderBrush="{x:Null}"  Foreground="#FF333333"/>
+            <Ellipse Grid.Row="1" Grid.Column="0" Fill="#FF4C8D"  Stroke="#FF4C8D" HorizontalAlignment="Right" Width="13" Height="13"   VerticalAlignment="Stretch"/>
+
+            <Rectangle  Grid.Row="2"  Grid.Column="0" Grid.ColumnSpan="2"  RadiusX="15" RadiusY="15" Height="30" StrokeThickness="1" Stroke="#E5E5E5"  Width="80"  VerticalAlignment="Center" Fill="White" />
+            <TextBox  Grid.Row="2"   Grid.Column="1"  Name="txt53" Text=" " HorizontalAlignment="Left" VerticalAlignment="Center" BorderThickness="0" Background="{x:Null}" BorderBrush="{x:Null}"  Foreground="#FF333333"/>
+            <Ellipse  Grid.Row="2"  Grid.Column="0"  Fill="#81D819"  Stroke="#81D819" HorizontalAlignment="Right" Width="13" Height="13"   VerticalAlignment="Stretch"/>
+
+            <Rectangle Grid.Row="3"   Grid.Column="0" Grid.ColumnSpan="2"  RadiusX="15" RadiusY="15" Height="30" StrokeThickness="1" Stroke="#E5E5E5"  Width="80"  VerticalAlignment="Center" Fill="White"/>
+            <TextBox Grid.Row="3" Grid.Column="1" Name="txt54" Text=" " HorizontalAlignment="Left" VerticalAlignment="Center" BorderThickness="0" Background="{x:Null}" BorderBrush="{x:Null}"  Foreground="#FF333333"/>
+            <Ellipse Grid.Row="3"  Grid.Column="0" Fill="#178ADE"  Stroke="#178ADE" HorizontalAlignment="Right" Width="13" Height="13"   VerticalAlignment="Stretch"/>
+
+            <Rectangle  Grid.Row="4"  Grid.Column="0" Grid.ColumnSpan="2" RadiusX="15" RadiusY="15" Height="30" StrokeThickness="1" Stroke="#E5E5E5"  Width="80"  VerticalAlignment="Center" Fill="White"/>
+            <TextBox  Grid.Row="4"   Grid.Column="1"  Name="txt55" Text=" " HorizontalAlignment="Left" VerticalAlignment="Center" BorderThickness="0" Background="{x:Null}" BorderBrush="{x:Null}"  Foreground="#FF333333"/>
+            <Ellipse  Grid.Row="4"  Grid.Column="0"  Fill="#FFE400"  Stroke="#FFE400" HorizontalAlignment="Right" Width="13" Height="13"   VerticalAlignment="Stretch"/>
+
+        </Grid>
+        <Grid Grid.Row="3" Grid.Column="2" Grid.RowSpan="3">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="8*" />
+                <ColumnDefinition Width="103*" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="30*" />
+                <RowDefinition Height="30*" />
+                <RowDefinition Height="30*" />
+                </Grid.RowDefinitions>
+            <TextBlock Grid.Row="0" Grid.Column="1" Text=" 抗凝方案" HorizontalAlignment="Left" VerticalAlignment="Center" TextAlignment="Center" FontFamily="Microsoft YaHei" Foreground="#666666" FontSize="13" />
+
+            <TextBlock Grid.Row="1" Grid.Column="1" Text=" 用药记录" HorizontalAlignment="Left" VerticalAlignment="Center" TextAlignment="Center" FontFamily="Microsoft YaHei" Foreground="#666666" FontSize="13"/>
+            <TextBlock  Grid.Row="2" Grid.Column="1" Text="并发症记录"  HorizontalAlignment="Left" VerticalAlignment="Center" TextAlignment="Center" FontFamily="Microsoft YaHei" Foreground="#666666" FontSize="13"/>
+
+        </Grid>
+
+               
+        <TextBox Grid.Row="3" Grid.Column="3" Name="txtKNFA0" Background="{x:Null}" BorderBrush="{x:Null}" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" FontFamily="Microsoft YaHei" Foreground="#0172C5"/>
+        <TextBox Grid.Row="3" Grid.Column="4" Name="txtKNFA1" Background="{x:Null}" BorderBrush="{x:Null}" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" FontFamily="Microsoft YaHei" Foreground="#0172C5"/>
+        <TextBox Grid.Row="3" Grid.Column="5" Name="txtKNFA2" Background="{x:Null}" BorderBrush="{x:Null}" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" FontFamily="Microsoft YaHei" Foreground="#0172C5"/>
+        <TextBox Grid.Row="3" Grid.Column="6" Name="txtKNFA3" Background="{x:Null}" BorderBrush="{x:Null}" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" FontFamily="Microsoft YaHei" Foreground="#0172C5"/>
+        <TextBox Grid.Row="3" Grid.Column="7" Name="txtKNFA4" Background="{x:Null}" BorderBrush="{x:Null}" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" FontFamily="Microsoft YaHei" Foreground="#0172C5"/>
+
+        <TextBox Grid.Row="4" Grid.Column="3" Name="txtYYJV0" Background="{x:Null}" BorderBrush="{x:Null}" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" FontFamily="Microsoft YaHei" Foreground="#0172C5"/>
+        <TextBox Grid.Row="4" Grid.Column="4" Name="txtYYJV1" Background="{x:Null}" BorderBrush="{x:Null}" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" FontFamily="Microsoft YaHei" Foreground="#0172C5"/>
+        <TextBox Grid.Row="4" Grid.Column="5" Name="txtYYJV2" Background="{x:Null}" BorderBrush="{x:Null}" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" FontFamily="Microsoft YaHei" Foreground="#0172C5"/>
+        <TextBox Grid.Row="4" Grid.Column="6" Name="txtYYJV3" Background="{x:Null}" BorderBrush="{x:Null}" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" FontFamily="Microsoft YaHei" Foreground="#0172C5"/>
+        <TextBox Grid.Row="4" Grid.Column="7" Name="txtYYJV4" Background="{x:Null}" BorderBrush="{x:Null}" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" FontFamily="Microsoft YaHei" Foreground="#0172C5"/>
+
+        <TextBox Grid.Row="5" Grid.Column="3" Name="txtBFZ0" Background="{x:Null}" BorderBrush="{x:Null}" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" FontFamily="Microsoft YaHei" Foreground="#0172C5"/>
+        <TextBox Grid.Row="5" Grid.Column="4" Name="txtBFZ1" Background="{x:Null}" BorderBrush="{x:Null}" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" FontFamily="Microsoft YaHei" Foreground="#0172C5"/>
+        <TextBox Grid.Row="5" Grid.Column="5" Name="txtBFZ2" Background="{x:Null}" BorderBrush="{x:Null}" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" FontFamily="Microsoft YaHei" Foreground="#0172C5"/>
+        <TextBox Grid.Row="5" Grid.Column="6" Name="txtBFZ3" Background="{x:Null}" BorderBrush="{x:Null}" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" FontFamily="Microsoft YaHei" Foreground="#0172C5"/>
+        <TextBox Grid.Row="5" Grid.Column="7" Name="txtBFZ4" Background="{x:Null}" BorderBrush="{x:Null}" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" FontFamily="Microsoft YaHei" Foreground="#0172C5"/>
+
+        <TextBlock Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="8" VerticalAlignment="Top" Height="1" Background="#E4E4E4" />
+        <TextBlock Grid.Row="1" Grid.Column="0"  VerticalAlignment="Top" Height="1"  Background="#E5E5E5" />
+        <TextBlock Grid.Row="1" Grid.Column="2" Grid.ColumnSpan="6" VerticalAlignment="Top" Height="1"  Background="#E5E5E5" />
+        <TextBlock Grid.Row="2" Grid.Column="2" Grid.ColumnSpan="6" VerticalAlignment="Top" Height="1"  Background="#E5E5E5" />
+        <TextBlock Grid.Row="3" Grid.Column="2" Grid.ColumnSpan="6" VerticalAlignment="Top" Height="1"  Background="#E5E5E5" />
+        <TextBlock Grid.Row="4" Grid.Column="2" Grid.ColumnSpan="6" VerticalAlignment="Top" Height="1" Background="#E5E5E5" />
+        <TextBlock Grid.Row="5" Grid.Column="2" Grid.ColumnSpan="6" VerticalAlignment="Top" Height="1" Background="#E5E5E5" />
+        <TextBlock Grid.Row="5" Grid.Column="2" Grid.ColumnSpan="6" VerticalAlignment="Bottom" Height="1" Background="#E5E5E5" />
+        <TextBlock Grid.Row="6" Grid.Column="0" Grid.ColumnSpan="8" VerticalAlignment="Bottom" Height="1" Background="#E4E4E4" />
+
+
+        <TextBlock Grid.Row="0" Grid.Column="0" Grid.RowSpan="7" HorizontalAlignment="Left" Width="1" Background="#E4E4E4" />
+        <TextBlock Grid.Row="0" Grid.Column="1" Grid.RowSpan="7" HorizontalAlignment="Left" Width="1" Background="#E5E5E5" />
+        <TextBlock Grid.Row="0" Grid.Column="2" Grid.RowSpan="7" HorizontalAlignment="Left" Width="1" Background="#E5E5E5" />
+        <TextBlock Grid.Row="1" Grid.Column="3" Grid.RowSpan="5" HorizontalAlignment="Left" Width="1" Background="#E5E5E5" />
+        <TextBlock Grid.Row="1" Grid.Column="4" Grid.RowSpan="5" HorizontalAlignment="Left" Width="1" Background="#E5E5E5" />
+        <TextBlock Grid.Row="1" Grid.Column="5" Grid.RowSpan="5" HorizontalAlignment="Left" Width="1" Background="#E5E5E5" />
+        <TextBlock Grid.Row="1" Grid.Column="6" Grid.RowSpan="5" HorizontalAlignment="Left" Width="1" Background="#E5E5E5" />
+        <TextBlock Grid.Row="1" Grid.Column="7" Grid.RowSpan="5" HorizontalAlignment="Left" Width="1" Background="#E5E5E5" />
+        <TextBlock Grid.Row="0" Grid.Column="7" Grid.RowSpan="7" HorizontalAlignment="Right" Width="1" Background="#E4E4E4" />
+        <Grid Grid.Row="6" Grid.Column="2" Grid.ColumnSpan="6">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="30*" />
+                <ColumnDefinition Width="60*" />
+                <ColumnDefinition Width="200*" />
+                <ColumnDefinition Width="30*" />
+                <ColumnDefinition Width="60*" />
+                <ColumnDefinition Width="200*" />
+            </Grid.ColumnDefinitions>
+            <Image Grid.Column="0" Grid.Row="0" Source="../Resources/形状-175.png" HorizontalAlignment="Center" VerticalAlignment="Center" Height="20"></Image>
+            <Image Grid.Column="3" Grid.Row="0" Source="../Resources/形状-175.png" HorizontalAlignment="Center" VerticalAlignment="Center" Height="20"></Image>
+            <TextBlock Grid.Row="0" Grid.Column="1" Text="检验提醒" FontSize="13"  HorizontalAlignment="Left" VerticalAlignment="Center" TextAlignment="Center" Foreground="#C20808" FontFamily="Microsoft YaHei" />
+                <TextBlock  Grid.Row="0" Grid.Column="4" Text="评估提醒" FontSize="13"   HorizontalAlignment="Left" VerticalAlignment="Center" TextAlignment="Center"  Foreground="#C20808" FontFamily="Microsoft YaHei" />
+                <TextBox Name="txtBFZ" Grid.Row="0" Grid.Column="2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" HorizontalContentAlignment="Left" Background="{x:Null}" BorderBrush="{x:Null}" FontFamily="Microsoft YaHei"  Foreground="#C20808" TextWrapping="Wrap" FontSize="13" />
+                <TextBox Name="txtPGTX" Grid.Row="0" Grid.Column="5" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" HorizontalContentAlignment="Left" Background="{x:Null}" BorderBrush="{x:Null}" FontFamily="Microsoft YaHei"  Foreground="#C20808" TextWrapping="Wrap" FontSize="13" />
+            <TextBlock Grid.Row="0" Grid.Column="3"  HorizontalAlignment="Left" Width="1" Background="#E5E5E5" />
+        </Grid>
+
+        <Image  x:Name="left"   MouseLeftButtonDown="Left_OnMouseLeftButtonDown"  MouseEnter="Left_OnMouseEnter" MouseLeave="Left_OnMouseLeave"  Grid.Row="2" Opacity="0" Grid.Column="2"  HorizontalAlignment="Right" VerticalAlignment="Center" Width="50" Height="180" Source="/Resources/leftN.png"/>
+        <Image x:Name="right" MouseLeftButtonDown="Right_OnMouseLeftButtonDown" MouseEnter="Right_OnMouseEnter" MouseLeave="Right_OnMouseLeave" Grid.Row="2" Opacity="0" Grid.Column="7" HorizontalAlignment="Right" VerticalAlignment="Center" Width="50" Height="180" Source="/Resources/rightN.png"/>
+
+    </Grid>
+        
+        <Grid Grid.Column="0">
+            
+        </Grid>
+    </Grid>
+</UserControl>

@@ -1,0 +1,8 @@
+---13:13:28 : Docare.Updater.Connection错误:
+数据库操作发生异常,请联系系统管理员。
+System.Object ExecuteScalar(System.String, System.Data.Common.DbParameter[])
+Docare.Data.v2.0
+ORA-12170: TNS: 连接超时
+Void b(Int32)
+Devart.Data.Oracle
+

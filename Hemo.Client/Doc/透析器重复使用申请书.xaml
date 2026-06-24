@@ -1,0 +1,31 @@
+﻿<UserControl x:Class="Hemo.Client.Doc.透析器重复使用申请书"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="1100" d:DesignWidth="816">
+    <Grid>
+        <Label Content="" FontFamily="宋体" FontSize="26"  Height="50" HorizontalAlignment="Left" HorizontalContentAlignment="Center" Margin="141,76,0,0" Name="lblHospital" VerticalAlignment="Top" VerticalContentAlignment="Center" Width="522" FontStyle="Normal" />
+        <Label Content="透析器复用使用申请书" FontSize="22" Height="44" HorizontalAlignment="Left" HorizontalContentAlignment="Center" Margin="202,132,0,0" Name="label2" VerticalAlignment="Top" VerticalContentAlignment="Center" Width="405" FontFamily="宋体"  />
+        <Label Content="患者姓名：" Height="27" HorizontalAlignment="Left"  Name="label3" VerticalAlignment="Top" FontSize="17" FontFamily="宋体"  Width="87" Margin="68,196,0,0" />
+        <TextBox Height="23"  BorderThickness="0,0,0,1" BorderBrush="Black" Name="txtName" IsReadOnly="False" Margin="157,200,0,877" HorizontalAlignment="Left" Width="94" FontSize="17"  FontFamily="宋体" />
+        <Label Content="年龄：" Height="27" HorizontalAlignment="Left"  Name="label33" VerticalAlignment="Top" FontSize="17" FontFamily="宋体"  Width="51" Margin="277,196,0,0" />
+        <TextBox Height="23"  BorderThickness="0,0,0,1" BorderBrush="Black" Name="txtAge" IsReadOnly="False" Margin="334,200,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="58" FontSize="17"  FontFamily="宋体" />
+        <Label  Content="性别：" Height="27" HorizontalAlignment="Left"  Name="label34" VerticalAlignment="Top" FontSize="17" FontFamily="宋体"  Width="53" Margin="398,196,0,0" />
+        <TextBox Height="23"  BorderThickness="0,0,0,1" BorderBrush="Black" Name="txtSex" IsReadOnly="False" Margin="451,200,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="68" FontSize="17"  FontFamily="宋体" />
+        <Label Content="联系电话：" Height="28" Name="label6" VerticalAlignment="Top" FontSize="17" FontFamily="宋体"  Margin="540,196,0,0" HorizontalAlignment="Left" Width="92" />
+        <TextBox Height="23"  BorderThickness="0,0,0,1" BorderBrush="Black" Name="txtTelephone" IsReadOnly="False" Margin="629,200,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="99" FontSize="17"  FontFamily="宋体" />
+        <Label Content="家庭住址：" Height="29" HorizontalAlignment="Left"  Name="label32" VerticalAlignment="Top" FontSize="17" FontFamily="宋体"  Width="87" Margin="68,238,0,0" />
+        <TextBox Height="23"  BorderThickness="0,0,0,1" BorderBrush="Black" Name="txtAddress" IsReadOnly="False" Margin="157,244,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="571" FontSize="17"  FontFamily="宋体" />
+        <TextBlock LineHeight="35" TextWrapping="Wrap" Height="61" Margin="69,297,0,0" Name="textBlock1" Text="   因病情需要，本人将接受血液透析治疗。根据《卫生部关于印发血液透析器复用操作规范的通知》本人符合使用可复用透析器条件，申请使用可复用透析器。" VerticalAlignment="Top" FontSize="17" FontFamily="宋体"  HorizontalAlignment="Left" Width="659" />
+        <Label Content="签名者与患者关系：" FontSize="17" Height="34" HorizontalAlignment="Left" Margin="85,739,0,0" Name="label24" VerticalAlignment="Top" Width="175" FontFamily="宋体"  />
+        <Label Content="患者本人或家属签名：" FontFamily="宋体" FontSize="17"  Height="34" HorizontalAlignment="Left" Margin="85,670,0,0" Name="label4" VerticalAlignment="Top" />
+        <TextBlock FontFamily="宋体" FontSize="17"  Height="98" HorizontalAlignment="Left" LineHeight="35" Margin="68,364,0,0" Name="textBlock2" Text="   在透析器重复使用过程中，按照《复用操作规范的通知》我科虽已严格地冲洗、消毒，并对透析器进行测压、测容及各项复用质量检验合格，但由于目前医学科学技术水平的局限，尚难完全杜绝透析器重复使用后发生反应和传播疾病等副作用。" TextWrapping="Wrap" VerticalAlignment="Top" Width="659" />
+        <TextBlock FontFamily="宋体" FontSize="17"  Height="22" HorizontalAlignment="Left" LineHeight="35" Margin="68,468,0,0" Name="textBlock3" Text="   对应上述问题，本人及家属已经充分了解，本人愿意承担由此造成的一切后果。" TextWrapping="Wrap" VerticalAlignment="Top" Width="659" />
+        <Label Content="经治医生签名：" FontFamily="宋体" FontSize="17"  Height="34" HorizontalAlignment="Left" Margin="85,809,0,0" Name="label5" VerticalAlignment="Top" Width="132" />
+        <TextBox BorderBrush="Black" BorderThickness="0,0,0,1" Height="23" HorizontalAlignment="Left" IsReadOnly="False" Margin="277,670,0,407" Name="textBox1" Width="215" />
+        <TextBox BorderBrush="Black" BorderThickness="0,0,0,1" Height="23" HorizontalAlignment="Left" IsReadOnly="False" Margin="277,745,0,332" Name="textBox2" Width="215" />
+        <TextBox BorderBrush="Black" BorderThickness="0,0,0,1" Height="23" HorizontalAlignment="Left" IsReadOnly="False" Margin="277,815,0,262" Name="textBox3" Width="215" />
+    </Grid>
+</UserControl>

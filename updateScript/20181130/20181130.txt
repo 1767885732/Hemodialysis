@@ -1,0 +1,6 @@
+-- Add comments to the columns 
+comment on column MED_CURE_MAIN.recipe_type
+  is '处方类型：0=正常  1=加透';
+  -- Add comments to the columns 
+comment on column MED_CURE_DRUG.execute_status
+  is '处方状态 :0为普通医嘱 1：加透医嘱';

@@ -1,0 +1,69 @@
+﻿<UserControl x:Class="Hemo.Client.Doc.内瘘手术同意书"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="1100" d:DesignWidth="816">
+    <Grid>
+        <Label Content="" FontFamily="宋体" FontSize="26"  Height="50" HorizontalAlignment="Left" HorizontalContentAlignment="Center" Margin="141,76,0,0" Name="lblHospital" VerticalAlignment="Top" VerticalContentAlignment="Center" Width="522" FontStyle="Normal" />
+        <Label Content="抗菌药物皮肤试验知情同意书" FontSize="22" Height="44" HorizontalAlignment="Left" HorizontalContentAlignment="Center" Margin="202,132,0,0" Name="label2" VerticalAlignment="Top" VerticalContentAlignment="Center" Width="405" FontFamily="宋体"  />
+        <Label Content="患者姓名：" Height="27" HorizontalAlignment="Left"  Name="label3" VerticalAlignment="Top" FontSize="17" FontFamily="宋体"  Width="89" Margin="84,196,0,0" />
+        <TextBox Height="23"  BorderThickness="0,0,0,0" BorderBrush="Black" Name="txtName" IsReadOnly="False" Margin="179,200,0,877" HorizontalAlignment="Left" Width="72" FontSize="17" FontFamily="宋体"  />
+        <Label Content="性别：" Height="27" HorizontalAlignment="Right"  Name="label33" VerticalAlignment="Top" FontSize="17" FontFamily="宋体"  Width="51" Margin="0,196,513,0" />
+        <TextBox Height="23"  BorderThickness="0,0,0,0" BorderBrush="Black" Name="txtSex" IsReadOnly="False" Margin="0,200,467,0" VerticalAlignment="Top" HorizontalAlignment="Right" Width="40" FontSize="17" FontFamily="宋体"  />
+        <Label  Content="年龄：" Height="27" HorizontalAlignment="Left"  Name="label34" VerticalAlignment="Top" FontSize="17" FontFamily="宋体"  Width="53" Margin="355,196,0,0" />
+        <TextBox Height="23"  BorderThickness="0,0,0,0" BorderBrush="Black" Name="txtAge" IsReadOnly="False" Margin="414,200,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="60" FontSize="17" FontFamily="宋体"  />
+
+        <Label  Content="科室：" Height="27" HorizontalAlignment="Left"  Name="label41" VerticalAlignment="Top" FontSize="17" FontFamily="宋体"  Width="53" Margin="480,196,0,0" />
+        <TextBox Height="23"  BorderThickness="0,0,0,0" BorderBrush="Black" Name="txtDeptCode" IsReadOnly="False" Margin="539,200,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="102" FontSize="17" FontFamily="宋体"  />
+
+
+        <Label  Content="床号：" Height="27" HorizontalAlignment="Left"  Name="label42" VerticalAlignment="Top" FontSize="17" FontFamily="宋体"  Width="53" Margin="647,196,0,0" />
+        <TextBox Height="23"  BorderThickness="0,0,0,0" BorderBrush="Black" Name="txtBedNum" IsReadOnly="False" Margin="0,200,62,0" VerticalAlignment="Top" HorizontalAlignment="Right" Width="57" FontSize="17" FontFamily="宋体"  />
+
+        <Label  Content="住院号：" Height="27" HorizontalAlignment="Right"  Name="label43" VerticalAlignment="Top" FontSize="17" FontFamily="宋体"  Width="68" Margin="0,229,496,0" />
+        <TextBox Height="23"  BorderThickness="0,0,0,0" BorderBrush="Black" Name="txtAdmissionNumber" IsReadOnly="False" Margin="0,233,342,0" VerticalAlignment="Top" HorizontalAlignment="Right" Width="148" FontSize="17" FontFamily="宋体"  />
+
+        <Label  Content="日期：" Height="27" HorizontalAlignment="Left"  Name="label44" VerticalAlignment="Top" FontSize="17" FontFamily="宋体"  Width="53" Margin="480,229,0,0" />
+        <TextBox Height="23"  BorderThickness="0,0,0,0" BorderBrush="Black" Name="txtDate" IsReadOnly="False" Margin="0,233,62,0" VerticalAlignment="Top" FontSize="17" FontFamily="宋体"  HorizontalAlignment="Right" Width="215" />
+        <Label Content="术前诊断：" FontFamily="宋体" FontSize="17"  Height="27" HorizontalAlignment="Left" Margin="84,262,0,0" Name="label5" VerticalAlignment="Top" Width="89" />
+        <TextBox BorderBrush="Black" BorderThickness="0,0,0,0" FontFamily="宋体" FontSize="17"  Height="23" HorizontalAlignment="Right" IsReadOnly="False" Margin="0,266,62,0" Name="txtClinicalDiagnosis" VerticalAlignment="Top" Width="575" Text="" />
+        <Label Content="手术适应症和禁忌症：" FontFamily="宋体" FontSize="17"  Height="27" HorizontalAlignment="Left" Margin="84,295,0,0" Name="label6" VerticalAlignment="Top" Width="670" />
+        <TextBox BorderBrush="Black" BorderThickness="0,0,0,0" FontFamily="宋体" FontSize="17"  Height="23" HorizontalAlignment="Right" IsReadOnly="False" Margin="0,328,62,0" Name="txtAllergy" VerticalAlignment="Top" Width="670" Text="诊断明确，有手术指征，无明显手术禁忌证，患者及家属要求手术。" />
+        <TextBlock FontFamily="宋体" FontSize="17"  Height="25" HorizontalAlignment="Left" LineHeight="35" Margin="84,456,0,0" Name="textBlock2" Text="术中术后可能出现的并发症和医疗意外" TextWrapping="Wrap" VerticalAlignment="Top" Width="670" />
+        <Label Content="患者签名" FontFamily="宋体" FontSize="17"  Height="27" HorizontalAlignment="Left" Margin="84,1030,0,0" Name="label19" VerticalAlignment="Top" Width="78" />
+        <Label Content="" FontFamily="宋体" FontSize="17"  Height="25" HorizontalAlignment="Left" Margin="168,1032,0,0" Name="label20" VerticalAlignment="Top" Width="120" />
+        <Label ClipToBounds="False" Content="家属签名" FontFamily="宋体" FontSize="17"  Height="27" HorizontalAlignment="Left" Margin="294,1030,0,0" Name="label21" VerticalAlignment="Top" Width="81" />
+        <Label Content="" FontFamily="宋体" FontSize="17"  Height="25" HorizontalAlignment="Left" Margin="381,1032,0,0" Name="label22" VerticalAlignment="Top" Width="120" />
+        <Label Content="家属签名" FontFamily="宋体" FontSize="17"  Height="27" HorizontalAlignment="Left" Margin="84,1057,0,0" Name="label4" VerticalAlignment="Top" Width="78" />
+        <Label Content="" FontFamily="宋体" FontSize="17"  Height="25" HorizontalAlignment="Left" Margin="168,1059,0,0" Name="label7" VerticalAlignment="Top" Width="120" />
+        <Label Content="主治医师" FontFamily="宋体" FontSize="17"  Height="27" HorizontalAlignment="Left" Margin="294,1057,0,0" Name="label8" VerticalAlignment="Top" Width="81" />
+        <Label Content="" FontFamily="宋体" FontSize="17"  Height="25" HorizontalAlignment="Left" Margin="381,1059,0,0" Name="label9" VerticalAlignment="Top" Width="120" />
+        <Label ClipToBounds="False" Content="正（副）主任医师" FontFamily="宋体" FontSize="17"  Height="27" HorizontalAlignment="Left" Margin="510,1057,0,0" Name="label10" VerticalAlignment="Top" Width="153" />
+        <Label Content="" FontFamily="宋体" FontSize="17"  Height="25" HorizontalAlignment="Right" Margin="0,1059,62,0" Name="label11" VerticalAlignment="Top" Width="85" />
+        <TextBox BorderBrush="Black" BorderThickness="0,0,0,0" FontFamily="宋体" FontSize="17"  Height="23" IsReadOnly="False" Margin="141,233,0,0" Name="txtPATIENTID" VerticalAlignment="Top" HorizontalAlignment="Left" Width="105" />
+        <Label Content="ID号：" FontFamily="宋体" FontSize="17"  Height="27" HorizontalAlignment="Left" Margin="84,229,0,0" Name="label27" VerticalAlignment="Top" Width="53" />
+        <Label Content="拟施手术：" FontFamily="宋体" FontSize="17"  Height="27" HorizontalAlignment="Left" Margin="84,357,0,0" Name="label12" VerticalAlignment="Top" Width="89" />
+        <TextBox BorderBrush="Black" BorderThickness="0,0,0,0" FontFamily="宋体" FontSize="17"  Height="23" HorizontalAlignment="Right" IsReadOnly="False" Margin="0,361,62,0" Name="textBox1" Text="（左、右）前臂动静脉内瘘术" VerticalAlignment="Top" Width="575" />
+        <Label Content="拟行麻醉：" FontFamily="宋体" FontSize="17"  Height="27" HorizontalAlignment="Left" Margin="84,390,0,0" Name="label28" VerticalAlignment="Top" Width="89" />
+        <TextBox BorderBrush="Black" BorderThickness="0,0,0,0" FontFamily="宋体" FontSize="17"  Height="23" HorizontalAlignment="Right" IsReadOnly="False" Margin="0,394,62,0" Name="textBox2" Text="局 麻" VerticalAlignment="Top" Width="575" />
+        <Label Content="术前准备：" FontFamily="宋体" FontSize="17"  Height="27" HorizontalAlignment="Left" Margin="84,423,0,0" Name="label29" VerticalAlignment="Top" Width="89" />
+        <TextBox BorderBrush="Black" BorderThickness="0,0,0,0" FontFamily="宋体" FontSize="17"  Height="23" HorizontalAlignment="Right" IsReadOnly="False" Margin="0,427,62,0" Name="textBox3" Text="按医嘱" VerticalAlignment="Top" Width="575" />
+        <TextBlock FontFamily="宋体" FontSize="17"  Height="273" HorizontalAlignment="Left" LineHeight="35" Margin="84,487,0,0" Name="textBlock1" Text="1．麻醉意外；
+2.术中可因尿毒症心肺功能不全而出现呼吸、心跳骤停，甚至死亡；
+3.手术过程中可能出血或术后出血；	
+4.术中牵拉表浅神经，引起局部皮肤感觉异常或运动受限；
+5.术中因患者血管条件差，手术不成功，需要换手术部位或改建其他血管通路；
+6.术后发生切口感染；
+7.术后因患者血液高凝状态出现血栓形成、内瘘失去功能，手术失败，需再次手术；
+8.其他意外情况
+" TextWrapping="Wrap" VerticalAlignment="Top" Width="670" />
+        <TextBlock FontFamily="宋体" FontSize="17"  Height="25" HorizontalAlignment="Left" LineHeight="35" Margin="84,766,0,0" Name="textBlock3" Text="医院声明" TextWrapping="Wrap" VerticalAlignment="Top" Width="670" />
+        <TextBlock FontFamily="宋体" FontSize="17"  Height="131" HorizontalAlignment="Left" LineHeight="35" Margin="84,797,0,0" Name="textBlock4" Text="    医生将严格按照医疗工作制度及操作常规进行手术，尽量避免以上情况的发生。但由于某些不可预知的原因以上情况有时仍有可能发生。当然医院会尽力救治，但经抢救后即使效果不佳或无效，院方仍将按规定收取医疗费用。病人或家属及单位应做好思想准备。若同意手术，签字为证。如不同意手术，医院决不勉强。" TextWrapping="Wrap" VerticalAlignment="Top" Width="670" />
+        <TextBlock FontFamily="宋体" FontSize="17"  Height="25" HorizontalAlignment="Left" LineHeight="35" Margin="84,934,0,0" Name="textBlock5" Text="患方意见" TextWrapping="Wrap" VerticalAlignment="Top" Width="670" />
+        <TextBlock FontFamily="宋体" FontSize="17"  Height="57" HorizontalAlignment="Left" LineHeight="35" Margin="84,957,0,0" Name="textBlock6" Text="    有关手术中和手术后可能发生的并发症及医疗意外，医生已向我们详细阐明，家属或病人及单位完全理解，由于病情需要，经慎重考虑，同意手术，签字生效。" TextWrapping="Wrap" VerticalAlignment="Top" Width="670" />
+        <Label ClipToBounds="False" Content="与患者关系" FontFamily="宋体" FontSize="17"  Height="27" HorizontalAlignment="Left" Margin="510,1030,0,0" Name="label13" VerticalAlignment="Top" Width="102" />
+        <Label Content="" FontFamily="宋体" FontSize="17"  Height="25" HorizontalAlignment="Right" Margin="0,1032,62,0" Name="label14" VerticalAlignment="Top" Width="136" />
+    </Grid>
+</UserControl>

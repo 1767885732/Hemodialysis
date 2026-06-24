@@ -1,0 +1,589 @@
+
+
+***********************************************************************
+Fatal NI connect error 12170.
+
+  VERSION INFORMATION:
+	TNS for 32-bit Windows: Version 10.2.0.3.0 - Production
+	Windows NT TCP/IP NT Protocol Adapter for 32-bit Windows: Version 10.2.0.3.0 - Production
+  Time: 21-3月 -2013 11:25:40
+  Tracing not turned on.
+  Tns error struct:
+    ns main err code: 12535
+    TNS-12535: TNS: 操作超时
+    ns secondary err code: 12560
+    nt main err code: 505
+    TNS-00505: 操作超时
+    nt secondary err code: 60
+    nt OS err code: 0
+  Client address: (ADDRESS=(PROTOCOL=tcp)(HOST=192.168.0.42)(PORT=1521))
+
+
+***********************************************************************
+Fatal NI connect error 12170.
+
+  VERSION INFORMATION:
+	TNS for 32-bit Windows: Version 10.2.0.3.0 - Production
+	Windows NT TCP/IP NT Protocol Adapter for 32-bit Windows: Version 10.2.0.3.0 - Production
+  Time: 28-3月 -2013 17:19:58
+  Tracing not turned on.
+  Tns error struct:
+    ns main err code: 12535
+    TNS-12535: TNS: 操作超时
+    ns secondary err code: 12560
+    nt main err code: 505
+    TNS-00505: 操作超时
+    nt secondary err code: 60
+    nt OS err code: 0
+  Client address: (ADDRESS=(PROTOCOL=tcp)(HOST=192.168.0.42)(PORT=1521))
+
+
+***********************************************************************
+Fatal NI connect error 12170.
+
+  VERSION INFORMATION:
+	TNS for 32-bit Windows: Version 10.2.0.3.0 - Production
+	Windows NT TCP/IP NT Protocol Adapter for 32-bit Windows: Version 10.2.0.3.0 - Production
+  Time: 28-3月 -2013 17:20:31
+  Tracing not turned on.
+  Tns error struct:
+    ns main err code: 12535
+    TNS-12535: TNS: 操作超时
+    ns secondary err code: 12560
+    nt main err code: 505
+    TNS-00505: 操作超时
+    nt secondary err code: 60
+    nt OS err code: 0
+  Client address: (ADDRESS=(PROTOCOL=tcp)(HOST=192.168.0.42)(PORT=1521))
+
+
+***********************************************************************
+Fatal NI connect error 12545, connecting to:
+ (DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=WIN-CLPHLZFCPUG)(PORT=1521))(CONNECT_DATA=(SERVICE_NAME=orcl)(CID=(PROGRAM=c:\Program?Files\Microsoft?Visual?Studio?10.0\Common7\IDE\devenv.exe)(HOST=????-PC)(USER=????))))
+
+  VERSION INFORMATION:
+	TNS for 32-bit Windows: Version 10.2.0.3.0 - Production
+	Windows NT TCP/IP NT Protocol Adapter for 32-bit Windows: Version 10.2.0.3.0 - Production
+  Time: 28-3月 -2013 17:20:45
+  Tracing not turned on.
+  Tns error struct:
+    ns main err code: 12545
+    TNS-12545: 因目标主机或对象不存在, 连接失败
+    ns secondary err code: 12560
+    nt main err code: 515
+    TNS-00515: 因目标主机或对象不存在, 连接失败
+    nt secondary err code: 1001
+    nt OS err code: 0
+
+
+***********************************************************************
+Fatal NI connect error 12170.
+
+  VERSION INFORMATION:
+	TNS for 32-bit Windows: Version 10.2.0.3.0 - Production
+	Windows NT TCP/IP NT Protocol Adapter for 32-bit Windows: Version 10.2.0.3.0 - Production
+  Time: 28-3月 -2013 17:21:17
+  Tracing not turned on.
+  Tns error struct:
+    ns main err code: 12535
+    TNS-12535: TNS: 操作超时
+    ns secondary err code: 12560
+    nt main err code: 505
+    TNS-00505: 操作超时
+    nt secondary err code: 60
+    nt OS err code: 0
+  Client address: (ADDRESS=(PROTOCOL=tcp)(HOST=192.168.0.18)(PORT=1521))
+
+
+***********************************************************************
+Fatal NI connect error 12170.
+
+  VERSION INFORMATION:
+	TNS for 32-bit Windows: Version 10.2.0.3.0 - Production
+	Windows NT TCP/IP NT Protocol Adapter for 32-bit Windows: Version 10.2.0.3.0 - Production
+  Time: 18-4月 -2013 09:36:21
+  Tracing not turned on.
+  Tns error struct:
+    ns main err code: 12535
+    TNS-12535: TNS: 操作超时
+    ns secondary err code: 12560
+    nt main err code: 505
+    TNS-00505: 操作超时
+    nt secondary err code: 60
+    nt OS err code: 0
+  Client address: (ADDRESS=(PROTOCOL=tcp)(HOST=192.168.0.42)(PORT=1521))
+
+
+***********************************************************************
+Fatal NI connect error 12545, connecting to:
+ (DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=WIN-CLPHLZFCPUG)(PORT=1521))(CONNECT_DATA=(SERVICE_NAME=orcl)(CID=(PROGRAM=c:\Program?Files\Microsoft?Visual?Studio?10.0\Common7\IDE\devenv.exe)(HOST=????-PC)(USER=Administrator))))
+
+  VERSION INFORMATION:
+	TNS for 32-bit Windows: Version 10.2.0.3.0 - Production
+	Windows NT TCP/IP NT Protocol Adapter for 32-bit Windows: Version 10.2.0.3.0 - Production
+  Time: 22-4月 -2013 11:33:06
+  Tracing not turned on.
+  Tns error struct:
+    ns main err code: 12545
+    TNS-12545: 因目标主机或对象不存在, 连接失败
+    ns secondary err code: 12560
+    nt main err code: 515
+    TNS-00515: 因目标主机或对象不存在, 连接失败
+    nt secondary err code: 1004
+    nt OS err code: 0
+
+
+***********************************************************************
+Fatal NI connect error 12545, connecting to:
+ (DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=WIN-CLPHLZFCPUG)(PORT=1521))(CONNECT_DATA=(SERVICE_NAME=orcl)(CID=(PROGRAM=c:\Program?Files\Microsoft?Visual?Studio?10.0\Common7\IDE\devenv.exe)(HOST=????-PC)(USER=Administrator))))
+
+  VERSION INFORMATION:
+	TNS for 32-bit Windows: Version 10.2.0.3.0 - Production
+	Windows NT TCP/IP NT Protocol Adapter for 32-bit Windows: Version 10.2.0.3.0 - Production
+  Time: 22-4月 -2013 11:33:06
+  Tracing not turned on.
+  Tns error struct:
+    ns main err code: 12545
+    TNS-12545: 因目标主机或对象不存在, 连接失败
+    ns secondary err code: 12560
+    nt main err code: 515
+    TNS-00515: 因目标主机或对象不存在, 连接失败
+    nt secondary err code: 1004
+    nt OS err code: 0
+
+
+***********************************************************************
+Fatal NI connect error 12545, connecting to:
+ (DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=WIN-CLPHLZFCPUG)(PORT=1521))(CONNECT_DATA=(SERVICE_NAME=orcl)(CID=(PROGRAM=c:\Program?Files\Microsoft?Visual?Studio?10.0\Common7\IDE\devenv.exe)(HOST=????-PC)(USER=Administrator))))
+
+  VERSION INFORMATION:
+	TNS for 32-bit Windows: Version 10.2.0.3.0 - Production
+	Windows NT TCP/IP NT Protocol Adapter for 32-bit Windows: Version 10.2.0.3.0 - Production
+  Time: 22-4月 -2013 11:33:13
+  Tracing not turned on.
+  Tns error struct:
+    ns main err code: 12545
+    TNS-12545: 因目标主机或对象不存在, 连接失败
+    ns secondary err code: 12560
+    nt main err code: 515
+    TNS-00515: 因目标主机或对象不存在, 连接失败
+    nt secondary err code: 1004
+    nt OS err code: 0
+
+
+***********************************************************************
+Fatal NI connect error 12545, connecting to:
+ (DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=WIN-CLPHLZFCPUG)(PORT=1521))(CONNECT_DATA=(SERVICE_NAME=orcl)(CID=(PROGRAM=c:\Program?Files\Microsoft?Visual?Studio?10.0\Common7\IDE\devenv.exe)(HOST=????-PC)(USER=Administrator))))
+
+  VERSION INFORMATION:
+	TNS for 32-bit Windows: Version 10.2.0.3.0 - Production
+	Windows NT TCP/IP NT Protocol Adapter for 32-bit Windows: Version 10.2.0.3.0 - Production
+  Time: 22-4月 -2013 11:33:19
+  Tracing not turned on.
+  Tns error struct:
+    ns main err code: 12545
+    TNS-12545: 因目标主机或对象不存在, 连接失败
+    ns secondary err code: 12560
+    nt main err code: 515
+    TNS-00515: 因目标主机或对象不存在, 连接失败
+    nt secondary err code: 1004
+    nt OS err code: 0
+
+
+***********************************************************************
+Fatal NI connect error 12545, connecting to:
+ (DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=WIN-CLPHLZFCPUG)(PORT=1521))(CONNECT_DATA=(SERVICE_NAME=orcl)(CID=(PROGRAM=c:\Program?Files\Microsoft?Visual?Studio?10.0\Common7\IDE\devenv.exe)(HOST=????-PC)(USER=Administrator))))
+
+  VERSION INFORMATION:
+	TNS for 32-bit Windows: Version 10.2.0.3.0 - Production
+	Windows NT TCP/IP NT Protocol Adapter for 32-bit Windows: Version 10.2.0.3.0 - Production
+  Time: 22-4月 -2013 11:33:24
+  Tracing not turned on.
+  Tns error struct:
+    ns main err code: 12545
+    TNS-12545: 因目标主机或对象不存在, 连接失败
+    ns secondary err code: 12560
+    nt main err code: 515
+    TNS-00515: 因目标主机或对象不存在, 连接失败
+    nt secondary err code: 1004
+    nt OS err code: 0
+
+
+***********************************************************************
+Fatal NI connect error 12545, connecting to:
+ (DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=WIN-CLPHLZFCPUG)(PORT=1521))(CONNECT_DATA=(SERVICE_NAME=orcl)(CID=(PROGRAM=c:\Program?Files\Microsoft?Visual?Studio?10.0\Common7\IDE\devenv.exe)(HOST=????-PC)(USER=Administrator))))
+
+  VERSION INFORMATION:
+	TNS for 32-bit Windows: Version 10.2.0.3.0 - Production
+	Windows NT TCP/IP NT Protocol Adapter for 32-bit Windows: Version 10.2.0.3.0 - Production
+  Time: 22-4月 -2013 11:33:24
+  Tracing not turned on.
+  Tns error struct:
+    ns main err code: 12545
+    TNS-12545: 因目标主机或对象不存在, 连接失败
+    ns secondary err code: 12560
+    nt main err code: 515
+    TNS-00515: 因目标主机或对象不存在, 连接失败
+    nt secondary err code: 1004
+    nt OS err code: 0
+
+
+***********************************************************************
+Fatal NI connect error 12545, connecting to:
+ (DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=WIN-CLPHLZFCPUG)(PORT=1521))(CONNECT_DATA=(SERVICE_NAME=orcl)(CID=(PROGRAM=c:\Program?Files\Microsoft?Visual?Studio?10.0\Common7\IDE\devenv.exe)(HOST=????-PC)(USER=Administrator))))
+
+  VERSION INFORMATION:
+	TNS for 32-bit Windows: Version 10.2.0.3.0 - Production
+	Windows NT TCP/IP NT Protocol Adapter for 32-bit Windows: Version 10.2.0.3.0 - Production
+  Time: 22-4月 -2013 12:35:59
+  Tracing not turned on.
+  Tns error struct:
+    ns main err code: 12545
+    TNS-12545: 因目标主机或对象不存在, 连接失败
+    ns secondary err code: 12560
+    nt main err code: 515
+    TNS-00515: 因目标主机或对象不存在, 连接失败
+    nt secondary err code: 1004
+    nt OS err code: 0
+
+
+***********************************************************************
+Fatal NI connect error 12545, connecting to:
+ (DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=WIN-CLPHLZFCPUG)(PORT=1521))(CONNECT_DATA=(SERVICE_NAME=orcl)(CID=(PROGRAM=c:\Program?Files\Microsoft?Visual?Studio?10.0\Common7\IDE\devenv.exe)(HOST=????-PC)(USER=Administrator))))
+
+  VERSION INFORMATION:
+	TNS for 32-bit Windows: Version 10.2.0.3.0 - Production
+	Windows NT TCP/IP NT Protocol Adapter for 32-bit Windows: Version 10.2.0.3.0 - Production
+  Time: 22-4月 -2013 12:36:48
+  Tracing not turned on.
+  Tns error struct:
+    ns main err code: 12545
+    TNS-12545: 因目标主机或对象不存在, 连接失败
+    ns secondary err code: 12560
+    nt main err code: 515
+    TNS-00515: 因目标主机或对象不存在, 连接失败
+    nt secondary err code: 1004
+    nt OS err code: 0
+
+
+***********************************************************************
+Fatal NI connect error 12545, connecting to:
+ (DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=WIN-CLPHLZFCPUG)(PORT=1521))(CONNECT_DATA=(SERVICE_NAME=orcl)(CID=(PROGRAM=c:\Program?Files\Microsoft?Visual?Studio?10.0\Common7\IDE\devenv.exe)(HOST=????-PC)(USER=Administrator))))
+
+  VERSION INFORMATION:
+	TNS for 32-bit Windows: Version 10.2.0.3.0 - Production
+	Windows NT TCP/IP NT Protocol Adapter for 32-bit Windows: Version 10.2.0.3.0 - Production
+  Time: 22-4月 -2013 12:36:48
+  Tracing not turned on.
+  Tns error struct:
+    ns main err code: 12545
+    TNS-12545: 因目标主机或对象不存在, 连接失败
+    ns secondary err code: 12560
+    nt main err code: 515
+    TNS-00515: 因目标主机或对象不存在, 连接失败
+    nt secondary err code: 1004
+    nt OS err code: 0
+
+
+***********************************************************************
+Fatal NI connect error 12545, connecting to:
+ (DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=WIN-CLPHLZFCPUG)(PORT=1521))(CONNECT_DATA=(SERVICE_NAME=orcl)(CID=(PROGRAM=c:\Program?Files\Microsoft?Visual?Studio?10.0\Common7\IDE\devenv.exe)(HOST=????-PC)(USER=Administrator))))
+
+  VERSION INFORMATION:
+	TNS for 32-bit Windows: Version 10.2.0.3.0 - Production
+	Windows NT TCP/IP NT Protocol Adapter for 32-bit Windows: Version 10.2.0.3.0 - Production
+  Time: 22-4月 -2013 15:42:25
+  Tracing not turned on.
+  Tns error struct:
+    ns main err code: 12545
+    TNS-12545: 因目标主机或对象不存在, 连接失败
+    ns secondary err code: 12560
+    nt main err code: 515
+    TNS-00515: 因目标主机或对象不存在, 连接失败
+    nt secondary err code: 1004
+    nt OS err code: 0
+
+
+***********************************************************************
+Fatal NI connect error 12545, connecting to:
+ (DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=WIN-CLPHLZFCPUG)(PORT=1521))(CONNECT_DATA=(SERVICE_NAME=orcl)(CID=(PROGRAM=c:\Program?Files\Microsoft?Visual?Studio?10.0\Common7\IDE\devenv.exe)(HOST=????-PC)(USER=Administrator))))
+
+  VERSION INFORMATION:
+	TNS for 32-bit Windows: Version 10.2.0.3.0 - Production
+	Windows NT TCP/IP NT Protocol Adapter for 32-bit Windows: Version 10.2.0.3.0 - Production
+  Time: 22-4月 -2013 15:42:25
+  Tracing not turned on.
+  Tns error struct:
+    ns main err code: 12545
+    TNS-12545: 因目标主机或对象不存在, 连接失败
+    ns secondary err code: 12560
+    nt main err code: 515
+    TNS-00515: 因目标主机或对象不存在, 连接失败
+    nt secondary err code: 1004
+    nt OS err code: 0
+
+
+***********************************************************************
+Fatal NI connect error 12545, connecting to:
+ (DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=WIN-CLPHLZFCPUG)(PORT=1521))(CONNECT_DATA=(SERVICE_NAME=orcl)(CID=(PROGRAM=c:\Program?Files\Microsoft?Visual?Studio?10.0\Common7\IDE\devenv.exe)(HOST=????-PC)(USER=Administrator))))
+
+  VERSION INFORMATION:
+	TNS for 32-bit Windows: Version 10.2.0.3.0 - Production
+	Windows NT TCP/IP NT Protocol Adapter for 32-bit Windows: Version 10.2.0.3.0 - Production
+  Time: 22-4月 -2013 15:42:35
+  Tracing not turned on.
+  Tns error struct:
+    ns main err code: 12545
+    TNS-12545: 因目标主机或对象不存在, 连接失败
+    ns secondary err code: 12560
+    nt main err code: 515
+    TNS-00515: 因目标主机或对象不存在, 连接失败
+    nt secondary err code: 1004
+    nt OS err code: 0
+
+
+***********************************************************************
+Fatal NI connect error 12545, connecting to:
+ (DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=WIN-CLPHLZFCPUG)(PORT=1521))(CONNECT_DATA=(SERVICE_NAME=orcl)(CID=(PROGRAM=c:\Program?Files\Microsoft?Visual?Studio?10.0\Common7\IDE\devenv.exe)(HOST=????-PC)(USER=Administrator))))
+
+  VERSION INFORMATION:
+	TNS for 32-bit Windows: Version 10.2.0.3.0 - Production
+	Windows NT TCP/IP NT Protocol Adapter for 32-bit Windows: Version 10.2.0.3.0 - Production
+  Time: 22-4月 -2013 15:42:35
+  Tracing not turned on.
+  Tns error struct:
+    ns main err code: 12545
+    TNS-12545: 因目标主机或对象不存在, 连接失败
+    ns secondary err code: 12560
+    nt main err code: 515
+    TNS-00515: 因目标主机或对象不存在, 连接失败
+    nt secondary err code: 1004
+    nt OS err code: 0
+
+
+***********************************************************************
+Fatal NI connect error 12545, connecting to:
+ (DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=WIN-CLPHLZFCPUG)(PORT=1521))(CONNECT_DATA=(SERVICE_NAME=orcl)(CID=(PROGRAM=c:\Program?Files\Microsoft?Visual?Studio?10.0\Common7\IDE\devenv.exe)(HOST=????-PC)(USER=Administrator))))
+
+  VERSION INFORMATION:
+	TNS for 32-bit Windows: Version 10.2.0.3.0 - Production
+	Windows NT TCP/IP NT Protocol Adapter for 32-bit Windows: Version 10.2.0.3.0 - Production
+  Time: 22-4月 -2013 15:42:35
+  Tracing not turned on.
+  Tns error struct:
+    ns main err code: 12545
+    TNS-12545: 因目标主机或对象不存在, 连接失败
+    ns secondary err code: 12560
+    nt main err code: 515
+    TNS-00515: 因目标主机或对象不存在, 连接失败
+    nt secondary err code: 1004
+    nt OS err code: 0
+
+
+***********************************************************************
+Fatal NI connect error 12545, connecting to:
+ (DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=WIN-CLPHLZFCPUG)(PORT=1521))(CONNECT_DATA=(SERVICE_NAME=orcl)(CID=(PROGRAM=c:\Program?Files\Microsoft?Visual?Studio?10.0\Common7\IDE\devenv.exe)(HOST=????-PC)(USER=Administrator))))
+
+  VERSION INFORMATION:
+	TNS for 32-bit Windows: Version 10.2.0.3.0 - Production
+	Windows NT TCP/IP NT Protocol Adapter for 32-bit Windows: Version 10.2.0.3.0 - Production
+  Time: 22-4月 -2013 15:42:37
+  Tracing not turned on.
+  Tns error struct:
+    ns main err code: 12545
+    TNS-12545: 因目标主机或对象不存在, 连接失败
+    ns secondary err code: 12560
+    nt main err code: 515
+    TNS-00515: 因目标主机或对象不存在, 连接失败
+    nt secondary err code: 1004
+    nt OS err code: 0
+
+
+***********************************************************************
+Fatal NI connect error 12545, connecting to:
+ (DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=WIN-CLPHLZFCPUG)(PORT=1521))(CONNECT_DATA=(SERVICE_NAME=orcl)(CID=(PROGRAM=c:\Program?Files\Microsoft?Visual?Studio?10.0\Common7\IDE\devenv.exe)(HOST=????-PC)(USER=Administrator))))
+
+  VERSION INFORMATION:
+	TNS for 32-bit Windows: Version 10.2.0.3.0 - Production
+	Windows NT TCP/IP NT Protocol Adapter for 32-bit Windows: Version 10.2.0.3.0 - Production
+  Time: 22-4月 -2013 15:42:37
+  Tracing not turned on.
+  Tns error struct:
+    ns main err code: 12545
+    TNS-12545: 因目标主机或对象不存在, 连接失败
+    ns secondary err code: 12560
+    nt main err code: 515
+    TNS-00515: 因目标主机或对象不存在, 连接失败
+    nt secondary err code: 1004
+    nt OS err code: 0
+
+
+***********************************************************************
+Fatal NI connect error 12545, connecting to:
+ (DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=WIN-CLPHLZFCPUG)(PORT=1521))(CONNECT_DATA=(SERVICE_NAME=orcl)(CID=(PROGRAM=c:\Program?Files\Microsoft?Visual?Studio?10.0\Common7\IDE\devenv.exe)(HOST=????-PC)(USER=Administrator))))
+
+  VERSION INFORMATION:
+	TNS for 32-bit Windows: Version 10.2.0.3.0 - Production
+	Windows NT TCP/IP NT Protocol Adapter for 32-bit Windows: Version 10.2.0.3.0 - Production
+  Time: 22-4月 -2013 15:42:37
+  Tracing not turned on.
+  Tns error struct:
+    ns main err code: 12545
+    TNS-12545: 因目标主机或对象不存在, 连接失败
+    ns secondary err code: 12560
+    nt main err code: 515
+    TNS-00515: 因目标主机或对象不存在, 连接失败
+    nt secondary err code: 1004
+    nt OS err code: 0
+
+
+***********************************************************************
+Fatal NI connect error 12545, connecting to:
+ (DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=WIN-CLPHLZFCPUG)(PORT=1521))(CONNECT_DATA=(SERVICE_NAME=orcl)(CID=(PROGRAM=c:\Program?Files\Microsoft?Visual?Studio?10.0\Common7\IDE\devenv.exe)(HOST=????-PC)(USER=Administrator))))
+
+  VERSION INFORMATION:
+	TNS for 32-bit Windows: Version 10.2.0.3.0 - Production
+	Windows NT TCP/IP NT Protocol Adapter for 32-bit Windows: Version 10.2.0.3.0 - Production
+  Time: 22-4月 -2013 15:42:39
+  Tracing not turned on.
+  Tns error struct:
+    ns main err code: 12545
+    TNS-12545: 因目标主机或对象不存在, 连接失败
+    ns secondary err code: 12560
+    nt main err code: 515
+    TNS-00515: 因目标主机或对象不存在, 连接失败
+    nt secondary err code: 1004
+    nt OS err code: 0
+
+
+***********************************************************************
+Fatal NI connect error 12545, connecting to:
+ (DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=WIN-CLPHLZFCPUG)(PORT=1521))(CONNECT_DATA=(SERVICE_NAME=orcl)(CID=(PROGRAM=c:\Program?Files\Microsoft?Visual?Studio?10.0\Common7\IDE\devenv.exe)(HOST=????-PC)(USER=Administrator))))
+
+  VERSION INFORMATION:
+	TNS for 32-bit Windows: Version 10.2.0.3.0 - Production
+	Windows NT TCP/IP NT Protocol Adapter for 32-bit Windows: Version 10.2.0.3.0 - Production
+  Time: 22-4月 -2013 15:42:39
+  Tracing not turned on.
+  Tns error struct:
+    ns main err code: 12545
+    TNS-12545: 因目标主机或对象不存在, 连接失败
+    ns secondary err code: 12560
+    nt main err code: 515
+    TNS-00515: 因目标主机或对象不存在, 连接失败
+    nt secondary err code: 1004
+    nt OS err code: 0
+
+
+***********************************************************************
+Fatal NI connect error 12545, connecting to:
+ (DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=WIN-CLPHLZFCPUG)(PORT=1521))(CONNECT_DATA=(SERVICE_NAME=orcl)(CID=(PROGRAM=c:\Program?Files\Microsoft?Visual?Studio?10.0\Common7\IDE\devenv.exe)(HOST=????-PC)(USER=Administrator))))
+
+  VERSION INFORMATION:
+	TNS for 32-bit Windows: Version 10.2.0.3.0 - Production
+	Windows NT TCP/IP NT Protocol Adapter for 32-bit Windows: Version 10.2.0.3.0 - Production
+  Time: 22-4月 -2013 15:43:12
+  Tracing not turned on.
+  Tns error struct:
+    ns main err code: 12545
+    TNS-12545: 因目标主机或对象不存在, 连接失败
+    ns secondary err code: 12560
+    nt main err code: 515
+    TNS-00515: 因目标主机或对象不存在, 连接失败
+    nt secondary err code: 1004
+    nt OS err code: 0
+
+
+***********************************************************************
+Fatal NI connect error 12545, connecting to:
+ (DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=WIN-CLPHLZFCPUG)(PORT=1521))(CONNECT_DATA=(SERVICE_NAME=orcl)(CID=(PROGRAM=c:\Program?Files\Microsoft?Visual?Studio?10.0\Common7\IDE\devenv.exe)(HOST=????-PC)(USER=Administrator))))
+
+  VERSION INFORMATION:
+	TNS for 32-bit Windows: Version 10.2.0.3.0 - Production
+	Windows NT TCP/IP NT Protocol Adapter for 32-bit Windows: Version 10.2.0.3.0 - Production
+  Time: 22-4月 -2013 15:43:13
+  Tracing not turned on.
+  Tns error struct:
+    ns main err code: 12545
+    TNS-12545: 因目标主机或对象不存在, 连接失败
+    ns secondary err code: 12560
+    nt main err code: 515
+    TNS-00515: 因目标主机或对象不存在, 连接失败
+    nt secondary err code: 1004
+    nt OS err code: 0
+
+
+***********************************************************************
+Fatal NI connect error 12545, connecting to:
+ (DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=WIN-CLPHLZFCPUG)(PORT=1521))(CONNECT_DATA=(SERVICE_NAME=orcl)(CID=(PROGRAM=c:\Program?Files\Microsoft?Visual?Studio?10.0\Common7\IDE\devenv.exe)(HOST=????-PC)(USER=Administrator))))
+
+  VERSION INFORMATION:
+	TNS for 32-bit Windows: Version 10.2.0.3.0 - Production
+	Windows NT TCP/IP NT Protocol Adapter for 32-bit Windows: Version 10.2.0.3.0 - Production
+  Time: 22-4月 -2013 15:43:13
+  Tracing not turned on.
+  Tns error struct:
+    ns main err code: 12545
+    TNS-12545: 因目标主机或对象不存在, 连接失败
+    ns secondary err code: 12560
+    nt main err code: 515
+    TNS-00515: 因目标主机或对象不存在, 连接失败
+    nt secondary err code: 1004
+    nt OS err code: 0
+
+
+***********************************************************************
+Fatal NI connect error 12545, connecting to:
+ (DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=WIN-CLPHLZFCPUG)(PORT=1521))(CONNECT_DATA=(SERVICE_NAME=orcl)(CID=(PROGRAM=c:\Program?Files\Microsoft?Visual?Studio?10.0\Common7\IDE\devenv.exe)(HOST=????-PC)(USER=Administrator))))
+
+  VERSION INFORMATION:
+	TNS for 32-bit Windows: Version 10.2.0.3.0 - Production
+	Windows NT TCP/IP NT Protocol Adapter for 32-bit Windows: Version 10.2.0.3.0 - Production
+  Time: 22-4月 -2013 15:51:34
+  Tracing not turned on.
+  Tns error struct:
+    ns main err code: 12545
+    TNS-12545: 因目标主机或对象不存在, 连接失败
+    ns secondary err code: 12560
+    nt main err code: 515
+    TNS-00515: 因目标主机或对象不存在, 连接失败
+    nt secondary err code: 1004
+    nt OS err code: 0
+
+
+***********************************************************************
+Fatal NI connect error 12545, connecting to:
+ (DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=WIN-CLPHLZFCPUG)(PORT=1521))(CONNECT_DATA=(SERVICE_NAME=orcl)(CID=(PROGRAM=c:\Program?Files\Microsoft?Visual?Studio?10.0\Common7\IDE\devenv.exe)(HOST=????-PC)(USER=Administrator))))
+
+  VERSION INFORMATION:
+	TNS for 32-bit Windows: Version 10.2.0.3.0 - Production
+	Windows NT TCP/IP NT Protocol Adapter for 32-bit Windows: Version 10.2.0.3.0 - Production
+  Time: 22-4月 -2013 15:51:34
+  Tracing not turned on.
+  Tns error struct:
+    ns main err code: 12545
+    TNS-12545: 因目标主机或对象不存在, 连接失败
+    ns secondary err code: 12560
+    nt main err code: 515
+    TNS-00515: 因目标主机或对象不存在, 连接失败
+    nt secondary err code: 1004
+    nt OS err code: 0
+
+
+***********************************************************************
+Fatal NI connect error 12545, connecting to:
+ (DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=WIN-CLPHLZFCPUG)(PORT=1521))(CONNECT_DATA=(SERVICE_NAME=orcl)(CID=(PROGRAM=c:\Program?Files\Microsoft?Visual?Studio?10.0\Common7\IDE\devenv.exe)(HOST=????-PC)(USER=Administrator))))
+
+  VERSION INFORMATION:
+	TNS for 32-bit Windows: Version 10.2.0.3.0 - Production
+	Windows NT TCP/IP NT Protocol Adapter for 32-bit Windows: Version 10.2.0.3.0 - Production
+  Time: 22-4月 -2013 15:51:59
+  Tracing not turned on.
+  Tns error struct:
+    ns main err code: 12545
+    TNS-12545: 因目标主机或对象不存在, 连接失败
+    ns secondary err code: 12560
+    nt main err code: 515
+    TNS-00515: 因目标主机或对象不存在, 连接失败
+    nt secondary err code: 1004
+    nt OS err code: 0

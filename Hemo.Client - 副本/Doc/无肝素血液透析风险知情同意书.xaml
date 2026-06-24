@@ -1,0 +1,46 @@
+﻿<UserControl x:Class="Hemo.Client.Doc.无肝素血液透析风险知情同意书"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="1300" d:DesignWidth="760">
+    <Grid>
+        <Label Content="" FontFamily="宋体" FontSize="26"  Height="50" HorizontalAlignment="Left" HorizontalContentAlignment="Center" Margin="141,76,0,0" Name="lblHospital" VerticalAlignment="Top" VerticalContentAlignment="Center" Width="522" FontStyle="Normal" />
+        <Label Content="无肝素血液透析风险知情同意书" FontSize="22" Height="44" HorizontalAlignment="Left" HorizontalContentAlignment="Center" Margin="202,132,0,0" Name="label2" VerticalAlignment="Top" VerticalContentAlignment="Center" Width="405" FontFamily="宋体"  />
+        <Label Content="姓名：" Height="27" HorizontalAlignment="Left"  Name="label3" VerticalAlignment="Top" FontSize="17" FontFamily="宋体"  Width="51" Margin="85,196,0,0" />
+        <TextBox Height="23"  BorderThickness="0,0,0,0" BorderBrush="Black" Name="txtName" IsReadOnly="False" Margin="140,200,0,1177" HorizontalAlignment="Left" Width="92" FontSize="17" FontFamily="宋体"  />
+        <Label Content="性别：" Height="27" HorizontalAlignment="Left"  Name="label33" VerticalAlignment="Top" FontSize="17" FontFamily="宋体"  Width="51" Margin="237,196,0,0" />
+        <TextBox Height="23"  BorderThickness="0,0,0,0" BorderBrush="Black" Name="txtSex" IsReadOnly="False" Margin="294,200,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="50" FontSize="17" FontFamily="宋体"  />
+        <Label  Content="年龄：" Height="27" HorizontalAlignment="Left"  Name="label34" VerticalAlignment="Top" FontSize="17" FontFamily="宋体"  Width="53" Margin="376,196,0,0" />
+        <TextBox Height="23"  BorderThickness="0,0,0,0" BorderBrush="Black" Name="txtAge" IsReadOnly="False" Margin="435,200,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="61" FontSize="17" FontFamily="宋体"  />
+        <Label Content="门诊/住院号：" Height="28" Name="label6" VerticalAlignment="Top" FontSize="17" FontFamily="宋体"  Margin="501,196,0,0" HorizontalAlignment="Left" Width="115" />
+        <TextBox Height="23"  BorderThickness="0,0,0,0" BorderBrush="Black" Name="txtAdmissionNumber" IsReadOnly="False" Margin="621,200,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="82" FontSize="17" FontFamily="宋体"  />
+        <Label Content="临床诊断：" Height="29" HorizontalAlignment="Left"  Name="label31" VerticalAlignment="Top" FontSize="17" FontFamily="宋体"  Width="90" Margin="85,263,0,0" />
+        <TextBox Height="23"  BorderThickness="0,0,0,0" BorderBrush="Black" Name="txtVascularAccess" IsReadOnly="False" Margin="179,269,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="276"  FontSize="17" FontFamily="宋体" />
+        <Label Content="患者/家属签名：" FontFamily="宋体" FontSize="15"  Height="25" HorizontalAlignment="Left" Margin="442,897,0,0" Name="label4" VerticalAlignment="Top" Width="121" />
+        <Image Name="imgPatientSign" HorizontalAlignment="Left" Margin="574,893,0,0" VerticalAlignment="Top" Width="150" Height="40"/>
+        <Label Content="家属与患者关系：" FontFamily="宋体" FontSize="15"  Height="25" HorizontalAlignment="Left" Margin="442,938,0,0" Name="label8" VerticalAlignment="Top" Width="132" />
+        <Label Content="" FontFamily="宋体" FontSize="17"  Height="25" HorizontalAlignment="Left" Margin="574,938,0,0" Name="label9" VerticalAlignment="Top" Width="120" />
+        <Label Content="告知医师签字：" FontFamily="宋体" FontSize="15"  Height="25" HorizontalAlignment="Left" Margin="442,969,0,0" Name="label10" VerticalAlignment="Top" Width="121" />
+        <Label Content="" FontFamily="宋体" FontSize="17"  Height="25" HorizontalAlignment="Left" Margin="574,969,0,0" Name="label11" VerticalAlignment="Top" Width="120" />
+        <Label Content="      年    月    日" FontFamily="宋体" FontSize="17"  Height="34" HorizontalAlignment="Left" Margin="518,1000,0,0" Name="lblDate" VerticalAlignment="Top" Width="178" />
+        <TextBox BorderBrush="Black" BorderThickness="0,0,0,0" FontFamily="宋体" FontSize="17"  Height="23" HorizontalAlignment="Left" IsReadOnly="False" Margin="141,240,0,1137" Name="txtDiagnose" Width="126" />
+        <TextBlock FontFamily="宋体" FontSize="17"  Height="50" HorizontalAlignment="Left" LineHeight="30" Margin="85,306,0,0" Name="textBlock2" Text="    您/您的亲属因           需进行无肝素血液透析治疗，选择此方式治疗的原因以及可能存在的风险如下：" TextWrapping="Wrap" VerticalAlignment="Top" Width="605" AllowDrop="True" />
+        <TextBlock FontFamily="宋体" FontSize="17"  Height="50" HorizontalAlignment="Left" LineHeight="30" Margin="85,371,0,0" Name="textBlock6" Text="（一）尿毒症（包括急性或慢性肾衰竭）、急性中毒以及其他重症需血液净化的患者，由于凝血功能较差，应用肝素透析可引起出血，使贫血加重。" TextWrapping="Wrap" VerticalAlignment="Top" Width="605" />
+        <TextBlock FontFamily="宋体" FontSize="17"  Height="25" HorizontalAlignment="Left" LineHeight="30" Margin="85,429,0,0" Name="textBlock7" Text="（二）使用肝素透析，可使身体原有的脏器出血加重，严重者危及生命。" TextWrapping="Wrap" VerticalAlignment="Top" Width="605" />
+        <TextBlock FontFamily="宋体" FontSize="17"  Height="50" HorizontalAlignment="Left" LineHeight="30" Margin="85,458,0,0" Name="textBlock8" Text="（三）无肝素透析可能出现管路凝血，血液无法回入血管，使血液丢失，贫血加重。" TextWrapping="Wrap" VerticalAlignment="Top" Width="605" />
+        <TextBlock FontFamily="宋体" FontSize="17"  Height="50" HorizontalAlignment="Left" LineHeight="30" Margin="85,516,0,0" Name="textBlock9" Text="（四）无肝素透析过程中，由于透析器、管路或两者同时因血凝块堵塞，使透析无法进行，需终止透析。" TextWrapping="Wrap" VerticalAlignment="Top" Width="605" />
+        <TextBlock FontFamily="宋体" FontSize="17"  Height="28" HorizontalAlignment="Left" LineHeight="30" Margin="85,574,0,0" Name="textBlock10" Text="（五）透析中及透析后出现透析失衡综合征，如呕吐、头痛、头晕等。" TextWrapping="Wrap" VerticalAlignment="Top" Width="605" />
+        <TextBlock FontFamily="宋体" FontSize="17"  Height="50" HorizontalAlignment="Left" LineHeight="30" Margin="85,603,0,0" Name="textBlock11" Text="（六）无肝素透析超滤率过大容易堵塞管路和透析器，因此脱水不够，可引起血压升高，或心力衰竭。 " TextWrapping="Wrap" VerticalAlignment="Top" Width="605" />
+        <TextBlock FontFamily="宋体" FontSize="17"  Height="50" HorizontalAlignment="Left" LineHeight="30" Margin="85,661,0,0" Name="textBlock12" Text="（七）用盐水冲洗管路及透析器，超滤量过大，可能造成脱水不够，不能达到干体重。" TextWrapping="Wrap" VerticalAlignment="Top" Width="605" />
+        <TextBlock FontFamily="宋体" FontSize="17"  Height="55" HorizontalAlignment="Left" LineHeight="30" Margin="85,719,0,0" Name="textBlock13" Text="（八）透析器、管路有小血栓形成，随血路进入血液循环，引起肺栓塞、脑栓塞、心血管栓塞等并发症。" TextWrapping="Wrap" VerticalAlignment="Top" Width="605" />
+        <TextBlock FontFamily="宋体" FontSize="17"  Height="28" HorizontalAlignment="Left" LineHeight="30" Margin="85,777,0,0" Name="textBlock14" Text="（九）透析器、管路凝血堵塞，需重新更换新的透析器和管路，增加患者费用。" TextWrapping="Wrap" VerticalAlignment="Top" Width="605" />
+        <TextBlock FontFamily="宋体" FontSize="17"  Height="26" HorizontalAlignment="Left" LineHeight="30" Margin="85,806,0,0" Name="textBlock15" Text="（十）无肝素透析可使清除肌酐等毒素效果降低，造成透析不充分。" TextWrapping="Wrap" VerticalAlignment="Top" Width="605" />
+        <Label Content="住址或单位：" FontFamily="宋体" FontSize="17"  Height="29" HorizontalAlignment="Left" Margin="85,230,0,0" Name="label5" VerticalAlignment="Top" Width="108" />
+        <TextBox BorderBrush="Black" BorderThickness="0,0,0,0" FontFamily="宋体" FontSize="17"  Height="23" HorizontalAlignment="Left" IsReadOnly="False" Margin="195,233,0,0" Name="textBox1" VerticalAlignment="Top" Width="217" />
+        <Label Content="身份证号：" FontFamily="宋体" FontSize="17"  Height="29" HorizontalAlignment="Right" Margin="0,230,256,0" Name="label12" VerticalAlignment="Top" Width="90" />
+        <TextBox BorderBrush="Black" BorderThickness="0,0,0,0" FontFamily="宋体" FontSize="17"  Height="23" HorizontalAlignment="Left" IsReadOnly="False" Margin="506,236,0,0" Name="textBox2" VerticalAlignment="Top" Width="250" />
+        <TextBlock FontFamily="宋体" FontSize="17"  Height="55" HorizontalAlignment="Left" LineHeight="30" Margin="85,840,0,0" Name="textBlock1" Text="患者和/或家属已接受医疗风险的告知，并要求接受无肝素血液透析治疗，签字同意。" TextWrapping="Wrap" VerticalAlignment="Top" Width="605" />
+    </Grid>
+</UserControl>

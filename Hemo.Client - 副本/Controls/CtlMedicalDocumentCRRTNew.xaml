@@ -1,0 +1,794 @@
+﻿<base:WPF_DocumentBase x:Class="Hemo.Client.Controls.CtlMedicalDocumentCRRTNew"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:base="clr-namespace:Hemo.Utilities;assembly=Hemo.Utilities"          
+             mc:Ignorable="d" 
+             d:DesignHeight="1274" d:DesignWidth="816">
+    <base:WPF_DocumentBase.Resources>
+        <Style TargetType="DataGridColumnHeader">
+            <Setter Property="VerticalContentAlignment" Value="Center" />
+            <Setter Property="Foreground" Value="Black" />
+            <!--<Setter Property="FontWeight" Value="Bold"/>-->
+            <!--<Setter Property="FontSize" Value="13"/>-->
+            <Setter Property="Margin" Value="0,0,0,0"/>
+            <Setter Property="Height" Value="100"/>
+            <Setter Property="Background" Value="Transparent"/>
+            <Setter Property="HorizontalAlignment" Value="Center" />
+            <Setter Property="VerticalAlignment" Value="Center"/>
+        </Style>
+        <Style  TargetType="DataGridRow">
+            <Setter Property="Padding" Value="0" />
+            <Setter Property="Margin" Value="0" />
+            <Style.Triggers>
+
+                <Trigger Property="IsSelected" Value="True">
+                    <Setter Property="Background"  Value="White" />
+                </Trigger>
+                <!--<Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="Background"  Value="{StaticResource RolloverBrush}" />
+                </Trigger>-->
+            </Style.Triggers>
+        </Style>
+        <Style  TargetType="DataGridCell">
+            <Setter Property="Padding" Value="0" />
+            <Setter Property="Margin" Value="0" />
+            <Setter Property="Background" Value="Transparent" />
+            <Setter Property="BorderThickness" Value="0" />
+            <Style.Triggers>
+                <Trigger Property="IsSelected" Value="True">
+                    <Setter Property="Background"  Value="White" />
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+    </base:WPF_DocumentBase.Resources>
+
+    <Grid IsHitTestVisible="False" Height="1274">
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="40" />
+            <RowDefinition Height="40" />
+            <RowDefinition Height="30" />
+            <RowDefinition Height="30" />
+            <RowDefinition Height="15" />
+            <RowDefinition Height="Auto" MaxHeight="420" />
+            <RowDefinition Height="30" />
+            <RowDefinition Height="399" Name="txcs"/>
+            <RowDefinition Height="30" />
+            <RowDefinition Height="30" />
+            <RowDefinition Height="30" />
+            <RowDefinition Height="30" />
+            <RowDefinition Height="30" />
+            <RowDefinition Height="30" />
+            <RowDefinition Height="30" />
+            <RowDefinition Height="30" />
+            <RowDefinition Height="30" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <Label Content="上海市普陀区人民医院"  Name="HospitalTitle"  HorizontalAlignment="Center" VerticalAlignment="Bottom" FontSize="16" FontWeight="ExtraLight" FontFamily="Microsoft YaHei" />
+        <Label Content="血 液 净 化 治 疗 记 录 单" Name="label2" HorizontalAlignment="Center"   VerticalAlignment="Bottom"   FontSize="24" FontFamily="STZhongsong" FontWeight="Bold" Grid.Row="1" />
+
+        <Grid Grid.Row="2" Width="770" HorizontalAlignment="Left" Margin="20,0,0,0"  VerticalAlignment="Stretch">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="60"/>
+                <ColumnDefinition Width="40"/>
+                <ColumnDefinition Width="20"/>
+                <ColumnDefinition Width="40"/>
+                <ColumnDefinition Width="20"/>
+                <ColumnDefinition Width="40"/>
+                <ColumnDefinition Width="20"/>
+                <ColumnDefinition Width="100"/>
+                <ColumnDefinition Width="60"/>
+                <ColumnDefinition Width="80"/>
+                <ColumnDefinition Width="60"/>
+                <ColumnDefinition Width="90"/>
+                <ColumnDefinition Width="50"/>
+                <ColumnDefinition Width="40*"/>
+            </Grid.ColumnDefinitions>
+            <Label Content="治疗日期"  HorizontalAlignment="Left" Name="label44" VerticalAlignment="Bottom"   FontFamily="Microsoft YaHei" FontSize="12"/>
+            <TextBox BorderThickness="0,0,0,0" Grid.Column="1" Name="txtCureYear"  HorizontalAlignment="Stretch" VerticalAlignment="Bottom" VerticalContentAlignment="Bottom" Height="23"  FontFamily="Microsoft YaHei" FontSize="12"/>
+            <Label Content="年" Height="28" HorizontalAlignment="Left"  Name="label45" VerticalAlignment="Bottom" VerticalContentAlignment="Bottom" Grid.Column="2"  FontFamily="Microsoft YaHei" FontSize="12"/>
+            <TextBox BorderThickness="0,0,0,0" Height="23" Name="txtCureMouth"  VerticalContentAlignment="Bottom" VerticalAlignment="Bottom" HorizontalAlignment="Stretch"  Grid.Column="3" FontFamily="Microsoft YaHei" FontSize="12"/>
+            <Label Content="月" Height="28" HorizontalAlignment="Left" HorizontalContentAlignment="Left" Name="label46" VerticalAlignment="Bottom" VerticalContentAlignment="Bottom"  Grid.Column="4" FontFamily="Microsoft YaHei" FontSize="12"/>
+            <TextBox BorderThickness="0,0,0,0" Height="23" Name="txtCureDay"  VerticalAlignment="Bottom" HorizontalAlignment="Stretch"  VerticalContentAlignment="Bottom"   Grid.Column="5"  FontFamily="Microsoft YaHei" FontSize="12" />
+            <Label Content="日" Height="28" HorizontalAlignment="Left" HorizontalContentAlignment="Left" Name="label47" VerticalAlignment="Bottom" VerticalContentAlignment="Bottom"  Grid.Column="6"  FontFamily="Microsoft YaHei" FontSize="12"/>
+            <Label Content="净化次数" Height="28" HorizontalContentAlignment="Left" Name="label40" VerticalContentAlignment="Bottom"  VerticalAlignment="Bottom"  Grid.Column="8"  FontFamily="Microsoft YaHei" FontSize="12"/>
+            <TextBox BorderThickness="0,0,0,0" Height="23" Name="txtCLEAN_UP_TIMES" VerticalContentAlignment="Bottom" HorizontalAlignment="Stretch" VerticalAlignment="Bottom"  Grid.Column="9"  FontFamily="Microsoft YaHei" FontSize="12"/>
+            <Label Content="特殊感染" Height="28" HorizontalAlignment="Left"  Name="label41" VerticalAlignment="Bottom"  VerticalContentAlignment="Bottom"  Grid.Column="10"  FontFamily="Microsoft YaHei" FontSize="12"/>
+            <TextBox BorderThickness="0,0,0,0" Height="23" Name="textBox3" VerticalContentAlignment="Bottom" HorizontalAlignment="Stretch" VerticalAlignment="Bottom"   Grid.Column="11"  FontFamily="Microsoft YaHei" FontSize="12"/>
+            <Label Content="透析号" Height="28" HorizontalAlignment="Left" HorizontalContentAlignment="Left" Name="label7" VerticalAlignment="Bottom" VerticalContentAlignment="Bottom"  Grid.Column="12"  FontFamily="Microsoft YaHei" FontSize="12"/>
+            <TextBox BorderThickness="0,0,0,0" Height="23" Name="txtHEMODIALYSIS_ID"  VerticalContentAlignment="Bottom" VerticalAlignment="Bottom" HorizontalAlignment="Stretch" Grid.Column="13"  FontFamily="Microsoft YaHei" FontSize="12"/>
+
+            <TextBlock  Grid.ColumnSpan="14" Height="1" Background="Black" VerticalAlignment="Bottom"/>
+
+        </Grid>
+
+        <Grid Grid.Row="3" Width="770" HorizontalAlignment="Left" Margin="20,0,0,0" VerticalAlignment="Stretch">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="60"/>
+                <ColumnDefinition Width="50"/>
+
+                <ColumnDefinition Width="60"/>
+                <ColumnDefinition Width="50"/>
+
+                <ColumnDefinition Width="40"/>
+                <ColumnDefinition Width="80"/>
+
+                <ColumnDefinition Width="40"/>
+                <ColumnDefinition Width="102"/>
+
+                <ColumnDefinition Width="50"/>
+                <ColumnDefinition Width="100"/>
+
+                <ColumnDefinition Width="40"/>
+                <ColumnDefinition Width="80*"/>
+            </Grid.ColumnDefinitions>
+            <Label Content="姓名" Height="28" Name="label3" HorizontalContentAlignment="Left" VerticalContentAlignment="Bottom" VerticalAlignment="Bottom"  FontFamily="Microsoft YaHei" FontSize="12"/>
+            <TextBox Height="23" BorderThickness="0,0,0,0" Name="txtNAME"  Text="" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Bottom" VerticalAlignment="Bottom" Grid.Column="1"  FontFamily="Microsoft YaHei" FontSize="12"/>
+            <Label Content="性别"  Height="28" HorizontalAlignment="Left"  Name="label4" VerticalAlignment="Bottom" VerticalContentAlignment="Bottom" Grid.Column="2"  FontFamily="Microsoft YaHei" FontSize="12"/>
+            <TextBox BorderThickness="0,0,0,0" Height="23" Name="txtSEX"  HorizontalContentAlignment="Stretch" VerticalContentAlignment="Bottom" VerticalAlignment="Bottom" Grid.Column="3"  FontFamily="Microsoft YaHei" FontSize="12"/>
+            <Label Content="年龄"  Height="28" HorizontalAlignment="Left" HorizontalContentAlignment="Left"  Name="label5" VerticalAlignment="Bottom" VerticalContentAlignment="Bottom" Grid.Column="4"  FontFamily="Microsoft YaHei" FontSize="12"/>
+            <TextBox BorderThickness="0,0,0,0" Height="23" Name="txtAGE" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Bottom" VerticalAlignment="Bottom"  Grid.Column="5"  FontFamily="Microsoft YaHei" FontSize="12"/>
+            <Label Content="科室"  Height="28" Name="label6" HorizontalAlignment="Left"  VerticalContentAlignment="Bottom" VerticalAlignment="Bottom"    Grid.Column="6"  FontFamily="Microsoft YaHei" FontSize="12" />
+            <TextBox BorderThickness="0,0,0,0" Height="23" Name="txtWHAT_DEPARTMENT_IN"  HorizontalContentAlignment="Stretch" VerticalContentAlignment="Bottom" VerticalAlignment="Bottom" Grid.Column="7"  FontFamily="Microsoft YaHei" FontSize="12"/>
+            <Label Content="住院号"  Height="28"   Name="label8" HorizontalContentAlignment="Left" VerticalContentAlignment="Bottom" VerticalAlignment="Bottom" Grid.Column="8"  FontFamily="Microsoft YaHei" FontSize="12"/>
+            <TextBox BorderThickness="0,0,0,0" Height="23" Name="txtADMISSION_NUMBER" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Bottom" VerticalAlignment="Bottom" Grid.Column="9"  FontFamily="Microsoft YaHei" FontSize="12"/>
+            <Label Content="ID号"  Height="28" Name="label9"   HorizontalContentAlignment="Left" VerticalContentAlignment="Bottom" VerticalAlignment="Bottom" Grid.Column="10"  FontFamily="Microsoft YaHei" FontSize="12"/>
+            <TextBox BorderThickness="0,0,0,0" Height="23" Name="txtPATIENT_ID" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Bottom" VerticalAlignment="Bottom" Grid.Column="11"   FontFamily="Microsoft YaHei" FontSize="12"/>
+
+            <TextBlock  Grid.ColumnSpan="12" Height="1" Background="Black" VerticalAlignment="Bottom"/>
+
+        </Grid>
+
+        <Grid Grid.Row="5" Width="770" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="20,0,0,0" >
+            <Grid.RowDefinitions>
+                <RowDefinition Height="30" />
+                <RowDefinition Height="30" />
+                <RowDefinition Height="30" />
+                <RowDefinition Height="30" />
+                <RowDefinition Height="30" Name="rowdgpg" />
+                <RowDefinition Height="30" Name="rowdgpg1"/>
+                <RowDefinition Height="30" Name="rownlpg"/>
+                <RowDefinition Height="30"  Name="rownlpg1" />
+                <RowDefinition Height="30" />
+                <RowDefinition Height="30" />
+                <RowDefinition Height="30" />
+                <RowDefinition Height="30" />
+                <RowDefinition Height="30" />
+                <RowDefinition Height="30" />
+            </Grid.RowDefinitions>
+            <Label Content="净   化   前   情   况" Name="labelPart1" HorizontalAlignment="Center"   VerticalAlignment="Bottom"   FontSize="18" FontFamily="STZhongsong"  />
+            <TextBlock  Height="1" Background="Black" VerticalAlignment="Bottom"/>
+
+
+            <StackPanel Grid.Row="1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"  Orientation="Horizontal">
+                <Label Content="诊  断:" HorizontalAlignment="Left" VerticalAlignment="Bottom"  VerticalContentAlignment="Bottom"  FontFamily="Microsoft YaHei" FontSize="12"/>
+                <TextBox BorderBrush="Black" HorizontalContentAlignment="Left"  BorderThickness="0,0,0,1" Grid.Row="1" Name="txtDiagnose" Width="146"  HorizontalAlignment="Center" VerticalAlignment="Bottom" VerticalContentAlignment="Bottom" Height="23"  FontFamily="Microsoft YaHei" FontSize="12"/>
+                <Label Content="病  情 " HorizontalAlignment="Left" VerticalAlignment="Bottom"  FontFamily="Microsoft YaHei" FontSize="12"/>
+                <CheckBox Content="一般    " Name="focuseLevel" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="0,0,0,5" FontFamily="Microsoft YaHei" FontSize="12"/>
+                <CheckBox Content="病重    " Name="focuseLevel1" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="0,0,0,5" FontFamily="Microsoft YaHei" FontSize="12"/>
+                <CheckBox Content="病危    " Name="focuseLevel2" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="0,0,0,5" FontFamily="Microsoft YaHei" FontSize="12"/>
+                <Label Content="神  志" HorizontalAlignment="Left" VerticalAlignment="Bottom" FontFamily="Microsoft YaHei" FontSize="12"/>
+                <TextBox BorderBrush="Black" HorizontalContentAlignment="Center"  BorderThickness="0,0,0,1" Grid.Row="1" Name="txtSenses" Width="87"  HorizontalAlignment="Center" VerticalAlignment="Bottom" VerticalContentAlignment="Bottom" Height="23"  FontFamily="Microsoft YaHei" FontSize="12"/>
+                <Label Content="过敏史" HorizontalAlignment="Left" VerticalAlignment="Bottom" FontFamily="Microsoft YaHei" FontSize="12"/>
+                <TextBox BorderBrush="Black" HorizontalContentAlignment="Center"  BorderThickness="0,0,0,1" Grid.Row="1" Name="txtAllergic" Width="172"  HorizontalAlignment="Left" VerticalAlignment="Bottom" VerticalContentAlignment="Bottom" Height="23"  FontFamily="Microsoft YaHei" FontSize="12"/>
+            </StackPanel>
+
+            <StackPanel  Grid.Row="2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"  Orientation="Horizontal">
+                <Label Content="体温(T)" HorizontalAlignment="Left" VerticalAlignment="Bottom"/>
+                <TextBox BorderBrush="Black"  BorderThickness="0,0,0,1"  Name="txtT" Width="50" HorizontalAlignment="Left" VerticalAlignment="Bottom" HorizontalContentAlignment="Center" VerticalContentAlignment="Bottom" Height="23" FontFamily="Microsoft YaHei" FontSize="12"/>
+                <Label Content="℃              脉搏(P)" HorizontalAlignment="Left" VerticalAlignment="Bottom"/>
+                <TextBox BorderBrush="Black"  BorderThickness="0,0,0,1"  Name="txtP" Width="50" HorizontalAlignment="Left" VerticalAlignment="Bottom" HorizontalContentAlignment="Center" VerticalContentAlignment="Bottom" Height="23" FontFamily="Microsoft YaHei" FontSize="12"/>
+                <Label Content="次/min          呼吸（R） " HorizontalAlignment="Left" VerticalAlignment="Bottom"/>
+                <TextBox BorderBrush="Black"  BorderThickness="0,0,0,1"  Name="txtR" Width="50" HorizontalAlignment="Left" VerticalAlignment="Bottom" HorizontalContentAlignment="Center"  VerticalContentAlignment="Bottom" Height="23" FontFamily="Microsoft YaHei" FontSize="12"/>
+                <Label Content="次/min          血压（BP）" HorizontalAlignment="Left" VerticalAlignment="Bottom"/>
+                <TextBox BorderBrush="Black"  BorderThickness="0,0,0,1"  Name="txtBP" Width="50" HorizontalAlignment="Left" VerticalAlignment="Bottom" HorizontalContentAlignment="Center" VerticalContentAlignment="Bottom" Height="23" FontFamily="Microsoft YaHei" FontSize="12"/>
+                <Label Content="/" HorizontalAlignment="Left" VerticalAlignment="Bottom"/>
+                <TextBox BorderBrush="Black"  BorderThickness="0,0,0,1"  Name="txtBP1" Width="50" HorizontalAlignment="Left" VerticalAlignment="Bottom" HorizontalContentAlignment="Center" VerticalContentAlignment="Bottom" Height="23" FontFamily="Microsoft YaHei" FontSize="12"/>
+                <Label Content="mmHg" HorizontalAlignment="Left" VerticalAlignment="Bottom"/>
+            </StackPanel>
+
+            <StackPanel  Grid.Row="3" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"  Orientation="Horizontal">
+                <Label Content="血液净化方式" HorizontalAlignment="Left" VerticalAlignment="Bottom"/>
+                <TextBox BorderBrush="Black"  BorderThickness="0,0,0,1"  Name="txtPurMode" Width="150" HorizontalAlignment="Left" VerticalAlignment="Bottom" HorizontalContentAlignment="Left"  VerticalContentAlignment="Bottom" Height="23" FontFamily="Microsoft YaHei" FontSize="12"/>
+                <Label Content="血管通路：" HorizontalAlignment="Left" VerticalAlignment="Bottom"/>
+                <TextBox BorderBrush="Black"  BorderThickness="0,0,0,1"  Name="txtVASCULAR_ACCESS_ID" Width="150" HorizontalAlignment="Left" VerticalAlignment="Bottom" HorizontalContentAlignment="Left"  VerticalContentAlignment="Bottom" Height="23" FontFamily="Microsoft YaHei" FontSize="12"/>
+            </StackPanel>
+
+            <!--能够隐藏-->
+            <StackPanel  Grid.Row="4" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"  Orientation="Horizontal">
+                <Label Content="导管评估：固定牢固：" HorizontalAlignment="Left" VerticalAlignment="Bottom"/>
+                <CheckBox Content="是    "  Name="chkVASCULAR_ACCESS_FIRM1" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="0,0,0,5" FontFamily="Microsoft YaHei" FontSize="12"/>
+                <CheckBox Content="否        " Name="chkVASCULAR_ACCESS_FIRM0"  HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="0,0,0,5" FontFamily="Microsoft YaHei" FontSize="12"/>
+                <Label Content="滑  脱：" HorizontalAlignment="Left" VerticalAlignment="Bottom"/>
+                <CheckBox Content="有    " Name="chkVASCULAR_ACCESS_GLIDE1" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="0,0,0,5" FontFamily="Microsoft YaHei" FontSize="12"/>
+                <CheckBox Content="无        "  Name="chkVASCULAR_ACCESS_GLIDE0" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="0,0,0,5" FontFamily="Microsoft YaHei" FontSize="12"/>
+                <Label Content="穿刺点局部红肿：" HorizontalAlignment="Left" VerticalAlignment="Bottom"/>
+                <CheckBox Content="有    "  Name="chkVASCULAR_ACCESS_SWELLING1" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="0,0,0,5" FontFamily="Microsoft YaHei" FontSize="12"/>
+                <CheckBox Content="无     "  Name="chkVASCULAR_ACCESS_SWELLING0" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="0,0,0,5" FontFamily="Microsoft YaHei" FontSize="12"/>
+                <Label Content="渗      血：" HorizontalAlignment="Left" VerticalAlignment="Bottom"/>
+                <CheckBox Content="有       " Name="chkVASCULAR_ACCESS_ERRHYISIS1" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="0,0,0,5" FontFamily="Microsoft YaHei" FontSize="12"/>
+                <CheckBox Content="无        " Name="chkVASCULAR_ACCESS_ERRHYISIS0"  HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="0,0,0,5" FontFamily="Microsoft YaHei" FontSize="12"/>
+            </StackPanel>
+
+            <StackPanel  Grid.Row="5" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"  Orientation="Horizontal">
+                <Label Content="                 渗       液：" HorizontalAlignment="Left" VerticalAlignment="Bottom"/>
+                <CheckBox Content="有    " Name="chkIN_BASKET_PLASTER_ALLERGY0" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="0,0,0,5" FontFamily="Microsoft YaHei" FontSize="12"/>
+                <CheckBox Content="无    "  Name="chkIN_BASKET_PLASTER_ALLERGY1" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="0,0,0,5" FontFamily="Microsoft YaHei" FontSize="12"/>
+                <Label Content="血   栓：" HorizontalAlignment="Left" VerticalAlignment="Bottom"/>
+                <CheckBox Content="有    " Name="chkVASCULAR_ACCESS_THROMBUS1" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="0,0,0,5" FontFamily="Microsoft YaHei" FontSize="12"/>
+                <CheckBox Content="无     "  Name="chkVASCULAR_ACCESS_THROMBUS0"  HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="0,0,0,5" FontFamily="Microsoft YaHei" FontSize="12"/>
+                <Label Content="导管相关血流感染：" HorizontalAlignment="Left" VerticalAlignment="Bottom"/>
+                <CheckBox Content="有    "  Name="chkVASCULAR_ACCESS_BLOOD_INFECT1"  HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="0,0,0,5" FontFamily="Microsoft YaHei" FontSize="12"/>
+                <CheckBox Content="无  "  Name="chkVASCULAR_ACCESS_BLOOD_INFECT0" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="0,0,0,5" FontFamily="Microsoft YaHei" FontSize="12"/>
+                <Label Content="血流情况：" HorizontalAlignment="Left" VerticalAlignment="Bottom"/>
+                <CheckBox Content="良好    " Name="chkVASCULAR_ACCESS_BLOOD1" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="0,0,0,5" FontFamily="Microsoft YaHei" FontSize="12"/>
+                <CheckBox Content="欠佳  " Name="chkVASCULAR_ACCESS_BLOOD0" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="0,0,0,5" FontFamily="Microsoft YaHei" FontSize="12"/>
+
+            </StackPanel>
+
+            <StackPanel  Grid.Row="6" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"  Orientation="Horizontal">
+                <Label Content="內瘘评估：內瘘震颤：" HorizontalAlignment="Left" VerticalAlignment="Bottom"/>
+                <CheckBox Content="强    "  Name="chkIN_BASKET_TREMOR0" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="0,0,0,5" FontFamily="Microsoft YaHei" FontSize="12"/>
+                <CheckBox Content="弱        " Name="chkIN_BASKET_TREMOR1" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="0,0,0,5" FontFamily="Microsoft YaHei" FontSize="12"/>
+                <CheckBox Content="无        " Name="chkIN_BASKET_TREMOR2" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="0,0,0,5" FontFamily="Microsoft YaHei" FontSize="12"/>
+                <Label Content="杂  音：" HorizontalAlignment="Left" VerticalAlignment="Bottom"/>
+                <CheckBox Content="强    " Name="chkIN_BASKET_NOISE0" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="0,0,0,5" FontFamily="Microsoft YaHei" FontSize="12"/>
+                <CheckBox Content="弱        " Name="chkIN_BASKET_NOISE1" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="0,0,0,5" FontFamily="Microsoft YaHei" FontSize="12"/>
+                <CheckBox Content="无        " Name="chkIN_BASKET_NOISE2" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="0,0,0,5" FontFamily="Microsoft YaHei" FontSize="12"/>
+                <Label Content="红  肿：" HorizontalAlignment="Left" VerticalAlignment="Bottom"/>
+                <CheckBox Content="有    " Name="chkIN_BASKET_RED_HOT0" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="0,0,0,5" FontFamily="Microsoft YaHei" FontSize="12"/>
+                <CheckBox Content="无     " Name="chkIN_BASKET_RED_HOT1" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="0,0,0,5" FontFamily="Microsoft YaHei" FontSize="12"/>
+            </StackPanel>
+
+            <StackPanel  Grid.Row="7" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"  Orientation="Horizontal">
+                <Label Content="                 渗       液：" HorizontalAlignment="Left" VerticalAlignment="Bottom"/>
+                <CheckBox Content="有    " Name="chkIN_BASKET_ECCHYMOSIS0" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="0,0,0,5" FontFamily="Microsoft YaHei" FontSize="12"/>
+                <CheckBox Content="无        " Name="chkIN_BASKET_ECCHYMOSIS1" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="0,0,0,5" FontFamily="Microsoft YaHei" FontSize="12"/>
+                <Label Content="血  栓：" HorizontalAlignment="Left" VerticalAlignment="Bottom"/>
+                <CheckBox Content="有    " Name="chkIN_BASKET_VASCULAR_ELASTICITY0" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="0,0,0,5" FontFamily="Microsoft YaHei" FontSize="12"/>
+                <CheckBox Content="无        " Name="chkIN_BASKET_VASCULAR_ELASTICITY1" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="0,0,0,5" FontFamily="Microsoft YaHei" FontSize="12"/>
+            </StackPanel>
+
+            <StackPanel  Grid.Row="8" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"  Orientation="Horizontal">
+                <Label Content="抗凝方式："  HorizontalAlignment="Left" VerticalAlignment="Bottom"  VerticalContentAlignment="Bottom"  FontFamily="Microsoft YaHei" FontSize="12"/>
+                <TextBox BorderBrush="Black"  BorderThickness="0,0,0,1" Grid.Row="1" Name="lblHEPARIN_SPECIES"  Width="200" HorizontalContentAlignment="Left"  HorizontalAlignment="Left" VerticalAlignment="Bottom" VerticalContentAlignment="Bottom" Height="23"  FontFamily="Microsoft YaHei" FontSize="12"/>
+                <Label Content="首剂："  HorizontalAlignment="Left" VerticalAlignment="Bottom"  VerticalContentAlignment="Bottom"  FontFamily="Microsoft YaHei" FontSize="12"/>
+                <TextBox BorderBrush="Black"  BorderThickness="0,0,0,1" Grid.Row="1" Name="txtFIRST_HEPARIN" Width="60" HorizontalContentAlignment="Center" HorizontalAlignment="Left" VerticalAlignment="Bottom" VerticalContentAlignment="Bottom" Height="23"  FontFamily="Microsoft YaHei" FontSize="12"/>
+                <Label Content="单位      追加：" Name="lblFirst_Drug_Unit"   HorizontalAlignment="Left" VerticalAlignment="Bottom"  VerticalContentAlignment="Bottom"  FontFamily="Microsoft YaHei" FontSize="12"/>
+                <TextBox BorderBrush="Black"  BorderThickness="0,0,0,1" Grid.Row="1" Name="txtDOSIS_SUSTENTATIVA" Width="60" HorizontalContentAlignment="Center" HorizontalAlignment="Left" VerticalAlignment="Bottom" VerticalContentAlignment="Bottom" Height="23"  FontFamily="Microsoft YaHei" FontSize="12"/>
+                <Label Content="单位/小时" Name="lblSecond_Drug_Unit" HorizontalAlignment="Left" VerticalAlignment="Bottom"  VerticalContentAlignment="Bottom"  FontFamily="Microsoft YaHei" FontSize="12"/>
+                <!--       鱼精蛋白：<TextBox BorderBrush="Black"  BorderThickness="0,0,0,1" Grid.Row="1" Name="txtAMYLACEUM" Width="70" HorizontalContentAlignment="Center"  HorizontalAlignment="Left" VerticalAlignment="Bottom" VerticalContentAlignment="Bottom" Height="23"  FontFamily="Microsoft YaHei" FontSize="12"/>
+                <Label Content="mg"  HorizontalAlignment="Left" VerticalAlignment="Bottom"  VerticalContentAlignment="Bottom"  FontFamily="Microsoft YaHei" FontSize="12"/>-->
+            </StackPanel>
+
+            <StackPanel  Grid.Row="9" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"  Orientation="Horizontal">
+                <Label Content="净化器类型："  HorizontalAlignment="Left" VerticalAlignment="Bottom"  VerticalContentAlignment="Bottom"  FontFamily="Microsoft YaHei" FontSize="12"/>
+                <TextBox BorderBrush="Black"  BorderThickness="0,0,0,1" Grid.Row="1" Name="txtMACHINE_TYPE" Width="190"  HorizontalAlignment="Left" VerticalAlignment="Bottom" HorizontalContentAlignment="Left" VerticalContentAlignment="Bottom" Height="23"  FontFamily="Microsoft YaHei" FontSize="12"/>
+                <Label Content="膜材料："  HorizontalAlignment="Left" VerticalAlignment="Bottom"  VerticalContentAlignment="Bottom"  FontFamily="Microsoft YaHei" FontSize="12"/>
+                <TextBox BorderBrush="Black"  BorderThickness="0,0,0,1" Grid.Row="1" Name="txtPURIFIER_NAME" Width="60"  HorizontalAlignment="Left" VerticalAlignment="Bottom" HorizontalContentAlignment="Center" VerticalContentAlignment="Bottom" Height="23"  FontFamily="Microsoft YaHei" FontSize="12"/>
+                <Label Content="膜面积："  HorizontalAlignment="Left" VerticalAlignment="Bottom"  VerticalContentAlignment="Bottom"  FontFamily="Microsoft YaHei" FontSize="12"/>
+                <TextBox BorderBrush="Black"  BorderThickness="0,0,0,1" Grid.Row="1" Name="txtPURIFIER_M2" Width="60"  HorizontalAlignment="Left" VerticalAlignment="Bottom" HorizontalContentAlignment="Center" VerticalContentAlignment="Bottom" Height="23"  FontFamily="Microsoft YaHei" FontSize="12"/>
+                <Label Content="㎡   透析机品牌/型号："  HorizontalAlignment="Left" VerticalAlignment="Bottom"  VerticalContentAlignment="Bottom"  FontFamily="Microsoft YaHei" FontSize="12"/>
+                <TextBox BorderBrush="Black"  BorderThickness="0,0,0,1" Grid.Row="1" Name="txtMACHINE_ID" Width="60"  HorizontalAlignment="Left" VerticalAlignment="Bottom" HorizontalContentAlignment="Left" VerticalContentAlignment="Bottom" Height="23"  FontFamily="Microsoft YaHei" FontSize="12"/>
+                <TextBox BorderBrush="Black" BorderThickness="0,0,0,1" Height="23" Name="txtMACHINE_ID_TAG" VerticalContentAlignment="Bottom" Width="60" VerticalAlignment="Bottom"  HorizontalContentAlignment="Left"  FontFamily="Microsoft YaHei" FontSize="12"/>
+                <!--<Label Content="mg"  HorizontalAlignment="Left" VerticalAlignment="Bottom"  VerticalContentAlignment="Bottom"  FontFamily="Microsoft YaHei" FontSize="12"/>-->
+            </StackPanel>
+
+            <StackPanel  Grid.Row="10" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"  Orientation="Horizontal">
+                <Label Content="净化器的使用："  HorizontalAlignment="Left" VerticalAlignment="Bottom"  VerticalContentAlignment="Bottom"  FontFamily="Microsoft YaHei" FontSize="12"/>
+                <CheckBox Name="chkUSE_TYPE1" Content="首次" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="0,0,0,5" FontFamily="Microsoft YaHei" FontSize="12"/>
+                <Label Content="净化时间："  HorizontalAlignment="Left" VerticalAlignment="Bottom"  VerticalContentAlignment="Bottom"  FontFamily="Microsoft YaHei" FontSize="12"/>
+                <TextBox BorderBrush="Black"  BorderThickness="0,0,0,1" Grid.Row="1" Name="txtFREQUENCY_HOURS" Width="60"  HorizontalAlignment="Left" VerticalAlignment="Bottom" HorizontalContentAlignment="Center" VerticalContentAlignment="Bottom" Height="23"  FontFamily="Microsoft YaHei" FontSize="12"/>
+                <Label Content="小时："  HorizontalAlignment="Left" VerticalAlignment="Bottom"  VerticalContentAlignment="Bottom"  FontFamily="Microsoft YaHei" FontSize="12"/>
+                <TextBox BorderBrush="Black"  BorderThickness="0,0,0,1" Grid.Row="1" Name="txtMinute" Width="60"  HorizontalAlignment="Left" VerticalAlignment="Bottom" HorizontalContentAlignment="Center" VerticalContentAlignment="Bottom" Height="23"  FontFamily="Microsoft YaHei" FontSize="12"/>
+                <Label Content="分                        透析液品牌："  HorizontalAlignment="Left" VerticalAlignment="Bottom"  VerticalContentAlignment="Bottom"  FontFamily="Microsoft YaHei" FontSize="12"/>
+                <TextBox BorderBrush="Black"  BorderThickness="0,0,0,1" Grid.Row="1" Name="txtSUBJECTIVE_COMFORT" Width="150"  HorizontalAlignment="Left" VerticalAlignment="Bottom" HorizontalContentAlignment="Left" VerticalContentAlignment="Bottom" Height="23"  FontFamily="Microsoft YaHei" FontSize="12"/>
+                <!--<Label Content="mg"  HorizontalAlignment="Left" VerticalAlignment="Bottom"  VerticalContentAlignment="Bottom"  FontFamily="Microsoft YaHei" FontSize="12"/>-->
+            </StackPanel>
+
+            <StackPanel  Grid.Row="11" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"  Orientation="Horizontal">
+                <Label Content="置换液流速："  HorizontalAlignment="Left" VerticalAlignment="Bottom"  VerticalContentAlignment="Bottom"  FontFamily="Microsoft YaHei" FontSize="12"/>
+                <TextBox BorderBrush="Black"  BorderThickness="0,0,0,1" Grid.Row="1" Name="txtDISPLACEMENT_FLOW" Width="60"  HorizontalAlignment="Left" HorizontalContentAlignment="Center" VerticalAlignment="Bottom" VerticalContentAlignment="Bottom" Height="23"  FontFamily="Microsoft YaHei" FontSize="12"/>
+                <Label Content=" ml/h  （"  HorizontalAlignment="Left" VerticalAlignment="Bottom"  VerticalContentAlignment="Bottom"  FontFamily="Microsoft YaHei" FontSize="12"/>
+                <CheckBox Content=" 前置换  " Name="chkDISPLACEMENT_MODE" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="0,0,0,5" FontFamily="Microsoft YaHei" FontSize="12"/>
+                <CheckBox Content=" 后置换  " Name="chkDISPLACEMENT_MODE1" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="0,0,0,5" FontFamily="Microsoft YaHei" FontSize="12"/>
+                <CheckBox Content=" 前后置换  " Name="chkDISPLACEMENT_MODE2" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="0,0,0,5" FontFamily="Microsoft YaHei" FontSize="12"/>
+                <Label Content=" )"  HorizontalAlignment="Left" VerticalAlignment="Bottom"  VerticalContentAlignment="Bottom"  FontFamily="Microsoft YaHei" FontSize="12"/>
+                <Label Content="血流速度"  HorizontalAlignment="Left" VerticalAlignment="Bottom"  VerticalContentAlignment="Bottom"  FontFamily="Microsoft YaHei" FontSize="12"/>
+                <TextBox BorderBrush="Black"  BorderThickness="0,0,0,1" Grid.Row="1" Name="txtBLOOW_FLOW" Width="40"  HorizontalAlignment="Left" HorizontalContentAlignment="Center" VerticalAlignment="Bottom" VerticalContentAlignment="Bottom" Height="23"  FontFamily="Microsoft YaHei" FontSize="12"/>
+                <Label Content="ml/min  透析液流量："  HorizontalAlignment="Left" VerticalAlignment="Bottom"  VerticalContentAlignment="Bottom"  FontFamily="Microsoft YaHei" FontSize="12"/>
+                <TextBox BorderBrush="Black"  BorderThickness="0,0,0,1" Grid.Row="1" Name="txtDIALYSATE_FLOW" Width="40"  HorizontalAlignment="Left" HorizontalContentAlignment="Center" VerticalAlignment="Bottom" VerticalContentAlignment="Bottom" Height="23"  FontFamily="Microsoft YaHei" FontSize="12"/>
+                <Label Content="ml/h  "  HorizontalAlignment="Left" VerticalAlignment="Bottom"  VerticalContentAlignment="Bottom"  FontFamily="Microsoft YaHei" FontSize="12"/>               
+            </StackPanel>
+
+            <StackPanel  Grid.Row="12" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"  Orientation="Horizontal">
+                <Label Content="干体重："  HorizontalAlignment="Left" VerticalAlignment="Bottom"  VerticalContentAlignment="Bottom"  FontFamily="Microsoft YaHei" FontSize="12"/>
+                <TextBox BorderBrush="Black"  BorderThickness="0,0,0,1" Grid.Row="1" Name="txtDRY_WEIGHT" Width="40" HorizontalContentAlignment="Center"  HorizontalAlignment="Left" VerticalAlignment="Bottom" VerticalContentAlignment="Bottom" Height="23"  FontFamily="Microsoft YaHei" FontSize="12"/>
+                <Label Content="kg  透前体重(轮椅/卧床)"  HorizontalAlignment="Left" VerticalAlignment="Bottom"  VerticalContentAlignment="Bottom"  FontFamily="Microsoft YaHei" FontSize="12"/>
+                <TextBox BorderBrush="Black"  BorderThickness="0,0,0,1" Grid.Row="1" Name="txtBEFORE_DRY_WEIGHT" Width="40" HorizontalContentAlignment="Center"  HorizontalAlignment="Left" VerticalAlignment="Bottom" VerticalContentAlignment="Bottom" Height="23"  FontFamily="Microsoft YaHei" FontSize="12"/>
+                <Label Content="kg    预计脱水："  HorizontalAlignment="Left" VerticalAlignment="Bottom"  VerticalContentAlignment="Bottom"  FontFamily="Microsoft YaHei" FontSize="12"/>
+                <TextBox BorderBrush="Black"  BorderThickness="0,0,0,1" Grid.Row="1" Name="txtUFR" Width="40" HorizontalContentAlignment="Center"  HorizontalAlignment="Left" VerticalAlignment="Bottom" VerticalContentAlignment="Bottom" Height="23"  FontFamily="Microsoft YaHei" FontSize="12"/>
+                <Label Content=" kg "  HorizontalAlignment="Left" VerticalAlignment="Bottom"  VerticalContentAlignment="Bottom"  FontFamily="Microsoft YaHei" FontSize="12"/>
+
+            </StackPanel>
+            
+            <StackPanel  Grid.Row="13" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"  Orientation="Horizontal">
+                <Label Content="医生记录及医嘱 ："  HorizontalAlignment="Left" VerticalAlignment="Bottom"  VerticalContentAlignment="Bottom"  FontFamily="Microsoft YaHei" FontSize="12"/>
+                <TextBox BorderBrush="Black"  BorderThickness="0,0,0,1" Grid.Row="1" Name="txtDOCTOR_ADVICE" Width="660" HorizontalContentAlignment="Left"  HorizontalAlignment="Left" VerticalAlignment="Bottom" VerticalContentAlignment="Bottom" Height="23"  FontFamily="Microsoft YaHei" FontSize="12"/>
+            </StackPanel>
+        </Grid>
+
+        <Label Grid.Row="6" Content="治   疗   记   录" Name="labelPart2" HorizontalAlignment="Center"   VerticalAlignment="Bottom"   FontSize="18" FontFamily="STZhongsong"  />
+        <!--画线-->
+        <TextBlock Grid.Row="5" Height="1" Background="Black" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="20,0,0,0" Width="770"/>
+        <TextBlock Grid.Row="6" Height="1" Background="Black" VerticalAlignment="Top"  HorizontalAlignment="Left" Margin="20,0,0,0" Width="770"/>
+        <TextBlock Grid.Row="7" Height="1" Background="Black" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="20,0,0,0" Width="770"/>
+        <TextBlock Grid.Row="8" Height="1" Background="Black" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="20,0,0,0" Width="770"/>
+        <TextBlock Grid.Row="9" Height="1" Background="Black" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="20,0,0,0" Width="770"/>
+
+
+
+        <TextBlock Grid.Row="5" Grid.RowSpan="11" Width="1" Background="Black" HorizontalAlignment="Left" Margin="20,0,0,0" />
+        <TextBlock Grid.Row="5" Grid.RowSpan="11" Width="1" Background="Black" HorizontalAlignment="Left" Margin="790,0,0,0" />
+
+
+
+
+        <DataGrid RowHeaderWidth="0" CanUserAddRows="False" CanUserResizeColumns="False" AllowDrop="False" Background="Transparent" CanUserSortColumns="False" VerticalAlignment="Top"  
+                  ScrollViewer.HorizontalScrollBarVisibility="Hidden" ScrollViewer.VerticalScrollBarVisibility="Hidden" Visibility="Visible" VerticalGridLinesBrush="Black" HorizontalGridLinesBrush="Black"  
+                  HorizontalAlignment="Left"  AutoGenerateColumns="False" Height="399"  Margin="20,0,0,0" Name="grdParameters" BorderBrush="Black" BorderThickness="1,0,0,0" GridLinesVisibility="Horizontal"
+                  CanUserResizeRows="False" SelectionChanged="dataGrid1_SelectionChanged" CanUserReorderColumns="False"  Width="770" Grid.Row="7">
+            <DataGrid.Columns>
+                <DataGridTemplateColumn Width="90" >
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+                                <TextBox  HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Height="30" Width="90" Padding="7" TextAlignment="Center"   TextWrapping="Wrap" BorderThickness="0" >
+                                    <Binding Path="CREATE_DATE" StringFormat="MM/dd HH:mm"/>
+                                </TextBox>
+                            </StackPanel>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                    <!-- <DataGridTemplateColumn.HeaderTemplate>
+                        <DataTemplate>
+                            <Border Width="50" BorderBrush="Black" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Height="100" BorderThickness="0,0,1,1">
+                                <TextBlock Text="时间" HorizontalAlignment="Center" VerticalAlignment="Center" TextAlignment="Center" LineHeight="30" Width="20" TextWrapping="Wrap"/>
+                            </Border>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.HeaderTemplate>-->
+                </DataGridTemplateColumn>
+                <DataGridTemplateColumn Width="35">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+                                <TextBox Text="{Binding Path=VENOUS_PRESSURE}" Height="30" Width="40" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"  TextWrapping="Wrap" BorderThickness="0" ></TextBox>
+                            </StackPanel>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                    <!-- <DataGridTemplateColumn.HeaderTemplate>
+                        <DataTemplate>
+                            <Border Width="35" BorderBrush="Black" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Height="100" BorderThickness="0,0,1,1">
+                                <TextBlock Text="静脉压" HorizontalAlignment="Center" VerticalAlignment="Center" TextAlignment="Center" LineHeight="20" Width="20" TextWrapping="Wrap"/>
+                            </Border>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.HeaderTemplate>-->
+                </DataGridTemplateColumn>
+                <DataGridTemplateColumn Width="35">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+                                <TextBox Text="{Binding Path=ARTERY_PRESSURE}" Height="30" Width="40" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"  TextWrapping="Wrap" BorderThickness="0" ></TextBox>
+                            </StackPanel>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                    <!-- <DataGridTemplateColumn.HeaderTemplate>
+                        <DataTemplate>
+                            <Border Width="35" BorderBrush="Black" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Height="100" BorderThickness="0,0,1,1">
+                                <TextBlock Text="动脉压" HorizontalAlignment="Center" VerticalAlignment="Center" TextAlignment="Center" LineHeight="20" Width="20" TextWrapping="Wrap"/>
+                            </Border>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.HeaderTemplate>-->
+                </DataGridTemplateColumn>
+                <DataGridTemplateColumn Width="35" >
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+                                <TextBox Text="{Binding Path=TRANSMEMBRANE_PRESSURE}" Height="30" Width="40" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" TextWrapping="Wrap" BorderThickness="0" ></TextBox>
+                            </StackPanel>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                    <!-- <DataGridTemplateColumn.HeaderTemplate>
+                        <DataTemplate>
+                           <Border Width="35" BorderBrush="Black" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Height="100" BorderThickness="0,0,1,1">
+                                <TextBlock Text="跨膜压" HorizontalAlignment="Center" VerticalAlignment="Center" TextAlignment="Center" LineHeight="20" Width="20" TextWrapping="Wrap"/>
+                            </Border>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.HeaderTemplate>-->
+                </DataGridTemplateColumn>
+                <DataGridTemplateColumn Width="35" >
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+                                <TextBox Text="{Binding Path=CONDUCTIVITY}" Height="30" Width="40" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"  TextWrapping="Wrap" BorderThickness="0" ></TextBox>
+                            </StackPanel>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                    <!-- <DataGridTemplateColumn.HeaderTemplate>
+                        <DataTemplate>
+                           <Border Width="35" BorderBrush="Black" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Height="100" BorderThickness="0,0,1,1">
+                                <TextBlock Text="电导度" HorizontalAlignment="Center" VerticalAlignment="Center" TextAlignment="Center" LineHeight="20" Width="20" TextWrapping="Wrap"/>
+                            </Border>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.HeaderTemplate>-->
+                </DataGridTemplateColumn>
+                <DataGridTemplateColumn Width="35" >
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+                                <TextBox Text="{Binding Path=DISPLACEMENT}" Height="30" Width="40" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"  TextWrapping="Wrap" BorderThickness="0" ></TextBox>
+                            </StackPanel>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                    <!--<DataGridTemplateColumn.HeaderTemplate>
+                        <DataTemplate>
+                            <Border Width="35" BorderBrush="Black" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Height="100" BorderThickness="0,0,1,1">
+                                <TextBlock Text="置换量" HorizontalAlignment="Center" VerticalAlignment="Center" TextAlignment="Center" LineHeight="20" Width="20" TextWrapping="Wrap"/>
+                            </Border>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.HeaderTemplate>-->
+                </DataGridTemplateColumn>
+                <DataGridTemplateColumn Width="35" >
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+                                <TextBox Text="{Binding Path=BLOOD_FLOW}" Height="30" Width="40" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"  TextWrapping="Wrap" BorderThickness="0" ></TextBox>
+                            </StackPanel>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                    <!--<DataGridTemplateColumn.HeaderTemplate>
+                        <DataTemplate>
+                            <Border Width="35" BorderBrush="Black" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Height="100" BorderThickness="0,0,1,1">
+                                <TextBlock Text="血流量" HorizontalAlignment="Center" VerticalAlignment="Center" TextAlignment="Center" LineHeight="20" Width="20" TextWrapping="Wrap"/>
+                            </Border>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.HeaderTemplate>-->
+                </DataGridTemplateColumn>
+                <!--<DataGridTemplateColumn Width="35" >
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+                                <TextBox Text="{Binding Path=DIALYSATE_RATE}" Height="30" Width="40" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" TextWrapping="Wrap" BorderThickness="0" ></TextBox>
+                            </StackPanel>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>-->
+                <!--<DataGridTemplateColumn.HeaderTemplate>
+                        <DataTemplate>
+                           <Border Width="35" BorderBrush="Black" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Height="100" BorderThickness="0,0,1,1">
+                                <TextBlock Text="透析液流量" HorizontalAlignment="Center" VerticalAlignment="Center" TextAlignment="Center" LineHeight="18" Width="20" TextWrapping="Wrap"/>
+                            </Border>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.HeaderTemplate>-->
+                <!--</DataGridTemplateColumn>-->
+                <DataGridTemplateColumn Width="35" >
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+                                <TextBox Text="{Binding Path=URF}" Height="30" Width="40" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"  TextWrapping="Wrap" BorderThickness="0" ></TextBox>
+                            </StackPanel>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                    <!-- <DataGridTemplateColumn.HeaderTemplate>
+                        <DataTemplate>
+                           <Border Width="35" BorderBrush="Black" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Height="100" BorderThickness="0,0,1,1">
+                                <TextBlock Text="超滤率" HorizontalAlignment="Center" VerticalAlignment="Center" TextAlignment="Center" LineHeight="20" Width="20" TextWrapping="Wrap"/>
+                            </Border>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.HeaderTemplate>-->
+                </DataGridTemplateColumn>
+                <DataGridTemplateColumn Width="40">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+                                <TextBox Text="{Binding Path=ANTICOAGULANT}" Height="30" Width="40" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"  TextWrapping="Wrap" BorderThickness="0" ></TextBox>
+                            </StackPanel>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                    <!-- <DataGridTemplateColumn.HeaderTemplate>
+                        <DataTemplate>
+                            <Border Width="35" BorderBrush="Black" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Height="100" BorderThickness="0,0,1,1">
+                                <TextBlock Text="抗凝剂" HorizontalAlignment="Center" VerticalAlignment="Center" TextAlignment="Center" LineHeight="20" Width="20" TextWrapping="Wrap"/>
+                            </Border>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.HeaderTemplate>-->
+                </DataGridTemplateColumn>
+
+
+
+                <DataGridTemplateColumn Width="35">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+                                <TextBox Text="{Binding Path=TEMPERATURE}" Height="30"  Width="35" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" TextWrapping="Wrap" BorderThickness="0" Margin="5,0,0,0"></TextBox>
+                            </StackPanel>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                    <!--<DataGridTemplateColumn.HeaderTemplate>
+                        <DataTemplate>
+                            <Border Width="35" BorderBrush="Black" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Height="100" BorderThickness="0,0,1,1">
+                                <TextBlock Text="体温℃  这里换成呼吸了" HorizontalAlignment="Center" VerticalAlignment="Center" TextAlignment="Center" LineHeight="20" Width="20" TextWrapping="Wrap"/>
+                            </Border>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.HeaderTemplate>-->
+                </DataGridTemplateColumn>
+                <DataGridTemplateColumn Width="35">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+                                <TextBox Text="{Binding Path=CARDIOTACH}" Height="30" Width="35" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"  TextWrapping="Wrap" BorderThickness="0" Margin="5,0,0,0"></TextBox>
+                            </StackPanel>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                    <!--  <DataGridTemplateColumn.HeaderTemplate>
+                        <DataTemplate>
+                           <Border Width="35" BorderBrush="Black" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Height="100" BorderThickness="0,0,1,1">
+                                <TextBlock Text="脉搏 这里换成心率了" HorizontalAlignment="Center" VerticalAlignment="Center" TextAlignment="Center" LineHeight="20" Width="20" TextWrapping="Wrap"/>
+                            </Border>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.HeaderTemplate>-->
+                </DataGridTemplateColumn>
+
+                <DataGridTemplateColumn Width="40">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+                                <TextBox Text="{Binding Path=BLOOD_PRESSURE}" Height="30" Width="40"  Padding="7" TextAlignment="Center"  TextWrapping="Wrap" BorderThickness="0" ></TextBox>
+                            </StackPanel>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                    <!--<DataGridTemplateColumn.HeaderTemplate>
+                        <DataTemplate>
+                           <Border Width="70" BorderBrush="Black" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Height="100" BorderThickness="0,0,1,1">
+                                <TextBlock Text="血压" HorizontalAlignment="Center" VerticalAlignment="Center" TextAlignment="Center" LineHeight="20" Width="20" TextWrapping="Wrap"/>
+                            </Border>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.HeaderTemplate>-->
+                </DataGridTemplateColumn>
+                <DataGridTemplateColumn Width="35">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+                                <TextBox Text="{Binding Path=VASCULAR_ACCESS_ERRHYISIS}" Height="30" Width="35" Padding="4" TextAlignment="Center"  TextWrapping="Wrap" BorderThickness="0" ></TextBox>
+                            </StackPanel>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                    <!-- <DataGridTemplateColumn.HeaderTemplate>
+                        <DataTemplate>
+                            <Border Width="35" BorderBrush="Black" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Height="100" BorderThickness="0,0,1,1">
+                                <TextBlock Text="渗血" HorizontalAlignment="Center" VerticalAlignment="Center" TextAlignment="Center" LineHeight="20" Width="20" TextWrapping="Wrap"/>
+                            </Border>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.HeaderTemplate>-->
+                </DataGridTemplateColumn>
+                <DataGridTemplateColumn Width="35">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+                                <TextBox Text="{Binding Path=VASCULAR_ACCESS_GLIDE}" Height="30" Width="35" Padding="4" TextAlignment="Center"  TextWrapping="Wrap" BorderThickness="0" ></TextBox>
+                            </StackPanel>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                    <!--<DataGridTemplateColumn.HeaderTemplate>
+                        <DataTemplate>
+                           <Border Width="35" BorderBrush="Black" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Height="100" BorderThickness="0,0,1,1">
+                                <TextBlock Text="滑脱" HorizontalAlignment="Center" VerticalAlignment="Center" TextAlignment="Center" LineHeight="20" Width="20" TextWrapping="Wrap"/>
+                            </Border>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.HeaderTemplate>-->
+                </DataGridTemplateColumn>
+                <DataGridTemplateColumn Width="215*" >
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+                                <TextBox Text="{Binding Path=CLINICAL_MANIFESTATION}" Height="30" Width="215" FontSize="12"  Padding="1" TextAlignment="Center"  TextWrapping="Wrap" BorderThickness="0" ></TextBox>
+                            </StackPanel>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                    <!--<DataGridTemplateColumn.HeaderTemplate>
+                        <DataTemplate>
+                          <Border Width="160" BorderBrush="Black" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Height="100" BorderThickness="0,0,1,1">
+                                <TextBlock Width="150" Text="          症状及处理" TextWrapping="Wrap" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                            </Border>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.HeaderTemplate>-->
+                </DataGridTemplateColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+
+        <Grid Height="399" HorizontalAlignment="Left" Margin="20,0,0,0" Name="grid1" VerticalAlignment="Top" Width="770"  Grid.Row="7">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="90" />
+                <ColumnDefinition Width="35" />
+                <ColumnDefinition Width="35" />
+                <ColumnDefinition Width="35" />
+                <ColumnDefinition Width="35" />
+                <ColumnDefinition Width="35" />
+                <ColumnDefinition Width="35" />
+                <ColumnDefinition Width="35" />
+                <ColumnDefinition Width="20" />
+                <ColumnDefinition Width="20" />
+                <ColumnDefinition Width="35" />
+                <ColumnDefinition Width="35" />
+                <ColumnDefinition Width="40" />
+                <ColumnDefinition Width="35" />
+                <ColumnDefinition Width="35" />
+                <ColumnDefinition Width="215*" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="33" />
+                <RowDefinition Height="33" />
+                <RowDefinition Height="33" />
+                <RowDefinition Height="300" />
+            </Grid.RowDefinitions>
+            <TextBlock Grid.ColumnSpan="18" Height="1" Background="Black" VerticalAlignment="Top"/>
+            <TextBlock Grid.Row="2" Grid.ColumnSpan="18" Height="1" Background="Black" VerticalAlignment="Bottom"/>
+
+
+            <TextBlock Grid.Row="0" Grid.Column="1" Grid.RowSpan="4" Width="1" Background="Black" HorizontalAlignment="Left"/>
+
+            <TextBlock Grid.Row="0" Grid.Column="2" Grid.RowSpan="4" Width="1" Background="Black" HorizontalAlignment="Left"/>
+            <TextBlock Grid.Row="0" Grid.Column="3" Grid.RowSpan="4" Width="1" Background="Black" HorizontalAlignment="Left"/>
+            <TextBlock Grid.Row="0" Grid.Column="4" Grid.RowSpan="4" Width="1" Background="Black" HorizontalAlignment="Left"/>
+            <TextBlock Grid.Row="0" Grid.Column="5" Grid.RowSpan="4" Width="1" Background="Black" HorizontalAlignment="Left"/>
+            <TextBlock Grid.Row="0" Grid.Column="6" Grid.RowSpan="4" Width="1" Background="Black" HorizontalAlignment="Left"/>
+            <TextBlock Grid.Row="0" Grid.Column="7" Grid.RowSpan="4" Width="1" Background="Black" HorizontalAlignment="Left"/>
+            <TextBlock Grid.Row="0" Grid.Column="8" Grid.RowSpan="4" Width="1" Background="Black" HorizontalAlignment="Left"/>
+            <TextBlock Grid.Row="0" Grid.Column="10" Grid.RowSpan="4" Width="1" Background="Black" HorizontalAlignment="Left"/>
+            <TextBlock  Grid.Row="1" Grid.Column="11" Grid.RowSpan="4" Width="1" Background="Black" HorizontalAlignment="Left"/>
+            <TextBlock  Grid.Row="1" Grid.Column="12" Grid.RowSpan="4" Width="1" Background="Black" HorizontalAlignment="Left"/>
+            <TextBlock  Grid.Row="1" Grid.Column="13" Grid.RowSpan="4" Width="1" Background="Black" HorizontalAlignment="Left"/>
+            <TextBlock  Grid.Row="2" Grid.Column="14" Grid.RowSpan="4" Width="1" Background="Black" HorizontalAlignment="Left"/>
+            <TextBlock  Grid.Row="1" Grid.Column="15" Grid.RowSpan="4" Width="1" Background="Black" HorizontalAlignment="Left"/>
+
+
+
+
+
+
+
+
+
+            <TextBlock Text="时间" Grid.Row="0" Grid.Column="0" Grid.RowSpan="3" HorizontalAlignment="Center" VerticalAlignment="Center" TextAlignment="Center" LineHeight="30" Width="20" TextWrapping="Wrap"/>
+            <TextBlock Text="静脉压"  Grid.Row="0" Grid.Column="1" Grid.RowSpan="3" HorizontalAlignment="Center" VerticalAlignment="Center" TextAlignment="Center" LineHeight="20" Width="20" TextWrapping="Wrap"/>
+            <TextBlock Text="mmHg" Grid.Row="2" Height="20" FontSize="10" Grid.Column="1" VerticalAlignment="Bottom" HorizontalAlignment="Center"/>
+            <TextBlock Text="动脉压"  Grid.Row="0" Grid.Column="2" Grid.RowSpan="3" HorizontalAlignment="Center" VerticalAlignment="Center" TextAlignment="Center" LineHeight="20" Width="20" TextWrapping="Wrap"/>
+            <TextBlock Text="mmHg" Grid.Row="2" Height="20" FontSize="10" Grid.Column="2" VerticalAlignment="Bottom" HorizontalAlignment="Center"/>
+            <TextBlock Text="跨膜压" Grid.Row="0" Grid.Column="3" Grid.RowSpan="3" HorizontalAlignment="Center" VerticalAlignment="Center" TextAlignment="Center" LineHeight="20" Width="20" TextWrapping="Wrap"/>
+            <TextBlock Text="mmHg" Grid.Row="2" Height="20" FontSize="10" Grid.Column="3" VerticalAlignment="Bottom" HorizontalAlignment="Center"/>
+            <TextBlock Text="电导度" Grid.Row="0" Grid.Column="4" Grid.RowSpan="3" HorizontalAlignment="Center" VerticalAlignment="Center" TextAlignment="Center" LineHeight="20" Width="20" TextWrapping="Wrap"/>
+            <TextBlock Text="ms/cm" Grid.Row="2" Height="20" FontSize="9" Grid.Column="4" VerticalAlignment="Bottom" HorizontalAlignment="Center"/>
+            <TextBlock Text="置换量"  Grid.Row="0" Grid.Column="5" Grid.RowSpan="3"  HorizontalAlignment="Center" VerticalAlignment="Center" TextAlignment="Center" LineHeight="20" Width="20" TextWrapping="Wrap"/>
+            <TextBlock Text="ml/h" Grid.Row="2" Height="20" FontSize="10" Grid.Column="5" VerticalAlignment="Bottom" HorizontalAlignment="Center"/>
+            <TextBlock Text="血流量"  Grid.Row="0" Grid.Column="6" Grid.RowSpan="3"  HorizontalAlignment="Center" VerticalAlignment="Center" TextAlignment="Center" LineHeight="20" Width="20" TextWrapping="Wrap"/>
+            <TextBlock Text="ml/min" Grid.Row="2" Height="20" FontSize="9" Grid.Column="6" VerticalAlignment="Bottom" HorizontalAlignment="Center"/>
+            <TextBlock Text="超滤率"   Grid.Row="0" Grid.Column="7" Grid.RowSpan="3" HorizontalAlignment="Center" VerticalAlignment="Center" TextAlignment="Center" LineHeight="20" Width="20" TextWrapping="Wrap"/>
+            <TextBlock Text="ml/h" Grid.Row="2" Height="20" FontSize="10" Grid.Column="7" VerticalAlignment="Bottom" HorizontalAlignment="Center"/>
+            <TextBlock Grid.Column="8" Grid.ColumnSpan="2" Height="1" VerticalAlignment="Bottom"  Background="Black" />
+            <TextBlock Grid.Row="1" Grid.Column="8" Visibility="Hidden" Width="1" HorizontalAlignment="Right"  Background="Black" />
+
+            <TextBlock Text="抗凝剂" FontSize="10" Grid.Row="0" Grid.Column="8" Grid.ColumnSpan="2" HorizontalAlignment="Center" VerticalAlignment="Center" TextWrapping="Wrap"/>
+
+            <TextBlock Grid.Row="0" Grid.Column="10" Grid.ColumnSpan="7" Height="1" Background="Black" VerticalAlignment="Bottom"/>
+            <TextBlock Name="txtAnticoagulantUnit" HorizontalAlignment="Center" Margin="3,25,0,25" Text="   /h" FontSize="10" VerticalAlignment="Center" Grid.Column="8" Grid.ColumnSpan="2" Grid.Row="1" Grid.RowSpan="2" />
+
+            <TextBlock Text="临       床       观       察" Grid.Column="9" Grid.ColumnSpan="7" TextAlignment="Center"  HorizontalAlignment="Center" VerticalAlignment="Center" />
+            <TextBlock Text="呼吸" Grid.Row="1" Grid.Column="10" Grid.RowSpan="2" HorizontalAlignment="Center" VerticalAlignment="Center" TextAlignment="Center" LineHeight="20" Width="20" TextWrapping="Wrap"/>
+            <TextBlock Text="次/分" Grid.Row="2" Height="20" FontSize="10" Grid.Column="10" VerticalAlignment="Bottom" HorizontalAlignment="Center"/>
+
+            <TextBlock Text="心率" Grid.Row="1" Grid.Column="11" Grid.RowSpan="2" HorizontalAlignment="Center" VerticalAlignment="Center" TextAlignment="Center" LineHeight="20" Width="20" TextWrapping="Wrap"/>
+            <TextBlock Text="次/分" Grid.Row="2" Height="20" FontSize="10" Grid.Column="11" VerticalAlignment="Bottom" HorizontalAlignment="Center"/>
+            <TextBlock Text="血压" Grid.Row="1" Grid.Column="12" Grid.RowSpan="2" HorizontalAlignment="Center" VerticalAlignment="Center" TextAlignment="Center" LineHeight="20" Width="20" TextWrapping="Wrap"/>
+            <TextBlock Text="mmHg" Grid.Row="2" Height="20" FontSize="10" Grid.Column="12" VerticalAlignment="Bottom" HorizontalAlignment="Center"/>
+            <!--<TextBlock Height="1"  Grid.Row="1" Grid.Column="14" Grid.ColumnSpan="2" Background="Black" VerticalAlignment="Top" />-->
+            <TextBlock Height="1"  Grid.Row="1" Grid.Column="13" Grid.ColumnSpan="2" Background="Black" VerticalAlignment="Bottom" />
+
+            <TextBlock Text="血管通路"  Grid.Row="1" Grid.Column="13" Grid.ColumnSpan="2" VerticalAlignment="Center" HorizontalAlignment="Center" />
+            <TextBlock Text="渗血" Grid.Row="2" Grid.Column="13"  HorizontalAlignment="Center" VerticalAlignment="Center" TextAlignment="Center"  Width="20" TextWrapping="Wrap"/>
+            <TextBlock Text="滑脱"  Grid.Row="2" Grid.Column="14"  HorizontalAlignment="Center" VerticalAlignment="Center" TextAlignment="Center"  Width="20" TextWrapping="Wrap"/>
+            <TextBlock Width="150" Grid.Row="1" Grid.Column="15" Grid.RowSpan="2"  Text="          症状及处理" TextWrapping="Wrap" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+
+        </Grid>
+
+
+        <Label Grid.Row="8" Content="净   化   后   情   况" Name="labelPart3" HorizontalAlignment="Center"   VerticalAlignment="Bottom"   FontSize="18" FontFamily="STZhongsong"  />
+
+
+        <StackPanel Grid.Row="9" HorizontalAlignment="Left" Margin="20,0,0,0" Width="770" VerticalAlignment="Stretch"  Orientation="Horizontal">
+            <Label Content="实际净化时间"  HorizontalAlignment="Left" VerticalAlignment="Bottom"  VerticalContentAlignment="Bottom"  FontFamily="Microsoft YaHei" FontSize="12"/>
+            <TextBox BorderBrush="Black"  BorderThickness="0,0,0,1" Grid.Row="1" Name="txtFrequency_Hours1" Width="50" HorizontalContentAlignment="Center"  HorizontalAlignment="Left" VerticalAlignment="Bottom" VerticalContentAlignment="Bottom" Height="23"  FontFamily="Microsoft YaHei" FontSize="12"/>
+            <Label Content="小时"  HorizontalAlignment="Left" VerticalAlignment="Bottom"  VerticalContentAlignment="Bottom"  FontFamily="Microsoft YaHei" FontSize="12"/>
+            <TextBox BorderBrush="Black"  BorderThickness="0,0,0,1" Grid.Row="1" Name="txtFrequency_Minutes1" Width="40" HorizontalContentAlignment="Center" HorizontalAlignment="Left" VerticalAlignment="Bottom" VerticalContentAlignment="Bottom" Height="23"  FontFamily="Microsoft YaHei" FontSize="12"/>
+            <Label Content="分   透后体重(轮椅/卧床)"  HorizontalAlignment="Left" VerticalAlignment="Bottom"  VerticalContentAlignment="Bottom"  FontFamily="Microsoft YaHei" FontSize="12"/>
+            <TextBox BorderBrush="Black" BorderThickness="0,0,0,1" Height="23" Name="txtAFTER_DRY_WEIGHT" Width="40" HorizontalContentAlignment="Center" HorizontalAlignment="Left" VerticalAlignment="Bottom" VerticalContentAlignment="Bottom"  />
+            <Label Content="kg   实际脱水" Height="28" Name="label34" HorizontalAlignment="Left" VerticalAlignment="Bottom" VerticalContentAlignment="Bottom" />
+            <TextBox BorderBrush="Black" BorderThickness="0,0,0,1" Height="23" Name="txtDRY_WATER_VALUE" Width="40" HorizontalContentAlignment="Center" HorizontalAlignment="Left" VerticalAlignment="Bottom" VerticalContentAlignment="Bottom"  />
+            <Label Content="kg   血压（BP）" Height="28" Name="label35" HorizontalAlignment="Left" VerticalAlignment="Bottom" VerticalContentAlignment="Bottom" />
+            <TextBox BorderBrush="Black"  BorderThickness="0,0,0,1"  Name="txtBPB" Width="50" HorizontalAlignment="Left" HorizontalContentAlignment="Center" VerticalAlignment="Bottom"  VerticalContentAlignment="Bottom" Height="23" FontFamily="Microsoft YaHei" FontSize="12"/>
+            <Label Content="/" HorizontalAlignment="Left" VerticalAlignment="Bottom"/>
+            <TextBox BorderBrush="Black"  BorderThickness="0,0,0,1"  Name="txtBPB1" Width="50" HorizontalAlignment="Left" HorizontalContentAlignment="Center" VerticalAlignment="Bottom"  VerticalContentAlignment="Bottom" Height="23" FontFamily="Microsoft YaHei" FontSize="12"/>
+            <Label Content="mmHg" HorizontalAlignment="Left" VerticalAlignment="Bottom"/>
+        </StackPanel>
+
+        <StackPanel Width="770" Grid.Row="10" HorizontalAlignment="Left" Margin="20,0,0,0" VerticalAlignment="Stretch"  Orientation="Horizontal">
+            <Label Content="体温(T)" HorizontalAlignment="Left" VerticalAlignment="Bottom"/>
+            <TextBox BorderBrush="Black"  BorderThickness="0,0,0,1"  Name="txtT1" Width="50" HorizontalAlignment="Left" HorizontalContentAlignment="Center" VerticalAlignment="Bottom"  VerticalContentAlignment="Bottom" Height="23" FontFamily="Microsoft YaHei" FontSize="12"/>
+            <Label Content="℃              脉搏(P)" HorizontalAlignment="Left" VerticalAlignment="Bottom"/>
+            <TextBox BorderBrush="Black"  BorderThickness="0,0,0,1"  Name="txtP1" Width="50" HorizontalAlignment="Left" HorizontalContentAlignment="Center" VerticalAlignment="Bottom"  VerticalContentAlignment="Bottom" Height="23" FontFamily="Microsoft YaHei" FontSize="12"/>
+            <Label Content="次/min          呼吸（R） " HorizontalAlignment="Left" VerticalAlignment="Bottom"/>
+            <TextBox BorderBrush="Black"  BorderThickness="0,0,0,1"  Name="txtR1" Width="50" HorizontalAlignment="Left" HorizontalContentAlignment="Center" VerticalAlignment="Bottom"  VerticalContentAlignment="Bottom" Height="23" FontFamily="Microsoft YaHei" FontSize="12"/>
+            <Label Content="次/min" HorizontalAlignment="Left" VerticalAlignment="Bottom"/>
+            <Label Content="透析器凝血：0" HorizontalAlignment="Left" VerticalAlignment="Bottom"/>
+            <CheckBox Content=" /1  " Name="chkCOAGULATION_IN_DIALYSER" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="0,0,0,5" FontFamily="Microsoft YaHei" FontSize="12"/>
+            <CheckBox Content=" /2  " Name="chkCOAGULATION_IN_DIALYSER1" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="0,0,0,5" FontFamily="Microsoft YaHei" FontSize="12"/>
+            <CheckBox Content=" /3  " Name="chkCOAGULATION_IN_DIALYSER2" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="0,0,0,5" FontFamily="Microsoft YaHei" FontSize="12"/>
+            <CheckBox Content=" 级" Name="chkCOAGULATION_IN_DIALYSER3" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="0,0,0,5" FontFamily="Microsoft YaHei" FontSize="12"/>
+        </StackPanel>
+
+        <StackPanel Width="770"  Grid.Row="11" HorizontalAlignment="Left" Margin="20,0,0,0" VerticalAlignment="Stretch"  Orientation="Horizontal">
+            <Label Content="置换液总量" Height="28" HorizontalAlignment="Left"  VerticalAlignment="Top"  HorizontalContentAlignment="Center" VerticalContentAlignment="Bottom" />
+            <TextBox BorderBrush="Black"  BorderThickness="0,0,0,1"  Name="txtFILTRATION_DISPLACEMENT_LIQUID" Width="70" HorizontalAlignment="Left" HorizontalContentAlignment="Center" VerticalAlignment="Bottom"  VerticalContentAlignment="Bottom" Height="23" FontFamily="Microsoft YaHei" FontSize="12"/>
+            <Label Content="L    滤出液总量" Height="28" HorizontalAlignment="Left"  VerticalAlignment="Top"  HorizontalContentAlignment="Center" VerticalContentAlignment="Bottom" />
+            <TextBox BorderBrush="Black"  BorderThickness="0,0,0,1"  Name="txtFILTRATION_PERCOLATE" Width="70" HorizontalAlignment="Left" HorizontalContentAlignment="Center" VerticalAlignment="Bottom"  VerticalContentAlignment="Bottom" Height="23" FontFamily="Microsoft YaHei" FontSize="12"/>
+            <Label Content="L    输入血浆/白蛋白：置换液总量" Height="28" HorizontalAlignment="Left"  VerticalAlignment="Top"  HorizontalContentAlignment="Center" VerticalContentAlignment="Bottom" />
+            <TextBox BorderBrush="Black"  BorderThickness="0,0,0,1"  Name="txtDISPLACEMENT_LIQUID" Width="70" HorizontalAlignment="Left" HorizontalContentAlignment="Center" VerticalAlignment="Bottom"  VerticalContentAlignment="Bottom" Height="23" FontFamily="Microsoft YaHei" FontSize="12"/>
+            <Label Content="L    滤出液总量" Height="28" HorizontalAlignment="Left"  VerticalAlignment="Top"  HorizontalContentAlignment="Center" VerticalContentAlignment="Bottom" />
+            <TextBox BorderBrush="Black"  BorderThickness="0,0,0,1"  Name="txtPERCOLATE" Width="70" HorizontalAlignment="Left" HorizontalContentAlignment="Center" VerticalAlignment="Bottom"  VerticalContentAlignment="Bottom" Height="23" FontFamily="Microsoft YaHei" FontSize="12"/>
+            <Label Content="L" Height="28" HorizontalAlignment="Left"  VerticalAlignment="Top"  HorizontalContentAlignment="Center" VerticalContentAlignment="Bottom" />
+
+
+
+        </StackPanel>
+
+        <Label Content="透析小结：" Height="28" HorizontalAlignment="Left"  Name="lblSickLog" VerticalAlignment="Top" Margin="22,0,0,0"  Grid.Row="12" />
+
+        <StackPanel Width="770" Grid.Row="12" Height="120" Grid.RowSpan="4" HorizontalAlignment="Left" Margin="20,0,0,0" VerticalAlignment="Stretch" Orientation="Vertical">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="30"/>
+                    <RowDefinition Height="30"/>
+                    <RowDefinition Height="30"/>
+                    <RowDefinition Height="30"/>
+                </Grid.RowDefinitions>
+
+                <TextBox  TextBlock.LineHeight="30" Grid.RowSpan="4" Height="120" Background="#00ffffff" Margin="0,5,0,0" VerticalAlignment="Top"  TextWrapping="Wrap" HorizontalAlignment="Left" BorderThickness="0,0,0,0" BorderBrush="Black" Name="txtSUMMARY" Width="770"  />
+
+                <TextBlock   Width="770" Height="1" VerticalAlignment="Bottom" Background="Black" HorizontalAlignment="Left" />
+                <TextBlock  Grid.Row="1" Width="770" Height="1" VerticalAlignment="Bottom" Background="Black" HorizontalAlignment="Left"/>
+                <TextBlock  Grid.Row="2"  Width="770" Height="1" VerticalAlignment="Bottom" Background="Black" HorizontalAlignment="Left"/>
+                <TextBlock  Grid.Row="3"  Width="770" Height="1" VerticalAlignment="Bottom" Background="Black" HorizontalAlignment="Left"/>
+            </Grid>
+
+        </StackPanel>
+
+        <!--医生签名-->
+        <StackPanel Grid.Row="16" Width="770"  HorizontalAlignment="Left" Margin="20,0,0,0" VerticalAlignment="Stretch" Orientation="Horizontal">
+            <Label Content="医师:" Height="28" Name="lblDoctor"  HorizontalAlignment="Left" Width="41" Grid.Row="16" Margin="150,0,0,0"/>
+            <TextBox Height="23"  BorderThickness="0,0,0,0" BorderBrush="Black" Name="txtPRIMARY_DOCTOR" Width="85" HorizontalAlignment="Left"  />
+
+            <Label Content="责任护士:" Height="28" Name="lblNurse"  HorizontalAlignment="Left" Width="62" Grid.Row="16" />
+            <TextBox Height="23"  BorderThickness="0,0,0,0" BorderBrush="Black" Name="txtPRIMARY_NURSE" Width="85"  HorizontalAlignment="Left"  />
+
+            <Label Content="穿刺护士:" Height="28" HorizontalAlignment="Left" Width="61" Grid.Row="16" />
+            <TextBox BorderBrush="Black" BorderThickness="0,0,0,0" Height="23" Name="txtCHECK_NURSE1" Width="85"  HorizontalAlignment="Left" />
+
+
+            <Label Content="核对护士:" Height="28" Name="label15"  HorizontalAlignment="Left" Width="61" Grid.Row="16" />
+            <TextBox BorderBrush="Black" BorderThickness="0,0,0,0" Height="23" Name="txtCHECK_NURSE" Width="85" HorizontalAlignment="Left" />
+        </StackPanel>
+
+    </Grid>
+
+
+</base:WPF_DocumentBase>

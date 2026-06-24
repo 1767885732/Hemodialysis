@@ -1,0 +1,63 @@
+﻿<UserControl x:Class="Hemo.Client.Doc.血液透析知情同意书"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="1100" d:DesignWidth="816">
+    <Grid Margin="20,50,0,0">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="776"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0.5*"/>
+            <RowDefinition Height="0.2*"/>
+            <RowDefinition Height="0.2*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <Border Grid.Row="0" BorderBrush="Black" BorderThickness="1,1,1,1">
+            <StackPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center">
+                <Label Name="label1" Content="沧州市中心医院-1" FontSize="20" FontWeight="Bold"/>
+                <Label Name="label2" Content="血液透析知情同意书" FontSize="17" FontWeight="Bold"/>
+            </StackPanel>
+        </Border>
+        <StackPanel Grid.Row="1" Orientation="Horizontal">
+            <Border Width="100" BorderBrush="Black" BorderThickness="1,0,1,1" Margin="0,0,0,0">
+                <Label Name="label3" Content="患者姓名" FontSize="15" FontWeight="Bold" VerticalAlignment="Center" Margin="5,0,0,0"/>
+            </Border>
+            <Border Width="80" BorderBrush="Black" BorderThickness="0,0,1,1" Margin="0,0,0,0">
+                <TextBlock Name="txtName" Text="张无忌" FontSize="15" VerticalAlignment="Center" Margin="5,0,0,0"/>
+            </Border>
+            <Border Width="80" BorderBrush="Black" BorderThickness="0,0,1,1" Margin="0,0,0,0">
+                <Label Name="label4" Content="性别" FontSize="15" FontWeight="Bold" VerticalAlignment="Center" Margin="5,0,0,0"/>
+            </Border>
+            <Border Width="60" BorderBrush="Black" BorderThickness="0,0,1,1" Margin="0,0,0,0">
+                <TextBlock Name="txtSex" Text="男" FontSize="15" VerticalAlignment="Center" Margin="5,0,0,0"/>
+            </Border>
+            <Border Width="80" BorderBrush="Black" BorderThickness="0,0,1,1" Margin="0,0,0,0">
+                <Label Name="label5" Content="年龄" FontSize="15" FontWeight="Bold" VerticalAlignment="Center" Margin="5,0,0,0"/>
+            </Border>
+            <Border Width="60" BorderBrush="Black" BorderThickness="0,0,1,1" Margin="0,0,0,0">
+                <TextBlock Name="txtAge" Text="30" FontSize="15" VerticalAlignment="Center" Margin="5,0,0,0"/>
+            </Border>
+            <Border Width="100" BorderBrush="Black" BorderThickness="0,0,1,1" Margin="0,0,0,0">
+                <Label Name="label6" Content="病历号" FontSize="15" FontWeight="Bold" VerticalAlignment="Center" Margin="5,0,0,0"/>
+            </Border>
+            <Border Width="216" BorderBrush="Black" BorderThickness="0,0,1,1" Margin="0,0,0,0">
+                <TextBlock Name="txtCardNo" Text="201500001" FontSize="15" VerticalAlignment="Center" Margin="5,0,0,0"/>
+            </Border>
+        </StackPanel>
+        <StackPanel Grid.Row="2" Orientation="Horizontal">
+            <Border Width="180" BorderBrush="Black" BorderThickness="1,0,1,1" Margin="0,0,0,0">
+                <Label Name="label7" Content="患者身份证号" FontSize="15" FontWeight="Bold" VerticalAlignment="Center" Margin="5,0,0,0"/>
+            </Border>
+            <Border Width="596" BorderBrush="Black" BorderThickness="0,0,1,1" Margin="0,0,0,0">
+                <TextBlock Name="txtID" Text="410125198507262933" FontSize="15" VerticalAlignment="Center" Margin="5,0,0,0"/>
+            </Border>
+        </StackPanel>
+    </Grid>
+</UserControl>

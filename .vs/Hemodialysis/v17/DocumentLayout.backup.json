@@ -1,0 +1,226 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\WorkFiles\\Projects\\\u4E0A\u6D77\u5E02\u666E\u9640\u533A\u4EBA\u6C11\u533B\u9662\\\u9879\u76EE\u4EE3\u7801\\Hemodialysis\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{F5D848C3-C9A6-429F-9F54-762FF5ED7913}|Hemo.Client\\Hemo.Client.csproj|d:\\workfiles\\projects\\\u4E0A\u6D77\u5E02\u666E\u9640\u533A\u4EBA\u6C11\u533B\u9662\\\u9879\u76EE\u4EE3\u7801\\hemodialysis\\hemo.client\\ui\\hemodialysis\\edittreatment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F5D848C3-C9A6-429F-9F54-762FF5ED7913}|Hemo.Client\\Hemo.Client.csproj|solutionrelative:hemo.client\\ui\\hemodialysis\\edittreatment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F5D848C3-C9A6-429F-9F54-762FF5ED7913}|Hemo.Client\\Hemo.Client.csproj|d:\\workfiles\\projects\\\u4E0A\u6D77\u5E02\u666E\u9640\u533A\u4EBA\u6C11\u533B\u9662\\\u9879\u76EE\u4EE3\u7801\\hemodialysis\\hemo.client\\controls\\ctlmedicaldocument.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|",
+      "RelativeMoniker": "D:0:0:{F5D848C3-C9A6-429F-9F54-762FF5ED7913}|Hemo.Client\\Hemo.Client.csproj|solutionrelative:hemo.client\\controls\\ctlmedicaldocument.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F5D848C3-C9A6-429F-9F54-762FF5ED7913}|Hemo.Client\\Hemo.Client.csproj|d:\\workfiles\\projects\\\u4E0A\u6D77\u5E02\u666E\u9640\u533A\u4EBA\u6C11\u533B\u9662\\\u9879\u76EE\u4EE3\u7801\\hemodialysis\\hemo.client\\controls\\ctlmedicaldocument.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{F5D848C3-C9A6-429F-9F54-762FF5ED7913}|Hemo.Client\\Hemo.Client.csproj|solutionrelative:hemo.client\\controls\\ctlmedicaldocument.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F5D848C3-C9A6-429F-9F54-762FF5ED7913}|Hemo.Client\\Hemo.Client.csproj|d:\\workfiles\\projects\\\u4E0A\u6D77\u5E02\u666E\u9640\u533A\u4EBA\u6C11\u533B\u9662\\\u9879\u76EE\u4EE3\u7801\\hemodialysis\\hemo.client\\ui\\patientfixui\\queryrecipelistui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F5D848C3-C9A6-429F-9F54-762FF5ED7913}|Hemo.Client\\Hemo.Client.csproj|solutionrelative:hemo.client\\ui\\patientfixui\\queryrecipelistui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F5D848C3-C9A6-429F-9F54-762FF5ED7913}|Hemo.Client\\Hemo.Client.csproj|d:\\workfiles\\projects\\\u4E0A\u6D77\u5E02\u666E\u9640\u533A\u4EBA\u6C11\u533B\u9662\\\u9879\u76EE\u4EE3\u7801\\hemodialysis\\hemo.client\\controls\\ctlusercurelist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F5D848C3-C9A6-429F-9F54-762FF5ED7913}|Hemo.Client\\Hemo.Client.csproj|solutionrelative:hemo.client\\controls\\ctlusercurelist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F5D848C3-C9A6-429F-9F54-762FF5ED7913}|Hemo.Client\\Hemo.Client.csproj|d:\\workfiles\\projects\\\u4E0A\u6D77\u5E02\u666E\u9640\u533A\u4EBA\u6C11\u533B\u9662\\\u9879\u76EE\u4EE3\u7801\\hemodialysis\\hemo.client\\ui\\hemodialysis\\curedrugtemplatelist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F5D848C3-C9A6-429F-9F54-762FF5ED7913}|Hemo.Client\\Hemo.Client.csproj|solutionrelative:hemo.client\\ui\\hemodialysis\\curedrugtemplatelist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F5D848C3-C9A6-429F-9F54-762FF5ED7913}|Hemo.Client\\Hemo.Client.csproj|d:\\workfiles\\projects\\\u4E0A\u6D77\u5E02\u666E\u9640\u533A\u4EBA\u6C11\u533B\u9662\\\u9879\u76EE\u4EE3\u7801\\hemodialysis\\hemo.client\\ui\\hemodialysis\\edittreatment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{F5D848C3-C9A6-429F-9F54-762FF5ED7913}|Hemo.Client\\Hemo.Client.csproj|solutionrelative:hemo.client\\ui\\hemodialysis\\edittreatment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{76EC07B0-4F72-4837-B86B-2AE0600A2E79}|Hemo.Business\\Hemo.Business.csproj|d:\\workfiles\\projects\\\u4E0A\u6D77\u5E02\u666E\u9640\u533A\u4EBA\u6C11\u533B\u9662\\\u9879\u76EE\u4EE3\u7801\\hemodialysis\\hemo.business\\hemodialysis\\hemodialysisbll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{76EC07B0-4F72-4837-B86B-2AE0600A2E79}|Hemo.Business\\Hemo.Business.csproj|solutionrelative:hemo.business\\hemodialysis\\hemodialysisbll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F5D848C3-C9A6-429F-9F54-762FF5ED7913}|Hemo.Client\\Hemo.Client.csproj|d:\\workfiles\\projects\\\u4E0A\u6D77\u5E02\u666E\u9640\u533A\u4EBA\u6C11\u533B\u9662\\\u9879\u76EE\u4EE3\u7801\\hemodialysis\\hemo.client\\ui\\hemodialysis\\queryrecipelist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F5D848C3-C9A6-429F-9F54-762FF5ED7913}|Hemo.Client\\Hemo.Client.csproj|solutionrelative:hemo.client\\ui\\hemodialysis\\queryrecipelist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F5D848C3-C9A6-429F-9F54-762FF5ED7913}|Hemo.Client\\Hemo.Client.csproj|d:\\workfiles\\projects\\\u4E0A\u6D77\u5E02\u666E\u9640\u533A\u4EBA\u6C11\u533B\u9662\\\u9879\u76EE\u4EE3\u7801\\hemodialysis\\hemo.client\\controls\\ctldruguserecord.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F5D848C3-C9A6-429F-9F54-762FF5ED7913}|Hemo.Client\\Hemo.Client.csproj|solutionrelative:hemo.client\\controls\\ctldruguserecord.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F9D35B24-E538-4FC7-9896-DEA232C6707A}|Hemo.DataAccess\\Hemo.DataAccess.csproj|d:\\workfiles\\projects\\\u4E0A\u6D77\u5E02\u666E\u9640\u533A\u4EBA\u6C11\u533B\u9662\\\u9879\u76EE\u4EE3\u7801\\hemodialysis\\hemo.dataaccess\\storedscript\\scriptprovider\\oraclescriptprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F9D35B24-E538-4FC7-9896-DEA232C6707A}|Hemo.DataAccess\\Hemo.DataAccess.csproj|solutionrelative:hemo.dataaccess\\storedscript\\scriptprovider\\oraclescriptprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F5D848C3-C9A6-429F-9F54-762FF5ED7913}|Hemo.Client\\Hemo.Client.csproj|d:\\workfiles\\projects\\\u4E0A\u6D77\u5E02\u666E\u9640\u533A\u4EBA\u6C11\u533B\u9662\\\u9879\u76EE\u4EE3\u7801\\hemodialysis\\hemo.client\\base\\xtrabaseinfo\\interfaces.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F5D848C3-C9A6-429F-9F54-762FF5ED7913}|Hemo.Client\\Hemo.Client.csproj|solutionrelative:hemo.client\\base\\xtrabaseinfo\\interfaces.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 7,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{6324226f-61b6-4f28-92ee-18d4b5fe1e48}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CtlMedicalDocument.xaml.cs",
+              "DocumentMoniker": "D:\\WorkFiles\\Projects\\\u4E0A\u6D77\u5E02\u666E\u9640\u533A\u4EBA\u6C11\u533B\u9662\\\u9879\u76EE\u4EE3\u7801\\Hemodialysis\\Hemo.Client\\Controls\\CtlMedicalDocument.xaml.cs",
+              "RelativeDocumentMoniker": "Hemo.Client\\Controls\\CtlMedicalDocument.xaml.cs",
+              "ToolTip": "D:\\WorkFiles\\Projects\\\u4E0A\u6D77\u5E02\u666E\u9640\u533A\u4EBA\u6C11\u533B\u9662\\\u9879\u76EE\u4EE3\u7801\\Hemodialysis\\Hemo.Client\\Controls\\CtlMedicalDocument.xaml.cs",
+              "RelativeToolTip": "Hemo.Client\\Controls\\CtlMedicalDocument.xaml.cs",
+              "ViewState": "AgIAADoDAAAAAAAAAAAUwE8DAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-14T09:54:32.662Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CtlMedicalDocument.xaml",
+              "DocumentMoniker": "D:\\WorkFiles\\Projects\\\u4E0A\u6D77\u5E02\u666E\u9640\u533A\u4EBA\u6C11\u533B\u9662\\\u9879\u76EE\u4EE3\u7801\\Hemodialysis\\Hemo.Client\\Controls\\CtlMedicalDocument.xaml",
+              "RelativeDocumentMoniker": "Hemo.Client\\Controls\\CtlMedicalDocument.xaml",
+              "ToolTip": "D:\\WorkFiles\\Projects\\\u4E0A\u6D77\u5E02\u666E\u9640\u533A\u4EBA\u6C11\u533B\u9662\\\u9879\u76EE\u4EE3\u7801\\Hemodialysis\\Hemo.Client\\Controls\\CtlMedicalDocument.xaml",
+              "RelativeToolTip": "Hemo.Client\\Controls\\CtlMedicalDocument.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-04-14T09:53:38.745Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "CtlUserCureList.cs",
+              "DocumentMoniker": "D:\\WorkFiles\\Projects\\\u4E0A\u6D77\u5E02\u666E\u9640\u533A\u4EBA\u6C11\u533B\u9662\\\u9879\u76EE\u4EE3\u7801\\Hemodialysis\\Hemo.Client\\Controls\\CtlUserCureList.cs",
+              "RelativeDocumentMoniker": "Hemo.Client\\Controls\\CtlUserCureList.cs",
+              "ToolTip": "D:\\WorkFiles\\Projects\\\u4E0A\u6D77\u5E02\u666E\u9640\u533A\u4EBA\u6C11\u533B\u9662\\\u9879\u76EE\u4EE3\u7801\\Hemodialysis\\Hemo.Client\\Controls\\CtlUserCureList.cs",
+              "RelativeToolTip": "Hemo.Client\\Controls\\CtlUserCureList.cs",
+              "ViewState": "AgIAANUCAAAAAAAAAAAMwOMCAABBAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-14T09:18:21.923Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "EditTreatment.cs [\u8BBE\u8BA1]",
+              "DocumentMoniker": "D:\\WorkFiles\\Projects\\\u4E0A\u6D77\u5E02\u666E\u9640\u533A\u4EBA\u6C11\u533B\u9662\\\u9879\u76EE\u4EE3\u7801\\Hemodialysis\\Hemo.Client\\UI\\Hemodialysis\\EditTreatment.cs",
+              "RelativeDocumentMoniker": "Hemo.Client\\UI\\Hemodialysis\\EditTreatment.cs",
+              "ToolTip": "D:\\WorkFiles\\Projects\\\u4E0A\u6D77\u5E02\u666E\u9640\u533A\u4EBA\u6C11\u533B\u9662\\\u9879\u76EE\u4EE3\u7801\\Hemodialysis\\Hemo.Client\\UI\\Hemodialysis\\EditTreatment.cs [\u8BBE\u8BA1]",
+              "RelativeToolTip": "Hemo.Client\\UI\\Hemodialysis\\EditTreatment.cs [\u8BBE\u8BA1]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-14T09:19:37.341Z",
+              "EditorCaption": " [\u8BBE\u8BA1]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "QueryRecipeList.cs",
+              "DocumentMoniker": "D:\\WorkFiles\\Projects\\\u4E0A\u6D77\u5E02\u666E\u9640\u533A\u4EBA\u6C11\u533B\u9662\\\u9879\u76EE\u4EE3\u7801\\Hemodialysis\\Hemo.Client\\UI\\Hemodialysis\\QueryRecipeList.cs",
+              "RelativeDocumentMoniker": "Hemo.Client\\UI\\Hemodialysis\\QueryRecipeList.cs",
+              "ToolTip": "D:\\WorkFiles\\Projects\\\u4E0A\u6D77\u5E02\u666E\u9640\u533A\u4EBA\u6C11\u533B\u9662\\\u9879\u76EE\u4EE3\u7801\\Hemodialysis\\Hemo.Client\\UI\\Hemodialysis\\QueryRecipeList.cs",
+              "RelativeToolTip": "Hemo.Client\\UI\\Hemodialysis\\QueryRecipeList.cs",
+              "ViewState": "AgIAAEMAAAAAAAAAAAAlwEwAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-14T08:49:01.512Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "QueryRecipeListUI.cs",
+              "DocumentMoniker": "D:\\WorkFiles\\Projects\\\u4E0A\u6D77\u5E02\u666E\u9640\u533A\u4EBA\u6C11\u533B\u9662\\\u9879\u76EE\u4EE3\u7801\\Hemodialysis\\Hemo.Client\\UI\\PatientFixUI\\QueryRecipeListUI.cs",
+              "RelativeDocumentMoniker": "Hemo.Client\\UI\\PatientFixUI\\QueryRecipeListUI.cs",
+              "ToolTip": "D:\\WorkFiles\\Projects\\\u4E0A\u6D77\u5E02\u666E\u9640\u533A\u4EBA\u6C11\u533B\u9662\\\u9879\u76EE\u4EE3\u7801\\Hemodialysis\\Hemo.Client\\UI\\PatientFixUI\\QueryRecipeListUI.cs",
+              "RelativeToolTip": "Hemo.Client\\UI\\PatientFixUI\\QueryRecipeListUI.cs",
+              "ViewState": "AgIAAI8FAAAAAAAAAAAgwJgFAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-14T08:15:12.907Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "EditTreatment.cs",
+              "DocumentMoniker": "D:\\WorkFiles\\Projects\\\u4E0A\u6D77\u5E02\u666E\u9640\u533A\u4EBA\u6C11\u533B\u9662\\\u9879\u76EE\u4EE3\u7801\\Hemodialysis\\Hemo.Client\\UI\\Hemodialysis\\EditTreatment.cs",
+              "RelativeDocumentMoniker": "Hemo.Client\\UI\\Hemodialysis\\EditTreatment.cs",
+              "ToolTip": "D:\\WorkFiles\\Projects\\\u4E0A\u6D77\u5E02\u666E\u9640\u533A\u4EBA\u6C11\u533B\u9662\\\u9879\u76EE\u4EE3\u7801\\Hemodialysis\\Hemo.Client\\UI\\Hemodialysis\\EditTreatment.cs",
+              "RelativeToolTip": "Hemo.Client\\UI\\Hemodialysis\\EditTreatment.cs",
+              "ViewState": "AgIAAHMBAAAAAAAAAAAiwHwBAABBAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-14T08:02:57.3Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "CureDrugTemplateList.cs",
+              "DocumentMoniker": "D:\\WorkFiles\\Projects\\\u4E0A\u6D77\u5E02\u666E\u9640\u533A\u4EBA\u6C11\u533B\u9662\\\u9879\u76EE\u4EE3\u7801\\Hemodialysis\\Hemo.Client\\UI\\Hemodialysis\\CureDrugTemplateList.cs",
+              "RelativeDocumentMoniker": "Hemo.Client\\UI\\Hemodialysis\\CureDrugTemplateList.cs",
+              "ToolTip": "D:\\WorkFiles\\Projects\\\u4E0A\u6D77\u5E02\u666E\u9640\u533A\u4EBA\u6C11\u533B\u9662\\\u9879\u76EE\u4EE3\u7801\\Hemodialysis\\Hemo.Client\\UI\\Hemodialysis\\CureDrugTemplateList.cs",
+              "RelativeToolTip": "Hemo.Client\\UI\\Hemodialysis\\CureDrugTemplateList.cs",
+              "ViewState": "AgIAACIAAAAAAAAAAAAqwPgAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-14T06:55:37.999Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Interfaces.cs",
+              "DocumentMoniker": "D:\\WorkFiles\\Projects\\\u4E0A\u6D77\u5E02\u666E\u9640\u533A\u4EBA\u6C11\u533B\u9662\\\u9879\u76EE\u4EE3\u7801\\Hemodialysis\\Hemo.Client\\Base\\XtraBaseInfo\\Interfaces.cs",
+              "RelativeDocumentMoniker": "Hemo.Client\\Base\\XtraBaseInfo\\Interfaces.cs",
+              "ToolTip": "D:\\WorkFiles\\Projects\\\u4E0A\u6D77\u5E02\u666E\u9640\u533A\u4EBA\u6C11\u533B\u9662\\\u9879\u76EE\u4EE3\u7801\\Hemodialysis\\Hemo.Client\\Base\\XtraBaseInfo\\Interfaces.cs",
+              "RelativeToolTip": "Hemo.Client\\Base\\XtraBaseInfo\\Interfaces.cs",
+              "ViewState": "AgIAAGQAAAAAAAAAAAAxwEAAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-14T06:54:17.453Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "HemodialysisBll.cs",
+              "DocumentMoniker": "D:\\WorkFiles\\Projects\\\u4E0A\u6D77\u5E02\u666E\u9640\u533A\u4EBA\u6C11\u533B\u9662\\\u9879\u76EE\u4EE3\u7801\\Hemodialysis\\Hemo.Business\\Hemodialysis\\HemodialysisBll.cs",
+              "RelativeDocumentMoniker": "Hemo.Business\\Hemodialysis\\HemodialysisBll.cs",
+              "ToolTip": "D:\\WorkFiles\\Projects\\\u4E0A\u6D77\u5E02\u666E\u9640\u533A\u4EBA\u6C11\u533B\u9662\\\u9879\u76EE\u4EE3\u7801\\Hemodialysis\\Hemo.Business\\Hemodialysis\\HemodialysisBll.cs",
+              "RelativeToolTip": "Hemo.Business\\Hemodialysis\\HemodialysisBll.cs",
+              "ViewState": "AgIAADwDAAAAAAAAAAAMwEYDAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-14T06:53:59.848Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "CtlDrugUseRecord.Designer.cs",
+              "DocumentMoniker": "D:\\WorkFiles\\Projects\\\u4E0A\u6D77\u5E02\u666E\u9640\u533A\u4EBA\u6C11\u533B\u9662\\\u9879\u76EE\u4EE3\u7801\\Hemodialysis\\Hemo.Client\\Controls\\CtlDrugUseRecord.Designer.cs",
+              "RelativeDocumentMoniker": "Hemo.Client\\Controls\\CtlDrugUseRecord.Designer.cs",
+              "ToolTip": "D:\\WorkFiles\\Projects\\\u4E0A\u6D77\u5E02\u666E\u9640\u533A\u4EBA\u6C11\u533B\u9662\\\u9879\u76EE\u4EE3\u7801\\Hemodialysis\\Hemo.Client\\Controls\\CtlDrugUseRecord.Designer.cs",
+              "RelativeToolTip": "Hemo.Client\\Controls\\CtlDrugUseRecord.Designer.cs",
+              "ViewState": "AgIAAKUAAAAAAAAAAAAlwK0AAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-14T08:00:08.582Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "OracleScriptProvider.cs",
+              "DocumentMoniker": "D:\\WorkFiles\\Projects\\\u4E0A\u6D77\u5E02\u666E\u9640\u533A\u4EBA\u6C11\u533B\u9662\\\u9879\u76EE\u4EE3\u7801\\Hemodialysis\\Hemo.DataAccess\\StoredScript\\ScriptProvider\\OracleScriptProvider.cs",
+              "RelativeDocumentMoniker": "Hemo.DataAccess\\StoredScript\\ScriptProvider\\OracleScriptProvider.cs",
+              "ToolTip": "D:\\WorkFiles\\Projects\\\u4E0A\u6D77\u5E02\u666E\u9640\u533A\u4EBA\u6C11\u533B\u9662\\\u9879\u76EE\u4EE3\u7801\\Hemodialysis\\Hemo.DataAccess\\StoredScript\\ScriptProvider\\OracleScriptProvider.cs",
+              "RelativeToolTip": "Hemo.DataAccess\\StoredScript\\ScriptProvider\\OracleScriptProvider.cs",
+              "ViewState": "AgIAAH0TAAAAAAAAAAAcwIYTAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2022-07-07T05:33:29.887Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

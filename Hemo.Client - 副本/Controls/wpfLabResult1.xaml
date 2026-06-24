@@ -1,0 +1,266 @@
+﻿<myTypes:WPF_DocumentBase  x:Class="Hemo.Client.Controls.wpfLabResult1"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d"     
+               xmlns:myTypes="clr-namespace:Hemo.Utilities;assembly=Hemo.Utilities"  
+             d:DesignHeight="420" d:DesignWidth="780">
+    <UserControl.Resources>    
+        <Style  TargetType="DataGridRow">
+            <Setter Property="Padding" Value="0" />
+            <Setter Property="Margin" Value="0" />
+            <Setter Property="BorderThickness" Value="0" />
+        </Style>
+        <Style  TargetType="DataGridCell">
+            <Setter Property="Padding" Value="0" />
+            <Setter Property="Margin" Value="0" />
+            <Setter Property="Background" Value="Transparent" />
+            <Setter Property="BorderThickness" Value="0" />
+           
+        </Style>
+    </UserControl.Resources>
+    
+    <Grid Height="420">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="160" />
+            <ColumnDefinition Width="280" />
+            <ColumnDefinition Width="280" />
+            <ColumnDefinition Width="60*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"></RowDefinition>
+            <RowDefinition Height="340"></RowDefinition>
+            <RowDefinition Height="30"></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <Label Content="检  验  号：" Height="28" HorizontalAlignment="Left" Margin="7,0,0,0" Name="label1" VerticalAlignment="top" FontSize="14" Grid.Row="1" />
+        <Label Content="" HorizontalAlignment="Left" Height="28" Margin="82,0,0,0" Name="label2" FontSize="14" VerticalAlignment="top" Grid.Row="1" />
+        <Label Content="科       室：" Height="28" Margin="7,20,0,0" Name="label3" FontSize="14" Grid.Row="1"  VerticalAlignment="top"/>
+        <Label Content="" Height="28" HorizontalAlignment="Left" Margin="82,20,0,0" Name="label4" VerticalAlignment="top" FontSize="14" Grid.Row="1"/>
+        <Label Content="病  人 ID：" Height="28" HorizontalAlignment="Left" Margin="7,40,0,0" Name="label5" VerticalAlignment="top" FontSize="14" Grid.Row="1" />
+        <Label Content="" Height="28" HorizontalAlignment="Left" Margin="82,40,0,0" Name="label6" VerticalAlignment="top" FontSize="14" Grid.Row="1"/>
+        <Label Content="住  院  号：" Height="28" HorizontalAlignment="Left" Margin="7,60,0,0" Name="label7" VerticalAlignment="top" FontSize="14" Grid.Row="1"/>
+        <Label Content="" Height="28" HorizontalAlignment="Left" Margin="82,60,0,0" Name="label8" VerticalAlignment="top" FontSize="14" Grid.Row="1"/>
+        <Label Content="姓       名：" Height="28" HorizontalAlignment="Left" Margin="7,80,0,0" Name="label9" VerticalAlignment="top" FontSize="14" Grid.Row="1"/>
+        <Label Content="" Height="28" HorizontalAlignment="Left" Margin="82,80,0,0" Name="label10" VerticalAlignment="top" FontSize="14" Grid.Row="1"/>
+        <Label Content="" Height="28" HorizontalAlignment="Left" Margin="135,80,0,0" Name="label21" VerticalAlignment="top" FontSize="14" Grid.Row="1"/>
+        <Label Content="" Height="28" HorizontalAlignment="Left" Margin="180,80,0,0" Name="label22" VerticalAlignment="top" FontSize="14" Grid.Row="1"/>
+        <Label Content="标       本：" Height="28" HorizontalAlignment="Left" Margin="7,100,0,0" Name="label11" VerticalAlignment="top" FontSize="14" Grid.Row="1"/>
+        <Label Height="28" HorizontalAlignment="Left" Margin="82,100,0,0" Name="label12" VerticalAlignment="top" FontSize="14" Grid.Row="1"/>
+        <Label Content="医       生：" Height="28" HorizontalAlignment="Left" Margin="7,120,0,0" Name="label13" VerticalAlignment="top" FontSize="14" Grid.Row="1"/>
+        <Label Content=" " Height="28" HorizontalAlignment="Left" Margin="82,120,0,0" Name="label14" VerticalAlignment="top" FontSize="14" Grid.Row="1"/>
+        <Label Content="送检日期：" Height="28" HorizontalAlignment="Left" Margin="7,140,0,0" Name="label15" VerticalAlignment="top" FontSize="14" Grid.Row="1"/>
+        <Label Content=" " Height="28" HorizontalAlignment="Left" Margin="82,140,0,0" Name="label16" VerticalAlignment="top" FontSize="14" Grid.Row="1"/>
+        <Label Content="临床诊断：" Height="28" HorizontalAlignment="Left" Margin="7,160,0,0" Name="label17" VerticalAlignment="top" FontSize="14" Grid.Row="1"/>
+        <Label Content="" HorizontalAlignment="Left" Margin="82,160,0,152" Name="label18" FontSize="14" Grid.Row="1"/>
+        <Label Content="标本说明：" Height="28" HorizontalAlignment="Left" Margin="7,180,0,0" Name="label19" VerticalAlignment="top" FontSize="14" Grid.Row="1"/>
+        <Label Content="" Height="28" HorizontalAlignment="Left" Margin="82,180,0,0" Name="label20" VerticalAlignment="top" FontSize="14" Grid.Row="1"/>
+        <Label Content="申请医生：" Height="28" HorizontalAlignment="Left" Margin="0,0,0,0" Name="labdoc" VerticalAlignment="top" FontSize="14" Grid.Row="2" Grid.Column="1"/>
+        <Label Content=" " Height="28" HorizontalAlignment="Left" Margin="86,0,0,0" Name="label121" VerticalAlignment="top" FontSize="14" Grid.Row="2" Grid.Column="1" Width="83" />
+        <Label Content="操作时间" Height="28" Margin="205,2,9,0" Name="labtime" VerticalAlignment="top" FontSize="14" Grid.Row="2" Grid.Column="1"/>
+        <Label Content=" " Height="28" HorizontalAlignment="Left" Margin="0,2,0,0" Name="label122" VerticalAlignment="top" FontSize="14" Grid.Row="2" Grid.Column="2" Width="88" />
+        <Label Content="报告人" Height="28" HorizontalAlignment="Left" Margin="102,0,0,0" Name="labreporter" VerticalAlignment="top" FontSize="14" Grid.Row="2" Grid.Column="2"/>
+        <Label Content=" " Height="28" Margin="152,2,12,0" Name="label123" VerticalAlignment="top" FontSize="14" Grid.Row="2" Grid.Column="2" />
+        <Label Content="上海市普陀区人民医院检验报告单"   VerticalContentAlignment="Bottom"  Name="tilte"   Grid.Column="1"   FontSize="18" />
+        <Label Content="本报告仅对所检查的标本负责"  HorizontalContentAlignment="Right"  VerticalContentAlignment="Bottom"  Name="tilte1"   Grid.Column="2"   FontSize="16" />
+        
+        <Grid Grid.Row="1" Grid.Column="1" Height="340" Width="280">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="40" />
+                <RowDefinition Height="300" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="100"/>
+                <ColumnDefinition Width="80"/>
+                <ColumnDefinition Width="100"/>
+            </Grid.ColumnDefinitions>           
+            <DataGrid ColumnHeaderHeight="0"   RowHeaderWidth="0" RowHeight="30" CanUserAddRows="False" CanUserResizeColumns="False" AllowDrop="False" Background="Transparent" CanUserSortColumns="False" VerticalAlignment="Top"   ScrollViewer.HorizontalScrollBarVisibility="Hidden" ScrollViewer.VerticalScrollBarVisibility="Hidden" Visibility="Visible" VerticalGridLinesBrush="Black" HorizontalGridLinesBrush="Black"  HorizontalAlignment="Left"  AutoGenerateColumns="False" Height="300"   Name="grdList" BorderBrush="Black" BorderThickness="1,0,0,0" GridLinesVisibility="Horizontal" CanUserResizeRows="False"  CanUserReorderColumns="False" Grid.Row="1" Grid.RowSpan="1" Grid.ColumnSpan="3" IsReadOnly="True" IsEnabled="False">
+                <DataGrid.Columns>
+                    <DataGridTemplateColumn Width="100">
+                        <!--<DataGridTemplateColumn.HeaderTemplate >
+                            <DataTemplate>
+                                <Border  Height="40" Width="70" Background="Transparent"   BorderBrush="Black" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+                                    <TextBlock Text="项目" HorizontalAlignment="Center"  VerticalAlignment="Center" TextAlignment="Center"/>
+                                </Border>
+                            </DataTemplate>
+                        </DataGridTemplateColumn.HeaderTemplate>-->
+                        <DataGridTemplateColumn.CellTemplate >
+                            <DataTemplate> 
+                                <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+                                    <TextBlock Text="{Binding Path=REPORT_ITEM_NAME}"></TextBlock>
+                                </StackPanel>
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellTemplate>
+                    </DataGridTemplateColumn>
+                    <DataGridTemplateColumn Width="80">
+                        <!--<DataGridTemplateColumn.HeaderTemplate>
+                            <DataTemplate>
+                                <Border Height="30" Width="70" Background="Transparent"   BorderBrush="Black" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+                                    <TextBlock Text="结果" HorizontalAlignment="Center" VerticalAlignment="Center" TextAlignment="Center"/>
+                                </Border>
+                            </DataTemplate>
+                        </DataGridTemplateColumn.HeaderTemplate>-->
+                        <DataGridTemplateColumn.CellTemplate>
+                            <DataTemplate>
+                                <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+                                    <TextBlock Text="{Binding Path=RESULT,StringFormat='HH:mm'}"></TextBlock>
+                                </StackPanel>
+
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellTemplate>
+                    </DataGridTemplateColumn>
+                    <DataGridTemplateColumn Width="100">
+                        <!--<DataGridTemplateColumn.HeaderTemplate>
+                            <DataTemplate>
+                                <Border Height="40"     Width="140"  BorderBrush="Black" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+                                    <TextBlock Text="参考值" HorizontalAlignment="Center" VerticalAlignment="Center" TextAlignment="Center"/>
+                                </Border>
+                            </DataTemplate>
+                        </DataGridTemplateColumn.HeaderTemplate>-->
+                        <DataGridTemplateColumn.CellTemplate>
+                            <DataTemplate>
+                                <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+                                    <TextBlock Text="{Binding Path=REFERENCE_RESULT}"></TextBlock>
+                                </StackPanel>
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellTemplate>
+                    </DataGridTemplateColumn>
+                </DataGrid.Columns>
+            </DataGrid>          
+            <Grid Grid.Row="1" Grid.ColumnSpan="3">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="30" />
+                    <RowDefinition Height="30" />
+                    <RowDefinition Height="30" />
+                    <RowDefinition Height="30" />
+                    <RowDefinition Height="30" />
+                    <RowDefinition Height="30" />
+                    <RowDefinition Height="30" />
+                    <RowDefinition Height="30" />
+                    <RowDefinition Height="30" />
+                    <RowDefinition Height="30" />
+                </Grid.RowDefinitions>
+                <TextBlock Grid.Row="0" Grid.Column="0"  Height="1" Background="Black" VerticalAlignment="Bottom"/>
+                <TextBlock Grid.Row="1" Grid.Column="0"  Height="1" Background="Black" VerticalAlignment="Bottom"/>
+                <TextBlock Grid.Row="2" Grid.Column="0"  Height="1" Background="Black" VerticalAlignment="Bottom"/>
+                <TextBlock Grid.Row="3" Grid.Column="0"  Height="1" Background="Black" VerticalAlignment="Bottom"/>
+                <TextBlock Grid.Row="4" Grid.Column="0"  Height="1" Background="Black" VerticalAlignment="Bottom"/>
+                <TextBlock Grid.Row="5" Grid.Column="0"  Height="1" Background="Black" VerticalAlignment="Bottom"/>
+                <TextBlock Grid.Row="6" Grid.Column="0"  Height="1" Background="Black" VerticalAlignment="Bottom"/>
+                <TextBlock Grid.Row="7" Grid.Column="0"  Height="1" Background="Black" VerticalAlignment="Bottom"/>
+                <TextBlock Grid.Row="8" Grid.Column="0"  Height="1" Background="Black" VerticalAlignment="Bottom"/>
+                <TextBlock Grid.Row="9" Grid.Column="0"  Height="1" Background="Black" VerticalAlignment="Bottom"/>
+            </Grid>
+            <TextBlock Text="项目"   Name="itemname" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="14" Grid.Row="0" Grid.Column="0"/>
+            <TextBlock Text="结果"   Name="result" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="14" Grid.Row="0" Grid.Column="1"/>
+            <TextBlock Text="参考值"   Name="REFERENCE_RESULT" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="14" Grid.Row="0" Grid.Column="2"/>
+            <TextBlock Grid.Row="0" Grid.Column="0" Grid.RowSpan="2" Width="1" Background="Black" HorizontalAlignment="Left"/>
+            <TextBlock Grid.Row="0" Grid.Column="1" Grid.RowSpan="2" Width="1" Background="Black" HorizontalAlignment="Left"/>
+            <TextBlock Grid.Row="0" Grid.Column="2" Grid.RowSpan="2" Width="1" Background="Black" HorizontalAlignment="Left"/>
+            <!--<TextBlock Grid.Row="0" Grid.Column="2" Grid.RowSpan="2" Width="1" Background="Black" HorizontalAlignment="Right"/>-->
+            <TextBlock Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" Height="1" Background="Black" VerticalAlignment="Top"/>
+            <TextBlock Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" Height="1" Background="Black" VerticalAlignment="Bottom"/>
+            <TextBlock Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="3" Height="1" Background="Black" VerticalAlignment="Bottom"/>
+        </Grid>
+
+        <Grid Grid.Row="1" Grid.Column="2" Height="340" Width="280">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="40" />
+                <RowDefinition Height="300" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="100"/>
+                <ColumnDefinition Width="80"/>
+                <ColumnDefinition Width="100"/>
+            </Grid.ColumnDefinitions>           
+            <DataGrid RowHeaderWidth="0" RowHeight="30" ColumnHeaderHeight="0" CanUserAddRows="False" CanUserResizeColumns="False" AllowDrop="False" Background="Transparent" CanUserSortColumns="False" VerticalAlignment="Top"   ScrollViewer.HorizontalScrollBarVisibility="Hidden" ScrollViewer.VerticalScrollBarVisibility="Hidden" Visibility="Visible" VerticalGridLinesBrush="Black" HorizontalGridLinesBrush="Black"  HorizontalAlignment="Left"  AutoGenerateColumns="False" Height="300"   Name="grdList1" BorderBrush="Black" BorderThickness="1,0,0,0" GridLinesVisibility="Horizontal" CanUserResizeRows="False"  CanUserReorderColumns="False" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="3" IsReadOnly="True" IsEnabled="False">
+            <DataGrid.Columns>
+                <DataGridTemplateColumn Width="100">
+                    <!--<DataGridTemplateColumn.HeaderTemplate>
+                        <DataTemplate>
+                            <Border Height="40" Width="70" Background="Transparent"   BorderBrush="Black" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+                                <TextBlock Text="项目" HorizontalAlignment="Center" VerticalAlignment="Center" TextAlignment="Center"/>
+                            </Border>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.HeaderTemplate>-->
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+                                <TextBlock Text="{Binding Path=REPORT_ITEM_NAME}"></TextBlock>
+                            </StackPanel>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+                    <DataGridTemplateColumn Width="80">
+                    <!--<DataGridTemplateColumn.HeaderTemplate>
+                        <DataTemplate>
+                            <Border Height="40" Width="50" Background="Transparent"  BorderBrush="Black" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+                                <TextBlock Text="结果" HorizontalAlignment="Center" VerticalAlignment="Center" TextAlignment="Center"/>
+                            </Border>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.HeaderTemplate>-->
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+                                <TextBlock Text="{Binding Path=RESULT,StringFormat='HH:mm'}"></TextBlock>
+                            </StackPanel>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+                    <DataGridTemplateColumn Width="100">
+                    <!--<DataGridTemplateColumn.HeaderTemplate >
+                        <DataTemplate >
+                            <Border Height="40"      Width="140" BorderBrush="Black" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+                                <TextBlock Text="参考值" HorizontalAlignment="Center" VerticalAlignment="Center" TextAlignment="Center"/>
+                            </Border>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.HeaderTemplate>-->
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+                                <TextBlock Text="{Binding Path=REFERENCE_RESULT}"></TextBlock>
+                            </StackPanel>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+
+            </DataGrid.Columns>
+        </DataGrid>
+            <Grid Grid.Row="1" Grid.ColumnSpan="3">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="30" />
+                    <RowDefinition Height="30" />
+                    <RowDefinition Height="30" />
+                    <RowDefinition Height="30" />
+                    <RowDefinition Height="30" />
+                    <RowDefinition Height="30" />
+                    <RowDefinition Height="30" />
+                    <RowDefinition Height="30" />
+                    <RowDefinition Height="30" />
+                    <RowDefinition Height="30" />
+                </Grid.RowDefinitions>
+                <TextBlock Grid.Row="0" Grid.Column="0"  Height="1" Background="Black" VerticalAlignment="Bottom"/>
+                <TextBlock Grid.Row="1" Grid.Column="0"  Height="1" Background="Black" VerticalAlignment="Bottom"/>
+                <TextBlock Grid.Row="2" Grid.Column="0"  Height="1" Background="Black" VerticalAlignment="Bottom"/>
+                <TextBlock Grid.Row="3" Grid.Column="0"  Height="1" Background="Black" VerticalAlignment="Bottom"/>
+                <TextBlock Grid.Row="4" Grid.Column="0"  Height="1" Background="Black" VerticalAlignment="Bottom"/>
+                <TextBlock Grid.Row="5" Grid.Column="0"  Height="1" Background="Black" VerticalAlignment="Bottom"/>
+                <TextBlock Grid.Row="6" Grid.Column="0"  Height="1" Background="Black" VerticalAlignment="Bottom"/>
+                <TextBlock Grid.Row="7" Grid.Column="0"  Height="1" Background="Black" VerticalAlignment="Bottom"/>
+                <TextBlock Grid.Row="8" Grid.Column="0"  Height="1" Background="Black" VerticalAlignment="Bottom"/>
+                <TextBlock Grid.Row="9" Grid.Column="0"  Height="1" Background="Black" VerticalAlignment="Bottom"/>
+            </Grid>
+            <TextBlock Text="项目"   Name="itemname1" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="14" Grid.Row="0" Grid.Column="0"/>
+            <TextBlock Text="结果"   Name="result1" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="14" Grid.Row="0" Grid.Column="1"/>
+            <TextBlock Text="参考值"   Name="REFERENCE_RESULT1" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="14" Grid.Row="0" Grid.Column="2"/>
+            <TextBlock Grid.Row="0" Grid.Column="0" Grid.RowSpan="2" Width="1" Background="Black" HorizontalAlignment="Left"/>
+            <TextBlock Grid.Row="0" Grid.Column="1" Grid.RowSpan="2" Width="1" Background="Black" HorizontalAlignment="Left"/>
+            <TextBlock Grid.Row="0" Grid.Column="2" Grid.RowSpan="2" Width="1" Background="Black" HorizontalAlignment="Left"/>
+            <TextBlock Grid.Row="0" Grid.Column="2" Grid.RowSpan="2" Width="1" Background="Black" HorizontalAlignment="Right"/>
+            <TextBlock Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" Height="1" Background="Black" VerticalAlignment="Top"/>
+            <TextBlock Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" Height="1" Background="Black" VerticalAlignment="Bottom"/>
+            <TextBlock Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="3" Height="1" Background="Black" VerticalAlignment="Bottom"/>
+        </Grid>
+    </Grid>
+</myTypes:WPF_DocumentBase>
