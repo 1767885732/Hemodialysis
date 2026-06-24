@@ -903,7 +903,7 @@ namespace Hemo.Client.UI.Hemodialysis
                 if (_CureMainDatatable.Columns.Contains("VASCULAR_ACCESS_PENDING"))
                 {
                     if (_CureMainDatatable.Rows[0]["VASCULAR_ACCESS_PENDING"] != DBNull.Value)
-                        chkDGPGPending.Checked = Convert.ToBoolean(_CureMainDatatable.Rows[0]["VASCULAR_ACCESS_PENDING"]);
+                        chkDGPGPending.Checked = _CureMainDatatable.Rows[0]["VASCULAR_ACCESS_PENDING"].ToString().Equals("1");
                 }
                 if (_CureMainDatatable.Columns.Contains("VASCULAR_ACCESS_PENDING_DATE"))
                 {
@@ -1070,7 +1070,7 @@ namespace Hemo.Client.UI.Hemodialysis
                         snapshotDt.Rows[0]["VASCULAR_ACCESS_BLOOD_INFECT"] = rdoVASCULAR_ACCESS_BLOOD_INFECT.EditValue;
 
                     if (snapshotDt.Columns.Contains("VASCULAR_ACCESS_PENDING"))
-                        snapshotDt.Rows[0]["VASCULAR_ACCESS_PENDING"] = chkDGPGPending.Checked;
+                        snapshotDt.Rows[0]["VASCULAR_ACCESS_PENDING"] = chkDGPGPending.Checked ? "1" : "0";
                     if (snapshotDt.Columns.Contains("VASCULAR_ACCESS_PENDING_DATE"))
                         snapshotDt.Rows[0]["VASCULAR_ACCESS_PENDING_DATE"] = dtDGPGPendingDate.EditValue;
 
@@ -1668,7 +1668,7 @@ namespace Hemo.Client.UI.Hemodialysis
             dt.Rows[0]["IN_BASKET_PLASTER_ALLERGY"] = rdoIN_BASKET_PLASTER_ALLERGY.EditValue;
 
             if (dt.Columns.Contains("VASCULAR_ACCESS_PENDING"))
-                dt.Rows[0]["VASCULAR_ACCESS_PENDING"] = chkDGPGPending.Checked;
+                dt.Rows[0]["VASCULAR_ACCESS_PENDING"] = chkDGPGPending.Checked ? "1" : "0";
             if (dt.Columns.Contains("VASCULAR_ACCESS_PENDING_DATE"))
                 dt.Rows[0]["VASCULAR_ACCESS_PENDING_DATE"] = dtDGPGPendingDate.EditValue;
 
@@ -1887,7 +1887,7 @@ namespace Hemo.Client.UI.Hemodialysis
                     dt.Rows[0]["VASCULAR_ACCESS_BLOOD_INFECT"] = rdoVASCULAR_ACCESS_BLOOD_INFECT.EditValue;
 
                 if (dt.Columns.Contains("VASCULAR_ACCESS_PENDING"))
-                    dt.Rows[0]["VASCULAR_ACCESS_PENDING"] = chkDGPGPending.Checked;
+                    dt.Rows[0]["VASCULAR_ACCESS_PENDING"] = chkDGPGPending.Checked ? "1" : "0";
                 if (dt.Columns.Contains("VASCULAR_ACCESS_PENDING_DATE"))
                     dt.Rows[0]["VASCULAR_ACCESS_PENDING_DATE"] = dtDGPGPendingDate.EditValue;
 
