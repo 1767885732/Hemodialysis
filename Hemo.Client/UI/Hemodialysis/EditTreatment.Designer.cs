@@ -168,6 +168,9 @@
             this.labelControl63 = new DevExpress.XtraEditors.LabelControl();
             this.rdoVASCULAR_ACCESS_BLOOD = new DevExpress.XtraEditors.RadioGroup();
             this.labelControl84 = new DevExpress.XtraEditors.LabelControl();
+            this.chkVASCULAR_ACCESS_PENDING = new DevExpress.XtraEditors.CheckEdit();
+            this.lblVASCULAR_ACCESS_PENDING_DATE = new DevExpress.XtraEditors.LabelControl();
+            this.txtVASCULAR_ACCESS_PENDING_DATE = new DevExpress.XtraEditors.DateEdit();
             this.xtraTabPageNLPG = new DevExpress.XtraTab.XtraTabPage();
             this.rdoIN_BASKET_NOISE = new DevExpress.XtraEditors.RadioGroup();
             this.rdoIN_BASKET_TREMOR = new DevExpress.XtraEditors.RadioGroup();
@@ -507,6 +510,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.rdoVASCULAR_ACCESS_THROMBUS.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.rdoVASCULAR_ACCESS_SWELLING.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.rdoVASCULAR_ACCESS_BLOOD.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chkVASCULAR_ACCESS_PENDING.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtVASCULAR_ACCESS_PENDING_DATE.Properties.CalendarTimeProperties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtVASCULAR_ACCESS_PENDING_DATE.Properties)).BeginInit();
             this.xtraTabPageNLPG.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.rdoIN_BASKET_NOISE.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.rdoIN_BASKET_TREMOR.Properties)).BeginInit();
@@ -2562,6 +2568,9 @@
             // 
             // xtraTabPageDGPG
             // 
+            this.xtraTabPageDGPG.Controls.Add(this.chkVASCULAR_ACCESS_PENDING);
+            this.xtraTabPageDGPG.Controls.Add(this.lblVASCULAR_ACCESS_PENDING_DATE);
+            this.xtraTabPageDGPG.Controls.Add(this.txtVASCULAR_ACCESS_PENDING_DATE);
             this.xtraTabPageDGPG.Controls.Add(this.rdoVASCULAR_ACCESS_FIRM);
             this.xtraTabPageDGPG.Controls.Add(this.rdoVASCULAR_ACCESS_BLOOD_INFECT);
             this.xtraTabPageDGPG.Controls.Add(this.btnClear);
@@ -2781,6 +2790,48 @@
             this.labelControl84.Size = new System.Drawing.Size(168, 31);
             this.labelControl84.TabIndex = 536;
             this.labelControl84.Text = "穿刺点局部红肿";
+            // 
+            // chkVASCULAR_ACCESS_PENDING
+            // 
+            this.chkVASCULAR_ACCESS_PENDING.Location = new System.Drawing.Point(1430, 86);
+            this.chkVASCULAR_ACCESS_PENDING.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
+            this.chkVASCULAR_ACCESS_PENDING.Name = "chkVASCULAR_ACCESS_PENDING";
+            this.chkVASCULAR_ACCESS_PENDING.Properties.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.chkVASCULAR_ACCESS_PENDING.Properties.Appearance.Options.UseFont = true;
+            this.chkVASCULAR_ACCESS_PENDING.Properties.Caption = "待定";
+            this.chkVASCULAR_ACCESS_PENDING.Size = new System.Drawing.Size(60, 30);
+            this.chkVASCULAR_ACCESS_PENDING.TabIndex = 680;
+            this.chkVASCULAR_ACCESS_PENDING.CheckedChanged += new System.EventHandler(this.chkVASCULAR_ACCESS_PENDING_CheckedChanged);
+            // 
+            // lblVASCULAR_ACCESS_PENDING_DATE
+            // 
+            this.lblVASCULAR_ACCESS_PENDING_DATE.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.lblVASCULAR_ACCESS_PENDING_DATE.Location = new System.Drawing.Point(1510, 89);
+            this.lblVASCULAR_ACCESS_PENDING_DATE.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
+            this.lblVASCULAR_ACCESS_PENDING_DATE.Name = "lblVASCULAR_ACCESS_PENDING_DATE";
+            this.lblVASCULAR_ACCESS_PENDING_DATE.Size = new System.Drawing.Size(80, 31);
+            this.lblVASCULAR_ACCESS_PENDING_DATE.TabIndex = 681;
+            this.lblVASCULAR_ACCESS_PENDING_DATE.Text = "待定日期";
+            // 
+            // txtVASCULAR_ACCESS_PENDING_DATE
+            // 
+            this.txtVASCULAR_ACCESS_PENDING_DATE.EditValue = null;
+            this.txtVASCULAR_ACCESS_PENDING_DATE.Enabled = false;
+            this.txtVASCULAR_ACCESS_PENDING_DATE.EnterMoveNextControl = true;
+            this.txtVASCULAR_ACCESS_PENDING_DATE.Location = new System.Drawing.Point(1595, 82);
+            this.txtVASCULAR_ACCESS_PENDING_DATE.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
+            this.txtVASCULAR_ACCESS_PENDING_DATE.Name = "txtVASCULAR_ACCESS_PENDING_DATE";
+            this.txtVASCULAR_ACCESS_PENDING_DATE.Properties.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.txtVASCULAR_ACCESS_PENDING_DATE.Properties.Appearance.ForeColor = System.Drawing.Color.Blue;
+            this.txtVASCULAR_ACCESS_PENDING_DATE.Properties.Appearance.Options.UseFont = true;
+            this.txtVASCULAR_ACCESS_PENDING_DATE.Properties.Appearance.Options.UseForeColor = true;
+            this.txtVASCULAR_ACCESS_PENDING_DATE.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.txtVASCULAR_ACCESS_PENDING_DATE.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton()});
+            this.txtVASCULAR_ACCESS_PENDING_DATE.Properties.LookAndFeel.SkinName = "ExtendBlue";
+            this.txtVASCULAR_ACCESS_PENDING_DATE.Size = new System.Drawing.Size(150, 38);
+            this.txtVASCULAR_ACCESS_PENDING_DATE.TabIndex = 682;
             // 
             // xtraTabPageNLPG
             // 
@@ -6412,6 +6463,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.rdoVASCULAR_ACCESS_THROMBUS.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.rdoVASCULAR_ACCESS_SWELLING.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.rdoVASCULAR_ACCESS_BLOOD.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chkVASCULAR_ACCESS_PENDING.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtVASCULAR_ACCESS_PENDING_DATE.Properties.CalendarTimeProperties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtVASCULAR_ACCESS_PENDING_DATE.Properties)).EndInit();
             this.xtraTabPageNLPG.ResumeLayout(false);
             this.xtraTabPageNLPG.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.rdoIN_BASKET_NOISE.Properties)).EndInit();
@@ -6706,6 +6760,9 @@
         private DevExpress.XtraEditors.RadioGroup rdoVASCULAR_ACCESS_FIRM;
         private DevExpress.XtraEditors.LabelControl labelControl86;
         private DevExpress.XtraEditors.RadioGroup rdoVASCULAR_ACCESS_BLOOD;
+        private DevExpress.XtraEditors.CheckEdit chkVASCULAR_ACCESS_PENDING;
+        private DevExpress.XtraEditors.LabelControl lblVASCULAR_ACCESS_PENDING_DATE;
+        private DevExpress.XtraEditors.DateEdit txtVASCULAR_ACCESS_PENDING_DATE;
         private DevExpress.XtraEditors.LabelControl labelControl84;
         private DevExpress.XtraEditors.LabelControl labelControl63;
         private DevExpress.XtraEditors.LabelControl labelControl87;
