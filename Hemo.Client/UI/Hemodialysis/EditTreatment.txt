@@ -1,16 +1,16 @@
 /*----------------------------------------------------------------
-// Copyright (C) 2013 脣脮脰脻脪陆脕脝驴脝录录脫脨脧脼鹿芦脣戮
-// 脙猫脢枚拢潞脰脦脕脝碌楼麓掳脤氓 
-// 麓麓陆篓脢卤录盲拢潞2013-04-02
-// 麓麓陆篓脮脽拢潞脕玫鲁卢
+// Copyright (C) 2013 苏州医疗科技有限公司
+// 描述：治疗单窗体 
+// 创建时间：2013-04-02
+// 创建者：刘超
 //  
-// 脨脼赂脛脢卤录盲拢潞2017-09-26
-// 脨脼赂脛脠脣拢潞脗脌脰戮脟驴
-// 脨脼赂脛脙猫脢枚拢潞脤铆录脫CRRT禄录脮脽脰脦脕脝碌楼碌脛脪碌脦帽脗脽录颅
+// 修改时间：2017-09-26
+// 修改人：吕志强
+// 修改描述：添加CRRT患者治疗单的业务逻辑
 //
-// 脨脼赂脛脢卤录盲拢潞
-// 脨脼赂脛脠脣拢潞
-// 脨脼赂脛脙猫脢枚拢潞
+// 修改时间：
+// 修改人：
+// 修改描述：
 ----------------------------------------------------------------*/
 using System;
 using System.Collections.Generic;
@@ -41,18 +41,18 @@ namespace Hemo.Client.UI.Hemodialysis
 {
     public partial class EditTreatment : ViewBase
     {
-        #region 脣陆脫脨鲁脡脭卤
+        #region 私有成员
         private bool isLoadDate = false;
         /// <summary>
-        /// 脰脦脕脝碌楼脰梅卤铆 
+        /// 治疗单主表 
         /// </summary>
         private HemodialysisModel.MED_CURE_MAINDataTable _CureMainDatatable;
         /// <summary>
-        /// 脥赂脦枚虏脦脢媒录脟脗录卤铆   
+        /// 透析参数记录表   
         /// </summary>
         private HemodialysisModel.MED_HEMODIALYSIS_PARAMETERSDataTable _HemoialysisParamterDatatable;
         /// <summary>
-        /// 赂酶脪漏卤铆
+        /// 给药表
         /// </summary>
         private HemodialysisModel.MED_CURE_DRUGDataTable _CureDrugDatatable;
         private IHemodialysis objHemodialysisService = ServiceManager.Instance.HemodialysisService;
@@ -66,16 +66,16 @@ namespace Hemo.Client.UI.Hemodialysis
         private IOperationLog _operationLogService = ServiceManager.Instance.OperationLogService;
 
         /// <summary>
-        /// 虏垄路垄脰垄卤铆
+        /// 并发症表
         /// </summary>
         private HemoModel.MED_COMPLICATION_OTHERDataTable complicatinTable;
         private int tabIndex = 0;
         public bool IsCahLoad = false;
-        private bool isAdd = false;//脢脟路帽脦陋脨脗脭枚脰脦脕脝碌楼
+        private bool isAdd = false;//是否为新增治疗单
         private bool isAddDrugParmars = false;
         private bool isAddHemoParmars = false;
         /// <summary>
-        /// 脪鲁脙忙录脫脭脴脥锚鲁脡潞贸麓脫UI驴脴录镁脜脛碌脛脢媒戮脻驴矛脮脮拢篓脫脙脫脷脡贸录脝脠脮脰戮虏卯脪矛露脭卤脠碌脛禄霉脳录脰碌拢漏
+        /// 页面加载完成后从UI控件拍的数据快照（用于审计日志差异对比的基准值）
         /// </summary>
         private Dictionary<string, string> _initialDataSnapshot = null;
         private bool isReplenishTreat = false;
@@ -88,7 +88,7 @@ namespace Hemo.Client.UI.Hemodialysis
         private int loginType;
         private string banci = string.Empty;
         /// <summary>
-        /// 脢脟路帽脦陋录脫脥赂脪陆脰枚
+        /// 是否为加透医嘱
         /// </summary>
         private bool _isOverOrder = false;
         public bool IsOverOrder
@@ -98,10 +98,10 @@ namespace Hemo.Client.UI.Hemodialysis
         }
         #endregion
 
-        #region 脡贸录脝脠脮脰戮赂篓脰煤路陆路篓
+        #region 审计日志辅助方法
 
         /// <summary>
-        /// 禄帽脠隆碌卤脟掳碌脟脗录脫脙禄搂ID
+        /// 获取当前登录用户ID
         /// </summary>
         private string GetCurrentUserId()
         {
@@ -115,7 +115,7 @@ namespace Hemo.Client.UI.Hemodialysis
         }
 
         /// <summary>
-        /// 禄帽脠隆碌卤脟掳碌脟脗录脫脙禄搂脨脮脙没
+        /// 获取当前登录用户姓名
         /// </summary>
         private string GetCurrentUserName()
         {
@@ -129,7 +129,7 @@ namespace Hemo.Client.UI.Hemodialysis
         }
 
         /// <summary>
-        /// 禄帽脠隆碌卤脟掳碌脟脗录脫脙禄搂碌脟脗录脙没
+        /// 获取当前登录用户登录名
         /// </summary>
         private string GetCurrentLoginName()
         {
@@ -143,7 +143,7 @@ namespace Hemo.Client.UI.Hemodialysis
         }
 
         /// <summary>
-        /// 禄帽脠隆碌卤脟掳脰脦脕脝碌楼ID
+        /// 获取当前治疗单ID
         /// </summary>
         private string GetCurrentCureId()
         {
@@ -151,7 +151,7 @@ namespace Hemo.Client.UI.Hemodialysis
         }
 
         /// <summary>
-        /// 禄帽脠隆碌卤脟掳脩陋脥赂卤脿潞脜
+        /// 获取当前血透编号
         /// </summary>
         private string GetCurrentHemodialysisId()
         {
@@ -159,13 +159,13 @@ namespace Hemo.Client.UI.Hemodialysis
         }
 
         /// <summary>
-        /// 录脟脗录虏脵脳梅脡贸录脝脠脮脰戮拢篓卤盲禄炉脧锚脟茅脥鲁脪禄录脟脗录碌陆 CHANGE_DETAIL 脳脰露脦拢漏
+        /// 记录操作审计日志（变化详情统一记录到 CHANGE_DETAIL 字段）
         /// </summary>
-        /// <param name="operationType">虏脵脳梅脌脿脨脥拢篓SAVE/DELETE/UPDATE碌脠拢漏</param>
-        /// <param name="elementName">脭陋脣脴脙没鲁脝拢篓脠莽拢潞脥赂脦枚虏脦脢媒隆垄赂酶脪漏脨脜脧垄隆垄脩陋鹿脺脥篓脗路碌脠拢漏</param>
-        /// <param name="elementId">脭陋脣脴ID</param>
-        /// <param name="changeDetail">卤盲赂眉脧锚脟茅拢篓脠莽拢潞脥赂脟掳脤氓脰脴: 65 隆煤 68; 脢碌录脢脥脩脣庐: 2 隆煤 3拢漏</param>
-        /// <param name="remark">卤赂脳垄</param>
+        /// <param name="operationType">操作类型（SAVE/DELETE/UPDATE等）</param>
+        /// <param name="elementName">元素名称（如：透析参数、给药信息、血管通路等）</param>
+        /// <param name="elementId">元素ID</param>
+        /// <param name="changeDetail">变更详情（如：透前体重: 65 → 68; 实际脱水: 2 → 3）</param>
+        /// <param name="remark">备注</param>
         private void WriteOperationLog(string operationType, string elementName, string elementId,
             string changeDetail, string remark)
         {
@@ -187,13 +187,13 @@ namespace Hemo.Client.UI.Hemodialysis
             }
             catch (Exception ex)
             {
-                // 脡贸录脝脠脮脰戮脨麓脠毛脢搂掳脺虏禄脫娄脫掳脧矛脰梅脪碌脦帽脕梅鲁脤
+                // 审计日志写入失败不应影响主业务流程
                 Hemo.Utilities.Logger.WriteErrorLog(ex);
             }
         }
 
         /// <summary>
-        /// 陆芦 DataTable 碌脛脨脨脢媒戮脻脨貌脕脨禄炉脦陋脳脰路没麓庐拢篓脫脙脫脷录脟脗录卤盲赂眉脟掳潞贸碌脛脰碌拢漏
+        /// 将 DataTable 的行数据序列化为字符串（用于记录变更前后的值）
         /// </summary>
         private string SerializeDataRowToString(DataRow row)
         {
@@ -208,124 +208,122 @@ namespace Hemo.Client.UI.Hemodialysis
         }
 
         /// <summary>
-        /// 脢媒戮脻驴芒脳脰露脦脙没 隆煤 脰脨脦脛卤锚脟漏脫鲁脡盲脳脰碌盲
+        /// 数据库字段名 → 中文标签映射字典
         /// </summary>
         private static readonly Dictionary<string, string> FieldLabelMap = new Dictionary<string, string>
         {
-            // 脥赂脟掳脢媒戮脻
-            { "BEFORE_DRY_WEIGHT", "脥赂脟掳脤氓脰脴" },
-            { "BEFORE_SYSTOLIC_PRESSURE", "脥赂脟掳脢脮脣玫脩鹿" },
-            { "BEFORE_DIASTOLIC_PRESSURE", "脥赂脟掳脢忙脮脜脩鹿" },
-            { "BEFORE_BP", "脥赂脟掳脗枚虏芦" },
-            { "BEFORE_TEMPERATURE", "脥赂脟掳脤氓脦脗" },
-            { "BR", "脥赂脟掳潞么脦眉" },
-            // 脥赂潞贸脢媒戮脻
-            { "AFTER_DRY_WEIGHT", "脥赂潞贸脤氓脰脴" },
-            { "AFTER_SYSTOLIC_PRESSURE", "脥赂潞贸脢脮脣玫脩鹿" },
-            { "AFTER_DIASTOLIC_PRESSURE", "脥赂潞贸脢忙脮脜脩鹿" },
-            { "AFTER_BP", "脥赂潞贸脗枚虏芦" },
-            { "AFTER_TEMPERATURE", "脥赂潞贸脤氓脦脗" },
-            { "AFTERBR", "脥赂潞贸潞么脦眉" },
-            // 禄霉卤戮脰脦脕脝虏脦脢媒
-            { "DRY_WEIGHT", "赂脡脤氓脰脴" },
-            { "DIALYSATE_FLOW", "脥赂脦枚脪潞脕梅脕驴" },
-            { "FREQUENCY_HOURS", "脰脦脕脝脢卤录盲(脢卤)" },
-            { "FREQUENCY_MINUTE", "脰脦脕脝脢卤录盲(路脰)" },
-            { "CLEAN_UP_TIMES", "脥赂脦枚麓脦脢媒" },
-            { "UFR", "脭陇录脝脥脩脣庐" },
-            { "DRY_WATER_VALUE", "脢碌录脢脥脩脣庐" },
-            // 脗脣鹿媒/脰脙禄禄脧脿鹿脴
-            { "FILTRATION_DISPLACEMENT_LIQUID", "脥赂脦枚脰脨脰脙禄禄脪潞脳脺脕驴" },
-            { "FILTRATION_PERCOLATE", "脗脣鹿媒脪潞脳脺脕驴" },
-            { "DISPLACEMENT_LIQUID", "脥赂脦枚脰脨脩陋陆卢脳脺脕驴" },
-            { "PERCOLATE", "脗脣鹿媒脩陋陆卢脳脺脕驴" },
-            // 驴鹿脛媒脧脿鹿脴
-            { "FIRST_HEPARIN", "脢脳脕驴" },
-            { "DOSAGE_SUSTENTATIVA", "脳路录脫" },
-            { "HEPARIN_SPECIES", "驴鹿脛媒路陆脢陆" },
-            { "FIRST_DRUG_UNIT", "脢脳脕驴碌楼脦禄" },
-            // 戮禄禄炉/脥篓脗路/脡猫卤赂
-            { "PURIFICATION_MODE", "戮禄禄炉路陆脢陆" },
-            { "VASCULAR_ACCESS_ID", "脩陋鹿脺脥篓脗路" },
-            { "MACHINE_TYPE", "脥赂脦枚脝梅" },
-            { "PURIFIER_NAME", "脥赂脦枚脛陇" },
-            { "PURIFIER_M2", "脛陇脙忙禄媒" },
-            { "MACHINE_ID", "脥赂脦枚禄煤" },
-            // 脝盲脣没虏脦脢媒
-            { "LastWeight", "脡脧麓脦脥赂潞贸脤氓脰脴" },
-            { "DRY_WEIGHT_TAG", "脪脗脦茂脗脰脪脦脰脴" },
-            { "IN_BED", "脦脭麓虏" },
-            // 脠脣脭卤
-            { "PRIMARY_DOCTOR", "脭冒脠脦脪陆脡煤" },
-            { "PRIMARY_NURSE", "脭冒脠脦禄陇脢驴" },
-            { "PUNCTURE_NURSE", "麓漏麓脤禄陇脢驴" },
-            { "CHECK_NURSE", "潞脣露脭禄陇脢驴" },
-            // 脦脛卤戮录脟脗录
-            { "DOCTOR_ADVICE", "脪陆脡煤录脟脗录录掳脪陆脰枚" },
-            { "SPECIAL_MATTER", "脤脴脢芒脢脗脧卯" },
-            { "SUMMARY", "脥赂脦枚脨隆陆谩" },
-            { "SUMMARY2", "脥赂脦枚脨隆陆谩2" },
-            { "SUMMARY3", "脥赂脦枚脨隆陆谩3" },
-            // 脝脌鹿脌
-            { "SUBJECTIVE_COMFORT", "脥赂脦枚脪潞脝路脜脝" },
-            { "VEIN", "脩陋鹿脺脥篓脗路脌脿脨脥" },
-            // 鲁卢脗脣脧脿鹿脴
-            { "UF", "鲁卢脗脣脕驴" },
-            { "UFR2", "鲁卢脗脣脗脢" },
-            { "SUM_UF", "脳脺鲁卢脗脣脕驴" },
-            { "DISPLACEMENT_FLOW", "脰脙禄禄脪潞脕梅脣脵" },
-            // 碌录鹿脺脝脌鹿脌
-            { "VASCULAR_ACCESS_FIRM", "露篓脌脦鹿脤露篓" },
-            { "VASCULAR_ACCESS_GLIDE", "禄卢脥脩" },
-            { "VASCULAR_ACCESS_SWELLING", "麓漏麓脤碌茫戮脰虏驴潞矛脰脳" },
-            { "VASCULAR_ACCESS_ERRHYISIS", "脡酶脩陋" },
-            { "VASCULAR_ACCESS_THROMBUS", "脩陋脣篓" },
-            { "VASCULAR_ACCESS_BLOOD", "脩陋脕梅脟茅驴枚" },
-            { "VASCULAR_ACCESS_BLOOD_INFECT", "碌录鹿脺脧脿鹿脴脩陋脕梅赂脨脠戮" },
-            { "VASCULAR_ACCESS_PENDING", "脧脗麓脦脝脌鹿脌麓媒露篓" },
-            { "VASCULAR_ACCESS_PENDING_DATE", "麓媒露篓脠脮脝脷" },
-            { "IN_BASKET_PLASTER_ALLERGY","脡酶脪潞" },
-            //{ "IN_BASKET_CLEAN","脟氓陆脿" },
-            { "IN_BASKET_RED_HOT","潞矛脰脳" },
-            { "IN_BASKET_ECCHYMOSIS","脛脷冒眉脝脌鹿脌-脡酶脪潞" },
-            { "IN_BASKET_TREMOR","脮冒虏眉" },
-            { "IN_BASKET_NOISE","脩陋鹿脺脭脫脪么" },
-            { "IN_BASKET_VASCULAR_ELASTICITY","脩陋脣篓" },
-            // CRRT脧脿鹿脴
-            { "CRRT_CLASS", "CRRT脛拢脢陆" },
-            // 赂脨脠戮录矛虏茅
-            { "INFECTIOUS_CHECK_RESULT", "赂脨脠戮录矛虏茅陆谩鹿没" },
+            // 透前数据
+            { "BEFORE_DRY_WEIGHT", "透前体重" },
+            { "BEFORE_SYSTOLIC_PRESSURE", "透前收缩压" },
+            { "BEFORE_DIASTOLIC_PRESSURE", "透前舒张压" },
+            { "BEFORE_BP", "透前脉搏" },
+            { "BEFORE_TEMPERATURE", "透前体温" },
+            { "BR", "透前呼吸" },
+            // 透后数据
+            { "AFTER_DRY_WEIGHT", "透后体重" },
+            { "AFTER_SYSTOLIC_PRESSURE", "透后收缩压" },
+            { "AFTER_DIASTOLIC_PRESSURE", "透后舒张压" },
+            { "AFTER_BP", "透后脉搏" },
+            { "AFTER_TEMPERATURE", "透后体温" },
+            { "AFTERBR", "透后呼吸" },
+            // 基本治疗参数
+            { "DRY_WEIGHT", "干体重" },
+            { "DIALYSATE_FLOW", "透析液流量" },
+            { "FREQUENCY_HOURS", "治疗时间(时)" },
+            { "FREQUENCY_MINUTE", "治疗时间(分)" },
+            { "CLEAN_UP_TIMES", "透析次数" },
+            { "UFR", "预计脱水" },
+            { "DRY_WATER_VALUE", "实际脱水" },
+            // 滤过/置换相关
+            { "FILTRATION_DISPLACEMENT_LIQUID", "透析中置换液总量" },
+            { "FILTRATION_PERCOLATE", "滤过液总量" },
+            { "DISPLACEMENT_LIQUID", "透析中血浆总量" },
+            { "PERCOLATE", "滤过血浆总量" },
+            // 抗凝相关
+            { "FIRST_HEPARIN", "首量" },
+            { "DOSAGE_SUSTENTATIVA", "追加" },
+            { "HEPARIN_SPECIES", "抗凝方式" },
+            { "FIRST_DRUG_UNIT", "首量单位" },
+            // 净化/通路/设备
+            { "PURIFICATION_MODE", "净化方式" },
+            { "VASCULAR_ACCESS_ID", "血管通路" },
+            { "MACHINE_TYPE", "透析器" },
+            { "PURIFIER_NAME", "透析膜" },
+            { "PURIFIER_M2", "膜面积" },
+            { "MACHINE_ID", "透析机" },
+            // 其他参数
+            { "LastWeight", "上次透后体重" },
+            { "DRY_WEIGHT_TAG", "衣物轮椅重" },
+            { "IN_BED", "卧床" },
+            // 人员
+            { "PRIMARY_DOCTOR", "责任医生" },
+            { "PRIMARY_NURSE", "责任护士" },
+            { "PUNCTURE_NURSE", "穿刺护士" },
+            { "CHECK_NURSE", "核对护士" },
+            // 文本记录
+            { "DOCTOR_ADVICE", "医生记录及医嘱" },
+            { "SPECIAL_MATTER", "特殊事项" },
+            { "SUMMARY", "透析小结" },
+            { "SUMMARY2", "透析小结2" },
+            { "SUMMARY3", "透析小结3" },
+            // 评估
+            { "SUBJECTIVE_COMFORT", "透析液品牌" },
+            { "VEIN", "血管通路类型" },
+            // 超滤相关
+            { "UF", "超滤量" },
+            { "UFR2", "超滤率" },
+            { "SUM_UF", "总超滤量" },
+            { "DISPLACEMENT_FLOW", "置换液流速" },
+            // 导管评估
+            { "VASCULAR_ACCESS_FIRM", "定牢固定" },
+            { "VASCULAR_ACCESS_GLIDE", "滑脱" },
+            { "VASCULAR_ACCESS_SWELLING", "穿刺点局部红肿" },
+            { "VASCULAR_ACCESS_ERRHYISIS", "渗血" },
+            { "VASCULAR_ACCESS_THROMBUS", "血栓" },
+            { "VASCULAR_ACCESS_BLOOD", "血流情况" },
+            { "VASCULAR_ACCESS_BLOOD_INFECT", "导管相关血流感染" },
+            { "IN_BASKET_PLASTER_ALLERGY","渗液" },
+            //{ "IN_BASKET_CLEAN","清洁" },
+            { "IN_BASKET_RED_HOT","红肿" },
+            { "IN_BASKET_ECCHYMOSIS","内瘘评估-渗液" },
+            { "IN_BASKET_TREMOR","震颤" },
+            { "IN_BASKET_NOISE","血管杂音" },
+            { "IN_BASKET_VASCULAR_ELASTICITY","血栓" },
+            // CRRT相关
+            { "CRRT_CLASS", "CRRT模式" },
+            // 感染检查
+            { "INFECTIOUS_CHECK_RESULT", "感染检查结果" },
 
-            // 脥赂脦枚虏脦脢媒录脟脗录脳脰露脦
-            {"CREATE_DATE","录脟脗录脢卤录盲" },
-            { "VENOUS_PRESSURE", "戮虏脗枚脩鹿" },
-            { "TRANSMEMBRANE_PRESSURE", "驴莽脛陇脩鹿" },
-            { "CONDUCTIVITY", "碌莽碌录露脠" },
-            { "BLOOD_FLOW", "脩陋脕梅脕驴" },
-            { "DIALYSATE_RATE", "脥赂脦枚脪潞脕梅脕驴" },
-            { "URF", "鲁卢脗脣脗脢" },
-            { "ANTICOAGULANT", "驴鹿脛媒录脕" },
-            { "ANTICOAGULANTUNIT", "驴鹿脛媒录脕碌楼脦禄" },
-            { "TEMPERATURE", "脤氓脦脗" },
-            { "BREATH", "潞么脦眉" },
-            { "SODIUM_ION", "脛脝脌毛脳脫" },
-            { "CARDIOTACH", "脨脛脗脢" },
-            { "CURE_MODE", "脰脦脕脝脛拢脢陆" },
-            { "CLINICAL_MANIFESTATION", "脕脵麓虏卤铆脧脰" },
-            { "SYSTOLIC_PRESSURE", "脢脮脣玫脩鹿" },
-            { "DIASTOLIC_PRESSURE", "脢忙脮脜脩鹿" },
-            { "ARTERY_PRESSURE", "露炉脗枚脩鹿" },
-            { "TempDrug", "脕脵脢卤脫脙脪漏" },
-            { "DISPLACEMENT", "脰脙禄禄脕驴" },
-            { "NURSE_ID", "录脟脗录禄陇脢驴" },
-            { "EXTENDED_FIELD_3", "脰脦脕脝虏脦脢媒脌脿脨脥" },
+            // 透析参数记录字段
+            {"CREATE_DATE","记录时间" },
+            { "VENOUS_PRESSURE", "静脉压" },
+            { "TRANSMEMBRANE_PRESSURE", "跨膜压" },
+            { "CONDUCTIVITY", "电导度" },
+            { "BLOOD_FLOW", "血流量" },
+            { "DIALYSATE_RATE", "透析液流量" },
+            { "URF", "超滤率" },
+            { "ANTICOAGULANT", "抗凝剂" },
+            { "ANTICOAGULANTUNIT", "抗凝剂单位" },
+            { "TEMPERATURE", "体温" },
+            { "BREATH", "呼吸" },
+            { "SODIUM_ION", "钠离子" },
+            { "CARDIOTACH", "心率" },
+            { "CURE_MODE", "治疗模式" },
+            { "CLINICAL_MANIFESTATION", "临床表现" },
+            { "SYSTOLIC_PRESSURE", "收缩压" },
+            { "DIASTOLIC_PRESSURE", "舒张压" },
+            { "ARTERY_PRESSURE", "动脉压" },
+            { "TempDrug", "临时用药" },
+            { "DISPLACEMENT", "置换量" },
+            { "NURSE_ID", "记录护士" },
+            { "EXTENDED_FIELD_3", "治疗参数类型" },
 
-            {"DRUG_NURSE_ID","脰麓脨脨禄陇脢驴" },
-            {"NURSE_ID","录脟脗录禄陇脢驴" },
+            {"DRUG_NURSE_ID","执行护士" },
+            {"NURSE_ID","记录护士" },
         };
 
         /// <summary>
-        /// 禄帽脠隆脳脰露脦碌脛脰脨脦脛脙没鲁脝拢卢脦麓脮脪碌陆脭貌路碌禄脴脭颅脢录脳脰露脦脙没
+        /// 获取字段的中文名称，未找到则返回原始字段名
         /// </summary>
         private string GetFieldLabel(string fieldName)
         {
@@ -335,7 +333,7 @@ namespace Hemo.Client.UI.Hemodialysis
         }
 
         /// <summary>
-        /// 陆芦 DataRow 碌脛脕脨脰碌脡卯驴陆卤麓碌陆脳脰碌盲脰脨拢篓脫脙脫脷潞贸脨酶虏卯脪矛露脭卤脠拢漏
+        /// 将 DataRow 的列值深拷贝到字典中（用于后续差异对比）
         /// </summary>
         private Dictionary<string, string> CloneRowToDict(DataRow row)
         {
@@ -350,8 +348,8 @@ namespace Hemo.Client.UI.Hemodialysis
         }
 
         /// <summary>
-        /// 露脭卤脠戮脡脰碌脳脰碌盲潞脥脨脗脨脨脢媒戮脻拢卢路碌禄脴路垄脡煤卤盲禄炉碌脛脳脰露脦脕脨卤铆拢篓脢鹿脫脙脰脨脦脛卤锚脟漏拢漏
-        /// 赂帽脢陆拢潞脰脨脦脛卤锚脟漏: 戮脡脰碌 隆煤 脨脗脰碌
+        /// 对比旧值字典和新行数据，返回发生变化的字段列表（使用中文标签）
+        /// 格式：中文标签: 旧值 → 新值
         /// </summary>
         private string CompareDictWithRow(Dictionary<string, string> oldDict, DataRow newRow)
         {
@@ -365,18 +363,18 @@ namespace Hemo.Client.UI.Hemodialysis
                 {
                     if (sb.Length > 0) sb.Append("; ");
                     string label = GetFieldLabel(kv.Key);
-                    // 陆芦 GUID 赂帽脢陆碌脛脰碌脳陋禄禄脦陋驴脡露脕脙没鲁脝
+                    // 将 GUID 格式的值转换为可读名称
                     string oldDisplay = GetDisplayText(kv.Key, kv.Value);
                     string newDisplay = GetDisplayText(kv.Key, newVal);
-                    sb.AppendFormat("{0}: {1} 隆煤 {2}", label, oldDisplay, newDisplay);
+                    sb.AppendFormat("{0}: {1} → {2}", label, oldDisplay, newDisplay);
                 }
             }
             return sb.ToString();
         }
 
         /// <summary>
-        /// 鹿鹿陆篓脨脗脭枚录脟脗录碌脛脳脰露脦脧锚脟茅拢篓脫脙脫脷脡贸录脝脠脮脰戮拢漏
-        /// 赂帽脢陆拢潞脰脨脦脛卤锚脟漏: 脰碌; 脰脨脦脛卤锚脟漏: 脰碌
+        /// 构建新增记录的字段详情（用于审计日志）
+        /// 格式：中文标签: 值; 中文标签: 值
         /// </summary>
         private string BuildNewRowDetail(DataRow row)
         {
@@ -385,7 +383,7 @@ namespace Hemo.Client.UI.Hemodialysis
             foreach (DataColumn col in row.Table.Columns)
             {
                 string fieldName = col.ColumnName;
-                // 脤酶鹿媒脧碌脥鲁脳脰露脦潞脥驴脮脰碌脳脰露脦
+                // 跳过系统字段和空值字段
                 if (IsSystemField(fieldName)) continue;
                 string val = row[col] == DBNull.Value ? "" : row[col].ToString().Trim();
                 if (string.IsNullOrEmpty(val)) continue;
@@ -398,7 +396,7 @@ namespace Hemo.Client.UI.Hemodialysis
         }
 
         /// <summary>
-        /// 脜脨露脧脢脟路帽脦陋脧碌脥鲁脳脰露脦拢篓虏禄脨猫脪陋录脟脗录碌陆脡贸录脝脠脮脰戮碌脛脳脰露脦拢漏
+        /// 判断是否为系统字段（不需要记录到审计日志的字段）
         /// </summary>
         private bool IsSystemField(string fieldName)
         {
@@ -411,12 +409,12 @@ namespace Hemo.Client.UI.Hemodialysis
         }
 
         /// <summary>
-        /// 陆芦 GUID 赂帽脢陆碌脛脰碌脳陋禄禄脦陋驴脡露脕脙没鲁脝拢篓脥篓鹿媒露脭脫娄碌脛 LookUpEdit 虏茅脮脪拢漏
+        /// 将 GUID 格式的值转换为可读名称（通过对应的 LookUpEdit 查找）
         /// </summary>
         private string GetDisplayText(string fieldName, string value)
         {
             if (string.IsNullOrEmpty(value)) return "";
-            // 路脟 GUID 赂帽脢陆脰卤陆脫路碌禄脴
+            // 非 GUID 格式直接返回
             if (!IsGuid(value)) return value;
 
             try
@@ -454,7 +452,7 @@ namespace Hemo.Client.UI.Hemodialysis
         }
 
         /// <summary>
-        /// 麓脫 LookUpEdit 脰脨赂霉戮脻 ValueMember 虏茅脮脪 DisplayMember
+        /// 从 LookUpEdit 中根据 ValueMember 查找 DisplayMember
         /// </summary>
         private string GetLookUpEditDisplayText(DevExpress.XtraEditors.LookUpEdit lookup, string value)
         {
@@ -485,7 +483,7 @@ namespace Hemo.Client.UI.Hemodialysis
 
         #endregion
 
-        #region 脢么脨脭
+        #region 属性
 
         public PatientScheduleModel.MED_PATIENT_SCHEDULERow PatientScheduleRow
         {
@@ -516,7 +514,7 @@ namespace Hemo.Client.UI.Hemodialysis
                 if (isReplenishTreat)
                 {
                     this.panel_Top.Visible = true;
-                    this.Text = "脩陋脥赂脰脦脕脝录脟脗录碌楼隆戮虏鹿脗录隆驴";
+                    this.Text = "血透治疗记录单【补录】";
                     this.txtRECIPE_ID.Text = "2000000000";
                 }
                 else
@@ -534,7 +532,7 @@ namespace Hemo.Client.UI.Hemodialysis
 
         #endregion
 
-        #region 鹿鹿脭矛潞炉脢媒
+        #region 构造函数
 
         /// <summary>
         /// 
@@ -552,18 +550,18 @@ namespace Hemo.Client.UI.Hemodialysis
             //watch.Stop();
             //var a= watch.Elapsed;
 
-            this.Text = "脥赂脦枚脰脦脕脝";
+            this.Text = "透析治疗";
             ProFunctionCount pfc = new ProFunctionCount();
-            // pfc.SaveFunctionCountFrm(this);   潞脺脰脴脪陋
+            // pfc.SaveFunctionCountFrm(this);   很重要
 
             this.loginType = loginType;
             if (this.loginType != 0)
             {
-                this.btnQJJL.Text = "禄陇脢驴脟脌戮脠录脟脗录";
+                this.btnQJJL.Text = "护士抢救记录";
             }
             string pHemoID = string.Empty;
             this.Data_CureData.EditValue = System.DateTime.Now.ToString("yyyy-MM-dd");
-            //脕玫鲁卢 2018-11-29  脨脼赂麓驴陋脢录脰脦脕脝脢卤脪漏脝路虏禄脣垄脨脗碌脛脦脢脤芒
+            //刘超 2018-11-29  修复开始治疗时药品不刷新的问题
             addHemoId = txtHEMODIALYSIS_ID.Text = pHemodialysisID;
             addPcureId = pCureID;
             tabIndexTemp = pTabIndex;
@@ -577,18 +575,18 @@ namespace Hemo.Client.UI.Hemodialysis
 
         #endregion
 
-        #region 脭脴脠毛脢媒戮脻
+        #region 载入数据
 
         public void LoadInfo(string pHemodialysisID, string pCureID, int pTabIndex, int loginType)
         {
-            this.Text = "脥赂脦枚脰脦脕脝";
+            this.Text = "透析治疗";
             ProFunctionCount pfc = new ProFunctionCount();
-            // pfc.SaveFunctionCountFrm(this);   潞脺脰脴脪陋
+            // pfc.SaveFunctionCountFrm(this);   很重要
 
             this.loginType = loginType;
             if (this.loginType != 0)
             {
-                this.btnQJJL.Text = "禄陇脢驴脟脌戮脠录脟脗录";
+                this.btnQJJL.Text = "护士抢救记录";
             }
             string pHemoID = string.Empty;
             this.Data_CureData.EditValue = System.DateTime.Now.ToString("yyyy-MM-dd");
@@ -601,11 +599,11 @@ namespace Hemo.Client.UI.Hemodialysis
         }
 
         /// <summary>
-        /// 脡猫脰脙脛卢脠脧鲁玫脢录脰碌
+        /// 设置默认初始值
         /// </summary>
         private void setDefaultValue(string pName)
         {
-            if (pName.Contains("碌录鹿脺") || pName.Contains("脰脙鹿脺"))
+            if (pName.Contains("导管") || pName.Contains("置管"))
             {
                 xtraTabControlPG.Visible = true;
                 this.xtraTabControlPG.SelectedTabPage = xtraTabPageDGPG;
@@ -623,7 +621,7 @@ namespace Hemo.Client.UI.Hemodialysis
 
                 //}
             }
-            else if (pName.Contains("脛脷冒眉"))
+            else if (pName.Contains("内瘘"))
             {
                 xtraTabControlPG.Visible = true;
 
@@ -665,10 +663,10 @@ namespace Hemo.Client.UI.Hemodialysis
         }
 
         /// <summary>
-        /// 脭脴脠毛脢媒戮脻 
+        /// 载入数据 
         /// </summary>
-        /// <param name="pHemodialysisID">脩陋脥赂卤脿潞脜</param>
-        /// <param name="pCureID">脰脦脕脝碌楼潞脜</param>
+        /// <param name="pHemodialysisID">血透编号</param>
+        /// <param name="pCureID">治疗单号</param>
         private void loadData(string pHemodialysisID, string pCureID, int pTabIndex)
         {
             if (string.IsNullOrEmpty(pCureID))
@@ -689,10 +687,10 @@ namespace Hemo.Client.UI.Hemodialysis
 
             lupNURSE_ID.EditValue = HemoApplicationContext.Current.CurrentUser.EMP_NO;
             lupCHECK_NURSE.EditValue = HemoApplicationContext.Current.CurrentUser.EMP_NO;
-            //脡猫脰脙脪漏脝路脗录脠毛驴脴录镁脢脟路帽驴脡脫脙脢么脨脭
+            //设置药品录入控件是否可用属性
             setDrugEnabled(false);
             setParamterEnabled(false);
-            //驴脴脰脝脩隆脧卯驴篓脧脭脢戮
+            //控制选项卡显示
             switch (pTabIndex)
             {
                 case 0:
@@ -724,7 +722,7 @@ namespace Hemo.Client.UI.Hemodialysis
                     break;
                 case 5:
                     tabControls.SelectedTabPage = xtraTabPage1;
-                    //录脫脭脴虏垄路垄脰垄脢媒戮脻
+                    //加载并发症数据
                     this.LoadComplication();
                     break;
                 default:
@@ -734,9 +732,9 @@ namespace Hemo.Client.UI.Hemodialysis
         }
 
         /// <summary>
-        /// 路陆路篓脨猫脪陋脫脜禄炉脠媒脮脜卤铆脢媒戮脻潞脧虏垄脦陋脪禄赂枚DATASET
+        /// 方法需要优化三张表数据合并为一个DATASET
         /// </summary>
-        /// <param name="pCureID">脰脦脕脝碌楼卤脿潞脜</param>
+        /// <param name="pCureID">治疗单编号</param>
         private void loadParaneterGrid(string pCureID, string pHemoID)
         {
             this.gridControl1.DataSource = null;
@@ -753,7 +751,7 @@ namespace Hemo.Client.UI.Hemodialysis
                     this.gridControl1.DataSource = dtResult;
                 }
 
-                //脫脨脢媒戮脻脢卤赂眉脨脗脜脜掳脿卤铆脰脨碌脛驴陋脢录脢卤录盲
+                //有数据时更新排班表中的开始时间
                 if (_HemoialysisParamterDatatable.Rows.Count == 1)
                 {
                     var StartTime = _HemoialysisParamterDatatable[0].CREATE_DATE;
@@ -774,7 +772,7 @@ namespace Hemo.Client.UI.Hemodialysis
         private void loadDrugGrid(string pCureID, string pHemoID)
         {
             _CureDrugDatatable = new HemodialysisModel.MED_CURE_DRUGDataTable();
-            //脭脴脠毛赂酶脪漏脨脜脧垄脕脨卤铆
+            //载入给药信息列表
             var drugDtTemp = string.IsNullOrEmpty(txtRECIPE_ID.Text) ? objHemodialysisService.GetValidCureDrugByHemoID(pHemoID, cureDate) : objHemodialysisService.GetValidCureDrugByHemoRecipeID(pHemoID, txtRECIPE_ID.Text);
 
             if (IsOverOrder)
@@ -797,7 +795,7 @@ namespace Hemo.Client.UI.Hemodialysis
         }
 
         /// <summary>
-        /// 赂霉戮脻脢卤录盲禄帽脠隆脨隆脢卤潞脥路脰脰脫碌楼脦禄
+        /// 根据时间获取小时和分钟单位
         /// </summary>
         /// <param name="pHours"></param>
         private void getHourAndMinute(string pHours)
@@ -816,12 +814,12 @@ namespace Hemo.Client.UI.Hemodialysis
         }
 
         /// <summary>
-        /// 赂霉戮脻脩陋脥赂ID拢卢碌脙碌陆脪禄脤玫脫脨脨搂碌脛鲁陇脝脷麓娄路陆脢媒戮脻
+        /// 根据血透ID，得到一条有效的长期处方数据
         /// </summary>
-        /// <param name="pHemodialysisID">脥赂脦枚潞脜</param>
+        /// <param name="pHemodialysisID">透析号</param>
         private void loadRecipeInfo(string pHemodialysisID)
         {
-            //2014-03-05 脕玫鲁卢 脨脼赂脛陆芦麓娄路陆脠脮脝脷脥篓鹿媒麓掳脤氓麓芦脠毛拢卢脰庐脟掳脢鹿脫脙碌脛脦陋脛卢脠脧脰碌sysdate拢卢脰禄麓芦脠毛脥赂脦枚潞脜隆拢
+            //2014-03-05 刘超 修改将处方日期通过窗体传入，之前使用的为默认值sysdate，只传入透析号。
             //DataTable dtRecipt = objHemodialysisService.GetRecipeByHemodialysisID(pHemodialysisID);
             DataTable dtRecipt = objHemodialysisService.GetRecipeByHemodialysisIDAndDate(pHemodialysisID, CureDate);
             if (dtRecipt != null && dtRecipt.Rows.Count > 0)
@@ -847,12 +845,12 @@ namespace Hemo.Client.UI.Hemodialysis
 
         }
         /// <summary>
-        /// 赂霉戮脻脰脦脕脝碌楼卤脿潞脜碌脙碌陆脰脦脕脝碌楼脢媒戮脻
+        /// 根据治疗单编号得到治疗单数据
         /// </summary>
-        /// <param name="pCureID">脰脦脕脝碌楼卤脿潞脜</param>
+        /// <param name="pCureID">治疗单编号</param>
         private void loadMainCureInfo(string pCureID)
         {
-            this.groupBox1.Text = string.Format("{0}({1})  {2}麓虏碌脛脰脦脕脝脨脜脧垄", this.ctlUserLongInfo1.Patient.NAME, this.ctlUserLongInfo1.Patient.SEX.ToString(), PatientScheduleRow.BEDNAME);
+            this.groupBox1.Text = string.Format("{0}({1})  {2}床的治疗信息", this.ctlUserLongInfo1.Patient.NAME, this.ctlUserLongInfo1.Patient.SEX.ToString(), PatientScheduleRow.BEDNAME);
             BaseControlInfo.ClearControlText(xtraScrollableControl1);
             //foreach (DevExpress.XtraEditors.Controls.CheckedListBoxItem item in chkCOAGULATION_IN_DIALYSER.Items)
             //{
@@ -884,10 +882,10 @@ namespace Hemo.Client.UI.Hemodialysis
                 //   this.chkCOAGULATION_IN_DIALYSER.SelectedIndex = Convert.ToInt32(string.IsNullOrEmpty(_CureMainDatatable.Rows[0]["COAGULATION_IN_DIALYSER"].ToString()) ? "0" : _CureMainDatatable.Rows[0]["COAGULATION_IN_DIALYSER"].ToString());
                 //   this.chkCOAGULATION_IN_DIALYSER.SetItemChecked(this.chkCOAGULATION_IN_DIALYSER.SelectedIndex, true);
                 this.cmbVASCULAR_ACCESS_ID.EditValue = _CureMainDatatable.Rows[0]["VASCULAR_ACCESS_ID"].ToString();
-                //脪脗脦茂脗脰脪脦脰脴
+                //衣物轮椅重
                 spnDRY_WEIGHT_TAG.EditValue = _CureMainDatatable.Rows[0]["DRY_WEIGHT_TAG"].ToString();
 
-                // 脢脰露炉禄脴脧脭 RadioGroup 碌脛脰碌
+                // 手动回显 RadioGroup 的值
                 if (_CureMainDatatable.Rows[0]["VASCULAR_ACCESS_FIRM"] != DBNull.Value)
                     rdoVASCULAR_ACCESS_FIRM.EditValue = _CureMainDatatable.Rows[0]["VASCULAR_ACCESS_FIRM"].ToString();
                 if (_CureMainDatatable.Rows[0]["VASCULAR_ACCESS_GLIDE"] != DBNull.Value)
@@ -902,12 +900,8 @@ namespace Hemo.Client.UI.Hemodialysis
                     rdoVASCULAR_ACCESS_ERRHYISIS.EditValue = _CureMainDatatable.Rows[0]["VASCULAR_ACCESS_ERRHYISIS"].ToString();
                 if (_CureMainDatatable.Rows[0]["VASCULAR_ACCESS_BLOOD_INFECT"] != DBNull.Value)
                     rdoVASCULAR_ACCESS_BLOOD_INFECT.EditValue = _CureMainDatatable.Rows[0]["VASCULAR_ACCESS_BLOOD_INFECT"].ToString();
-                if (_CureMainDatatable.Columns.Contains("VASCULAR_ACCESS_PENDING") && _CureMainDatatable.Rows[0]["VASCULAR_ACCESS_PENDING"] != DBNull.Value)
-                    chkVASCULAR_ACCESS_PENDING.Checked = _CureMainDatatable.Rows[0]["VASCULAR_ACCESS_PENDING"].ToString() == "1";
-                if (_CureMainDatatable.Columns.Contains("VASCULAR_ACCESS_PENDING_DATE") && _CureMainDatatable.Rows[0]["VASCULAR_ACCESS_PENDING_DATE"] != DBNull.Value)
-                    txtVASCULAR_ACCESS_PENDING_DATE.EditValue = _CureMainDatatable.Rows[0]["VASCULAR_ACCESS_PENDING_DATE"];
 
-                // 脢脰露炉禄脴脧脭脛脷冒眉脝脌鹿脌 RadioGroup 碌脛脰碌
+                // 手动回显内瘘评估 RadioGroup 的值
                 if (_CureMainDatatable.Rows[0]["IN_BASKET_PLASTER_ALLERGY"] != DBNull.Value)
                     rdoIN_BASKET_PLASTER_ALLERGY.EditValue = _CureMainDatatable.Rows[0]["IN_BASKET_PLASTER_ALLERGY"].ToString();
                 if (_CureMainDatatable.Rows[0]["IN_BASKET_VASCULAR_ELASTICITY"] != DBNull.Value)
@@ -921,35 +915,35 @@ namespace Hemo.Client.UI.Hemodialysis
                 if (_CureMainDatatable.Rows[0]["IN_BASKET_NOISE"] != DBNull.Value)
                     rdoIN_BASKET_NOISE.EditValue = _CureMainDatatable.Rows[0]["IN_BASKET_NOISE"].ToString();
 
-                //脥赂脟掳脤氓脰脴脦脭麓虏
+                //透前体重卧床
                 if (_CureMainDatatable.Rows[0]["VASCULAR_ACCESS_TYPE"].ToString().ToUpper().Equals("TRUE"))
                 {
                     this.spnBEFORE_DRY_WEIGHT.Visible = false;
                     this.labelControlbefore.Visible = true;
-                    labelControlbefo.Text = "脥赂脟掳脩陋脩鹿";
+                    labelControlbefo.Text = "透前血压";
                 }
                 else
                 {
                     this.spnBEFORE_DRY_WEIGHT.Visible = true;
                     this.labelControlbefore.Visible = false;
-                    labelControlbefo.Text = "Kg 脥赂脟掳脩陋脩鹿";
+                    labelControlbefo.Text = "Kg 透前血压";
                 }
 
-                //脥赂潞贸脤氓脰脴脦脭麓虏
+                //透后体重卧床
                 if (_CureMainDatatable.Rows[0]["IN_BED"].ToString().Equals("1"))
                 {
                     this.spnAFTER_DRY_WEIGHT.Visible = false;
                     this.labelControlAfter.Visible = true;
-                    labelControlaftere.Text = "脥赂潞贸脩陋脩鹿";
+                    labelControlaftere.Text = "透后血压";
                 }
                 else
                 {
                     this.spnAFTER_DRY_WEIGHT.Visible = true;
                     this.labelControlAfter.Visible = false;
-                    labelControlaftere.Text = "Kg 脥赂潞贸脩陋脩鹿";
+                    labelControlaftere.Text = "Kg 透后血压";
                 }
 
-                if (_CureMainDatatable.Rows[0]["DOCTOR_ADVICE"].ToString().Contains("鲁陇脝脷脪陆脰枚"))
+                if (_CureMainDatatable.Rows[0]["DOCTOR_ADVICE"].ToString().Contains("长期医嘱"))
                 {
                     this.checkOrder.Checked = true;
                 }
@@ -991,7 +985,7 @@ namespace Hemo.Client.UI.Hemodialysis
                     }
                     if (string.IsNullOrEmpty(this.txtSUMMARY.Text))
                     {
-                        this.txtSUMMARY.Text = "禄录脮脽脫脷8:00驴陋脢录脨脨CRRT脰脦脕脝拢卢鹿脡戮虏脗枚脰脙鹿脺拢卢脦脼脡酶脩陋隆垄脦脼禄卢脥脩隆拢陆禄禄禄脕驴ml/h拢卢脩陋脕梅脕驴ml/min拢卢鲁卢脗脣脗脢ml/h拢卢脳帽脪陆脰枚赂酶脫猫脢脳录脕碌脥路脰脳脫赂脦脣脴赂脝u拢卢脳路录脫mg/h拢卢8:00-16:00脌煤脢卤8脨隆脢卤拢卢鲁卢脗脣ml隆拢16:00-00:00脌煤脢卤8脨隆脢卤拢卢鲁卢脗脣ml隆拢00:00-08:00脌煤脢卤8脨隆脢卤拢卢鲁卢脗脣ml隆拢24脨隆脢卤脳脺脌煤脢卤脨隆脢卤拢卢脳脺鲁卢脗脣ml隆拢";
+                        this.txtSUMMARY.Text = "患者于8:00开始行CRRT治疗，股静脉置管，无渗血、无滑脱。交换量ml/h，血流量ml/min，超滤率ml/h，遵医嘱给予首剂低分子肝素钙u，追加mg/h，8:00-16:00历时8小时，超滤ml。16:00-00:00历时8小时，超滤ml。00:00-08:00历时8小时，超滤ml。24小时总历时小时，总超滤ml。";
                     }
                 }
                 else
@@ -1007,7 +1001,7 @@ namespace Hemo.Client.UI.Hemodialysis
                     }
                     if (_CureMainDatatable.Rows[0]["SUMMARY"].ToString().Length == 0)
                     {
-                        this.txtSUMMARY.Text = "卤戮麓脦脥赂脦枚鹿媒鲁脤脣鲁脌没拢卢脝陆掳虏脌毛脢脪隆拢";
+                        this.txtSUMMARY.Text = "本次透析过程顺利，平安离室。";
                     }
                 }
 
@@ -1042,14 +1036,14 @@ namespace Hemo.Client.UI.Hemodialysis
                 loadRecipeInfo(txtHEMODIALYSIS_ID.Text.Trim());
             }
 
-            // 脭脷脣霉脫脨驴脴录镁脢媒戮脻录脫脭脴脥锚卤脧潞贸拢卢麓脫UI驴脴录镁脜脛脪禄赂枚脢媒戮脻驴矛脮脮脳梅脦陋脡贸录脝脠脮脰戮碌脛禄霉脳录脰碌
-            // 脮芒脩霉卤拢麓忙脢卤露脭卤脠碌脛脢脟"脫脙禄搂脢碌录脢驴麓碌陆碌脛鲁玫脢录脰碌"脫毛"脫脙禄搂脨脼赂脛潞贸碌脛脰碌"拢卢卤脺脙芒脢媒戮脻驴芒NULL脫毛UI脛卢脠脧脰碌碌脛虏卯脪矛
+            // 在所有控件数据加载完毕后，从UI控件拍一个数据快照作为审计日志的基准值
+            // 这样保存时对比的是"用户实际看到的初始值"与"用户修改后的值"，避免数据库NULL与UI默认值的差异
             if (_CureMainDatatable != null && _CureMainDatatable.Rows.Count > 0)
             {
                 DataTable snapshotDt = BaseControlInfo.GetDataTableByPanel(_CureMainDatatable, xtraScrollableControl1);
                 if (snapshotDt != null && snapshotDt.Rows.Count > 0)
                 {
-                    // 脢脰露炉虏鹿鲁盲 RadioGroup 碌脛脰碌拢篓GetDataTableByPanel 驴脡脛脺脦脼路篓禄帽脠隆 RadioGroup拢漏
+                    // 手动补充 RadioGroup 的值（GetDataTableByPanel 可能无法获取 RadioGroup）
                     if (rdoVASCULAR_ACCESS_FIRM.EditValue != null)
                         snapshotDt.Rows[0]["VASCULAR_ACCESS_FIRM"] = rdoVASCULAR_ACCESS_FIRM.EditValue;
                     if (rdoVASCULAR_ACCESS_GLIDE.EditValue != null)
@@ -1066,10 +1060,6 @@ namespace Hemo.Client.UI.Hemodialysis
                         snapshotDt.Rows[0]["VASCULAR_ACCESS_BLOOD_INFECT"] = rdoVASCULAR_ACCESS_BLOOD_INFECT.EditValue;
                     if (rdoIN_BASKET_PLASTER_ALLERGY.EditValue != null)
                         snapshotDt.Rows[0]["IN_BASKET_PLASTER_ALLERGY"] = rdoIN_BASKET_PLASTER_ALLERGY.EditValue;
-                    if (snapshotDt.Columns.Contains("VASCULAR_ACCESS_PENDING"))
-                        snapshotDt.Rows[0]["VASCULAR_ACCESS_PENDING"] = chkVASCULAR_ACCESS_PENDING.Checked ? "1" : "0";
-                    if (snapshotDt.Columns.Contains("VASCULAR_ACCESS_PENDING_DATE") && txtVASCULAR_ACCESS_PENDING_DATE.EditValue != null)
-                        snapshotDt.Rows[0]["VASCULAR_ACCESS_PENDING_DATE"] = txtVASCULAR_ACCESS_PENDING_DATE.EditValue;
                     if (rdoIN_BASKET_VASCULAR_ELASTICITY.EditValue != null)
                         snapshotDt.Rows[0]["IN_BASKET_VASCULAR_ELASTICITY"] = rdoIN_BASKET_VASCULAR_ELASTICITY.EditValue;
                     if (rdoIN_BASKET_RED_HOT.EditValue != null)
@@ -1088,13 +1078,13 @@ namespace Hemo.Client.UI.Hemodialysis
             isLoadDate = false;
         }
         /// <summary>
-        /// 脡猫脰脙CRRT脧脿鹿脴驴脴录镁脧脭脢戮路陆脢陆
+        /// 设置CRRT相关控件显示方式
         /// </summary>
         /// <param name="IsVisible"></param>
         private void SetCrrtControlsVisible(bool IsVisible)
         {
             this.groupControl4.Visible = IsVisible;
-            this.labelControlCureTypeMemo.Text = IsVisible ? "脤脴脢芒陆禄麓煤脢脗脧卯" : "脪陆脡煤录脟脗录录掳脪陆脰枚";
+            this.labelControlCureTypeMemo.Text = IsVisible ? "特殊交代事项" : "医生记录及医嘱";
             this.txtSPECIAL_MATTER.Visible = IsVisible;
 
             this.txtDOCTOR_ADVICE.Visible = !IsVisible;
@@ -1119,12 +1109,12 @@ namespace Hemo.Client.UI.Hemodialysis
         }
 
         /// <summary>
-        /// 脭脴脠毛脧脗脌颅脢媒戮脻驴貌 
+        /// 载入下拉数据框 
         /// </summary>
         private void LoadLookUpEditList()
         {
-            string type = _patientScheduleRow["AREANAME"].ToString().Equals("CRRT") ? "CRRT戮禄禄炉路陆脢陆" : "戮禄禄炉路陆脢陆";
-            if (type.Equals("CRRT戮禄禄炉路陆脢陆"))
+            string type = _patientScheduleRow["AREANAME"].ToString().Equals("CRRT") ? "CRRT净化方式" : "净化方式";
+            if (type.Equals("CRRT净化方式"))
             {
                 SetCrrtControlsVisible(true);
 
@@ -1134,22 +1124,22 @@ namespace Hemo.Client.UI.Hemodialysis
                 SetCrrtControlsVisible(false);
             }
 
-            //戮禄禄炉路陆脢陆
+            //净化方式
             DataTable dtPurification = this._configService.GetConfigList(string.Empty, string.Empty, type, "1");
             if (dtPurification != null && dtPurification.Rows.Count > 0)
             {
-                BaseControlInfo.BindLookUpEdit(cmbPURIFICATION_MODE, "ITEM_ID", "ITEM_NAME", dtPurification, "ITEM_NAME", "戮禄禄炉路陆脢陆");
+                BaseControlInfo.BindLookUpEdit(cmbPURIFICATION_MODE, "ITEM_ID", "ITEM_NAME", dtPurification, "ITEM_NAME", "净化方式");
                 cmbPURIFICATION_MODE.EditValue = dtPurification.Rows[0]["ITEM_ID"].ToString();
             }
 
-            DataTable dtTempDrug = this._configService.GetConfigList(string.Empty, string.Empty, "禄陇脢驴脳陋鲁颅脪陆脰枚", "1");
+            DataTable dtTempDrug = this._configService.GetConfigList(string.Empty, string.Empty, "护士转抄医嘱", "1");
             if (dtTempDrug != null && dtTempDrug.Rows.Count > 0)
             {
-                BaseControlInfo.BindLookUpEdit(lupTempDrug, "ITEM_ID", "ITEM_NAME", dtTempDrug, "ITEM_NAME", "禄陇脢驴脳陋鲁颅脪陆脰枚");
+                BaseControlInfo.BindLookUpEdit(lupTempDrug, "ITEM_ID", "ITEM_NAME", dtTempDrug, "ITEM_NAME", "护士转抄医嘱");
                 lupTempDrug.EditValue = dtTempDrug.Rows[0]["ITEM_NAME"].ToString();
             }
 
-            DataTable dtMachine = this._configService.GetConfigList(string.Empty, string.Empty, "脥赂脦枚禄煤", "1");
+            DataTable dtMachine = this._configService.GetConfigList(string.Empty, string.Empty, "透析机", "1");
             if (dtMachine != null && dtMachine.Rows.Count > 0)
             {
                 for (int z = 0; z < dtMachine.Rows.Count; z++)
@@ -1158,95 +1148,95 @@ namespace Hemo.Client.UI.Hemodialysis
                 }
             }
 
-            //脭脴脠毛脭冒脠脦禄陇脢驴隆垄脭冒脠脦脪陆脡煤脧脗脌颅驴貌脢媒戮脻
+            //载入责任护士、责任医生下拉框数据
             DataTable dtStaffSict = _staffDictService.GetStaffDictList();
             if (dtStaffSict != null && dtStaffSict.Rows.Count > 0)
             {
-                DataTable dtPunctureNurseList = Utility.GetSubTable(dtStaffSict, "ZYNAME='禄陇脢驴'", "name");
+                DataTable dtPunctureNurseList = Utility.GetSubTable(dtStaffSict, "ZYNAME='护士'", "name");
                 if (dtPunctureNurseList != null && dtPunctureNurseList.Rows.Count > 0)
                 {
-                    BaseControlInfo.BindLookUpEdit(cmbPRIMARY_NURSE, "EMP_NO", "NAME", dtPunctureNurseList, "NAME", "脭冒脠脦禄陇脢驴");
-                    BaseControlInfo.BindLookUpEdit(lupPUNCTURE_NURSE, "EMP_NO", "NAME", dtPunctureNurseList, "NAME", "麓漏麓脤禄陇脢驴");
-                    BaseControlInfo.BindLookUpEdit(lupCHECK_NURSE, "EMP_NO", "NAME", dtPunctureNurseList, "NAME", "潞脣露脭禄陇脢驴");
-                    BaseControlInfo.BindLookUpEdit(lupNURSE_ID, "EMP_NO", "NAME", dtPunctureNurseList, "NAME", "录脟脗录禄陇脢驴");
-                    BaseControlInfo.BindLookUpEdit(lopDRUG_NURSE_ID, "EMP_NO", "NAME", dtPunctureNurseList, "NAME", "脰麓脨脨禄陇脢驴");
-                    BaseControlInfo.BindLookUpEdit(lopDISPENSINGNURSE, "EMP_NO", "NAME", dtPunctureNurseList, "NAME", "掳脷脪漏禄陇脢驴");
-                    BaseControlInfo.BindLookUpEdit(lopCHECKNURSE, "EMP_NO", "NAME", dtPunctureNurseList, "NAME", "潞脣露脭禄陇脢驴");
+                    BaseControlInfo.BindLookUpEdit(cmbPRIMARY_NURSE, "EMP_NO", "NAME", dtPunctureNurseList, "NAME", "责任护士");
+                    BaseControlInfo.BindLookUpEdit(lupPUNCTURE_NURSE, "EMP_NO", "NAME", dtPunctureNurseList, "NAME", "穿刺护士");
+                    BaseControlInfo.BindLookUpEdit(lupCHECK_NURSE, "EMP_NO", "NAME", dtPunctureNurseList, "NAME", "核对护士");
+                    BaseControlInfo.BindLookUpEdit(lupNURSE_ID, "EMP_NO", "NAME", dtPunctureNurseList, "NAME", "记录护士");
+                    BaseControlInfo.BindLookUpEdit(lopDRUG_NURSE_ID, "EMP_NO", "NAME", dtPunctureNurseList, "NAME", "执行护士");
+                    BaseControlInfo.BindLookUpEdit(lopDISPENSINGNURSE, "EMP_NO", "NAME", dtPunctureNurseList, "NAME", "摆药护士");
+                    BaseControlInfo.BindLookUpEdit(lopCHECKNURSE, "EMP_NO", "NAME", dtPunctureNurseList, "NAME", "核对护士");
 
                 }
             }
 
-            DataTable dtDoctorList = Utility.GetSubTable(dtStaffSict, "ZYNAME='脪陆脡煤'", "NAME");
+            DataTable dtDoctorList = Utility.GetSubTable(dtStaffSict, "ZYNAME='医生'", "NAME");
             if (dtDoctorList != null && dtDoctorList.Rows.Count > 0)
             {
-                BaseControlInfo.BindLookUpEdit(cmbPRIMARY_DOCTOR, "EMP_NO", "NAME", dtDoctorList, "NAME", "脭冒脠脦脪陆脡煤");
-                //赂酶脪漏录脟脗录--驴陋路陆脪陆脡煤
-                BaseControlInfo.BindLookUpEdit(lopDOCTOR_ID, "EMP_NO", "NAME", dtDoctorList, "NAME", "驴陋路陆脪陆脡煤");
+                BaseControlInfo.BindLookUpEdit(cmbPRIMARY_DOCTOR, "EMP_NO", "NAME", dtDoctorList, "NAME", "责任医生");
+                //给药记录--开方医生
+                BaseControlInfo.BindLookUpEdit(lopDOCTOR_ID, "EMP_NO", "NAME", dtDoctorList, "NAME", "开方医生");
             }
 
-            //脩陋鹿脺脥篓脗路 
-            //BaseControlInfo.BindLookUpEdit(cmbVASCULAR_ACCESS_ID, "ITEM_ID", "ITEM_NAME", this._configService.GetConfigList(string.Empty, string.Empty, "脩陋鹿脺脥篓脗路", "1"), "ITEM_NAME", "脩陋鹿脺脥篓脗路");
+            //血管通路 
+            //BaseControlInfo.BindLookUpEdit(cmbVASCULAR_ACCESS_ID, "ITEM_ID", "ITEM_NAME", this._configService.GetConfigList(string.Empty, string.Empty, "血管通路", "1"), "ITEM_NAME", "血管通路");
             var dtVasularAccess = _hemodialysisService.GetPatientVasular_AccessDt(txtHEMODIALYSIS_ID.Text.ToString());
-            BaseControlInfo.BindLookUpEdit(this.cmbVASCULAR_ACCESS_ID, "VASCULAR_ACCESS_ID", "PATIENT_ID", dtVasularAccess, "PATIENT_ID", "脩陋鹿脺脥篓脗路");
-            //脛陇虏脛脰脢
-            BaseControlInfo.BindLookUpEdit(lupPURIFIER_NAME, "ITEM_ID", "ITEM_NAME", this._configService.GetConfigList(string.Empty, string.Empty, "脥赂脦枚脛陇", "1"), "ITEM_NAME", "脥赂脦枚脛陇");
+            BaseControlInfo.BindLookUpEdit(this.cmbVASCULAR_ACCESS_ID, "VASCULAR_ACCESS_ID", "PATIENT_ID", dtVasularAccess, "PATIENT_ID", "血管通路");
+            //膜材质
+            BaseControlInfo.BindLookUpEdit(lupPURIFIER_NAME, "ITEM_ID", "ITEM_NAME", this._configService.GetConfigList(string.Empty, string.Empty, "透析膜", "1"), "ITEM_NAME", "透析膜");
 
-            BaseControlInfo.BindLookUpEdit(lupIN_BASKET_WOUND_ALLERGY, "ITEM_NAME", "ITEM_NAME", this._configService.GetConfigList(string.Empty, string.Empty, "鹿脿脕梅脝梅", "1"), "ITEM_NAME", "鹿脿脕梅脝梅");
+            BaseControlInfo.BindLookUpEdit(lupIN_BASKET_WOUND_ALLERGY, "ITEM_NAME", "ITEM_NAME", this._configService.GetConfigList(string.Empty, string.Empty, "灌流器", "1"), "ITEM_NAME", "灌流器");
 
-            //戮禄禄炉脝梅脌脿脨脥
-            BaseControlInfo.BindLookUpEdit(lupMACHINE_TYPE, "ITEM_ID", "ITEM_NAME", this._configService.GetConfigList(string.Empty, string.Empty, "戮禄禄炉脝梅脌脿脨脥", "1"), "ITEM_NAME", "戮禄禄炉脝梅脌脿脨脥");
-            BaseControlInfo.BindLookUpEdit(combFIRST_PURIFIER_MODEL, "ITEM_ID", "ITEM_NAME", this._configService.GetConfigList(string.Empty, string.Empty, "戮禄禄炉脝梅脌脿脨脥", "1"), "ITEM_NAME", "戮禄禄炉脝梅脌脿脨脥");
-            //赂脦脣脴脰脰脌脿 
-            BaseControlInfo.BindLookUpEdit(lupHEPARIN_SPECIES, "ITEM_ID", "ITEM_NAME", this._configService.GetConfigList(string.Empty, string.Empty, "脰脦脕脝路陆路篓", "1"), "ITEM_NAME", "脰脦脕脝路陆路篓");
-            //赂酶脪漏录脟脗录-脪漏脝路碌楼脦禄
-            BaseControlInfo.BindLookUpEdit(cmbDOSAGE_UNITS, "ITEM_ID", "ITEM_NAME", this._configService.GetConfigList(string.Empty, string.Empty, "脪漏脝路碌楼脦禄", "1"), "ITEM_NAME", "脪漏脝路碌楼脦禄");
-            //赂酶脪漏录脟脗录-脪漏脝路脢鹿脫脙路陆脢陆
-            BaseControlInfo.BindLookUpEdit(cmbDRUG_MODE, "ITEM_ID", "ITEM_NAME", this._configService.GetConfigList(string.Empty, string.Empty, "脳垄脡盲路陆脢陆", "1"), "ITEM_NAME", "脳垄脡盲路陆脢陆");
+            //净化器类型
+            BaseControlInfo.BindLookUpEdit(lupMACHINE_TYPE, "ITEM_ID", "ITEM_NAME", this._configService.GetConfigList(string.Empty, string.Empty, "净化器类型", "1"), "ITEM_NAME", "净化器类型");
+            BaseControlInfo.BindLookUpEdit(combFIRST_PURIFIER_MODEL, "ITEM_ID", "ITEM_NAME", this._configService.GetConfigList(string.Empty, string.Empty, "净化器类型", "1"), "ITEM_NAME", "净化器类型");
+            //肝素种类 
+            BaseControlInfo.BindLookUpEdit(lupHEPARIN_SPECIES, "ITEM_ID", "ITEM_NAME", this._configService.GetConfigList(string.Empty, string.Empty, "治疗方法", "1"), "ITEM_NAME", "治疗方法");
+            //给药记录-药品单位
+            BaseControlInfo.BindLookUpEdit(cmbDOSAGE_UNITS, "ITEM_ID", "ITEM_NAME", this._configService.GetConfigList(string.Empty, string.Empty, "药品单位", "1"), "ITEM_NAME", "药品单位");
+            //给药记录-药品使用方式
+            BaseControlInfo.BindLookUpEdit(cmbDRUG_MODE, "ITEM_ID", "ITEM_NAME", this._configService.GetConfigList(string.Empty, string.Empty, "注射方式", "1"), "ITEM_NAME", "注射方式");
 
 
-            //脪漏脝路脙没鲁脝
-            txtDRUG_NAME.Properties.DataSource = objDrug.GetDrugMasterList();//掳贸露篓脢媒戮脻脭麓
-            txtDRUG_NAME.Properties.Columns.Add(new LookUpColumnInfo("DRUG_CODE", "卤脿潞脜"));   //麓贸脨隆脨麓脙么赂脨
-            txtDRUG_NAME.Properties.Columns.Add(new LookUpColumnInfo("DRUG_NAME", "脙没鲁脝"));
+            //药品名称
+            txtDRUG_NAME.Properties.DataSource = objDrug.GetDrugMasterList();//绑定数据源
+            txtDRUG_NAME.Properties.Columns.Add(new LookUpColumnInfo("DRUG_CODE", "编号"));   //大小写敏感
+            txtDRUG_NAME.Properties.Columns.Add(new LookUpColumnInfo("DRUG_NAME", "名称"));
             txtDRUG_NAME.Properties.TextEditStyle = TextEditStyles.Standard;
-            txtDRUG_NAME.Properties.DisplayMember = "DRUG_NAME";//脪陋脧脭脢戮碌脛脳脰露脦,Text禄帽碌脙
-            txtDRUG_NAME.Properties.ValueMember = "DRUG_CODE";//脢碌录脢脰碌碌脛脳脰露脦,EditValue禄帽碌脙 // DeptID
+            txtDRUG_NAME.Properties.DisplayMember = "DRUG_NAME";//要显示的字段,Text获得
+            txtDRUG_NAME.Properties.ValueMember = "DRUG_CODE";//实际值的字段,EditValue获得 // DeptID
             txtDRUG_NAME.Properties.NullText = string.Empty;
 
-            //   BaseControlInfo.BindLookUpEdit(lupFOCUS_LEVEL, "ITEM_ID", "ITEM_NAME", this._configService.GetConfigList(string.Empty, string.Empty, "虏隆脟茅", "1"), "ITEM_NAME", "虏隆脟茅");
-            //   BaseControlInfo.BindLookUpEdit(lupSENSES, "ITEM_ID", "ITEM_NAME", this._configService.GetConfigList(string.Empty, string.Empty, "脡帽脰戮", "1"), "ITEM_NAME", "脡帽脰戮");
-            //    this.lupFOCUS_LEVEL.EditValue = this._configService.GetConfigList(string.Empty, string.Empty, "虏隆脟茅", "1").First().ITEM_ID;
-            //    this.lupSENSES.EditValue = this._configService.GetConfigList(string.Empty, string.Empty, "脡帽脰戮", "1").First().ITEM_ID;
+            //   BaseControlInfo.BindLookUpEdit(lupFOCUS_LEVEL, "ITEM_ID", "ITEM_NAME", this._configService.GetConfigList(string.Empty, string.Empty, "病情", "1"), "ITEM_NAME", "病情");
+            //   BaseControlInfo.BindLookUpEdit(lupSENSES, "ITEM_ID", "ITEM_NAME", this._configService.GetConfigList(string.Empty, string.Empty, "神志", "1"), "ITEM_NAME", "神志");
+            //    this.lupFOCUS_LEVEL.EditValue = this._configService.GetConfigList(string.Empty, string.Empty, "病情", "1").First().ITEM_ID;
+            //    this.lupSENSES.EditValue = this._configService.GetConfigList(string.Empty, string.Empty, "神志", "1").First().ITEM_ID;
 
-            //    this.lupALLERGIC.Text = "脦脼";
+            //    this.lupALLERGIC.Text = "无";
 
-            BaseControlInfo.BindLookUpEdit(lupSUBJECTIVE_COMFORT, "ITEM_ID", "ITEM_NAME", this._configService.GetConfigList(string.Empty, string.Empty, "脥赂脦枚脪潞脝路脜脝", "1"), "ITEM_NAME", "脥赂脦枚脪潞脝路脜脝");
+            BaseControlInfo.BindLookUpEdit(lupSUBJECTIVE_COMFORT, "ITEM_ID", "ITEM_NAME", this._configService.GetConfigList(string.Empty, string.Empty, "透析液品牌", "1"), "ITEM_NAME", "透析液品牌");
 
-            BaseControlInfo.BindLookUpEdit(cmbFIRST_DRUG_UNIT, "ITEM_ID", "ITEM_NAME", this._configService.GetConfigList(string.Empty, string.Empty, "脪漏脝路碌楼脦禄", "1"), "ITEM_NAME", "脪漏脝路碌楼脦禄");
-            BaseControlInfo.BindLookUpEdit(cmbSECOND_DRUG_UNIT, "ITEM_ID", "ITEM_NAME", this._configService.GetConfigList(string.Empty, string.Empty, "脪漏脝路碌楼脦禄", "1"), "ITEM_NAME", "脪漏脝路碌楼脦禄");
-            //BaseControlInfo.BindLookUpEdit(this.lupDISPLACEMENT_MODE, "ITEM_ID", "ITEM_NAME", _configService.GetConfigList(string.Empty, string.Empty, "脰脙禄禄路陆脢陆", "1"), "ITEM_NAME", "脰脙禄禄路陆脢陆");
-            //BaseControlInfo.BindLookUpEdit(this.lupDISPLACEMENT_RECIPE, "ITEM_ID", "ITEM_NAME", _configService.GetConfigList(string.Empty, string.Empty, "脰脙禄禄脪潞脜盲路陆", "1"), "ITEM_NAME", "脰脙禄禄脪潞脜盲路陆");
+            BaseControlInfo.BindLookUpEdit(cmbFIRST_DRUG_UNIT, "ITEM_ID", "ITEM_NAME", this._configService.GetConfigList(string.Empty, string.Empty, "药品单位", "1"), "ITEM_NAME", "药品单位");
+            BaseControlInfo.BindLookUpEdit(cmbSECOND_DRUG_UNIT, "ITEM_ID", "ITEM_NAME", this._configService.GetConfigList(string.Empty, string.Empty, "药品单位", "1"), "ITEM_NAME", "药品单位");
+            //BaseControlInfo.BindLookUpEdit(this.lupDISPLACEMENT_MODE, "ITEM_ID", "ITEM_NAME", _configService.GetConfigList(string.Empty, string.Empty, "置换方式", "1"), "ITEM_NAME", "置换方式");
+            //BaseControlInfo.BindLookUpEdit(this.lupDISPLACEMENT_RECIPE, "ITEM_ID", "ITEM_NAME", _configService.GetConfigList(string.Empty, string.Empty, "置换液配方", "1"), "ITEM_NAME", "置换液配方");
         }
 
         #endregion
 
-        #region 脢媒戮脻麓娄脌铆
+        #region 数据处理
 
         /// <summary>
-        /// 脩茅脰陇脢媒戮脻
+        /// 验证数据
         /// </summary>
         /// <returns></returns>
         private bool IsDataValidate()
         {
             bool result = true;
-            result = BaseControlInfo.CheckpLookUpEdit(cmbPURIFICATION_MODE, "脟毛脢盲脠毛脰脦脕脝路陆脢陆隆拢", "脥赂脦枚脰脦脕脝碌楼");
+            result = BaseControlInfo.CheckpLookUpEdit(cmbPURIFICATION_MODE, "请输入治疗方式。", "透析治疗单");
             if (result == false)
             {
                 return result;
             }
             if ((string.IsNullOrEmpty(this.txtBEFORE_SYSTOLIC_PRESSURE.Text) && !string.IsNullOrEmpty(this.txtBEFORE_DIASTOLIC_PRESSURE.Text)) || (!string.IsNullOrEmpty(this.txtBEFORE_SYSTOLIC_PRESSURE.Text) && string.IsNullOrEmpty(this.txtBEFORE_DIASTOLIC_PRESSURE.Text)))
             {
-                XtraMessageBox.Show("脥赂脟掳脩陋脩鹿脢盲脠毛虏禄脮媒脠路拢卢脟毛潞脣露脭潞贸脰脴脨脗脗录脠毛拢隆", "禄录脮脽脰脦脕脝");
+                XtraMessageBox.Show("透前血压输入不正确，请核对后重新录入！", "患者治疗");
                 return false;
             }
             decimal dBeforWeight = spnBEFORE_DRY_WEIGHT.Value;
@@ -1255,59 +1245,59 @@ namespace Hemo.Client.UI.Hemodialysis
             {
                 if (dAfterWeigh > dBeforWeight + 2)
                 {
-                    XtraMessageBox.Show("脥赂潞贸脤氓脰脴脨隆脫脷脥赂脟掳脤氓脰脴潞脧脌铆路露脦搂拢卢脟毛潞脣露脭潞贸脰脴脨脗脗录脠毛拢隆", "禄录脮脽脰脦脕脝");
+                    XtraMessageBox.Show("透后体重小于透前体重合理范围，请核对后重新录入！", "患者治疗");
                     return false;
                 }
             }
             if ((string.IsNullOrEmpty(this.txtAFTER_SYSTOLIC_PRESSURE.Text) && !string.IsNullOrEmpty(this.txtAFTER_DIASTOLIC_PRESSURE.Text)) || (!string.IsNullOrEmpty(this.txtAFTER_SYSTOLIC_PRESSURE.Text) && string.IsNullOrEmpty(this.txtAFTER_DIASTOLIC_PRESSURE.Text)))
             {
-                XtraMessageBox.Show("脥赂潞贸脩陋脩鹿脢盲脠毛虏禄脮媒脠路拢卢脟毛潞脣露脭潞贸脰脴脨脗脗录脠毛拢隆", "禄录脮脽脰脦脕脝");
+                XtraMessageBox.Show("透后血压输入不正确，请核对后重新录入！", "患者治疗");
                 return false;
             }
-            ////脛脝	135~145
+            ////钠	135~145
             //decimal dTemp = Utility.CDecimal(spnSODION.Text);
             //if (dTemp > 145 || dTemp < 135) {
-            //    XtraMessageBox.Show("脛脝脜篓露脠碌脛脰碌脮媒鲁拢路露脦搂脭脷135~145脰庐录盲隆拢", "脥赂脦枚麓娄路陆");
+            //    XtraMessageBox.Show("钠浓度的值正常范围在135~145之间。", "透析处方");
             //    spnSODION.Focus();
             //    return false;
             //}
 
-            ////录脴	0~4
+            ////钾	0~4
             //dTemp = Utility.CDecimal(spnPOTASSIUM_ION.Text);
             //if (dTemp > 4 || dTemp < 0) {
-            //    XtraMessageBox.Show("录脴脜篓露脠碌脛脰碌脮媒鲁拢路露脦搂脭脷0~4脰庐录盲隆拢", "脥赂脦枚麓娄路陆");
+            //    XtraMessageBox.Show("钾浓度的值正常范围在0~4之间。", "透析处方");
             //    spnPOTASSIUM_ION.Focus();
             //    return false;
             //}
 
-            ////赂脝	1.25~1.75
+            ////钙	1.25~1.75
             //dTemp = Utility.CDecimal(spnCALCIUM_ION.Text);
             //if (double.Parse(dTemp.ToString()) < 1.25 || double.Parse(dTemp.ToString()) > 1.75) {
-            //    XtraMessageBox.Show("赂脝脜篓露脠碌脛脰碌脮媒鲁拢路露脦搂脭脷1.25~1.75脰庐录盲隆拢", "脥赂脦枚麓娄路陆");
+            //    XtraMessageBox.Show("钙浓度的值正常范围在1.25~1.75之间。", "透析处方");
             //    spnCALCIUM_ION.Focus();
             //    return false;
             //}
 
-            //脝脧脤脩脤脟	0~5.5
+            //葡萄糖	0~5.5
             //dTemp = Utility.CDecimal(spnAMYLACEUM.Text);
             //if (dTemp < 0 || double.Parse(dTemp.ToString()) > 5.5) {
-            //    XtraMessageBox.Show("脝脧脤脩脤脟碌脛脰碌脮媒鲁拢路露脦搂脭脷0~5.5脰庐录盲隆拢", "脥赂脦枚麓娄路陆");
+            //    XtraMessageBox.Show("葡萄糖的值正常范围在0~5.5之间。", "透析处方");
             //    spnAMYLACEUM.Focus();
             //    return false;
             //}
             return result;
         }
 
-        //脩茅脰陇赂酶脪漏脨脜脧垄 
+        //验证给药信息 
         private bool IsDrugDataValidate()
         {
             bool result = true;
-            result = BaseControlInfo.CheckTextEdit(txtCURE_ID, "脟毛脧脠卤拢麓忙麓娄路陆脨脜脧垄拢卢潞贸脤铆录脫赂酶脪漏录脟脗录", "脥赂脦枚脰脦脕脝碌楼");
+            result = BaseControlInfo.CheckTextEdit(txtCURE_ID, "请先保存处方信息，后添加给药记录", "透析治疗单");
             if (result == false)
             {
                 return result;
             }
-            result = BaseControlInfo.CheckpLookUpEdit(txtDRUG_NAME, "脟毛脢盲脠毛脪漏脝路脙没鲁脝", "脥赂脦枚脰脦脕脝碌楼");
+            result = BaseControlInfo.CheckpLookUpEdit(txtDRUG_NAME, "请输入药品名称", "透析治疗单");
             if (result == false)
             {
                 return result;
@@ -1315,16 +1305,16 @@ namespace Hemo.Client.UI.Hemodialysis
             return result;
         }
 
-        //脩茅脰陇脥赂脦枚虏脦脢媒            
+        //验证透析参数            
         private bool IsHemoParametersDataValidate()
         {
             bool result = true;
-            result = BaseControlInfo.CheckTextEdit(txtCURE_ID, "脟毛脧脠卤拢麓忙麓娄路陆脨脜脧垄拢卢潞贸脤铆录脫脥赂脦枚虏脦脢媒录脟脗录", "脥赂脦枚脰脦脕脝碌楼");
+            result = BaseControlInfo.CheckTextEdit(txtCURE_ID, "请先保存处方信息，后添加透析参数记录", "透析治疗单");
             if (result == false)
             {
                 return result;
             }
-            result = BaseControlInfo.CheckDateEdit(cmbCREATE_DATE, "脟毛脢盲脠毛脗录脠毛脢卤录盲", "脥赂脦枚脰脦脕脝碌楼");
+            result = BaseControlInfo.CheckDateEdit(cmbCREATE_DATE, "请输入录入时间", "透析治疗单");
             if (result == false)
             {
                 return result;
@@ -1333,7 +1323,7 @@ namespace Hemo.Client.UI.Hemodialysis
         }
 
         /// <summary>
-        /// 卤拢麓忙脥赂脦枚虏脦脢媒脨脜脧垄
+        /// 保存透析参数信息
         /// </summary>
         /// <returns></returns>
         private int SaveHemoParameters()
@@ -1343,7 +1333,7 @@ namespace Hemo.Client.UI.Hemodialysis
             DataRow dr;
             DataTable dtTemp;
 
-            // 录脟脗录脨脼赂脛脟掳碌脛戮脡脰碌驴矛脮脮拢篓脡卯驴陆卤麓碌陆脳脰碌盲拢卢卤脺脙芒脪媒脫脙卤禄潞贸脨酶虏脵脳梅赂虏赂脟拢漏
+            // 记录修改前的旧值快照（深拷贝到字典，避免引用被后续操作覆盖）
             Dictionary<string, string> oldParamDict = null;
             string paramId = string.Empty;
             if (!(isAdd || isAddHemoParmars) && _HemoialysisParamterDatatable != null)
@@ -1418,33 +1408,33 @@ namespace Hemo.Client.UI.Hemodialysis
 
                 result = objHemodialysisService.SaveCureMainSaveHemoParameters((HemodialysisModel.MED_HEMODIALYSIS_PARAMETERSDataTable)dtTemp);
 
-                // 录脟脗录脡贸录脝脠脮脰戮 - 脥赂脦枚虏脦脢媒卤拢麓忙
+                // 记录审计日志 - 透析参数保存
                 string changeDetail = string.Empty;
                 string opType = (isAdd || isAddHemoParmars) ? "SAVE" : "UPDATE";
-                string logRemark = (isAdd || isAddHemoParmars) ? "脨脗脭枚脥赂脦枚虏脦脢媒" : "脨脼赂脛脥赂脦枚虏脦脢媒";
+                string logRemark = (isAdd || isAddHemoParmars) ? "新增透析参数" : "修改透析参数";
                 if (opType == "SAVE")
                 {
                     changeDetail = BuildNewRowDetail(dtTemp.Rows[0]);
                     if (string.IsNullOrEmpty(changeDetail))
-                        changeDetail = "脨脗脭枚脥赂脦枚虏脦脢媒";
+                        changeDetail = "新增透析参数";
                 }
                 else if (oldParamDict != null)
                 {
                     changeDetail = CompareDictWithRow(oldParamDict, dtTemp.Rows[0]);
                     if (string.IsNullOrEmpty(changeDetail))
-                        changeDetail = "脦脼脳脰露脦卤盲禄炉";
+                        changeDetail = "无字段变化";
                 }
                 if (string.IsNullOrEmpty(paramId) && dtTemp.Rows[0]["HEMODIALYSIS_PARAMETERS_ID"] != DBNull.Value)
                 {
                     paramId = dtTemp.Rows[0]["HEMODIALYSIS_PARAMETERS_ID"].ToString();
                 }
-                WriteOperationLog(opType, "脥赂脦枚虏脦脢媒录脟脗录", paramId, changeDetail, logRemark);
+                WriteOperationLog(opType, "透析参数记录", paramId, changeDetail, logRemark);
             }
             return result;
         }
 
         /// <summary>
-        /// 卤拢麓忙赂酶脪漏脨脜脧垄
+        /// 保存给药信息
         /// </summary>
         /// <returns></returns>
         private int SaveDrug()
@@ -1456,7 +1446,7 @@ namespace Hemo.Client.UI.Hemodialysis
 
             dt = Utility.GetSubTable(_CureDrugDatatable as DataTable, "CURE_DRUG_ID='" + txtCURE_DRUG_ID.Text + "'");
 
-            // 录脟脗录脨脼赂脛脟掳碌脛戮脡脰碌驴矛脮脮拢篓脡卯驴陆卤麓碌陆脳脰碌盲拢卢卤脺脙芒脪媒脫脙卤禄潞贸脨酶虏脵脳梅赂虏赂脟拢漏
+            // 记录修改前的旧值快照（深拷贝到字典，避免引用被后续操作覆盖）
             Dictionary<string, string> oldDrugDict = null;
             string drugId = txtCURE_DRUG_ID.Text;
             if (dt != null && dt.Rows.Count > 0)
@@ -1466,11 +1456,11 @@ namespace Hemo.Client.UI.Hemodialysis
 
             if (dt != null && dt.Rows.Count > 0)
             {
-                if (lopSTATUS.EditValue != null && lopSTATUS.EditValue.ToString() == "脪脩脰麓脨脨")
+                if (lopSTATUS.EditValue != null && lopSTATUS.EditValue.ToString() == "已执行")
                 {
                     dt.Rows[0]["STATUS"] = '1';
                 }
-                else if (lopSTATUS.EditValue != null && lopSTATUS.EditValue.ToString() == "脥脣禄脴")
+                else if (lopSTATUS.EditValue != null && lopSTATUS.EditValue.ToString() == "退回")
                 {
                     dt.Rows[0]["STATUS"] = '2';
                 }
@@ -1493,19 +1483,19 @@ namespace Hemo.Client.UI.Hemodialysis
                 dt.Rows[0]["RECIPE_ID"] = txtRECIPE_ID.Text;
                 result = objHemodialysisService.SaveCureDrug((HemodialysisModel.MED_CURE_DRUGDataTable)dt);
 
-                // 录脟脗录脡贸录脝脠脮脰戮 - 赂酶脪漏脨脜脧垄卤拢麓忙
+                // 记录审计日志 - 给药信息保存
                 string changeDetail = string.Empty;
-                string statusText = lopSTATUS.EditValue != null ? lopSTATUS.EditValue.ToString() : "脦麓脰麓脨脨";
+                string statusText = lopSTATUS.EditValue != null ? lopSTATUS.EditValue.ToString() : "未执行";
                 if (oldDrugDict != null)
                 {
                     changeDetail = CompareDictWithRow(oldDrugDict, dt.Rows[0]);
                     if (string.IsNullOrEmpty(changeDetail))
-                        changeDetail = "脦脼脳脰露脦卤盲禄炉";
+                        changeDetail = "无字段变化";
                 }
-                WriteOperationLog("UPDATE", "赂酶脪漏脨脜脧垄", drugId, changeDetail,
-                    "脨脼赂脛赂酶脪漏脳麓脤卢拢潞" + statusText);
+                WriteOperationLog("UPDATE", "给药信息", drugId, changeDetail,
+                    "修改给药状态：" + statusText);
 
-                if (lopSTATUS.EditValue != null && lopSTATUS.EditValue.ToString() == "脪脩脰麓脨脨")
+                if (lopSTATUS.EditValue != null && lopSTATUS.EditValue.ToString() == "已执行")
                 {
 
                     var dataRow = gridView4.GetFocusedRow() as System.Data.DataRowView;
@@ -1517,7 +1507,7 @@ namespace Hemo.Client.UI.Hemodialysis
                         objHemodialysisService.UpdataCureDrugStateByParma("1", txtHEMODIALYSIS_ID.Text.Trim(), dataRow.Row["COM_NO"].ToString(), Hemo.Utilities.Utility.CDate(this.txtCREATE_DATE.EditValue.ToString()), cureId, cureMainDt[0].RECIPE_ID, dtTime, this.lopDRUG_NURSE_ID.EditValue.ToString());
                     }
                 }
-                else if (lopSTATUS.EditValue != null && lopSTATUS.EditValue.ToString() == "脥脣禄脴")
+                else if (lopSTATUS.EditValue != null && lopSTATUS.EditValue.ToString() == "退回")
                 {
                     var dataRow = gridView4.GetFocusedRow() as System.Data.DataRowView;
 
@@ -1532,16 +1522,16 @@ namespace Hemo.Client.UI.Hemodialysis
                 }
 
 
-                //脪陆脰枚脰麓脨脨潞贸拢卢脤铆录脫碌陆脪陆脡煤录脟脗录录掳脪陆脰枚
+                //医嘱执行后，添加到医生记录及医嘱
 
                 var dtCureMain = objHemodialysisService.GetMainCureByCureID(txtCURE_ID.Text);
                 if (dtCureMain != null && dtCureMain.Rows.Count > 0)
                 {
                     StringBuilder sbDrug = new StringBuilder();
-                    //var dtComDrug = _CureDrugDatatable.Where(d => d.COM_NO.Equals(dt.Rows[0]["COM_NO"].ToString())).ToList();//虏禄潞脧脌铆
+                    //var dtComDrug = _CureDrugDatatable.Where(d => d.COM_NO.Equals(dt.Rows[0]["COM_NO"].ToString())).ToList();//不合理
 
                     var drugMain = objHemodialysisService.GetValidCureDrugByHemoID(addHemoId, cureDate);
-                    var dtComDrug = drugMain.Where(d => d.STATUS2.Equals("脪脩脰麓脨脨")).ToList();
+                    var dtComDrug = drugMain.Where(d => d.STATUS2.Equals("已执行")).ToList();
 
                     foreach (HemodialysisModel.MED_CURE_DRUGRow d in dtComDrug)
                     {
@@ -1552,7 +1542,7 @@ namespace Hemo.Client.UI.Hemodialysis
                             sbDrugb.Append(d["DOSAGE"].ToString());
                             sbDrugb.Append(d["UNIT_NAME"].ToString());
                             sbDrugb.Append(d["DRUG_MODE_NAME"].ToString());
-                            sbDrugb.Append("拢禄");
+                            sbDrugb.Append("；");
                             if (!dtCureMain[0].DOCTOR_ADVICE.Contains(sbDrugb.ToString()))
                             {
                                 sbDrug.Append(sbDrugb);
@@ -1564,11 +1554,11 @@ namespace Hemo.Client.UI.Hemodialysis
                             sbDrug.Append(d["DOSAGE"].ToString());
                             sbDrug.Append(d["UNIT_NAME"].ToString());
                             sbDrug.Append(d["DRUG_MODE_NAME"].ToString());
-                            sbDrug.Append("拢禄");
+                            sbDrug.Append("；");
                         }
                     }
 
-                    var dtComDrug1 = drugMain.Where(d => d.STATUS2.Equals("路碌禄脴")).ToList();
+                    var dtComDrug1 = drugMain.Where(d => d.STATUS2.Equals("返回")).ToList();
 
                     foreach (HemodialysisModel.MED_CURE_DRUGRow d in dtComDrug1)
                     {
@@ -1580,7 +1570,7 @@ namespace Hemo.Client.UI.Hemodialysis
                             sbDruga.Append(d["DOSAGE"].ToString());
                             sbDruga.Append(d["UNIT_NAME"].ToString());
                             sbDruga.Append(d["DRUG_MODE_NAME"].ToString());
-                            sbDruga.Append("拢禄");
+                            sbDruga.Append("；");
                             if (dtCureMain[0].DOCTOR_ADVICE.Contains(sbDruga.ToString()))
                             {
                                 dtCureMain[0].DOCTOR_ADVICE = dtCureMain[0].DOCTOR_ADVICE.Replace(sbDruga.ToString(), string.Empty);
@@ -1600,10 +1590,10 @@ namespace Hemo.Client.UI.Hemodialysis
                 }
 
 
-                //赂眉脨脗赂酶脪漏卤铆潞贸赂眉脨脗脰脦脕脝虏脦脢媒卤铆脝麓陆脫脪脩脰麓脨脨脢媒戮脻
+                //更新给药表后更新治疗参数表拼接已执行数据
                 DataTable dtPamarsDrug = objHemodialysisService.GetPamarsDrugInfo(txtCURE_ID.Text, Utility.CDate(txtEXEC_DATE.Text + " " + txtEXEC_TIME.Text));
 
-                if (dtPamarsDrug.Rows.Count <= 0) return result; //脙禄脫脨脝楼脜盲脢媒戮脻拢卢脧脗麓脦脢卤陆酶脨脨脢媒戮脻脝楼脜盲
+                if (dtPamarsDrug.Rows.Count <= 0) return result; //没有匹配数据，下次时进行数据匹配
                 string strPamarsID = dtPamarsDrug.Rows[0]["HEMODIALYSIS_PARAMETERS_ID"].ToString();
                 HemodialysisModel.MED_HEMODIALYSIS_PARAMETERSDataTable dtParames = objHemodialysisService.GetHemoParametersByCureID(txtCURE_ID.Text);
                 DataTable dtTempParams = Utility.GetSubTable((DataTable)dtParames, "HEMODIALYSIS_PARAMETERS_ID = '" + strPamarsID + "'");
@@ -1612,7 +1602,7 @@ namespace Hemo.Client.UI.Hemodialysis
         }
 
         /// <summary>
-        /// 卤拢麓忙脢媒戮脻
+        /// 保存数据
         /// </summary>
         /// <returns></returns>
         public int SaveData()
@@ -1620,13 +1610,13 @@ namespace Hemo.Client.UI.Hemodialysis
             int result = 0;
             DataTable dt = _CureMainDatatable;
             DataRow dr;
-            // 脢鹿脫脙脪鲁脙忙录脫脭脴脢卤脜脛碌脛UI驴矛脮脮脳梅脦陋露脭卤脠禄霉脳录拢篓露酶路脟脢媒戮脻驴芒脭颅脢录脨脨拢卢卤脺脙芒NULL脫毛UI脛卢脠脧脰碌碌脛虏卯脪矛拢漏
+            // 使用页面加载时拍的UI快照作为对比基准（而非数据库原始行，避免NULL与UI默认值的差异）
             Dictionary<string, string> oldDataDict = null;
             if (!isAdd)
             {
                 oldDataDict = _initialDataSnapshot;
             }
-            //碌卤脰脦脕脝碌楼卤脿潞脜脦陋驴脮脢卤脛卢脠脧脦陋脨脗脭枚脢媒戮脻 
+            //当治疗单编号为空时默认为新增数据 
             if (txtCURE_ID.Text.Length == 0)
             {
                 isAdd = true;
@@ -1651,7 +1641,7 @@ namespace Hemo.Client.UI.Hemodialysis
                 dr = _CureMainDatatable.Rows[0];
             }
             dt = BaseControlInfo.GetDataTableByPanel(_CureMainDatatable, xtraScrollableControl1);
-            //脢脰露炉卤拢麓忙 RadioGroup 碌脛脰碌
+            //手动保存 RadioGroup 的值
             dt.Rows[0]["VASCULAR_ACCESS_FIRM"] = rdoVASCULAR_ACCESS_FIRM.EditValue;
             dt.Rows[0]["VASCULAR_ACCESS_GLIDE"] = rdoVASCULAR_ACCESS_GLIDE.EditValue;
             dt.Rows[0]["VASCULAR_ACCESS_SWELLING"] = rdoVASCULAR_ACCESS_SWELLING.EditValue;
@@ -1659,10 +1649,6 @@ namespace Hemo.Client.UI.Hemodialysis
             dt.Rows[0]["VASCULAR_ACCESS_BLOOD"] = rdoVASCULAR_ACCESS_BLOOD.EditValue;
             dt.Rows[0]["VASCULAR_ACCESS_ERRHYISIS"] = rdoVASCULAR_ACCESS_ERRHYISIS.EditValue;
             dt.Rows[0]["VASCULAR_ACCESS_BLOOD_INFECT"] = rdoVASCULAR_ACCESS_BLOOD_INFECT.EditValue;
-            if (dt.Columns.Contains("VASCULAR_ACCESS_PENDING"))
-                dt.Rows[0]["VASCULAR_ACCESS_PENDING"] = chkVASCULAR_ACCESS_PENDING.Checked ? "1" : "0";
-            if (dt.Columns.Contains("VASCULAR_ACCESS_PENDING_DATE"))
-                dt.Rows[0]["VASCULAR_ACCESS_PENDING_DATE"] = txtVASCULAR_ACCESS_PENDING_DATE.EditValue;
             dt.Rows[0]["IN_BASKET_PLASTER_ALLERGY"] = rdoIN_BASKET_PLASTER_ALLERGY.EditValue;
             dt.Rows[0]["IN_BASKET_VASCULAR_ELASTICITY"] = rdoIN_BASKET_VASCULAR_ELASTICITY.EditValue;
             dt.Rows[0]["IN_BASKET_RED_HOT"] = rdoIN_BASKET_RED_HOT.EditValue;
@@ -1670,7 +1656,7 @@ namespace Hemo.Client.UI.Hemodialysis
             dt.Rows[0]["IN_BASKET_TREMOR"] = rdoIN_BASKET_TREMOR.EditValue;
             dt.Rows[0]["IN_BASKET_NOISE"] = rdoIN_BASKET_NOISE.EditValue;
 
-            //脥赂脦枚脨隆陆谩 
+            //透析小结 
             dt.Rows[0]["SUMMARY"] = txtSUMMARY.Text;
             if (this.loginType == 0)
             {
@@ -1708,11 +1694,11 @@ namespace Hemo.Client.UI.Hemodialysis
             dt.Rows[0]["FREQUENCY_MINUTE"] = Utility.CDecimal(spnFREQUENCY_MINUTE.Text);
             if (dt != null && dt.Rows.Count > 0)
             {
-                //卤拢麓忙路脟CRRT禄录脮脽脰脦脕脝碌楼
+                //保存非CRRT患者治疗单
                 result = objHemodialysisService.SaveCureMain((HemodialysisModel.MED_CURE_MAINDataTable)dt);
                 try
                 {
-                    //卤拢麓忙脭陇录脝脥脩脣庐
+                    //保存预计脱水
                     HemodialysisModel.MED_HEMO_RECIPEDataTable RecipeResult = objHemodialysisService.GetRecipeByRecipeID(dt.Rows[0]["RECIPE_ID"].ToString());
                     RecipeResult[0].UFR = Utility.CDecimal(dt.Rows[0]["UFR"].ToString());
 
@@ -1724,12 +1710,12 @@ namespace Hemo.Client.UI.Hemodialysis
 
                 if (_patientScheduleRow["AREANAME"].ToString().Equals("CRRT"))
                 {
-                    //卤拢麓忙CRRT禄录脮脽脰脦脕脝碌楼
+                    //保存CRRT患者治疗单
                     string cureId = dt.Rows[0]["CURE_ID"].ToString();
                     HemodialysisModel.MED_CURE_MAIN_CRRTDataTable dtCRRTCure = objHemodialysisService.GetCRRTCureByCureIdAndBanci(cureId, banci, banci.Equals("3") ? cureDate.Date.AddDays(1) : cureDate.Date);
                     if (dtCRRTCure != null && dtCRRTCure.Rows.Count > 0)
                     {
-                        //卤脿录颅
+                        //编辑
                         dtCRRTCure[0].PRIMARY_DOCTOR = this.cmbPRIMARY_DOCTOR.EditValue.ToString();
                         dtCRRTCure[0].PRIMARY_NURSE = this.cmbPRIMARY_NURSE.EditValue.ToString();
                         dtCRRTCure[0].CHECK_NURSE = this.lupCHECK_NURSE.EditValue.ToString();
@@ -1745,7 +1731,7 @@ namespace Hemo.Client.UI.Hemodialysis
                     }
                     else
                     {
-                        //脨脗脭枚
+                        //新增
                         dtCRRTCure = new HemodialysisModel.MED_CURE_MAIN_CRRTDataTable();
                         var row = dtCRRTCure.NewMED_CURE_MAIN_CRRTRow();
                         row.ID = Guid.NewGuid().ToString();
@@ -1771,7 +1757,7 @@ namespace Hemo.Client.UI.Hemodialysis
                     }
                     result = objHemodialysisService.SaveCRRTCureMain(dtCRRTCure);
 
-                    // 录脟脗录脡贸录脝脠脮脰戮 - CRRT脰脦脕脝碌楼卤拢麓忙拢篓脰禄录脟脗录鹿脴录眉脳脰露脦拢漏
+                    // 记录审计日志 - CRRT治疗单保存（只记录关键字段）
                     string crrtInfo = string.Empty;
                     if (dtCRRTCure.Rows.Count > 0)
                     {
@@ -1793,11 +1779,11 @@ namespace Hemo.Client.UI.Hemodialysis
                         }
                         crrtInfo = sb.ToString();
                     }
-                    WriteOperationLog("UPDATE", "CRRT脰脦脕脝碌楼", cureId, crrtInfo, "卤拢麓忙CRRT脰脦脕脝碌楼");
+                    WriteOperationLog("UPDATE", "CRRT治疗单", cureId, crrtInfo, "保存CRRT治疗单");
                 }
             }
 
-            //卤拢麓忙虏隆脠脣脌脿脨脥
+            //保存病人类型
             PatientModel.MED_PATIENTSDataTable _patientDataTable;
             _patientDataTable = objPatient.GetPatientListByPatientID(ctlUserLongInfo1.PatientID);
             _patientDataTable.Rows[0]["TIME_TYPE"] = ctlUserLongInfo1.PatientType;
@@ -1813,11 +1799,11 @@ namespace Hemo.Client.UI.Hemodialysis
                     if (this.complicatinTable.Rows[0][column] != DBNull.Value && this.complicatinTable.Rows[0][column] != null && this.complicatinTable.Rows[0][column].ToString().Length > 0)
                         isAddComp = true;
                 }
-                //卤拢麓忙虏垄路垄脰垄
+                //保存并发症
                 if (isAddComp)
                 {
                     result = objHemodialysisService.SaveComplication(this.complicatinTable);
-                    // 录脟脗录脡贸录脝脠脮脰戮 - 虏垄路垄脰垄卤拢麓忙拢篓脰禄录脟脗录路脟驴脮脳脰露脦拢漏
+                    // 记录审计日志 - 并发症保存（只记录非空字段）
                     string compValue = string.Empty;
                     if (this.complicatinTable.Rows.Count > 0)
                     {
@@ -1838,31 +1824,31 @@ namespace Hemo.Client.UI.Hemodialysis
                         }
                         compValue = sb.ToString();
                     }
-                    WriteOperationLog("UPDATE", "虏垄路垄脰垄脨脜脧垄", GetCurrentCureId(), compValue, "卤拢麓忙虏垄路垄脰垄脨脜脧垄");
+                    WriteOperationLog("UPDATE", "并发症信息", GetCurrentCureId(), compValue, "保存并发症信息");
                 }
             }
 
-            // 录脟脗录脡贸录脝脠脮脰戮 - 脰脦脕脝碌楼卤拢麓忙
+            // 记录审计日志 - 治疗单保存
             string changeDetail = string.Empty;
             if (isAdd)
             {
-                // 脨脗脭枚脢卤脰禄录脟脗录鹿脴录眉脳脰露脦
-                changeDetail = "脨脗脭枚脰脦脕脝碌楼";
+                // 新增时只记录关键字段
+                changeDetail = "新增治疗单";
             }
             else if (oldDataDict != null && dt != null && dt.Rows.Count > 0)
             {
-                // 脨脼赂脛脢卤脫脙脳脰碌盲驴矛脮脮脫毛脨脗脨脨露脭卤脠拢卢脰禄录脟脗录卤盲禄炉碌脛脳脰露脦
+                // 修改时用字典快照与新行对比，只记录变化的字段
                 changeDetail = CompareDictWithRow(oldDataDict, dt.Rows[0]);
                 if (string.IsNullOrEmpty(changeDetail))
-                    changeDetail = "脦脼脳脰露脦卤盲禄炉";
+                    changeDetail = "无字段变化";
             }
             string operationType = isAdd ? "SAVE" : "UPDATE";
-            string logRemark = isAdd ? "脨脗脭枚脰脦脕脝碌楼" : "脨脼赂脛脰脦脕脝碌楼";
-            WriteOperationLog(operationType, "脰脦脕脝碌楼脰梅卤铆", GetCurrentCureId(), changeDetail, logRemark);
+            string logRemark = isAdd ? "新增治疗单" : "修改治疗单";
+            WriteOperationLog(operationType, "治疗单主表", GetCurrentCureId(), changeDetail, logRemark);
 
             if (dt != null && dt.Rows.Count > 0)
             {
-                // 脢脰露炉虏鹿鲁盲 RadioGroup 碌脛脰碌碌陆驴矛脮脮
+                // 手动补充 RadioGroup 的值到快照
                 if (rdoVASCULAR_ACCESS_FIRM.EditValue != null)
                     dt.Rows[0]["VASCULAR_ACCESS_FIRM"] = rdoVASCULAR_ACCESS_FIRM.EditValue;
                 if (rdoVASCULAR_ACCESS_GLIDE.EditValue != null)
@@ -1879,10 +1865,6 @@ namespace Hemo.Client.UI.Hemodialysis
                     dt.Rows[0]["VASCULAR_ACCESS_BLOOD_INFECT"] = rdoVASCULAR_ACCESS_BLOOD_INFECT.EditValue;
                 if (rdoIN_BASKET_PLASTER_ALLERGY.EditValue != null)
                     dt.Rows[0]["IN_BASKET_PLASTER_ALLERGY"] = rdoIN_BASKET_PLASTER_ALLERGY.EditValue;
-                if (dt.Columns.Contains("VASCULAR_ACCESS_PENDING"))
-                    dt.Rows[0]["VASCULAR_ACCESS_PENDING"] = chkVASCULAR_ACCESS_PENDING.Checked ? "1" : "0";
-                if (dt.Columns.Contains("VASCULAR_ACCESS_PENDING_DATE") && txtVASCULAR_ACCESS_PENDING_DATE.EditValue != null)
-                    dt.Rows[0]["VASCULAR_ACCESS_PENDING_DATE"] = txtVASCULAR_ACCESS_PENDING_DATE.EditValue;
                 if (rdoIN_BASKET_VASCULAR_ELASTICITY.EditValue != null)
                     dt.Rows[0]["IN_BASKET_VASCULAR_ELASTICITY"] = rdoIN_BASKET_VASCULAR_ELASTICITY.EditValue;
                 if (rdoIN_BASKET_RED_HOT.EditValue != null)
@@ -1899,18 +1881,18 @@ namespace Hemo.Client.UI.Hemodialysis
         }
 
         /// <summary>
-        /// 脡猫脰脙脪漏脝路脗录脠毛驴脴录镁脢脟路帽驴脡脫脙脢么脨脭
+        /// 设置药品录入控件是否可用属性
         /// </summary>
-        /// <param name="pEnabled">驴脴录镁脳麓脤卢</param>
+        /// <param name="pEnabled">控件状态</param>
         private void setDrugEnabled(bool pEnabled)
         {
             BaseControlInfo.SetControlEnabled(panDrug, pEnabled);
         }
 
         /// <summary>
-        /// 脡猫脰脙脥赂脦枚虏脦脢媒脗录脠毛驴脴录镁脢脟路帽驴脡脫脙
+        /// 设置透析参数录入控件是否可用
         /// </summary>
-        /// <param name="pEnabled">驴脴录镁脳麓脤卢</param>
+        /// <param name="pEnabled">控件状态</param>
         private void setParamterEnabled(bool pEnabled)
         {
             BaseControlInfo.SetControlEnabled(panParamter, pEnabled);
@@ -1927,7 +1909,7 @@ namespace Hemo.Client.UI.Hemodialysis
 
 
         /// <summary>
-        /// 禄录脮脽驴篓脝卢脣芦禄梅
+        /// 患者卡片双击
         /// </summary>
         /// <param name="banci"></param>
         //public void Double_Click(string banci)
@@ -1936,12 +1918,12 @@ namespace Hemo.Client.UI.Hemodialysis
         //}
 
         /// <summary>
-        /// 赂脛卤盲脰脦脕脝碌楼潞脥脥赂脦枚虏脦脢媒
+        /// 改变治疗单和透析参数
         /// </summary>
         /// <param name="banci"></param>
         //private void ChangeCureAndParam(string banci)
         //{
-        //    //赂脛卤盲脭冒脠脦脪陆脡煤隆垄脭冒脠脦禄陇脢驴隆垄潞脣露脭禄陇脢驴脟漏脙没拢卢赂脛卤盲脥赂脦枚脨隆陆谩
+        //    //改变责任医生、责任护士、核对护士签名，改变透析小结
         //    HemodialysisModel.MED_CURE_MAIN_CRRTDataTable dtCRRTCure = objHemodialysisService.GetCRRTCureByCureIdAndBanci(this.addPcureId, banci);
         //    if (dtCRRTCure != null && dtCRRTCure.Rows.Count > 0)
         //    {
@@ -1950,7 +1932,7 @@ namespace Hemo.Client.UI.Hemodialysis
         //        this.lupCHECK_NURSE.EditValue = dtCRRTCure[0].CHECK_NURSE;
         //        this.txtSUMMARY.Text = dtCRRTCure[0].SUMMARY;
         //    }
-        //    //赂脛卤盲脥赂脦枚虏脦脢媒脕脨卤铆脢媒戮脻
+        //    //改变透析参数列表数据
         //    if (this.tabControls.SelectedTabPageIndex == 2)
         //    {
         //        var dtResult = _HemoialysisParamterDatatable.Clone();
@@ -1961,10 +1943,10 @@ namespace Hemo.Client.UI.Hemodialysis
 
         #endregion
 
-        #region 脢脗录镁
+        #region 事件
 
         /// <summary>
-        /// 卤茅脌煤脥赂脦枚虏脦脢媒脕脨卤铆Grid虏垄脤卯鲁盲赂酶露脭脫娄碌脛DataTable潞贸卤拢麓忙脢媒戮脻
+        /// 遍历透析参数列表Grid并填充给对应的DataTable后保存数据
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
@@ -1974,7 +1956,7 @@ namespace Hemo.Client.UI.Hemodialysis
         }
 
         /// <summary>
-        /// 卤拢麓忙脰脦脕脝脨脜脧垄隆垄脥赂脦枚脨脜脧垄
+        /// 保存治疗信息、透析信息
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
@@ -1984,17 +1966,17 @@ namespace Hemo.Client.UI.Hemodialysis
             {
                 if (this.txtSUMMARY2.Text.Trim().Length > 1400)
                 {
-                    XtraMessageBox.Show("脟脌戮脠录脟脗录鲁陇露脠虏禄脛脺鲁卢鹿媒1400赂枚脳脰路没!", this.Text, MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                    XtraMessageBox.Show("抢救记录长度不能超过1400个字符!", this.Text, MessageBoxButtons.YesNo, MessageBoxIcon.Question);
                     return;
                 }
 
                 bool checkResult = true;
-                //CRRT禄录脮脽录矛虏茅脢脟路帽脤谩脟掳卤拢麓忙脰脦脕脝碌楼
+                //CRRT患者检查是否提前保存治疗单
                 if (_patientScheduleRow["AREANAME"].ToString().Equals("CRRT"))
                 {
                     if (banci.Equals("1"))
                     {
-                        if (XtraMessageBox.Show("脠路露篓卤拢麓忙脦陋掳脳脤矛掳脿麓脦脩陋脥赂脰脦脕脝碌楼脗冒拢驴", this.Text, MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.No)
+                        if (XtraMessageBox.Show("确定保存为白天班次血透治疗单吗？", this.Text, MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.No)
                             return;
                         if (cureDate.Date.CompareTo(DateTime.Now.Date) == 0)
                         {
@@ -2010,7 +1992,7 @@ namespace Hemo.Client.UI.Hemodialysis
                     }
                     else if (banci.Equals("2"))
                     {
-                        if (XtraMessageBox.Show("脠路露篓卤拢麓忙脦陋脨隆脪鹿掳脿麓脦脩陋脥赂脰脦脕脝碌楼脗冒拢驴", this.Text, MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.No)
+                        if (XtraMessageBox.Show("确定保存为小夜班次血透治疗单吗？", this.Text, MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.No)
                             return;
                         if (cureDate.Date.CompareTo(DateTime.Now.Date) == 0)
                         {
@@ -2026,7 +2008,7 @@ namespace Hemo.Client.UI.Hemodialysis
                     }
                     else if (banci.Equals("3"))
                     {
-                        if (XtraMessageBox.Show("脠路露篓卤拢麓忙脦陋麓贸脪鹿掳脿麓脦脩陋脥赂脰脦脕脝碌楼脗冒拢驴", this.Text, MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.No)
+                        if (XtraMessageBox.Show("确定保存为大夜班次血透治疗单吗？", this.Text, MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.No)
                             return;
                         if (cureDate.Date.CompareTo(DateTime.Now.Date) >= 0)
                         {
@@ -2036,28 +2018,28 @@ namespace Hemo.Client.UI.Hemodialysis
 
                     if (checkResult == false)
                     {
-                        AutoClosedMsgBox.ShowForm("虏禄脭脢脨铆脤谩脟掳虏脵脳梅CRRT禄录脮脽脩陋脥赂脰脦脕脝碌楼拢隆", "禄录脮脽脰脦脕脝", 1000, MessageBoxIcon.Warning);
+                        AutoClosedMsgBox.ShowForm("不允许提前操作CRRT患者血透治疗单！", "患者治疗", 1000, MessageBoxIcon.Warning);
                         return;
                     }
 
                     if (cmbPRIMARY_DOCTOR.EditValue == null)
                     {
-                        AutoClosedMsgBox.ShowForm("脭冒脠脦脪陆脡煤虏禄脛脺脦陋驴脮拢隆", "禄录脮脽脰脦脕脝", 1000, MessageBoxIcon.Warning);
+                        AutoClosedMsgBox.ShowForm("责任医生不能为空！", "患者治疗", 1000, MessageBoxIcon.Warning);
                         return;
                     }
                     if (cmbPRIMARY_NURSE.EditValue == null)
                     {
-                        AutoClosedMsgBox.ShowForm("脭冒脠脦禄陇脢驴虏禄脛脺脦陋驴脮拢隆", "禄录脮脽脰脦脕脝", 1000, MessageBoxIcon.Warning);
+                        AutoClosedMsgBox.ShowForm("责任护士不能为空！", "患者治疗", 1000, MessageBoxIcon.Warning);
                         return;
                     }
                     if (lupCHECK_NURSE.EditValue == null)
                     {
-                        AutoClosedMsgBox.ShowForm("潞脣露脭禄陇脢驴虏禄脛脺脦陋驴脮拢隆", "禄录脮脽脰脦脕脝", 1000, MessageBoxIcon.Warning);
+                        AutoClosedMsgBox.ShowForm("核对护士不能为空！", "患者治疗", 1000, MessageBoxIcon.Warning);
                         return;
                     }
                 }
 
-                //脗脽录颅脨拢脩茅
+                //逻辑校验
                 checkResult = IsDataValidate();
                 if (checkResult == false)
                 {
@@ -2084,38 +2066,38 @@ namespace Hemo.Client.UI.Hemodialysis
                         var dtCRRTCure = objHemodialysisService.GetCRRTCureByCureIdAndBanci(cureId, banci, banci.Equals("3") ? cureDate.Date.AddDays(1) : cureDate.Date);
                         if (dtCRRTCure == null || dtCRRTCure.Rows.Count == 0)
                         {
-                            XtraMessageBox.Show("赂脙掳脿麓脦露脭脫娄脰脦脕脝碌楼虏禄麓忙脭脷拢卢脟毛脧脠卤拢麓忙脰脦脕脝脨脜脧垄拢隆", this.Text);
+                            XtraMessageBox.Show("该班次对应治疗单不存在，请先保存治疗信息！", this.Text);
                             return;
                         }
 
                         if (banci.Equals("1"))
                         {
-                            if (XtraMessageBox.Show("脠路露篓卤拢麓忙脦陋掳脳脤矛掳脿麓脦脥赂脦枚虏脦脢媒录脟脗录脗冒拢驴", this.Text, MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.No)
+                            if (XtraMessageBox.Show("确定保存为白天班次透析参数记录吗？", this.Text, MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.No)
                                 return;
                         }
                         else if (banci.Equals("2"))
                         {
-                            if (XtraMessageBox.Show("脠路露篓卤拢麓忙脦陋脨隆脪鹿掳脿麓脦脥赂脦枚虏脦脢媒录脟脗录脗冒拢驴", this.Text, MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.No)
+                            if (XtraMessageBox.Show("确定保存为小夜班次透析参数记录吗？", this.Text, MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.No)
                                 return;
                         }
                         else if (banci.Equals("3"))
                         {
-                            if (XtraMessageBox.Show("脠路露篓卤拢麓忙脦陋麓贸脪鹿掳脿麓脦脥赂脦枚虏脦脢媒录脟脗录脗冒拢驴", this.Text, MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.No)
+                            if (XtraMessageBox.Show("确定保存为大夜班次透析参数记录吗？", this.Text, MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.No)
                                 return;
                         }
                     }
 
-                    var dtConfig = _configService.GetConfigList(string.Empty, string.Empty, "脰脢驴脴脨拢脩茅", "1");
+                    var dtConfig = _configService.GetConfigList(string.Empty, string.Empty, "质控校验", "1");
                     DateTime start = Utility.CDate(this.cmbCREATE_DATE.DateTime.ToShortDateString() + " " + this.cmbCreate_Time.Text);
-                    if (!Utility.CheckRecordTimeIsValid("脥赂脦枚虏脦脢媒录脟脗录", start, start, dtConfig))
+                    if (!Utility.CheckRecordTimeIsValid("透析参数记录", start, start, dtConfig))
                     {
-                        XtraMessageBox.Show("脥赂脦枚虏脦脢媒虏禄脭脢脨铆脤谩脟掳脗录脠毛拢隆", this.Text);
+                        XtraMessageBox.Show("透析参数不允许提前录入！", this.Text);
                         return;
                     }
 
                     if (_patientScheduleRow["AREANAME"].ToString().Equals("CRRT"))
                     {
-                        //录矛虏茅掳脿麓脦潞脥脢卤录盲露脦脢脟路帽路没潞脧
+                        //检查班次和时间段是否符合
                         bool checkResult = true;
                         DateTime time1 = Convert.ToDateTime("16:00");
                         DateTime time2 = Convert.ToDateTime("23:59");
@@ -2168,7 +2150,7 @@ namespace Hemo.Client.UI.Hemodialysis
 
                         if (!checkResult)
                         {
-                            XtraMessageBox.Show("录脟脗录脢卤录盲脫毛脟漏碌陆脠脮脝脷隆垄掳脿麓脦虏禄路没潞脧拢卢脟毛录矛虏茅拢隆", this.Text);
+                            XtraMessageBox.Show("记录时间与签到日期、班次不符合，请检查！", this.Text);
                             return;
                         }
                     }
@@ -2179,57 +2161,57 @@ namespace Hemo.Client.UI.Hemodialysis
 
             if (!this.panel_Top.Visible)
             {
-                AutoClosedMsgBox.ShowForm("脢媒戮脻卤拢麓忙鲁脡鹿娄!", "禄录脮脽脰脦脕脝", 1000, MessageBoxIcon.Warning);
+                AutoClosedMsgBox.ShowForm("数据保存成功!", "患者治疗", 1000, MessageBoxIcon.Warning);
             }
             loadParaneterGrid(txtCURE_ID.Text, txtHEMODIALYSIS_ID.Text.Trim());
             setParamterEnabled(false);
-            btnEdit.Text = "卤脿录颅";
+            btnEdit.Text = "编辑";
 
-            #region //脪脭脟掳碌脛卤拢麓忙卤拢脕么
+            #region //以前的保存保留
 
-            ////赂酶脪漏脨脜脧垄
+            ////给药信息
             //if (tabIndex == 1)
             //{
             //    if (IsDrugDataValidate())
             //    {
             //        if (SaveDrug() > 0)
             //        {
-            //            XtraMessageBox.Show("赂酶脪漏脨脜脧垄拢卢卤拢麓忙鲁脡鹿娄隆拢", "脰脦脕脝脨脜脧垄");
+            //            XtraMessageBox.Show("给药信息，保存成功。", "治疗信息");
             //            this.DialogResult = System.Windows.Forms.DialogResult.Yes;
             //            loadGrid(txtCURE_ID.Text);
             //        }
             //    }
             //}
-            ////脥赂脦枚虏脦脢媒
+            ////透析参数
             //else if (tabIndex == 2)
             //{
             //    if (IsHemoParametersDataValidate())
             //    {
-            //        if (XtraMessageBox.Show("脠路露篓卤拢麓忙碌卤脟掳脩陋脥赂脰脦脕脝碌楼脨脜脧垄脗冒拢驴", this.Text, MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.No)
+            //        if (XtraMessageBox.Show("确定保存当前血透治疗单信息吗？", this.Text, MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.No)
             //            return;
 
             //        if (SaveHemoParameters() > 0)
             //        {
-            //            XtraMessageBox.Show("脥赂脦枚虏脦脢媒拢卢卤拢麓忙鲁脡鹿娄隆拢", "脰脦脕脝脨脜脧垄");
+            //            XtraMessageBox.Show("透析参数，保存成功。", "治疗信息");
             //            this.DialogResult = System.Windows.Forms.DialogResult.Yes;
             //            loadGrid(txtCURE_ID.Text);
             //            setParamterEnabled(false);
-            //            btnEdit.Text = "卤脿录颅";
+            //            btnEdit.Text = "编辑";
             //        }
             //    }
             //}
-            ////麓娄路陆脰脦脕脝碌楼脰梅脨脜脧垄脫毛脥赂脦枚脨隆陆谩
+            ////处方治疗单主信息与透析小结
             //else if (tabIndex == 0)
             //{
 
             //    if (IsDataValidate())
             //    {
-            //        if (XtraMessageBox.Show("脠路露篓卤拢麓忙碌卤脟掳脩陋脥赂脰脦脕脝碌楼脨脜脧垄脗冒拢驴", this.Text, MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.No)
+            //        if (XtraMessageBox.Show("确定保存当前血透治疗单信息吗？", this.Text, MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.No)
             //            return;
 
             //        if (SaveData() > 0)
             //        {
-            //            XtraMessageBox.Show("卤拢麓忙鲁脡鹿娄隆拢", "脰脦脕脝脨脜脧垄");
+            //            XtraMessageBox.Show("保存成功。", "治疗信息");
             //            this.DialogResult = System.Windows.Forms.DialogResult.Yes;
             //        }
             //    }
@@ -2239,7 +2221,7 @@ namespace Hemo.Client.UI.Hemodialysis
 
             //    if (SaveData() > 0)
             //    {
-            //        XtraMessageBox.Show("卤拢麓忙鲁脡鹿娄隆拢", "脰脦脕脝脨脜脧垄");
+            //        XtraMessageBox.Show("保存成功。", "治疗信息");
             //        this.DialogResult = System.Windows.Forms.DialogResult.Yes;
             //    }
             //}
@@ -2248,7 +2230,7 @@ namespace Hemo.Client.UI.Hemodialysis
         }
 
         /// <summary>
-        /// 脤铆录脫脪禄脨脨脨脗碌脛脥赂脦枚虏脦脢媒
+        /// 添加一行新的透析参数
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
@@ -2263,7 +2245,7 @@ namespace Hemo.Client.UI.Hemodialysis
         }
 
         /// <summary>
-        /// 脤铆录脫脪禄脨脨脨脗碌脛赂酶脪漏录脟脗录
+        /// 添加一行新的给药记录
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
@@ -2305,7 +2287,7 @@ namespace Hemo.Client.UI.Hemodialysis
                 if (tabIndex == 1)
                 {
                     this.btnSave.Visible = false;
-                    //脕玫鲁卢 2018-11-29  脨脼赂麓驴陋脢录脰脦脕脝脢卤脪漏脝路虏禄脣垄脨脗碌脛脦脢脤芒
+                    //刘超 2018-11-29  修复开始治疗时药品不刷新的问题
                     loadDrugGrid(txtCURE_ID.Text, addHemoId);
                 }
                 if (tabIndex == 3)
@@ -2347,7 +2329,7 @@ namespace Hemo.Client.UI.Hemodialysis
         }
 
         /// <summary>
-        /// 脨脗脭枚
+        /// 新增
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
@@ -2373,7 +2355,7 @@ namespace Hemo.Client.UI.Hemodialysis
                 cmbCreate_Time.Focus();
                 this.spnCONDUCTIVITY.EditValue = 14;
                 this.spnDIALYSATE_RATE.EditValue = 500;
-                this.txtCLINICAL_MANIFESTATION.EditValue = "脦脼脤脴脢芒";
+                this.txtCLINICAL_MANIFESTATION.EditValue = "无特殊";
                 if (_HemoialysisParamterDatatable.Rows.Count > 0)
                     this.spnANTICOAGULANT.EditValue = 0;
                 else if (this.spnFIRST_HEPARIN.Value != 0)
@@ -2386,7 +2368,7 @@ namespace Hemo.Client.UI.Hemodialysis
         }
 
         /// <summary>
-        /// 赂酶脪漏录脟脗录碌楼禄梅脨脨赂鲁脰碌
+        /// 给药记录单击行赋值
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
@@ -2405,7 +2387,7 @@ namespace Hemo.Client.UI.Hemodialysis
                 {
                     this.btn_exect.Visible = false;
                     this.btn_Back.Visible = true;
-                    lopSTATUS.EditValue = "脪脩脰麓脨脨";
+                    lopSTATUS.EditValue = "已执行";
                     this.btn_exect.Visible = false;
                     this.btn_Back.Visible = true;
                     txtEXEC_TIME.Time = Utility.CDate(tmpDrugTable.Rows[0]["EXEC_DATE"].ToString());
@@ -2418,7 +2400,7 @@ namespace Hemo.Client.UI.Hemodialysis
                 {
                     this.btn_exect.Visible = true;
                     this.btn_Back.Visible = false;
-                    lopSTATUS.EditValue = "脦麓脰麓脨脨";
+                    lopSTATUS.EditValue = "未执行";
                     this.btn_exect.Visible = true;
                     this.btn_Back.Visible = false;
                     this.txtEXEC_DATE.EditValue = System.DateTime.Now.Date;
@@ -2430,7 +2412,7 @@ namespace Hemo.Client.UI.Hemodialysis
                 {
                     this.btn_exect.Visible = true;
                     this.btn_Back.Visible = false;
-                    lopSTATUS.EditValue = "脥脣禄脴";
+                    lopSTATUS.EditValue = "退回";
                     this.btn_exect.Visible = true;
                     this.btn_Back.Visible = false;
                     this.txtEXEC_DATE.EditValue = System.DateTime.Now.Date;
@@ -2460,14 +2442,14 @@ namespace Hemo.Client.UI.Hemodialysis
         }
 
         /// <summary>
-        /// 脥赂脦枚虏脦脢媒碌楼禄梅脨脨赂鲁脰碌
+        /// 透析参数单击行赋值
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
         private void gridView1_RowClick(object sender, DevExpress.XtraGrid.Views.Grid.RowClickEventArgs e)
         {
             btnEdit.Enabled = true;
-            //赂霉戮脻脩隆脰脨脨脨赂鲁脰碌
+            //根据选中行赋值
             DataRow dr = gridView1.GetFocusedDataRow();
             if (dr != null)
             {
@@ -2499,16 +2481,16 @@ namespace Hemo.Client.UI.Hemodialysis
         }
 
         /// <summary>
-        /// 碌茫禄梅卤脿录颅掳麓脜楼拢卢驴脴脰脝驴脴录镁脗录脠毛脳麓脤卢
+        /// 点击编辑按钮，控制控件录入状态
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
         private void btnEdit_Click(object sender, EventArgs e)
         {
-            //脥赂脦枚虏脦脢媒掳麓脜楼脳麓脤卢驴脴脰脝 1=赂酶脪漏脨脜脧垄 2=脥赂脦枚虏脦脢媒
+            //透析参数按钮状态控制 1=给药信息 2=透析参数
             if (tabIndex == 1 || tabIndex == 2)
             {
-                if (btnEdit.Text == "脠隆脧没")
+                if (btnEdit.Text == "取消")
                 {
                     if (tabIndex == 2)
                     {
@@ -2520,7 +2502,7 @@ namespace Hemo.Client.UI.Hemodialysis
                         setDrugEnabled(false);
                         BaseControlInfo.ClearControlText(panDrug);
                     }
-                    btnEdit.Text = "卤脿录颅";
+                    btnEdit.Text = "编辑";
                 }
                 else
                 {
@@ -2539,7 +2521,7 @@ namespace Hemo.Client.UI.Hemodialysis
                         txtEXEC_TIME.EditValue = System.DateTime.Now.ToShortTimeString();
                         lopSTATUS.Focus();
                     }
-                    btnEdit.Text = "脠隆脧没(&E)";
+                    btnEdit.Text = "取消(&E)";
                     isAddDrugParmars = false;
                     isAddHemoParmars = false;
                 }
@@ -2551,7 +2533,7 @@ namespace Hemo.Client.UI.Hemodialysis
         }
 
         /// <summary>
-        /// 赂麓脰脝虏脦脢媒录脟脗录脛脷脠脻
+        /// 复制参数记录内容
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
@@ -2597,15 +2579,15 @@ namespace Hemo.Client.UI.Hemodialysis
                     }
                     //txtCLINICAL_MANIFESTATION.Text = dr["CLINICAL_MANIFESTATION"].ToString();
                     spnBREATH.EditValue = dr["BREATH"];
-                    //脰脦脕脝
+                    //治疗
                     txtCLINICAL_MANIFESTATION.EditValue = dr["CURE_MODE"];
                     lupNURSE_ID.EditValue = dr["NURSE_ID"];
                     spnTEMPERATURE.EditValue = dr["TEMPERATURE"];
-                    XtraMessageBox.Show("虏脦脢媒脪脩赂麓脰脝拢卢脟毛脢盲脠毛脢脮脣玫脩鹿潞脥脢忙脮脜脩鹿潞贸卤拢麓忙脢媒戮脻隆拢", "虏脦脢媒录脟脗录");
+                    XtraMessageBox.Show("参数已复制，请输入收缩压和舒张压后保存数据。", "参数记录");
                 }
                 else
                 {
-                    XtraMessageBox.Show("脟毛脩隆脭帽脪禄脤玫脪陋赂麓脰脝碌脛虏脦脢媒录脟脗录隆拢", "虏脦脢媒录脟脗录");
+                    XtraMessageBox.Show("请选择一条要复制的参数记录。", "参数记录");
                 }
             }
         }
@@ -2633,28 +2615,28 @@ namespace Hemo.Client.UI.Hemodialysis
             }
             else
             {
-                //禄帽脠隆脣霉脭脷脨脨脰赂露篓脕脨碌脛脰碌
+                //获取所在行指定列的值
                 string status = gridView4.GetRowCellValue(e.RowHandle, "STATUS").ToString();
 
-                //卤脠陆脧脰赂露篓脕脨碌脛脳麓脤卢
+                //比较指定列的状态
                 if (status == "0")
                 {
-                    //    e.Appearance.BackColor = Color.SkyBlue;//脡猫脰脙驴陋脕垄碌脛卤鲁戮掳脩脮脡芦
+                    //    e.Appearance.BackColor = Color.SkyBlue;//设置开立的背景颜色
                     e.Appearance.ForeColor = Color.Black;
                 }
                 else if (status == "1")
                 {
-                    e.Appearance.BackColor = Color.LightGoldenrodYellow;//脡猫脰脙脰麓脨脨碌脛卤鲁戮掳脩脮脡芦
+                    e.Appearance.BackColor = Color.LightGoldenrodYellow;//设置执行的背景颜色
                     e.Appearance.ForeColor = Color.Green;
                 }
                 else if (status == "2")
                 {
-                    e.Appearance.BackColor = Color.Gray;//脡猫脰脙路碌禄脴碌脛卤鲁戮掳脩脮脡芦 
+                    e.Appearance.BackColor = Color.Gray;//设置返回的背景颜色 
                     e.Appearance.ForeColor = Color.Green;
                 }
                 else if (status == "3")
                 {
-                    e.Appearance.BackColor = Color.Red;//脡猫脰脙脥拢脰鹿碌脛卤鲁戮掳脩脮脡芦 
+                    e.Appearance.BackColor = Color.Red;//设置停止的背景颜色 
                     e.Appearance.ForeColor = Color.Black;
                 }
                 else
@@ -2666,8 +2648,8 @@ namespace Hemo.Client.UI.Hemodialysis
 
         private void btn_exect_Click(object sender, EventArgs e)
         {
-            this.lopSTATUS.EditValue = "脪脩脰麓脨脨";
-            if (XtraMessageBox.Show("脠路露篓卤拢麓忙碌卤脟掳脩陋脥赂脰脦脕脝碌楼脨脜脧垄脗冒拢驴", this.Text, MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.No)
+            this.lopSTATUS.EditValue = "已执行";
+            if (XtraMessageBox.Show("确定保存当前血透治疗单信息吗？", this.Text, MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.No)
                 return;
             if (!isAddDrugParmars)
             {
@@ -2685,8 +2667,8 @@ namespace Hemo.Client.UI.Hemodialysis
 
         private void btn_Back_Click(object sender, EventArgs e)
         {
-            this.lopSTATUS.EditValue = "脥脣禄脴";
-            if (XtraMessageBox.Show("脠路露篓卤拢麓忙碌卤脟掳脩陋脥赂脰脦脕脝碌楼脨脜脧垄脗冒拢驴", this.Text, MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.No)
+            this.lopSTATUS.EditValue = "退回";
+            if (XtraMessageBox.Show("确定保存当前血透治疗单信息吗？", this.Text, MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.No)
                 return;
             if (!isAddDrugParmars)
             {
@@ -2705,10 +2687,10 @@ namespace Hemo.Client.UI.Hemodialysis
         {
             if (txtHEMODIALYSIS_PARAMETERS_ID.Text.Length > 0)
             {
-                if (XtraMessageBox.Show("脠路露篓脡戮鲁媒碌卤脟掳脥赂脦枚虏脦脢媒脨脜脧垄脗冒拢驴", this.Text, MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.No)
+                if (XtraMessageBox.Show("确定删除当前透析参数信息吗？", this.Text, MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.No)
                     return;
 
-                // 录脟脗录脡戮鲁媒脟掳碌脛鹿脴录眉脨脜脧垄拢篓脫脙脫脷脡贸录脝脠脮脰戮拢漏
+                // 记录删除前的关键信息（用于审计日志）
                 string deletedParamId = txtHEMODIALYSIS_PARAMETERS_ID.Text;
                 string deletedInfo = string.Empty;
                 if (_HemoialysisParamterDatatable != null)
@@ -2718,7 +2700,7 @@ namespace Hemo.Client.UI.Hemodialysis
                     if (dtOld != null && dtOld.Rows.Count > 0)
                     {
                         DataRow delRow = dtOld.Rows[0];
-                        // 脰禄录脟脗录鹿脴录眉脳脰露脦
+                        // 只记录关键字段
                         StringBuilder sb = new StringBuilder();
                         string[] keyFields = { "CURE_ID", "HEMODIALYSIS_PARAMETERS_ID", "CREATE_DATE",
                             "VASCULAR_ACCESS_ERRHYISIS", "VASCULAR_ACCESS_GLIDE", "VENOUS_PRESSURE",
@@ -2743,15 +2725,15 @@ namespace Hemo.Client.UI.Hemodialysis
 
                 if (result > 0)
                 {
-                    // 录脟脗录脡贸录脝脠脮脰戮 - 脡戮鲁媒脥赂脦枚虏脦脢媒
-                    WriteOperationLog("DELETE", "脥赂脦枚虏脦脢媒录脟脗录", deletedParamId, deletedInfo, "脡戮鲁媒脥赂脦枚虏脦脢媒");
+                    // 记录审计日志 - 删除透析参数
+                    WriteOperationLog("DELETE", "透析参数记录", deletedParamId, deletedInfo, "删除透析参数");
 
                     loadParaneterGrid(txtCURE_ID.Text, txtHEMODIALYSIS_ID.Text.Trim());
                 }
             }
             else
             {
-                XtraMessageBox.Show("脟毛脩隆脭帽脪禄脤玫脪陋脡戮鲁媒碌脛脢媒戮脻隆拢");
+                XtraMessageBox.Show("请选择一条要删除的数据。");
             }
         }
 
@@ -2827,15 +2809,15 @@ namespace Hemo.Client.UI.Hemodialysis
 
                 if (smalCount == 0)
                 {
-                    e.DisplayText = "漏鲁";
+                    e.DisplayText = "┏";
                     return;
                 }
                 if (bigCount == 0)
                 {
-                    e.DisplayText = "漏禄";
+                    e.DisplayText = "┗";
                     return;
                 }
-                e.DisplayText = "漏搂";
+                e.DisplayText = "┃";
                 return;
 
             }
@@ -2878,7 +2860,7 @@ namespace Hemo.Client.UI.Hemodialysis
         }
 
         /// <summary>
-        /// 虏脡录炉脢媒戮脻
+        /// 采集数据
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
@@ -2910,17 +2892,6 @@ namespace Hemo.Client.UI.Hemodialysis
             rdoVASCULAR_ACCESS_BLOOD.SelectedIndex = -1;
             rdoVASCULAR_ACCESS_ERRHYISIS.SelectedIndex = -1;
             rdoVASCULAR_ACCESS_BLOOD_INFECT.SelectedIndex = -1;
-            chkVASCULAR_ACCESS_PENDING.Checked = false;
-            txtVASCULAR_ACCESS_PENDING_DATE.EditValue = null;
-        }
-
-        private void chkVASCULAR_ACCESS_PENDING_CheckedChanged(object sender, EventArgs e)
-        {
-            this.txtVASCULAR_ACCESS_PENDING_DATE.Enabled = this.chkVASCULAR_ACCESS_PENDING.Checked;
-            if (!this.chkVASCULAR_ACCESS_PENDING.Checked)
-            {
-                this.txtVASCULAR_ACCESS_PENDING_DATE.EditValue = null;
-            }
         }
 
         private void btnClear1_Click(object sender, EventArgs e)
@@ -2934,9 +2905,9 @@ namespace Hemo.Client.UI.Hemodialysis
         }
         #endregion
 
-        #region 虏垄路垄脰垄
+        #region 并发症
         /// <summary>
-        /// 录脫脭脴虏垄路垄脰垄脢媒戮脻
+        /// 加载并发症数据
         /// </summary>
         private void LoadComplication()
         {
@@ -3011,13 +2982,13 @@ namespace Hemo.Client.UI.Hemodialysis
             if (!checkOrder.Checked)
             {
 
-                if (this.txtDOCTOR_ADVICE.Text.Trim().Equals("脪陆脰枚:" + sbDrug.ToString().Trim()))
+                if (this.txtDOCTOR_ADVICE.Text.Trim().Equals("医嘱:" + sbDrug.ToString().Trim()))
                 {
-                    this.txtDOCTOR_ADVICE.Text = this.txtDOCTOR_ADVICE.Text.Replace(string.Format("脪陆脰枚:{0}", sbDrug.ToString().Trim()), "").Trim();
+                    this.txtDOCTOR_ADVICE.Text = this.txtDOCTOR_ADVICE.Text.Replace(string.Format("医嘱:{0}", sbDrug.ToString().Trim()), "").Trim();
                 }
                 else
                 {
-                    this.txtDOCTOR_ADVICE.Text = this.txtDOCTOR_ADVICE.Text.Replace(string.Format(";脪陆脰枚:{0}", sbDrug.ToString().Trim()), "");
+                    this.txtDOCTOR_ADVICE.Text = this.txtDOCTOR_ADVICE.Text.Replace(string.Format(";医嘱:{0}", sbDrug.ToString().Trim()), "");
 
                 }
             }
@@ -3025,11 +2996,11 @@ namespace Hemo.Client.UI.Hemodialysis
             {
                 if (string.IsNullOrEmpty(this.txtDOCTOR_ADVICE.Text.Trim()))
                 {
-                    this.txtDOCTOR_ADVICE.Text = string.Format("脪陆脰枚:{0}", sbDrug.ToString().Trim());
+                    this.txtDOCTOR_ADVICE.Text = string.Format("医嘱:{0}", sbDrug.ToString().Trim());
                 }
                 else
                 {
-                    this.txtDOCTOR_ADVICE.Text = string.Format("{0};脪陆脰枚:{1}", this.txtDOCTOR_ADVICE.Text, sbDrug.ToString().Trim());
+                    this.txtDOCTOR_ADVICE.Text = string.Format("{0};医嘱:{1}", this.txtDOCTOR_ADVICE.Text, sbDrug.ToString().Trim());
 
                 }
 
@@ -3091,13 +3062,13 @@ namespace Hemo.Client.UI.Hemodialysis
             {
                 this.spnAFTER_DRY_WEIGHT.Visible = false;
                 this.labelControlAfter.Visible = true;
-                this.labelControlaftere.Text = "脥赂潞贸脩陋脩鹿";
+                this.labelControlaftere.Text = "透后血压";
             }
             else
             {
                 this.spnAFTER_DRY_WEIGHT.Visible = true;
                 this.labelControlAfter.Visible = false;
-                labelControlaftere.Text = "Kg 脥赂潞贸脩陋脩鹿";
+                labelControlaftere.Text = "Kg 透后血压";
             }
         }
 
