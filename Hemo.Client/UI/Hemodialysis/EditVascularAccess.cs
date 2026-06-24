@@ -576,5 +576,14 @@ namespace Hemo.Client.UI.Hemodialysis
         {
             loadValPicture(VName);
         }
+
+        private void chkIS_PENDING_CheckedChanged(object sender, EventArgs e)
+        {
+            this.dePENDING_DATE.Enabled = this.chkIS_PENDING.Checked;
+            if (!this.chkIS_PENDING.Checked)
+            {
+                this.dePENDING_DATE.EditValue = null;
+            }
+        }
     }
 }

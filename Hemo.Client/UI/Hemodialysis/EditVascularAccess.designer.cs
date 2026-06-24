@@ -119,6 +119,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.txtHOSPITAL.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtCREATE_DATE.Properties.VistaTimeProperties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtCREATE_DATE.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chkIS_PENDING.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dePENDING_DATE.Properties.VistaTimeProperties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dePENDING_DATE.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
             this.panelControl1.SuspendLayout();
             this.xtraTabPage2.SuspendLayout();
@@ -218,6 +221,9 @@
             this.panControl.Controls.Add(this.labelControl7);
             this.panControl.Controls.Add(this.labelControl6);
             this.panControl.Controls.Add(this.labelControl5);
+            this.panControl.Controls.Add(this.chkIS_PENDING);
+            this.panControl.Controls.Add(this.dePENDING_DATE);
+            this.panControl.Controls.Add(this.lblPendingDate);
             this.panControl.Location = new System.Drawing.Point(5, 11);
             this.panControl.Name = "panControl";
             this.panControl.Size = new System.Drawing.Size(680, 446);
@@ -571,6 +577,46 @@
             this.labelControl15.Size = new System.Drawing.Size(48, 17);
             this.labelControl15.TabIndex = 365;
             this.labelControl15.Text = "失败原因";
+            // 
+            // chkIS_PENDING
+            // 
+            this.chkIS_PENDING.Location = new System.Drawing.Point(87, 245);
+            this.chkIS_PENDING.Name = "chkIS_PENDING";
+            this.chkIS_PENDING.Properties.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F);
+            this.chkIS_PENDING.Properties.Appearance.Options.UseFont = true;
+            this.chkIS_PENDING.Properties.Caption = "待定";
+            this.chkIS_PENDING.Size = new System.Drawing.Size(60, 22);
+            this.chkIS_PENDING.TabIndex = 17;
+            this.chkIS_PENDING.CheckedChanged += new System.EventHandler(this.chkIS_PENDING_CheckedChanged);
+            // 
+            // lblPendingDate
+            // 
+            this.lblPendingDate.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F);
+            this.lblPendingDate.Appearance.Options.UseFont = true;
+            this.lblPendingDate.Location = new System.Drawing.Point(160, 248);
+            this.lblPendingDate.Name = "lblPendingDate";
+            this.lblPendingDate.Size = new System.Drawing.Size(60, 17);
+            this.lblPendingDate.TabIndex = 380;
+            this.lblPendingDate.Text = "待定日期";
+            // 
+            // dePENDING_DATE
+            // 
+            this.dePENDING_DATE.EditValue = null;
+            this.dePENDING_DATE.Enabled = false;
+            this.dePENDING_DATE.EnterMoveNextControl = true;
+            this.dePENDING_DATE.Location = new System.Drawing.Point(226, 245);
+            this.dePENDING_DATE.Name = "dePENDING_DATE";
+            this.dePENDING_DATE.Properties.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F);
+            this.dePENDING_DATE.Properties.Appearance.ForeColor = System.Drawing.Color.Blue;
+            this.dePENDING_DATE.Properties.Appearance.Options.UseFont = true;
+            this.dePENDING_DATE.Properties.Appearance.Options.UseForeColor = true;
+            this.dePENDING_DATE.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.dePENDING_DATE.Properties.LookAndFeel.SkinName = "ExtendBlue";
+            this.dePENDING_DATE.Properties.VistaTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton()});
+            this.dePENDING_DATE.Size = new System.Drawing.Size(116, 23);
+            this.dePENDING_DATE.TabIndex = 18;
             // 
             // labelControl18
             // 
@@ -937,6 +983,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.txtHOSPITAL.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtCREATE_DATE.Properties.VistaTimeProperties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtCREATE_DATE.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chkIS_PENDING.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dePENDING_DATE.Properties.VistaTimeProperties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dePENDING_DATE.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).EndInit();
             this.panelControl1.ResumeLayout(false);
             this.xtraTabPage2.ResumeLayout(false);
@@ -1012,8 +1061,9 @@
         private DevExpress.XtraEditors.LabelControl labelControl3;
         private DevExpress.XtraEditors.PictureEdit picVasAccess;
         private QueryEstimateInBasketUI queryEstimateInBasketUI1;
-
-
+        private DevExpress.XtraEditors.CheckEdit chkIS_PENDING;
+        private DevExpress.XtraEditors.DateEdit dePENDING_DATE;
+        private DevExpress.XtraEditors.LabelControl lblPendingDate;
 
     }
 }
