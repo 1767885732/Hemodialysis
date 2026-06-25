@@ -8,3 +8,15 @@ comment on column MED_CURE_LONGDRUG.STOP_TIME is '医嘱停止时间';
 -- 2026-05-28 刘建超 患者信息中添加患者标签（首次透析/他院转入） ORACLE数据库
 alter table MED_PATIENTS add PAT_LABEL VARCHAR2(100);
 comment on column MED_PATIENTS.PAT_LABEL is '患者标签（首次透析、他院转入）';
+
+
+
+--添加待定和日期
+-- Add/modify columns 
+alter table MED_CURE_MAIN add vascular_access_pending VARCHAR2(1);
+alter table MED_CURE_MAIN add vascular_access_pending_date date;
+-- Add comments to the columns 
+comment on column MED_CURE_MAIN.vascular_access_pending
+  is '导管评估（待定）';
+comment on column MED_CURE_MAIN.vascular_access_pending_date
+  is '导管评估（待定日期）';

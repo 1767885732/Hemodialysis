@@ -1,5 +1,7 @@
-﻿namespace Hemo.Client.UI.Hemodialysis {
-    partial class EditTreatment {
+﻿namespace Hemo.Client.UI.Hemodialysis
+{
+    partial class EditTreatment
+    {
         /// <summary>
         /// Required designer variable.
         /// </summary>
@@ -9,8 +11,10 @@
         /// Clean up any resources being used.
         /// </summary>
         /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
-        protected override void Dispose(bool disposing) {
-            if (disposing && (components != null)) {
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
                 components.Dispose();
             }
             base.Dispose(disposing);
@@ -22,7 +26,8 @@
         /// Required method for Designer support - do not modify
         /// the contents of this method with the code editor.
         /// </summary>
-        private void InitializeComponent() {
+        private void InitializeComponent()
+        {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EditTreatment));
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
@@ -168,6 +173,8 @@
             this.labelControl63 = new DevExpress.XtraEditors.LabelControl();
             this.rdoVASCULAR_ACCESS_BLOOD = new DevExpress.XtraEditors.RadioGroup();
             this.labelControl84 = new DevExpress.XtraEditors.LabelControl();
+            this.chkDGPGPending = new DevExpress.XtraEditors.CheckEdit();
+            this.dtDGPGPendingDate = new DevExpress.XtraEditors.DateEdit();
             this.xtraTabPageNLPG = new DevExpress.XtraTab.XtraTabPage();
             this.rdoIN_BASKET_NOISE = new DevExpress.XtraEditors.RadioGroup();
             this.rdoIN_BASKET_TREMOR = new DevExpress.XtraEditors.RadioGroup();
@@ -194,10 +201,12 @@
             this.labelControl5 = new DevExpress.XtraEditors.LabelControl();
             this.cmbVEIN = new DevExpress.XtraEditors.ComboBoxEdit();
             this.panelControl4 = new DevExpress.XtraEditors.PanelControl();
+            this.lupCHECK_NURSE = new DevExpress.XtraEditors.LookUpEdit();
             this.lupPUNCTURE_NURSE = new DevExpress.XtraEditors.LookUpEdit();
             this.cmbPRIMARY_DOCTOR = new DevExpress.XtraEditors.LookUpEdit();
             this.labelControl26 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl27 = new DevExpress.XtraEditors.LabelControl();
+            this.labelControl39 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
             this.cmbPRIMARY_NURSE = new DevExpress.XtraEditors.LookUpEdit();
             this.tab2 = new DevExpress.XtraTab.XtraTabPage();
@@ -423,8 +432,6 @@
             this.panel_Top = new DevExpress.XtraEditors.PanelControl();
             this.Data_CureData = new DevExpress.XtraEditors.DateEdit();
             this.labelControl68 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl39 = new DevExpress.XtraEditors.LabelControl();
-            this.lupCHECK_NURSE = new DevExpress.XtraEditors.LookUpEdit();
             this.contextMenuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.imageCollection1)).BeginInit();
             this.contextMenuStrip2.SuspendLayout();
@@ -509,6 +516,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.rdoVASCULAR_ACCESS_THROMBUS.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.rdoVASCULAR_ACCESS_SWELLING.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.rdoVASCULAR_ACCESS_BLOOD.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chkDGPGPending.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtDGPGPendingDate.Properties.CalendarTimeProperties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtDGPGPendingDate.Properties)).BeginInit();
             this.xtraTabPageNLPG.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.rdoIN_BASKET_NOISE.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.rdoIN_BASKET_TREMOR.Properties)).BeginInit();
@@ -522,6 +532,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.cmbVEIN.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl4)).BeginInit();
             this.panelControl4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.lupCHECK_NURSE.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lupPUNCTURE_NURSE.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cmbPRIMARY_DOCTOR.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cmbPRIMARY_NURSE.Properties)).BeginInit();
@@ -628,7 +639,6 @@
             this.panel_Top.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Data_CureData.Properties.CalendarTimeProperties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Data_CureData.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lupCHECK_NURSE.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // contextMenuStrip1
@@ -2487,6 +2497,8 @@
             this.xtraTabPageDGPG.Controls.Add(this.labelControl63);
             this.xtraTabPageDGPG.Controls.Add(this.rdoVASCULAR_ACCESS_BLOOD);
             this.xtraTabPageDGPG.Controls.Add(this.labelControl84);
+            this.xtraTabPageDGPG.Controls.Add(this.chkDGPGPending);
+            this.xtraTabPageDGPG.Controls.Add(this.dtDGPGPendingDate);
             this.xtraTabPageDGPG.Margin = new System.Windows.Forms.Padding(0);
             this.xtraTabPageDGPG.Name = "xtraTabPageDGPG";
             this.xtraTabPageDGPG.Size = new System.Drawing.Size(958, 70);
@@ -2671,6 +2683,28 @@
             this.labelControl84.TabIndex = 536;
             this.labelControl84.Text = "穿刺点局部红肿";
             // 
+            // chkDGPGPending
+            // 
+            this.chkDGPGPending.Location = new System.Drawing.Point(746, 44);
+            this.chkDGPGPending.Name = "chkDGPGPending";
+            this.chkDGPGPending.Properties.Caption = "待定";
+            this.chkDGPGPending.Size = new System.Drawing.Size(53, 19);
+            this.chkDGPGPending.TabIndex = 665;
+            this.chkDGPGPending.CheckedChanged += new System.EventHandler(this.chkDGPGPending_CheckedChanged);
+            // 
+            // dtDGPGPendingDate
+            // 
+            this.dtDGPGPendingDate.EditValue = null;
+            this.dtDGPGPendingDate.Enabled = false;
+            this.dtDGPGPendingDate.Location = new System.Drawing.Point(805, 45);
+            this.dtDGPGPendingDate.Name = "dtDGPGPendingDate";
+            this.dtDGPGPendingDate.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.dtDGPGPendingDate.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton()});
+            this.dtDGPGPendingDate.Size = new System.Drawing.Size(120, 20);
+            this.dtDGPGPendingDate.TabIndex = 667;
+            // 
             // xtraTabPageNLPG
             // 
             this.xtraTabPageNLPG.Controls.Add(this.rdoIN_BASKET_NOISE);
@@ -2688,7 +2722,7 @@
             this.xtraTabPageNLPG.Controls.Add(this.rdoIN_BASKET_CLEAN);
             this.xtraTabPageNLPG.Controls.Add(this.labelControl32);
             this.xtraTabPageNLPG.Name = "xtraTabPageNLPG";
-            this.xtraTabPageNLPG.Size = new System.Drawing.Size(960, 70);
+            this.xtraTabPageNLPG.Size = new System.Drawing.Size(958, 70);
             this.xtraTabPageNLPG.Text = "内瘘评估";
             // 
             // rdoIN_BASKET_NOISE
@@ -2997,6 +3031,22 @@
             this.panelControl4.Size = new System.Drawing.Size(1056, 36);
             this.panelControl4.TabIndex = 662;
             // 
+            // lupCHECK_NURSE
+            // 
+            this.lupCHECK_NURSE.EnterMoveNextControl = true;
+            this.lupCHECK_NURSE.Location = new System.Drawing.Point(681, 6);
+            this.lupCHECK_NURSE.Name = "lupCHECK_NURSE";
+            this.lupCHECK_NURSE.Properties.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.lupCHECK_NURSE.Properties.Appearance.ForeColor = System.Drawing.Color.Blue;
+            this.lupCHECK_NURSE.Properties.Appearance.Options.UseFont = true;
+            this.lupCHECK_NURSE.Properties.Appearance.Options.UseForeColor = true;
+            this.lupCHECK_NURSE.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.lupCHECK_NURSE.Properties.LookAndFeel.SkinName = "ExtendBlue";
+            this.lupCHECK_NURSE.Properties.NullText = "";
+            this.lupCHECK_NURSE.Size = new System.Drawing.Size(114, 24);
+            this.lupCHECK_NURSE.TabIndex = 656;
+            // 
             // lupPUNCTURE_NURSE
             // 
             this.lupPUNCTURE_NURSE.EnterMoveNextControl = true;
@@ -3047,6 +3097,15 @@
             this.labelControl27.TabIndex = 659;
             this.labelControl27.Text = "责任护士";
             // 
+            // labelControl39
+            // 
+            this.labelControl39.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl39.Location = new System.Drawing.Point(627, 10);
+            this.labelControl39.Name = "labelControl39";
+            this.labelControl39.Size = new System.Drawing.Size(48, 17);
+            this.labelControl39.TabIndex = 657;
+            this.labelControl39.Text = "核对护士";
+            // 
             // labelControl2
             // 
             this.labelControl2.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -3079,7 +3138,7 @@
             this.tab2.Controls.Add(this.panelControl1);
             this.tab2.Controls.Add(this.panDrug);
             this.tab2.Name = "tab2";
-            this.tab2.Size = new System.Drawing.Size(1076, 631);
+            this.tab2.Size = new System.Drawing.Size(1073, 629);
             this.tab2.Text = "临时医嘱";
             // 
             // panelControl1
@@ -3089,7 +3148,7 @@
             this.panelControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelControl1.Location = new System.Drawing.Point(0, 0);
             this.panelControl1.Name = "panelControl1";
-            this.panelControl1.Size = new System.Drawing.Size(1076, 438);
+            this.panelControl1.Size = new System.Drawing.Size(1073, 436);
             this.panelControl1.TabIndex = 2;
             // 
             // gridControl4
@@ -3098,7 +3157,7 @@
             this.gridControl4.Location = new System.Drawing.Point(0, 0);
             this.gridControl4.MainView = this.gridView4;
             this.gridControl4.Name = "gridControl4";
-            this.gridControl4.Size = new System.Drawing.Size(1076, 438);
+            this.gridControl4.Size = new System.Drawing.Size(1073, 436);
             this.gridControl4.TabIndex = 5;
             this.gridControl4.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView4,
@@ -3352,9 +3411,9 @@
             this.panDrug.Controls.Add(this.lupDRUG_TIMETYPE);
             this.panDrug.Controls.Add(this.cbmDRUG_DAYS);
             this.panDrug.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panDrug.Location = new System.Drawing.Point(0, 438);
+            this.panDrug.Location = new System.Drawing.Point(0, 436);
             this.panDrug.Name = "panDrug";
-            this.panDrug.Size = new System.Drawing.Size(1076, 193);
+            this.panDrug.Size = new System.Drawing.Size(1073, 193);
             this.panDrug.TabIndex = 3;
             // 
             // txtEXEC_TIME
@@ -3530,7 +3589,7 @@
             this.lopDOCTOR_ID.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.lopDOCTOR_ID.Properties.LookAndFeel.SkinName = "ExtendBlue";
-            this.lopDOCTOR_ID.Size = new System.Drawing.Size(306, 24);
+            this.lopDOCTOR_ID.Size = new System.Drawing.Size(303, 24);
             this.lopDOCTOR_ID.TabIndex = 5;
             // 
             // labelControl73
@@ -3607,7 +3666,7 @@
             this.txtREMARK.Name = "txtREMARK";
             this.txtREMARK.Properties.Appearance.ForeColor = System.Drawing.Color.Blue;
             this.txtREMARK.Properties.Appearance.Options.UseForeColor = true;
-            this.txtREMARK.Size = new System.Drawing.Size(967, 103);
+            this.txtREMARK.Size = new System.Drawing.Size(964, 103);
             this.txtREMARK.TabIndex = 14;
             // 
             // labelControl56
@@ -3766,7 +3825,7 @@
             this.tab3.Controls.Add(this.gridControl1);
             this.tab3.Controls.Add(this.panParamter);
             this.tab3.Name = "tab3";
-            this.tab3.Size = new System.Drawing.Size(1076, 631);
+            this.tab3.Size = new System.Drawing.Size(1073, 629);
             this.tab3.Text = "透析参数";
             // 
             // gridControl1
@@ -3775,7 +3834,7 @@
             this.gridControl1.Location = new System.Drawing.Point(0, 0);
             this.gridControl1.MainView = this.gridView1;
             this.gridControl1.Name = "gridControl1";
-            this.gridControl1.Size = new System.Drawing.Size(1076, 386);
+            this.gridControl1.Size = new System.Drawing.Size(1073, 384);
             this.gridControl1.TabIndex = 7;
             this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
@@ -4018,9 +4077,9 @@
             this.panParamter.Controls.Add(this.lupTempDrug);
             this.panParamter.Controls.Add(this.txtHEMODIALYSIS_PARAMETERS_ID);
             this.panParamter.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panParamter.Location = new System.Drawing.Point(0, 386);
+            this.panParamter.Location = new System.Drawing.Point(0, 384);
             this.panParamter.Name = "panParamter";
-            this.panParamter.Size = new System.Drawing.Size(1076, 245);
+            this.panParamter.Size = new System.Drawing.Size(1073, 245);
             this.panParamter.TabIndex = 2;
             // 
             // labelControl13
@@ -4765,7 +4824,7 @@
             this.tab4.Appearance.Header.Options.UseFont = true;
             this.tab4.Controls.Add(this.txtSUMMARY);
             this.tab4.Name = "tab4";
-            this.tab4.Size = new System.Drawing.Size(1076, 631);
+            this.tab4.Size = new System.Drawing.Size(1073, 629);
             this.tab4.Text = "透析小结";
             // 
             // txtSUMMARY
@@ -4774,7 +4833,7 @@
             this.txtSUMMARY.EditValue = "本次透析过程顺利，平安离室。";
             this.txtSUMMARY.Location = new System.Drawing.Point(0, 0);
             this.txtSUMMARY.Name = "txtSUMMARY";
-            this.txtSUMMARY.Size = new System.Drawing.Size(1076, 631);
+            this.txtSUMMARY.Size = new System.Drawing.Size(1073, 629);
             this.txtSUMMARY.TabIndex = 0;
             // 
             // tab5
@@ -4791,7 +4850,7 @@
             this.tab5.Controls.Add(this.btnQJJL);
             this.tab5.Controls.Add(this.txtSUMMARY2);
             this.tab5.Name = "tab5";
-            this.tab5.Size = new System.Drawing.Size(1076, 631);
+            this.tab5.Size = new System.Drawing.Size(1073, 629);
             this.tab5.Text = "抢救记录";
             // 
             // labelControl124
@@ -4881,7 +4940,7 @@
             this.xtraTabPage1.Appearance.Header.Options.UseFont = true;
             this.xtraTabPage1.Controls.Add(this.groupControl1);
             this.xtraTabPage1.Name = "xtraTabPage1";
-            this.xtraTabPage1.Size = new System.Drawing.Size(1076, 631);
+            this.xtraTabPage1.Size = new System.Drawing.Size(1073, 629);
             this.xtraTabPage1.Text = "并发症";
             // 
             // groupControl1
@@ -4954,7 +5013,7 @@
             this.groupControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupControl1.Location = new System.Drawing.Point(0, 0);
             this.groupControl1.Name = "groupControl1";
-            this.groupControl1.Size = new System.Drawing.Size(1076, 631);
+            this.groupControl1.Size = new System.Drawing.Size(1073, 629);
             this.groupControl1.TabIndex = 735;
             this.groupControl1.Text = "并发症";
             // 
@@ -6067,31 +6126,6 @@
             this.labelControl68.TabIndex = 0;
             this.labelControl68.Text = "请选择补录日期：";
             // 
-            // labelControl39
-            // 
-            this.labelControl39.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl39.Location = new System.Drawing.Point(627, 10);
-            this.labelControl39.Name = "labelControl39";
-            this.labelControl39.Size = new System.Drawing.Size(48, 17);
-            this.labelControl39.TabIndex = 657;
-            this.labelControl39.Text = "核对护士";
-            // 
-            // lupCHECK_NURSE
-            // 
-            this.lupCHECK_NURSE.EnterMoveNextControl = true;
-            this.lupCHECK_NURSE.Location = new System.Drawing.Point(681, 6);
-            this.lupCHECK_NURSE.Name = "lupCHECK_NURSE";
-            this.lupCHECK_NURSE.Properties.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.lupCHECK_NURSE.Properties.Appearance.ForeColor = System.Drawing.Color.Blue;
-            this.lupCHECK_NURSE.Properties.Appearance.Options.UseFont = true;
-            this.lupCHECK_NURSE.Properties.Appearance.Options.UseForeColor = true;
-            this.lupCHECK_NURSE.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.lupCHECK_NURSE.Properties.LookAndFeel.SkinName = "ExtendBlue";
-            this.lupCHECK_NURSE.Properties.NullText = "";
-            this.lupCHECK_NURSE.Size = new System.Drawing.Size(114, 24);
-            this.lupCHECK_NURSE.TabIndex = 656;
-            // 
             // EditTreatment
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
@@ -6193,6 +6227,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.rdoVASCULAR_ACCESS_THROMBUS.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.rdoVASCULAR_ACCESS_SWELLING.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.rdoVASCULAR_ACCESS_BLOOD.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chkDGPGPending.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtDGPGPendingDate.Properties.CalendarTimeProperties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtDGPGPendingDate.Properties)).EndInit();
             this.xtraTabPageNLPG.ResumeLayout(false);
             this.xtraTabPageNLPG.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.rdoIN_BASKET_NOISE.Properties)).EndInit();
@@ -6208,6 +6245,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.panelControl4)).EndInit();
             this.panelControl4.ResumeLayout(false);
             this.panelControl4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.lupCHECK_NURSE.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.lupPUNCTURE_NURSE.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cmbPRIMARY_DOCTOR.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cmbPRIMARY_NURSE.Properties)).EndInit();
@@ -6319,7 +6357,6 @@
             this.panel_Top.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Data_CureData.Properties.CalendarTimeProperties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Data_CureData.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lupCHECK_NURSE.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -6473,7 +6510,7 @@
         private DevExpress.XtraEditors.LabelControl labelControl152;
         private DevExpress.XtraEditors.LabelControl labelControl153;
         private DevExpress.XtraEditors.LabelControl labelControl154;
-      
+
         private DevExpress.XtraGrid.Views.Grid.GridView gridView2;
         private DevExpress.XtraEditors.ComboBoxEdit combOT_JZ;
         private DevExpress.XtraEditors.LabelControl labelControl150;
@@ -6635,6 +6672,8 @@
         private DevExpress.XtraEditors.LabelControl txtHEMODIALYSIS_PARAMETERS_ID;
         private DevExpress.XtraEditors.RadioGroup rdoVASCULAR_ACCESS_BLOOD_INFECT;
         private DevExpress.XtraEditors.LabelControl labelControl15;
+        private DevExpress.XtraEditors.CheckEdit chkDGPGPending;
+        private DevExpress.XtraEditors.DateEdit dtDGPGPendingDate;
         private Controls.CtlUserLongInfo ctlUserLongInfo1;
         private DevExpress.XtraEditors.PanelControl panelControl3;
         private DevExpress.XtraEditors.LabelControl labelControl17;

@@ -319,6 +319,8 @@ namespace Hemo.Client.UI.Hemodialysis
             { "EXTENDED_FIELD_3", "治疗参数类型" },
 
             {"DRUG_NURSE_ID","执行护士" },
+            {"VASCULAR_ACCESS_PENDING","待定状态" },
+            {"VASCULAR_ACCESS_PENDING_DATE","待定日期" },
         };
 
         /// <summary>
@@ -851,6 +853,9 @@ namespace Hemo.Client.UI.Hemodialysis
         {
             this.groupBox1.Text = string.Format("{0}({1})  {2}床的治疗信息", this.ctlUserLongInfo1.Patient.NAME, this.ctlUserLongInfo1.Patient.SEX.ToString(), PatientScheduleRow.BEDNAME);
             BaseControlInfo.ClearControlText(xtraScrollableControl1);
+            chkDGPGPending.Checked = false;
+            dtDGPGPendingDate.EditValue = null;
+            dtDGPGPendingDate.Enabled = false;
             //foreach (DevExpress.XtraEditors.Controls.CheckedListBoxItem item in chkCOAGULATION_IN_DIALYSER.Items)
             //{
             //    item.CheckState = System.Windows.Forms.CheckState.Unchecked;
@@ -899,6 +904,17 @@ namespace Hemo.Client.UI.Hemodialysis
                     rdoVASCULAR_ACCESS_ERRHYISIS.EditValue = _CureMainDatatable.Rows[0]["VASCULAR_ACCESS_ERRHYISIS"].ToString();
                 if (_CureMainDatatable.Rows[0]["VASCULAR_ACCESS_BLOOD_INFECT"] != DBNull.Value)
                     rdoVASCULAR_ACCESS_BLOOD_INFECT.EditValue = _CureMainDatatable.Rows[0]["VASCULAR_ACCESS_BLOOD_INFECT"].ToString();
+
+                if (_CureMainDatatable.Columns.Contains("VASCULAR_ACCESS_PENDING"))
+                {
+                    if (_CureMainDatatable.Rows[0]["VASCULAR_ACCESS_PENDING"] != DBNull.Value)
+                        chkDGPGPending.Checked = _CureMainDatatable.Rows[0]["VASCULAR_ACCESS_PENDING"].ToString().Equals("1");
+                }
+                if (_CureMainDatatable.Columns.Contains("VASCULAR_ACCESS_PENDING_DATE"))
+                {
+                    if (_CureMainDatatable.Rows[0]["VASCULAR_ACCESS_PENDING_DATE"] != DBNull.Value)
+                        dtDGPGPendingDate.EditValue = _CureMainDatatable.Rows[0]["VASCULAR_ACCESS_PENDING_DATE"];
+                }
 
                 // 手动回显内瘘评估 RadioGroup 的值
                 if (_CureMainDatatable.Rows[0]["IN_BASKET_PLASTER_ALLERGY"] != DBNull.Value)
@@ -1057,6 +1073,12 @@ namespace Hemo.Client.UI.Hemodialysis
                         snapshotDt.Rows[0]["VASCULAR_ACCESS_ERRHYISIS"] = rdoVASCULAR_ACCESS_ERRHYISIS.EditValue;
                     if (rdoVASCULAR_ACCESS_BLOOD_INFECT.EditValue != null)
                         snapshotDt.Rows[0]["VASCULAR_ACCESS_BLOOD_INFECT"] = rdoVASCULAR_ACCESS_BLOOD_INFECT.EditValue;
+
+                    if (snapshotDt.Columns.Contains("VASCULAR_ACCESS_PENDING"))
+                        snapshotDt.Rows[0]["VASCULAR_ACCESS_PENDING"] = chkDGPGPending.Checked ? "1" : "0";
+                    if (snapshotDt.Columns.Contains("VASCULAR_ACCESS_PENDING_DATE"))
+                        snapshotDt.Rows[0]["VASCULAR_ACCESS_PENDING_DATE"] = dtDGPGPendingDate.EditValue;
+
                     if (rdoIN_BASKET_PLASTER_ALLERGY.EditValue != null)
                         snapshotDt.Rows[0]["IN_BASKET_PLASTER_ALLERGY"] = rdoIN_BASKET_PLASTER_ALLERGY.EditValue;
                     if (rdoIN_BASKET_VASCULAR_ELASTICITY.EditValue != null)
@@ -1649,6 +1671,12 @@ namespace Hemo.Client.UI.Hemodialysis
             dt.Rows[0]["VASCULAR_ACCESS_ERRHYISIS"] = rdoVASCULAR_ACCESS_ERRHYISIS.EditValue;
             dt.Rows[0]["VASCULAR_ACCESS_BLOOD_INFECT"] = rdoVASCULAR_ACCESS_BLOOD_INFECT.EditValue;
             dt.Rows[0]["IN_BASKET_PLASTER_ALLERGY"] = rdoIN_BASKET_PLASTER_ALLERGY.EditValue;
+
+            if (dt.Columns.Contains("VASCULAR_ACCESS_PENDING"))
+                dt.Rows[0]["VASCULAR_ACCESS_PENDING"] = chkDGPGPending.Checked ? "1" : "0";
+            if (dt.Columns.Contains("VASCULAR_ACCESS_PENDING_DATE"))
+                dt.Rows[0]["VASCULAR_ACCESS_PENDING_DATE"] = dtDGPGPendingDate.EditValue;
+
             dt.Rows[0]["IN_BASKET_VASCULAR_ELASTICITY"] = rdoIN_BASKET_VASCULAR_ELASTICITY.EditValue;
             dt.Rows[0]["IN_BASKET_RED_HOT"] = rdoIN_BASKET_RED_HOT.EditValue;
             dt.Rows[0]["IN_BASKET_ECCHYMOSIS"] = rdoIN_BASKET_ECCHYMOSIS.EditValue;
@@ -1862,6 +1890,12 @@ namespace Hemo.Client.UI.Hemodialysis
                     dt.Rows[0]["VASCULAR_ACCESS_ERRHYISIS"] = rdoVASCULAR_ACCESS_ERRHYISIS.EditValue;
                 if (rdoVASCULAR_ACCESS_BLOOD_INFECT.EditValue != null)
                     dt.Rows[0]["VASCULAR_ACCESS_BLOOD_INFECT"] = rdoVASCULAR_ACCESS_BLOOD_INFECT.EditValue;
+
+                if (dt.Columns.Contains("VASCULAR_ACCESS_PENDING"))
+                    dt.Rows[0]["VASCULAR_ACCESS_PENDING"] = chkDGPGPending.Checked ? "1" : "0";
+                if (dt.Columns.Contains("VASCULAR_ACCESS_PENDING_DATE"))
+                    dt.Rows[0]["VASCULAR_ACCESS_PENDING_DATE"] = dtDGPGPendingDate.EditValue;
+
                 if (rdoIN_BASKET_PLASTER_ALLERGY.EditValue != null)
                     dt.Rows[0]["IN_BASKET_PLASTER_ALLERGY"] = rdoIN_BASKET_PLASTER_ALLERGY.EditValue;
                 if (rdoIN_BASKET_VASCULAR_ELASTICITY.EditValue != null)
@@ -2891,6 +2925,17 @@ namespace Hemo.Client.UI.Hemodialysis
             rdoVASCULAR_ACCESS_BLOOD.SelectedIndex = -1;
             rdoVASCULAR_ACCESS_ERRHYISIS.SelectedIndex = -1;
             rdoVASCULAR_ACCESS_BLOOD_INFECT.SelectedIndex = -1;
+            chkDGPGPending.Checked = false;
+            dtDGPGPendingDate.EditValue = null;
+        }
+
+        private void chkDGPGPending_CheckedChanged(object sender, EventArgs e)
+        {
+            dtDGPGPendingDate.Enabled = chkDGPGPending.Checked;
+            if (!chkDGPGPending.Checked)
+            {
+                dtDGPGPendingDate.EditValue = null;
+            }
         }
 
         private void btnClear1_Click(object sender, EventArgs e)

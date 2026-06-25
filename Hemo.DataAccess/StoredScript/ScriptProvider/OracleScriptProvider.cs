@@ -4635,6 +4635,8 @@ A.ISDELETE,(SELECT K.NAME FROM MED_STAFF_DICT K WHERE K.EMP_NO = A.SUBMITTER) SU
                            T.FILTRATION_PERCOLATE,
                            T.DISPLACEMENT_LIQUID,
                            T.PERCOLATE,
+                           T.VASCULAR_ACCESS_PENDING,
+                           T.VASCULAR_ACCESS_PENDING_DATE,
        
                            T.DOCTOR_ADVICE,
                            T.SUMMARY2,

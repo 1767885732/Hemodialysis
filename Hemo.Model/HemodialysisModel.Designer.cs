@@ -13241,6 +13241,10 @@ namespace Hemo.Model {
             
             private global::System.Data.DataColumn columnACTUAL_CLEANUP_MINUTE;
             
+            private global::System.Data.DataColumn columnVASCULAR_ACCESS_PENDING;
+            
+            private global::System.Data.DataColumn columnVASCULAR_ACCESS_PENDING_DATE;
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public MED_CURE_MAINDataTable() {
@@ -14228,6 +14232,22 @@ namespace Hemo.Model {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn VASCULAR_ACCESS_PENDINGColumn {
+                get {
+                    return this.columnVASCULAR_ACCESS_PENDING;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn VASCULAR_ACCESS_PENDING_DATEColumn {
+                get {
+                    return this.columnVASCULAR_ACCESS_PENDING_DATE;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             [global::System.ComponentModel.Browsable(false)]
             public int Count {
                 get {
@@ -14382,7 +14402,9 @@ namespace Hemo.Model {
                         string SUBJECTIVE_COMFORTNAME, 
                         string IN_BED, 
                         decimal ACTUAL_CLEANUP_HOUR, 
-                        decimal ACTUAL_CLEANUP_MINUTE) {
+                        decimal ACTUAL_CLEANUP_MINUTE, 
+                        string VASCULAR_ACCESS_PENDING, 
+                        string VASCULAR_ACCESS_PENDING_DATE) {
                 MED_CURE_MAINRow rowMED_CURE_MAINRow = ((MED_CURE_MAINRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         CURE_ID,
@@ -14503,7 +14525,9 @@ namespace Hemo.Model {
                         SUBJECTIVE_COMFORTNAME,
                         IN_BED,
                         ACTUAL_CLEANUP_HOUR,
-                        ACTUAL_CLEANUP_MINUTE};
+                        ACTUAL_CLEANUP_MINUTE,
+                        VASCULAR_ACCESS_PENDING,
+                        VASCULAR_ACCESS_PENDING_DATE};
                 rowMED_CURE_MAINRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowMED_CURE_MAINRow);
                 return rowMED_CURE_MAINRow;
@@ -14653,6 +14677,8 @@ namespace Hemo.Model {
                 this.columnIN_BED = base.Columns["IN_BED"];
                 this.columnACTUAL_CLEANUP_HOUR = base.Columns["ACTUAL_CLEANUP_HOUR"];
                 this.columnACTUAL_CLEANUP_MINUTE = base.Columns["ACTUAL_CLEANUP_MINUTE"];
+                this.columnVASCULAR_ACCESS_PENDING = base.Columns["VASCULAR_ACCESS_PENDING"];
+                this.columnVASCULAR_ACCESS_PENDING_DATE = base.Columns["VASCULAR_ACCESS_PENDING_DATE"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -14896,6 +14922,10 @@ namespace Hemo.Model {
                 base.Columns.Add(this.columnACTUAL_CLEANUP_HOUR);
                 this.columnACTUAL_CLEANUP_MINUTE = new global::System.Data.DataColumn("ACTUAL_CLEANUP_MINUTE", typeof(decimal), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnACTUAL_CLEANUP_MINUTE);
+                this.columnVASCULAR_ACCESS_PENDING = new global::System.Data.DataColumn("VASCULAR_ACCESS_PENDING", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnVASCULAR_ACCESS_PENDING);
+                this.columnVASCULAR_ACCESS_PENDING_DATE = new global::System.Data.DataColumn("VASCULAR_ACCESS_PENDING_DATE", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnVASCULAR_ACCESS_PENDING_DATE);
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
                                 this.columnCURE_ID,
                                 this.columnRECIPE_ID}, true));
@@ -37428,6 +37458,38 @@ namespace Hemo.Model {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public string VASCULAR_ACCESS_PENDING {
+                get {
+                    try {
+                        return ((string)(this[this.tableMED_CURE_MAIN.VASCULAR_ACCESS_PENDINGColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("表“MED_CURE_MAIN”中列“VASCULAR_ACCESS_PENDING”的值为 DBNull。", e);
+                    }
+                }
+                set {
+                    this[this.tableMED_CURE_MAIN.VASCULAR_ACCESS_PENDINGColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public string VASCULAR_ACCESS_PENDING_DATE {
+                get {
+                    try {
+                        return ((string)(this[this.tableMED_CURE_MAIN.VASCULAR_ACCESS_PENDING_DATEColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("表“MED_CURE_MAIN”中列“VASCULAR_ACCESS_PENDING_DATE”的值为 DBNull。", e);
+                    }
+                }
+                set {
+                    this[this.tableMED_CURE_MAIN.VASCULAR_ACCESS_PENDING_DATEColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public bool IsHEMODIALYSIS_IDNull() {
                 return this.IsNull(this.tableMED_CURE_MAIN.HEMODIALYSIS_IDColumn);
             }
@@ -38828,6 +38890,30 @@ namespace Hemo.Model {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public void SetACTUAL_CLEANUP_MINUTENull() {
                 this[this.tableMED_CURE_MAIN.ACTUAL_CLEANUP_MINUTEColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsVASCULAR_ACCESS_PENDINGNull() {
+                return this.IsNull(this.tableMED_CURE_MAIN.VASCULAR_ACCESS_PENDINGColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetVASCULAR_ACCESS_PENDINGNull() {
+                this[this.tableMED_CURE_MAIN.VASCULAR_ACCESS_PENDINGColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsVASCULAR_ACCESS_PENDING_DATENull() {
+                return this.IsNull(this.tableMED_CURE_MAIN.VASCULAR_ACCESS_PENDING_DATEColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetVASCULAR_ACCESS_PENDING_DATENull() {
+                this[this.tableMED_CURE_MAIN.VASCULAR_ACCESS_PENDING_DATEColumn] = global::System.Convert.DBNull;
             }
         }
         
