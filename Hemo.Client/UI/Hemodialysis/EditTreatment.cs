@@ -914,6 +914,7 @@ namespace Hemo.Client.UI.Hemodialysis
                     if (_CureMainDatatable.Rows[0]["VASCULAR_ACCESS_PENDING_DATE"] != DBNull.Value)
                         dtDGPGPendingDate.EditValue = _CureMainDatatable.Rows[0]["VASCULAR_ACCESS_PENDING_DATE"];
                 }
+                // 记录导管评估数据加载日志
                 Hemo.Utilities.Logger.WriteInfoLog(string.Format(
                     "[用户:{0}({1})] [患者:{2}] [操作:DGPG数据加载] 导管评估待定={3}, 待定日期={4}",
                     GetCurrentLoginName(), GetCurrentUserName(), ctlUserLongInfo1.Patient.NAME,
