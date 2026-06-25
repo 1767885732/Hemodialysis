@@ -1671,10 +1671,42 @@ namespace Hemo.Client.UI.Hemodialysis
             dt.Rows[0]["VASCULAR_ACCESS_BLOOD_INFECT"] = rdoVASCULAR_ACCESS_BLOOD_INFECT.EditValue;
             dt.Rows[0]["IN_BASKET_PLASTER_ALLERGY"] = rdoIN_BASKET_PLASTER_ALLERGY.EditValue;
 
+            string dgpgOldPending = string.Empty;
+            string dgpgOldPendingDate = string.Empty;
+            if (_initialDataSnapshot != null)
+            {
+                _initialDataSnapshot.TryGetValue("VASCULAR_ACCESS_PENDING", out dgpgOldPending);
+                _initialDataSnapshot.TryGetValue("VASCULAR_ACCESS_PENDING_DATE", out dgpgOldPendingDate);
+            }
+            string dgpgNewPending = chkDGPGPending.Checked ? "1" : "0";
+            string dgpgNewPendingDate = dtDGPGPendingDate.EditValue == null ? "" : dtDGPGPendingDate.EditValue.ToString();
+
             if (dt.Columns.Contains("VASCULAR_ACCESS_PENDING"))
-                dt.Rows[0]["VASCULAR_ACCESS_PENDING"] = chkDGPGPending.Checked ? "1" : "0";
+                dt.Rows[0]["VASCULAR_ACCESS_PENDING"] = dgpgNewPending;
             if (dt.Columns.Contains("VASCULAR_ACCESS_PENDING_DATE"))
                 dt.Rows[0]["VASCULAR_ACCESS_PENDING_DATE"] = dtDGPGPendingDate.EditValue;
+
+            // 记录本地日志
+            string dgpgChange = string.Empty;
+            if (dgpgOldPending != dgpgNewPending)
+            {
+                dgpgChange += string.Format("导管评估待定: {0}→{1}",
+                    dgpgOldPending == "1" ? "是" : "否", dgpgNewPending == "1" ? "是" : "否");
+            }
+            if (dgpgOldPendingDate != dgpgNewPendingDate)
+            {
+                if (!string.IsNullOrEmpty(dgpgChange)) dgpgChange += "; ";
+                dgpgChange += string.Format("待定日期: {0}→{1}",
+                    string.IsNullOrEmpty(dgpgOldPendingDate) ? "空" : dgpgOldPendingDate,
+                    string.IsNullOrEmpty(dgpgNewPendingDate) ? "空" : dgpgNewPendingDate);
+            }
+            if (!string.IsNullOrEmpty(dgpgChange))
+            {
+                Hemo.Utilities.Logger.WriteInfoLog(string.Format(
+                    "[用户:{0}({1})] [患者:{2}] [时间:{3}] [治疗单:{4}] {5}",
+                    GetCurrentLoginName(), GetCurrentUserName(), ctlUserLongInfo1.Patient.NAME,
+                    DateTime.Now, GetCurrentCureId(), dgpgChange));
+            }
 
             dt.Rows[0]["IN_BASKET_VASCULAR_ELASTICITY"] = rdoIN_BASKET_VASCULAR_ELASTICITY.EditValue;
             dt.Rows[0]["IN_BASKET_RED_HOT"] = rdoIN_BASKET_RED_HOT.EditValue;
