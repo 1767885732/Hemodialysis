@@ -914,7 +914,7 @@ namespace Hemo.Client.UI.Hemodialysis
                     if (_CureMainDatatable.Rows[0]["VASCULAR_ACCESS_PENDING_DATE"] != DBNull.Value)
                         dtDGPGPendingDate.EditValue = _CureMainDatatable.Rows[0]["VASCULAR_ACCESS_PENDING_DATE"];
                 }
-                Hemo.Utilities.Logger.WriteErrorLogContet(string.Format("DGPG数据加载 - 患者:{0}, PENDING:{1}, PENDING_DATE:{2}",
+                Hemo.Utilities.Logger.WriteInfoLog(string.Format("DGPG数据加载 - 患者:{0}, PENDING:{1}, PENDING_DATE:{2}",
                     ctlUserLongInfo1.Patient.NAME, chkDGPGPending.Checked, dtDGPGPendingDate.EditValue));
 
                 // 手动回显内瘘评估 RadioGroup 的值
@@ -1677,7 +1677,7 @@ namespace Hemo.Client.UI.Hemodialysis
                 dt.Rows[0]["VASCULAR_ACCESS_PENDING"] = chkDGPGPending.Checked ? "1" : "0";
             if (dt.Columns.Contains("VASCULAR_ACCESS_PENDING_DATE"))
                 dt.Rows[0]["VASCULAR_ACCESS_PENDING_DATE"] = dtDGPGPendingDate.EditValue;
-            Hemo.Utilities.Logger.WriteErrorLogContet(string.Format("DGPG数据保存 - 患者:{0}, PENDING:{1}, PENDING_DATE:{2}",
+            Hemo.Utilities.Logger.WriteInfoLog(string.Format("DGPG数据保存 - 患者:{0}, PENDING:{1}, PENDING_DATE:{2}",
                 ctlUserLongInfo1.Patient.NAME, chkDGPGPending.Checked, dtDGPGPendingDate.EditValue));
 
             dt.Rows[0]["IN_BASKET_VASCULAR_ELASTICITY"] = rdoIN_BASKET_VASCULAR_ELASTICITY.EditValue;
@@ -2939,7 +2939,7 @@ namespace Hemo.Client.UI.Hemodialysis
             {
                 dtDGPGPendingDate.EditValue = null;
             }
-            Hemo.Utilities.Logger.WriteErrorLogContet(string.Format("DGPG状态变化 - 患者:{0}, PENDING:{1}, DATE_ENABLED:{2}",
+            Hemo.Utilities.Logger.WriteInfoLog(string.Format("DGPG状态变化 - 患者:{0}, PENDING:{1}, DATE_ENABLED:{2}",
                 ctlUserLongInfo1.Patient.NAME, chkDGPGPending.Checked, dtDGPGPendingDate.Enabled));
         }
 

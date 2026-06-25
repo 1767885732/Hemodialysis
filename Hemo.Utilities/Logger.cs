@@ -73,5 +73,30 @@ namespace Hemo.Utilities {
                 }
             }
         }
+
+        public static void WriteInfoLog(string message)
+        {
+            lock (_syncObj)
+            {
+                StreamWriter LogTxt;
+                string AppFilePath = AppDomain.CurrentDomain.BaseDirectory + "\\info.txt";
+                if (System.IO.File.Exists(AppFilePath))
+                {
+                    LogTxt = File.AppendText(AppFilePath);
+                }
+                else
+                {
+                    LogTxt = File.CreateText(AppFilePath);
+                }
+                try
+                {
+                    LogTxt.WriteLine("[" + DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") + "] " + message);
+                }
+                finally
+                {
+                    LogTxt.Close();
+                }
+            }
+        }
     }
 }
