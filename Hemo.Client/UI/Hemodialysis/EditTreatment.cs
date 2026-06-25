@@ -914,10 +914,6 @@ namespace Hemo.Client.UI.Hemodialysis
                     if (_CureMainDatatable.Rows[0]["VASCULAR_ACCESS_PENDING_DATE"] != DBNull.Value)
                         dtDGPGPendingDate.EditValue = _CureMainDatatable.Rows[0]["VASCULAR_ACCESS_PENDING_DATE"];
                 }
-                // 记录操作日志
-                Hemo.Utilities.Logger.WriteInfoLog(string.Format(
-                    "[用户:{0}({1})] [患者:{2}] [时间:{3}] [操作:加载导管评估数据]",
-                    GetCurrentLoginName(), GetCurrentUserName(), ctlUserLongInfo1.Patient.NAME, DateTime.Now));
 
                 // 手动回显内瘘评估 RadioGroup 的值
                 if (_CureMainDatatable.Rows[0]["IN_BASKET_PLASTER_ALLERGY"] != DBNull.Value)
@@ -1674,36 +1670,6 @@ namespace Hemo.Client.UI.Hemodialysis
             dt.Rows[0]["VASCULAR_ACCESS_ERRHYISIS"] = rdoVASCULAR_ACCESS_ERRHYISIS.EditValue;
             dt.Rows[0]["VASCULAR_ACCESS_BLOOD_INFECT"] = rdoVASCULAR_ACCESS_BLOOD_INFECT.EditValue;
             dt.Rows[0]["IN_BASKET_PLASTER_ALLERGY"] = rdoIN_BASKET_PLASTER_ALLERGY.EditValue;
-
-            string dgpgOldPending = string.Empty;
-            string dgpgOldPendingDate = string.Empty;
-            if (_initialDataSnapshot != null)
-            {
-                _initialDataSnapshot.TryGetValue("VASCULAR_ACCESS_PENDING", out dgpgOldPending);
-                _initialDataSnapshot.TryGetValue("VASCULAR_ACCESS_PENDING_DATE", out dgpgOldPendingDate);
-            }
-            string dgpgNewPending = chkDGPGPending.Checked ? "1" : "0";
-            string dgpgNewPendingDate = dtDGPGPendingDate.EditValue == null ? "" : dtDGPGPendingDate.EditValue.ToString();
-
-            // 记录操作日志
-            string dgpgChangeDetail = string.Empty;
-            if (dgpgOldPending != dgpgNewPending)
-            {
-                dgpgChangeDetail += string.Format("导管评估待定: {0} → {1}",
-                    dgpgOldPending == "1" ? "是" : (dgpgOldPending == "0" ? "否" : "无"),
-                    dgpgNewPending == "1" ? "是" : "否");
-            }
-            if (dgpgOldPendingDate != dgpgNewPendingDate)
-            {
-                if (dgpgChangeDetail.Length > 0) dgpgChangeDetail += "; ";
-                dgpgChangeDetail += string.Format("待定日期: {0} → {1}",
-                    string.IsNullOrEmpty(dgpgOldPendingDate) ? "无" : dgpgOldPendingDate,
-                    string.IsNullOrEmpty(dgpgNewPendingDate) ? "无" : dgpgNewPendingDate);
-            }
-            Hemo.Utilities.Logger.WriteInfoLog(string.Format(
-                "[用户:{0}({1})] [患者:{2}] [时间:{3}] [操作:保存导管评估] [治疗单:{4}] {5}",
-                GetCurrentLoginName(), GetCurrentUserName(), ctlUserLongInfo1.Patient.NAME,
-                DateTime.Now, GetCurrentCureId(), string.IsNullOrEmpty(dgpgChangeDetail) ? "无数据变更" : dgpgChangeDetail));
 
             if (dt.Columns.Contains("VASCULAR_ACCESS_PENDING"))
                 dt.Rows[0]["VASCULAR_ACCESS_PENDING"] = chkDGPGPending.Checked ? "1" : "0";
@@ -2969,11 +2935,6 @@ namespace Hemo.Client.UI.Hemodialysis
             {
                 dtDGPGPendingDate.EditValue = null;
             }
-            // 记录操作日志
-            Hemo.Utilities.Logger.WriteInfoLog(string.Format(
-                "[用户:{0}({1})] [患者:{2}] [时间:{3}] [操作:修改待定状态] 待定={4}",
-                GetCurrentLoginName(), GetCurrentUserName(), ctlUserLongInfo1.Patient.NAME,
-                DateTime.Now, chkDGPGPending.Checked ? "是" : "否"));
         }
 
         private void btnClear1_Click(object sender, EventArgs e)
