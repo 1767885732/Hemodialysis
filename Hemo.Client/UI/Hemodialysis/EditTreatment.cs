@@ -1450,6 +1450,10 @@ namespace Hemo.Client.UI.Hemodialysis
                     paramId = dtTemp.Rows[0]["HEMODIALYSIS_PARAMETERS_ID"].ToString();
                 }
                 WriteOperationLog(opType, "透析参数记录", paramId, changeDetail, logRemark);
+                Hemo.Utilities.Logger.WriteInfoLog(string.Format(
+                    "[用户:{0}({1})] [患者:{2}] [操作:{3}] [透析参数记录:{4}] {5} - {6}",
+                    GetCurrentLoginName(), GetCurrentUserName(), ctlUserLongInfo1.Patient.NAME,
+                    opType, paramId, logRemark, changeDetail));
             }
             return result;
         }
@@ -1515,6 +1519,10 @@ namespace Hemo.Client.UI.Hemodialysis
                 }
                 WriteOperationLog("UPDATE", "给药信息", drugId, changeDetail,
                     "修改给药状态：" + statusText);
+                Hemo.Utilities.Logger.WriteInfoLog(string.Format(
+                    "[用户:{0}({1})] [患者:{2}] [操作:UPDATE] [给药信息:{3}] {4} - {5}",
+                    GetCurrentLoginName(), GetCurrentUserName(), ctlUserLongInfo1.Patient.NAME,
+                    drugId, "修改给药状态：" + statusText, changeDetail));
 
                 if (lopSTATUS.EditValue != null && lopSTATUS.EditValue.ToString() == "已执行")
                 {
@@ -1807,6 +1815,10 @@ namespace Hemo.Client.UI.Hemodialysis
                         crrtInfo = sb.ToString();
                     }
                     WriteOperationLog("UPDATE", "CRRT治疗单", cureId, crrtInfo, "保存CRRT治疗单");
+                    Hemo.Utilities.Logger.WriteInfoLog(string.Format(
+                        "[用户:{0}({1})] [患者:{2}] [操作:UPDATE] [CRRT治疗单:{3}] {4} - {5}",
+                        GetCurrentLoginName(), GetCurrentUserName(), ctlUserLongInfo1.Patient.NAME,
+                        cureId, "保存CRRT治疗单", crrtInfo));
                 }
             }
 
@@ -1852,6 +1864,10 @@ namespace Hemo.Client.UI.Hemodialysis
                         compValue = sb.ToString();
                     }
                     WriteOperationLog("UPDATE", "并发症信息", GetCurrentCureId(), compValue, "保存并发症信息");
+                    Hemo.Utilities.Logger.WriteInfoLog(string.Format(
+                        "[用户:{0}({1})] [患者:{2}] [操作:UPDATE] [并发症信息:{3}] {4} - {5}",
+                        GetCurrentLoginName(), GetCurrentUserName(), ctlUserLongInfo1.Patient.NAME,
+                        GetCurrentCureId(), "保存并发症信息", compValue));
                 }
             }
 
@@ -1872,6 +1888,10 @@ namespace Hemo.Client.UI.Hemodialysis
             string operationType = isAdd ? "SAVE" : "UPDATE";
             string logRemark = isAdd ? "新增治疗单" : "修改治疗单";
             WriteOperationLog(operationType, "治疗单主表", GetCurrentCureId(), changeDetail, logRemark);
+            Hemo.Utilities.Logger.WriteInfoLog(string.Format(
+                "[用户:{0}({1})] [患者:{2}] [操作:{3}] [治疗单主表:{4}] {5} - {6}",
+                GetCurrentLoginName(), GetCurrentUserName(), ctlUserLongInfo1.Patient.NAME,
+                operationType, GetCurrentCureId(), logRemark, changeDetail));
 
             if (dt != null && dt.Rows.Count > 0)
             {
@@ -2760,6 +2780,10 @@ namespace Hemo.Client.UI.Hemodialysis
                 {
                     // 记录审计日志 - 删除透析参数
                     WriteOperationLog("DELETE", "透析参数记录", deletedParamId, deletedInfo, "删除透析参数");
+                    Hemo.Utilities.Logger.WriteInfoLog(string.Format(
+                        "[用户:{0}({1})] [患者:{2}] [操作:DELETE] [透析参数记录:{3}] {4} - {5}",
+                        GetCurrentLoginName(), GetCurrentUserName(), ctlUserLongInfo1.Patient.NAME,
+                        deletedParamId, "删除透析参数", deletedInfo));
 
                     loadParaneterGrid(txtCURE_ID.Text, txtHEMODIALYSIS_ID.Text.Trim());
                 }
