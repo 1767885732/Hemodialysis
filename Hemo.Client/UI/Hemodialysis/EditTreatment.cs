@@ -851,6 +851,10 @@ namespace Hemo.Client.UI.Hemodialysis
         {
             this.groupBox1.Text = string.Format("{0}({1})  {2}床的治疗信息", this.ctlUserLongInfo1.Patient.NAME, this.ctlUserLongInfo1.Patient.SEX.ToString(), PatientScheduleRow.BEDNAME);
             BaseControlInfo.ClearControlText(xtraScrollableControl1);
+            // 重置待定复选框和日期控件
+            chkDGPGPending.Checked = false;
+            dtDGPGPendingDate.EditValue = null;
+            dtDGPGPendingDate.Enabled = false;
             //foreach (DevExpress.XtraEditors.Controls.CheckedListBoxItem item in chkCOAGULATION_IN_DIALYSER.Items)
             //{
             //    item.CheckState = System.Windows.Forms.CheckState.Unchecked;
