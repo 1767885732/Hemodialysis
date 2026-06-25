@@ -914,11 +914,6 @@ namespace Hemo.Client.UI.Hemodialysis
                     if (_CureMainDatatable.Rows[0]["VASCULAR_ACCESS_PENDING_DATE"] != DBNull.Value)
                         dtDGPGPendingDate.EditValue = _CureMainDatatable.Rows[0]["VASCULAR_ACCESS_PENDING_DATE"];
                 }
-                // 记录导管评估数据加载日志
-                Hemo.Utilities.Logger.WriteInfoLog(string.Format(
-                    "[用户:{0}({1})] [患者:{2}] [操作:DGPG数据加载] 导管评估待定={3}, 待定日期={4}",
-                    GetCurrentLoginName(), GetCurrentUserName(), ctlUserLongInfo1.Patient.NAME,
-                    chkDGPGPending.Checked ? "是" : "否", dtDGPGPendingDate.EditValue));
 
                 // 手动回显内瘘评估 RadioGroup 的值
                 if (_CureMainDatatable.Rows[0]["IN_BASKET_PLASTER_ALLERGY"] != DBNull.Value)
@@ -2971,10 +2966,6 @@ namespace Hemo.Client.UI.Hemodialysis
             {
                 dtDGPGPendingDate.EditValue = null;
             }
-            Hemo.Utilities.Logger.WriteInfoLog(string.Format(
-                "[用户:{0}({1})] [患者:{2}] [操作:导管评估状态变更] 待定={3}, 日期控件={4}",
-                GetCurrentLoginName(), GetCurrentUserName(), ctlUserLongInfo1.Patient.NAME,
-                chkDGPGPending.Checked ? "是" : "否", dtDGPGPendingDate.Enabled ? "启用" : "禁用"));
         }
 
         private void btnClear1_Click(object sender, EventArgs e)
