@@ -25,6 +25,9 @@ using Hemo.Service;
 using System.IO;
 using System.Collections;
 using Hemo.IService.Dict;
+using System.Printing;
+using System.Windows.Xps.Packaging;
+using System.Windows.Xps.Serialization;
 
 namespace Hemo.Client.Controls
 {
@@ -47,6 +50,24 @@ namespace Hemo.Client.Controls
             set { currentPatientSchedule = value; }
         }
 
+        /// <summary>
+        /// 无参构造函数，创建空白记录单
+        /// </summary>
+        public CtlMedicalDocumentNew()
+        {
+            InitializeComponent();
+            this.HospitalTitle.Content = Utility.GetHospitalName();
+            this.currentPatientSchedule = null;
+            _CureMainData = new DataSet();
+            loadData(null);
+            IsShowGrid(false);
+        }
+
+        /// <summary>
+        /// 带患者排班的构造函数
+        /// </summary>
+        /// <param name="currentPatientSchedule">患者排班信息</param>
+        /// <param name="pDs">治疗单数据集</param>
         public CtlMedicalDocumentNew(PatientScheduleModel.MED_PATIENT_SCHEDULERow currentPatientSchedule, DataSet pDs)
         {
             InitializeComponent();
@@ -173,14 +194,19 @@ namespace Hemo.Client.Controls
                         txtCureMouth.Text = Utility.CDate(cureMainDataTable.Rows[0]["CURE_CREATE_DATE"].ToString()).Month.ToString();
                         txtCureDay.Text = Utility.CDate(cureMainDataTable.Rows[0]["CURE_CREATE_DATE"].ToString()).Day.ToString();
                         txtBeforeWeight.Text = objHemodialysisService.GetLastTimeCureDataByID(hemoId, dCureDate);
-                        txtWHAT_DEPARTMENT_IN.Text= currentPatientSchedule.AREANAME;
-                        textBox1.Text = currentPatientSchedule.BEDNAME;
-
-                        //获取班次
-                        ConfigModel.MED_COMMON_ITEMLISTDataTable mED_COMMON_ITEMLISTRows = _configService.GetItemListByItemType("班次");
-                        txtBanCi.Text = (from x in mED_COMMON_ITEMLISTRows.AsEnumerable()
-                                    where x.ITEM_VALUE == currentPatientSchedule.BANCI_ID
-                                    select x.ITEM_NAME).First();
+                        
+                        // 只在 currentPatientSchedule 不为空时设置这些字段
+                        if (currentPatientSchedule != null)
+                        {
+                            txtWHAT_DEPARTMENT_IN.Text = currentPatientSchedule.AREANAME;
+                            textBox1.Text = currentPatientSchedule.BEDNAME;
+                            
+                            //获取班次
+                            ConfigModel.MED_COMMON_ITEMLISTDataTable mED_COMMON_ITEMLISTRows = _configService.GetItemListByItemType("班次");
+                            txtBanCi.Text = (from x in mED_COMMON_ITEMLISTRows.AsEnumerable()
+                                        where x.ITEM_VALUE == currentPatientSchedule.BANCI_ID
+                                        select x.ITEM_NAME).First();
+                        }
                         //  lblHEPARIN_SPECIES.Text = cureMainDataTable.Rows[0]["HEPARIN_SPECIES_NAME"].ToString();
 
 
@@ -1071,6 +1097,55 @@ namespace Hemo.Client.Controls
         private void WPF_DocumentBase_Loaded(object sender, RoutedEventArgs e)
         {
 
+        }
+
+        /// <summary>
+        /// 打印空白记录单（显示预览窗口）
+        /// </summary>
+        public void PrintBlankDocument()
+        {
+            try
+            {
+                // 创建文档容器
+                CtlMedicalDocumentContainer container = new CtlMedicalDocumentContainer();
+                container.Add(this);
+                
+                // 显示打印预览窗口并打印
+                var printWindow = new Window
+                {
+                    Title = "打印空白记录单",
+                    Width = 900,
+                    Height = 700,
+                    Content = container,
+                    WindowStartupLocation = WindowStartupLocation.CenterScreen
+                };
+                
+                printWindow.ShowDialog();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("打印空白记录单失败：" + ex.Message, "错误", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
+        }
+
+        /// <summary>
+        /// 直接打印空白记录单（不显示预览）
+        /// </summary>
+        public void PrintBlankDocumentDirect()
+        {
+            try
+            {
+                // 创建文档容器
+                CtlMedicalDocumentContainer container = new CtlMedicalDocumentContainer();
+                container.Add(this);
+                
+                // 触发打印
+                container.ExecutePrint();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("打印空白记录单失败：" + ex.Message, "错误", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
         }
 
     }

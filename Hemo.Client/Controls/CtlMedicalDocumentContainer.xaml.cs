@@ -111,6 +111,14 @@ namespace Hemo.Client.Controls
             }
         }
 
+        /// <summary>
+        /// 执行打印（公共方法，供外部调用）
+        /// </summary>
+        public void ExecutePrint()
+        {
+            btnPrint_Click(null, null);
+        }
+
         public bool Add(string id)
         {
             var result = from doc in this.docList where doc.Id.Equals(id) select doc;
