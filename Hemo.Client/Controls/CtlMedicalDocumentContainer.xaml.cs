@@ -122,12 +122,12 @@ namespace Hemo.Client.Controls
             {
                 // 创建空白记录单
                 CtlMedicalDocumentNew blankDoc = new CtlMedicalDocumentNew();
-                
+
                 // 清空当前文档列表，添加空白记录单
                 this.docList.Clear();
                 this.docList.Add(new MedicalDocumentForPrint("", blankDoc, this._haveNextPage));
                 this.RefreshPage();
-                
+
                 // 延迟执行打印，等文档渲染完成
                 System.Windows.Threading.DispatcherTimer timer = new System.Windows.Threading.DispatcherTimer();
                 timer.Interval = TimeSpan.FromMilliseconds(100);
@@ -143,14 +143,6 @@ namespace Hemo.Client.Controls
             {
                 MessageBox.Show("打印空白记录单失败：" + ex.Message, "错误", MessageBoxButton.OK, MessageBoxImage.Error);
             }
-        }
-
-        /// <summary>
-        /// 执行打印（公共方法，供外部调用）
-        /// </summary>
-        public void ExecutePrint()
-        {
-            btnPrint_Click(null, null);
         }
 
         public bool Add(string id)
