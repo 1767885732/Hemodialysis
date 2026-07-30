@@ -1163,6 +1163,7 @@ namespace Hemo.Client.UI.Hemodialysis
             DataTable dtMachine = this._configService.GetConfigList(string.Empty, string.Empty, "透析机", "1");
             if (dtMachine != null && dtMachine.Rows.Count > 0)
             {
+                cmbMACHINE_ID.Properties.Items.Clear();
                 for (int z = 0; z < dtMachine.Rows.Count; z++)
                 {
                     cmbMACHINE_ID.Properties.Items.Add(dtMachine.Rows[z]["ITEM_NAME"].ToString());
