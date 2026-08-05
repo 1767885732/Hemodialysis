@@ -737,5 +737,16 @@ namespace Hemo.Business.Lab
             IDatabase.Fill(sql, result, dbParameter);
             return result;
         }
+
+        public static DataTable GetLabResultNew(DateTime begintime, DateTime endtime)
+        {
+            DataTable result = new DataTable();
+            var sql = StoredScript.Get("GetLabResultNew");
+            DbParameter[] dbParameter = new DbParameter[2];
+            dbParameter[0] = IDatabase.BuildDbParameter("begintime", DbType.DateTime, begintime);
+            dbParameter[1] = IDatabase.BuildDbParameter("endtime", DbType.String, endtime);
+            IDatabase.Fill(sql, result, dbParameter);
+            return result;
+        }
     }
 }

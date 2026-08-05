@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.gridControlForEmerger = new DevExpress.XtraGrid.GridControl();
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.gridBanchi = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -43,7 +44,7 @@
             this.gridSaturday = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridSunday = new DevExpress.XtraGrid.Columns.GridColumn();
             this.repositoryItemRichTextEdit1 = new DevExpress.XtraEditors.Repository.RepositoryItemRichTextEdit();
-            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip();
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.ToolStripMenuItem_Delete = new System.Windows.Forms.ToolStripMenuItem();
             this.busyIndicator1 = new Hemo.Client.Controls.BusyIndicator();
             ((System.ComponentModel.ISupportInitialize)(this.gridControlForEmerger)).BeginInit();

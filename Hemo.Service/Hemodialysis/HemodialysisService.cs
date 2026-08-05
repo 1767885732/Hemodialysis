@@ -1555,6 +1555,17 @@ namespace Hemo.Service.Config
         }
 
         /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="beginTime"></param>
+        /// <param name="endTime"></param>
+        /// <returns></returns>
+        public DataTable GetLabResultNew(DateTime beginTime, DateTime endTime)
+        {
+            return HemodialysisBll.GetLabResultNew(beginTime, endTime);
+        }
+
+        /// <summary>
         /// 根据日期获取患者透析编号
         /// </summary>
         /// <param name="beginTime"></param>

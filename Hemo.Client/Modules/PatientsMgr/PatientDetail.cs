@@ -126,7 +126,9 @@ namespace Hemo.Client.Modules
             AreaName = args.AreaName;
             var method = new MethodInvoker(() =>
             {
-                this.lblAge.Text = args.Get.AGE.ToString();
+                //this.lblAge.Text = args.Get.AGE.ToString();
+                this.lblAge.Text = Utilities.Utility.GetAge(args.Get.BIRTHDAY.ToShortDateString()).ToString();
+
                 this.lblName.Text = args.Get.NAME;
                 this.lblHemoID.Text = args.Get.HEMODIALYSIS_ID;
                 this.lblSex.Text = args.Get.SEX;

@@ -432,6 +432,9 @@
             this.panel_Top = new DevExpress.XtraEditors.PanelControl();
             this.Data_CureData = new DevExpress.XtraEditors.DateEdit();
             this.labelControl68 = new DevExpress.XtraEditors.LabelControl();
+            this.labelControl40 = new DevExpress.XtraEditors.LabelControl();
+            this.labelControl43 = new DevExpress.XtraEditors.LabelControl();
+            this.spnONLINE_CLEARANCE_RATE = new DevExpress.XtraEditors.SpinEdit();
             this.contextMenuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.imageCollection1)).BeginInit();
             this.contextMenuStrip2.SuspendLayout();
@@ -639,6 +642,7 @@
             this.panel_Top.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Data_CureData.Properties.CalendarTimeProperties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Data_CureData.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.spnONLINE_CLEARANCE_RATE.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // contextMenuStrip1
@@ -4020,6 +4024,7 @@
             // 
             this.panParamter.Appearance.BackColor = System.Drawing.Color.Transparent;
             this.panParamter.Appearance.Options.UseBackColor = true;
+            this.panParamter.Controls.Add(this.labelControl40);
             this.panParamter.Controls.Add(this.labelControl13);
             this.panParamter.Controls.Add(this.spnTEMPERATURE);
             this.panParamter.Controls.Add(this.labelControl14);
@@ -4034,6 +4039,7 @@
             this.panParamter.Controls.Add(this.labelControl115);
             this.panParamter.Controls.Add(this.labelControl114);
             this.panParamter.Controls.Add(this.labelControl113);
+            this.panParamter.Controls.Add(this.labelControl43);
             this.panParamter.Controls.Add(this.labelControl112);
             this.panParamter.Controls.Add(this.labelControl111);
             this.panParamter.Controls.Add(this.labelControl110);
@@ -4068,6 +4074,7 @@
             this.panParamter.Controls.Add(this.labelControl65);
             this.panParamter.Controls.Add(this.spnSYSTOLIC_PRESSURE);
             this.panParamter.Controls.Add(this.labelControl60);
+            this.panParamter.Controls.Add(this.spnONLINE_CLEARANCE_RATE);
             this.panParamter.Controls.Add(this.spnTRANSMEMBRANE_PRESSURE);
             this.panParamter.Controls.Add(this.labelControl58);
             this.panParamter.Controls.Add(this.spnVENOUS_PRESSURE);
@@ -4231,7 +4238,7 @@
             // labelControl114
             // 
             this.labelControl114.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F);
-            this.labelControl114.Location = new System.Drawing.Point(766, 111);
+            this.labelControl114.Location = new System.Drawing.Point(826, 114);
             this.labelControl114.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.labelControl114.Name = "labelControl114";
             this.labelControl114.Size = new System.Drawing.Size(40, 17);
@@ -4408,7 +4415,7 @@
             0,
             0});
             this.spnDISPLACEMENT.EnterMoveNextControl = true;
-            this.spnDISPLACEMENT.Location = new System.Drawing.Point(692, 108);
+            this.spnDISPLACEMENT.Location = new System.Drawing.Point(752, 111);
             this.spnDISPLACEMENT.Name = "spnDISPLACEMENT";
             this.spnDISPLACEMENT.Properties.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.spnDISPLACEMENT.Properties.Appearance.ForeColor = System.Drawing.Color.Blue;
@@ -4424,7 +4431,7 @@
             // labelControl98
             // 
             this.labelControl98.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F);
-            this.labelControl98.Location = new System.Drawing.Point(650, 111);
+            this.labelControl98.Location = new System.Drawing.Point(710, 114);
             this.labelControl98.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.labelControl98.Name = "labelControl98";
             this.labelControl98.Size = new System.Drawing.Size(36, 17);
@@ -4439,7 +4446,7 @@
             this.labelControl74.Name = "labelControl74";
             this.labelControl74.Size = new System.Drawing.Size(48, 17);
             this.labelControl74.TabIndex = 475;
-            this.labelControl74.Text = "记录护士";
+            this.labelControl74.Text = "核对护士";
             // 
             // lupNURSE_ID
             // 
@@ -6126,6 +6133,45 @@
             this.labelControl68.TabIndex = 0;
             this.labelControl68.Text = "请选择补录日期：";
             // 
+            // labelControl40
+            // 
+            this.labelControl40.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F);
+            this.labelControl40.Location = new System.Drawing.Point(518, 114);
+            this.labelControl40.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.labelControl40.Name = "labelControl40";
+            this.labelControl40.Size = new System.Drawing.Size(60, 17);
+            this.labelControl40.TabIndex = 506;
+            this.labelControl40.Text = "在线清除率";
+            // 
+            // labelControl43
+            // 
+            this.labelControl43.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F);
+            this.labelControl43.Location = new System.Drawing.Point(663, 114);
+            this.labelControl43.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.labelControl43.Name = "labelControl43";
+            this.labelControl43.Size = new System.Drawing.Size(40, 17);
+            this.labelControl43.TabIndex = 488;
+            this.labelControl43.Text = "ml/min";
+            // 
+            // spnONLINE_CLEARANCE_RATE
+            // 
+            this.spnONLINE_CLEARANCE_RATE.EditValue = new decimal(new int[] {
+            0,
+            0,
+            0,
+            0});
+            this.spnONLINE_CLEARANCE_RATE.EnterMoveNextControl = true;
+            this.spnONLINE_CLEARANCE_RATE.Location = new System.Drawing.Point(584, 112);
+            this.spnONLINE_CLEARANCE_RATE.Name = "spnONLINE_CLEARANCE_RATE";
+            this.spnONLINE_CLEARANCE_RATE.Properties.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.spnONLINE_CLEARANCE_RATE.Properties.Appearance.ForeColor = System.Drawing.Color.Blue;
+            this.spnONLINE_CLEARANCE_RATE.Properties.Appearance.Options.UseFont = true;
+            this.spnONLINE_CLEARANCE_RATE.Properties.Appearance.Options.UseForeColor = true;
+            this.spnONLINE_CLEARANCE_RATE.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton()});
+            this.spnONLINE_CLEARANCE_RATE.Size = new System.Drawing.Size(73, 24);
+            this.spnONLINE_CLEARANCE_RATE.TabIndex = 453;
+            // 
             // EditTreatment
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
@@ -6357,6 +6403,7 @@
             this.panel_Top.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Data_CureData.Properties.CalendarTimeProperties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Data_CureData.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.spnONLINE_CLEARANCE_RATE.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -6766,5 +6813,8 @@
         private DevExpress.XtraEditors.LabelControl labelControl38;
         private DevExpress.XtraEditors.LookUpEdit lupCHECK_NURSE;
         private DevExpress.XtraEditors.LabelControl labelControl39;
+        private DevExpress.XtraEditors.LabelControl labelControl40;
+        private DevExpress.XtraEditors.LabelControl labelControl43;
+        private DevExpress.XtraEditors.SpinEdit spnONLINE_CLEARANCE_RATE;
     }
 }

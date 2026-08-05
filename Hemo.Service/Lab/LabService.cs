@@ -236,6 +236,11 @@ namespace Hemo.Service.Lab
             return LabBll.get_med_vw_xuehongdanbai_ext(begintime, endtime);
         }
 
+        public DataTable GetLabResultNew(DateTime begintime, DateTime endtime)
+        {
+            return LabBll.GetLabResultNew(begintime, endtime);
+        }
+
         public int INSERT_UPDATE_MED_HIS_ROWTOCOL_END(string hemodialysis_id, string patient_id, string test_no, DateTime check_date, string item_name)
         {
             return LabBll.INSERT_UPDATE_MED_HIS_ROWTOCOL_END(hemodialysis_id, patient_id, test_no, check_date, item_name);

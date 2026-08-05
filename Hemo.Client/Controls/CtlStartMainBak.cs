@@ -119,7 +119,40 @@ namespace Hemo.Client.Controls
         public CtlStartMainBak()
         {
             InitializeComponent();
+            this.cardView1.CustomColumnDisplayText += View_CustomColumnDisplayText;
         }
+
+        private void View_CustomColumnDisplayText(object sender, DevExpress.XtraGrid.Views.Base.CustomColumnDisplayTextEventArgs e)
+        {
+            if (e.Column == null || e.Column.FieldName != "AGE") return;
+
+            int rowIndex = e.ListSourceRowIndex;
+            if (rowIndex < 0) return;
+
+            var view = sender as DevExpress.XtraGrid.Views.Base.ColumnView;
+            if (view == null) return;
+
+            object birthdayObj = view.GetListSourceRowCellValue(rowIndex, "BIRTHDAY");
+
+            if (birthdayObj != null && birthdayObj != DBNull.Value && !string.IsNullOrEmpty(birthdayObj.ToString()))
+            {
+                try
+                {
+                    string birthday = Convert.ToDateTime(birthdayObj).ToString("yyyy-MM-dd");
+                    e.DisplayText = Utility.GetAge(birthday).ToString();
+                }
+                catch
+                {
+                    e.DisplayText = ""; // 如果日期格式转换失败，则不显示
+                }
+            }
+            else
+            {
+                e.DisplayText = ""; // 没生日就不显示年龄
+            }
+        }
+
+
         private bool MianPageShow = true;
         /// <summary>
         /// 加载
@@ -894,9 +927,14 @@ namespace Hemo.Client.Controls
             row.NAME = confirmRow["NAME"].ToString();
             row.SEX = confirmRow["SEX"].ToString();
             if (!string.IsNullOrEmpty(confirmRow["BIRTHDAY"].ToString()))
+            {
                 row.BIRTHDAY = Convert.ToDateTime(confirmRow["BIRTHDAY"].ToString());
+                //row.AGE = Utility.GetAge(confirmRow["BIRTHDAY"].ToString());
+            }
+
 
             row.AGE = Convert.ToDecimal(confirmRow["AGE"].ToString());
+
             row.NATIVEPLACE = confirmRow["NATIVEPLACE"].ToString();
             row.JOB = confirmRow["JOB"].ToString();
             row.MARITAL = confirmRow["MARITAL"].ToString();

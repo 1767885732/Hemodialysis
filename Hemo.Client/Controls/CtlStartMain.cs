@@ -152,7 +152,8 @@ namespace Hemo.Client.Controls {
                     row.NAME = er.confirmRow["NAME"].ToString();
                     row.SEX = er.confirmRow["SEX"].ToString();
                     row.BIRTHDAY = Utility.CDate(er.confirmRow["BIRTHDAY"].ToString());
-                    row.AGE = Utility.CDecimal(er.confirmRow["AGE"].ToString());
+                    //row.AGE = Utility.CDecimal(er.confirmRow["AGE"].ToString()); 
+                    row.AGE = Utility.GetAge(er.confirmRow["BIRTHDAY"].ToString());// 所有患者页面
                     row.NATIVEPLACE = er.confirmRow["NATIVEPLACE"].ToString();
                     row.JOB = er.confirmRow["JOB"].ToString();
                     row.MARITAL = er.confirmRow["MARITAL"].ToString();
@@ -263,7 +264,9 @@ namespace Hemo.Client.Controls {
             if (!string.IsNullOrEmpty(confirmRow["BIRTHDAY"].ToString()))
                 row.BIRTHDAY = Convert.ToDateTime(confirmRow["BIRTHDAY"].ToString());
 
-            row.AGE = Convert.ToDecimal(confirmRow["AGE"].ToString());
+            //row.AGE = Convert.ToDecimal(confirmRow["AGE"].ToString());
+            row.AGE = Utility.GetAge(confirmRow["BIRTHDAY"].ToString());
+
             row.NATIVEPLACE = confirmRow["NATIVEPLACE"].ToString();
             row.JOB = confirmRow["JOB"].ToString();
             row.MARITAL = confirmRow["MARITAL"].ToString();
@@ -335,7 +338,8 @@ namespace Hemo.Client.Controls {
             //PatientModel.MED_PATIENTSRow row = cardView1.GetFocusedDataRow() as PatientModel.MED_PATIENTSRow;
             if (row != null) {
                 lblName.Text = row.NAME;
-                lblAge.Text = row.AGE.ToString();
+                //lblAge.Text = row.AGE.ToString();
+                lblAge.Text = Utility.GetAge(row.BIRTHDAY.ToShortDateString()).ToString();
                 lblSex.Text = row.SEX;
                 if (row.SEX == "男") {
                     lblPicture.BackgroundImage = Properties.Resources.boy;

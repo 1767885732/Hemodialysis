@@ -3392,6 +3392,15 @@ namespace Hemo.Business.Config
             return GetData<DataTable>(dtResult, "GetHemoIdInLastWeekAndThreeMonthsByDate", dbParams);
         }
 
+        public static DataTable GetLabResultNew(DateTime beginTime, DateTime endTime)
+        {
+            DataTable dtResult = new DataTable();
+            DbParameter[] dbParams = new DbParameter[2];
+            dbParams[0] = IDatabase.BuildDbParameter("BEGINTIME", DbType.DateTime, beginTime);
+            dbParams[1] = IDatabase.BuildDbParameter("ENDTIME", DbType.DateTime, endTime);
+            return GetData<DataTable>(dtResult, "GetLabResultNew", dbParams);
+        }
+
         /// <summary>
         /// 根据日期获取患者透析编号
         /// </summary>

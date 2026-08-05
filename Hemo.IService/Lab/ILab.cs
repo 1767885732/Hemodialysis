@@ -102,6 +102,8 @@ namespace Hemo.IService.Lab
         [OperationContract]
         DataTable get_med_vw_xuehongdanbai_ext(DateTime begintime, DateTime endtime);
 
+        [OperationContract]
+        DataTable GetLabResultNew(DateTime begintime, DateTime endtime);
 
         [OperationContract]
         DataTable GetLabListByDateAndItemsAndHemoInfoAndDtl(DateTime STARTDATE, DateTime ENDDATE, string ITEM_NAME, String PATIENTINFO, DataTable dtTitle);

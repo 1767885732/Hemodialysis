@@ -288,7 +288,7 @@ namespace Hemo.Client.UI.Hemodialysis
             { "IN_BASKET_ECCHYMOSIS","内瘘评估-渗液" },
             { "IN_BASKET_TREMOR","震颤" },
             { "IN_BASKET_NOISE","血管杂音" },
-            { "IN_BASKET_VASCULAR_ELASTICITY","血栓" },
+            { "IN_BASKET_VASCULAR_ELASTICITY","内瘘评估-血栓" },
             // CRRT相关
             { "CRRT_CLASS", "CRRT模式" },
             // 感染检查
@@ -321,6 +321,7 @@ namespace Hemo.Client.UI.Hemodialysis
             {"DRUG_NURSE_ID","执行护士" },
             {"VASCULAR_ACCESS_PENDING","待定状态" },
             {"VASCULAR_ACCESS_PENDING_DATE","待定日期" },
+            { "ONLINE_CLEARANCE_RATE", "在线清除率" },
         };
 
         /// <summary>
@@ -687,7 +688,18 @@ namespace Hemo.Client.UI.Hemodialysis
             lopCHECKNURSE.EditValue = HemoApplicationContext.Current.CurrentUser.EMP_NO;
 
             lupNURSE_ID.EditValue = HemoApplicationContext.Current.CurrentUser.EMP_NO;
-            lupCHECK_NURSE.EditValue = HemoApplicationContext.Current.CurrentUser.EMP_NO;
+            //lupCHECK_NURSE.EditValue = HemoApplicationContext.Current.CurrentUser.EMP_NO;
+            // 签到日期为2026-07-03之前，隐藏核对护士及其标签
+            if (cureDate < new DateTime(2026, 7, 6))
+            {
+                lupCHECK_NURSE.Visible = false;
+                labelControl39.Visible = false;
+            }
+            else
+            {
+                lupCHECK_NURSE.Visible = true;
+                labelControl39.Visible = true;
+            }
             //设置药品录入控件是否可用属性
             setDrugEnabled(false);
             setParamterEnabled(false);
@@ -1008,11 +1020,25 @@ namespace Hemo.Client.UI.Hemodialysis
                     this.txtSUMMARY.Text = _CureMainDatatable.Rows[0]["SUMMARY"].ToString();
                     if (_CureMainDatatable.Rows[0]["PRIMARY_NURSE"].ToString().Length == 0)
                     {
-                        cmbPRIMARY_NURSE.EditValue = HemoApplicationContext.Current.CurrentUser.EMP_NO;
+                        string currentEmpNo = HemoApplicationContext.Current.CurrentUser.EMP_NO;
+
+                        // 从 cmbPRIMARY_NURSE 的数据源中判断当前用户是否在护士列表中
+                        DataTable nurseSource = cmbPRIMARY_NURSE.Properties.DataSource as DataTable;
+                        if (nurseSource != null)
+                        {
+                            DataRow[] existRows = nurseSource.Select("EMP_NO = '" + currentEmpNo + "'");
+                            if (existRows.Length > 0)
+                            {
+                                // 当前用户是护士，自动赋值
+                                cmbPRIMARY_NURSE.EditValue = currentEmpNo;
+                            }
+                            // 否则不赋值，让用户手动选择
+                        }
+
                     }
                     if (_CureMainDatatable.Rows[0]["CHECK_NURSE"].ToString().Length == 0)
                     {
-                        lupCHECK_NURSE.EditValue = HemoApplicationContext.Current.CurrentUser.EMP_NO;
+                        //lupCHECK_NURSE.EditValue = HemoApplicationContext.Current.CurrentUser.EMP_NO;
                     }
                     if (_CureMainDatatable.Rows[0]["SUMMARY"].ToString().Length == 0)
                     {
@@ -1163,6 +1189,7 @@ namespace Hemo.Client.UI.Hemodialysis
             DataTable dtMachine = this._configService.GetConfigList(string.Empty, string.Empty, "透析机", "1");
             if (dtMachine != null && dtMachine.Rows.Count > 0)
             {
+                cmbMACHINE_ID.Properties.Items.Clear();
                 for (int z = 0; z < dtMachine.Rows.Count; z++)
                 {
                     cmbMACHINE_ID.Properties.Items.Add(dtMachine.Rows[z]["ITEM_NAME"].ToString());
@@ -1179,7 +1206,8 @@ namespace Hemo.Client.UI.Hemodialysis
                     BaseControlInfo.BindLookUpEdit(cmbPRIMARY_NURSE, "EMP_NO", "NAME", dtPunctureNurseList, "NAME", "责任护士");
                     BaseControlInfo.BindLookUpEdit(lupPUNCTURE_NURSE, "EMP_NO", "NAME", dtPunctureNurseList, "NAME", "穿刺护士");
                     BaseControlInfo.BindLookUpEdit(lupCHECK_NURSE, "EMP_NO", "NAME", dtPunctureNurseList, "NAME", "核对护士");
-                    BaseControlInfo.BindLookUpEdit(lupNURSE_ID, "EMP_NO", "NAME", dtPunctureNurseList, "NAME", "记录护士");
+                    //BaseControlInfo.BindLookUpEdit(lupNURSE_ID, "EMP_NO", "NAME", dtPunctureNurseList, "NAME", "记录护士");
+                    BaseControlInfo.BindLookUpEdit(lupNURSE_ID, "EMP_NO", "NAME", dtPunctureNurseList, "NAME", "核对护士");
                     BaseControlInfo.BindLookUpEdit(lopDRUG_NURSE_ID, "EMP_NO", "NAME", dtPunctureNurseList, "NAME", "执行护士");
                     BaseControlInfo.BindLookUpEdit(lopDISPENSINGNURSE, "EMP_NO", "NAME", dtPunctureNurseList, "NAME", "摆药护士");
                     BaseControlInfo.BindLookUpEdit(lopCHECKNURSE, "EMP_NO", "NAME", dtPunctureNurseList, "NAME", "核对护士");
@@ -1450,6 +1478,10 @@ namespace Hemo.Client.UI.Hemodialysis
                     paramId = dtTemp.Rows[0]["HEMODIALYSIS_PARAMETERS_ID"].ToString();
                 }
                 WriteOperationLog(opType, "透析参数记录", paramId, changeDetail, logRemark);
+                Logger.WriteInfoLog(string.Format(
+                    "[用户:{0}({1})] [患者:{2}] [操作:{3}] [透析参数记录:{4}] {5} - {6}",
+                    GetCurrentLoginName(), GetCurrentUserName(), ctlUserLongInfo1.Patient.NAME,
+                    opType, paramId, logRemark, changeDetail));
             }
             return result;
         }
@@ -1515,6 +1547,10 @@ namespace Hemo.Client.UI.Hemodialysis
                 }
                 WriteOperationLog("UPDATE", "给药信息", drugId, changeDetail,
                     "修改给药状态：" + statusText);
+                Logger.WriteInfoLog(string.Format(
+                    "[用户:{0}({1})] [患者:{2}] [操作:UPDATE] [给药信息:{3}] {4} - {5}",
+                    GetCurrentLoginName(), GetCurrentUserName(), ctlUserLongInfo1.Patient.NAME,
+                    drugId, "修改给药状态：" + statusText, changeDetail));
 
                 if (lopSTATUS.EditValue != null && lopSTATUS.EditValue.ToString() == "已执行")
                 {
@@ -1807,6 +1843,10 @@ namespace Hemo.Client.UI.Hemodialysis
                         crrtInfo = sb.ToString();
                     }
                     WriteOperationLog("UPDATE", "CRRT治疗单", cureId, crrtInfo, "保存CRRT治疗单");
+                    Logger.WriteInfoLog(string.Format(
+                        "[用户:{0}({1})] [患者:{2}] [操作:UPDATE] [CRRT治疗单:{3}] {4} - {5}",
+                        GetCurrentLoginName(), GetCurrentUserName(), ctlUserLongInfo1.Patient.NAME,
+                        cureId, "保存CRRT治疗单", crrtInfo));
                 }
             }
 
@@ -1852,6 +1892,10 @@ namespace Hemo.Client.UI.Hemodialysis
                         compValue = sb.ToString();
                     }
                     WriteOperationLog("UPDATE", "并发症信息", GetCurrentCureId(), compValue, "保存并发症信息");
+                    Logger.WriteInfoLog(string.Format(
+                        "[用户:{0}({1})] [患者:{2}] [操作:UPDATE] [并发症信息:{3}] {4} - {5}",
+                        GetCurrentLoginName(), GetCurrentUserName(), ctlUserLongInfo1.Patient.NAME,
+                        GetCurrentCureId(), "保存并发症信息", compValue));
                 }
             }
 
@@ -1872,6 +1916,10 @@ namespace Hemo.Client.UI.Hemodialysis
             string operationType = isAdd ? "SAVE" : "UPDATE";
             string logRemark = isAdd ? "新增治疗单" : "修改治疗单";
             WriteOperationLog(operationType, "治疗单主表", GetCurrentCureId(), changeDetail, logRemark);
+            Logger.WriteInfoLog(string.Format(
+                "[用户:{0}({1})] [患者:{2}] [操作:{3}] [治疗单主表:{4}] {5} - {6}",
+                GetCurrentLoginName(), GetCurrentUserName(), ctlUserLongInfo1.Patient.NAME,
+                operationType, GetCurrentCureId(), logRemark, changeDetail));
 
             if (dt != null && dt.Rows.Count > 0)
             {
@@ -2065,7 +2113,7 @@ namespace Hemo.Client.UI.Hemodialysis
                         AutoClosedMsgBox.ShowForm("责任护士不能为空！", "患者治疗", 1000, MessageBoxIcon.Warning);
                         return;
                     }
-                    if (lupCHECK_NURSE.EditValue == null)
+                    if (cureDate >= new DateTime(2026, 7, 6) && lupCHECK_NURSE.EditValue == null)
                     {
                         AutoClosedMsgBox.ShowForm("核对护士不能为空！", "患者治疗", 1000, MessageBoxIcon.Warning);
                         return;
@@ -2614,7 +2662,8 @@ namespace Hemo.Client.UI.Hemodialysis
                     spnBREATH.EditValue = dr["BREATH"];
                     //治疗
                     txtCLINICAL_MANIFESTATION.EditValue = dr["CURE_MODE"];
-                    lupNURSE_ID.EditValue = dr["NURSE_ID"];
+                    //lupNURSE_ID.EditValue = dr["NURSE_ID"];
+                    lupNURSE_ID.EditValue = dr["CHECK_NURSE"];
                     spnTEMPERATURE.EditValue = dr["TEMPERATURE"];
                     XtraMessageBox.Show("参数已复制，请输入收缩压和舒张压后保存数据。", "参数记录");
                 }
@@ -2760,6 +2809,10 @@ namespace Hemo.Client.UI.Hemodialysis
                 {
                     // 记录审计日志 - 删除透析参数
                     WriteOperationLog("DELETE", "透析参数记录", deletedParamId, deletedInfo, "删除透析参数");
+                    Logger.WriteInfoLog(string.Format(
+                        "[用户:{0}({1})] [患者:{2}] [操作:DELETE] [透析参数记录:{3}] {4} - {5}",
+                        GetCurrentLoginName(), GetCurrentUserName(), ctlUserLongInfo1.Patient.NAME,
+                        deletedParamId, "删除透析参数", deletedInfo));
 
                     loadParaneterGrid(txtCURE_ID.Text, txtHEMODIALYSIS_ID.Text.Trim());
                 }

@@ -313,7 +313,7 @@
             this.btnSync.Appearance.Options.UseFont = true;
             this.btnSync.ImageIndex = 8;
             this.btnSync.ImageList = this.smallimageList;
-            this.btnSync.Location = new System.Drawing.Point(794, 3);
+            this.btnSync.Location = new System.Drawing.Point(795, 3);
             this.btnSync.Name = "btnSync";
             this.btnSync.Size = new System.Drawing.Size(113, 21);
             this.btnSync.TabIndex = 5;
@@ -326,7 +326,7 @@
             this.grdPatient.Location = new System.Drawing.Point(0, 30);
             this.grdPatient.MainView = this.cardView1;
             this.grdPatient.Name = "grdPatient";
-            this.grdPatient.Size = new System.Drawing.Size(947, 405);
+            this.grdPatient.Size = new System.Drawing.Size(948, 406);
             this.grdPatient.TabIndex = 48;
             this.grdPatient.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.cardView1});
@@ -569,7 +569,7 @@
             this.tabPageCard.Controls.Add(this.grdPatient);
             this.tabPageCard.Controls.Add(this.panelControl3);
             this.tabPageCard.Name = "tabPageCard";
-            this.tabPageCard.Size = new System.Drawing.Size(947, 435);
+            this.tabPageCard.Size = new System.Drawing.Size(948, 436);
             this.tabPageCard.Text = "病患小卡";
             // 
             // busyIndicator1
@@ -598,15 +598,13 @@
             this.panelControl3.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelControl3.Location = new System.Drawing.Point(0, 0);
             this.panelControl3.Name = "panelControl3";
-            this.panelControl3.Size = new System.Drawing.Size(947, 30);
+            this.panelControl3.Size = new System.Drawing.Size(948, 30);
             this.panelControl3.TabIndex = 49;
             // 
             // labelControl2
             // 
             this.labelControl2.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl2.Appearance.ForeColor = System.Drawing.Color.Green;
-            this.labelControl2.Appearance.Options.UseFont = true;
-            this.labelControl2.Appearance.Options.UseForeColor = true;
             this.labelControl2.Location = new System.Drawing.Point(3, 6);
             this.labelControl2.Name = "labelControl2";
             this.labelControl2.Size = new System.Drawing.Size(0, 17);
@@ -617,8 +615,7 @@
             // 
             this.labelControl1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.labelControl1.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.labelControl1.Appearance.Options.UseFont = true;
-            this.labelControl1.Location = new System.Drawing.Point(532, 6);
+            this.labelControl1.Location = new System.Drawing.Point(533, 6);
             this.labelControl1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.labelControl1.Name = "labelControl1";
             this.labelControl1.Size = new System.Drawing.Size(54, 17);
@@ -630,7 +627,7 @@
             this.txtHEMODIALYSIS_ID.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.txtHEMODIALYSIS_ID.EditValue = "";
             this.txtHEMODIALYSIS_ID.EnterMoveNextControl = true;
-            this.txtHEMODIALYSIS_ID.Location = new System.Drawing.Point(593, 2);
+            this.txtHEMODIALYSIS_ID.Location = new System.Drawing.Point(594, 2);
             this.txtHEMODIALYSIS_ID.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtHEMODIALYSIS_ID.Name = "txtHEMODIALYSIS_ID";
             this.txtHEMODIALYSIS_ID.Properties.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
@@ -638,15 +635,14 @@
             this.txtHEMODIALYSIS_ID.Properties.Appearance.Options.UseFont = true;
             this.txtHEMODIALYSIS_ID.Properties.Appearance.Options.UseForeColor = true;
             this.txtHEMODIALYSIS_ID.Properties.LookAndFeel.SkinName = "ExtendBlue";
-            this.txtHEMODIALYSIS_ID.Size = new System.Drawing.Size(110, 23);
+            this.txtHEMODIALYSIS_ID.Size = new System.Drawing.Size(110, 24);
             this.txtHEMODIALYSIS_ID.TabIndex = 11;
             // 
             // labelControl3
             // 
             this.labelControl3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.labelControl3.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.labelControl3.Appearance.Options.UseFont = true;
-            this.labelControl3.Location = new System.Drawing.Point(211, 7);
+            this.labelControl3.Location = new System.Drawing.Point(212, 7);
             this.labelControl3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.labelControl3.Name = "labelControl3";
             this.labelControl3.Size = new System.Drawing.Size(39, 17);
@@ -657,8 +653,7 @@
             // 
             this.labelControl5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.labelControl5.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.labelControl5.Appearance.Options.UseFont = true;
-            this.labelControl5.Location = new System.Drawing.Point(395, 7);
+            this.labelControl5.Location = new System.Drawing.Point(396, 7);
             this.labelControl5.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.labelControl5.Name = "labelControl5";
             this.labelControl5.Size = new System.Drawing.Size(24, 17);
@@ -669,7 +664,7 @@
             // 
             this.txtReadCard.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.txtReadCard.EditValue = "";
-            this.txtReadCard.Location = new System.Drawing.Point(263, 4);
+            this.txtReadCard.Location = new System.Drawing.Point(264, 4);
             this.txtReadCard.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtReadCard.Name = "txtReadCard";
             this.txtReadCard.Properties.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
@@ -677,7 +672,7 @@
             this.txtReadCard.Properties.Appearance.Options.UseFont = true;
             this.txtReadCard.Properties.Appearance.Options.UseForeColor = true;
             this.txtReadCard.Properties.LookAndFeel.SkinName = "ExtendBlue";
-            this.txtReadCard.Size = new System.Drawing.Size(110, 23);
+            this.txtReadCard.Size = new System.Drawing.Size(110, 24);
             this.txtReadCard.TabIndex = 10;
             this.txtReadCard.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtReadCard_KeyDown);
             this.txtReadCard.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtReadCard_KeyPress);
@@ -688,7 +683,7 @@
             this.btnQuery.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnQuery.Appearance.Options.UseFont = true;
             this.btnQuery.ImageIndex = 8;
-            this.btnQuery.Location = new System.Drawing.Point(709, 2);
+            this.btnQuery.Location = new System.Drawing.Point(710, 2);
             this.btnQuery.Name = "btnQuery";
             this.btnQuery.Size = new System.Drawing.Size(75, 23);
             this.btnQuery.TabIndex = 12;
@@ -700,7 +695,7 @@
             this.txtNAME.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.txtNAME.EditValue = "";
             this.txtNAME.EnterMoveNextControl = true;
-            this.txtNAME.Location = new System.Drawing.Point(420, 3);
+            this.txtNAME.Location = new System.Drawing.Point(421, 3);
             this.txtNAME.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtNAME.Name = "txtNAME";
             this.txtNAME.Properties.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
@@ -708,7 +703,7 @@
             this.txtNAME.Properties.Appearance.Options.UseFont = true;
             this.txtNAME.Properties.Appearance.Options.UseForeColor = true;
             this.txtNAME.Properties.LookAndFeel.SkinName = "ExtendBlue";
-            this.txtNAME.Size = new System.Drawing.Size(110, 23);
+            this.txtNAME.Size = new System.Drawing.Size(110, 24);
             this.txtNAME.TabIndex = 10;
             // 
             // btnOrders
@@ -726,7 +721,7 @@
             // 
             this.picLoading.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.picLoading.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.picLoading.Location = new System.Drawing.Point(908, 0);
+            this.picLoading.Location = new System.Drawing.Point(909, 0);
             this.picLoading.Name = "picLoading";
             this.picLoading.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
             this.picLoading.Properties.Appearance.Options.UseBackColor = true;
@@ -739,7 +734,7 @@
             // 
             this.tabPageDoc.Controls.Add(this.panelControl5);
             this.tabPageDoc.Name = "tabPageDoc";
-            this.tabPageDoc.Size = new System.Drawing.Size(947, 435);
+            this.tabPageDoc.Size = new System.Drawing.Size(948, 436);
             this.tabPageDoc.Text = "患者文书";
             // 
             // panelControl5
@@ -750,7 +745,7 @@
             this.panelControl5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelControl5.Location = new System.Drawing.Point(0, 0);
             this.panelControl5.Name = "panelControl5";
-            this.panelControl5.Size = new System.Drawing.Size(947, 435);
+            this.panelControl5.Size = new System.Drawing.Size(948, 436);
             this.panelControl5.TabIndex = 2;
             // 
             // documentContainerHost
@@ -758,7 +753,7 @@
             this.documentContainerHost.Dock = System.Windows.Forms.DockStyle.Fill;
             this.documentContainerHost.Location = new System.Drawing.Point(239, 0);
             this.documentContainerHost.Name = "documentContainerHost";
-            this.documentContainerHost.Size = new System.Drawing.Size(708, 435);
+            this.documentContainerHost.Size = new System.Drawing.Size(709, 436);
             this.documentContainerHost.TabIndex = 1;
             this.documentContainerHost.Text = "elementHost1";
             this.documentContainerHost.Child = null;
@@ -773,7 +768,7 @@
             this.groupControl1.LookAndFeel.Style = DevExpress.LookAndFeel.LookAndFeelStyle.Office2003;
             this.groupControl1.LookAndFeel.UseDefaultLookAndFeel = false;
             this.groupControl1.Name = "groupControl1";
-            this.groupControl1.Size = new System.Drawing.Size(239, 435);
+            this.groupControl1.Size = new System.Drawing.Size(239, 436);
             this.groupControl1.TabIndex = 7;
             this.groupControl1.Text = "病患列表";
             // 
@@ -782,9 +777,9 @@
             this.xtraScrollableControl1.Controls.Add(this.tlDocments);
             this.xtraScrollableControl1.Controls.Add(this.panelControl1);
             this.xtraScrollableControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.xtraScrollableControl1.Location = new System.Drawing.Point(2, 20);
+            this.xtraScrollableControl1.Location = new System.Drawing.Point(2, 19);
             this.xtraScrollableControl1.Name = "xtraScrollableControl1";
-            this.xtraScrollableControl1.Size = new System.Drawing.Size(235, 413);
+            this.xtraScrollableControl1.Size = new System.Drawing.Size(235, 415);
             this.xtraScrollableControl1.TabIndex = 0;
             // 
             // tlDocments
@@ -877,7 +872,7 @@
             treeNode18});
             this.tlDocments.SelectedImageIndex = 0;
             this.tlDocments.ShowRootLines = false;
-            this.tlDocments.Size = new System.Drawing.Size(235, 316);
+            this.tlDocments.Size = new System.Drawing.Size(235, 318);
             this.tlDocments.TabIndex = 1;
             this.tlDocments.NodeMouseDoubleClick += new System.Windows.Forms.TreeNodeMouseClickEventHandler(this.tlDocments_NodeMouseDoubleClick);
             // 
@@ -965,7 +960,7 @@
             this.TabPageConfirm.Controls.Add(this.lblReturn2);
             this.TabPageConfirm.Controls.Add(this.editRecipeConfirmListNew1);
             this.TabPageConfirm.Name = "TabPageConfirm";
-            this.TabPageConfirm.Size = new System.Drawing.Size(947, 435);
+            this.TabPageConfirm.Size = new System.Drawing.Size(948, 436);
             this.TabPageConfirm.Text = "排班信息确认";
             // 
             // lblReturn2
@@ -987,7 +982,7 @@
             this.editRecipeConfirmListNew1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.editRecipeConfirmListNew1.Location = new System.Drawing.Point(0, 0);
             this.editRecipeConfirmListNew1.Name = "editRecipeConfirmListNew1";
-            this.editRecipeConfirmListNew1.Size = new System.Drawing.Size(947, 435);
+            this.editRecipeConfirmListNew1.Size = new System.Drawing.Size(948, 436);
             this.editRecipeConfirmListNew1.TabIndex = 0;
             // 
             // dockManager1
@@ -1056,8 +1051,6 @@
             // 
             this.labelControl14.Appearance.Font = new System.Drawing.Font("微软雅黑", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.labelControl14.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(159)))), ((int)(((byte)(159)))), ((int)(((byte)(159)))));
-            this.labelControl14.Appearance.Options.UseFont = true;
-            this.labelControl14.Appearance.Options.UseForeColor = true;
             this.labelControl14.Location = new System.Drawing.Point(547, 173);
             this.labelControl14.Name = "labelControl14";
             this.labelControl14.Size = new System.Drawing.Size(0, 19);
@@ -1067,8 +1060,6 @@
             // 
             this.labelControl15.Appearance.Font = new System.Drawing.Font("微软雅黑", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.labelControl15.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(159)))), ((int)(((byte)(159)))), ((int)(((byte)(159)))));
-            this.labelControl15.Appearance.Options.UseFont = true;
-            this.labelControl15.Appearance.Options.UseForeColor = true;
             this.labelControl15.Location = new System.Drawing.Point(48, 381);
             this.labelControl15.Name = "labelControl15";
             this.labelControl15.Size = new System.Drawing.Size(60, 19);
@@ -1105,8 +1096,6 @@
             // 
             this.labelControl16.Appearance.Font = new System.Drawing.Font("微软雅黑", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.labelControl16.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(159)))), ((int)(((byte)(159)))), ((int)(((byte)(159)))));
-            this.labelControl16.Appearance.Options.UseFont = true;
-            this.labelControl16.Appearance.Options.UseForeColor = true;
             this.labelControl16.Location = new System.Drawing.Point(388, 173);
             this.labelControl16.Name = "labelControl16";
             this.labelControl16.Size = new System.Drawing.Size(0, 19);
@@ -1116,8 +1105,6 @@
             // 
             this.labelControl17.Appearance.Font = new System.Drawing.Font("微软雅黑", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.labelControl17.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(159)))), ((int)(((byte)(159)))), ((int)(((byte)(159)))));
-            this.labelControl17.Appearance.Options.UseFont = true;
-            this.labelControl17.Appearance.Options.UseForeColor = true;
             this.labelControl17.Location = new System.Drawing.Point(48, 253);
             this.labelControl17.Name = "labelControl17";
             this.labelControl17.Size = new System.Drawing.Size(60, 19);
@@ -1154,8 +1141,6 @@
             // 
             this.labelControl18.Appearance.Font = new System.Drawing.Font("微软雅黑", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.labelControl18.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(159)))), ((int)(((byte)(159)))), ((int)(((byte)(159)))));
-            this.labelControl18.Appearance.Options.UseFont = true;
-            this.labelControl18.Appearance.Options.UseForeColor = true;
             this.labelControl18.Location = new System.Drawing.Point(162, 195);
             this.labelControl18.Name = "labelControl18";
             this.labelControl18.Size = new System.Drawing.Size(0, 19);
@@ -1165,8 +1150,6 @@
             // 
             this.labelControl19.Appearance.Font = new System.Drawing.Font("微软雅黑", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.labelControl19.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(159)))), ((int)(((byte)(159)))), ((int)(((byte)(159)))));
-            this.labelControl19.Appearance.Options.UseFont = true;
-            this.labelControl19.Appearance.Options.UseForeColor = true;
             this.labelControl19.Location = new System.Drawing.Point(48, 130);
             this.labelControl19.Name = "labelControl19";
             this.labelControl19.Size = new System.Drawing.Size(60, 19);
@@ -1185,8 +1168,6 @@
             // 
             this.labelControl20.Appearance.Font = new System.Drawing.Font("微软雅黑", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.labelControl20.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(159)))), ((int)(((byte)(159)))), ((int)(((byte)(159)))));
-            this.labelControl20.Appearance.Options.UseFont = true;
-            this.labelControl20.Appearance.Options.UseForeColor = true;
             this.labelControl20.Location = new System.Drawing.Point(184, 60);
             this.labelControl20.Name = "labelControl20";
             this.labelControl20.Size = new System.Drawing.Size(0, 19);
@@ -1196,8 +1177,6 @@
             // 
             this.labelControl21.Appearance.Font = new System.Drawing.Font("微软雅黑", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.labelControl21.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(159)))), ((int)(((byte)(159)))), ((int)(((byte)(159)))));
-            this.labelControl21.Appearance.Options.UseFont = true;
-            this.labelControl21.Appearance.Options.UseForeColor = true;
             this.labelControl21.Location = new System.Drawing.Point(48, 6);
             this.labelControl21.Name = "labelControl21";
             this.labelControl21.Size = new System.Drawing.Size(60, 19);
@@ -1252,8 +1231,6 @@
             // 
             this.labelControl6.Appearance.Font = new System.Drawing.Font("微软雅黑", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.labelControl6.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(159)))), ((int)(((byte)(159)))), ((int)(((byte)(159)))));
-            this.labelControl6.Appearance.Options.UseFont = true;
-            this.labelControl6.Appearance.Options.UseForeColor = true;
             this.labelControl6.Location = new System.Drawing.Point(547, 173);
             this.labelControl6.Name = "labelControl6";
             this.labelControl6.Size = new System.Drawing.Size(0, 19);
@@ -1263,8 +1240,6 @@
             // 
             this.labelControl7.Appearance.Font = new System.Drawing.Font("微软雅黑", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.labelControl7.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(159)))), ((int)(((byte)(159)))), ((int)(((byte)(159)))));
-            this.labelControl7.Appearance.Options.UseFont = true;
-            this.labelControl7.Appearance.Options.UseForeColor = true;
             this.labelControl7.Location = new System.Drawing.Point(56, 393);
             this.labelControl7.Name = "labelControl7";
             this.labelControl7.Size = new System.Drawing.Size(60, 19);
@@ -1301,8 +1276,6 @@
             // 
             this.labelControl8.Appearance.Font = new System.Drawing.Font("微软雅黑", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.labelControl8.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(159)))), ((int)(((byte)(159)))), ((int)(((byte)(159)))));
-            this.labelControl8.Appearance.Options.UseFont = true;
-            this.labelControl8.Appearance.Options.UseForeColor = true;
             this.labelControl8.Location = new System.Drawing.Point(388, 173);
             this.labelControl8.Name = "labelControl8";
             this.labelControl8.Size = new System.Drawing.Size(0, 19);
@@ -1312,8 +1285,6 @@
             // 
             this.labelControl9.Appearance.Font = new System.Drawing.Font("微软雅黑", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.labelControl9.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(159)))), ((int)(((byte)(159)))), ((int)(((byte)(159)))));
-            this.labelControl9.Appearance.Options.UseFont = true;
-            this.labelControl9.Appearance.Options.UseForeColor = true;
             this.labelControl9.Location = new System.Drawing.Point(56, 265);
             this.labelControl9.Name = "labelControl9";
             this.labelControl9.Size = new System.Drawing.Size(60, 19);
@@ -1350,8 +1321,6 @@
             // 
             this.labelControl10.Appearance.Font = new System.Drawing.Font("微软雅黑", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.labelControl10.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(159)))), ((int)(((byte)(159)))), ((int)(((byte)(159)))));
-            this.labelControl10.Appearance.Options.UseFont = true;
-            this.labelControl10.Appearance.Options.UseForeColor = true;
             this.labelControl10.Location = new System.Drawing.Point(178, 195);
             this.labelControl10.Name = "labelControl10";
             this.labelControl10.Size = new System.Drawing.Size(0, 19);
@@ -1361,8 +1330,6 @@
             // 
             this.labelControl11.Appearance.Font = new System.Drawing.Font("微软雅黑", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.labelControl11.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(159)))), ((int)(((byte)(159)))), ((int)(((byte)(159)))));
-            this.labelControl11.Appearance.Options.UseFont = true;
-            this.labelControl11.Appearance.Options.UseForeColor = true;
             this.labelControl11.Location = new System.Drawing.Point(56, 137);
             this.labelControl11.Name = "labelControl11";
             this.labelControl11.Size = new System.Drawing.Size(60, 19);
@@ -1381,8 +1348,6 @@
             // 
             this.labelControl12.Appearance.Font = new System.Drawing.Font("微软雅黑", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.labelControl12.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(159)))), ((int)(((byte)(159)))), ((int)(((byte)(159)))));
-            this.labelControl12.Appearance.Options.UseFont = true;
-            this.labelControl12.Appearance.Options.UseForeColor = true;
             this.labelControl12.Location = new System.Drawing.Point(184, 60);
             this.labelControl12.Name = "labelControl12";
             this.labelControl12.Size = new System.Drawing.Size(0, 19);
@@ -1392,8 +1357,6 @@
             // 
             this.labelControl13.Appearance.Font = new System.Drawing.Font("微软雅黑", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.labelControl13.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(159)))), ((int)(((byte)(159)))), ((int)(((byte)(159)))));
-            this.labelControl13.Appearance.Options.UseFont = true;
-            this.labelControl13.Appearance.Options.UseForeColor = true;
             this.labelControl13.Location = new System.Drawing.Point(56, 6);
             this.labelControl13.Name = "labelControl13";
             this.labelControl13.Size = new System.Drawing.Size(60, 19);
@@ -1430,8 +1393,6 @@
             // 
             this.lblDate5.Appearance.Font = new System.Drawing.Font("微软雅黑", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.lblDate5.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(159)))), ((int)(((byte)(159)))), ((int)(((byte)(159)))));
-            this.lblDate5.Appearance.Options.UseFont = true;
-            this.lblDate5.Appearance.Options.UseForeColor = true;
             this.lblDate5.Location = new System.Drawing.Point(217, 562);
             this.lblDate5.Name = "lblDate5";
             this.lblDate5.Size = new System.Drawing.Size(0, 19);
@@ -1441,8 +1402,6 @@
             // 
             this.lblTitle5.Appearance.Font = new System.Drawing.Font("微软雅黑", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.lblTitle5.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(159)))), ((int)(((byte)(159)))), ((int)(((byte)(159)))));
-            this.lblTitle5.Appearance.Options.UseFont = true;
-            this.lblTitle5.Appearance.Options.UseForeColor = true;
             this.lblTitle5.Location = new System.Drawing.Point(61, 513);
             this.lblTitle5.Name = "lblTitle5";
             this.lblTitle5.Size = new System.Drawing.Size(0, 19);
@@ -1479,8 +1438,6 @@
             // 
             this.lblDate4.Appearance.Font = new System.Drawing.Font("微软雅黑", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.lblDate4.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(159)))), ((int)(((byte)(159)))), ((int)(((byte)(159)))));
-            this.lblDate4.Appearance.Options.UseFont = true;
-            this.lblDate4.Appearance.Options.UseForeColor = true;
             this.lblDate4.Location = new System.Drawing.Point(547, 173);
             this.lblDate4.Name = "lblDate4";
             this.lblDate4.Size = new System.Drawing.Size(0, 19);
@@ -1490,8 +1447,6 @@
             // 
             this.lblTitle4.Appearance.Font = new System.Drawing.Font("微软雅黑", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.lblTitle4.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(159)))), ((int)(((byte)(159)))), ((int)(((byte)(159)))));
-            this.lblTitle4.Appearance.Options.UseFont = true;
-            this.lblTitle4.Appearance.Options.UseForeColor = true;
             this.lblTitle4.Location = new System.Drawing.Point(56, 400);
             this.lblTitle4.Name = "lblTitle4";
             this.lblTitle4.Size = new System.Drawing.Size(0, 19);
@@ -1528,8 +1483,6 @@
             // 
             this.lblDate3.Appearance.Font = new System.Drawing.Font("微软雅黑", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.lblDate3.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(159)))), ((int)(((byte)(159)))), ((int)(((byte)(159)))));
-            this.lblDate3.Appearance.Options.UseFont = true;
-            this.lblDate3.Appearance.Options.UseForeColor = true;
             this.lblDate3.Location = new System.Drawing.Point(388, 173);
             this.lblDate3.Name = "lblDate3";
             this.lblDate3.Size = new System.Drawing.Size(0, 19);
@@ -1539,8 +1492,6 @@
             // 
             this.lblTitle3.Appearance.Font = new System.Drawing.Font("微软雅黑", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.lblTitle3.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(159)))), ((int)(((byte)(159)))), ((int)(((byte)(159)))));
-            this.lblTitle3.Appearance.Options.UseFont = true;
-            this.lblTitle3.Appearance.Options.UseForeColor = true;
             this.lblTitle3.Location = new System.Drawing.Point(56, 272);
             this.lblTitle3.Name = "lblTitle3";
             this.lblTitle3.Size = new System.Drawing.Size(0, 19);
@@ -1577,8 +1528,6 @@
             // 
             this.lblDate2.Appearance.Font = new System.Drawing.Font("微软雅黑", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.lblDate2.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(159)))), ((int)(((byte)(159)))), ((int)(((byte)(159)))));
-            this.lblDate2.Appearance.Options.UseFont = true;
-            this.lblDate2.Appearance.Options.UseForeColor = true;
             this.lblDate2.Location = new System.Drawing.Point(178, 202);
             this.lblDate2.Name = "lblDate2";
             this.lblDate2.Size = new System.Drawing.Size(0, 19);
@@ -1588,8 +1537,6 @@
             // 
             this.lblTitle2.Appearance.Font = new System.Drawing.Font("微软雅黑", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.lblTitle2.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(159)))), ((int)(((byte)(159)))), ((int)(((byte)(159)))));
-            this.lblTitle2.Appearance.Options.UseFont = true;
-            this.lblTitle2.Appearance.Options.UseForeColor = true;
             this.lblTitle2.Location = new System.Drawing.Point(56, 144);
             this.lblTitle2.Name = "lblTitle2";
             this.lblTitle2.Size = new System.Drawing.Size(0, 19);
@@ -1608,8 +1555,6 @@
             // 
             this.lblDate1.Appearance.Font = new System.Drawing.Font("微软雅黑", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.lblDate1.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(159)))), ((int)(((byte)(159)))), ((int)(((byte)(159)))));
-            this.lblDate1.Appearance.Options.UseFont = true;
-            this.lblDate1.Appearance.Options.UseForeColor = true;
             this.lblDate1.Location = new System.Drawing.Point(184, 67);
             this.lblDate1.Name = "lblDate1";
             this.lblDate1.Size = new System.Drawing.Size(0, 19);
@@ -1619,8 +1564,6 @@
             // 
             this.lblTitle1.Appearance.Font = new System.Drawing.Font("微软雅黑", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.lblTitle1.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(159)))), ((int)(((byte)(159)))), ((int)(((byte)(159)))));
-            this.lblTitle1.Appearance.Options.UseFont = true;
-            this.lblTitle1.Appearance.Options.UseForeColor = true;
             this.lblTitle1.Location = new System.Drawing.Point(56, 13);
             this.lblTitle1.Name = "lblTitle1";
             this.lblTitle1.Size = new System.Drawing.Size(0, 19);

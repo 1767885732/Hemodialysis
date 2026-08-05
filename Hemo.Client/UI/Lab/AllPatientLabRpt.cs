@@ -141,6 +141,7 @@ namespace Hemo.Client.UI.Lab
 
                 this.gridView1.Columns.Clear();
                 DataTable dt = new DataTable();
+                DataTable crossTable = new DataTable();
                 string strPatientType = string.Empty;
                 if (cmbTimeType.EditValue != null)
                 {
@@ -151,7 +152,8 @@ namespace Hemo.Client.UI.Lab
                 {
                     worker.DoWork += (o1, e1) =>
                     {
-                        var labdt = this._ilab.get_med_vw_xuehongdanbai_ext(Utility.CDate(this.beginTime.EditValue.ToString()), Utility.CDate(this.endTime.EditValue.ToString()));
+                        //var labdt = this._ilab.get_med_vw_xuehongdanbai_ext(Utility.CDate(this.beginTime.EditValue.ToString()), Utility.CDate(this.endTime.EditValue.ToString()));
+                        var labdt = this._ilab.GetLabResultNew(Utility.CDate(this.beginTime.EditValue.ToString()), Utility.CDate(this.endTime.EditValue.ToString()));
                         if (this.chkConstant.Checked && labdt.Rows.Count > 0)
                         {
                             var dtHaving = this._hemodialysisService.GetHemoIdInLastWeekAndThreeMonthsByDate(Utility.CDate(this.beginTime.EditValue.ToString()), Utility.CDate(this.endTime.EditValue.ToString()));
@@ -172,7 +174,6 @@ namespace Hemo.Client.UI.Lab
                             dt = labdt.Copy();
                         }
 
-
                     };
                     worker.RunWorkerCompleted += (o2, e2) =>
                     {
@@ -183,18 +184,28 @@ namespace Hemo.Client.UI.Lab
                                 dt = dt.AsEnumerable().Where(i => i["病人来源"].ToString().Equals(strPatientType)).CopyToDataTable();
                             }
                         }
-                        dt = Utility.GetSubTable(dt, "1=1", "姓名,检验日期");
-                        gcLabMain.DataSource = dt;
-                        this.gridView1.Columns[5].DisplayFormat.FormatString = "YYYY-MM-DD hh:mm:ss";
-                        this.gridView1.BestFitColumns();
+                        crossTable = ConvertToCrossTable(dt);
+                        //dt = Utility.GetSubTable(dt, "1=1", "姓名,检验日期");
+                        gcLabMain.DataSource = crossTable;
+                        //this.gridView1.Columns[5].DisplayFormat.FormatString = "YYYY-MM-DD hh:mm:ss";
+                        //this.gridView1.BestFitColumns();
+                        this.BeginInvoke(new Action(() =>
+                        {
+                            this.gridView1.BestFitColumns();
 
+                            // 判断列是否存在，防止索引越界
+                            if (this.gridView1.Columns.Count > 0)
+                            {
+                                this.gridView1.Columns[0].Fixed = DevExpress.XtraGrid.Columns.FixedStyle.Left;
+                            }
+                        }));
                         HideMessage();
-                        this.gridView1.Columns[0].Fixed = DevExpress.XtraGrid.Columns.FixedStyle.Left;
-                        this.gridView1.Columns[1].Fixed = DevExpress.XtraGrid.Columns.FixedStyle.Left;
-                        this.gridView1.Columns[2].Fixed = DevExpress.XtraGrid.Columns.FixedStyle.Left;
-                        this.gridView1.Columns[3].Fixed = DevExpress.XtraGrid.Columns.FixedStyle.Left;
-                        this.gridView1.Columns[4].Fixed = DevExpress.XtraGrid.Columns.FixedStyle.Left;
-                        this.gridView1.Columns[5].Fixed = DevExpress.XtraGrid.Columns.FixedStyle.Left;
+                        //this.gridView1.Columns[0].Fixed = DevExpress.XtraGrid.Columns.FixedStyle.Left;
+                        //this.gridView1.Columns[1].Fixed = DevExpress.XtraGrid.Columns.FixedStyle.Left;
+                        //this.gridView1.Columns[2].Fixed = DevExpress.XtraGrid.Columns.FixedStyle.Left;
+                        //this.gridView1.Columns[3].Fixed = DevExpress.XtraGrid.Columns.FixedStyle.Left;
+                        //this.gridView1.Columns[4].Fixed = DevExpress.XtraGrid.Columns.FixedStyle.Left;
+                        //this.gridView1.Columns[5].Fixed = DevExpress.XtraGrid.Columns.FixedStyle.Left;
                     };
                     worker.RunWorkerAsync();
                 }
@@ -205,6 +216,104 @@ namespace Hemo.Client.UI.Lab
                 HideMessage();
                 XtraMessageBox.Show(e.Message);
             }
+        }
+
+        /// <summary>
+        /// 将原始数据转换为交叉表（项目名称为行，患者为列）
+        /// </summary>
+        /// <param name="sourceData">原始数据表</param>
+        /// <returns>交叉表</returns>
+        private DataTable ConvertToCrossTable(DataTable sourceData)
+        {
+            if (sourceData == null || sourceData.Rows.Count == 0)
+                return new DataTable();
+            var orderedItemNames = new List<string>
+            {
+                "甲状旁腺素",
+                "25羟基维生素D",
+                "白蛋白",
+                "血α1微球蛋白",
+                "血β2微球蛋白",
+                "尿酸",
+                "甘油三酯",
+                "总胆固醇",
+                "无机磷",
+                "前白蛋白",
+                "钠",
+                "镁",
+                "低密度脂蛋白胆固醇",
+                "钾",
+                "估算肾小球滤过率",
+                "胱抑素C",
+                "肌酐",
+                "氯",
+                "促红细胞生成素",
+                "铁饱和度",
+                "血清铁蛋白",
+                "血红蛋白",
+                "全程C反应蛋白",
+                "血小板",
+                "白细胞",
+                "尿素",
+                "超敏C反应蛋白"
+            };
+            // 获取所有唯一的项目名称（作为行头）
+            var itemNames = sourceData.AsEnumerable()
+                .Select(r => r["项目名称"].ToString().Trim())
+                .Distinct()
+                .ToList();
+
+            var sortedItemNames = orderedItemNames
+                .Where(name => itemNames.Contains(name))
+                .Concat(itemNames.Where(name => !orderedItemNames.Contains(name)))
+                .ToList();
+
+            // 获取所有唯一的患者（透析号+姓名，作为列头），按姓名排序
+            var patients = sourceData.AsEnumerable()
+                .Select(r => new
+                {
+                    DialysisNo = r["透析号"].ToString(),
+                    Name = r["姓名"].ToString()
+                })
+                .Distinct()
+                .OrderBy(p => p.Name)
+                .ToList();
+
+            // 构建结果表
+            DataTable resultTable = new DataTable();
+            resultTable.TableName = "检验结果交叉表";
+
+            // 第一列为"项目名称"
+            resultTable.Columns.Add("项目名称", typeof(string));
+
+            // 动态添加患者列（列名格式：透析号_姓名）
+            foreach (var p in patients)
+            {
+                string colName = $"{p.DialysisNo}_{p.Name}";
+                resultTable.Columns.Add(colName, typeof(string));
+            }
+
+            // 填充数据
+            foreach (string itemName in sortedItemNames)
+            {
+                DataRow newRow = resultTable.NewRow();
+                newRow["项目名称"] = itemName;
+
+                foreach (var p in patients)
+                {
+                    // 查找该患者该项目的结果值
+                    var resultRow = sourceData.AsEnumerable()
+                        .FirstOrDefault(r => r["项目名称"].ToString() == itemName
+                            && r["透析号"].ToString() == p.DialysisNo);
+
+                    string colName = $"{p.DialysisNo}_{p.Name}";
+                    newRow[colName] = resultRow != null ? resultRow["结果值"].ToString() : "";
+                }
+
+                resultTable.Rows.Add(newRow);
+            }
+
+            return resultTable;
         }
 
         /// <summary>

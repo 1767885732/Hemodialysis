@@ -293,7 +293,7 @@
             <TextBlock Grid.Row="0" Grid.Column="1" Text=" 抗凝方案" HorizontalAlignment="Left" VerticalAlignment="Center" TextAlignment="Center" FontFamily="Microsoft YaHei" Foreground="#666666" FontSize="13" />
 
             <TextBlock Grid.Row="1" Grid.Column="1" Text=" 用药记录" HorizontalAlignment="Left" VerticalAlignment="Center" TextAlignment="Center" FontFamily="Microsoft YaHei" Foreground="#666666" FontSize="13"/>
-            <TextBlock  Grid.Row="2" Grid.Column="1" Text="并发症记录"  HorizontalAlignment="Left" VerticalAlignment="Center" TextAlignment="Center" FontFamily="Microsoft YaHei" Foreground="#666666" FontSize="13"/>
+            <TextBlock  Grid.Row="2" Grid.Column="1" Text="检验数据"  HorizontalAlignment="Left" VerticalAlignment="Center" TextAlignment="Center" FontFamily="Microsoft YaHei" Foreground="#666666" FontSize="13"/>
 
         </Grid>
 
@@ -310,11 +310,11 @@
         <TextBox Grid.Row="4" Grid.Column="6" Name="txtYYJV3" Background="{x:Null}" BorderBrush="{x:Null}" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" FontFamily="Microsoft YaHei" Foreground="#0172C5"/>
         <TextBox Grid.Row="4" Grid.Column="7" Name="txtYYJV4" Background="{x:Null}" BorderBrush="{x:Null}" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" FontFamily="Microsoft YaHei" Foreground="#0172C5"/>
 
-        <TextBox Grid.Row="5" Grid.Column="3" Name="txtBFZ0" Background="{x:Null}" BorderBrush="{x:Null}" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" FontFamily="Microsoft YaHei" Foreground="#0172C5"/>
-        <TextBox Grid.Row="5" Grid.Column="4" Name="txtBFZ1" Background="{x:Null}" BorderBrush="{x:Null}" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" FontFamily="Microsoft YaHei" Foreground="#0172C5"/>
-        <TextBox Grid.Row="5" Grid.Column="5" Name="txtBFZ2" Background="{x:Null}" BorderBrush="{x:Null}" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" FontFamily="Microsoft YaHei" Foreground="#0172C5"/>
-        <TextBox Grid.Row="5" Grid.Column="6" Name="txtBFZ3" Background="{x:Null}" BorderBrush="{x:Null}" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" FontFamily="Microsoft YaHei" Foreground="#0172C5"/>
-        <TextBox Grid.Row="5" Grid.Column="7" Name="txtBFZ4" Background="{x:Null}" BorderBrush="{x:Null}" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" FontFamily="Microsoft YaHei" Foreground="#0172C5"/>
+            <TextBox Grid.Row="5" Grid.Column="3" Name="txtBFZ0" Background="{x:Null}" BorderBrush="{x:Null}" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" FontFamily="Microsoft YaHei" Foreground="#0172C5" PreviewMouseRightButtonDown  ="txtBFZ_PreviewMouseRightButtonDown"/>
+            <TextBox Grid.Row="5" Grid.Column="4" Name="txtBFZ1" Background="{x:Null}" BorderBrush="{x:Null}" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" FontFamily="Microsoft YaHei" Foreground="#0172C5" PreviewMouseRightButtonDown ="txtBFZ_PreviewMouseRightButtonDown"/>
+            <TextBox Grid.Row="5" Grid.Column="5" Name="txtBFZ2" Background="{x:Null}" BorderBrush="{x:Null}" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" FontFamily="Microsoft YaHei" Foreground="#0172C5" PreviewMouseRightButtonDown ="txtBFZ_PreviewMouseRightButtonDown"/>
+            <TextBox Grid.Row="5" Grid.Column="6" Name="txtBFZ3" Background="{x:Null}" BorderBrush="{x:Null}" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" FontFamily="Microsoft YaHei" Foreground="#0172C5" PreviewMouseRightButtonDown ="txtBFZ_PreviewMouseRightButtonDown"/>
+            <TextBox Grid.Row="5" Grid.Column="7" Name="txtBFZ4" Background="{x:Null}" BorderBrush="{x:Null}" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" FontFamily="Microsoft YaHei" Foreground="#0172C5" PreviewMouseRightButtonDown ="txtBFZ_PreviewMouseRightButtonDown"/>
 
         <TextBlock Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="8" VerticalAlignment="Top" Height="1" Background="#E4E4E4" />
         <TextBlock Grid.Row="1" Grid.Column="0"  VerticalAlignment="Top" Height="1"  Background="#E5E5E5" />

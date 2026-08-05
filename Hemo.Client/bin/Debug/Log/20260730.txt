@@ -1,0 +1,11 @@
+---17:44:54 : Docare.Updater.Connection错误:
+数据库操作发生异常,请联系系统管理员。
+System.Object ExecuteScalar(System.String, System.Data.Common.DbParameter[])
+Docare.Data.v2.0
+ORA-12170: TNS: 连接超时
+Void b(Int32)
+Devart.Data.Oracle
+
+---17:48:41 : Docare.Updater.Connection 检测到新版本号:patch-2024-02-22-16-48-08,更新内容:未填写
+---17:48:42 : Docare.Updater.Connection 已下载并解压更新文件
+---17:48:48 : AutoUpdater.exe 执行更新成功,客户端已升级版本号为:patch-2024-02-22-16-48-08

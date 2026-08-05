@@ -82,6 +82,7 @@
                 <ColumnDefinition Width="40"/>
                 <ColumnDefinition Width="80*"/>
             </Grid.ColumnDefinitions>
+            <!--门诊号和住院号互换name-->
             <Label Content="姓名" Height="28" Name="label3" HorizontalContentAlignment="Left" VerticalContentAlignment="Bottom" VerticalAlignment="Bottom"  FontSize="12"/>
             <TextBox Height="23" BorderThickness="0,0,0,1" Name="txtNAME"  Text="" HorizontalContentAlignment="Center"  VerticalContentAlignment="Bottom" VerticalAlignment="Stretch" Grid.Column="1"  FontSize="12" BorderBrush="Black" />
             <Label Content="性别"  Height="28" HorizontalAlignment="Center"  Name="label4" VerticalAlignment="Bottom" VerticalContentAlignment="Bottom" Grid.Column="2"  FontSize="12"/>
@@ -89,9 +90,9 @@
             <Label Content="年龄"  Height="28" HorizontalAlignment="Center" HorizontalContentAlignment="Left"  Name="label5" VerticalAlignment="Bottom" VerticalContentAlignment="Bottom" Grid.Column="4"  FontSize="12"/>
             <TextBox BorderThickness="0,0,0,1" Height="23" Name="txtAGE" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Bottom" VerticalAlignment="Stretch"  Grid.Column="5"  FontSize="12" BorderBrush="Black" />
             <Label Content="门诊号"  Height="28"   Name="label8" HorizontalContentAlignment="Center" VerticalContentAlignment="Bottom" VerticalAlignment="Bottom" Grid.Column="8"  FontSize="12"/>
-            <TextBox BorderThickness="0,0,0,1" Height="23" Name="txtADMISSION_NUMBER" HorizontalContentAlignment="Center" VerticalContentAlignment="Bottom" VerticalAlignment="Stretch" Grid.Column="9"  FontSize="12" BorderBrush="Black" Margin="0,3,97,4" />
+            <TextBox BorderThickness="0,0,0,1" Height="23" Name="txtPATIENT_ID" HorizontalContentAlignment="Center" VerticalContentAlignment="Bottom" VerticalAlignment="Stretch" Grid.Column="9"  FontSize="12" BorderBrush="Black" Margin="0,3,97,4" />
             <Label Content="住院号"  Height="28" Name="label9"   HorizontalContentAlignment="Center" VerticalContentAlignment="Bottom" VerticalAlignment="Bottom" Grid.Column="9"  FontSize="12" Margin="96,0,42,0" />
-            <TextBox BorderThickness="0,0,0,1" Height="23" Name="txtPATIENT_ID" HorizontalContentAlignment="Center" VerticalContentAlignment="Bottom" VerticalAlignment="Stretch" Grid.Column="9"   FontSize="12" BorderBrush="Black" Margin="148,3,0,4" Grid.ColumnSpan="2" />
+            <TextBox BorderThickness="0,0,0,1" Height="23" Name="txtADMISSION_NUMBER" HorizontalContentAlignment="Center" VerticalContentAlignment="Bottom" VerticalAlignment="Stretch" Grid.Column="9"   FontSize="12" BorderBrush="Black" Margin="148,3,0,4" Grid.ColumnSpan="2" />
             <TextBlock  Grid.ColumnSpan="12" Height="0" Background="Black" VerticalAlignment="Bottom"/>
         </Grid>
 
@@ -107,8 +108,8 @@
                 <RowDefinition Height="0"  Name="rownlpg1" />
                 <RowDefinition Height="30" />
                 <RowDefinition Height="30" />
-                <RowDefinition Height="30" />
-                <RowDefinition Height="30" />
+                <RowDefinition Height="30"  Name="rowFiltration"/>
+                <RowDefinition Height="30" Name="rowPlasmaExchange"/>
                 <RowDefinition Height="30" />
             </Grid.RowDefinitions>
             <!--<TextBlock  Height="1" Background="Black" VerticalAlignment="Bottom"/>-->
@@ -174,19 +175,22 @@
             </StackPanel>
             <StackPanel  Grid.Row="10" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"  Orientation="Horizontal">
                 <!--<Label Content="mg"  HorizontalAlignment="Left" VerticalAlignment="Bottom"  VerticalContentAlignment="Bottom"  FontSize="12"/>-->
-                <Label Content="血液滤过或血液透滤：透析中置换液总量：" FontSize="12" VerticalContentAlignment="Bottom" Visibility="Visible" />
+                <!-- 根据recipe_date动态控制显示 -->
+                <Label x:Name="lblFiltrationType" Content="血液滤过或血液透析滤过：透析中置换液总量：" FontSize="12" VerticalContentAlignment="Bottom" Visibility="Visible" />
                 <TextBox BorderBrush="Black" BorderThickness="0,0,0,1" FontSize="12" Grid.Row="1" Height="23" HorizontalContentAlignment="Center" Name="txtFILTRATION_DISPLACEMENT_LIQUID" VerticalContentAlignment="Bottom" Visibility="Visible" Width="160" />
-                <Label Content="L   滤过液总量：" FontSize="12" VerticalContentAlignment="Bottom" Visibility="Visible" />
-                <TextBox BorderBrush="Black" BorderThickness="0,0,0,1" FontSize="12" Grid.Row="1" Height="23" HorizontalContentAlignment="Center" Name="txtFILTRATION_PERCOLATE" VerticalContentAlignment="Bottom" Visibility="Visible" Width="67" />
-                <Label Content="L" FontSize="12" Name="label14" VerticalContentAlignment="Bottom" />
+                <!-- 新表单隐藏 -->
+                <Label x:Name="lblFiltrationPercolate" Content="L   滤过液总量：" FontSize="12" VerticalContentAlignment="Bottom" Visibility="Visible" />
+                <TextBox x:Name="txtFILTRATION_PERCOLATE" BorderBrush="Black" BorderThickness="0,0,0,1" FontSize="12" Grid.Row="1" Height="23" HorizontalContentAlignment="Center" VerticalContentAlignment="Bottom" Visibility="Visible" Width="67" />
+                <Label x:Name="lblFiltrationPercolateUnit" Content="L" FontSize="12" VerticalContentAlignment="Bottom" Visibility="Visible"/>
             </StackPanel>
-
-            <StackPanel  Grid.Row="11" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"  Orientation="Horizontal">
-                <Label Content="浆置换：透析中血浆总量：" FontSize="12" Name="label11" VerticalContentAlignment="Bottom" />
-                <TextBox BorderBrush="Black"  BorderThickness="0,0,0,1" Grid.Row="1" Name="txtDISPLACEMENT_LIQUID" Width="150"  HorizontalAlignment="Left" VerticalAlignment="Stretch" HorizontalContentAlignment="Center" VerticalContentAlignment="Bottom" Height="23"  FontSize="12"/>
-                <Label Content="L   滤过血浆总量：" FontSize="12" Name="label12" VerticalContentAlignment="Bottom" />
-                <TextBox BorderBrush="Black" BorderThickness="0,0,0,1" FontSize="12" Grid.Row="1" Height="23" HorizontalContentAlignment="Center" Name="txtPERCOLATE" VerticalContentAlignment="Bottom" Width="150" />
-                <Label Content="L" FontSize="12" Name="label13" VerticalContentAlignment="Bottom" />
+            <!-- 新表单隐藏 -->
+            <StackPanel x:Name="spPlasmaExchange" Grid.Row="11" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"  Orientation="Horizontal">
+                <Label x:Name="lblDisplacementLiquid" Content="浆置换：透析中血浆总量：" FontSize="12" VerticalContentAlignment="Bottom" />
+                <TextBox x:Name="txtDISPLACEMENT_LIQUID" BorderBrush="Black"  BorderThickness="0,0,0,1" Grid.Row="1" Width="150"  HorizontalAlignment="Left" VerticalAlignment="Stretch" HorizontalContentAlignment="Center" VerticalContentAlignment="Bottom" Height="23"  FontSize="12"/>
+                <Label x:Name="lblDisplacementLiquidUnit" Content="L   " FontSize="12" VerticalContentAlignment="Bottom" />
+                <Label x:Name="lblPercolate" Content="滤过血浆总量：" FontSize="12" VerticalContentAlignment="Bottom" />
+                <TextBox x:Name="txtPERCOLATE" BorderBrush="Black" BorderThickness="0,0,0,1" FontSize="12" Grid.Row="1" Height="23" HorizontalContentAlignment="Center" VerticalContentAlignment="Bottom" Width="150" />
+                <Label x:Name="lblPercolateUnit" Content="L" FontSize="12" VerticalContentAlignment="Bottom" />
                 <!--<Label Content="mg"  HorizontalAlignment="Left" VerticalAlignment="Bottom"  VerticalContentAlignment="Bottom"  FontSize="12"/>-->
             </StackPanel>
             <StackPanel  Grid.Row="1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"  Orientation="Horizontal">
@@ -694,9 +698,9 @@
             <TextBlock Text="次/分" Grid.Row="2" Height="20" FontSize="10" Grid.Column="13" VerticalAlignment="Bottom" HorizontalAlignment="Center"/>
             <TextBlock Width="25" Grid.Row="1" Grid.Column="14"  Text="治疗" TextWrapping="Wrap" HorizontalAlignment="Center" VerticalAlignment="Center" />
             <TextBlock Width="50" Grid.Row="1" Grid.Column="15"  Text="临床表现" TextWrapping="Wrap" HorizontalAlignment="Center" VerticalAlignment="Center" />
-            <TextBlock Text="记录护士"  Grid.Row="0" Grid.Column="16" Grid.RowSpan="3"  HorizontalAlignment="Center" VerticalAlignment="Center" TextAlignment="Center" LineHeight="20" Width="20" TextWrapping="Wrap"/>
+            <TextBlock x:Name="lblNurseRecord" Text="责任护士"  Grid.Row="0" Grid.Column="16" Grid.RowSpan="3"  HorizontalAlignment="Center" VerticalAlignment="Center" TextAlignment="Center" LineHeight="20" Width="20" TextWrapping="Wrap"/>
         </Grid>
-        <Label Content="备注：" Height="28" HorizontalAlignment="Left"  Name="lblSickLog" VerticalAlignment="Top" Margin="17,0,0,0"  Grid.Row="9" />
+        <Label x:Name="lblSickLog" Content="透析小结：" Height="28" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="17,0,0,0"  Grid.Row="9" />
         <StackPanel Width="750" Grid.Row="9" Height="60" Grid.RowSpan="2" HorizontalAlignment="Left" Margin="20,0,0,0" VerticalAlignment="Stretch" Orientation="Vertical">
             <Grid>
                 <Grid.RowDefinitions>
@@ -720,6 +724,9 @@
 
             <Label Content="穿刺护士:" Height="28" HorizontalAlignment="Left" Width="61" Grid.Row="16" />
             <TextBox BorderBrush="Black" BorderThickness="0,0,0,1" Height="23" Name="lupPUNCTURE_NURSE" Width="85"  HorizontalAlignment="Left" />
+
+            <Label x:Name="lblCheckNurse" Content="核对护士:" Height="28" HorizontalAlignment="Left" Width="61" Grid.Row="16" />
+            <TextBox BorderBrush="Black" BorderThickness="0,0,0,1" Height="23" Name="txtCHECK_NURSE" Width="85" HorizontalAlignment="Left" />
         </StackPanel>
     </Grid>
 

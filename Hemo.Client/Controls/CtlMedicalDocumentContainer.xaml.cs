@@ -111,6 +111,40 @@ namespace Hemo.Client.Controls
             }
         }
 
+        /// <summary>
+        /// 打印空白记录单
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void btnPrintBlank_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                // 创建空白记录单
+                CtlMedicalDocumentNew blankDoc = new CtlMedicalDocumentNew();
+
+                // 清空当前文档列表，添加空白记录单
+                this.docList.Clear();
+                this.docList.Add(new MedicalDocumentForPrint("", blankDoc, this._haveNextPage));
+                this.RefreshPage();
+
+                // 延迟执行打印，等文档渲染完成
+                System.Windows.Threading.DispatcherTimer timer = new System.Windows.Threading.DispatcherTimer();
+                timer.Interval = TimeSpan.FromMilliseconds(100);
+                timer.Tick += (s, args) =>
+                {
+                    timer.Stop();
+                    // 调用原有的打印逻辑
+                    btnPrint_Click(sender, e);
+                };
+                timer.Start();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("打印空白记录单失败：" + ex.Message, "错误", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
+        }
+
         public bool Add(string id)
         {
             var result = from doc in this.docList where doc.Id.Equals(id) select doc;

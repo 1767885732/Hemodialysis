@@ -18,6 +18,7 @@ using Hemo.Client.UI.Patient;
 using Hemo.IService.Config;
 using Hemo.Client.UI.PatientFixUI;
 using DevExpress.XtraBars.Docking2010.Customization;
+using Hemo.Utilities;
 
 namespace Hemo.Client.Controls.ScheduleNew
 {
@@ -103,9 +104,41 @@ namespace Hemo.Client.Controls.ScheduleNew
 
         private void PatientScheduleInputCtl_Load(object sender, EventArgs e)
         {
+            this.gridView1.CustomColumnDisplayText += gridView1_CustomColumnDisplayText;
             InzationPatientDate();
 
         }
+        /// <summary>
+        /// 手术排班年龄动态计算
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void gridView1_CustomColumnDisplayText(object sender, DevExpress.XtraGrid.Views.Base.CustomColumnDisplayTextEventArgs e)
+        {
+            // 只处理 AGE 列
+            if (e.Column.FieldName == "AGE" && e.ListSourceRowIndex >= 0)
+            {
+                // 获取当前行的数据
+                DataRowView rowView = this.gridView1.GetRow(e.ListSourceRowIndex) as DataRowView;
+                if (rowView != null)
+                {
+                    DataRow row = rowView.Row;
+                    // 判断是否有 BIRTHDAY 字段
+                    if (row.Table.Columns.Contains("BIRTHDAY") && !row.IsNull("BIRTHDAY"))
+                    {
+                        DateTime birthday = Convert.ToDateTime(row["BIRTHDAY"]);
+                        string ageStr = Utility.GetAge(birthday.ToShortDateString()).ToString();
+                        e.DisplayText = ageStr;
+                    }
+                    else
+                    {
+                        // 没有生日数据，显示为空
+                        e.DisplayText = "";
+                    }
+                }
+            }
+        }
+
         /// <summary>
         /// 过滤
         /// </summary>

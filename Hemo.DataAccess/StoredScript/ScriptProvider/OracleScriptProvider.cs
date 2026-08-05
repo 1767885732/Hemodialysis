@@ -10908,6 +10908,46 @@ ON DTL.HEMODIALYSIS_ID=PAT.HEMODIALYSIS_ID LEFT JOIN MED_BORROW_MEDICINE_DETAIL 
                         order by ""检验日期"" desc";
             }
         }
+
+        //注意，使用MED_PATIENTS的name可能会为空，通过PATIENT_ID获取MED_PATIENTS的name没有
+        public string GetLabResultNew
+        {
+            get
+            {
+                return @"
+            SELECT 
+                t.RESULT_DATE_TIME AS 检验日期,
+                t.report_item_name AS 项目名称,
+                t.result AS 结果值,
+                t.units AS 单位,
+                t.reference_result AS 参考范围,
+                t.abnormal_indicator AS 异常标识,
+                m.BARCODE AS 透析号,
+                m.PATIENT_ID AS 病人号,
+                m.NAME AS 姓名,
+                p.TIME_TYPE AS 病人来源
+            FROM 
+                med_lab_result t
+            LEFT JOIN 
+                MED_LAB_TEST_MASTER m ON t.TEST_NO = m.TEST_NO
+            LEFT JOIN 
+                MED_PATIENTS p ON m.PATIENT_ID = p.PATIENT_ID
+            WHERE 
+                t.report_item_name IN (
+                    '甲状旁腺素', '25羟基维生素D', '白蛋白', '血α1微球蛋白',
+                    '血β2微球蛋白', '尿酸', '甘油三酯', '总胆固醇',
+                    '无机磷', '前白蛋白', '钠', '镁',
+                    '低密度脂蛋白胆固醇', '钾', '估算肾小球滤过率',
+                    '胱抑素C', '肌酐', '氯', '促红细胞生成素',
+                    '铁饱和度', '血清铁蛋白', '血红蛋白',
+                    '全程C反应蛋白', '血小板', '白细胞',
+                    '尿素', '超敏C反应蛋白'
+                )
+                AND TRUNC(t.RESULT_DATE_TIME) >= TRUNC(:begintime)
+                AND TRUNC(t.RESULT_DATE_TIME) <= TRUNC(:endtime)
+            ORDER BY t.RESULT_DATE_TIME DESC";
+            }
+        }
         #endregion
         /// <summary>
         /// 根据日期获取护士绩效考核记录列表

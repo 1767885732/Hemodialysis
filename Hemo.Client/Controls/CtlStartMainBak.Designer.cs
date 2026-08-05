@@ -231,8 +231,7 @@
             // 
             // rdoGroup
             // 
-            this.rdoGroup.Location = new System.Drawing.Point(3, 3);
-            this.rdoGroup.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.rdoGroup.Location = new System.Drawing.Point(3, 2);
             this.rdoGroup.Name = "rdoGroup";
             this.rdoGroup.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
             this.rdoGroup.Properties.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -246,7 +245,7 @@
             new DevExpress.XtraEditors.Controls.RadioGroupItem(null, "在透"),
             new DevExpress.XtraEditors.Controls.RadioGroupItem(null, "转归"),
             new DevExpress.XtraEditors.Controls.RadioGroupItem(null, "死亡")});
-            this.rdoGroup.Size = new System.Drawing.Size(350, 33);
+            this.rdoGroup.Size = new System.Drawing.Size(306, 26);
             this.rdoGroup.TabIndex = 2;
             this.rdoGroup.SelectedIndexChanged += new System.EventHandler(this.rdoGroup_SelectedIndexChanged);
             // 
@@ -257,10 +256,9 @@
             this.btnSync.Appearance.Options.UseFont = true;
             this.btnSync.ImageIndex = 8;
             this.btnSync.ImageList = this.smallimageList;
-            this.btnSync.Location = new System.Drawing.Point(910, 4);
-            this.btnSync.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnSync.Location = new System.Drawing.Point(796, 3);
             this.btnSync.Name = "btnSync";
-            this.btnSync.Size = new System.Drawing.Size(129, 27);
+            this.btnSync.Size = new System.Drawing.Size(113, 21);
             this.btnSync.TabIndex = 5;
             this.btnSync.Text = "显示入科病人";
             this.btnSync.Click += new System.EventHandler(this.btnSync_Click);
@@ -268,12 +266,10 @@
             // grdPatient
             // 
             this.grdPatient.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.grdPatient.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.grdPatient.Location = new System.Drawing.Point(0, 39);
+            this.grdPatient.Location = new System.Drawing.Point(0, 30);
             this.grdPatient.MainView = this.cardView1;
-            this.grdPatient.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.grdPatient.Name = "grdPatient";
-            this.grdPatient.Size = new System.Drawing.Size(1084, 522);
+            this.grdPatient.Size = new System.Drawing.Size(948, 406);
             this.grdPatient.TabIndex = 48;
             this.grdPatient.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.cardView1});
@@ -497,13 +493,12 @@
             this.tabCtrlPatientDetail.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.tabCtrlPatientDetail.BorderStylePage = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.tabCtrlPatientDetail.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tabCtrlPatientDetail.Location = new System.Drawing.Point(3, 4);
-            this.tabCtrlPatientDetail.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.tabCtrlPatientDetail.Location = new System.Drawing.Point(3, 3);
             this.tabCtrlPatientDetail.Name = "tabCtrlPatientDetail";
-            this.tabCtrlPatientDetail.Padding = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.tabCtrlPatientDetail.Padding = new System.Windows.Forms.Padding(2);
             this.tabCtrlPatientDetail.SelectedTabPage = this.tabPageCard;
             this.tabCtrlPatientDetail.ShowTabHeader = DevExpress.Utils.DefaultBoolean.False;
-            this.tabCtrlPatientDetail.Size = new System.Drawing.Size(1091, 568);
+            this.tabCtrlPatientDetail.Size = new System.Drawing.Size(954, 442);
             this.tabCtrlPatientDetail.TabIndex = 50;
             this.tabCtrlPatientDetail.TabPages.AddRange(new DevExpress.XtraTab.XtraTabPage[] {
             this.tabPageCard});
@@ -513,17 +508,16 @@
             this.tabPageCard.Controls.Add(this.busyIndicator1);
             this.tabPageCard.Controls.Add(this.grdPatient);
             this.tabPageCard.Controls.Add(this.panelControl3);
-            this.tabPageCard.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.tabPageCard.Name = "tabPageCard";
-            this.tabPageCard.Size = new System.Drawing.Size(1084, 561);
+            this.tabPageCard.Size = new System.Drawing.Size(948, 436);
             this.tabPageCard.Text = "病患小卡";
             // 
             // busyIndicator1
             // 
-            this.busyIndicator1.Location = new System.Drawing.Point(386, 249);
-            this.busyIndicator1.Margin = new System.Windows.Forms.Padding(5);
+            this.busyIndicator1.Location = new System.Drawing.Point(338, 194);
+            this.busyIndicator1.Margin = new System.Windows.Forms.Padding(4);
             this.busyIndicator1.Name = "busyIndicator1";
-            this.busyIndicator1.Size = new System.Drawing.Size(114, 51);
+            this.busyIndicator1.Size = new System.Drawing.Size(100, 40);
             this.busyIndicator1.TabIndex = 50;
             // 
             // panelControl3
@@ -544,19 +538,17 @@
             this.panelControl3.Controls.Add(this.btnSync);
             this.panelControl3.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelControl3.Location = new System.Drawing.Point(0, 0);
-            this.panelControl3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panelControl3.Name = "panelControl3";
-            this.panelControl3.Size = new System.Drawing.Size(1084, 39);
+            this.panelControl3.Size = new System.Drawing.Size(948, 30);
             this.panelControl3.TabIndex = 49;
             // 
             // labelControl2
             // 
             this.labelControl2.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl2.Appearance.ForeColor = System.Drawing.Color.Green;
-            this.labelControl2.Location = new System.Drawing.Point(3, 8);
-            this.labelControl2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.labelControl2.Location = new System.Drawing.Point(3, 6);
             this.labelControl2.Name = "labelControl2";
-            this.labelControl2.Size = new System.Drawing.Size(0, 19);
+            this.labelControl2.Size = new System.Drawing.Size(0, 17);
             this.labelControl2.TabIndex = 316;
             this.labelControl2.Visible = false;
             // 
@@ -564,10 +556,10 @@
             // 
             this.labelControl1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.labelControl1.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.labelControl1.Location = new System.Drawing.Point(610, 8);
-            this.labelControl1.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.labelControl1.Location = new System.Drawing.Point(534, 6);
+            this.labelControl1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.labelControl1.Name = "labelControl1";
-            this.labelControl1.Size = new System.Drawing.Size(66, 20);
+            this.labelControl1.Size = new System.Drawing.Size(54, 17);
             this.labelControl1.TabIndex = 315;
             this.labelControl1.Text = "透析号/ID";
             // 
@@ -576,25 +568,25 @@
             this.txtHEMODIALYSIS_ID.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.txtHEMODIALYSIS_ID.EditValue = "";
             this.txtHEMODIALYSIS_ID.EnterMoveNextControl = true;
-            this.txtHEMODIALYSIS_ID.Location = new System.Drawing.Point(680, 3);
-            this.txtHEMODIALYSIS_ID.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.txtHEMODIALYSIS_ID.Location = new System.Drawing.Point(595, 2);
+            this.txtHEMODIALYSIS_ID.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtHEMODIALYSIS_ID.Name = "txtHEMODIALYSIS_ID";
             this.txtHEMODIALYSIS_ID.Properties.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.txtHEMODIALYSIS_ID.Properties.Appearance.ForeColor = System.Drawing.Color.Blue;
             this.txtHEMODIALYSIS_ID.Properties.Appearance.Options.UseFont = true;
             this.txtHEMODIALYSIS_ID.Properties.Appearance.Options.UseForeColor = true;
             this.txtHEMODIALYSIS_ID.Properties.LookAndFeel.SkinName = "ExtendBlue";
-            this.txtHEMODIALYSIS_ID.Size = new System.Drawing.Size(126, 26);
+            this.txtHEMODIALYSIS_ID.Size = new System.Drawing.Size(110, 24);
             this.txtHEMODIALYSIS_ID.TabIndex = 11;
             // 
             // labelControl3
             // 
             this.labelControl3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.labelControl3.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.labelControl3.Location = new System.Drawing.Point(243, 9);
-            this.labelControl3.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.labelControl3.Location = new System.Drawing.Point(213, 7);
+            this.labelControl3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.labelControl3.Name = "labelControl3";
-            this.labelControl3.Size = new System.Drawing.Size(49, 20);
+            this.labelControl3.Size = new System.Drawing.Size(39, 17);
             this.labelControl3.TabIndex = 313;
             this.labelControl3.Text = "请刷卡:";
             // 
@@ -602,10 +594,10 @@
             // 
             this.labelControl5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.labelControl5.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.labelControl5.Location = new System.Drawing.Point(454, 9);
-            this.labelControl5.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.labelControl5.Location = new System.Drawing.Point(397, 7);
+            this.labelControl5.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.labelControl5.Name = "labelControl5";
-            this.labelControl5.Size = new System.Drawing.Size(30, 20);
+            this.labelControl5.Size = new System.Drawing.Size(24, 17);
             this.labelControl5.TabIndex = 313;
             this.labelControl5.Text = "姓名";
             // 
@@ -613,15 +605,15 @@
             // 
             this.txtReadCard.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.txtReadCard.EditValue = "";
-            this.txtReadCard.Location = new System.Drawing.Point(303, 5);
-            this.txtReadCard.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.txtReadCard.Location = new System.Drawing.Point(265, 4);
+            this.txtReadCard.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtReadCard.Name = "txtReadCard";
             this.txtReadCard.Properties.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.txtReadCard.Properties.Appearance.ForeColor = System.Drawing.Color.Blue;
             this.txtReadCard.Properties.Appearance.Options.UseFont = true;
             this.txtReadCard.Properties.Appearance.Options.UseForeColor = true;
             this.txtReadCard.Properties.LookAndFeel.SkinName = "ExtendBlue";
-            this.txtReadCard.Size = new System.Drawing.Size(126, 26);
+            this.txtReadCard.Size = new System.Drawing.Size(110, 24);
             this.txtReadCard.TabIndex = 10;
             this.txtReadCard.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtReadCard_KeyDown);
             this.txtReadCard.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtReadCard_KeyPress);
@@ -632,10 +624,9 @@
             this.btnQuery.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnQuery.Appearance.Options.UseFont = true;
             this.btnQuery.ImageIndex = 8;
-            this.btnQuery.Location = new System.Drawing.Point(812, 3);
-            this.btnQuery.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnQuery.Location = new System.Drawing.Point(710, 2);
             this.btnQuery.Name = "btnQuery";
-            this.btnQuery.Size = new System.Drawing.Size(86, 30);
+            this.btnQuery.Size = new System.Drawing.Size(75, 23);
             this.btnQuery.TabIndex = 12;
             this.btnQuery.Text = "查询";
             this.btnQuery.Click += new System.EventHandler(this.btnQuery_Click);
@@ -645,24 +636,23 @@
             this.txtNAME.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.txtNAME.EditValue = "";
             this.txtNAME.EnterMoveNextControl = true;
-            this.txtNAME.Location = new System.Drawing.Point(482, 4);
-            this.txtNAME.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.txtNAME.Location = new System.Drawing.Point(422, 3);
+            this.txtNAME.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtNAME.Name = "txtNAME";
             this.txtNAME.Properties.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.txtNAME.Properties.Appearance.ForeColor = System.Drawing.Color.Blue;
             this.txtNAME.Properties.Appearance.Options.UseFont = true;
             this.txtNAME.Properties.Appearance.Options.UseForeColor = true;
             this.txtNAME.Properties.LookAndFeel.SkinName = "ExtendBlue";
-            this.txtNAME.Size = new System.Drawing.Size(126, 26);
+            this.txtNAME.Size = new System.Drawing.Size(110, 24);
             this.txtNAME.TabIndex = 10;
             // 
             // btnOrders
             // 
             this.btnOrders.ImageIndex = 4;
-            this.btnOrders.Location = new System.Drawing.Point(10, 4);
-            this.btnOrders.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnOrders.Location = new System.Drawing.Point(9, 3);
             this.btnOrders.Name = "btnOrders";
-            this.btnOrders.Size = new System.Drawing.Size(86, 30);
+            this.btnOrders.Size = new System.Drawing.Size(75, 23);
             this.btnOrders.TabIndex = 23;
             this.btnOrders.Text = "医嘱";
             this.btnOrders.Visible = false;
@@ -672,13 +662,12 @@
             // 
             this.picLoading.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.picLoading.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.picLoading.Location = new System.Drawing.Point(1040, 0);
-            this.picLoading.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.picLoading.Location = new System.Drawing.Point(910, 0);
             this.picLoading.Name = "picLoading";
             this.picLoading.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
             this.picLoading.Properties.Appearance.Options.UseBackColor = true;
             this.picLoading.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            this.picLoading.Size = new System.Drawing.Size(41, 40);
+            this.picLoading.Size = new System.Drawing.Size(36, 31);
             this.picLoading.TabIndex = 22;
             this.picLoading.Visible = false;
             // 
@@ -700,13 +689,12 @@
             this.dockGuide.Dock = DevExpress.XtraBars.Docking.DockingStyle.Left;
             this.dockGuide.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dockGuide.ID = new System.Guid("645cee02-fa0a-4d6d-bf3a-c3ec3ad95b63");
-            this.dockGuide.Location = new System.Drawing.Point(3, 4);
-            this.dockGuide.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.dockGuide.Location = new System.Drawing.Point(3, 3);
             this.dockGuide.Name = "dockGuide";
             this.dockGuide.Options.ShowCloseButton = false;
             this.dockGuide.OriginalSize = new System.Drawing.Size(185, 200);
             this.dockGuide.SavedDock = DevExpress.XtraBars.Docking.DockingStyle.Left;
-            this.dockGuide.Size = new System.Drawing.Size(211, 568);
+            this.dockGuide.Size = new System.Drawing.Size(185, 442);
             this.dockGuide.TabsScroll = true;
             this.dockGuide.Text = "患者透析导向";
             this.dockGuide.Visibility = DevExpress.XtraBars.Docking.DockVisibility.Hidden;
@@ -715,7 +703,6 @@
             // 
             this.dockPanel1_Container.Controls.Add(this.ctlShowGuide1);
             this.dockPanel1_Container.Location = new System.Drawing.Point(3, 25);
-            this.dockPanel1_Container.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.dockPanel1_Container.Name = "dockPanel1_Container";
             this.dockPanel1_Container.Size = new System.Drawing.Size(179, 420);
             this.dockPanel1_Container.TabIndex = 0;
@@ -724,7 +711,7 @@
             // 
             this.ctlShowGuide1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.ctlShowGuide1.Location = new System.Drawing.Point(0, 0);
-            this.ctlShowGuide1.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.ctlShowGuide1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.ctlShowGuide1.Name = "ctlShowGuide1";
             this.ctlShowGuide1.Size = new System.Drawing.Size(179, 420);
             this.ctlShowGuide1.TabIndex = 0;
@@ -1316,68 +1303,68 @@
             this.患者评估ToolStripMenuItem,
             this.历次就诊ToolStripMenuItem});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(184, 364);
+            this.contextMenuStrip1.Size = new System.Drawing.Size(161, 334);
             // 
             // 新增病历ToolStripMenuItem
             // 
             this.新增病历ToolStripMenuItem.Name = "新增病历ToolStripMenuItem";
-            this.新增病历ToolStripMenuItem.Size = new System.Drawing.Size(183, 24);
+            this.新增病历ToolStripMenuItem.Size = new System.Drawing.Size(160, 22);
             this.新增病历ToolStripMenuItem.Text = "患者病历";
             this.新增病历ToolStripMenuItem.Click += new System.EventHandler(this.新增病历ToolStripMenuItem_Click);
             // 
             // 病程记录ToolStripMenuItem
             // 
             this.病程记录ToolStripMenuItem.Name = "病程记录ToolStripMenuItem";
-            this.病程记录ToolStripMenuItem.Size = new System.Drawing.Size(183, 24);
+            this.病程记录ToolStripMenuItem.Size = new System.Drawing.Size(160, 22);
             this.病程记录ToolStripMenuItem.Text = "病程记录";
             this.病程记录ToolStripMenuItem.Click += new System.EventHandler(this.病程记录ToolStripMenuItem_Click);
             // 
             // 血管通路ToolStripMenuItem
             // 
             this.血管通路ToolStripMenuItem.Name = "血管通路ToolStripMenuItem";
-            this.血管通路ToolStripMenuItem.Size = new System.Drawing.Size(183, 24);
+            this.血管通路ToolStripMenuItem.Size = new System.Drawing.Size(160, 22);
             this.血管通路ToolStripMenuItem.Text = "血管通路";
             this.血管通路ToolStripMenuItem.Click += new System.EventHandler(this.血管通路ToolStripMenuItem_Click);
             // 
             // 患者处方ToolStripMenuItem
             // 
             this.患者处方ToolStripMenuItem.Name = "患者处方ToolStripMenuItem";
-            this.患者处方ToolStripMenuItem.Size = new System.Drawing.Size(183, 24);
+            this.患者处方ToolStripMenuItem.Size = new System.Drawing.Size(160, 22);
             this.患者处方ToolStripMenuItem.Text = "透析处方";
             this.患者处方ToolStripMenuItem.Click += new System.EventHandler(this.患者处方ToolStripMenuItem_Click);
             // 
             // 药品医嘱ToolStripMenuItem
             // 
             this.药品医嘱ToolStripMenuItem.Name = "药品医嘱ToolStripMenuItem";
-            this.药品医嘱ToolStripMenuItem.Size = new System.Drawing.Size(183, 24);
+            this.药品医嘱ToolStripMenuItem.Size = new System.Drawing.Size(160, 22);
             this.药品医嘱ToolStripMenuItem.Text = "药品医嘱";
             this.药品医嘱ToolStripMenuItem.Click += new System.EventHandler(this.药品医嘱ToolStripMenuItem_Click);
             // 
             // 检查检验ToolStripMenuItem
             // 
             this.检查检验ToolStripMenuItem.Name = "检查检验ToolStripMenuItem";
-            this.检查检验ToolStripMenuItem.Size = new System.Drawing.Size(183, 24);
+            this.检查检验ToolStripMenuItem.Size = new System.Drawing.Size(160, 22);
             this.检查检验ToolStripMenuItem.Text = "患者检验";
             this.检查检验ToolStripMenuItem.Click += new System.EventHandler(this.检查检验ToolStripMenuItem_Click);
             // 
             // 患者检查ToolStripMenuItem
             // 
             this.患者检查ToolStripMenuItem.Name = "患者检查ToolStripMenuItem";
-            this.患者检查ToolStripMenuItem.Size = new System.Drawing.Size(183, 24);
+            this.患者检查ToolStripMenuItem.Size = new System.Drawing.Size(160, 22);
             this.患者检查ToolStripMenuItem.Text = "患者检查";
             this.患者检查ToolStripMenuItem.Click += new System.EventHandler(this.患者检查ToolStripMenuItem_Click);
             // 
             // 治疗记录单ToolStripMenuItem
             // 
             this.治疗记录单ToolStripMenuItem.Name = "治疗记录单ToolStripMenuItem";
-            this.治疗记录单ToolStripMenuItem.Size = new System.Drawing.Size(183, 24);
+            this.治疗记录单ToolStripMenuItem.Size = new System.Drawing.Size(160, 22);
             this.治疗记录单ToolStripMenuItem.Text = "治疗记录单";
             this.治疗记录单ToolStripMenuItem.Click += new System.EventHandler(this.治疗记录单ToolStripMenuItem_Click);
             // 
             // 促红素ToolStripMenuItem
             // 
             this.促红素ToolStripMenuItem.Name = "促红素ToolStripMenuItem";
-            this.促红素ToolStripMenuItem.Size = new System.Drawing.Size(183, 24);
+            this.促红素ToolStripMenuItem.Size = new System.Drawing.Size(160, 22);
             this.促红素ToolStripMenuItem.Text = "促红素";
             this.促红素ToolStripMenuItem.Visible = false;
             this.促红素ToolStripMenuItem.Click += new System.EventHandler(this.促红素ToolStripMenuItem_Click);
@@ -1385,7 +1372,7 @@
             // 治疗导向ToolStripMenuItem
             // 
             this.治疗导向ToolStripMenuItem.Name = "治疗导向ToolStripMenuItem";
-            this.治疗导向ToolStripMenuItem.Size = new System.Drawing.Size(183, 24);
+            this.治疗导向ToolStripMenuItem.Size = new System.Drawing.Size(160, 22);
             this.治疗导向ToolStripMenuItem.Text = "排班处方确定";
             this.治疗导向ToolStripMenuItem.Visible = false;
             this.治疗导向ToolStripMenuItem.Click += new System.EventHandler(this.治疗导向ToolStripMenuItem_Click);
@@ -1393,7 +1380,7 @@
             // 补录治疗记录单ToolStripMenuItem
             // 
             this.补录治疗记录单ToolStripMenuItem.Name = "补录治疗记录单ToolStripMenuItem";
-            this.补录治疗记录单ToolStripMenuItem.Size = new System.Drawing.Size(183, 24);
+            this.补录治疗记录单ToolStripMenuItem.Size = new System.Drawing.Size(160, 22);
             this.补录治疗记录单ToolStripMenuItem.Text = "补录治疗记录单";
             this.补录治疗记录单ToolStripMenuItem.Visible = false;
             this.补录治疗记录单ToolStripMenuItem.Click += new System.EventHandler(this.补录治疗记录单ToolStripMenuItem_Click);
@@ -1401,14 +1388,14 @@
             // 删除患者ToolStripMenuItem
             // 
             this.删除患者ToolStripMenuItem.Name = "删除患者ToolStripMenuItem";
-            this.删除患者ToolStripMenuItem.Size = new System.Drawing.Size(183, 24);
+            this.删除患者ToolStripMenuItem.Size = new System.Drawing.Size(160, 22);
             this.删除患者ToolStripMenuItem.Text = "删除患者";
             this.删除患者ToolStripMenuItem.Click += new System.EventHandler(this.删除患者ToolStripMenuItem_Click);
             // 
             // 修改患者ToolStripMenuItem
             // 
             this.修改患者ToolStripMenuItem.Name = "修改患者ToolStripMenuItem";
-            this.修改患者ToolStripMenuItem.Size = new System.Drawing.Size(183, 24);
+            this.修改患者ToolStripMenuItem.Size = new System.Drawing.Size(160, 22);
             this.修改患者ToolStripMenuItem.Text = "修改患者";
             this.修改患者ToolStripMenuItem.Click += new System.EventHandler(this.修改患者ToolStripMenuItem_Click);
             // 
@@ -1420,41 +1407,41 @@
             this.风险评估ToolStripMenuItem,
             this.营养评估ToolStripMenuItem});
             this.患者评估ToolStripMenuItem.Name = "患者评估ToolStripMenuItem";
-            this.患者评估ToolStripMenuItem.Size = new System.Drawing.Size(183, 24);
+            this.患者评估ToolStripMenuItem.Size = new System.Drawing.Size(160, 22);
             this.患者评估ToolStripMenuItem.Text = "患者评估";
             // 
             // uRRKtVTSMDRD评估ToolStripMenuItem
             // 
             this.uRRKtVTSMDRD评估ToolStripMenuItem.Name = "uRRKtVTSMDRD评估ToolStripMenuItem";
-            this.uRRKtVTSMDRD评估ToolStripMenuItem.Size = new System.Drawing.Size(262, 26);
+            this.uRRKtVTSMDRD评估ToolStripMenuItem.Size = new System.Drawing.Size(211, 22);
             this.uRRKtVTSMDRD评估ToolStripMenuItem.Text = "URR|Kt/V|TS|MDRD评估";
             this.uRRKtVTSMDRD评估ToolStripMenuItem.Click += new System.EventHandler(this.uRRKtVTSMDRD评估ToolStripMenuItem_Click);
             // 
             // 透析充分性评估ToolStripMenuItem
             // 
             this.透析充分性评估ToolStripMenuItem.Name = "透析充分性评估ToolStripMenuItem";
-            this.透析充分性评估ToolStripMenuItem.Size = new System.Drawing.Size(262, 26);
+            this.透析充分性评估ToolStripMenuItem.Size = new System.Drawing.Size(211, 22);
             this.透析充分性评估ToolStripMenuItem.Text = "透析充分性评估";
             this.透析充分性评估ToolStripMenuItem.Click += new System.EventHandler(this.透析充分性评估ToolStripMenuItem_Click);
             // 
             // 风险评估ToolStripMenuItem
             // 
             this.风险评估ToolStripMenuItem.Name = "风险评估ToolStripMenuItem";
-            this.风险评估ToolStripMenuItem.Size = new System.Drawing.Size(262, 26);
+            this.风险评估ToolStripMenuItem.Size = new System.Drawing.Size(211, 22);
             this.风险评估ToolStripMenuItem.Text = "风险评估";
             this.风险评估ToolStripMenuItem.Click += new System.EventHandler(this.风险评估ToolStripMenuItem_Click);
             // 
             // 营养评估ToolStripMenuItem
             // 
             this.营养评估ToolStripMenuItem.Name = "营养评估ToolStripMenuItem";
-            this.营养评估ToolStripMenuItem.Size = new System.Drawing.Size(262, 26);
+            this.营养评估ToolStripMenuItem.Size = new System.Drawing.Size(211, 22);
             this.营养评估ToolStripMenuItem.Text = "营养评估";
             this.营养评估ToolStripMenuItem.Click += new System.EventHandler(this.营养评估ToolStripMenuItem_Click);
             // 
             // 历次就诊ToolStripMenuItem
             // 
             this.历次就诊ToolStripMenuItem.Name = "历次就诊ToolStripMenuItem";
-            this.历次就诊ToolStripMenuItem.Size = new System.Drawing.Size(183, 24);
+            this.历次就诊ToolStripMenuItem.Size = new System.Drawing.Size(160, 22);
             this.历次就诊ToolStripMenuItem.Text = "历次就诊";
             this.历次就诊ToolStripMenuItem.Click += new System.EventHandler(this.历次就诊ToolStripMenuItem_Click);
             // 
@@ -1466,14 +1453,13 @@
             // 
             // CtlStartMainBak
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 18F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.tabCtrlPatientDetail);
             this.Controls.Add(this.dockGuide);
-            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "CtlStartMainBak";
-            this.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.Size = new System.Drawing.Size(1097, 576);
+            this.Padding = new System.Windows.Forms.Padding(3);
+            this.Size = new System.Drawing.Size(960, 448);
             this.Load += new System.EventHandler(this.CtlStartMainBak_Load);
             ((System.ComponentModel.ISupportInitialize)(this.picPatient)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.rdoGroup.Properties)).EndInit();

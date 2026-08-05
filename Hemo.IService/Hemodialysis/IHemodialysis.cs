@@ -1210,6 +1210,15 @@ namespace Hemo.IService.Config
         DataTable GetHemoIdInLastWeekAndThreeMonthsByDate(DateTime beginTime, DateTime endTime);
 
         /// <summary>
+        /// 新检验报告
+        /// </summary>
+        /// <param name="beginTime"></param>
+        /// <param name="endTime"></param>
+        /// <returns></returns>
+        [OperationContract]
+        DataTable GetLabResultNew(DateTime beginTime, DateTime endTime);
+
+        /// <summary>
         /// 根据日期获取患者透析编号
         /// </summary>
         /// <param name="beginTime"></param>

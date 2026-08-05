@@ -34,7 +34,7 @@ using DevExpress.Xpf.Core.Native;
 using Hemo.IService;
 using Hemo.IService.Lab;
 using Hemo.Model;
-
+using System.Windows.Controls;
 
 namespace Hemo.Client.Controls {
     /// <summary>
@@ -722,6 +722,180 @@ namespace Hemo.Client.Controls {
 
         }
 
+
+        #endregion
+
+        #region 右键同步检验数据
+
+        /// <summary>
+        /// 并发症记录右键 - 在系统菜单基础上添加同步检验数据
+        /// </summary>
+        private void txtBFZ_PreviewMouseRightButtonDown(object sender, MouseButtonEventArgs e)
+        {
+            try
+            {
+                var txtBox = sender as System.Windows.Controls.TextBox;
+                if (txtBox == null) return;
+
+                e.Handled = true;
+
+                // 获取行号：txtBFZ0 -> 0, txtBFZ1 -> 1 ...
+                string rowNum = txtBox.Name.Replace("txtBFZ", "");
+
+                // 获取该行对应的 CURE_ID 和日期
+                string cureId = GetCureIdByRowNum(rowNum);
+                DateTime? cureDate = GetCureDateByRowNum(rowNum);
+
+                // 创建右键菜单
+                System.Windows.Controls.ContextMenu menu = new System.Windows.Controls.ContextMenu();
+
+                System.Windows.Controls.MenuItem itemCut = new System.Windows.Controls.MenuItem();
+                itemCut.Header = "剪切";
+                itemCut.Command = System.Windows.Input.ApplicationCommands.Cut;
+                menu.Items.Add(itemCut);
+
+                System.Windows.Controls.MenuItem itemCopy = new System.Windows.Controls.MenuItem();
+                itemCopy.Header = "复制";
+                itemCopy.Command = System.Windows.Input.ApplicationCommands.Copy;
+                menu.Items.Add(itemCopy);
+
+                System.Windows.Controls.MenuItem itemPaste = new System.Windows.Controls.MenuItem();
+                itemPaste.Header = "粘贴";
+                itemPaste.Command = System.Windows.Input.ApplicationCommands.Paste;
+                menu.Items.Add(itemPaste);
+
+                menu.Items.Add(new Separator());
+
+                System.Windows.Controls.MenuItem itemSync = new System.Windows.Controls.MenuItem();
+                itemSync.Header = "同步检验数据";
+
+                if (string.IsNullOrEmpty(cureId) || !cureDate.HasValue)
+                {
+                    System.Windows.Controls.MenuItem itemNoData = new System.Windows.Controls.MenuItem();
+                    itemNoData.Header = "该行暂无治疗数据";
+                    itemNoData.IsEnabled = false;
+                    itemSync.Items.Add(itemNoData);
+                }
+                else
+                {
+                    // 查询当天的检验数据
+                    DateTime startDate = cureDate.Value.Date;
+                    DateTime endDate = cureDate.Value.Date.AddDays(1).AddSeconds(-1);
+                    DataTable labData = _labService.GetPatientLabListByDate(currentHemoId, startDate, endDate);
+
+                    if (labData == null || labData.Rows.Count == 0)
+                    {
+                        System.Windows.Controls.MenuItem itemNoData = new System.Windows.Controls.MenuItem();
+                        itemNoData.Header = "暂无检验数据";
+                        itemNoData.IsEnabled = false;
+                        itemSync.Items.Add(itemNoData);
+                    }
+                    else
+                    {
+                        // 同步所有
+                        System.Windows.Controls.MenuItem itemAll = new System.Windows.Controls.MenuItem();
+                        itemAll.Header = "同步所有检验数据";
+                        itemAll.Click += (s, ev) =>
+                        {
+                            StringBuilder sb = new StringBuilder();
+                            foreach (DataRow row in labData.Rows)
+                            {
+                                string name = row["ITEM_NAME"]?.ToString() ?? "";
+                                string result = row["RESULT"]?.ToString() ?? "";
+                                string unit = row["UNITS"]?.ToString() ?? "";
+                                if (!string.IsNullOrEmpty(name))
+                                    sb.AppendLine($"{name}: {result} {unit}");
+                            }
+                            txtBox.Text = sb.ToString().TrimEnd();
+                        };
+                        itemSync.Items.Add(itemAll);
+
+                        itemSync.Items.Add(new Separator());
+
+                        // 按项目分组
+                        var groups = labData.AsEnumerable().GroupBy(r => r["ITEM_NAME"]?.ToString() ?? "未知");
+                        foreach (var g in groups)
+                        {
+                            System.Windows.Controls.MenuItem subMenu = new System.Windows.Controls.MenuItem();
+                            subMenu.Header = g.Key;
+                            foreach (DataRow row in g)
+                            {
+                                string result = row["REPORT_ITEM_NAME"]?.ToString() ?? "";
+                                string unit = row["RESULT"]?.ToString() ?? "";
+                                
+                                string name = row["ITEM_NAME"]?.ToString() ?? "";
+
+                                System.Windows.Controls.MenuItem subItem = new System.Windows.Controls.MenuItem();
+                                subItem.Header = $"{result} {unit}";
+                                subItem.Click += (s, ev) =>
+                                {
+                                    string newLine = $"{name}: {result} {unit}";
+
+                                    if (string.IsNullOrEmpty(txtBox.Text))
+                                    {
+                                        txtBox.Text = newLine;
+                                    }
+                                    else
+                                    {
+                                        txtBox.Text += Environment.NewLine + newLine;
+                                    }
+                                };
+                                subMenu.Items.Add(subItem);
+                            }
+                            itemSync.Items.Add(subMenu);
+                        }
+                    }
+                }
+
+                menu.Items.Add(itemSync);
+
+                txtBox.ContextMenu = menu;
+                menu.IsOpen = true;
+            }
+            catch (Exception ex)
+            {
+                System.Windows.MessageBox.Show($"操作失败：{ex.Message}", "错误", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
+        }
+
+        /// <summary>
+        /// 根据行号获取 CURE_ID
+        /// </summary>
+        private string GetCureIdByRowNum(string rowNum)
+        {
+            switch (rowNum)
+            {
+                case "0": return txt10.Tag?.ToString() ?? "";
+                case "1": return txt11.Tag?.ToString() ?? "";
+                case "2": return txt12.Tag?.ToString() ?? "";
+                case "3": return txt13.Tag?.ToString() ?? "";
+                case "4": return txt14.Tag?.ToString() ?? "";
+                default: return "";
+            }
+        }
+
+        /// <summary>
+        /// 根据行号获取治疗日期
+        /// </summary>
+        private DateTime? GetCureDateByRowNum(string rowNum)
+        {
+            string text = "";
+            switch (rowNum)
+            {
+                case "0": text = txt10.Text; break;
+                case "1": text = txt11.Text; break;
+                case "2": text = txt12.Text; break;
+                case "3": text = txt13.Text; break;
+                case "4": text = txt14.Text; break;
+                default: return null;
+            }
+            if (string.IsNullOrEmpty(text)) return null;
+
+            var match = System.Text.RegularExpressions.Regex.Match(text, @"(\d{4}-\d{2}-\d{2})");
+            if (match.Success && DateTime.TryParse(match.Groups[1].Value, out DateTime result))
+                return result;
+            return null;
+        }
 
         #endregion
     }
