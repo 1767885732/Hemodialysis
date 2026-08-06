@@ -1,0 +1,4 @@
+# FGO 账号从者/礼装导出工具依赖
+# GUI 使用标准库 tkinter（无需安装）。
+# HTTP 使用标准库 urllib（无需安装）。
+openpyxl>=3.1.0
