@@ -178,8 +178,9 @@
                 <!-- 根据recipe_date动态控制显示 -->
                 <Label x:Name="lblFiltrationType" Content="血液滤过或血液透析滤过：透析中置换液总量：" FontSize="12" VerticalContentAlignment="Bottom" Visibility="Visible" />
                 <TextBox BorderBrush="Black" BorderThickness="0,0,0,1" FontSize="12" Grid.Row="1" Height="23" HorizontalContentAlignment="Center" Name="txtFILTRATION_DISPLACEMENT_LIQUID" VerticalContentAlignment="Bottom" Visibility="Visible" Width="160" />
+                <Label x:Name="lblFiltrationDisplacementUnit" Content="L" FontSize="12" VerticalContentAlignment="Bottom" Visibility="Visible" />
                 <!-- 新表单隐藏 -->
-                <Label x:Name="lblFiltrationPercolate" Content="L   滤过液总量：" FontSize="12" VerticalContentAlignment="Bottom" Visibility="Visible" />
+                <Label x:Name="lblFiltrationPercolate" Content="滤过液总量：" FontSize="12" VerticalContentAlignment="Bottom" Visibility="Visible" />
                 <TextBox x:Name="txtFILTRATION_PERCOLATE" BorderBrush="Black" BorderThickness="0,0,0,1" FontSize="12" Grid.Row="1" Height="23" HorizontalContentAlignment="Center" VerticalContentAlignment="Bottom" Visibility="Visible" Width="67" />
                 <Label x:Name="lblFiltrationPercolateUnit" Content="L" FontSize="12" VerticalContentAlignment="Bottom" Visibility="Visible"/>
             </StackPanel>

@@ -682,6 +682,7 @@ namespace Hemo.Client.Controls
                 lblFiltrationPercolate.Visibility = Visibility.Collapsed;
                 txtFILTRATION_PERCOLATE.Visibility = Visibility.Collapsed;
                 lblFiltrationPercolateUnit.Visibility = Visibility.Collapsed;
+                //lblFiltrationDisplacementUnit.Visibility = Visibility.Collapsed;
 
                 rowPlasmaExchange.Height = new GridLength(0);
                 spPlasmaExchange.Visibility = Visibility.Collapsed;
@@ -708,6 +709,7 @@ namespace Hemo.Client.Controls
                 lblFiltrationPercolate.Visibility = Visibility.Visible;
                 txtFILTRATION_PERCOLATE.Visibility = Visibility.Visible;
                 lblFiltrationPercolateUnit.Visibility = Visibility.Visible;
+                lblFiltrationDisplacementUnit.Visibility = Visibility.Visible;
 
                 lblDisplacementLiquid.Visibility = Visibility.Visible;
                 txtDISPLACEMENT_LIQUID.Visibility = Visibility.Visible;
