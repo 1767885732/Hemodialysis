@@ -618,7 +618,7 @@ namespace Hemo.Client.Controls
                 // setVascularDefaultValue(txtVASCULAR_ACCESS_ID.Text.Trim());
 
                 #region 加载透析参数列表
-                paramRowNum = 9;
+                paramRowNum = 6;
                 if (pDs.Tables["MED_HEMODIALYSIS_PARAMETERS"] != null && pDs.Tables["MED_HEMODIALYSIS_PARAMETERS"].Rows.Count > 0)
                 {
                     var dtHemoParameters = pDs.Tables["MED_HEMODIALYSIS_PARAMETERS"] as HemodialysisModel.MED_HEMODIALYSIS_PARAMETERSDataTable;
@@ -740,9 +740,9 @@ namespace Hemo.Client.Controls
                 this.rowdgpg1.Height = new GridLength(30, GridUnitType.Pixel);
                 this.rownlpg.Height = new GridLength(0.0, GridUnitType.Pixel);
                 this.rownlpg1.Height = new GridLength(0.00, GridUnitType.Pixel);
-                this.txcs.Height = new GridLength(348, GridUnitType.Pixel);
-                this.grid1.Height = 348; //339;
-                this.grdParameters.Height = 346; //339;
+                //this.txcs.Height = new GridLength(348, GridUnitType.Pixel);
+                //this.grid1.Height = 348; //339;
+                //this.grdParameters.Height = 346; //339;
             }
             else if (pName.Contains("内瘘"))
             {
@@ -751,21 +751,21 @@ namespace Hemo.Client.Controls
                 this.rowdgpg1.Height = new GridLength(0.0, GridUnitType.Pixel);
                 this.rownlpg.Height = new GridLength(30, GridUnitType.Pixel);
                 this.rownlpg1.Height = new GridLength(30, GridUnitType.Pixel);
-                this.txcs.Height = new GridLength(348, GridUnitType.Pixel);
-                this.grid1.Height = 348;//339
-                this.grdParameters.Height = 346;//339
+                //this.txcs.Height = new GridLength(348, GridUnitType.Pixel);
+                //this.grid1.Height = 348;//339
+                //this.grdParameters.Height = 346;//339
             }
             else
             {
                 paramRowNum = 10;
 
-                this.rowdgpg.Height = new GridLength(0.0, GridUnitType.Pixel);
-                this.rowdgpg1.Height = new GridLength(0.0, GridUnitType.Pixel);
-                this.rownlpg.Height = new GridLength(0.0, GridUnitType.Pixel);
-                this.rownlpg1.Height = new GridLength(0.0, GridUnitType.Pixel);
-                this.txcs.Height = new GridLength(399, GridUnitType.Pixel);
-                this.grid1.Height = 399;
-                this.grdParameters.Height = 399;
+                //this.rowdgpg.Height = new GridLength(0.0, GridUnitType.Pixel);
+                //this.rowdgpg1.Height = new GridLength(0.0, GridUnitType.Pixel);
+                //this.rownlpg.Height = new GridLength(0.0, GridUnitType.Pixel);
+                //this.rownlpg1.Height = new GridLength(0.0, GridUnitType.Pixel);
+                //this.txcs.Height = new GridLength(399, GridUnitType.Pixel);
+                //this.grid1.Height = 399;
+                //this.grdParameters.Height = 399;
 
             }
         }
@@ -1071,6 +1071,17 @@ namespace Hemo.Client.Controls
             if (currentParamNoShowInt < 0) currentParamNoShowInt = 0;
 
             grdParameters.ItemsSource = dtHemoParameters.DefaultView;
+
+            this.Dispatcher.BeginInvoke(new Action(() =>
+            {
+                if (this.grdParameters.ActualHeight > 0)
+                {
+                    // DataGrid 的实际高度包括表头+数据行，grid1 同样需要这个高度
+                    this.grid1.Height = this.grdParameters.ActualHeight;
+                    // 强制刷新布局
+                    this.grid1.UpdateLayout();
+                }
+            }), System.Windows.Threading.DispatcherPriority.Render);
         }
 
 

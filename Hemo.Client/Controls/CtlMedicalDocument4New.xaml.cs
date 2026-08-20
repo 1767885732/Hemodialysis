@@ -340,26 +340,31 @@ namespace Hemo.Client.Controls
                     strCureID = dtHemoParameters.Rows[0]["CURE_ID"].ToString();
                     strRecipe_ID = dtHemoParameters.Rows[0]["RECIPE_ID"].ToString();
 
-                    // 分页数据筛选逻辑
-                    if (areaName != null && areaName.Equals("CRRT"))
+                    // 分页数据筛选：从 rowNum1 开始取 rowNum2 行
+                    HemodialysisModel.MED_HEMODIALYSIS_PARAMETERSDataTable dtPageData = dtHemoParameters.Clone() as HemodialysisModel.MED_HEMODIALYSIS_PARAMETERSDataTable;
+
+                    int startIndex = rowNum1;
+                    int endIndex = Math.Min(startIndex + rowNum2, dtHemoParameters.Rows.Count);
+
+                    for (int i = startIndex; i < endIndex; i++)
                     {
-                        // CRRT分页逻辑
-                        var dtParam = dtHemoParameters.Clone();
-                        // ... CRRT分页处理逻辑
+                        dtPageData.ImportRow(dtHemoParameters.Rows[i]);
                     }
-                    else
+
+                    // 如果数据不足 rowNum2 行，补空白行
+                    if (dtPageData.Rows.Count < rowNum2)
                     {
-                        if (sqlParam == "sqlByParams")
+                        for (int i = dtPageData.Rows.Count; i < rowNum2; i++)
                         {
-                            // dtHemoParameters = objHemodialysisService.GetHemoParametersByHemoParamRow(strCureID, rowNum1, rowNum2, "sqlByParams");
-                        }
-                        else
-                        {
-                            dtHemoParameters = objHemodialysisService.GetHemoParametersByHemoParamRow(strCureID, rowNum1, rowNum2, "");
+                            DataRow dr = dtPageData.NewRow();
+                            dr["HEMODIALYSIS_PARAMETERS_ID"] = System.Guid.NewGuid().ToString();
+                            dr["CURE_ID"] = (i + 1).ToString();
+                            dr["RECIPE_ID"] = (i + 1).ToString();
+                            dtPageData.Rows.Add(dr);
                         }
                     }
 
-                    loadParamsGrid(dtHemoParameters, strCureID, strRecipe_ID);
+                    loadParamsGrid(dtPageData, strCureID, strRecipe_ID);
                 }
                 else
                 {
@@ -625,6 +630,16 @@ namespace Hemo.Client.Controls
             }
 
             grdParameters.ItemsSource = dtHemoParameters.DefaultView;
+            this.Dispatcher.BeginInvoke(new Action(() =>
+            {
+                if (this.grdParameters.ActualHeight > 0)
+                {
+                    // DataGrid 的实际高度包括表头+数据行，grid1 同样需要这个高度
+                    this.grid1.Height = this.grdParameters.ActualHeight;
+                    // 强制刷新布局
+                    this.grid1.UpdateLayout();
+                }
+            }), System.Windows.Threading.DispatcherPriority.Render);
         }
 
         private void dataGrid1_SelectionChanged(object sender, SelectionChangedEventArgs e)

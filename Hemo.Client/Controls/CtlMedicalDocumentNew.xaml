@@ -645,7 +645,7 @@
                 <RowDefinition Height="33" />
                 <RowDefinition Height="33" />
                 <RowDefinition Height="33" />
-                <RowDefinition Height="300" />
+                <RowDefinition Height="*" />
             </Grid.RowDefinitions>
             <TextBlock Grid.ColumnSpan="19" Height="1" Background="Black" VerticalAlignment="Top"/>
             <TextBlock Grid.Row="2" Grid.ColumnSpan="19" Height="1" Background="Black" VerticalAlignment="Bottom"/>
