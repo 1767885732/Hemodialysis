@@ -71,6 +71,8 @@ namespace Hemo.Client.Controls
         {
             try
             {
+                if (this.preview.Document == null)
+                    return;
                 System.Windows.Forms.PrintDialog winFormsPrintDialog = new System.Windows.Forms.PrintDialog();
                 winFormsPrintDialog.AllowSomePages = true;
                 var dlg = winFormsPrintDialog.ShowDialog();

@@ -514,6 +514,9 @@
     <Compile Include="Controls\CtlMedicalDocument3.xaml.cs">
       <DependentUpon>CtlMedicalDocument3.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Controls\CtlMedicalDocument4New.xaml.cs">
+      <DependentUpon>CtlMedicalDocument4New.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Controls\CtlMedicalDocumentContainer.xaml.cs">
       <DependentUpon>CtlMedicalDocumentContainer.xaml</DependentUpon>
     </Compile>
@@ -5875,6 +5878,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Controls\CtlMedicalDocument3.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\CtlMedicalDocument4New.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>

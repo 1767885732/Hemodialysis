@@ -2184,3 +2184,5 @@ E:\上海普陀区人民医院\上海普陀区人民医院血透\Hemodialysis\He
 E:\上海普陀区人民医院\上海普陀区人民医院血透\Hemodialysis\Hemo.Client\obj\Debug\Hemo.Client.csproj.CopyComplete
 E:\上海普陀区人民医院\上海普陀区人民医院血透\Hemodialysis\Hemo.Client\obj\Debug\Hemo.Client.exe
 E:\上海普陀区人民医院\上海普陀区人民医院血透\Hemodialysis\Hemo.Client\obj\Debug\Hemo.Client.pdb
+E:\上海普陀区人民医院\上海普陀区人民医院血透\Hemodialysis\Hemo.Client\obj\Debug\Controls\CtlMedicalDocument4New.baml
+E:\上海普陀区人民医院\上海普陀区人民医院血透\Hemodialysis\Hemo.Client\obj\Debug\Controls\CtlMedicalDocument4New.g.cs
