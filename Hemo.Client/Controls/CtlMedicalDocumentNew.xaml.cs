@@ -47,6 +47,24 @@ namespace Hemo.Client.Controls
             set { currentPatientSchedule = value; }
         }
 
+        /// <summary>
+        /// 无参构造函数，创建空白记录单
+        /// </summary>
+        public CtlMedicalDocumentNew()
+        {
+            InitializeComponent();
+            this.HospitalTitle.Content = Utility.GetHospitalName();
+            this.currentPatientSchedule = null;
+            _CureMainData = new DataSet();
+            loadData(null);
+            IsShowGrid(false);
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="currentPatientSchedule"></param>
+        /// <param name="pDs"></param>
         public CtlMedicalDocumentNew(PatientScheduleModel.MED_PATIENT_SCHEDULERow currentPatientSchedule, DataSet pDs)
         {
             InitializeComponent();
@@ -69,7 +87,9 @@ namespace Hemo.Client.Controls
             string strRecipe_ID = string.Empty;
             int addCount = 0;
             string birthday = string.Empty;
-            DateTime dCureDate = new DateTime(); ;
+            DateTime dCureDate = new DateTime();
+            //新表单的起始日期 
+            DateTime newFormStartTime = new DateTime(2026, 7, 6).Date;
             if (pDs != null && pDs.Tables.Count > 0)
             {
                 string checkResult = string.Empty;
@@ -119,6 +139,11 @@ namespace Hemo.Client.Controls
                     DataTable retipeDataTable = pDs.Tables["MED_HEMO_RECIPE"];
                     if (retipeDataTable != null && retipeDataTable.Rows.Count > 0)
                     {
+                        // 判断是否为新表单
+                        DateTime recipeDate = Convert.ToDateTime(retipeDataTable.Rows[0]["RECIPE_DATE"]);
+                        bool isNewFrom = recipeDate.Date >= newFormStartTime;
+                        updateFormStyle(isNewFrom);
+
                         ////设置当前单子为CRRT或是HDF
                         //setPurificationMode(retipeDataTable.Rows[0]["PURIFICATION_MODE_NAME"].ToString());
                         //this.txtPurMode.Text= retipeDataTable.Rows[0]["PURIFICATION_MODE_NAME"].ToString()
@@ -149,6 +174,11 @@ namespace Hemo.Client.Controls
                     DataTable cureMainDataTable = pDs.Tables["MED_CURE_MAIN"];
                     if (cureMainDataTable != null && cureMainDataTable.Rows.Count > 0)
                     {
+                        // 判断是否为新表单
+                        DateTime cureMainDate = Convert.ToDateTime(cureMainDataTable.Rows[0]["CURE_CREATE_DATE"]);
+                        bool isNewFrom = cureMainDate.Date >= newFormStartTime;
+                        updateFormStyle(isNewFrom);
+
                         ////设置当前单子为CRRT或是HDF
                         //setPurificationMode(cureMainDataTable.Rows[0]["PURIFICATION_MODE_NAME"].ToString());
 
@@ -240,7 +270,7 @@ namespace Hemo.Client.Controls
                         //      txtDOCTOR_ADVICE.Text = "                             " + cureMainDataTable.Rows[0]["DOCTOR_ADVICE"].ToString();
                         txtPRIMARY_DOCTOR.Text = cureMainDataTable.Rows[0]["DOCTOR_NAME"].ToString();
                         txtPRIMARY_NURSE.Text = cureMainDataTable.Rows[0]["NURSE_NAME"].ToString();
-                        ///  txtCHECK_NURSE.Text = cureMainDataTable.Rows[0]["check_nurse_name"].ToString();
+                        txtCHECK_NURSE.Text = cureMainDataTable.Rows[0]["check_nurse_name"].ToString();
                         lupPUNCTURE_NURSE.Text = cureMainDataTable.Rows[0]["PUNCTURE_NURSE_NAME"].ToString();
                         //txtPotassium.Text = cureMainDataTable.Rows[0]["POTASSIUM_ION"].ToString();//钾
                         //txtCalcium.Text = cureMainDataTable.Rows[0]["CALCIUM_ION"].ToString();//钙
@@ -640,6 +670,60 @@ namespace Hemo.Client.Controls
                 loadParamsGrid(dtHemoParameters, paramRowNum, strCureID, strRecipe_ID);
                 //var dtMED_CURE_DRUG = new HemodialysisModel.MED_CURE_DRUGDataTable();
                 // loadGiveDrugGrid(dtMED_CURE_DRUG, 4, strCureID, strRecipe_ID);
+            }
+        }
+
+        private void updateFormStyle(bool isNewForm)
+        {
+            if (isNewForm)
+            {
+                lblFiltrationType.Content = "血液滤过或血液透析滤过：透析中置换液总量：";
+
+                lblFiltrationPercolate.Visibility = Visibility.Collapsed;
+                txtFILTRATION_PERCOLATE.Visibility = Visibility.Collapsed;
+                lblFiltrationPercolateUnit.Visibility = Visibility.Collapsed;
+                //lblFiltrationDisplacementUnit.Visibility = Visibility.Collapsed;
+
+                rowPlasmaExchange.Height = new GridLength(0);
+                spPlasmaExchange.Visibility = Visibility.Collapsed;
+                
+                //lblDisplacementLiquid.Visibility = Visibility.Collapsed;
+                //txtDISPLACEMENT_LIQUID.Visibility = Visibility.Collapsed;
+                //lblDisplacementLiquidUnit.Visibility = Visibility.Collapsed;
+                //lblPercolate.Visibility = Visibility.Collapsed;
+                //txtPERCOLATE.Visibility = Visibility.Collapsed;
+                //lblPercolateUnit.Visibility = Visibility.Collapsed;
+
+                lblNurseRecord.Text = "责任护士";
+
+                lblSickLog.Content = "透析小结：";
+
+                txtCHECK_NURSE.Visibility = Visibility.Visible;
+                lblCheckNurse.Visibility = Visibility.Visible;
+            }
+            else
+            {
+                // 旧表单保持原样
+                lblFiltrationType.Content = "血液滤过或血液透滤：透析中置换液总量：";
+
+                lblFiltrationPercolate.Visibility = Visibility.Visible;
+                txtFILTRATION_PERCOLATE.Visibility = Visibility.Visible;
+                lblFiltrationPercolateUnit.Visibility = Visibility.Visible;
+                lblFiltrationDisplacementUnit.Visibility = Visibility.Visible;
+
+                lblDisplacementLiquid.Visibility = Visibility.Visible;
+                txtDISPLACEMENT_LIQUID.Visibility = Visibility.Visible;
+                lblDisplacementLiquidUnit.Visibility = Visibility.Visible;
+                lblPercolate.Visibility = Visibility.Visible;
+                txtPERCOLATE.Visibility = Visibility.Visible;
+                lblPercolateUnit.Visibility = Visibility.Visible;
+
+                lblNurseRecord.Text = "记录护士";
+                lblSickLog.Content = "备注：";
+
+                // 隐藏核对护士
+                txtCHECK_NURSE.Visibility = Visibility.Collapsed;
+                lblCheckNurse.Visibility = Visibility.Collapsed;
             }
         }
         /// <summary>

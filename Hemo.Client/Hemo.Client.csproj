@@ -672,6 +672,9 @@
     <Compile Include="Controls\CtlMedicalDocument3New.xaml.cs">
       <DependentUpon>CtlMedicalDocument3New.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Controls\CtlMedicalDocument4New.xaml.cs">
+      <DependentUpon>CtlMedicalDocument4New.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Core\AppSettingsConfig.cs" />
     <Compile Include="Core\SkinGalleryHelper.cs" />
     <Compile Include="Doc\血液透析病历首页.xaml.cs">
@@ -5904,6 +5907,10 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Include="Controls\CtlMedicalDocument3New.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\CtlMedicalDocument4New.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>

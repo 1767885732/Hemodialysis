@@ -594,27 +594,48 @@ namespace Hemo.Client.Controls
             _medicalDocContainer.Add(document);
 
 
-
             //进行计算分页
             //计算可以有多少页的参数页
-            int pageCount = (countNum - pageParamCount) / 24;
-            int pageCountExt = (countNum - pageParamCount) % 24;
-            if (pageCountExt > 0)
-            {
-                pageCount++;
-            }
-            countParam = countNum - pageParamCount;
+            //int pageCount = (countNum - pageParamCount) / 24;
+            //int pageCountExt = (countNum - pageParamCount) % 24;
+            //if (pageCountExt > 0)
+            //{
+            //    pageCount++;
+            //}
+            //countParam = countNum - pageParamCount;
 
-            for (int i = 2; i < pageCount + 2; i++)
-            {
-                _medicalDocContainer.Remove(i.ToString());
+            //for (int i = 2; i < pageCount + 2; i++)
+            //{
+            //    _medicalDocContainer.Remove(i.ToString());
 
+            //    string area = areaName.Equals("CRRT室") ? "CRRT" : areaName;
+            //    //将第二页改成和第一页一样
+            //    CtlMedicalDocument4New document1 = area.Equals("CRRT") ? new CtlMedicalDocument4New(ds, (dtCRRTCure != null && dtCRRTCure.Rows.Count > 0) ? dtCRRTCure[0] : null, countParam, 20, 1, i, area) : new CtlMedicalDocument4New(ds, pageParamCount, 20, "sqlByParams", i, area);
+            //    pageParamCount += 24;
+
+            //    _medicalDocContainer.Add(i.ToString(), document1);
+            //    //countParam = countParam - 20;
+            //}
+            // 剩余行数
+            int remainingRows = countNum - pageParamCount;
+            int pageIndex = 2;
+            int startIndex = pageParamCount;
+
+            while (remainingRows > 0)
+            {
+                // 每页固定24行，行高由Auto自动适应，页面内容会自动撑开
+                int currentPageRows = Math.Min(24, remainingRows);
                 string area = areaName.Equals("CRRT室") ? "CRRT" : areaName;
-                CtlMedicalDocument3New document1 = area.Equals("CRRT") ? new CtlMedicalDocument3New(ds, (dtCRRTCure != null && dtCRRTCure.Rows.Count > 0) ? dtCRRTCure[0] : null, countParam, 20, 1, i, area) : new CtlMedicalDocument3New(ds, pageParamCount, 20, "sqlByParams", i, area);
-                pageParamCount += 24;
 
-                _medicalDocContainer.Add(i.ToString(), document1);
-                //countParam = countParam - 20;
+                CtlMedicalDocument4New document1 = area.Equals("CRRT")
+                    ? new CtlMedicalDocument4New(ds, (dtCRRTCure != null && dtCRRTCure.Rows.Count > 0) ? dtCRRTCure[0] : null, startIndex, currentPageRows, 1, pageIndex, area)
+                    : new CtlMedicalDocument4New(ds, startIndex, currentPageRows, "sqlByParams", pageIndex, area);
+
+                _medicalDocContainer.Add(pageIndex.ToString(), document1);
+
+                startIndex += currentPageRows;
+                remainingRows -= currentPageRows;
+                pageIndex++;
             }
 
             DataTable cureMainDataTable = ds.Tables["MED_CURE_MAIN"];
@@ -628,9 +649,9 @@ namespace Hemo.Client.Controls
                 //病情记录
                 if (strSummary.Length > 164 || strSummary1.Length > 0)
                 {
-                    var lastDoc = pageCount + 2;
+                    //var lastDoc = pageCount + 2;
                     CtlMedicalDocument2 document2 = new CtlMedicalDocument2(ds);
-                    _medicalDocContainer.Add(lastDoc.ToString(), document2);
+                    _medicalDocContainer.Add(pageIndex.ToString(), document2);
                 }
             }
 
