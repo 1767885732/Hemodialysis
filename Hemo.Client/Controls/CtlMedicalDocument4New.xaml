@@ -52,7 +52,7 @@
             <RowDefinition Height="5" />
             <RowDefinition Height="Auto" MaxHeight="420" />
             <RowDefinition Height="0" />
-            <RowDefinition Height="Auto" Name="txcs"/>
+            <RowDefinition Height="369" Name="txcs"/>
             <RowDefinition Height="28" />
             <RowDefinition Height="30" />
             <RowDefinition Height="30" />
@@ -251,7 +251,7 @@
           HorizontalGridLinesBrush="Black"  
           HorizontalAlignment="Left"  
           AutoGenerateColumns="False" 
-          Height="Auto" 
+          Height="399" 
           Margin="20,0,0,0" 
           Name="grdParameters" 
           BorderBrush="Black" 
@@ -419,7 +419,7 @@
         </DataGrid>
 
         <!-- 表格标题 -->
-        <Grid Height="Auto" HorizontalAlignment="Left" Margin="20,0,0,0" Name="grid1" VerticalAlignment="Top" Width="750" Grid.Row="7">
+        <Grid Height="399" HorizontalAlignment="Left" Margin="20,0,0,0" Name="grid1" VerticalAlignment="Top" Width="750" Grid.Row="7">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="50" />
                 <ColumnDefinition Width="35" />
