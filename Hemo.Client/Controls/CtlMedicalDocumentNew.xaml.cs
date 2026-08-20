@@ -933,7 +933,7 @@ namespace Hemo.Client.Controls
 
             if (currentParamNoShowInt > 0)
             {
-                for (int i = 0; i < count; i++)
+                for (int i = 0; i < currentParamNoShowInt; i++)
                 {
                     DataRow dr = dtHemoParameters.NewRow();
                     dr["HEMODIALYSIS_PARAMETERS_ID"] = System.Guid.NewGuid().ToString();
@@ -1061,6 +1061,15 @@ namespace Hemo.Client.Controls
             }
             */
             #endregion
+
+            // 截断到 paramRowNum 行，超出部分由 CtlMedicalDocument4New 分页处理
+            while (dtHemoParameters.Rows.Count > count)
+            {
+                dtHemoParameters.Rows.RemoveAt(dtHemoParameters.Rows.Count - 1);
+            }
+            currentParamNoShowInt = count - dtHemoParameters.Rows.Count;
+            if (currentParamNoShowInt < 0) currentParamNoShowInt = 0;
+
             grdParameters.ItemsSource = dtHemoParameters.DefaultView;
         }
 
