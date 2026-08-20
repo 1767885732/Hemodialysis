@@ -618,7 +618,7 @@ namespace Hemo.Client.Controls
                 // setVascularDefaultValue(txtVASCULAR_ACCESS_ID.Text.Trim());
 
                 #region 加载透析参数列表
-                paramRowNum = 9;
+                paramRowNum = 6;
                 if (pDs.Tables["MED_HEMODIALYSIS_PARAMETERS"] != null && pDs.Tables["MED_HEMODIALYSIS_PARAMETERS"].Rows.Count > 0)
                 {
                     var dtHemoParameters = pDs.Tables["MED_HEMODIALYSIS_PARAMETERS"] as HemodialysisModel.MED_HEMODIALYSIS_PARAMETERSDataTable;
@@ -735,7 +735,7 @@ namespace Hemo.Client.Controls
 
             if (pName.Contains("导管") || pName.Contains("置管"))
             {
-                paramRowNum = 8;
+                paramRowNum = 6;
                 this.rowdgpg.Height = new GridLength(30, GridUnitType.Pixel);
                 this.rowdgpg1.Height = new GridLength(30, GridUnitType.Pixel);
                 this.rownlpg.Height = new GridLength(0.0, GridUnitType.Pixel);
@@ -746,7 +746,7 @@ namespace Hemo.Client.Controls
             }
             else if (pName.Contains("内瘘"))
             {
-                paramRowNum = 8;
+                paramRowNum = 6;
                 this.rowdgpg.Height = new GridLength(0.0, GridUnitType.Pixel);
                 this.rowdgpg1.Height = new GridLength(0.0, GridUnitType.Pixel);
                 this.rownlpg.Height = new GridLength(30, GridUnitType.Pixel);
@@ -757,7 +757,7 @@ namespace Hemo.Client.Controls
             }
             else
             {
-                paramRowNum = 10;
+                paramRowNum = 6;
 
                 this.rowdgpg.Height = new GridLength(0.0, GridUnitType.Pixel);
                 this.rowdgpg1.Height = new GridLength(0.0, GridUnitType.Pixel);
