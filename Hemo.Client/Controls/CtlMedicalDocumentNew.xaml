@@ -415,7 +415,7 @@
           AllowDrop="False" 
           Background="Transparent" 
           CanUserSortColumns="False" 
-          VerticalAlignment="Top"  
+          VerticalAlignment="Stretch"  
           ScrollViewer.HorizontalScrollBarVisibility="Hidden" 
           ScrollViewer.VerticalScrollBarVisibility="Hidden" 
           Visibility="Visible" 
@@ -425,7 +425,8 @@
           AutoGenerateColumns="False" 
           Height="Auto" 
           Margin="20,0,0,0" 
-          Name="grdParameters" 
+          Name="grdParameters"
+          SizeChanged="grdParameters_SizeChanged"  
           BorderBrush="Black" 
           BorderThickness="1,0,0,0" 
           GridLinesVisibility="Horizontal"
@@ -621,7 +622,7 @@
                 </DataGridTemplateColumn>
             </DataGrid.Columns>
         </DataGrid>
-        <Grid Height="Auto" HorizontalAlignment="Left" Margin="20,0,0,0" Name="grid1" VerticalAlignment="Top" Width="750"  Grid.Row="7">
+        <Grid Height="Auto" HorizontalAlignment="Left" Margin="20,0,0,0" Name="grid1" VerticalAlignment="Stretch" Width="750"  Grid.Row="7">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="50" />
                 <ColumnDefinition Width="35" />

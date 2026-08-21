@@ -1072,19 +1072,36 @@ namespace Hemo.Client.Controls
 
             grdParameters.ItemsSource = dtHemoParameters.DefaultView;
 
+            // 强制更新布局
+            this.grdParameters.UpdateLayout();
+
             this.Dispatcher.BeginInvoke(new Action(() =>
             {
                 if (this.grdParameters.ActualHeight > 0)
                 {
-                    // DataGrid 的实际高度包括表头+数据行，grid1 同样需要这个高度
-                    this.grid1.Height = this.grdParameters.ActualHeight;
-                    // 强制刷新布局
+                    this.grid1.Height = this.grdParameters.ActualHeight - 2;
+                    this.grid1.VerticalAlignment = System.Windows.VerticalAlignment.Top;
                     this.grid1.UpdateLayout();
                 }
             }), System.Windows.Threading.DispatcherPriority.Render);
         }
 
-
+        private void grdParameters_SizeChanged(object sender, SizeChangedEventArgs e)
+        {
+            try
+            {
+                // 确保控件已经加载并且有效
+                if (this.grdParameters != null && this.grid1 != null && this.grdParameters.ActualHeight > 0)
+                {
+                    this.grid1.Height = this.grdParameters.ActualHeight - 2;
+                    this.grid1.VerticalAlignment = System.Windows.VerticalAlignment.Top;
+                    this.grid1.UpdateLayout();
+                }
+            }
+            catch (Exception ex)
+            {
+            }
+        }
 
         private void InitGridTextBlock(Grid grid)
         {

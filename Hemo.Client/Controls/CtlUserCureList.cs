@@ -441,7 +441,7 @@ namespace Hemo.Client.Controls
             int countNum = 0;
             int countParam;
             int pageParamCount = 10;
-            string[] records = null;
+            string summaryContent = string.Empty;
             HemodialysisModel.MED_CURE_MAIN_CRRTDataTable dtCRRTCure = null;
 
             if (ds.Tables["MED_HEMODIALYSIS_PARAMETERS"] != null)
@@ -557,23 +557,10 @@ namespace Hemo.Client.Controls
 
 
 
-            if (ds.Tables["MED_CURE_MAIN"] != null)
+            // 获取 SUMMARY 内容（用于第二页的透析小结）
+            if (ds.Tables["MED_CURE_MAIN"] != null && ds.Tables["MED_CURE_MAIN"].Rows.Count > 0)
             {
-                DataTable dtCureMain = ds.Tables["MED_CURE_MAIN"];
-                if (areaName.Equals("CRRT室"))
-                {
-                    DateTime treamentDate = Utility.CDate(TreamentDate);
-                    DateTime createDate = Classes.Equals("3") ? treamentDate.Date.AddDays(1) : treamentDate.Date;
-                    dtCRRTCure = _hemodialysisService.GetCRRTCureByCureIdAndBanci(dtCureMain.Rows[0]["CURE_ID"].ToString(), Classes, createDate);
-                    if (dtCRRTCure != null && dtCRRTCure.Rows.Count > 0)
-                    {
-                        records = dtCRRTCure[0].SUMMARY2.Split("|".ToCharArray());
-                    }
-                }
-                else
-                {
-                    records = dtCureMain.Rows[0]["SUMMARY2"].ToString().Split("|".ToCharArray());
-                }
+                summaryContent = ds.Tables["MED_CURE_MAIN"].Rows[0]["SUMMARY"].ToString();
             }
 
             WPF_DocumentBase document = null;
@@ -628,8 +615,8 @@ namespace Hemo.Client.Controls
                 string area = areaName.Equals("CRRT室") ? "CRRT" : areaName;
 
                 CtlMedicalDocument4New document1 = area.Equals("CRRT")
-                    ? new CtlMedicalDocument4New(ds, (dtCRRTCure != null && dtCRRTCure.Rows.Count > 0) ? dtCRRTCure[0] : null, startIndex, currentPageRows, 1, pageIndex, area)
-                    : new CtlMedicalDocument4New(ds, startIndex, currentPageRows, "sqlByParams", pageIndex, area);
+                     ? new CtlMedicalDocument4New(_currentSelectedCtl.PatientScheduleRow, ds,(dtCRRTCure != null && dtCRRTCure.Rows.Count > 0) ? dtCRRTCure[0] : null, startIndex, currentPageRows, 1, pageIndex, area, summaryContent)
+                    : new CtlMedicalDocument4New(_currentSelectedCtl.PatientScheduleRow, ds, startIndex, currentPageRows, "sqlByParams", pageIndex, area, summaryContent);
 
                 _medicalDocContainer.Add(pageIndex.ToString(), document1);
 

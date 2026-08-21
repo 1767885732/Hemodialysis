@@ -47,6 +47,7 @@ namespace Hemo.Client.Controls
         private int pageNum;
         private string sqlParam;
         private string areaName;
+        private string _summaryContent;
         private HemodialysisModel.MED_CURE_MAIN_CRRTRow rowCRRT = null;
 
         public PatientScheduleModel.MED_PATIENT_SCHEDULERow CurrentPatientSchedule
@@ -86,32 +87,36 @@ namespace Hemo.Client.Controls
         /// <summary>
         /// CRRT分页构造函数
         /// </summary>
-        public CtlMedicalDocument4New(DataSet _CureMainData, int _rowNum1, int _rowNum2, string _sqlParam, int _pageNum, string areaName)
+        public CtlMedicalDocument4New(PatientScheduleModel.MED_PATIENT_SCHEDULERow patientSchedule,DataSet _CureMainData, int _rowNum1, int _rowNum2, string _sqlParam, int _pageNum, string areaName, string summaryContent)
         {
             InitializeComponent();
             this.HospitalTitle.Content = Utility.GetHospitalName();
+            this.currentPatientSchedule = patientSchedule;
             rowNum1 = _rowNum1;
             sqlParam = _sqlParam;
             pageNum = _pageNum;
             rowNum2 = _rowNum2;
             _CureMainData = _CureMainData;
             this.areaName = areaName;
+            this._summaryContent = summaryContent;
             loadData(_CureMainData);
         }
 
         /// <summary>
         /// CRRT分页构造函数（带CRRT数据行）
         /// </summary>
-        public CtlMedicalDocument4New(DataSet _CureMainData, HemodialysisModel.MED_CURE_MAIN_CRRTRow rowCRRT, int _rowNum1, int _rowNum2, int pageType, int _pageNum, string areaName)
+        public CtlMedicalDocument4New(PatientScheduleModel.MED_PATIENT_SCHEDULERow patientSchedule, DataSet _CureMainData, HemodialysisModel.MED_CURE_MAIN_CRRTRow rowCRRT, int _rowNum1, int _rowNum2, int pageType, int _pageNum, string areaName, string summaryContent)
         {
             InitializeComponent();
             this.HospitalTitle.Content = Utility.GetHospitalName();
+            this.currentPatientSchedule = patientSchedule;
             rowNum1 = _rowNum1;
             pageNum = _pageNum;
             rowNum2 = _rowNum2;
             _CureMainData = _CureMainData;
             this.areaName = areaName;
             this.rowCRRT = rowCRRT;
+            this._summaryContent = summaryContent;
             loadData(_CureMainData);
         }
 
@@ -296,30 +301,17 @@ namespace Hemo.Client.Controls
                         txtDRY_WEIGHT_TAG.Text = setZeroToEmpty(cureMainDataTable.Rows[0]["DRY_WEIGHT_TAG"].ToString());
 
                         // 分页小结
-                        string[] records = areaName != null && areaName.Equals("CRRT") ?
-                            (rowCRRT != null ? rowCRRT.SUMMARY2.Split("|".ToCharArray()) : null) :
-                            cureMainDataTable.Rows[0]["SUMMARY2"].ToString().Split("|".ToCharArray());
-
                         string strSummary2 = string.Empty;
-                        if (pageNum == 2)
+                        if (!string.IsNullOrEmpty(_summaryContent))
                         {
-                            string strSummary = areaName != null && areaName.Equals("CRRT") ?
-                                (rowCRRT != null ? rowCRRT.SUMMARY3 : string.Empty) :
-                                cureMainDataTable.Rows[0]["SUMMARY3"].ToString();
-                            strSummary2 = records.Length >= 1 ? records[0] : strSummary2;
-                            strSummary2 = strSummary2 + " " + strSummary;
-                        }
-                        else if (pageNum == 3)
-                        {
-                            strSummary2 = records.Length >= 2 ? records[1] : strSummary2;
-                        }
-                        else if (pageNum == 4)
-                        {
-                            strSummary2 = records.Length >= 3 ? records[2] : strSummary2;
-                        }
-                        else if (pageNum == 5)
-                        {
-                            strSummary2 = records.Length >= 4 ? records[3] : strSummary2;
+                            if (_summaryContent.Length <= 164)
+                            {
+                                strSummary2 = "                  " + _summaryContent;
+                            }
+                            else
+                            {
+                                strSummary2 = "                  " + _summaryContent.Substring(0, 164);
+                            }
                         }
                         txtSUMMARY.Text = strSummary2;
 
@@ -564,6 +556,34 @@ namespace Hemo.Client.Controls
                 }
             }
 
+            int kk = dtHemoParameters.Rows.Count;
+            int fxInt = 0;
+            bool found = false;
+            foreach (HemodialysisModel.MED_HEMODIALYSIS_PARAMETERSRow item in dtHemoParameters.Rows)
+            {
+                fxInt++;
+                if (!item.IsCLINICAL_MANIFESTATIONNull() && item.CLINICAL_MANIFESTATION.Contains("返血0.9%NS 300ml"))
+                {
+                    kk = fxInt;
+                    found = true;
+                    break;
+                }
+            }
+
+            // 如果没有找到"返血"行，则 kk = 有效数据行数 + 1
+            if (!found)
+            {
+                kk = 0;
+                for (int i = 0; i < dtHemoParameters.Rows.Count; i++)
+                {
+                    if (!string.IsNullOrEmpty(dtHemoParameters.Rows[i]["CREATE_DATE"].ToString()))
+                    {
+                        kk = i + 2;  // 有效数据行数 + 1
+                    }
+                }
+                if (kk == 0) kk = 1;  // 无有效数据行
+            }
+
             // 使用 rowNum2 作为本页行数
             int paramRowCount = rowNum2 > 0 ? rowNum2 : 24;
             int currentParamNoShowInt = paramRowCount - dtHemoParameters.Rows.Count;
@@ -605,7 +625,7 @@ namespace Hemo.Client.Controls
                 {
                     if (dtHemoParameters.Rows[j][z].ToString() == "0" || dtHemoParameters.Rows[j][z].ToString() == "/")
                     {
-                        if (j + 1 < dtHemoParameters.Rows.Count)
+                        if (j + 1 < kk)
                         {
                             dtHemoParameters.Rows[j][z] = "/";
                         }
@@ -640,6 +660,24 @@ namespace Hemo.Client.Controls
                     this.grid1.UpdateLayout();
                 }
             }), System.Windows.Threading.DispatcherPriority.Render);
+        }
+
+        private void grdParameters_SizeChanged(object sender, SizeChangedEventArgs e)
+        {
+            try
+            {
+                // 确保控件已经加载并且有效
+                if (this.grdParameters != null && this.grid1 != null && this.grdParameters.ActualHeight > 0)
+                {
+                    // 同步 grid1 的高度与数据表格高度（减2是因为边框）
+                    this.grid1.Height = this.grdParameters.ActualHeight - 2;
+                    this.grid1.VerticalAlignment = System.Windows.VerticalAlignment.Top;
+                    this.grid1.UpdateLayout();
+                }
+            }
+            catch (Exception ex)
+            {
+            }
         }
 
         private void dataGrid1_SelectionChanged(object sender, SelectionChangedEventArgs e)
