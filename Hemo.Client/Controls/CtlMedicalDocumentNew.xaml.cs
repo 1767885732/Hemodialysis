@@ -659,10 +659,20 @@ namespace Hemo.Client.Controls
                 }
 
                 #endregion
-                double beforeWeight, afterWight = 0;
-                double.TryParse(txtBEFORE_DRY_WEIGHT.Text, out beforeWeight);
-                double.TryParse(txtAFTER_DRY_WEIGHT.Text, out afterWight);
-                txtDRY_WATER_VALUE.Text = Math.Round(beforeWeight - afterWight, 2).ToString();
+                //优先取已保存的实际脱水量，没有时再用透前体重-透后体重计算
+                string dryWaterValueStr = cureMainDataTable.Rows[0]["DRY_WATER_VALUE"].ToString();
+                double dryWaterValue;
+                if (!string.IsNullOrEmpty(dryWaterValueStr) && double.TryParse(dryWaterValueStr, out dryWaterValue))
+                {
+                    txtDRY_WATER_VALUE.Text = Math.Round(dryWaterValue, 2).ToString();
+                }
+                else
+                {
+                    double beforeWeight, afterWight = 0;
+                    double.TryParse(txtBEFORE_DRY_WEIGHT.Text, out beforeWeight);
+                    double.TryParse(txtAFTER_DRY_WEIGHT.Text, out afterWight);
+                    txtDRY_WATER_VALUE.Text = Math.Round(beforeWeight - afterWight, 2).ToString();
+                }
             }
             else
             {
