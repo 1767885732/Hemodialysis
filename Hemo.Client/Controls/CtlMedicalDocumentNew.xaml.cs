@@ -660,7 +660,12 @@ namespace Hemo.Client.Controls
 
                 #endregion
                 //优先取已保存的实际脱水量，没有时再用透前体重-透后体重计算
-                string dryWaterValueStr = cureMainDataTable.Rows[0]["DRY_WATER_VALUE"].ToString();
+                string dryWaterValueStr = string.Empty;
+                DataTable cureMainDt = pDs.Tables["MED_CURE_MAIN"];
+                if (cureMainDt != null && cureMainDt.Rows.Count > 0)
+                {
+                    dryWaterValueStr = cureMainDt.Rows[0]["DRY_WATER_VALUE"].ToString();
+                }
                 double dryWaterValue;
                 if (!string.IsNullOrEmpty(dryWaterValueStr) && double.TryParse(dryWaterValueStr, out dryWaterValue))
                 {
